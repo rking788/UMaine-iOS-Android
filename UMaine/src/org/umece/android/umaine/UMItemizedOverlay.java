@@ -1,21 +1,20 @@
-package org.umece.android.umcampusmap;
+package org.umece.android.umaine;
 
 import java.util.ArrayList;
 
 import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 
 import com.google.android.maps.ItemizedOverlay;
 import com.google.android.maps.OverlayItem;
 
-public class ParkingItemizedOverlay extends ItemizedOverlay {
+public class UMItemizedOverlay extends ItemizedOverlay {
 
 	private ArrayList<OverlayItem> mOverlays = new ArrayList<OverlayItem>();
 	Context mContext;
 	
-	public ParkingItemizedOverlay(Drawable defaultMarker, Context context) {
+	public UMItemizedOverlay(Drawable defaultMarker, Context context) {
 		super(boundCenter(defaultMarker));
 		mContext = context;
 	}

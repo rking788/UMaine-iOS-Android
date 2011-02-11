@@ -1,6 +1,12 @@
-package org.umece.android.umcampusmap;
+package org.umece.android.umaine;
 
 import java.util.List;
+
+import org.umece.android.umaine.UMItemizedOverlay;
+import org.umece.android.umaine.R;
+
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
@@ -8,19 +14,13 @@ import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
 import com.google.android.maps.Overlay;
 import com.google.android.maps.OverlayItem;
-import org.umece.android.umcampusmap.ParkingItemizedOverlay;
-import org.umece.android.umcampusmap.R;
 
-import android.app.Activity;
-import android.graphics.drawable.Drawable;
-import android.os.Bundle;
-
-public class UMCampusMap extends MapActivity {
-	 /** Called when the activity is first created. */
+public class UMMap extends MapActivity {
+	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.main2);
 
         /* Get a reference to the MapView from the main layout 
          * also set built in zoom controls to true 
@@ -45,7 +45,7 @@ public class UMCampusMap extends MapActivity {
     	/* In the ParkingItemizedOverlay class we should check if the list is empty before clearing */
     	List<Overlay> mapOverlays = mapView.getOverlays();
         Drawable drawable = this.getResources().getDrawable(R.drawable.staffmarker);
-        ParkingItemizedOverlay itemizedoverlay = new ParkingItemizedOverlay(drawable, this);	
+        UMItemizedOverlay itemizedoverlay = new UMItemizedOverlay(drawable, this);	
         
         /* Create all OverlayItems */
         OverlayItem oi; 
@@ -60,7 +60,7 @@ public class UMCampusMap extends MapActivity {
     	/* Clear previous overlays */
     	mapOverlays.clear();
         Drawable drawable = this.getResources().getDrawable(R.drawable.residentmarker);
-        ParkingItemizedOverlay itemizedoverlay = new ParkingItemizedOverlay(drawable, this);
+        UMItemizedOverlay itemizedoverlay = new UMItemizedOverlay(drawable, this);
     
         /* Create all OverlayItems */
         OverlayItem oi; 
@@ -109,7 +109,7 @@ public class UMCampusMap extends MapActivity {
     	/* Clear previous overlays */
     	mapOverlays.clear();
         Drawable drawable = this.getResources().getDrawable(R.drawable.commutermarker);
-        ParkingItemizedOverlay itemizedoverlay = new ParkingItemizedOverlay(drawable, this);
+        UMItemizedOverlay itemizedoverlay = new UMItemizedOverlay(drawable, this);
     
         /* Create all OverlayItems */
         OverlayItem oi;
@@ -144,7 +144,7 @@ public class UMCampusMap extends MapActivity {
     	MapView mapView = (MapView) findViewById(R.id.mapview);
     	List<Overlay> mapOverlays = mapView.getOverlays();
         Drawable drawable = this.getResources().getDrawable(R.drawable.commutermarker);
-        ParkingItemizedOverlay itemizedoverlay = new ParkingItemizedOverlay(drawable, this);
+        UMItemizedOverlay itemizedoverlay = new UMItemizedOverlay(drawable, this);
     	
         /* Create all OverlayItems */
         OverlayItem oi;
@@ -170,4 +170,5 @@ public class UMCampusMap extends MapActivity {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
 }
