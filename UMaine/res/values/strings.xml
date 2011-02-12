@@ -2,4 +2,6 @@
 <resources>
     <string name="hello">Hello World, UMaine!</string>
     <string name="app_name">UMaine</string>
+<string name="buildings">Buildings</string>
+<string name="lots">Lots</string>
 </resources>

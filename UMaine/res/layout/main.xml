@@ -15,9 +15,9 @@
 			android:layout_height="wrap_content"
 			android:text="Course Schedule"/>
 		
-		<Button android:id="@+id/mapbtn"
+		<Button android:id="@+id/parkingbtn"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:text="Campus Map"/>
+			android:text="Parking"/>
 	</LinearLayout>
 </RelativeLayout>

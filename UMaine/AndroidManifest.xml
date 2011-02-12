@@ -12,6 +12,7 @@
             </intent-filter>
         </activity>
 		<activity android:name=".UMMap"></activity>
+		<activity android:name=".UMCourses"></activity>
 
 		<uses-library android:required="true" android:name="com.google.android.maps"></uses-library>
     </application>
