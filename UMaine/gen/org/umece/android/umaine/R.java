@@ -17,11 +17,12 @@ public final class R {
         public static final int staffmarker=0x7f020003;
     }
     public static final class id {
-        public static final int buildings=0x7f060004;
-        public static final int coursesbtn=0x7f060000;
-        public static final int lots=0x7f060003;
-        public static final int mapview=0x7f060002;
-        public static final int parkingbtn=0x7f060001;
+        public static final int buildings=0x7f060005;
+        public static final int coursesbtn=0x7f060001;
+        public static final int courseslabel=0x7f060000;
+        public static final int lots=0x7f060004;
+        public static final int mapview=0x7f060003;
+        public static final int parkingbtn=0x7f060002;
     }
     public static final class layout {
         public static final int courses=0x7f030000;
