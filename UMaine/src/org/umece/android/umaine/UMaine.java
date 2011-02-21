@@ -32,5 +32,15 @@ public class UMaine extends Activity {
 				startActivityForResult(myIntent, 0);
 			}
 		});
+        
+        /* Set up the listener for the sports button */
+        Button sportsbtn = (Button) findViewById(R.id.sportsbtn);
+        sportsbtn.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				Intent myIntent = new Intent(v.getContext(), UMSports.class);
+				startActivityForResult(myIntent, 0);
+			}
+		});
     }
 }
