@@ -72,7 +72,7 @@ for dept in departments:
 		html = br.response().read()
 
 		br.select_form(name="win1")
-		br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1120"] # Spring 2011
+		br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1210"] # 1120: Spring 2011 # 1210: Fall 2011 # 1130: Summer 2011
 		br.submit()
 		html = br.response().read()
 
@@ -127,15 +127,24 @@ for dept in departments:
 
 		t2 = t1.find('table', attrs={'class': "PABACKGROUNDINVISIBLE"})
 
+		courseTitle = "";
+
 		for row in t2.findAll(lambda tag: tag.name == "tr" and tag.findParent('table') == t2):
 			str = '';
 			title = row.find('span', attrs={'class': "SSSHYPERLINKBOLD"})
+			#print title
+
 			if not title:
 				continue
 			else:
-				titleShort = ''.join(title.contents)
+				titleShort = ''.join(title.contents)            # AED&nbsp; 473 - Advanced Curriculum in Art Education
 				titleShort = titleShort.replace("&nbsp;", ",")
-				titleShort = titleShort.replace("-", ",")
+				titleShort = titleShort.replace("-", ",")       # ARH, 498 , Directed Study in Art History
+				titles = titleShort.split(',', 3)
+				courseTitle = titles[0].strip() + "," + titles[1].strip() + ',"' + titles[2].strip() + '",';
+				#for s in titles:
+				#	courseTitle += '"' + s.strip() + '",'
+				# print courseTitle
 
 			t3 = row.find('table', attrs = {'class':"PSLEVEL3GRID"})
 			sections = t3.findAll(lambda tag: tag.name == "table" and tag.findParent('table') == t3)
@@ -143,7 +152,11 @@ for dept in departments:
 				str = '';
 				section = s.find('a', id=re.compile("^DERIVED_CLSRCH_SSR_CLASSNAME_LONG"))
 				if section:
-					str = str + "," + section.string.strip()
+					sec = section.string.strip() 		# 0001-IND(1143)
+					sec = sec.replace("-", ",");
+					sec = sec.replace("(", ",")
+					sec = sec.replace(")", "")
+					str = sec  				# 0002,IND,3992
 
 				t4 = s.find('table', id=re.compile("^SSR_CLSRCH_MTG1"))
 				items = t4.findAll('span', attrs = {'class':"PSLONGEDITBOX"})
@@ -151,11 +164,11 @@ for dept in departments:
 					#print it
 					try:
 						#it = it.replace('<br>', "")
-						str = str + "," + it.string
+						str = str + "," + it.string.strip()
 					except:
 						str = str + ","
 
-				print titleShort + str
+				print courseTitle +  str
 
 		# Return and select a different department
 		post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=4&ICAction=CLASS_SRCH_WRK2_SSR_PB_CLOSE&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'

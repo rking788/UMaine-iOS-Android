@@ -88,10 +88,35 @@ for d in departments:
             if not bookdiv:
                 br.follow_link(text = "Section:", nr=0)
                 continue;
-            isbn  = bookdiv.find('a')['id']
-            title = bookdiv.find('span').b.string
 
-            print d['value'], ",", c['value'], ",", s['value'], ",", isbn, ",", title
+            isbn  = bookdiv.find('a')['id']
+	    if isbn:
+		isbn = isbn.replace(' ', '')
+
+            title = bookdiv.find('span').b.string
+	    if title:
+		title = title.strip()
+
+	    department = d['value']
+	    if department:
+		department = department.strip() #(' ', '')
+
+	    courseNum  = c['value']
+	    if courseNum:
+		courseNum = courseNum.replace(' ', '')
+
+	    sectionNum = s['value']
+	    if sectionNum:
+		sectionNum = sectionNum.replace(' ', '')
+
+	    # Department,CourseNum,Section,ISBN,Title
+	    # print department,  "," , courseNum,  ",", sectionNum, ",",  isbn, ',"', title, '"'
+
+	    if title:
+		str = department + ',' + courseNum + ',' + sectionNum + ',' + isbn + ',"' + title + '"'
+	    else:
+	    	str = department + ',' + courseNum + ',' + sectionNum + ',' + isbn + ',"' + '"'
+	    print str
             
             br.follow_link(text = "Section:", nr=0)
 
