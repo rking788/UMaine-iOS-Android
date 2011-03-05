@@ -18,6 +18,10 @@ url = 'https://mainestreet.maine.edu/'
 
 departments = ["AED", "ANT", "ARH", "ARP", "ART", "AST", "AVS", "BIO", "BLE", "BMB", "BMS", "BUA", "CEC", "CET", "CHB", "CHE", "CHF", "CHY", "CIE", "CLA", "CMJ", "COS", "CSD", "PRT", "PSE", "PSY", "QUS", "SAR", "SED", "SEI", "SIE", "SMS", "SMT", "SOC", "SPA", "SPI", "STT", "SVT", "SWK", "THE", "TME", "UST", "VOX", "WLE", "WSC", "WST"]
 
+
+print "department,courseNum,courseTitle,sectionNum,courseType,callNum,meetingTime,meetingLocation,instructor,startEndDate"
+#ANT,245,"Sex and Gender in Cross",0001,LEC,7261,TuTh 11:00AM - 12:15PM,Murray Hall 106,Lisa K Neuman,8/29/2011 - 12/9/2011
+
 br = mechanize.Browser()
 
 # Cookie Jar
@@ -72,7 +76,7 @@ for dept in departments:
 		html = br.response().read()
 
 		br.select_form(name="win1")
-		br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1210"] # 1120: Spring 2011 # 1210: Fall 2011 # 1130: Summer 2011
+		br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1130"] # 1120: Spring 2011 # 1210: Fall 2011 # 1130: Summer 2011
 		br.submit()
 		html = br.response().read()
 
