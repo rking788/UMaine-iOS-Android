@@ -4,7 +4,7 @@
 	android:layout_width="wrap_content"  
 	android:gravity="center_vertical"
 	android:layout_height="fill_parent"
-	android:background="#ff003263">
+	android:background="@drawable/blackbear"><!--"#ff003263"-->
 	
 	<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
@@ -16,10 +16,10 @@
 			android:layout_height="wrap_content"
 			android:text="Course Schedule"/>
 		
-		<Button android:id="@+id/parkingbtn"
+		<ImageButton android:id="@+id/parkingbtn"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:text="Parking"/>
+			android:src="@drawable/mapbutton" android:visibility="visible"/>'
 		<Button android:id="@+id/sportsbtn"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"

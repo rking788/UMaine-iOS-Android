@@ -4,4 +4,8 @@
     <string name="app_name">UMaine</string>
 <string name="buildings">Buildings</string>
 <string name="lots">Lots</string>
+<string name="addbtn">Add Course</string>
+<string name="depart_prompt">Department</string>
+<string name="coursenum_prompt">Course Number</string>
+<string name="section_prompt">Section Number</string>
 </resources>

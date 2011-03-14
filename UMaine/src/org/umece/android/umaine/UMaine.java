@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class UMaine extends Activity {
     /** Called when the activity is first created. */
@@ -24,14 +25,14 @@ public class UMaine extends Activity {
 		});
         
         /* Set up the listener for the parking button */
-        Button parkingbtn = (Button) findViewById(R.id.parkingbtn);
+        ImageButton parkingbtn = (ImageButton) findViewById(R.id.parkingbtn);
         parkingbtn.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
 				Intent myIntent = new Intent(v.getContext(), UMMap.class);
 				startActivityForResult(myIntent, 0);
 			}
-		});
+    	});
         
         /* Set up the listener for the sports button */
         Button sportsbtn = (Button) findViewById(R.id.sportsbtn);
