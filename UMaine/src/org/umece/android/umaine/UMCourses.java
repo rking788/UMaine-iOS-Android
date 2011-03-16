@@ -18,6 +18,7 @@ import org.apache.http.message.BasicNameValuePair;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -30,20 +31,26 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnFocusChangeListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class UMCourses extends Activity {
+	/* TODO: FIX SO THAT THE SELECT SEMESTER DIALOG IS NOT SHOWN IF THE USER GOES BACK AND THEN BACK INTO THE SCHEDULE ACTIVITY */
+	/* TODO: Need to do a lot more error checking for instance when they try to add a course with incomplete information */
 	
 	/* PHP script */
-	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
+	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/drupal/sample.php";
 	
 	/* Post Values for data to be queried */
+	private static final String POST_SEMESTERS = "semesters";
 	private static final String POST_DEPARTS = "departments";
 	private static final String POST_COURSENUM = "coursenums";
 	private static final String POST_SECTIONS = "sections";
@@ -51,12 +58,15 @@ public class UMCourses extends Activity {
 	
 	/* Dialog Types */
 	private static final int DIALOG_ADD_COURSE = 0;
+	private static final int DIALOG_SELECT_SEMESTER = 1;
 	
-	public ArrayAdapter<CharSequence> departadapter;
+	public ArrayAdapter<CharSequence> semesteradapter;
+	public ArrayAdapter<String> departadapter;
 	public ArrayAdapter<CharSequence> coursenumadapter;
 	public ArrayAdapter<CharSequence> sectionadapter;
 	public ArrayAdapter<Spannable> courselistadapter;
 	
+	private String selectedSemester = "";
 	private String selectedDepart; 
 	private String selectedCourseNum;
 	private String selectedSection;
@@ -70,20 +80,17 @@ public class UMCourses extends Activity {
         /* Create the adapters for the spinners and leave the courselist adapter as null
          * so we know it needs to be created when the first course is added
          */
-        departadapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item);
-        departadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        semesteradapter = new ArrayAdapter<CharSequence>(this, android.R.layout.select_dialog_singlechoice);
+        String[] departs = getResources().getStringArray(R.array.departments);
+        departadapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, departs);
         coursenumadapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item);
         coursenumadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sectionadapter = new ArrayAdapter<CharSequence>(this, android.R.layout.simple_spinner_item);
         sectionadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         courselistadapter = null;
         
-        try{
-            doHttpStuff(POST_DEPARTS);    	
-        }
-        catch(Exception e){
-        	throw new RuntimeException(e);
-        }
+        /* Show the dialog to select a semester */
+        showDialog(DIALOG_SELECT_SEMESTER);
     }
     
     /* Create a context menu on long presses on the course list */
@@ -125,6 +132,9 @@ public class UMCourses extends Activity {
     	case R.id.addcourse:
     		showDialog(DIALOG_ADD_COURSE);
     		return true;
+    	case R.id.change_semester:
+    		showDialog(DIALOG_SELECT_SEMESTER);
+    		return true;
     	default:
     		return super.onOptionsItemSelected(item);
     	}
@@ -143,7 +153,7 @@ public class UMCourses extends Activity {
     		View layout = inflater.inflate(R.layout.addcoursedialog, (ViewGroup)findViewById(R.id.addcourseroot));
     		
     		/* Get references to the spinners */
-    		final Spinner departspin = (Spinner) layout.findViewById(R.id.spinner);
+    		final AutoCompleteTextView departac = (AutoCompleteTextView) layout.findViewById(R.id.depart_ac);
     		final Spinner coursenumspin = (Spinner) layout.findViewById(R.id.coursenumspin);
     		final Spinner sectionspin = (Spinner) layout.findViewById(R.id.sectionspin);
     		
@@ -154,7 +164,7 @@ public class UMCourses extends Activity {
 				
 				public void onClick(DialogInterface dialog, int which) {
 					try{
-						selectedDepart = departspin.getSelectedItem().toString();
+						selectedDepart = departac.getText().toString();
 						selectedCourseNum = coursenumspin.getSelectedItem().toString();
 						selectedSection = sectionspin.getSelectedItem().toString();
 						doHttpStuff(POST_ADDCOURSE);
@@ -169,31 +179,28 @@ public class UMCourses extends Activity {
     		AlertDialog d = ad.create();
     
     		/* Departments Spinner */
-    		departspin.setAdapter(departadapter);
-    		departspin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
-    		    public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-    		    	try{
-    		    		selectedDepart = departadapter.getItem(position).toString();
-    		    		
-    		    		/* Refresh the course number spinner */
-    		    		coursenumadapter.clear();
-    		    		doHttpStuff(POST_COURSENUM);
-    		    		coursenumspin.setSelection(0);
-    		    		selectedCourseNum = coursenumspin.getSelectedItem().toString();
-    		    		
-    		    		/* Refresh the section number spinner */
-    		    		sectionadapter.clear();
-    		    		doHttpStuff(POST_SECTIONS);
-    		    	}
-    		    	catch(Exception e){
-    		    		throw new RuntimeException(e);
-    		    	}
-    		    }
+    		departac.setAdapter(departadapter);
+    		departac.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
-    		    public void onNothingSelected(AdapterView<?> parentView) {
-    		        // do nothing?
-    		    }
-    		});
+				public void onItemClick(AdapterView<?> arg0, View arg1,
+						int arg2, long arg3) {
+					try{
+						selectedDepart = ((TextView)arg1).getText().toString();
+					
+						coursenumadapter.clear();
+						doHttpStuff(POST_COURSENUM);
+		    			coursenumspin.setSelection(0);
+		    			selectedCourseNum = coursenumspin.getSelectedItem().toString();
+		    			
+		    			/* Refresh the section number spinner */
+		    			sectionadapter.clear();
+		    			doHttpStuff(POST_SECTIONS);
+					}
+					catch(Exception e){
+						throw new RuntimeException(e);
+					}
+		    	}
+			});
     		
     		/* Course number spinner */
     		coursenumspin.setAdapter(coursenumadapter);
@@ -232,7 +239,57 @@ public class UMCourses extends Activity {
     		});
     		
     		return d;
-    	}
+    	case DIALOG_SELECT_SEMESTER:
+    		try {
+				doHttpStuff(this.POST_SEMESTERS);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+    		return  new AlertDialog.Builder(this)
+    		.setTitle("Select a semester")
+    		.setSingleChoiceItems(semesteradapter, 0, new DialogInterface.OnClickListener() {
+				
+				public void onClick(DialogInterface dialog, int which) {
+				}
+			})
+			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+				
+				public void onClick(DialogInterface dialog, int which) {
+					int index = ((AlertDialog) dialog).getListView().getCheckedItemPosition();
+					selectedSemester = semesteradapter.getItem(index).toString();
+					
+					TextView tv = (TextView) findViewById(R.id.courses_semester);
+					if(tv.getVisibility() == View.GONE){
+						tv.setVisibility(View.VISIBLE);
+					}
+					
+					tv.setText("Semester: " + selectedSemester);
+				}
+			})
+			.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+				
+				public void onClick(DialogInterface dialog, int which) {
+					/* If the cancel button is clicked, we only want to set the selected semester 
+					 * if one hasn't already been selected. This way they won't be able to advance 
+					 * without at least having one semester selected.
+					 */
+					if(selectedSemester.length() == 0){
+						selectedSemester = semesteradapter.getItem(0).toString();
+						
+						TextView tv = (TextView) findViewById(R.id.courses_semester);
+						if(tv.getVisibility() == View.GONE){
+							tv.setVisibility(View.VISIBLE);
+						}
+						
+						tv.setText("Semester: " + selectedSemester);
+					}
+					
+				}
+			})
+    		.create();
+    	}    		
     	
     	return null;
     }
@@ -330,10 +387,7 @@ public class UMCourses extends Activity {
 
     		String line = "";
     		while ((line = in.readLine()) != null){
-    			if(postVal.equals(POST_DEPARTS)){
-    				departadapter.add(line);
-    			}
-    			else if(postVal.equals(POST_COURSENUM)){
+    			if(postVal.equals(POST_COURSENUM)){
     				coursenumadapter.add(line);
     			}
     			else if(postVal.equals(POST_SECTIONS)){
@@ -342,12 +396,23 @@ public class UMCourses extends Activity {
     			else if(postVal.equals(POST_ADDCOURSE)){
     				ci.add(line);
     			}
+    			else if(postVal.equals(POST_SEMESTERS)){
+    				semesteradapter.add(line);
+    			}
     		}
     		
     		/* Create a Spannable for the new course information and add it the list view */
     		if(postVal.equals(POST_ADDCOURSE)){
     			/* Add the new course Spannable to the list view adapter */
         		Spannable span = createCourseSpannable(ci);
+        		
+        		/* If this is the first course then set the directions 
+        		 * to gone because they don't need them anymore and make the semester visible
+        		 */
+        		if(courselistadapter.isEmpty()){
+        			TextView dirs = (TextView) findViewById(R.id.courselist_directions);
+        			dirs.setVisibility(View.GONE);
+        		}
         		courselistadapter.add(span);
         	}
     		
