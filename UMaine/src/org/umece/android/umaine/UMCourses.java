@@ -318,6 +318,9 @@ public class UMCourses extends Activity {
 		List<NameValuePair> postParams = new ArrayList<NameValuePair>();
 		postParams.add(new BasicNameValuePair("field", POST_COURSENUM));
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
+		String sem = (semester.getYear() + semester.getSeason().toLowerCase());
+		postParams
+				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 		coursenumadapter.clear();
 		try {
 			for (String s : httpRequest(postParams)) {
@@ -350,6 +353,8 @@ public class UMCourses extends Activity {
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
 		postParams
 				.add(new BasicNameValuePair(POST_COURSENUM, getCoursesSpin()));
+		postParams
+				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 		sectionadapter.clear();
 		try {
 			for (String s : httpRequest(postParams)) {
@@ -422,6 +427,8 @@ public class UMCourses extends Activity {
 		postParams
 				.add(new BasicNameValuePair(POST_COURSENUM, getCoursesSpin()));
 		postParams.add(new BasicNameValuePair(POST_SECTIONS, getSectionSpin()));
+		postParams
+				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 
 		/* Insert the info we already know */
 		ci.add(getDepartSpin());
