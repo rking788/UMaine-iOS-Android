@@ -30,7 +30,6 @@ public class UMCourseDetails extends Activity {
 	
 	private void populateCourseDetails(Course c){
 		/* TODO: Add textbook information */
-		/* TODO: Add instructor once it is added to the course class */
 		TextView title_tv = (TextView) findViewById(R.id.cdetail_title_tv);
 		TextView details_tv = (TextView) findViewById(R.id.cdetails_tv);
 		

@@ -5,6 +5,10 @@
   	android:layout_height="fill_parent"
   	android:orientation="vertical">
     <org.umece.android.umaine.ScheduleDrawable android:id="@+id/scheduledraw" android:layout_width="wrap_content" android:layout_height="100dip"></org.umece.android.umaine.ScheduleDrawable>
+  	<View
+  		android:layout_height="2dp"
+  		android:layout_width="fill_parent"
+  		android:background="#ff003263"/>
   	<TextView
   		android:id="@+id/courselist_directions"
   		android:layout_height="wrap_content"
@@ -21,6 +25,10 @@
   		android:textStyle="bold"
   		android:paddingTop="2px"
   		android:paddingBottom="2px"/>
+  	<View
+  		android:layout_height="2dp"
+  		android:layout_width="fill_parent"
+  		android:background="#ff003263"/>
 	<ListView
 	  xmlns:android="http://schemas.android.com/apk/res/android"
 	  android:id="@+id/courseslist"
