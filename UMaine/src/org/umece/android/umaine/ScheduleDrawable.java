@@ -131,8 +131,8 @@ public class ScheduleDrawable extends View {
 		}
 		
 		for (Course course : semester.getCourses()) {
-			int start = parseTime(course.getTimes().split("-")[0]);
-			int end = parseTime(course.getTimes().split("-")[1]);
+			int start = parseTime(course.getMeetingTime().split("-")[0]);
+			int end = parseTime(course.getMeetingTime().split("-")[1]);
 			
 			int index = ((start / 100) * 2) + (((start % 100) > 0)?1:0);
 			int end_index = (((end + 69) / 100) * 2) + (((end % 100) > 0)?1:0);

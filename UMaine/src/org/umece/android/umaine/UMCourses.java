@@ -54,6 +54,10 @@ public class UMCourses extends Activity {
 	 * TODO: Need to do a lot more error checking for instance when they try to
 	 * add a course with incomplete information
 	 */
+	/* 
+	 * TODO: Do more error checking if they select a department and it 
+	 * returns and empty set from the database.
+	 */
 
 	/* PHP script */
 	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/drupal/sample.php";
@@ -284,7 +288,7 @@ public class UMCourses extends Activity {
 	 */
 	private void addCourse(List<String> courseinfo) {
 		@SuppressWarnings("unused")
-		String dep, num, title, inst, sec, days, starttime, endtime;
+		String dep, num, title, inst, sec, days, starttime, endtime, meetingTime;
 		// Formatter formatter = new Formatter();
 
 		/* Should handle the case where there is no start time or end time */
@@ -292,15 +296,12 @@ public class UMCourses extends Activity {
 		num = courseinfo.get(1);
 		sec = courseinfo.get(2);
 		title = courseinfo.get(3);
-		starttime = courseinfo.get(4);
-		endtime = courseinfo.get(5);
-		days = courseinfo.get(6);
-		inst = courseinfo.get(7);
+		meetingTime = courseinfo.get(4);
+		inst = courseinfo.get(5);
 
 		if (semester != null) {
 			try {
-				semester.addCourse(new Course(num, title, sec, "", days,
-						starttime + "-" + endtime, "", ""));
+				semester.addCourse(new Course(num, title, sec, "", meetingTime, "", ""));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

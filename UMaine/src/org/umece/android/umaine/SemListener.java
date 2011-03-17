@@ -5,8 +5,6 @@ import android.content.DialogInterface;
 
 public class SemListener implements
 		android.content.DialogInterface.OnClickListener {
-
-	@Override
 	public void onClick(DialogInterface dialog, int which) {
 		int index = ((AlertDialog) dialog).getListView()
 				.getCheckedItemPosition();
