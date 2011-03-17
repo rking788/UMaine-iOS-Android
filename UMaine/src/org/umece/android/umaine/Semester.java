@@ -1,5 +1,6 @@
 package org.umece.android.umaine;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -8,44 +9,59 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
+import android.text.Spannable;
 
 public class Semester {
+	public static Semester getSemester(String loc, String year, String season, Activity activity) throws IOException {
+//		boolean mExternalStorageAvailable = false;
+//		boolean mExternalStorageWriteable = false;
+//		String state = Environment.getExternalStorageState();
+//		File dir = null;
+
+//		if (Environment.MEDIA_MOUNTED.equals(state)) {
+//		    // We can read and write the media
+//		    mExternalStorageAvailable = mExternalStorageWriteable = true;
+//		} else if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(state)) {
+//		    // We can only read the media
+//		    mExternalStorageAvailable = true;
+//		    mExternalStorageWriteable = false;
+//		} else {
+//		    // Something else is wrong. It may be one of many other states, but all we need
+//		    //  to know is we can neither read nor write
+//		    mExternalStorageAvailable = mExternalStorageWriteable = false;
+//		}
+		
+//		if (mExternalStorageWriteable) {
+//			dir = activity.getExternalFilesDir(null);
+//		} else {
+//			dir = activity.getFilesDir();
+//		}
+		
+		try {
+			return new Semester(loc + year + season + ".sem", activity);
+		} catch (Exception e) {
+			return new Semester(loc + year + season + ".sem", activity, loc, year, season);
+		}
+//		if ((dir != null) && (dir.listFiles().length > 0)) {
+//			for (File file : dir.listFiles()) {
+//				if (file.getName().equalsIgnoreCase(file_name)) {
+//					return new Semester(dir.listFiles()[0].getName(), activity);
+//				}
+//			}
+//			return new Semester(file_name, activity, "Orono", "2011", "Fall", "ECE");
+//		} else {
+//			return new Semester(file_name, activity, "Orono", "2011", "Fall", "ECE");
+//		}
+	}
 	private String campus;
 	private String year;
 	private String season;
-	private String department;
 	
 	private List<Course> courses;
 	private Activity act;
-	private String file;
 
-	/**
-	 * Creates an empty semester and the associated file
-	 * for storing classes.
-	 * 
-	 * @param  file  The file to be created to hold semester data.
-	 * @param  act  The activity that will be used to open the semester file.
-	 * 
-	 * @author jmonk
-	 */
-	public Semester(String file, Activity act, String campus, String year, String season, String department) throws IOException {
-		FileOutputStream fos = act.openFileOutput(file, Context.MODE_PRIVATE);
-		
-		String write_string;
-		write_string = campus + "," + year + "," + season + "," + department;
-		
-		fos.write(write_string.getBytes());
-		
-		fos.close();
-		
-		this.file = file;
-		this.act = act;
-		this.campus = campus;
-		this.department = department;
-		this.season = season;
-		this.year = year;
-		courses = new ArrayList<Course>();
-	}
+	private String file;
+	private ScheduleDrawable sd;
 
 	/**
 	 * Creates a semester loading data from an existing file.
@@ -74,7 +90,6 @@ public class Semester {
 		campus = line[0];
 		year = line[1];
 		season = line[2];
-		department = line[3];
 		
 		int i;
 		for (i = 1; i < pieces.length; i++) {
@@ -82,56 +97,41 @@ public class Semester {
 		}
 		
 		fis.close();
+		sd = null;
 	}
-
-	public String getFile() {
-		return file;
-	}
-
-	public void setCampus(String campus) {
+	
+	/**
+	 * Creates an empty semester and the associated file
+	 * for storing classes.
+	 * 
+	 * @param  file  The file to be created to hold semester data.
+	 * @param  act  The activity that will be used to open the semester file.
+	 * 
+	 * @author jmonk
+	 */
+	public Semester(String file, Activity act, String campus, String year, String season) throws IOException {
+		FileOutputStream fos = act.openFileOutput(file, Context.MODE_PRIVATE);
+		
+		String write_string;
+		write_string = campus + "," + year + "," + season;
+		
+		fos.write(write_string.getBytes());
+		
+		fos.close();
+		
+		this.file = file;
+		this.act = act;
 		this.campus = campus;
-	}
-
-	public String getCampus() {
-		return campus;
-	}
-
-	public void setYear(String year) {
-		this.year = year;
-	}
-
-	public String getYear() {
-		return year;
-	}
-
-	public void setSeason(String season) {
 		this.season = season;
-	}
-
-	public String getSeason() {
-		return season;
-	}
-
-	public void setDepartment(String department) {
-		this.department = department;
-	}
-
-	public String getDepartment() {
-		return department;
-	}
-
-	public void setCourses(List<Course> courses) {
-		this.courses = courses;
+		this.year = year;
+		courses = new ArrayList<Course>();
+		sd = null;
 	}
 	
-	public int size() {
-		return courses.size();
+	public void setScheduleDraw(ScheduleDrawable sd) {
+		this.sd = sd;
 	}
 
-	public Course getCourse(int i) {
-		return courses.get(i);
-	}
-	
 	/**
 	 * This adds a course to semester's file then to its local list of courses.
 	 * If an exception is thrown then the course is not added to the semester.
@@ -150,5 +150,95 @@ public class Semester {
 		fos.close();
 		
 		courses.add(new_course);
+		if (sd != null) {
+			sd.onChange();
+		}
+	}
+
+	public String getCampus() {
+		return campus;
+	}
+
+	public Course getCourse(int i) {
+		return courses.get(i);
+	}
+
+	public Course[] getCourses() {
+		Course[] ret = new Course[courses.size()];
+		int i = 0;
+		
+		for (Course course : courses) {
+			ret[i++] = course;
+		}
+		
+		return ret;
+	}
+
+	public String getFile() {
+		return file;
+	}
+
+	public String getSeason() {
+		return season;
+	}
+
+	public String getYear() {
+		return year;
+	}
+
+	public void remCourse(Course course) throws IOException {
+		File f = act.getFileStreamPath(file);
+		f.delete();
+		f = null;
+		
+		FileOutputStream fos = act.openFileOutput(file, Context.MODE_PRIVATE);
+		
+		String write_string;
+		write_string = campus + "," + year + "," + season;
+		
+		fos.write(write_string.getBytes());
+		
+		fos.close();
+		
+		List<Course> old_courses = courses;
+		courses = new ArrayList<Course>();
+		old_courses.remove(course);
+		
+		for (Course c : old_courses) {
+			addCourse(c);
+		}
+		if (sd != null) {
+			sd.onChange();
+		}
+	}
+
+	public void setCampus(String campus) {
+		this.campus = campus;
+	}
+	
+	public void setCourses(List<Course> courses) {
+		this.courses = courses;
+	}
+	
+	public void setSeason(String season) {
+		this.season = season;
+	}
+
+	public void setYear(String year) {
+		this.year = year;
+	}
+
+	public int size() {
+		return courses.size();
+	}
+
+	public Course getCourse(Spannable item) {
+		for (Course course : courses) {
+			if (course.getSpannable(null).equals(item)) {
+				return course;
+			}
+		}
+	
+		return null;
 	}
 }

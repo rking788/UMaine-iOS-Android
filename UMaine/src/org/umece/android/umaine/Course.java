@@ -1,5 +1,9 @@
 package org.umece.android.umaine;
 
+import android.content.Context;
+import android.text.Spannable;
+import android.widget.EditText;
+
 public class Course {
 	private String coursenum;
 	private String title;
@@ -9,6 +13,7 @@ public class Course {
 	private String times;
 	private String building;
 	private String roomnum;
+	private Spannable spannable;
 	
 	/**
 	 * Creates a course to be added to a semester.
@@ -35,6 +40,7 @@ public class Course {
 		building = cbuilding;
 		roomnum = croomnum;
 	}
+	
 
 	/**
 	 * Creates a course from the comma separated list found in each
@@ -45,7 +51,7 @@ public class Course {
 	 *					session_num, description, days, times, building, 
 	 *					room_num.
 	 *
-	 *@author jmonk
+	 * @author jmonk
 	 */
 	public Course(String[] strings) {
 		for (String string : strings) {
@@ -84,6 +90,19 @@ public class Course {
 		return_val = (return_val + roomnum + "\"");
 		
 		return return_val;
+	}
+	
+	public Spannable getSpannable(Context context) {
+		if (spannable != null) return spannable;
+		if (context == null) return null;
+		EditText newet = new EditText(context);
+        newet.setText(getTitle() + " " + times + " " + days);
+        Spannable str = newet.getText();
+//        str.setSpan(new StyleSpan(android.graphics.Typeface.ITALIC), 0, str.length()-1, 
+//        			Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        
+        spannable = str;
+        return spannable;
 	}
 	
 	public String getCoursenum() {

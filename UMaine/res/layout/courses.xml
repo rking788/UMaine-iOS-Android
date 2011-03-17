@@ -4,6 +4,7 @@
   	android:layout_width="fill_parent"
   	android:layout_height="fill_parent"
   	android:orientation="vertical">
+    <org.umece.android.umaine.ScheduleDrawable android:id="@+id/scheduledraw" android:layout_width="wrap_content" android:layout_height="100dip"></org.umece.android.umaine.ScheduleDrawable>
   	<TextView
   		android:id="@+id/courselist_directions"
   		android:layout_height="wrap_content"
