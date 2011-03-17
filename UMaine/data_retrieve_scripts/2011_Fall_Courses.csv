@@ -29,11 +29,11 @@ ANT,465,"Political Anthropology",0001,LEC,7266,TuTh 9:30AM - 10:45AM,Stevens Hal
 ANT,475,"Environmental Archaeology",0001,LEC,7268,MoWeFr 12:10PM - 1:00PM,Stevens Hall North 119,Staff,8/29/2011 - 12/9/2011
 ANT,492,"Capstone in Anthropology",0001,IND,3114,TBA,TBA,,8/29/2011 - 12/9/2011
 ANT,497,"Department Projects",0001,IND,1028,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+ANT,553,"Institutions and the Management of Common Pool Resources",0001,LEC,12579,TBA,TBA,James M Acheson,8/29/2011 - 12/9/2011
 ANT,597,"Advanced Topics in Anthropology",0001,IND,1029,TBA,TBA,Staff,8/29/2011 - 12/9/2011
 ARH,100,"Art and Human Experience",0860,LEC,3581,TuTh 2:00PM - 3:15PM,Lord Hall 100,Karen A Linehan,8/29/2011 - 12/9/2011
 ARH,155,"Art History I",0001,LEC,1030,TuTh 9:30AM - 10:45AM,Lord Hall 100,Michael H Grillo,8/29/2011 - 12/9/2011
-ARH,155,"Art History I",0990,LEC,4180,TBA,TBA,Michael H Grillo,8/29/2011 - 12/9/2011
-ARH,156,"Art History II",0001,LEC,1031,MoWe 9:30AM - 10:45AM,Lord Hall 100,Justin Wolff,8/29/2011 - 12/9/2011
+ARH,156,"Art and Visual Culture in the Modern Era",0001,LEC,1031,MoWe 9:30AM - 10:45AM,Lord Hall 100,Justin Wolff,8/29/2011 - 12/9/2011
 ARH,257,"Northern Renaissance Art",0001,LEC,7472,TuTh 11:00AM - 12:15PM,Lord Hall 200,Michael H Grillo,8/29/2011 - 12/9/2011
 ARH,270,"Topical Survey in History of Art",0869,LEC,7471,Th 6:00PM - 8:00PM,Lord Hall 100,Roger Dell,9/1/2011 - 9/1/2011,Th 6:00PM - 8:00PM,Lord Hall 100,Roger Dell,9/15/2011 - 9/15/2011,Th 6:00PM - 8:00PM,Lord Hall 100,Roger Dell,10/6/2011 - 10/6/2011,Th 6:00PM - 8:00PM,Lord Hall 100,Roger Dell,10/20/2011 - 10/20/2011,Th 6:00PM - 8:00PM,Lord Hall 100,Roger Dell,11/3/2011 - 11/3/2011,Th 6:00PM - 8:00PM,Lord Hall 100,Roger Dell,11/17/2011 - 11/17/2011,Th 6:00PM - 8:00PM,Lord Hall 100,Roger Dell,12/8/2011 - 12/8/2011
 ARH,351,"Art Theory and Criticism",0001,LEC,7473,We 3:10PM - 5:40PM,Lord Hall 225,Justin Wolff,8/29/2011 - 12/9/2011
@@ -81,8 +81,7 @@ AVS,145,"Animal Science",1003,LAB,1116,We 1:10PM - 3:00PM,Arranged,Charles R Wal
 AVS,145,"Animal Science",1004,LAB,1117,We 3:10PM - 5:00PM,Arranged,Charles R Wallace,8/29/2011 - 12/9/2011
 AVS,150,"History of the Human",0860,LEC,1118,Tu 6:00PM - 8:30PM,Nutting Hall 100,John D Blaisdell,8/29/2011 - 12/9/2011
 AVS,152,"History of Infectious Disease and Public Health",0860,LEC,1119,We 6:00PM - 8:30PM,Nutting Hall 100,John D Blaisdell,8/29/2011 - 12/9/2011
-AVS,243,"Centered Riding Principles of Equitation",0860,LEC,7381,Tu 5:00PM - 6:50PM,Deering Hall 17,Judith Louise Cross,8/29/2011 - 12/9/2011
-AVS,243,"Centered Riding Principles of Equitation",1860,LAB,7382,Th 12:00PM - 4:00PM,Dover Farm,Judith Louise Cross,8/29/2011 - 12/9/2011
+AVS,196,"Introduction to Equine Cooperative",0001,FEX,13841,Mo 7:00PM - 9:00PM,Witter Center Farm,Robert C Causey,8/29/2011 - 12/9/2011
 AVS,249,"Laboratory and Companion Animal Science",0990,LEC,4170,TBA,TBA,Robert C Causey,8/29/2011 - 12/9/2011
 AVS,303,"Equine Management Cooperative",0001,FEX,3509,Mo 7:00PM - 8:00PM,Witter Center Farm,Robert C Causey,8/29/2011 - 12/9/2011,Tu 9:30AM - 12:15PM,Hitchner Hall 147,Robert C Causey,8/29/2011 - 12/9/2011
 AVS,303,"Equine Management Cooperative",1001,LAB,3510,We 10:00AM - 11:50AM,Witter Center Farm,Robert C Causey,8/29/2011 - 12/9/2011
@@ -128,6 +127,7 @@ BIO,591,"Graduate Independent Study in Biology",0001,IND,2828,TBA,TBA,Harold B D
 BIO,597,"Special Topics in Biology",0001,IND,3976,TBA,TBA,Harold B Dowse,8/29/2011 - 12/9/2011
 BIO,597,"Special Topics in Biology",0002,IND,12096,Mo 10:00AM - 12:00PM,Murray Hall 214,,8/29/2011 - 12/9/2011
 BIO,597,"Special Topics in Biology",0003,IND,12340,MoTuWeThSu 8:00AM - 5:00PM,Arranged,Jasmine E Saros,10/2/2011 - 10/6/2011
+BIO,597,"Special Topics in Biology",0004,IND,13196,Tu 1:10PM - 4:00PM,Murray Hall 109,,8/29/2011 - 12/9/2011,Th 11:00AM - 12:15PM,Murray Hall 109,,8/29/2011 - 12/9/2011
 BIO,687,"Problems in Biological Sciences I",0001,IND,1213,TBA,TBA,Harold B Dowse,8/29/2011 - 12/9/2011
 BIO,699,"Graduate Thesis / Research",0001,THS,1214,TBA,TBA,Staff,8/29/2011 - 12/9/2011
 BIO,699,"Graduate Thesis / Research",0002,THS,3389,TBA,TBA,Clarissa A Henry,8/29/2011 - 12/9/2011
@@ -181,17 +181,15 @@ BMS,699,"Graduate Thesis / Research",0001,THS,3060,TBA,TBA,Carol H Kim,8/29/2011
 BUA,507,"Advanced Accounting",0001,LEC,1341,Th 5:00PM - 7:45PM,Donald P Corbett Business 215,David J Barrett,8/29/2011 - 12/9/2011
 BUA,527,"Business and Sustainability",0001,LEC,7523,Tu 3:10PM - 5:55PM,Donald P Corbett Business 218,Terry B Porter,8/29/2011 - 12/9/2011
 BUA,601,"Statistical Analysis and Modeling for Organizational Operations",0001,LEC,1342,Mo 6:15PM - 9:00PM,Donald P Corbett Business 207,Patti Collett Miles,8/29/2011 - 12/9/2011
-BUA,604,"Residency Week",0001,LEC,1343,MoTuWeThFrSaSu 4:00PM - 7:00PM,Arranged,Staff,8/6/2011 - 8/28/2011
 BUA,605,"Creating and Capturing Value in the Digital Economy",0001,LEC,7522,Tu 6:30PM - 9:15PM,Donald P Corbett Business 217,Nory B Jones,8/29/2011 - 12/9/2011
 BUA,605,"Creating and Capturing Value in the Digital Economy",0669,LEC,4268,Tu 6:30PM - 9:15PM,Fred Hutchinson Center,Nory B Jones,8/29/2011 - 12/9/2011
-BUA,630,"Industrial Relations and Personnel Management",0001,LEC,7524,Th 6:15PM - 9:00PM,Donald P Corbett Business 218,Staff,8/29/2011 - 12/9/2011
 BUA,639,"Contemporary Issues in International Business",0001,LEC,7525,We 3:10PM - 5:55PM,Donald P Corbett Business 215,Anne Canabal,8/29/2011 - 12/9/2011
 BUA,645,"Selected Advanced Topics in Business Administration",0001,LEC,3392,TuTh 2:00PM - 3:15PM,Donald P Corbett Business 217,Sharon S Tisher,8/29/2011 - 12/9/2011
 BUA,651,"Financial Management",0001,LEC,1344,We 6:30PM - 9:15PM,Donald P Corbett Business 215,Pankaj Agrrawal,8/29/2011 - 12/9/2011
 BUA,653,"Investment Management",0001,LEC,1345,Tu 6:30PM - 9:15PM,Donald P Corbett Business 215,Robert A Strong,8/29/2011 - 12/9/2011
 BUA,695,"MBA Internship",0001,RSG,1346,TBA,TBA,Nory B Jones,8/29/2011 - 12/9/2011
 BUA,697,"Field Experience in Accounting",0001,FEX,1347,TBA,TBA,Gloria L Vollmers,8/29/2011 - 12/9/2011
-BUA,698,"Independent Study",0001,IND,1348,TBA,TBA,Richard H Borgman,8/29/2011 - 12/9/2011
+BUA,698,"Independent Study",0001,IND,1348,TBA,TBA,Nory B Jones,8/29/2011 - 12/9/2011
 CEC,520,"Multicultural and Social Foundations of Counseling",0001,LEC,3411,Mo 4:10PM - 6:30PM,Shibles Hall 217,Annette F Nelligan,8/29/2011 - 12/9/2011
 CEC,523,"The Use of Standardized Tests and Inventories",0001,LEC,7628,Th 4:10PM - 6:30PM,Shibles Hall 217,Annette F Nelligan,8/29/2011 - 12/9/2011
 CEC,548,"Introduction to Mental Health and Community Counseling",0860,LEC,3303,Mo 4:10PM - 6:30PM,Shibles Hall 202,John Yasenchak,8/29/2011 - 12/9/2011
@@ -333,7 +331,7 @@ CMJ,690,"Directed Research",0003,RSG,1543,TBA,TBA,Kristin M Langellier,8/29/2011
 CMJ,690,"Directed Research",0004,RSG,1544,TBA,TBA,Laura A Lindenfeld,8/29/2011 - 12/9/2011
 CMJ,690,"Directed Research",0005,RSG,1545,TBA,TBA,Eric E Peterson,8/29/2011 - 12/9/2011
 CMJ,690,"Directed Research",0006,RSG,1546,TBA,TBA,John C Sherblom,8/29/2011 - 12/9/2011
-CMJ,693,"Reading for Master&#039;s Comprehensive",0001,IND,1550,TBA,TBA,Nathan E Stormer,8/29/2011 - 12/9/2011
+CMJ,693,"Reading for Master's Comprehensive",0001,IND,1550,TBA,TBA,Nathan E Stormer,8/29/2011 - 12/9/2011
 CMJ,695,"Graduate Internship",0001,RSG,1551,TBA,TBA,Claire F Sullivan,8/29/2011 - 12/9/2011
 CMJ,699,"Graduate Thesis / Research",0001,THS,1552,TBA,TBA,Paul R Grosswiler,8/29/2011 - 12/9/2011
 CMJ,699,"Graduate Thesis / Research",0002,THS,3109,TBA,TBA,Sunny Hughes,8/29/2011 - 12/9/2011
@@ -348,7 +346,6 @@ COS,103,"Introduction to Spreadsheets",1002,LAB,1562,We 1:10PM - 3:00PM,Neville 
 COS,104,"Introduction of Presentation Software",0990,LEC,4111,TBA,TBA,Carol A Roberts,8/29/2011 - 12/9/2011
 COS,115,"Web Design in HTML",0990,LEC,4150,TBA,TBA,Carol A Roberts,8/29/2011 - 12/9/2011
 COS,120,"Introduction to Programming I",0001,LEC,1563,MoWe 11:00AM - 11:50AM,Neville Hall 208,Carol A Roberts,8/29/2011 - 12/9/2011
-COS,120,"Introduction to Programming I",0860,LEC,3117,We 5:00PM - 7:30PM,Neville Hall 106,Carol A Roberts,8/29/2011 - 12/9/2011
 COS,120,"Introduction to Programming I",1001,LAB,1564,Fr 11:00AM - 11:50AM,Neville Hall 106,Carol A Roberts,8/29/2011 - 12/9/2011
 COS,120,"Introduction to Programming I",1002,LAB,1565,Fr 12:10PM - 1:00PM,Neville Hall 106,Carol A Roberts,8/29/2011 - 12/9/2011
 COS,120,"Introduction to Programming I",1003,LAB,1566,Fr 1:10PM - 2:00PM,Neville Hall 106,Carol A Roberts,8/29/2011 - 12/9/2011
@@ -427,6 +424,1034 @@ CSD,691,"Directed Research II",0003,RSG,1609,TBA,TBA,Allan B Smith,8/29/2011 - 1
 CSD,699,"Graduate Thesis / Research",0001,THS,1610,TBA,TBA,Nancy E Hall,8/29/2011 - 12/9/2011
 CSD,699,"Graduate Thesis / Research",0002,THS,1611,TBA,TBA,Judy P Walker,8/29/2011 - 12/9/2011
 CSD,699,"Graduate Thesis / Research",0003,THS,1612,TBA,TBA,Allan B Smith,8/29/2011 - 12/9/2011
+DAN,101,"Beginner Modern Dance I",0001,LEC,7258,TuTh 8:00AM - 9:15AM,Class of 1944 Hall 226,Ann P Ross,8/29/2011 - 12/9/2011
+DAN,101,"Beginner Modern Dance I",0860,LEC,3704,TuTh 6:00PM - 7:20PM,Class of 1944 Hall 226,Laren L Lynn,8/29/2011 - 12/9/2011
+DAN,102,"Beginner Ballet I",0500,LEC,3009,MoWeFr 8:00AM - 8:50AM,Class of 1944 Hall 226,Keith Robinson,8/29/2011 - 12/9/2011
+DAN,103,"Beginner Jazz I",0500,LEC,3011,TuTh 9:30AM - 10:45AM,Class of 1944 Hall 226,Ann P Ross,8/29/2011 - 12/9/2011
+DAN,105,"Beginner Tap",0500,LEC,3013,MoWe 10:00AM - 11:15AM,Class of 1944 Hall 224,Amy-Jane F Mooney,8/29/2011 - 12/9/2011
+DAN,130,"Ballroom and World Dance Forms",0500,LEC,3566,TuTh 12:30PM - 1:45PM,Class of 1944 Hall 226,Ann P Ross,8/29/2011 - 12/9/2011
+DAN,201,"Intermediate Modern Dance",0001,LEC,1613,TuTh 11:00AM - 12:15PM,Class of 1944 Hall 226,Ann P Ross,8/29/2011 - 12/9/2011
+DAN,202,"Intermediate Ballet",0001,LEC,11899,MoWe 11:00AM - 12:20PM,Class of 1944 Hall 226,Terry Daniel Lacy,8/29/2011 - 12/9/2011
+DAN,250,"Dance Composition I",0500,LEC,3014,We 6:00PM - 9:30PM,Class of 1944 Hall 226,Leon Dyjak,8/29/2011 - 12/9/2011
+DAN,297,"Introductory Topics in Dance",0001,LEC,7259,MoWe 9:00AM - 10:20AM,Class of 1944 Hall 226,Staff,8/29/2011 - 12/9/2011
+DIS,300,"Disability: Interaction of Human Diversity and Global Environment",0860,LEC,7732,Tu 4:00PM - 6:30PM,Corbett Hall 220,Stephen F Gilson,8/29/2011 - 12/9/2011
+DIS,400,"Disability as Diversity I",0860,LEC,1617,Mo 4:00PM - 6:30PM,Corbett Hall 220,Elizabeth Depoy,8/29/2011 - 12/9/2011
+DIS,480,"Independent Project in Disability Studies",0001,IND,1618,TBA,TBA,Elizabeth Depoy,8/29/2011 - 12/9/2011
+DIS,680,"Independent Study in Disability Studies",0001,IND,1619,TBA,TBA,,8/29/2011 - 12/9/2011
+EAD,510,"Educational Supervision",0001,LEC,7633,Th 5:00PM - 8:00PM,Merrill Hall 335,Richard H Ackerman,8/29/2011 - 12/9/2011
+EAD,551,"Dynamics of Change in Schools",0001,LEC,7634,We 5:00PM - 8:00PM,Merrill Hall 335,Richard H Ackerman,8/29/2011 - 12/9/2011
+EAD,560,"Functions and Theories of Educational Leadership",0001,LEC,3631,Th 4:30PM - 7:30PM,Merrill 228A,Paul D Knowles,8/29/2011 - 12/9/2011
+EAD,565,"Inquiry and Evaluation in School",0001,LEC,7676,TBA,TBA,Paul D Knowles,8/29/2011 - 12/9/2011
+EAD,565,"Inquiry and Evaluation in School",0002,LEC,7675,We 5:00PM - 8:00PM,Merrill Hall 114,George F Marnik,8/29/2011 - 12/9/2011
+EAD,565,"Inquiry and Evaluation in School",0003,LEC,7677,TBA,TBA,Sarah V Mackenzie,8/29/2011 - 12/9/2011
+EAD,616,"Resource Based Decision Making for School Leaders",0860,LEC,7635,Tu 4:30PM - 7:30PM,Merrill Hall 335,George F Marnik,8/29/2011 - 12/9/2011
+EAD,651,"Organizational Behavior in Education",0001,LEC,7643,TBA,TBA,Richard H Ackerman,8/29/2011 - 12/9/2011
+EAD,690,"Principal Internship",0001,RSG,7636,Th 4:30PM - 7:30PM,Merrill Hall 229,George F Marnik,8/29/2011 - 12/9/2011
+EAD,691,"Internship in Educational Leadership",0001,RSG,7637,Th 4:30PM - 7:30PM,Merrill Hall 229,George F Marnik,8/29/2011 - 12/9/2011
+EAD,692,"Superintendent Internship I",0001,RSG,7645,Fr 9:00AM - 2:00PM,Merrill Hall 330,Paul D Knowles,9/2/2011 - 9/2/2011,Fr 9:00AM - 2:00PM,Merrill Hall 330,Paul D Knowles,10/7/2011 - 10/7/2011,Fr 9:00AM - 2:00PM,Merrill Hall 330,Paul D Knowles,11/4/2011 - 11/4/2011,Fr 9:00AM - 2:00PM,Merrill Hall 330,Paul D Knowles,12/2/2011 - 12/2/2011
+EAD,698,"Special Topics in Educational Leadership",0001,IND,7641,TBA,TBA,George F Marnik,8/29/2011 - 12/9/2011
+EAD,698,"Special Topics in Educational Leadership",0002,IND,7644,TBA,TBA,Sarah V Mackenzie,8/29/2011 - 12/9/2011
+ECE,100,"Electrical and Computer Engineering Seminar",0001,SEM,3950,Mo 2:10PM - 3:00PM,Boardman Hall 310,Mohamad T Musavi,8/29/2011 - 12/9/2011
+ECE,101,"Introduction to Electrical and Computer Engineering",0001,LEC,1622,MoWeFr 10:00AM - 10:50AM,Little Hall 203,Staff,8/29/2011 - 12/9/2011
+ECE,101,"Introduction to Electrical and Computer Engineering",1001,LAB,1626,Mo 3:10PM - 6:00PM,Barrows Hall 221,Staff,8/29/2011 - 12/9/2011
+ECE,101,"Introduction to Electrical and Computer Engineering",1002,LAB,1623,Tu 2:10PM - 5:00PM,Barrows Hall 221,Staff,8/29/2011 - 12/9/2011
+ECE,101,"Introduction to Electrical and Computer Engineering",1003,LAB,1624,We 2:10PM - 5:00PM,Barrows Hall 221,Staff,8/29/2011 - 12/9/2011
+ECE,101,"Introduction to Electrical and Computer Engineering",1004,LAB,1625,Th 2:10PM - 5:00PM,Barrows Hall 221,Staff,8/29/2011 - 12/9/2011
+ECE,210,"Electrical Networks I",0001,LEC,1627,MoWeFr 11:00AM - 11:50AM,Little Hall 130,Duane Hanselman,8/29/2011 - 12/9/2011
+ECE,210,"Electrical Networks I",2001,REC,1628,Th 7:00PM - 9:00PM,Barrows Hall 119,Duane Hanselman,8/29/2011 - 12/9/2011
+ECE,275,"Sequential Logic Systems",0001,LEC,1629,MoWeFr 10:00AM - 10:50AM,Boardman Hall 310,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,275,"Sequential Logic Systems",1002,LAB,1630,Mo 2:10PM - 5:00PM,Barrows Hall 225A,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,275,"Sequential Logic Systems",1003,LAB,1631,Tu 2:10PM - 5:00PM,Barrows Hall 225A,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,275,"Sequential Logic Systems",1004,LAB,1632,We 2:10PM - 5:00PM,Barrows Hall 225A,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,275,"Sequential Logic Systems",1005,LAB,3184,Th 2:10PM - 5:00PM,Barrows Hall 225A,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,314,"Signals and Systems",0001,LEC,1633,MoWeFr 11:00AM - 11:50AM,Barrows Hall 119,Ali Abedi,8/29/2011 - 12/9/2011
+ECE,314,"Signals and Systems",2001,REC,1634,We 6:00PM - 8:00PM,Barrows Hall 125,Ali Abedi,8/29/2011 - 12/9/2011
+ECE,323,"Electric Power Conversion",0001,LEC,1635,TuTh 11:00AM - 12:15PM,Barrows Hall 131,Duane Hanselman,8/29/2011 - 12/9/2011
+ECE,342,"Electronics I",0001,LEC,1636,MoWeFr 9:00AM - 9:50AM,Jenness Hall 108,Donald M Hummels,8/29/2011 - 12/9/2011
+ECE,342,"Electronics I",1002,LAB,1638,Mo 3:10PM - 5:00PM,Barrows Hall 224,Donald M Hummels,8/29/2011 - 12/9/2011
+ECE,342,"Electronics I",1003,LAB,1639,Tu 3:10PM - 5:00PM,Barrows Hall 224,Donald M Hummels,8/29/2011 - 12/9/2011
+ECE,342,"Electronics I",1004,LAB,1640,We 3:10PM - 5:00PM,Barrows Hall 224,Donald M Hummels,8/29/2011 - 12/9/2011
+ECE,342,"Electronics I",1005,LAB,1641,Th 3:10PM - 5:00PM,Barrows Hall 224,Donald M Hummels,8/29/2011 - 12/9/2011
+ECE,342,"Electronics I",2001,REC,1637,Tu 6:00PM - 9:00PM,Arranged,Donald M Hummels,8/29/2011 - 12/9/2011
+ECE,351,"Fields and Waves",0001,LEC,1642,MoWeFr 1:10PM - 2:00PM,Barrows Hall 119,Mauricio Pereira Da Cunha,8/29/2011 - 12/9/2011
+ECE,351,"Fields and Waves",2001,REC,1643,Th 6:00PM - 8:00PM,Barrows Hall 125,Mauricio Pereira Da Cunha,8/29/2011 - 12/9/2011
+ECE,394,"Electrical and Computer Engineering Practice",0001,FEX,1644,TBA,TBA,Bruce E Segee,8/29/2011 - 12/9/2011
+ECE,402,"Electrical and Computer Engineering Design Project",0001,LEC,1646,TuTh 12:30PM - 1:45PM,Boardman Hall 210,,8/29/2011 - 12/9/2011
+ECE,403,"Electrical and Computer Engineering Design Project",0001,LEC,1647,TuTh 12:30PM - 1:45PM,Boardman Hall 210,,8/29/2011 - 12/9/2011
+ECE,417,"Introduction to Robotics",0001,LEC,1648,MoWeFr 12:10PM - 1:00PM,Barrows Hall 125,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,417,"Introduction to Robotics",1002,LAB,1649,Tu 3:10PM - 5:00PM,Barrows Hall 225B,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,417,"Introduction to Robotics",1003,LAB,1650,We 3:10PM - 5:00PM,Barrows Hall 225B,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,417,"Introduction to Robotics",1004,LAB,3185,Mo 3:10PM - 5:00PM,Barrows Hall 225B,Richard O Eason,8/29/2011 - 12/9/2011
+ECE,445,"Analysis and Design of Digital Integrated Circuits",0001,LEC,1651,TuTh 8:00AM - 9:15AM,Barrows Hall 125,David E Kotecki,8/29/2011 - 12/9/2011
+ECE,462,"Introduction to Basic Semiconductor Devices and Associated Circuit Models",0001,LEC,7574,MoWeFr 10:00AM - 10:50AM,Barrows Hall 133,Nuri W Emanetoglu,8/29/2011 - 12/9/2011
+ECE,464,"Microelectronics Science and Engineering",0001,LEC,7573,TuTh 11:00AM - 12:15PM,Merrill Hall 114,Rosemary L Smith,8/29/2011 - 12/9/2011
+ECE,471,"Embedded Systems",0001,LEC,1652,TuTh 9:30AM - 10:45AM,Barrows Hall 130,Yifeng Zhu,8/29/2011 - 12/9/2011
+ECE,473,"Computer Architecture and Organization",0001,LEC,1653,TuTh 2:00PM - 3:15PM,Boardman Hall 216,Yifeng Zhu,8/29/2011 - 12/9/2011
+ECE,473,"Computer Architecture and Organization",1001,LAB,3959,Tu 3:30PM - 5:15PM,Barrows Hall 227,Yifeng Zhu,8/29/2011 - 12/9/2011
+ECE,473,"Computer Architecture and Organization",1002,LAB,3960,Th 3:30PM - 5:15PM,Barrows Hall 227,Yifeng Zhu,8/29/2011 - 12/9/2011
+ECE,478,"Industrial Computer Control",0001,LEC,3606,TuTh 11:00AM - 12:15PM,Barrows Hall 123,Bruce E Segee,8/29/2011 - 12/9/2011
+ECE,498,"Selected Topics in Electrical and Computer Engineering",0001,IND,3827,Tu 1:00PM - 1:50PM,Barrows Hall 228,Duane Hanselman,8/29/2011 - 12/9/2011
+ECE,498,"Selected Topics in Electrical and Computer Engineering",0002,IND,7577,Th 10:00AM - 10:50AM,Barrows Hall 123,Staff,8/29/2011 - 12/9/2011
+ECE,498,"Selected Topics in Electrical and Computer Engineering",0288,IND,7996,Th 10:00AM - 10:50AM,On-line Course,Staff,8/29/2011 - 12/9/2011
+ECE,515,"Random Variables and Stochastic Processes",0001,LEC,7576,TuTh 9:30AM - 10:45AM,Barrows Hall 126,Ali Abedi,8/29/2011 - 12/9/2011
+ECE,515,"Random Variables and Stochastic Processes",0288,LEC,3901,TBA,TBA,Ali Abedi,8/29/2011 - 12/9/2011
+ECE,523,"Mathematical Methods in Electrical Engineering",0001,LEC,7998,TBA,TBA,Duane Hanselman,8/29/2011 - 12/9/2011
+ECE,543,"Microelectronic Devices I",0001,LEC,7575,TuTh 11:00AM - 12:15PM,Barrows Hall 124,Nuri W Emanetoglu,8/29/2011 - 12/9/2011
+ECE,547,"VLSI Design/Layout",0001,LEC,3610,TuTh 2:00PM - 3:15PM,Barrows Hall 123,David E Kotecki,8/29/2011 - 12/9/2011
+ECE,565,"Solid State Device Theory I",0001,LEC,3608,TuTh 8:00AM - 9:15AM,Barrows Hall 123,John F Vetelino,8/29/2011 - 12/9/2011
+ECE,590,"Neural Networks",0001,LEC,3609,MoWe 8:00AM - 9:15AM,Barrows Hall 123,Mohamad T Musavi,8/29/2011 - 12/9/2011
+ECE,662,"Microwave Acoustics",0001,LEC,7999,TBA,TBA,John F Vetelino,8/29/2011 - 12/9/2011
+ECE,667,"Solid State Device Theory II",0001,LEC,9765,TuTh 3:30PM - 4:45PM,Barrows Hall 131,John F Vetelino,8/29/2011 - 12/9/2011
+ECE,699,"Graduate Thesis / Research",0001,THS,1654,TBA,TBA,John F Vetelino,8/29/2011 - 12/9/2011
+ECE,699,"Graduate Thesis / Research",0002,THS,3178,TBA,TBA,Ali Abedi,8/29/2011 - 12/9/2011
+ECE,699,"Graduate Thesis / Research",0003,THS,3179,TBA,TBA,Mauricio Pereira Da Cunha,8/29/2011 - 12/9/2011
+ECE,699,"Graduate Thesis / Research",0004,THS,3175,TBA,TBA,Bruce E Segee,8/29/2011 - 12/9/2011
+ECE,699,"Graduate Thesis / Research",0005,THS,3176,TBA,TBA,Mohamad T Musavi,8/29/2011 - 12/9/2011
+ECE,699,"Graduate Thesis / Research",0006,THS,3177,TBA,TBA,Yifeng Zhu,8/29/2011 - 12/9/2011
+ECO,100,"Intro to Economics",0001,LEC,4285,MoWeFr 9:00AM - 9:50AM,Nutting Hall 100,Stephen D Reiling,8/29/2011 - 12/9/2011
+ECO,100,"Intro to Economics",0990,LEC,4157,TBA,TBA,Todd M Gabe,8/29/2011 - 12/9/2011
+ECO,117,"Issues and Opportunities in Economics",0001,LEC,4283,Tu 2:00PM - 2:50PM,Murray Hall 106,Todd M Gabe,8/29/2011 - 12/9/2011
+ECO,120,"Principles of Microeconomics",0001,LEC,4286,MoWeFr 10:00AM - 10:50AM,Little Hall 120,Caroline Lundquist Noblet,8/29/2011 - 12/9/2011
+ECO,120,"Principles of Microeconomics",0002,LEC,4287,TuTh 2:00PM - 3:15PM,Barrows Hall 125,Hsiang-Tai Cheng,8/29/2011 - 12/9/2011
+ECO,120,"Principles of Microeconomics",0003,LEC,4288,Th 9:30AM - 10:45AM,Little Hall 130,Caroline Lundquist Noblet,8/29/2011 - 12/9/2011
+ECO,120,"Principles of Microeconomics",0500,LEC,13132,Tu 6:00PM - 8:30PM,Murray Hall 102,Aaron Kinyu Hoshide,8/29/2011 - 12/9/2011
+ECO,121,"Principles of Macroeconomics",0001,LEC,4289,TuTh 11:00AM - 12:15PM,Little Hall 120,Michael R Montgomery,8/29/2011 - 12/9/2011
+ECO,121,"Principles of Macroeconomics",0002,LEC,7579,MoWeFr 11:00AM - 11:50AM,Little Hall 120,Staff,8/29/2011 - 12/9/2011
+ECO,190,"World Food Supply",0990,LEC,7582,TBA,On-line Course,Aaron Kinyu Hoshide,8/29/2011 - 12/9/2011
+ECO,321,"Intermediate Macroeconomics",0001,LEC,4290,TuTh 2:00PM - 3:15PM,Shibles Hall 316,Michael R Montgomery,8/29/2011 - 12/9/2011
+ECO,339,"International Finance",0001,LEC,4292,MoWeFr 1:10PM - 2:00PM,Lord Hall 100,Adrienne A Kearney,8/29/2011 - 12/9/2011
+ECO,342,"Health Economics",0001,LEC,7580,TuTh 3:30PM - 4:45PM,Stevens Hall North 119,Karen J Buhr,8/29/2011 - 12/9/2011
+ECO,350,"Intermediate Microeconomic Theory",0001,LEC,4294,MoWeFr 9:00AM - 9:50AM,Stevens Hall 155,James D Leiby,8/29/2011 - 12/9/2011
+ECO,366,"Applied Data Analysis for Resource Economics and Policy",0001,LEC,3235,MoWeFr 10:00AM - 10:50AM,Neville Hall 227,Todd M Gabe,8/29/2011 - 12/9/2011
+ECO,371,"Public Finance and Fiscal Policy",0001,LEC,4296,TuTh 12:30PM - 1:45PM,Hitchner Hall 203,Philip A Trostel,8/29/2011 - 12/9/2011
+ECO,377,"Introduction to Natural Resource Economics and Policy",0001,LEC,3236,TuTh 9:30AM - 10:45AM,Stevens Hall North 237,Karen J Buhr,8/29/2011 - 12/9/2011
+ECO,395,"Field Experience",0001,FEX,3243,TBA,TBA,George K Criner,8/29/2011 - 12/9/2011
+ECO,410,"Accelerated Introductory Economics",0990,LEC,3428,TBA,On-line Course,Caroline Lundquist Noblet,8/29/2011 - 12/9/2011
+ECO,420,"Intermediate Microeconomic Theory with Calculus",0001,LEC,4297,TuTh 11:00AM - 12:15PM,Nutting Hall 257,James D Leiby,8/29/2011 - 12/9/2011
+ECO,422,"Rural Economic Development",0001,LEC,7583,MoWeFr 12:00PM - 12:50PM,Winslow Hall 201,Todd M Gabe,8/29/2011 - 12/9/2011
+ECO,477,"Economics of Environmental and Resource Management",0001,LEC,7584,TuTh 11:00AM - 12:15PM,Winslow Hall 201,Stephen D Reiling,8/29/2011 - 12/9/2011
+ECO,480,"Introduction to Mathematical Economics",0001,LEC,7581,MoWeFr 2:10PM - 3:00PM,Winslow Hall 201,James D Leiby,8/29/2011 - 12/9/2011
+ECO,485,"Introduction to Economic Statistics and Econometrics",0001,LEC,4298,TuTh 9:30AM - 10:45AM,Winslow Hall 201,Hsiang-Tai Cheng,8/29/2011 - 12/9/2011
+ECO,496,"Field Experience in Economics",0001,FEX,4299,TBA,TBA,George K Criner,8/29/2011 - 12/9/2011
+ECO,497,"Independent Studies",0001,IND,3241,TBA,TBA,George K Criner,8/29/2011 - 12/9/2011
+ECO,497,"Independent Studies",0002,IND,3242,TBA,TBA,Gregory K White,8/29/2011 - 12/9/2011
+ECO,511,"Macroeconomic Theory",0001,LEC,7585,MoWe 3:10PM - 4:45PM,Stevens Hall North 119,Adrienne A Kearney,8/29/2011 - 12/9/2011
+ECO,514,"Microeconomic Theory",0001,LEC,4300,TuTh 3:30PM - 4:45PM,Stevens Hall 370,Philip A Trostel,8/29/2011 - 12/9/2011
+ECO,527,"State and Local Economic Analysis",0001,LEC,7587,MoWeFr 12:00PM - 12:50PM,Winslow Hall 201,Todd M Gabe,8/29/2011 - 12/9/2011
+ECO,530,"Econometrics",0001,LEC,4301,TuTh 9:30AM - 10:45AM,Hitchner Hall 157,Gary L Hunt,8/29/2011 - 12/9/2011
+ECO,581,"Sustainable Resource Systems and Public Policy",0001,SEM,7586,Mo 3:10PM - 5:40PM,Winslow Hall 201,Timothy Waring,8/29/2011 - 12/9/2011
+ECO,590,"Advanced Topics in Economics",0001,IND,4291,TuTh 2:00PM - 3:15PM,Shibles Hall 316,Michael R Montgomery,8/29/2011 - 12/9/2011
+ECO,593,"Graduate Seminar",0001,SEM,3676,We 3:10PM - 5:40PM,Winslow Hall 201,Linda Silka,8/29/2011 - 12/9/2011
+ECO,595,"Graduate Internship in Economics",0001,RSG,4302,TBA,TBA,George K Criner,8/29/2011 - 12/9/2011
+ECO,597,"Independent Studies",0001,IND,3467,TBA,TBA,George K Criner,8/29/2011 - 12/9/2011
+ECO,597,"Independent Studies",0002,IND,3678,TBA,TBA,Kathleen P Bell,8/29/2011 - 12/9/2011
+ECO,699,"Graduate Thesis / Research",0001,THS,4303,TBA,TBA,Mario F Teisl,8/29/2011 - 12/9/2011
+ECP,101,"Technical Writing for Mechanical Engineers I",0001,LEC,2986,Tu 8:00AM - 9:15AM,Deering Hall 17,Murray T Callaway,8/29/2011 - 12/9/2011
+ECP,101,"Technical Writing for Mechanical Engineers I",0002,LEC,2987,We 9:00AM - 9:50AM,Barrows Hall 133,Murray T Callaway,8/29/2011 - 12/9/2011
+ECP,101,"Technical Writing for Mechanical Engineers I",0003,LEC,2988,We 10:00AM - 10:50AM,Donald P Corbett Business 109,Murray T Callaway,8/29/2011 - 12/9/2011
+ECP,101,"Technical Writing for Mechanical Engineers I",0004,LEC,3938,Tu 8:00AM - 9:15AM,Shibles Hall 217,Murray T Callaway,8/29/2011 - 12/9/2011
+ECP,342,"Technical Writing Workshop for Electrical Networks II",0001,LAB,1655,Mo 2:10PM - 3:00PM,Barrows Hall 131,Scott D Peterson,8/29/2011 - 12/9/2011
+ECP,342,"Technical Writing Workshop for Electrical Networks II",0002,LAB,3121,Tu 2:10PM - 3:00PM,Barrows Hall 131,Scott D Peterson,8/29/2011 - 12/9/2011
+ECP,403,"Technical Writing Workshop for Electrical and Computer Engineering Design Project",0001,LAB,3084,We 2:10PM - 3:00PM,Little Hall 212,Scott D Peterson,8/29/2011 - 12/9/2011
+ECP,413,"Civil Engineering Technical Writing II",0001,LEC,3305,Tu 4:10PM - 5:00PM,Bennett Hall 141,Elizabeth A Payne,8/29/2011 - 12/9/2011
+EDB,202,"Education in a Multicultural Society",0001,LEC,1656,TuTh 9:30AM - 10:45AM,Shibles Hall 316,Cheryl A Robertson,8/29/2011 - 12/9/2011
+EDB,202,"Education in a Multicultural Society",0002,LEC,1657,TuTh 12:30PM - 1:45PM,Shibles Hall 201,Cheryl A Robertson,8/29/2011 - 12/9/2011
+EDB,202,"Education in a Multicultural Society",0003,LEC,1658,TuTh 9:30AM - 10:45AM,Shibles Hall 216,Phyllis Brazee,8/29/2011 - 12/9/2011
+EDB,202,"Education in a Multicultural Society",0004,LEC,1659,TuTh 12:30PM - 1:45PM,Shibles Hall 216,Phyllis Brazee,8/29/2011 - 12/9/2011
+EDB,202,"Education in a Multicultural Society",0005,LEC,1660,TuTh 12:30PM - 1:45PM,Shibles Hall 316,Paul Worthington Frost,8/29/2011 - 12/9/2011
+EDB,202,"Education in a Multicultural Society",0006,LEC,3746,We 4:30PM - 7:00PM,Shibles Hall 313,Cheryl A Robertson,8/29/2011 - 12/9/2011
+EDB,204,"The Teaching Process",0001,LEC,1662,TuTh 9:30AM - 10:45AM,Shibles Hall 320,Dennis R King,8/29/2011 - 12/9/2011
+EDB,204,"The Teaching Process",0002,LEC,2849,TuTh 11:00AM - 12:15PM,Shibles Hall 320,Dennis R King,8/29/2011 - 12/9/2011
+EDB,204,"The Teaching Process",0003,LEC,1661,TuTh 12:30PM - 1:45PM,Shibles Hall 320,Dennis R King,8/29/2011 - 12/9/2011
+EDB,221,"Educational Psychology",0001,LEC,1663,TuTh 11:00AM - 12:15PM,Little Hall 130,Sidney Mitchell,8/29/2011 - 12/9/2011
+EDG,298,"Teacher Candidacy Field Experience",0001,FEX,2977,We 5:00PM - 8:00PM,Dunn Hall 115,Mary Beth Willett,8/29/2011 - 12/9/2011
+EDG,400,"Field Observation",0001,FEX,1664,TBA,TBA,Pamela L Kimball,8/29/2011 - 12/9/2011
+EDG,400,"Field Observation",0002,FEX,1665,TBA,TBA,Staff,TBA
+EDG,400,"Field Observation",0003,FEX,1666,TBA,TBA,Pamela L Kimball,8/29/2011 - 12/9/2011
+EDG,400,"Field Observation",0004,FEX,1667,TBA,TBA,Pamela L Kimball,8/29/2011 - 12/9/2011
+EDG,400,"Field Observation",0005,FEX,1668,TBA,TBA,Pamela L Kimball,8/29/2011 - 12/9/2011
+EDG,400,"Field Observation",0006,FEX,1669,TBA,TBA,Staff,TBA
+EDG,499,"Alternative Practicum and Seminar in Education",0001,RSG,2943,TBA,TBA,Pamela L Kimball,8/29/2011 - 12/9/2011
+EDG,657,"Education Practicum",0001,RSG,2922,TBA,TBA,Abigail C Garthwait,8/29/2011 - 12/9/2011
+EDG,657,"Education Practicum",0002,RSG,1670,TBA,TBA,Maryellen Mahoney-O'Neil,8/29/2011 - 12/9/2011
+EDG,657,"Education Practicum",0003,RSG,1671,TBA,TBA,John E Maddaus,8/29/2011 - 12/9/2011
+EDG,657,"Education Practicum",0004,RSG,1672,TBA,TBA,Robert A Lehnhard,8/29/2011 - 12/9/2011
+EDG,657,"Education Practicum",0005,RSG,1673,TBA,TBA,Stephen Butterfield,8/29/2011 - 12/9/2011
+EDG,657,"Education Practicum",0006,RSG,1675,TBA,TBA,Richard B Kent,8/29/2011 - 12/9/2011
+EDG,691,"Graduate Apprenticeship",0001,IND,1682,TBA,TBA,Robert A Lehnhard,8/29/2011 - 12/9/2011
+EDG,691,"Graduate Apprenticeship",0002,IND,1684,TBA,TBA,Stephen Butterfield,8/29/2011 - 12/9/2011
+EDG,693,"Educational Internship",0001,RSG,1685,TBA,TBA,Abigail C Garthwait,8/29/2011 - 12/9/2011
+EDG,693,"Educational Internship",0002,RSG,4028,TBA,TBA,John E Maddaus,8/29/2011 - 12/9/2011
+EDH,500,"Seminar in Social Context of Education",0001,SEM,12339,We 5:00PM - 7:30PM,Donald P Corbett Business 109,John E Maddaus,8/29/2011 - 12/9/2011
+EDS,320,"Educational Assessment",0001,LEC,1686,TuTh 2:00PM - 3:15PM,Little Hall 110,Sidney Mitchell,8/29/2011 - 12/9/2011
+EDS,510,"Introduction to Educational Research",0001,LEC,3768,Th 5:00PM - 7:30PM,Shibles Hall 313,Shihfen Tu,8/29/2011 - 12/9/2011
+EDS,520,"Educational Assessment",0001,LEC,1687,We 5:00PM - 7:30PM,Shibles Hall 201,Brian E Doore,8/29/2011 - 12/9/2011
+EDS,520,"Educational Assessment",0002,LEC,7696,We 11:30AM - 2:00PM,Shibles Hall 316,Brian E Doore,8/29/2011 - 12/9/2011
+EDS,521,"Statistical Methods in Education I",0001,LEC,1689,Tu 5:00PM - 7:30PM,Shibles Hall 201,Shihfen Tu,8/29/2011 - 12/9/2011
+EDS,522,"Statistical Methods in Education II",0860,LEC,7640,Tu 5:00PM - 7:30PM,Shibles Hall 311,Craig A Mason,8/29/2011 - 12/9/2011
+EDS,571,"Advanced Qualitative Research",0860,LEC,8913,Th 5:00PM - 7:30PM,Shibles Hall 320,Staff,8/29/2011 - 12/9/2011
+EDS,643,"Seminar in School District Leadership",0001,SEM,7638,Tu 5:00PM - 8:00PM,Merrill 228A,Paul D Knowles,8/29/2011 - 12/9/2011
+EDS,699,"Graduate Thesis / Research",0001,THS,1691,TBA,TBA,Dorothy T Breen,8/29/2011 - 12/9/2011
+EDS,699,"Graduate Thesis / Research",0003,THS,1693,TBA,TBA,Janice V Kristo,8/29/2011 - 12/9/2011
+EDS,699,"Graduate Thesis / Research",0005,THS,1695,TBA,TBA,Robert A Lehnhard,8/29/2011 - 12/9/2011
+EDS,699,"Graduate Thesis / Research",0006,THS,1696,TBA,TBA,Phyllis Brazee,8/29/2011 - 12/9/2011
+EDS,699,"Graduate Thesis / Research",0009,THS,1699,TBA,TBA,Stephen Butterfield,8/29/2011 - 12/9/2011
+EDS,699,"Graduate Thesis / Research",0012,THS,1702,TBA,TBA,Sarah V Mackenzie,8/29/2011 - 12/9/2011
+EDT,400,"Computers in Education",0001,LEC,1708,TuTh 11:00AM - 12:15PM,Shibles Hall 35,Staff,8/29/2011 - 12/9/2011
+EDT,400,"Computers in Education",0002,LEC,1709,TuTh 12:30PM - 1:45PM,Shibles Hall 35,Staff,8/29/2011 - 12/9/2011
+EDT,400,"Computers in Education",0003,LEC,7655,TBA,TBA,Abigail C Garthwait,8/29/2011 - 12/9/2011
+EDT,520,"Methods of Teaching with Computer Technology",0001,LEC,7657,We 5:00PM - 7:30PM,Shibles Hall 35,Staff,8/29/2011 - 12/9/2011
+EDT,520,"Methods of Teaching with Computer Technology",0002,LEC,7875,TBA,TBA,Jason K Baack,8/29/2011 - 12/9/2011
+EDT,520,"Methods of Teaching with Computer Technology",0003,LEC,7656,Mo 4:00PM - 7:00PM,Arranged,Elaine M Bartley,9/12/2011 - 12/12/2011
+EDT,520,"Methods of Teaching with Computer Technology",0665,LEC,8889,Mo 5:30PM - 8:00PM,Fred Hutchinson Center,Jason K Baack,8/29/2011 - 12/9/2011
+EDT,540,"Instructional Design",0990,LEC,4140,TBA,TBA,Yurui Zhen,8/29/2011 - 12/9/2011
+EDT,550,"Video Communication in the 21st Century",0990,LEC,4183,TBA,TBA,Jason K Baack,8/29/2011 - 12/9/2011
+EDT,598,"Special Topics in Instructional Technology",0001,IND,7658,TBA,TBA,Abigail C Garthwait,8/29/2011 - 12/9/2011
+EDT,598,"Special Topics in Instructional Technology",0002,IND,7660,Tu 4:00PM - 7:00PM,Arranged,Elaine M Bartley,9/13/2011 - 12/13/2011
+EDT,598,"Special Topics in Instructional Technology",0003,IND,11651,TBA,TBA,Jason K Baack,8/29/2011 - 12/9/2011
+EDT,598,"Special Topics in Instructional Technology",0990,IND,7659,TBA,TBA,Abigail C Garthwait,8/29/2011 - 12/9/2011
+EDT,616,"Seminar in Educational Media",0001,SEM,3214,Tu 4:00PM - 6:30PM,Shibles Hall 11,Abigail C Garthwait,8/29/2011 - 12/9/2011
+EDU,590,"Topics in Education",0860,LEC,7674,Th 5:00PM - 8:00PM,Shibles Hall 311,,8/29/2011 - 12/9/2011
+EDW,472,"Workshop in Secondary Education (Activity)",0001,LEC,2855,Tu 9:00AM - 11:45AM,Shibles Hall 201,Richard B Kent,8/29/2011 - 12/9/2011
+EDW,472,"Workshop in Secondary Education (Activity)",0002,LEC,3213,We 12:00AM - 12:00AM,Arranged,Richard B Kent,8/29/2011 - 12/9/2011
+EEL,542,"Writing and the Young Child: Birth to 8",0001,LEC,7626,Tu 5:00PM - 8:00PM,Merrill Hall 114,Victoria S Bennett-Armistead,8/29/2011 - 12/9/2011
+EES,100,"Human Population and the Global Environment",0001,LEC,1710,MoWeFr 2:10PM - 3:00PM,Donald P Corbett Business 100,Staff,8/29/2011 - 12/9/2011
+EES,324,"Environmental Protection Law and Policy",0001,LEC,1711,TuTh 2:00PM - 3:15PM,Donald P Corbett Business 217,Sharon S Tisher,8/29/2011 - 12/9/2011
+EES,400,"Senior Paper in Ecology and Environmental Sciences",0001,IND,1712,Mo 12:10PM - 1:00PM,Stevens Hall 310,Tsutomu Ohno,8/29/2011 - 12/9/2011
+EES,489,"Critical Issues in Ecology and Environmental Sciences Policy",0001,LEC,1713,We 11:00AM - 12:30PM,Boardman Hall 209,M Susan Erich,8/29/2011 - 12/9/2011
+EES,497,"Independent Studies in Ecology and Environmental Sciences",0001,IND,1714,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+EES,590,"Special Topics in Ecology and Environmental Science",0001,IND,1715,TBA,TBA,Judith M Rhymer,8/29/2011 - 12/9/2011
+EES,590,"Special Topics in Ecology and Environmental Science",0002,IND,1716,TBA,TBA,Laura A Lindenfeld,8/29/2011 - 12/9/2011
+EES,699,"Graduate Thesis / Research",0001,THS,1717,TBA,TBA,Judith M Rhymer,8/29/2011 - 12/9/2011
+EET,111,"DC Circuit Analysis",0001,LEC,1719,TuTh 12:30PM - 1:45PM,Bennett Hall 140,Judith Ellen Pearse,8/29/2011 - 12/9/2011
+EET,111,"DC Circuit Analysis",1001,LAB,1720,Tu 3:10PM - 6:00PM,Barrows Hall 31,Keith E Hamilton,8/29/2011 - 12/9/2011
+EET,241,"Analog Circuit Fundamentals",0001,LEC,1721,TuTh 1:00PM - 2:15PM,Jenness Hall 108,John W Allen,8/29/2011 - 12/9/2011
+EET,241,"Analog Circuit Fundamentals",1001,LAB,1722,Mo 5:00PM - 7:00PM,Barrows Hall 31,John W Allen,8/29/2011 - 12/9/2011
+EET,275,"Digital Electronics",0001,LEC,1723,Tu 10:00AM - 12:15PM,Barrows Hall 28,Judith Ellen Pearse,8/29/2011 - 12/9/2011
+EET,321,"Industrial Power and Sequential Automation",0001,LEC,1725,TuTh 9:30AM - 10:45AM,Boardman Hall 107,Scott C Dunning,8/29/2011 - 12/9/2011
+EET,321,"Industrial Power and Sequential Automation",1001,LAB,1726,We 2:10PM - 5:00PM,Barrows Hall 27,Scott C Dunning,8/29/2011 - 12/9/2011
+EET,330,"Electrical Applications",0001,LEC,1727,TuTh 12:30PM - 1:45PM,Bennett Hall 140,Judith Ellen Pearse,8/29/2011 - 12/9/2011
+EET,330,"Electrical Applications",1001,LAB,1728,Tu 9:00AM - 11:50AM,Barrows Hall 31,Keith E Hamilton,8/29/2011 - 12/9/2011
+EET,330,"Electrical Applications",1002,LAB,1729,Th 9:00AM - 11:50AM,Barrows Hall 31,S David Dvorak,8/29/2011 - 12/9/2011
+EET,386,"Project Management",0001,LEC,7605,MoWeFr 12:10PM - 1:00PM,Boardman Hall 210,Judith Ellen Pearse,8/29/2011 - 12/9/2011
+EET,394,"Electrical Engineering Technology Practice",0001,RSG,1730,TBA,TBA,John W Allen,8/29/2011 - 12/9/2011
+EET,424,"Introduction to Electromechanical Systems",0001,LEC,1731,MoWeFr 11:00AM - 11:50AM,Boardman Hall 216,S David Dvorak,8/29/2011 - 12/9/2011
+EET,424,"Introduction to Electromechanical Systems",1001,LAB,1732,Mo 2:10PM - 5:00PM,Machine Tool Laboratory 115,S David Dvorak,8/29/2011 - 12/9/2011,Mo 2:10PM - 5:00PM,Machine Tool Laboratory 113,S David Dvorak,8/29/2011 - 12/9/2011
+EET,451,"Senior Design Project II",0001,LEC,1733,Tu 2:10PM - 3:00PM,Barrows Hall 119,Thomas Christensen,8/29/2011 - 12/9/2011
+EET,451,"Senior Design Project II",1001,LAB,1734,Tu 3:10PM - 5:00PM,Barrows Hall 24,Thomas Christensen,8/29/2011 - 12/9/2011
+EET,498,"Selected Topics in Electrical Engineering Technology",0002,IND,3982,Fr 11:00AM - 11:50AM,Barrows Hall 126,Judith Ellen Pearse,8/29/2011 - 12/9/2011
+EET,498,"Selected Topics in Electrical Engineering Technology",0200,IND,3936,Fr 11:00AM - 11:50AM,On-line Course,Judith Ellen Pearse,8/29/2011 - 12/9/2011
+EET,498,"Selected Topics in Electrical Engineering Technology",0288,IND,3904,TuTh 12:30PM - 1:45PM,Arranged,S David Dvorak,8/29/2011 - 12/9/2011
+EET,498,"Selected Topics in Electrical Engineering Technology",0984,IND,3712,TuTh 12:30PM - 1:45PM,Shibles Hall 207,S David Dvorak,8/29/2011 - 12/9/2011
+EET,498,"Selected Topics in Electrical Engineering Technology",0994,IND,4188,TBA,On-line Course,S David Dvorak,8/29/2011 - 12/9/2011
+ELL,470,"Methods of Teaching English as a Second Language",0001,LEC,2937,Th 5:00PM - 8:00PM,Barrows Hall 130,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+ELL,475,"Curriculum Development in English as a Second Language/English as a Foreign Language Contexts",0869,LEC,1318,Sa 9:00AM - 11:00AM,Little Hall 212,Shelly V Chasse-Johndro,9/10/2011 - 9/10/2011
+ELL,570,"Methods of Teaching English as a Second Language",0001,LEC,3680,Th 5:00PM - 8:00PM,Barrows Hall 130,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+ELL,575,"Curriculum and Development in English as a Second Language (ESL) Context",0869,LEC,9597,Sa 9:00AM - 11:00AM,Little Hall 212,Shelly V Chasse-Johndro,9/10/2011 - 9/10/2011
+EMA,314,"Teaching Mathematics in Elementary School",0001,LEC,1742,Tu 9:30AM - 11:50AM,Shibles Hall 313,Eric A Pandiscio,8/29/2011 - 12/9/2011
+EMA,314,"Teaching Mathematics in Elementary School",0002,LEC,1743,We 9:30AM - 11:50AM,Shibles Hall 313,Eric A Pandiscio,8/29/2011 - 12/9/2011
+EMA,551,"Newer Practices in Mathematics Education",0001,LEC,1744,Mo 1:00PM - 3:30PM,Shibles Hall 313,Eric A Pandiscio,8/29/2011 - 12/9/2011
+ENG,507,"Graduate Fiction Workshop",0001,LEC,7462,Th 6:00PM - 8:30PM,Neville Hall 406,Staff,8/29/2011 - 12/9/2011
+ENG,508,"Graduate Poetry Workshop",0001,LEC,8919,We 6:00PM - 8:30PM,Neville Hall 406,Jennifer J Moxley,8/29/2011 - 12/9/2011
+ENG,529,"Studies in Literature",0001,LEC,3308,Th 3:30PM - 6:00PM,Donald P Corbett Business 111,Charlsye J Smith Diaz,8/29/2011 - 12/9/2011
+ENG,546,"Modern American Literature",0001,LEC,7463,Tu 6:10PM - 8:40PM,Neville Hall 406,David C Kress,8/29/2011 - 12/9/2011
+ENG,549,"Studies in Gender and Literature",0001,LEC,2831,Mo 3:10PM - 5:40PM,Neville Hall 406,Naomi Jacobs,8/29/2011 - 12/9/2011
+ENG,553,"Shakespeare and His Contemporaries",0001,LEC,7464,Tu 3:30PM - 6:00PM,Neville Hall 406,Richard T Brucher,8/29/2011 - 12/9/2011
+ENG,649,"Seminar in Modernist and Postmodernist American Poetry",0001,SEM,7465,Mo 6:00PM - 8:30PM,Neville Hall 406,Steven R Evans,8/29/2011 - 12/9/2011
+ENG,693,"Teaching College Composition",0001,LEC,1803,We 3:10PM - 5:40PM,Neville Hall 406,Dylan Dryer,8/29/2011 - 12/9/2011
+ENG,697,"Independent Reading/Writing",0001,IND,1804,TBA,TBA,Laura Cowan May,8/29/2011 - 12/9/2011
+ENG,699,"Graduate Thesis / Research",0001,THS,1805,TBA,TBA,Laura Cowan May,8/29/2011 - 12/9/2011
+ERL,317,"Children's Literature",0001,LEC,1806,We 9:00AM - 11:50AM,Shibles Hall 202,Jane W Wellman-Little,8/29/2011 - 12/9/2011
+ERL,317,"Children's Literature",0002,LEC,1807,Th 9:00AM - 11:50AM,Shibles Hall 202,Jane W Wellman-Little,8/29/2011 - 12/9/2011
+ERL,319,"Teaching Reading and Language Arts in Preschool to Grade 3",0001,LEC,1808,We 12:20PM - 3:10PM,Shibles Hall 201,Maja Wilson,8/29/2011 - 12/9/2011
+ERL,319,"Teaching Reading and Language Arts in Preschool to Grade 3",0002,LEC,1809,Th 12:20PM - 3:10PM,Shibles Hall 217,Maja Wilson,8/29/2011 - 12/9/2011
+ERL,319,"Teaching Reading and Language Arts in Preschool to Grade 3",0003,LEC,7623,Mo 9:00AM - 11:50AM,Shibles Hall 202,Staff,8/29/2011 - 12/9/2011
+ERL,320,"Teaching Reading and Language Arts in Grades 4",0001,LEC,2927,We 9:00AM - 11:50AM,Shibles Hall 201,Maja Wilson,8/29/2011 - 12/9/2011
+ERL,320,"Teaching Reading and Language Arts in Grades 4",0002,LEC,3664,Th 9:00AM - 11:50AM,Shibles Hall 201,Maja Wilson,8/29/2011 - 12/9/2011
+ERL,440,"Teaching Reading in the Secondary School",0001,LEC,1810,Th 9:00AM - 11:50AM,Shibles Hall 313,Kenneth H Martin,8/29/2011 - 12/9/2011
+ERL,517,"Literature for Children",0001,LEC,3657,Tu 9:00AM - 12:00PM,Shibles Hall 202,Jane W Wellman-Little,8/29/2011 - 12/9/2011
+ERL,521,"Curriculum Methods in Literacy K",0001,LEC,3665,Tu 12:30PM - 3:30PM,Shibles Hall 202,Jane W Wellman-Little,8/29/2011 - 12/9/2011
+ERL,535,"Current Practices in Reading",0860,LEC,7681,We 5:00PM - 8:00PM,Shibles Hall 202,Jane W Wellman-Little,8/29/2011 - 12/9/2011
+ERL,540,"Writing in Schools &amp; Colleges",0001,LEC,7624,Mo 4:30PM - 7:30PM,Shibles Hall 320,Richard B Kent,8/29/2011 - 12/9/2011
+ERL,552,"Seminar in Teacher Research",0001,SEM,7653,Fr 5:00PM - 8:00PM,Shibles Hall 159,Kenneth H Martin,9/9/2011 - 9/9/2011,Sa 8:30AM - 12:00PM,Shibles Hall 159,Kenneth H Martin,9/10/2011 - 9/10/2011,Fr 5:00PM - 8:00PM,Shibles Hall 159,Kenneth H Martin,9/23/2011 - 9/23/2011,Sa 8:30AM - 12:00PM,Shibles Hall 159,Kenneth H Martin,9/24/2011 - 9/24/2011,Fr 5:00PM - 8:00PM,Shibles Hall 159,Kenneth H Martin,10/14/2011 - 10/14/2011,Sa 8:30AM - 12:00PM,Shibles Hall 159,Kenneth H Martin,10/15/2011 - 10/15/2011,Fr 5:00PM - 8:00PM,Shibles Hall 159,Kenneth H Martin,11/11/2011 - 11/11/2011,Sa 8:30AM - 12:00PM,Shibles Hall 159,Kenneth H Martin,11/12/2011 - 11/12/2011,Fr 5:00PM - 8:00PM,Shibles Hall 159,Kenneth H Martin,12/2/2011 - 12/2/2011,Sa 8:30AM - 12:00PM,Shibles Hall 159,Kenneth H Martin,12/3/2011 - 12/3/2011
+ERL,590,"Special Topics in English Language Arts and Related Fields",0001,IND,4209,TBA,TBA,Kenneth H Martin,8/29/2011 - 12/9/2011
+ERL,603,"Proseminar in Literacy I",0001,LEC,7625,Mo 5:00PM - 8:00PM,Merrill 228A,Victoria S Bennett-Armistead,8/29/2011 - 12/9/2011
+ERS,100,"An Introductory Survey of Geology",0001,LEC,1812,MoWeFr 10:00AM - 10:50AM,Donald P Corbett Business 100,Daniel R Lux,8/29/2011 - 12/9/2011
+ERS,101,"Introduction to Geology",0001,LEC,1813,MoWeFr 10:00AM - 10:50AM,Donald P Corbett Business 100,Daniel R Lux,8/29/2011 - 12/9/2011
+ERS,101,"Introduction to Geology",0002,LEC,1815,TuTh 9:30AM - 10:45AM,Neville Hall 100,Daniel R Lux,8/29/2011 - 12/9/2011
+ERS,101,"Introduction to Geology",1001,LAB,1814,We 6:30PM - 9:30PM,Bryand Global Science Cen 101,Daniel R Lux,8/29/2011 - 12/9/2011
+ERS,101,"Introduction to Geology",1002,LAB,1816,Tu 2:00PM - 5:00PM,Bryand Global Science Cen 101,Daniel R Lux,8/29/2011 - 12/9/2011
+ERS,101,"Introduction to Geology",1003,LAB,1817,We 2:10PM - 5:00PM,Bryand Global Science Cen 101,Daniel R Lux,8/29/2011 - 12/9/2011
+ERS,101,"Introduction to Geology",1004,LAB,1818,Mo 6:30PM - 9:30PM,Bryand Global Science Cen 101,Daniel R Lux,8/29/2011 - 12/9/2011
+ERS,102,"Environmental Geology of Maine",0001,LEC,1825,TuTh 12:30PM - 1:45PM,Bryand Global Science Cen 100,Alice R Kelley,8/29/2011 - 12/9/2011
+ERS,102,"Environmental Geology of Maine",1001,LAB,1826,Mo 1:10PM - 4:00PM,Bryand Global Science Cen 102,Alice R Kelley,8/29/2011 - 12/9/2011
+ERS,102,"Environmental Geology of Maine",1002,LAB,1827,Th 6:00PM - 9:00PM,Bryand Global Science Cen 102,Alice R Kelley,8/29/2011 - 12/9/2011
+ERS,121,"Humans and Global Change",0001,LEC,1828,TuTh 9:30AM - 10:45AM,Bryand Global Science Cen 100,,8/29/2011 - 12/9/2011
+ERS,200,"Earth Systems",0001,LEC,1829,MoWeFr 11:00AM - 11:50AM,Bryand Global Science Cen 201,Peter O Koons,8/29/2011 - 12/9/2011
+ERS,200,"Earth Systems",1001,LAB,1830,We 2:10PM - 5:00PM,Bryand Global Science Cen 201,Peter O Koons,8/29/2011 - 12/9/2011
+ERS,315,"Principles of Sedimentology and Stratigraphy",0001,LEC,8000,TuTh 9:30AM - 10:45AM,Bryand Global Science Cen 201,Daniel F Belknap,8/29/2011 - 12/9/2011
+ERS,315,"Principles of Sedimentology and Stratigraphy",1001,LAB,8001,Th 2:00PM - 5:00PM,Bryand Global Science Cen 201,Daniel F Belknap,8/29/2011 - 12/9/2011
+ERS,316,"Structural Geology",0001,LEC,1835,TuTh 12:30PM - 1:45PM,Bryand Global Science Cen 203,Scott E Johnson,8/29/2011 - 12/9/2011
+ERS,316,"Structural Geology",1001,LAB,1836,Tu 2:00PM - 5:00PM,Bryand Global Science Cen 203,Scott E Johnson,8/29/2011 - 12/9/2011
+ERS,420,"Computation in Earth Science",0001,LEC,3739,MoWeFr 10:00AM - 10:50AM,Bryand Global Science Cen 201,Andrew S Reeve,8/29/2011 - 12/9/2011
+ERS,498,"Undergraduate Thesis",0001,THS,1838,TBA,TBA,Scott E Johnson,8/29/2011 - 12/9/2011
+ERS,578,"Metamorphic Petrology",0001,LEC,7388,Mo 12:00PM - 3:00PM,Bryand Global Science Cen 203,Christopher Charles Gerbi,8/29/2011 - 12/9/2011
+ERS,580,"Introduction to Hydrogeology",0001,LEC,2872,MoWeFr 9:00AM - 9:50AM,Bryand Global Science Cen 203,Andrew S Reeve,8/29/2011 - 12/9/2011
+ERS,591,"Introduction to Meteorology and Climatology",0001,LEC,7389,TuTh 8:00AM - 9:15AM,Sawyer Environmental Rsch Ctr1,Kirk A Maasch,8/29/2011 - 12/9/2011
+ERS,602,"Selected Study in Geology II",0001,LEC,7387,We 12:00PM - 1:00PM,Bryand Global Science Cen 100,Daniel R Lux,8/29/2011 - 12/9/2011
+ERS,699,"Graduate Thesis / Research",0001,THS,1839,TBA,TBA,Scott E Johnson,8/29/2011 - 12/9/2011
+ESC,316,"Teaching Science in the Elementary School (K",0001,LEC,3646,We 5:00PM - 7:30PM,Shibles Hall 216,Staff,8/29/2011 - 12/9/2011
+ESC,316,"Teaching Science in the Elementary School (K",0002,LEC,3647,Mo 5:00PM - 7:30PM,Shibles Hall 216,Staff,8/29/2011 - 12/9/2011
+ESC,452,"Teaching Science in the Secondary School",0001,LEC,3648,Tu 5:00PM - 7:30PM,Shibles Hall 216,Staff,8/29/2011 - 12/9/2011
+ESC,516,"Advvanced Studies in Science Instruction (Elementary and Middle Schools)",0001,LEC,7679,Th 5:00PM - 7:30PM,Shibles Hall 216,Staff,8/29/2011 - 12/9/2011
+ESC,516,"Advvanced Studies in Science Instruction (Elementary and Middle Schools)",0002,LEC,7870,Mo 9:00AM - 12:00PM,Shibles Hall 216,Staff,8/29/2011 - 12/9/2011
+ESC,542,"Advanced Studies in Science Education (Secondary)",0001,LEC,7680,Th 5:00PM - 7:30PM,Shibles Hall 216,Staff,8/29/2011 - 12/9/2011
+ESS,315,"Teaching Social Studies in the Elementary School",0001,LEC,1840,Tu 12:30PM - 3:00PM,Shibles Hall 217,Joan Ellen Staffiere,8/29/2011 - 12/9/2011
+ESS,315,"Teaching Social Studies in the Elementary School",0002,LEC,3649,Tu 4:10PM - 6:30PM,Shibles Hall 202,Joan Ellen Staffiere,8/29/2011 - 12/9/2011
+ESS,441,"Teaching Social Studies in the Secondary School",0001,LEC,3650,Th 4:30PM - 7:00PM,Arranged,David T Armistead,8/29/2011 - 12/9/2011
+FAS,101,"Introduction to Franco American Studies",0001,LEC,1842,TuTh 11:00AM - 12:15PM,Deering Hall 17,Susan Ann Pinette,8/29/2011 - 12/9/2011
+FAS,230,"Franco American Women's Experience",0990,LEC,7248,TBA,On-line Course,Rhea J Robbins,8/29/2011 - 12/9/2011
+FAS,459,"Colonial Canada",0001,LEC,2951,TuTh 11:00AM - 12:15PM,Stevens Hall 365,Jacques Ferland,8/29/2011 - 12/9/2011
+FES,100,"Introduction to Forest Biology",0001,LEC,1843,MoWeFr 9:00AM - 9:50AM,Nutting Hall 102,William H Livingston,8/29/2011 - 12/9/2011
+FES,100,"Introduction to Forest Biology",1001,LAB,1844,Mo 1:10PM - 4:00PM,Nutting Hall 213,Michael E Day,8/29/2011 - 12/9/2011
+FES,100,"Introduction to Forest Biology",1002,LAB,1845,We 1:10PM - 4:00PM,Nutting Hall 213,Michael E Day,8/29/2011 - 12/9/2011
+FES,110,"Introduction to Tree Biology",0001,LEC,1846,TBA,TBA,Staff,TBA
+FES,110,"Introduction to Tree Biology",1001,LAB,1847,Mo 1:10PM - 4:00PM,Nutting Hall 213,Michael E Day,8/29/2011 - 12/9/2011
+FES,345,"Special Problems",0001,IND,1848,TBA,TBA,Robert S Seymour,8/29/2011 - 12/9/2011
+FES,407,"Forest Ecology",0001,LEC,12083,TuTh 11:00AM - 12:15PM,Nutting Hall 102,Alan S White,8/29/2011 - 12/9/2011
+FES,408,"Silviculture",0001,LEC,1850,TuTh 8:00AM - 9:15AM,Nutting Hall 100,Robert S Seymour,8/29/2011 - 12/9/2011
+FES,409,"Forest Ecology and Silviculture Field Laboratory",0001,LAB,1851,We 1:10PM - 5:00PM,Nutting Hall 102,,8/29/2011 - 12/9/2011
+FES,470,"Senior Paper in Forest Conservation",0001,IND,1852,TBA,TBA,William H Livingston,8/29/2011 - 12/9/2011
+FES,498,"Senior Research I",0001,IND,1853,TBA,TBA,William H Livingston,8/29/2011 - 12/9/2011
+FES,499,"Senior Research II",0001,IND,1854,TBA,TBA,William H Livingston,8/29/2011 - 12/9/2011
+FES,521,"Research Methods in Forest Resources",0001,LEC,3517,MoWe 11:30AM - 1:00PM,Nutting Hall 255,,8/29/2011 - 12/9/2011
+FES,607,"Silviculture Problems",0001,IND,1855,TBA,TBA,Robert S Seymour,8/29/2011 - 12/9/2011
+FES,615,"Forest Biology Problems",0001,IND,1856,TBA,TBA,William H Livingston,8/29/2011 - 12/9/2011
+FES,615,"Forest Biology Problems",0002,LEC,8007,TBA,TBA,,8/29/2011 - 12/9/2011
+FES,699,"Graduate Thesis / Research",0001,THS,1857,TBA,TBA,Steven A Sader,8/29/2011 - 12/9/2011
+FND,100,"First Year Seminar",0001,SEM,3380,Fr 10:00AM - 10:50AM,Stevens Hall North 121,Dominick Varney,8/29/2011 - 12/9/2011
+FND,100,"First Year Seminar",0002,SEM,3381,We 10:00AM - 10:50AM,Stevens Hall 355,Julie S Loppacher,8/29/2011 - 12/9/2011
+FND,100,"First Year Seminar",0003,SEM,3382,Fr 11:00AM - 11:50AM,Stevens Hall North 121,Dominick Varney,8/29/2011 - 12/9/2011
+FND,100,"First Year Seminar",0004,SEM,3383,Fr 11:00AM - 11:50AM,Stevens Hall 370,Staff,8/29/2011 - 12/9/2011
+FND,100,"First Year Seminar",0005,SEM,3384,Fr 1:10PM - 2:00PM,Stevens Hall North 121,Julie S Loppacher,8/29/2011 - 12/9/2011
+FND,100,"First Year Seminar",0006,SEM,3385,We 10:00AM - 10:50AM,Stevens Hall North 121,Dominick Varney,8/29/2011 - 12/9/2011
+FRE,101,"Elementary French I",0001,LEC,3719,MoWeFr 10:00AM - 10:50AM,Little Hall 205,Staff,8/29/2011 - 12/9/2011,Tu 9:30AM - 10:20AM,Stevens Hall North 117,Staff,8/29/2011 - 12/9/2011
+FRE,102,"Elementary French II",0665,LEC,8890,We 9:00AM - 11:30AM,Fred Hutchinson Center,Lila Margaret Nation,8/29/2011 - 12/9/2011
+FRE,102,"Elementary French II",1665,LAB,8891,We 12:00PM - 1:00PM,Fred Hutchinson Center,Lila Margaret Nation,8/29/2011 - 12/9/2011
+FRE,117,"Accelerated French I",0001,LEC,3947,MoWeFr 9:00AM - 9:50AM,Dunn Hall 316,Staff,8/29/2011 - 12/9/2011,TuTh 9:30AM - 10:45AM,Little Hall 205,Staff,8/29/2011 - 12/9/2011
+FRE,201,"Intermediate French I",0001,LEC,1858,MoFr 11:00AM - 11:50AM,Boardman Hall 207,Staff,8/29/2011 - 12/9/2011,We 11:00AM - 11:50AM,Little Hall 215,Staff,8/29/2011 - 12/9/2011
+FRE,201,"Intermediate French I",0500,LEC,3715,MoWe 2:10PM - 3:00PM,Stevens Hall North 117,Staff,8/29/2011 - 12/9/2011,Fr 1:10PM - 2:00PM,Little Hall 215,Staff,8/29/2011 - 12/9/2011
+FRE,305,"French Conversation and Composition I",0001,LEC,1859,MoWeFr 10:00AM - 10:50AM,Little Hall 218,Kathryn E Slott,8/29/2011 - 12/9/2011
+FRE,305,"French Conversation and Composition I",0002,LEC,3973,MoWeFr 10:00AM - 10:50AM,Little Hall 204,Staff,8/29/2011 - 12/9/2011
+FRE,310,"Readings in Francophone Literature",0001,LEC,7596,TuTh 11:00AM - 12:15PM,Dunn Hall 301,Staff,8/29/2011 - 12/9/2011
+FRE,350,"Multidisciplinary Readings in French",0001,LEC,1860,TBA,TBA,Raymond J Pelletier,8/29/2011 - 12/9/2011
+FRE,350,"Multidisciplinary Readings in French",0002,LEC,7595,TBA,TBA,Jane S Smith,8/29/2011 - 12/9/2011
+FRE,400,"Advanced French Grammar",0001,LEC,1861,MoWeFr 1:10PM - 2:00PM,Little Hall 218,Kathryn E Slott,8/29/2011 - 12/9/2011
+FRE,408,"Twentieth Century French Literature",0001,LEC,3582,Tu 5:00PM - 8:00PM,Little Hall 206,Kathryn E Slott,8/29/2011 - 12/9/2011
+FRE,465,"North American French Novel",0981,LEC,7597,MoWe 5:00PM - 6:15PM,Little Hall 205,Raymond J Pelletier,8/29/2011 - 12/9/2011
+FRE,495,"Senior Project in French",0001,IND,3190,TBA,TBA,Kathryn E Slott,8/29/2011 - 12/9/2011
+FRE,495,"Senior Project in French",0002,IND,3191,TBA,TBA,Jane S Smith,8/29/2011 - 12/9/2011
+FRE,495,"Senior Project in French",0003,IND,3192,TBA,TBA,Raymond J Pelletier,8/29/2011 - 12/9/2011
+FRE,508,"Seminar in the Novel",0981,SEM,7598,MoWe 5:00PM - 6:15PM,Little Hall 205,Raymond J Pelletier,8/29/2011 - 12/9/2011
+FRE,509,"Seminar in Poetry",0001,SEM,7599,Tu 5:00PM - 8:00PM,Little Hall 206,Kathryn E Slott,8/29/2011 - 12/9/2011
+FRE,699,"Graduate Thesis / Research",0001,THS,1862,TBA,TBA,Jane S Smith,8/29/2011 - 12/9/2011
+FSC,345,"Special Problems",0001,IND,1863,TBA,TBA,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,394,"Cooperative Education",0002,FEX,1864,TBA,TBA,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,395,"Internship",0002,RSG,1865,TBA,TBA,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,396,"Field Experience",0002,FEX,1866,TBA,TBA,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,401,"Timber Harvesting",0001,LEC,1867,MoWe 10:00AM - 10:50AM,Nutting Hall 257,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,401,"Timber Harvesting",1001,LAB,1868,Tu 1:10PM - 4:00PM,Nutting Hall 102,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,403,"Forest Roads",0001,LEC,2895,MoWe 9:00AM - 9:50AM,Nutting Hall 257,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,403,"Forest Roads",1001,LAB,2896,Th 1:10PM - 4:00PM,Nutting Hall 257,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,502,"Timber Harvesting",0001,LEC,3074,MoWe 10:00AM - 10:50AM,Nutting Hall 257,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,502,"Timber Harvesting",1001,LAB,3075,Tu 1:10PM - 4:00PM,Nutting Hall 102,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSC,699,"Graduate Thesis / Research",0002,THS,1869,TBA,TBA,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FSN,101,"Introduction to Food and Nutrition",0001,LEC,1870,TuTh 9:30AM - 10:45AM,Nutting Hall 100,Dorothy J Klimis,8/29/2011 - 12/9/2011
+FSN,101,"Introduction to Food and Nutrition",0990,LEC,4112,TBA,TBA,Katherine O Musgrave,8/29/2011 - 12/9/2011
+FSN,115,"Vtrim Behavioral Weight Management",0990,SEM,13103,We 7:00PM - 8:00PM,On-line Course,Douglas Roger Mathews,8/29/2011 - 12/9/2011
+FSN,115,"Vtrim Behavioral Weight Management",0991,SEM,13104,Th 7:00PM - 8:00PM,On-line Course,Douglas Roger Mathews,8/29/2011 - 12/9/2011
+FSN,202,"Foodservice Management",0001,LEC,1871,MoWeFr 1:10PM - 2:00PM,Deering Hall 113,Susan S Sullivan,8/29/2011 - 12/9/2011
+FSN,202,"Foodservice Management",1001,LAB,1872,We 2:10PM - 5:10PM,Hitchner Hall 157,Susan S Sullivan,8/29/2011 - 12/9/2011
+FSN,202,"Foodservice Management",1002,LAB,2826,We 2:10PM - 5:10PM,Hitchner Hall 160,Susan S Sullivan,8/29/2011 - 12/9/2011
+FSN,230,"Nutritional and Medical Terminology",0990,LEC,4113,TBA,TBA,Mary E Camire,8/29/2011 - 12/9/2011
+FSN,270,"World Food and Nutrition",0990,LEC,4114,TBA,TBA,Richard A Cook,8/29/2011 - 12/9/2011
+FSN,301,"Life Cycle Nutrition",0860,LEC,2926,TuTh 4:00PM - 5:15PM,Barrows Hall 119,Kathryn Graham Logan Yerxa,8/29/2011 - 12/9/2011
+FSN,330,"Introduction to Food Science",0001,LEC,1873,MoWeFr 12:10PM - 1:00PM,Nutting Hall 102,Alfred A Bushway,8/29/2011 - 12/9/2011
+FSN,340,"Food Processing Laboratory",0001,LAB,1874,Th 12:30PM - 3:30PM,Hitchner Hall 157,Alfred A Bushway,8/29/2011 - 12/9/2011
+FSN,340,"Food Processing Laboratory",0002,LAB,1875,Tu 12:30PM - 2:00PM,Hitchner Hall 157,Alfred A Bushway,8/29/2011 - 12/9/2011,Tu 2:00PM - 3:30PM,Hitchner Hall 160,Alfred A Bushway,8/29/2011 - 12/9/2011
+FSN,340,"Food Processing Laboratory",0003,LAB,3865,Mo 2:10PM - 3:00PM,Hitchner Hall 157,Alfred A Bushway,8/29/2011 - 12/9/2011
+FSN,340,"Food Processing Laboratory",0500,LAB,7390,Mo 3:00PM - 5:00PM,Hitchner Hall 160,Alfred A Bushway,8/29/2011 - 12/9/2011
+FSN,396,"Field Experience in Food Science and Human Nutrition",0001,FEX,1876,TBA,TBA,Alfred A Bushway,8/29/2011 - 12/9/2011
+FSN,397,"Independent Studies",0001,IND,1877,TBA,TBA,Dorothy J Klimis,8/29/2011 - 12/9/2011
+FSN,397,"Independent Studies",0002,IND,7980,TBA,TBA,Denise I Skonberg,8/29/2011 - 12/9/2011
+FSN,397,"Independent Studies",0003,IND,1879,TBA,TBA,Susan S Sullivan,8/29/2011 - 12/9/2011
+FSN,397,"Independent Studies",0004,IND,1878,TBA,TBA,Adrienne A White,8/29/2011 - 12/9/2011
+FSN,397,"Independent Studies",0005,IND,1880,TBA,TBA,Vivian Chi-Hua Wu,8/29/2011 - 12/9/2011
+FSN,410,"Human Nutrition and Metabolism",0001,LEC,7391,TuTh 11:00AM - 12:15PM,Hitchner Hall 203,Richard A Cook,8/29/2011 - 12/9/2011
+FSN,412,"Medical Nutrition Therapy I",0001,LEC,1881,Th 12:30PM - 2:15PM,Stevens Hall North 237,Susan S Sullivan,8/29/2011 - 12/9/2011
+FSN,425,"Contemporary Issues in the Food Industry",0001,SEM,3784,We 11:00AM - 11:50AM,Hitchner Hall 157,Denise I Skonberg,8/29/2011 - 12/9/2011
+FSN,482,"Food Chemistry",0001,LEC,7392,MoWeFr 10:00AM - 10:50AM,Hitchner Hall 157,Denise I Skonberg,8/29/2011 - 12/9/2011
+FSN,483,"Food Chemistry Laboratory",0001,LAB,7393,We 1:10PM - 4:00PM,Hitchner Hall 206,Denise I Skonberg,8/29/2011 - 12/9/2011
+FSN,489,"Senior Project in Food Science and Human Nutrition",0001,IND,1882,TBA,TBA,Alfred A Bushway,8/29/2011 - 12/9/2011
+FSN,510,"Trace Minerals",0001,LEC,7394,Mo 2:10PM - 5:00PM,Little Hall 218,Dorothy J Klimis,8/29/2011 - 12/9/2011
+FSN,520,"Food Product Development",0001,LEC,7395,Mo 1:10PM - 4:00PM,Hitchner Hall 147,Denise I Skonberg,8/29/2011 - 12/9/2011,Mo 1:10PM - 4:00PM,Hitchner Hall 159,Denise I Skonberg,8/29/2011 - 12/9/2011,Fr 1:10PM - 3:00PM,Hitchner Hall 203,Denise I Skonberg,8/29/2011 - 12/9/2011
+FSN,524,"Research Methods and Biostatistical Techniques",0990,LEC,4153,TBA,TBA,Mary E Camire,8/29/2011 - 12/9/2011
+FSN,571,"Technical Presentations",0001,LEC,1883,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,9/2/2011 - 9/2/2011,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,9/9/2011 - 9/9/2011,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,9/23/2011 - 9/23/2011,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,10/7/2011 - 10/7/2011,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,10/28/2011 - 10/28/2011,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,11/4/2011 - 11/4/2011,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,11/11/2011 - 11/11/2011,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,12/2/2011 - 12/2/2011,Fr 11:00AM - 12:50PM,Hitchner Hall 147,Mary E Camire,12/9/2011 - 12/9/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0002,IND,1884,TBA,TBA,Adrienne A White,8/29/2011 - 12/9/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0003,IND,1885,TBA,TBA,Rodney J Bushway,8/29/2011 - 12/9/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0005,IND,1886,TBA,TBA,Dorothy J Klimis,8/29/2011 - 12/9/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0007,IND,3155,TBA,TBA,Denise I Skonberg,8/29/2011 - 12/9/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0008,IND,1887,TBA,TBA,Susan S Sullivan,8/29/2011 - 12/9/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0009,IND,1888,TBA,TBA,Vivian Chi-Hua Wu,8/29/2011 - 12/9/2011
+FSN,650,"Dietetic Internship Orientation I",0001,LEC,1889,Mo 10:00AM - 11:50AM,Hitchner Hall 147,Adrienne A White,8/29/2011 - 12/9/2011,Fr 8:00AM - 10:50AM,Hitchner Hall 147,Adrienne A White,10/21/2011 - 10/28/2011,Fr 8:00AM - 10:50AM,Hitchner Hall 147,Adrienne A White,11/18/2011 - 11/18/2011,Fr 8:00AM - 10:50AM,Hitchner Hall 147,Adrienne A White,12/2/2011 - 12/9/2011
+FSN,652,"Dietetic Internship Evaluation",0001,SEM,1890,Fr 8:00AM - 10:50AM,Hitchner Hall 147,Adrienne A White,10/21/2011 - 10/28/2011,Fr 1:00PM - 3:00PM,Hitchner Hall 157,Adrienne A White,10/21/2011 - 10/28/2011,Fr 8:00AM - 10:50AM,Hitchner Hall 147,Adrienne A White,12/2/2011 - 12/9/2011,Fr 1:00PM - 3:00PM,Hitchner Hall 157,Adrienne A White,12/2/2011 - 12/9/2011,Fr 1:00PM - 3:00PM,Hitchner Hall 157,Adrienne A White,11/11/2011 - 11/11/2011,Fr 8:00AM - 10:50AM,Little Hall 212,Adrienne A White,11/11/2011 - 11/11/2011
+FSN,671,"Advanced Graduate Seminar",0001,SEM,1891,Mo 5:10PM - 6:00PM,Hitchner Hall 157,Rodney J Bushway,8/29/2011 - 12/9/2011
+FSN,681,"Dietetic Supervised Practice",0001,RSG,3594,TBA,TBA,Adrienne A White,8/29/2011 - 12/9/2011
+FSN,699,"Graduate Thesis / Research",0001,THS,1892,TBA,TBA,Alfred A Bushway,8/29/2011 - 12/9/2011
+FSN,699,"Graduate Thesis / Research",0002,THS,1893,TBA,TBA,Rodney J Bushway,8/29/2011 - 12/9/2011
+FSN,699,"Graduate Thesis / Research",0003,THS,1894,TBA,TBA,Mary E Camire,8/29/2011 - 12/9/2011
+FSN,699,"Graduate Thesis / Research",0005,THS,1896,TBA,TBA,Dorothy J Klimis,8/29/2011 - 12/9/2011
+FSN,699,"Graduate Thesis / Research",0006,THS,1897,TBA,TBA,Adrienne A White,8/29/2011 - 12/9/2011
+FSN,699,"Graduate Thesis / Research",0007,THS,1898,TBA,TBA,Denise I Skonberg,8/29/2011 - 12/9/2011
+FTY,101,"Introduction to Forest Resources",0001,FEX,1901,MoTuWeThFrSu 8:00AM - 4:30PM,Arranged,William H Livingston,8/21/2011 - 8/26/2011
+FTY,107,"Forest Vegetation",0001,LEC,1902,TuTh 11:00AM - 12:15PM,Bryand Global Science Cen 100,Steven A Sader,8/29/2011 - 12/9/2011
+FTY,107,"Forest Vegetation",1001,LAB,1903,Tu 1:10PM - 4:00PM,Nutting Hall 257,Steven A Sader,8/29/2011 - 12/9/2011
+FTY,107,"Forest Vegetation",1002,LAB,1904,We 1:10PM - 4:00PM,Nutting Hall 257,Steven A Sader,8/29/2011 - 12/9/2011
+FTY,111,"Forests Through Time",0990,LEC,4136,TBA,TBA,William H Livingston,8/29/2011 - 12/9/2011
+FTY,112,"Forests Through Time: Discussions",0001,REC,7578,Mo 6:00PM - 8:00PM,Nutting Hall 102,William H Livingston,8/29/2011 - 12/9/2011
+FTY,112,"Forests Through Time: Discussions",0994,REC,8008,TBA,On-line Course,William H Livingston,8/29/2011 - 12/9/2011
+FTY,208,"Forest Surveying and Mapping",0001,LEC,1905,MoWeFr 11:00AM - 11:50AM,Nutting Hall 257,Louis Morin,8/29/2011 - 12/9/2011
+FTY,208,"Forest Surveying and Mapping",1001,LAB,1906,Tu 1:10PM - 4:00PM,Nutting Hall 254,Louis Morin,8/29/2011 - 12/9/2011
+FTY,208,"Forest Surveying and Mapping",1002,LAB,1907,Th 1:10PM - 4:00PM,Nutting Hall 254,Louis Morin,8/29/2011 - 12/9/2011
+FTY,345,"Special Problems",0001,IND,1908,TBA,TBA,Jeremy S Wilson,8/29/2011 - 12/9/2011
+FTY,345,"Special Problems",0002,IND,3391,TBA,TBA,Alan J Kimball,8/29/2011 - 12/9/2011
+FTY,349,"Principles of Forest Management",0001,LEC,2933,MoWe 8:00AM - 8:50AM,Nutting Hall 102,Alan J Kimball,8/29/2011 - 12/9/2011
+FTY,349,"Principles of Forest Management",1001,LAB,2934,Mo 1:10PM - 4:00PM,Nutting Hall 102,Alan J Kimball,8/29/2011 - 12/9/2011
+FTY,349,"Principles of Forest Management",1002,LAB,3227,We 1:10PM - 4:00PM,Nutting Hall 100,Alan J Kimball,8/29/2011 - 12/9/2011
+FTY,394,"Cooperative Education",0001,RSG,1910,TBA,TBA,Jeremy S Wilson,8/29/2011 - 12/9/2011
+FTY,396,"Field Experience",0001,FEX,1911,TBA,TBA,Jeremy S Wilson,8/29/2011 - 12/9/2011
+FTY,476,"Forest Management I",0001,LEC,1912,WeFr 11:00AM - 11:50AM,Nutting Hall 213,,8/29/2011 - 12/9/2011
+FTY,476,"Forest Management I",1001,LAB,1913,Fr 1:10PM - 2:20PM,Nutting Hall 257,,8/29/2011 - 12/9/2011
+FTY,480,"Applied Geographic Information Systems",0001,LEC,1914,We 12:10PM - 1:00PM,Nutting Hall 254,Louis Morin,8/29/2011 - 12/9/2011
+FTY,480,"Applied Geographic Information Systems",1001,LAB,3226,We 2:10PM - 4:00PM,Nutting Hall 254,Louis Morin,8/29/2011 - 12/9/2011
+FTY,482,"Industrial Ecology and Life Cycle Assessment",0001,LEC,3326,TuTh 2:00PM - 3:15PM,Donald P Corbett Business 113,Anthony Halog,8/29/2011 - 12/9/2011
+FTY,582,"Industrial Ecology and Life Cycle Assessment",0001,LEC,4069,TuTh 2:00PM - 3:15PM,Donald P Corbett Business 113,Anthony Halog,8/29/2011 - 12/9/2011
+FTY,601,"Forest Mensuration Problems",0001,IND,1915,TBA,TBA,Thomas B Brann,8/29/2011 - 12/9/2011
+FTY,601,"Forest Mensuration Problems",0002,IND,3062,TBA,TBA,Aaron R Weiskittel,8/29/2011 - 12/9/2011
+FTY,603,"Forest Management Problems",0001,IND,1916,TBA,TBA,Jeremy S Wilson,8/29/2011 - 12/9/2011
+FTY,603,"Forest Management Problems",0002,IND,3450,TBA,TBA,Jeffrey G Benjamin,8/29/2011 - 12/9/2011
+FTY,609,"Remote Sensing Problems",0001,IND,1917,TBA,TBA,Steven A Sader,8/29/2011 - 12/9/2011
+FTY,609,"Remote Sensing Problems",0002,IND,1918,TBA,TBA,Louis Morin,8/29/2011 - 12/9/2011
+FTY,611,"Research Problems in Forest Economics",0001,RSG,1919,TBA,TBA,Robert J. Lilieholm,8/29/2011 - 12/9/2011
+FTY,611,"Research Problems in Forest Economics",0002,RSG,3404,TBA,TBA,Anthony Halog,8/29/2011 - 12/9/2011
+FTY,611,"Research Problems in Forest Economics",0003,RSG,3439,TBA,TBA,Anthony Halog,8/29/2011 - 12/9/2011
+FTY,617,"Forest Policy Problems",0001,IND,1920,TBA,TBA,Robert J. Lilieholm,8/29/2011 - 12/9/2011
+FTY,690,"Master of Forestry Project",0001,LEC,1921,TBA,TBA,Steven A Sader,8/29/2011 - 12/9/2011
+FTY,699,"Graduate Thesis / Research",0001,THS,1922,TBA,TBA,Steven A Sader,8/29/2011 - 12/9/2011
+FYS,100,"First Year Seminar",0001,SEM,2975,We 2:10PM - 3:00PM,Lord Hall 200,Staff,8/29/2011 - 12/9/2011
+FYS,100,"First Year Seminar",0002,SEM,2968,We 2:10PM - 3:00PM,Stevens Hall 155,Julie S Loppacher,8/29/2011 - 12/9/2011
+FYS,100,"First Year Seminar",0003,SEM,2969,Tu 9:30AM - 10:20AM,Merrill 228A,Staff,8/29/2011 - 12/9/2011
+FYS,100,"First Year Seminar",0004,SEM,2970,Tu 9:30AM - 10:20AM,Lord Hall 200,Dominick Varney,8/29/2011 - 12/9/2011
+FYS,100,"First Year Seminar",0005,SEM,2971,Tu 2:00PM - 2:50PM,Stevens Hall 370,Staff,8/29/2011 - 12/9/2011
+FYS,100,"First Year Seminar",0006,SEM,2972,Tu 2:00PM - 2:50PM,Stevens Hall North 119,Julie S Loppacher,8/29/2011 - 12/9/2011
+GEE,105,"Introduction to Engineering",0001,LEC,1923,Mo 2:10PM - 4:00PM,Barrows Hall 119,Chester A Rock,8/29/2011 - 11/14/2011
+GEE,298,"Introduction to Nanoscale Science and Engineering",0001,LEC,1007,TuTh 11:00AM - 12:15PM,Barrows Hall 130,Rosemary L Smith,8/29/2011 - 12/9/2011
+GEE,298,"Introduction to Nanoscale Science and Engineering",1001,LAB,1008,TBA,TBA,Rosemary L Smith,8/29/2011 - 12/9/2011
+GEE,298,"Introduction to Nanoscale Science and Engineering",1002,LAB,1009,TBA,TBA,Rosemary L Smith,8/29/2011 - 12/9/2011
+GEE,298,"Introduction to Nanoscale Science and Engineering",1003,LAB,1010,TBA,TBA,Rosemary L Smith,8/29/2011 - 12/9/2011
+GEE,298,"Introduction to Nanoscale Science and Engineering",1004,LAB,1011,TBA,TBA,Rosemary L Smith,8/29/2011 - 12/9/2011
+GEE,398,"Special Topics in Engineering",0001,IND,3758,TuTh 11:00AM - 12:15PM,Barrows Hall 130,Rosemary L Smith,8/29/2011 - 12/9/2011
+GEE,398,"Special Topics in Engineering",1001,LAB,3762,TBA,TBA,Rosemary L Smith,8/29/2011 - 12/9/2011
+GEE,398,"Special Topics in Engineering",1002,LAB,3763,TBA,TBA,Rosemary L Smith,8/29/2011 - 12/9/2011
+GEO,100,"World Geography",0500,LEC,4025,MoWeFr 9:00AM - 9:50AM,Neville Hall 101,Samuel Hanes,8/29/2011 - 12/9/2011
+GEO,275,"Geography of Globalization",0001,LEC,7269,TuTh 2:00PM - 3:15PM,Little Hall 211,Stephen J Hornsby,8/29/2011 - 12/9/2011
+GER,101,"Elementary German I",0001,LEC,7379,MoWeFr 1:10PM - 2:00PM,Little Hall 202,Staff,8/29/2011 - 12/9/2011
+GER,101,"Elementary German I",1001,LAB,7380,Mo 12:10PM - 1:00PM,Little Hall 215,Staff,8/29/2011 - 12/9/2011
+GER,203,"Intermediate German I",0001,LEC,1924,MoWeFr 10:00AM - 10:50AM,Little Hall 206,Madelon Kohler-Busch,8/29/2011 - 12/9/2011
+GER,305,"Practical German",0001,LEC,8004,MoWeFr 11:00AM - 11:50AM,Little Hall 220,Madelon Kohler-Busch,8/29/2011 - 12/9/2011
+GER,404,"Translation: Theory and Practice",0001,LEC,8005,MoWeFr 1:10PM - 2:00PM,Little Hall 205,Madelon Kohler-Busch,8/29/2011 - 12/9/2011
+GER,495,"Senior Project in German",0002,IND,3193,TBA,TBA,Madelon Kohler-Busch,8/29/2011 - 12/9/2011
+HED,561,"Developmental Theory in Higher Education",0001,LEC,2853,Mo 2:10PM - 4:30PM,Shibles Hall 11,Elizabeth J Allan,8/29/2011 - 12/9/2011
+HED,598,"Special Topics in Higher Education",0001,LEC,7650,TBA,TBA,Staff,TBA
+HED,598,"Special Topics in Higher Education",0002,LEC,7651,TBA,TBA,Elizabeth J Allan,8/29/2011 - 12/9/2011
+HED,598,"Special Topics in Higher Education",0003,LEC,7652,TBA,TBA,Lisa Plume Hallen,8/29/2011 - 12/9/2011
+HED,620,"Seminar in Higher Education in the United States",0001,SEM,2928,We 4:10PM - 6:30PM,Merrill Hall 330,Susan K Gardner,8/29/2011 - 12/9/2011
+HED,630,"Higher Education and the Law",0860,SEM,3212,We 4:10PM - 6:30PM,Shibles Hall 11,Suzanne Estler,8/29/2011 - 12/9/2011
+HED,650,"Social Context of Higher Education",0001,LEC,7646,Th 5:00PM - 7:30PM,Shibles Hall 11,Elizabeth J Allan,8/29/2011 - 12/9/2011
+HED,690,"Higher Education Internship",0001,RSG,7647,TBA,TBA,Susan K Gardner,8/29/2011 - 12/9/2011
+HTY,103,"United States History I",0001,LEC,1989,MoFr 10:00AM - 10:50AM,Little Hall 130,Liam O Riordan,8/29/2011 - 12/9/2011
+HTY,103,"United States History I",0665,LEC,8900,Tu 5:30PM - 8:00PM,Fred Hutchinson Center,William M Galloway,8/29/2011 - 12/9/2011
+HTY,103,"United States History I",2001,REC,7271,We 10:00AM - 10:50AM,Boardman Hall 209,Staff,8/29/2011 - 12/9/2011
+HTY,103,"United States History I",2002,REC,7272,We 10:00AM - 10:50AM,Little Hall 202,Staff,8/29/2011 - 12/9/2011
+HTY,103,"United States History I",2003,REC,7273,We 10:00AM - 10:50AM,Stevens Hall North 119,Staff,8/29/2011 - 12/9/2011
+HTY,103,"United States History I",2004,REC,7274,We 9:00AM - 9:50AM,Little Hall 206,Staff,8/29/2011 - 12/9/2011
+HTY,105,"History of European Civilization I",0001,LEC,1991,MoWe 12:10PM - 1:00PM,Little Hall 120,Alexander I Grab,8/29/2011 - 12/9/2011
+HTY,105,"History of European Civilization I",0665,LEC,8901,Tu 10:00AM - 12:30PM,Fred Hutchinson Center,Cristina Arrigoni Martelli,8/29/2011 - 12/9/2011
+HTY,105,"History of European Civilization I",2001,REC,7287,Fr 12:10PM - 1:00PM,Little Hall 206,Staff,8/29/2011 - 12/9/2011
+HTY,105,"History of European Civilization I",2002,REC,7294,Fr 12:10PM - 1:00PM,Little Hall 202,Staff,8/29/2011 - 12/9/2011
+HTY,105,"History of European Civilization I",2003,REC,7295,Fr 12:10PM - 1:00PM,Stevens Hall North 121,Staff,8/29/2011 - 12/9/2011
+HTY,105,"History of European Civilization I",2004,REC,7296,Fr 1:10PM - 2:00PM,Boardman Hall 115,Staff,8/29/2011 - 12/9/2011
+HTY,107,"East Asian Civilization I",0001,LEC,2846,TuTh 12:30PM - 1:45PM,Little Hall 140,Vinh-Long Ngo,8/29/2011 - 12/9/2011
+HTY,110,"Introduction to Modern Latin America",0001,LEC,7319,TuTh 9:30AM - 10:45AM,Bennett Hall 140,Stefano Tijerina,8/29/2011 - 12/9/2011
+HTY,210,"History of Maine",0001,LEC,3573,MoWeFr 9:00AM - 9:50AM,Little Hall 130,Richard W Judd,8/29/2011 - 12/9/2011
+HTY,211,"Maine and the Sea",0990,LEC,4134,TBA,TBA,Warren C Riess,8/29/2011 - 12/9/2011
+HTY,279,"European Military History",0001,LEC,7325,MoWeFr 11:00AM - 11:50AM,Little Hall 140,Stephen Miller,8/29/2011 - 12/9/2011
+HTY,332,"Womanhood in America",0001,LEC,1993,MoWeFr 10:00AM - 10:50AM,Stevens Hall 155,Mary L Hough,8/29/2011 - 12/9/2011
+HTY,398,"Historical Issues",0990,LEC,4135,TBA,TBA,Warren C Riess,8/29/2011 - 12/9/2011
+HTY,401,"History of Greece",0001,LEC,3169,TuTh 3:30PM - 4:45PM,Stevens Hall 365,Jay A Bregman,8/29/2011 - 12/9/2011
+HTY,407,"The Age of Monarchs and Revolution: Europe",0001,LEC,3170,MoWeFr 2:10PM - 3:00PM,Stevens Hall 365,Alexander I Grab,8/29/2011 - 12/9/2011
+HTY,409,"Twentieth Century Europe I",0001,LEC,7326,MoWeFr 10:00AM - 10:50AM,Stevens Hall 365,Richard D Blanke,8/29/2011 - 12/9/2011
+HTY,415,"African",0001,LEC,7327,MoWe 5:00PM - 6:15PM,Stevens Hall 365,David C Turpie,8/29/2011 - 12/9/2011
+HTY,420,"Science and Society Since 1800",0001,LEC,7328,TuTh 12:30PM - 1:45PM,Stevens Hall 365,Howard P Segal,8/29/2011 - 12/9/2011
+HTY,423,"History of Russia I",0001,LEC,7329,MoWeFr 1:10PM - 2:00PM,Stevens Hall 365,Richard D Blanke,8/29/2011 - 12/9/2011
+HTY,434,"Greek and Roman Heritage in America",0001,LEC,7330,TuTh 12:30PM - 1:45PM,Stevens Hall 155,Jay A Bregman,8/29/2011 - 12/9/2011
+HTY,442,"The United States and Vietnam: A History",0001,LEC,3171,TuTh 9:30AM - 10:45AM,Stevens Hall 365,Vinh-Long Ngo,8/29/2011 - 12/9/2011
+HTY,455,"History of Great Britain I",0001,LEC,7332,MoWeFr 11:00AM - 11:50AM,Stevens Hall 365,Janet K TeBrake,8/29/2011 - 12/9/2011
+HTY,459,"Colonial Canada",0001,LEC,3365,TuTh 11:00AM - 12:15PM,Stevens Hall 365,Jacques Ferland,8/29/2011 - 12/9/2011
+HTY,467,"Early 20th Century America",0001,LEC,3172,MoWeFr 9:00AM - 9:50AM,Stevens Hall 365,Nathan Godfried,8/29/2011 - 12/9/2011
+HTY,478,"America in the Industrial Age",0001,LEC,7331,MoWeFr 12:10PM - 1:00PM,Stevens Hall 365,Richard W Judd,8/29/2011 - 12/9/2011
+HTY,498,"Senior Seminar in History",0001,SEM,1994,We 3:30PM - 5:30PM,Stevens Hall 175,Nathan Godfried,8/29/2011 - 12/9/2011
+HTY,498,"Senior Seminar in History",0002,SEM,1995,Mo 1:10PM - 3:10PM,Stevens Hall 310,Janet K TeBrake,8/29/2011 - 12/9/2011
+HTY,499,"Contemporary Problems in History",0001,IND,7333,TuTh 11:00AM - 12:15PM,Stevens Hall 155,Michael Lang,8/29/2011 - 12/9/2011
+HTY,502,"American Intellectual History",0001,LEC,7336,Tu 4:00PM - 6:00PM,Stevens Hall 175,Liam O Riordan,8/29/2011 - 12/9/2011
+HTY,519,"Modern Britain and Empire",0001,LEC,7337,Mo 1:10PM - 3:10PM,Stevens Hall 175,Stephen Miller,8/29/2011 - 12/9/2011
+HTY,520,"Canadian Historiography",0001,LEC,1996,Tu 1:10PM - 3:10PM,Stevens Hall 175,Jacques Ferland,8/29/2011 - 12/9/2011
+HTY,521,"Canada and the United States",0001,LEC,7338,We 1:10PM - 3:10PM,Stevens Hall 175,Scott W See,8/29/2011 - 12/9/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0001,IND,1997,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0002,IND,1998,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0003,IND,1999,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0004,IND,2000,TBA,TBA,,8/29/2011 - 12/9/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0005,IND,2001,TBA,TBA,Stephen Miller,8/29/2011 - 12/9/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0006,IND,2002,TBA,TBA,Vinh-Long Ngo,8/29/2011 - 12/9/2011
+HTY,597,"Field Work in Historical Institutions",0001,FEX,2003,TBA,TBA,Jacques Ferland,8/29/2011 - 12/9/2011
+HTY,630,"Seminar in Science and Technology in the United States",0001,SEM,7339,Th 3:30PM - 5:30PM,Stevens Hall 175,Howard P Segal,8/29/2011 - 12/9/2011
+HTY,647,"Seminar in Methodology and Historiography",0001,SEM,2004,Th 1:10PM - 3:10PM,Stevens Hall 175,Michael Lang,8/29/2011 - 12/9/2011
+HTY,699,"Graduate Thesis / Research",0001,THS,2005,TBA,TBA,Jacques Ferland,8/29/2011 - 12/9/2011
+HUD,554,"Legislation and Policy in Human Development",0860,LEC,7488,Tu 4:00PM - 6:30PM,Merrill Hall 221A,Lynne A Gardner,8/29/2011 - 12/9/2011
+HUD,556,"Introduction to Research Methods in Child Development and Family Relations",0001,LEC,7489,Th 4:10PM - 6:40PM,Merrill Hall 114,Robert M Milardo,8/29/2011 - 12/9/2011
+HUD,560,"Seminar in Human Development",0001,SEM,7490,Mo 4:00PM - 6:30PM,Merrill Hall 114,Mary Ellin Logue,8/29/2011 - 12/9/2011
+HUD,601,"Supervised Fieldwork in Child Development and Family Relations",0001,FEX,2006,TBA,TBA,Julie M Dellamattera,8/29/2011 - 12/9/2011
+HUD,601,"Supervised Fieldwork in Child Development and Family Relations",0002,FEX,2007,TBA,TBA,Sandra L Caron,8/29/2011 - 12/9/2011
+HUD,601,"Supervised Fieldwork in Child Development and Family Relations",0003,FEX,2008,TBA,TBA,Robert M Milardo,8/29/2011 - 12/9/2011
+HUD,601,"Supervised Fieldwork in Child Development and Family Relations",0004,FEX,2009,TBA,TBA,Gary L Schilmoeller,8/29/2011 - 12/9/2011
+HUD,601,"Supervised Fieldwork in Child Development and Family Relations",0005,FEX,2010,TBA,TBA,Mary Ellin Logue,8/29/2011 - 12/9/2011
+HUD,649,"Investigation of Special Topics",0001,IND,2011,TBA,TBA,Julie M Dellamattera,8/29/2011 - 12/9/2011
+HUD,649,"Investigation of Special Topics",0002,IND,2012,TBA,TBA,Sandra L Caron,8/29/2011 - 12/9/2011
+HUD,649,"Investigation of Special Topics",0003,IND,2013,TBA,TBA,Robert M Milardo,8/29/2011 - 12/9/2011
+HUD,649,"Investigation of Special Topics",0004,IND,2014,TBA,TBA,Gary L Schilmoeller,8/29/2011 - 12/9/2011
+HUD,649,"Investigation of Special Topics",0005,IND,2015,TBA,TBA,Mary Ellin Logue,8/29/2011 - 12/9/2011
+HUD,699,"Graduate Thesis / Research",0001,THS,2016,TBA,TBA,Julie M Dellamattera,8/29/2011 - 12/9/2011
+HUD,699,"Graduate Thesis / Research",0002,THS,2017,TBA,TBA,Sandra L Caron,8/29/2011 - 12/9/2011
+HUD,699,"Graduate Thesis / Research",0003,THS,2018,TBA,TBA,Robert M Milardo,8/29/2011 - 12/9/2011
+HUD,699,"Graduate Thesis / Research",0004,THS,2019,TBA,TBA,Gary L Schilmoeller,8/29/2011 - 12/9/2011
+HUD,699,"Graduate Thesis / Research",0005,THS,2020,TBA,TBA,Mary Ellin Logue,8/29/2011 - 12/9/2011
+IEI,,"10",0002,LEC,7300,MoTuWeTh 9:00AM - 9:50AM,Arranged,Kristopher B McClure,8/29/2011 - 10/21/2011
+IEI,,"10",0003,LEC,7301,MoTuWeTh 10:00AM - 10:50AM,Arranged,Jean Leighton Mileham,8/29/2011 - 10/21/2011
+IEI,,"10",0004,LEC,7302,MoTuWeTh 12:10PM - 1:00PM,Arranged,Erin-Kate Sousa,8/29/2011 - 10/21/2011
+IEI,,"10",0012,LEC,7303,MoTuWeTh 9:00AM - 9:50AM,Arranged,Kristopher B McClure,10/24/2011 - 12/16/2011
+IEI,,"10",0013,LEC,7304,MoTuWeTh 10:00AM - 10:50AM,Arranged,Jean Leighton Mileham,10/24/2011 - 12/16/2011
+IEI,,"10",0014,LEC,7305,MoTuWeTh 12:10PM - 1:00PM,Arranged,Erin-Kate Sousa,10/24/2011 - 12/16/2011
+IEI,,"13",0003,LEC,3105,MoTuWeTh 10:00AM - 10:50AM,Arranged,Staff,8/29/2011 - 10/21/2011
+IEI,,"13",0004,LEC,7306,MoTuWeTh 12:10PM - 1:00PM,Arranged,Kristopher B McClure,8/29/2011 - 10/21/2011
+IEI,,"13",0013,LEC,3106,MoTuWeTh 10:00AM - 10:50AM,Arranged,Staff,10/24/2011 - 12/16/2011
+IEI,,"13",0014,LEC,7308,MoTuWeTh 12:10PM - 1:00PM,Arranged,Kristopher B McClure,10/24/2011 - 12/16/2011
+IEI,,"20",0002,LEC,7309,MoTuWeTh 9:00AM - 9:50AM,Arranged,Christopher A Mares,8/29/2011 - 10/21/2011
+IEI,,"20",0003,LEC,7310,MoTuWeTh 10:00AM - 10:50AM,Arranged,Erin-Kate Sousa,8/29/2011 - 10/21/2011
+IEI,,"20",0004,LEC,7311,MoTuWeTh 12:10PM - 1:00PM,Arranged,Kristopher B McClure,8/29/2011 - 10/21/2011
+IEI,,"20",0012,LEC,7312,MoTuWeTh 9:00AM - 9:50AM,Arranged,Christopher A Mares,10/24/2011 - 12/16/2011
+IEI,,"20",0013,LEC,7313,MoTuWeTh 10:00AM - 10:50AM,Arranged,Erin-Kate Sousa,10/24/2011 - 12/16/2011
+IEI,,"20",0014,LEC,7314,MoTuWeTh 12:10PM - 1:00PM,Arranged,Kristopher B McClure,10/24/2011 - 12/16/2011
+IMD,500,"Creative Concept Development",0001,LEC,3165,Tu 12:00PM - 2:30PM,Lord Hall 202,Owen F Smith,8/29/2011 - 12/9/2011
+IMD,520,"Topics in Media Production",0001,STU,3301,Tu 4:30PM - 7:00PM,Lengyel Hall 121,Sheridan L Kelley,8/29/2011 - 12/9/2011
+IMD,520,"Topics in Media Production",0002,STU,3618,Th 9:00AM - 11:30AM,Lord Hall 205,Amy S Curtis,8/29/2011 - 12/9/2011
+IMD,520,"Topics in Media Production",0003,STU,8009,We 10:00AM - 11:50AM,Chadbourne Hall 420,Jon Ippolito,8/29/2011 - 12/9/2011
+IMD,520,"Topics in Media Production",0004,STU,8010,TuTh 11:00AM - 12:50PM,Class of 1944 Hall 224,Marcia J Douglas,8/29/2011 - 12/9/2011
+IMD,530,"Topics in Technical Development",0001,STU,3162,Mo 11:00AM - 1:30PM,Lord Hall 312,Nathaniel B Aldrich,8/29/2011 - 12/9/2011
+IMD,530,"Topics in Technical Development",0002,STU,8011,Th 3:30PM - 6:00PM,Chadbourne Hall 420,Michael D Scott,8/29/2011 - 12/9/2011
+IMD,560,"Research Studio I: Critical Research Methods for Creative Production",0001,RSG,3368,We 3:30PM - 6:00PM,Lord Hall 200,,8/29/2011 - 12/9/2011
+IMD,570,"Intermedia Studio Critique I",0001,STU,3167,We 3:10PM - 5:40PM,Barrows Hall 133,James E Linehan,8/29/2011 - 12/9/2011
+IMD,571,"Intermedia Studio Critique II",0001,STU,3168,Th 6:00PM - 8:30PM,Chadbourne Hall 420,Staff,8/29/2011 - 12/9/2011
+IMD,572,"Intermedia Studio Critique III",0001,STU,3756,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+IMD,597,"Independent Study in Intermedia",0001,IND,3327,TBA,TBA,Owen F Smith,8/29/2011 - 12/9/2011
+IMD,598,"Directed Study in Intermedia",0001,IND,3328,TBA,TBA,Owen F Smith,8/29/2011 - 12/9/2011
+IMD,600,"Readings for Thesis Conceptual Development",0001,IND,3757,TBA,TBA,Owen F Smith,8/29/2011 - 12/9/2011
+IMD,650,"Field Study and Research",0990,FEX,4208,TBA,TBA,Owen F Smith,8/29/2011 - 12/9/2011
+IMD,699,"Graduate Thesis / Research",0001,THS,3927,TBA,TBA,Owen F Smith,8/29/2011 - 12/9/2011
+INA,201,"Topics in International Affairs",0990,LEC,4169,TBA,On-line Course,Mark R Hibben,8/29/2011 - 12/9/2011
+IND,698,"Independent Study",0001,IND,2051,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+IND,699,"Graduate Thesis / Research",0001,THS,2053,TBA,TBA,Amaranta Ruiz-Nelson,8/29/2011 - 12/9/2011
+INT,105,"(ECO",0001,LEC,3351,TuTh 12:30PM - 1:45PM,Nutting Hall 100,David Silver,8/29/2011 - 12/9/2011
+INT,196,"(University Wide) Academic and Career Exploration Internship",0001,RSG,3408,TBA,TBA,Patricia B Counihan,8/29/2011 - 12/9/2011
+INT,400,"Pop!Tech: The Impact of Technology on Society",0990,LEC,4130,TBA,TBA,Kenneth L Nichols,8/29/2011 - 12/9/2011
+INT,410,"(ANT",0981,LEC,7661,MoWeFr 2:10PM - 3:00PM,Little Hall 205,Jane S Smith,8/29/2011 - 12/9/2011
+INT,479,"Methods in Epidemiology",0001,LEC,3156,Th 4:00PM - 7:00PM,Deering Hall 101C,Roger Sher,8/29/2011 - 12/9/2011
+INT,482,"(SBE",0001,LEC,3369,TuTh 3:30PM - 4:45PM,Deering Hall 17,,8/29/2011 - 12/9/2011
+INT,494,"(PAA",0001,FEX,3096,TBA,TBA,Carolyn S Ball,8/29/2011 - 12/9/2011
+INT,494,"(PAA",0002,FEX,3463,TBA,TBA,Timothy M Cole,8/29/2011 - 12/9/2011
+INT,500,"(ANT",0001,SEM,3427,We 4:10PM - 8:10PM,Bryand Global Science Cen 307,Peter O Koons,8/29/2011 - 12/9/2011
+INT,510,"(BSC",0001,LEC,3939,Tu 9:30AM - 4:00PM,Arranged,Kevin J Eckelbarger,8/29/2011 - 12/9/2011
+INT,527,"(FTY",0001,LEC,3093,MoWe 9:00AM - 9:50AM,Nutting Hall 254,,8/29/2011 - 12/9/2011
+INT,527,"(FTY",1001,LAB,3094,Mo 1:10PM - 4:00PM,Nutting Hall 254,,8/29/2011 - 12/9/2011
+INT,570,"(CHE",0001,LEC,3180,TBA,TBA,John F Vetelino,8/29/2011 - 12/9/2011
+INT,570,"(CHE",0002,LEC,7981,TBA,TBA,Darrell W Donahue,8/29/2011 - 12/9/2011
+INT,579,"Methods in Epidemiology",0001,LEC,3157,Th 4:00PM - 7:00PM,Deering Hall 101C,Roger Sher,8/29/2011 - 12/9/2011
+INT,598,"Special Topics in Interdisciplinary Studies",0990,IND,4167,TBA,TBA,Kenneth L Nichols,8/29/2011 - 12/9/2011
+INT,601,"(University Wide) Responsible Conduct of Research",0001,LEC,3230,TuTh 3:30PM - 4:45PM,Boardman Hall 326,Harlan J Onsrud,8/29/2011 - 9/30/2011
+INT,601,"(University Wide) Responsible Conduct of Research",0002,LEC,3672,TuTh 3:30PM - 4:45PM,Boardman Hall 326,Harlan J Onsrud,11/7/2011 - 12/9/2011
+INV,180,"Create: Innovation Engineering I",0001,LEC,2930,TuTh 9:30AM - 10:45AM,Student Innovations Center 102,,8/29/2011 - 12/9/2011
+INV,180,"Create: Innovation Engineering I",0002,LEC,7513,TuTh 9:30AM - 10:45AM,Bennett Hall 101,,8/29/2011 - 12/9/2011
+INV,180,"Create: Innovation Engineering I",0003,LEC,7514,TuTh 9:30AM - 10:45AM,Donald P Corbett Business 109,Margaret A Lukens,8/29/2011 - 12/9/2011
+INV,180,"Create: Innovation Engineering I",0004,LEC,7515,TuTh 11:00AM - 12:15PM,Little Hall 212,,8/29/2011 - 12/9/2011
+INV,180,"Create: Innovation Engineering I",0005,LEC,7517,TuTh 11:00AM - 12:15PM,Student Innovations Center 102,,8/29/2011 - 12/9/2011
+INV,180,"Create: Innovation Engineering I",0006,LEC,7519,TuTh 9:30AM - 10:45AM,Franco American Centre,,8/29/2011 - 12/9/2011
+INV,392,"Commercialize: Innovation Engineering III",0001,LEC,2954,TuTh 2:00PM - 3:15PM,Student Innovations Center 102,,8/29/2011 - 12/9/2011
+INV,405,"Project: Innovation Engineering V",0001,SEM,4040,TBA,TBA,Margaret A Lukens,8/29/2011 - 12/9/2011
+INV,480,"Internship in Innovation",0001,FEX,4060,TBA,TBA,Margaret A Lukens,8/29/2011 - 12/9/2011
+INV,490,"Independent Study in Innovation",0001,IND,4008,TBA,TBA,Margaret A Lukens,8/29/2011 - 12/9/2011
+INV,510,"Innovation Engineering Accelerated",0001,LEC,3882,Mo 3:10PM - 5:30PM,Student Innovations Center 102,,8/29/2011 - 12/9/2011
+KPE,100,"Introduction to Athletic Training",0001,LAB,2054,MoWeFr 11:00AM - 11:50AM,Lengyel 24,Christopher James Nightingale,8/29/2011 - 10/21/2011
+KPE,201,"Athletic Training",0001,LAB,2055,TuTh 11:00AM - 12:15PM,Lengyel 26,Sherrie L Weeks,8/29/2011 - 12/9/2011
+KPE,209,"Wilderness First Responder",0001,LEC,3403,WeFr 1:10PM - 4:10PM,Lengyel Hall AR,Charlie Bloedon,8/29/2011 - 12/9/2011
+KPE,237,"Swimming Skills",0001,LEC,2056,MoWeFr 8:00AM - 8:50AM,Memorial Gymnasium POOL,Susan Emily Lizzotte,8/29/2011 - 10/21/2011
+KPE,250,"First Aid and Emergency Care",0001,LEC,2057,Tu 4:10PM - 6:30PM,Lengyel 24,Brianna Heather Woodworth,8/29/2011 - 12/9/2011
+KPE,250,"First Aid and Emergency Care",0002,LEC,2058,MoWeFr 8:00AM - 8:50AM,Lengyel 24,Christopher James Nightingale,8/29/2011 - 12/9/2011
+KPE,253,"Theory and Techniques for Strength and Conditioning",0001,LEC,2059,TuTh 9:30AM - 10:45AM,Lengyel Hall 127,David Michael Cusano,8/29/2011 - 12/9/2011,TuTh 9:30AM - 10:45AM,Lengyel Hall GYM,David Michael Cusano,8/29/2011 - 12/9/2011
+KPE,262,"Methods of Teaching Physical Activity",0001,LEC,2060,MoWeFr 1:10PM - 2:00PM,Lengyel Hall 125,Glenn H Reif,8/29/2011 - 12/9/2011,MoWeFr 1:10PM - 2:00PM,Lengyel Hall GYM,Glenn H Reif,8/29/2011 - 12/9/2011
+KPE,262,"Methods of Teaching Physical Activity",0860,LEC,1013,Tu 4:10PM - 7:00PM,Lengyel Hall 125,Glenn H Reif,8/29/2011 - 12/9/2011,Tu 4:10PM - 6:30PM,Lengyel Hall GYM,Glenn H Reif,8/29/2011 - 12/9/2011
+KPE,263,"Individual and Net Games",0001,LEC,3711,MoWeFr 11:00AM - 11:50AM,Lengyel Hall GYM,Michael D Smart,8/29/2011 - 12/9/2011
+KPE,264,"Team Sports and Invasion Games",0001,LEC,3767,We 4:10PM - 6:30PM,Lengyel Hall 127,Michael Thurston,8/29/2011 - 12/9/2011,We 4:10PM - 6:30PM,Lengyel Hall GYM,Michael Thurston,8/29/2011 - 12/9/2011
+KPE,270,"Motor Development and Learning",0001,LEC,2061,MoWeFr 8:00AM - 8:50AM,Lengyel Hall 127,Stephen Butterfield,8/29/2011 - 12/9/2011
+KPE,271,"History and Philosophy of Kinesiology and Physical Education",0001,LEC,2062,TuTh 11:00AM - 12:15PM,Lengyel Hall 127,Christopher James Nightingale,8/29/2011 - 12/9/2011
+KPE,273,"Anatomy and Pathologies of Injuries and Conditions",0001,LEC,2063,MoWeFr 10:00AM - 10:50AM,Lengyel 24,Sherrie L Weeks,8/29/2011 - 12/9/2011
+KPE,280,"Introduction to Paddle Sports",0001,LEC,7359,Tu 12:30PM - 3:15PM,Maine Bound Adventure Center,Lisa M Carter,8/29/2011 - 12/9/2011
+KPE,285,"Climbing Wall Instructor",0001,LEC,1004,TuTh 11:00AM - 12:15PM,Maine Bound Adventure Center,Charlie Bloedon,8/29/2011 - 12/9/2011
+KPE,286,"Challenge Course Facilitator Skills",0001,LEC,2064,TuTh 9:30AM - 10:45AM,Maine Bound Adventure Center,Lisa M Carter,8/29/2011 - 12/9/2011
+KPE,301,"Athletic Training",0001,LAB,2066,TuTh 9:30AM - 10:45AM,Lengyel 26,Christopher James Nightingale,8/29/2011 - 12/9/2011
+KPE,344,"Principles of Coaching",0001,LEC,2067,TuTh 8:00AM - 9:15AM,Lengyel Hall 127,David Michael Cusano,8/29/2011 - 12/9/2011,TuTh 8:00AM - 9:15AM,Lengyel Hall GYM,David Michael Cusano,8/29/2011 - 12/9/2011
+KPE,364,"Elementary School Physical Education",0001,LEC,2069,TuTh 12:30PM - 1:45PM,Lengyel Hall 127,Glenn H Reif,8/29/2011 - 12/9/2011,TuTh 12:30PM - 1:45PM,Lengyel Hall GYM,Glenn H Reif,8/29/2011 - 12/9/2011
+KPE,365,"Curriculum and Instruction in Secondary Physical Education",0001,LEC,2070,TuTh 9:30AM - 10:45AM,Lengyel Hall 125,Glenn H Reif,8/29/2011 - 12/9/2011,TuTh 9:30AM - 10:45AM,Lengyel Hall GYM,Glenn H Reif,8/29/2011 - 12/9/2011
+KPE,367,"Adapted Physical Education",0001,LEC,2071,MoWe 12:10PM - 1:00PM,Lengyel Hall 127,Stephen Butterfield,8/29/2011 - 12/9/2011
+KPE,367,"Adapted Physical Education",1001,LAB,2072,We 12:10PM - 2:00PM,Student Rec &amp; Fitness Ctr Pool,Stephen Butterfield,8/29/2011 - 12/9/2011,We 1:10PM - 2:00PM,Student Rec &amp; Fitness Ctr Gym,Staff,8/29/2011 - 12/9/2011
+KPE,372,"Statistical Methods and Assessment in Physical Education",0001,LEC,2073,MoWeFr 11:00AM - 11:50AM,Lengyel Hall 121,Stephen Butterfield,8/29/2011 - 12/9/2011,MoWeFr 11:00AM - 11:50AM,Lengyel Hall 127,Stephen Butterfield,8/29/2011 - 12/9/2011,MoWeFr 11:00AM - 11:50AM,Lengyel Hall GYM,Stephen Butterfield,8/29/2011 - 12/9/2011
+KPE,376,"Kinesiology",0001,LEC,2074,TuTh 11:00AM - 12:15PM,Lengyel Hall 125,Staff,8/29/2011 - 12/9/2011
+KPE,378,"Physiology of Exercise",0001,LEC,2075,MoWe 10:00AM - 10:50AM,Lengyel Hall 127,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,378,"Physiology of Exercise",1001,LAB,2076,Mo 1:10PM - 3:00PM,Lengyel Hall 122,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,378,"Physiology of Exercise",1002,LAB,2077,We 1:10PM - 3:00PM,Lengyel Hall 122,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,378,"Physiology of Exercise",1003,LAB,2078,Fr 10:00AM - 11:50AM,Lengyel Hall 122,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,384,"Practicum in Kinesiology and Physical Education",0001,FEX,3373,TBA,TBA,Stephen Butterfield,8/29/2011 - 12/9/2011
+KPE,384,"Practicum in Kinesiology and Physical Education",0002,FEX,3375,TBA,TBA,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,384,"Practicum in Kinesiology and Physical Education",0003,FEX,3376,TBA,TBA,Glenn H Reif,8/29/2011 - 12/9/2011
+KPE,384,"Practicum in Kinesiology and Physical Education",0004,FEX,3377,TBA,TBA,Sherrie L Weeks,8/29/2011 - 12/9/2011
+KPE,384,"Practicum in Kinesiology and Physical Education",0005,FEX,3461,TBA,TBA,Lisa M Carter,8/29/2011 - 12/9/2011
+KPE,384,"Practicum in Kinesiology and Physical Education",0006,FEX,3832,TBA,TBA,Charlie Bloedon,8/29/2011 - 12/9/2011
+KPE,385,"Evaluation of Upper Extremity Injuries and Conditions",0001,LEC,2079,MoWeFr 9:00AM - 9:50AM,Lengyel 26,Richard C Young,8/29/2011 - 12/9/2011
+KPE,387,"Therapeutic Exercise for Musculoskeletal Injuries",0001,LEC,2080,TuTh 8:00AM - 9:15AM,Lengyel 26,Sherrie L Weeks,8/29/2011 - 12/9/2011
+KPE,387,"Therapeutic Exercise for Musculoskeletal Injuries",1001,LAB,2081,Mo 1:10PM - 3:00PM,Lengyel 26,Sherrie L Weeks,8/29/2011 - 12/9/2011
+KPE,398,"Problems in Kinesiology and Physical Education",0001,IND,2082,TBA,TBA,Stephen Butterfield,8/29/2011 - 12/9/2011
+KPE,398,"Problems in Kinesiology and Physical Education",0002,IND,2085,TBA,TBA,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,398,"Problems in Kinesiology and Physical Education",0003,IND,2086,TBA,TBA,Glenn H Reif,8/29/2011 - 12/9/2011
+KPE,398,"Problems in Kinesiology and Physical Education",0004,IND,2089,TBA,TBA,Sherrie L Weeks,8/29/2011 - 12/9/2011
+KPE,400,"General Medical Conditions and Disabilities in Sport",0001,LEC,3710,Tu 6:30PM - 8:30PM,Lengyel 26,Shaun M O'Connor,8/29/2011 - 12/9/2011
+KPE,401,"Athletic Training Seminar",0001,SEM,3297,MoWeFr 8:00AM - 8:50AM,Lengyel 26,Sherrie L Weeks,8/29/2011 - 12/9/2011
+KPE,425,"Health Promotion and Disease Prevention",0001,LEC,2090,TuTh 12:30PM - 1:45PM,Lengyel Hall 125,Taylor Bloedon,8/29/2011 - 12/9/2011
+KPE,426,"Exercise Prescription and Leadership",0001,LEC,2091,MoWeFr 8:00AM - 8:50AM,Lengyel Hall 125,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,427,"Health Fitness Internship",0001,RSG,1006,TBA,TBA,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,427,"Health Fitness Internship",0002,RSG,3295,TBA,TBA,Sherrie L Weeks,8/29/2011 - 12/9/2011
+KPE,484,"Methodology of Teaching Health Education",0860,LEC,3329,We 4:10PM - 6:30PM,Lengyel Hall 125,Jennifer Dawn McNulty,8/29/2011 - 12/9/2011
+KPE,490,"Nutrition for Sports and Exercise",0001,LEC,2092,MoWeFr 9:00AM - 9:50AM,Lengyel Hall 127,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,575,"Current Studies in Kinesiology and Physical Education",0860,LEC,3296,Tu 4:10PM - 6:30PM,Lengyel Hall 127,Robert A Lehnhard,8/29/2011 - 12/9/2011
+KPE,588,"Advanced Exercise Physiology",0860,LEC,2093,Mo 4:10PM - 6:30PM,Lengyel Hall 127,Robert A Lehnhard,8/29/2011 - 12/9/2011
+LAT,101,"Elementary Latin I",0990,LEC,4115,TBA,On-line Course,Staff,8/29/2011 - 12/9/2011
+LAT,453,"Poetry of the Republic and Early Empire",0001,LEC,7594,Tu 5:00PM - 7:00PM,Little Hall 204,Kristina Passman,8/29/2011 - 12/9/2011
+LBR,200,"Information Literacy",0001,LEC,3379,We 1:10PM - 3:40PM,Arranged,Nancy M Lewis,8/29/2011 - 12/9/2011
+LIB,500,"Graduate Seminar in Liberal Studies",0001,SEM,7648,Mo 6:00PM - 8:30PM,Stevens Hall South 104A,Henry L Munson,8/29/2011 - 12/9/2011
+LIB,500,"Graduate Seminar in Liberal Studies",0981,SEM,2102,We 4:00PM - 6:45PM,Chadbourne Hall 5A,,8/29/2011 - 9/21/2011,We 4:00PM - 6:45PM,Chadbourne Hall 5A,,10/5/2011 - 10/19/2011,We 4:00PM - 6:45PM,Chadbourne Hall 5A,,11/2/2011 - 11/16/2011,We 4:00PM - 6:45PM,Chadbourne Hall 5A,,12/7/2011 - 12/7/2011
+LIB,500,"Graduate Seminar in Liberal Studies",0985,SEM,4222,We 4:00PM - 6:45PM,Fred Hutchinson Center,,8/29/2011 - 9/21/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,,10/5/2011 - 10/19/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,,11/2/2011 - 11/16/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,,12/7/2011 - 12/7/2011
+LIB,500,"Graduate Seminar in Liberal Studies",0990,SEM,8865,TBA,On-line Course,Kristina Passman,8/29/2011 - 12/9/2011
+LIB,697,"Independent Study",0001,IND,2103,TBA,TBA,Kathleen N March,8/29/2011 - 12/9/2011
+LIB,697,"Independent Study",0002,IND,2104,TBA,TBA,John R Wilson,8/29/2011 - 12/9/2011
+LIB,697,"Independent Study",0003,IND,2105,TBA,TBA,Kristina Passman,8/29/2011 - 12/9/2011
+LIB,698,"Independent Study",0001,IND,2106,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+LIB,699,"Master Project in Liberal Studies",0001,THS,2107,TBA,TBA,Amaranta Ruiz-Nelson,8/29/2011 - 12/9/2011
+MAT,500,"Topics in Graduate Mathematics",0001,IND,3766,MoWe 2:10PM - 3:25PM,Donald P Corbett Business 105,Andre Khalil,8/29/2011 - 12/9/2011
+MAT,500,"Topics in Graduate Mathematics",0002,IND,4057,TuTh 12:30PM - 1:45PM,Jenness Hall 102,William A Halteman,8/29/2011 - 12/9/2011
+MAT,527,"Functions of a Complex Variable I",0001,LEC,7352,MoWeFr 10:00AM - 10:50AM,Neville Hall 421,William O Bray,8/29/2011 - 12/9/2011
+MAT,531,"Mathematical Statistics I",0001,LEC,3188,MoWeFr 12:10PM - 1:00PM,Neville Hall 421,Ramesh C Gupta,8/29/2011 - 12/9/2011
+MAT,562,"Advanced Linear Algebra",0001,LEC,7354,MoWeFr 1:10PM - 2:00PM,Merrill Hall 114,Andrew H Knightly,8/29/2011 - 12/9/2011
+MAT,699,"Graduate Thesis / Research",0001,THS,2139,TBA,TBA,Andrew H Knightly,8/29/2011 - 12/9/2011
+MAT,699,"Graduate Thesis / Research",0002,THS,4085,TBA,TBA,William M Snyder,8/29/2011 - 12/9/2011
+MAT,699,"Graduate Thesis / Research",0003,THS,4086,TBA,TBA,David E Hiebeler,8/29/2011 - 12/9/2011
+MAT,699,"Graduate Thesis / Research",0004,THS,4087,TBA,TBA,Robert D Franzosa,8/29/2011 - 12/9/2011
+MEE,101,"Introduction to Mechanical Engineering",0001,LEC,2140,We 1:10PM - 2:00PM,Bennett Hall 137,Michael T Boyle,8/29/2011 - 12/9/2011
+MEE,150,"Applied Mechanics: Statics",0001,LEC,2141,MoWeFr 8:00AM - 8:50AM,Jenness Hall 100,Richard Sayles,8/29/2011 - 12/9/2011
+MEE,150,"Applied Mechanics: Statics",0002,LEC,2946,MoWeFr 1:10PM - 2:00PM,Little Hall 219,Richard Sayles,8/29/2011 - 12/9/2011
+MEE,230,"Thermodynamics I",0001,LEC,2142,MoWeFr 10:00AM - 10:50AM,Boardman Hall 210,James Sucec,8/29/2011 - 12/9/2011
+MEE,230,"Thermodynamics I",0860,LEC,2143,MoWeFr 10:00AM - 10:50AM,Barrows Hall 126,Michael T Boyle,8/29/2011 - 12/9/2011
+MEE,230,"Thermodynamics I",0869,LEC,4166,TBA,TBA,Michael T Boyle,8/29/2011 - 12/9/2011
+MEE,251,"Strength of Materials",0001,LEC,2144,MoWeFr 8:00AM - 8:50AM,Boardman Hall 310,Donald A Grant,8/29/2011 - 12/9/2011
+MEE,251,"Strength of Materials",0002,LEC,3092,MoWeFr 9:00AM - 9:50AM,Boardman Hall 310,Vincent Caccese,8/29/2011 - 12/9/2011
+MEE,252,"Statics and Strength of Materials",0001,LEC,2145,MoWeFr 8:00AM - 8:50AM,Boardman Hall 207,Zhihe Jin,8/29/2011 - 12/9/2011
+MEE,270,"Applied Mechanics: Dynamics",0001,LEC,2146,TuTh 9:30AM - 10:45AM,Boardman Hall 207,Alireza Shamsaei Sarvestani,8/29/2011 - 12/9/2011
+MEE,360,"Fluid Mechanics",0860,LEC,2945,TuTh 8:00AM - 9:15AM,Bennett Hall 140,Richard Sayles,8/29/2011 - 12/9/2011
+MEE,370,"Modeling",0001,LEC,2147,MoWeFr 1:10PM - 2:00PM,Bennett Hall 140,Senthil S Vel,8/29/2011 - 12/9/2011
+MEE,380,"Design I",0001,LEC,2148,TuTh 2:00PM - 3:15PM,Bennett Hall 140,Ashish Deshpande,8/29/2011 - 12/9/2011
+MEE,394,"Mechanical Engineering Practice",0001,RSG,2149,TBA,TBA,Michael T Boyle,8/29/2011 - 12/9/2011
+MEE,432,"Heat Transfer",0001,LEC,2150,MoWeFr 8:00AM - 8:50AM,Boardman Hall 210,James Sucec,8/29/2011 - 12/9/2011
+MEE,433,"Solar",0001,LEC,7570,MoWeFr 1:10PM - 2:00PM,Boardman Hall 310,Justin H Poland,8/29/2011 - 12/9/2011
+MEE,442,"Mechanical Laboratory II",0001,LAB,2151,Mo 2:10PM - 5:00PM,Boardman Hall 210,,8/29/2011 - 12/9/2011
+MEE,442,"Mechanical Laboratory II",0002,LAB,2152,We 2:10PM - 5:00PM,Boardman Hall 210,,8/29/2011 - 12/9/2011
+MEE,444,"Robot Dynamics and Control",0001,LEC,3916,TuTh 11:00AM - 12:15PM,Boardman Hall 216,Mohsen Shahinpoor,8/29/2011 - 12/9/2011
+MEE,447,"Flight Dynamics",0288,LEC,7571,TuTh 11:00AM - 12:15PM,On-line Course,David Rubenstein,8/29/2011 - 12/9/2011
+MEE,447,"Flight Dynamics",0984,LEC,7572,TuTh 11:00AM - 12:15PM,Barrows Hall 126,David Rubenstein,8/29/2011 - 12/9/2011
+MEE,455,"Advanced Strength of Materials",0001,LEC,2153,MoWeFr 11:00AM - 11:50AM,Stevens Hall North 235,Vincent Caccese,8/29/2011 - 12/9/2011
+MEE,487,"Design III",0001,LEC,2154,TuTh 12:30PM - 4:45PM,Little Hall 130,Michael L Peterson,8/29/2011 - 12/9/2011
+MEE,549,"Numerical Methods in Engineering",0001,LEC,3850,MoWeFr 9:00AM - 9:50AM,Boardman Hall 309,William Glenn Davids,8/29/2011 - 12/9/2011
+MEE,554,"Theory of Elasticity",0001,LEC,7567,MoWe 10:00AM - 11:15AM,Boardman Hall 107,Senthil S Vel,8/29/2011 - 12/9/2011
+MEE,555,"Smart",0001,LEC,7568,TuTh 3:30PM - 4:45PM,Boardman Hall 115,Mohsen Shahinpoor,8/29/2011 - 12/9/2011
+MEE,562,"Advanced Fluid Mechanics",0001,LEC,7569,TuTh 2:00PM - 3:15PM,Boardman Hall 115,Justin H Poland,8/29/2011 - 12/9/2011
+MEE,644,"Mechanical Engineering Analysis I",0001,LEC,7566,MoWe 3:30PM - 4:45PM,Boardman Hall 107,Zhihe Jin,8/29/2011 - 12/9/2011
+MEE,696,"Mechanical Engineering Graduate Seminar",0001,SEM,2155,Fr 3:10PM - 4:00PM,Boardman Hall 220,Senthil S Vel,8/29/2011 - 12/9/2011
+MEE,697,"Mechanical Engineering Projects",0001,IND,2156,TuTh 9:30AM - 10:45AM,Boardman Hall 209,Michael L Peterson,8/29/2011 - 12/9/2011
+MEE,697,"Mechanical Engineering Projects",0002,IND,3466,Tu 11:00AM - 12:00PM,Boardman Hall 220,Ashish Deshpande,8/29/2011 - 12/9/2011
+MEE,697,"Mechanical Engineering Projects",0003,IND,4058,TBA,TBA,Mohsen Shahinpoor,8/29/2011 - 12/9/2011
+MEE,699,"Graduate Thesis / Research",0001,THS,2157,TBA,TBA,Michael T Boyle,8/29/2011 - 12/9/2011
+MEE,699,"Graduate Thesis / Research",0002,THS,2158,TBA,TBA,Vincent Caccese,8/29/2011 - 12/9/2011
+MEE,699,"Graduate Thesis / Research",0003,THS,2159,TBA,TBA,Michael L Peterson,8/29/2011 - 12/9/2011
+MEE,699,"Graduate Thesis / Research",0004,THS,2160,TBA,TBA,Justin H Poland,8/29/2011 - 12/9/2011
+MEE,699,"Graduate Thesis / Research",0005,THS,2161,TBA,TBA,Richard Sayles,8/29/2011 - 12/9/2011
+MEE,699,"Graduate Thesis / Research",0006,THS,2162,TBA,TBA,James Sucec,8/29/2011 - 12/9/2011
+MES,101,"Introduction to Maine Studies",0990,LEC,4155,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+MES,101,"Introduction to Maine Studies",0991,LEC,7694,TBA,On-line Course,Jennifer Pickard,8/29/2011 - 12/9/2011
+MES,201,"The Maine Coast",0981,LEC,3837,Mo 5:30PM - 8:00PM,Chadbourne Hall 5A,Staff,8/29/2011 - 12/9/2011
+MES,201,"The Maine Coast",0985,LEC,7695,Mo 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,8/29/2011 - 12/9/2011
+MES,498,"Advanced Topics in Maine Studies",0981,LEC,2984,We 4:00PM - 6:45PM,Chadbourne Hall 5A,,8/29/2011 - 9/21/2011,We 4:00PM - 6:45PM,Chadbourne Hall 5A,,10/5/2011 - 10/19/2011,We 4:00PM - 6:45PM,Chadbourne Hall 5A,,11/2/2011 - 11/16/2011,We 4:00PM - 6:45PM,Chadbourne Hall 5A,,12/7/2011 - 12/7/2011
+MES,498,"Advanced Topics in Maine Studies",0985,LEC,4233,We 4:00PM - 6:45PM,Fred Hutchinson Center,,8/29/2011 - 9/21/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,,10/5/2011 - 10/19/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,,11/2/2011 - 11/16/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,,12/7/2011 - 12/7/2011
+MES,498,"Advanced Topics in Maine Studies",0990,LEC,7510,TBA,TBA,Sandra L Hutchison,8/29/2011 - 12/9/2011
+MES,520,"Advanced Topics in Maine Studies",0669,LEC,7912,TBA,On-line Course,Pauleena M Macdougall,8/29/2011 - 12/9/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,Pauleena M Macdougall,9/28/2011 - 9/28/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,Pauleena M Macdougall,10/26/2011 - 10/26/2011,We 4:00PM - 6:45PM,Fred Hutchinson Center,Pauleena M Macdougall,11/30/2011 - 11/30/2011
+MES,520,"Advanced Topics in Maine Studies",0869,LEC,7512,TBA,On-line Course,Pauleena M Macdougall,8/29/2011 - 12/9/2011,We 4:00PM - 6:45PM,Little Hall 212,Pauleena M Macdougall,9/28/2011 - 9/28/2011,We 4:00PM - 6:45PM,Little Hall 212,Pauleena M Macdougall,10/26/2011 - 10/26/2011,We 4:00PM - 6:45PM,Little Hall 212,Pauleena M Macdougall,11/30/2011 - 11/30/2011
+MES,520,"Advanced Topics in Maine Studies",0990,LEC,7507,TBA,TBA,Sandra L Hutchison,8/29/2011 - 12/9/2011
+MET,100,"Introduction to Mechanical Engineering Technology",0001,LEC,2166,Mo 11:00AM - 11:50AM,Jenness Hall 100,Karen J Horton,8/29/2011 - 12/9/2011
+MET,100,"Introduction to Mechanical Engineering Technology",1001,LAB,2167,We 2:10PM - 4:00PM,Boardman Hall 310,,8/29/2011 - 12/9/2011
+MET,100,"Introduction to Mechanical Engineering Technology",1002,LAB,2168,Tu 11:00AM - 12:50PM,Jenness Hall 100,Karen J Horton,8/29/2011 - 12/9/2011
+MET,107,"Machine Tool Laboratory I",0001,LEC,7606,Mo 11:00AM - 11:50AM,Machine Tool Laboratory 106,Staff,8/29/2011 - 12/9/2011
+MET,107,"Machine Tool Laboratory I",1001,LAB,7607,Mo 2:10PM - 5:00PM,Machine Tool Laboratory 1,Staff,8/29/2011 - 12/9/2011
+MET,121,"Technical Drawing",0001,LEC,2169,TuTh 2:10PM - 4:00PM,Machine Tool Laboratory 116,Charles F Maguire,8/29/2011 - 12/9/2011
+MET,121,"Technical Drawing",0002,LEC,2897,MoWe 1:10PM - 3:00PM,Machine Tool Laboratory 116,Charles F Maguire,8/29/2011 - 12/9/2011
+MET,121,"Technical Drawing",0003,LEC,2997,TuTh 4:10PM - 6:00PM,Machine Tool Laboratory 116,Charles F Maguire,8/29/2011 - 12/9/2011
+MET,219,"Strength of Materials",0001,LEC,2170,MoFr 9:00AM - 9:50AM,Little Hall 211,Karen J Horton,8/29/2011 - 12/9/2011,We 9:00AM - 10:50AM,Aubert Hall 428,Karen J Horton,8/29/2011 - 12/9/2011
+MET,233,"Thermal Science",0001,LEC,2172,MoWeFr 1:10PM - 2:00PM,Boardman Hall 210,Herbert L Crosby,8/29/2011 - 12/9/2011
+MET,270,"Manufacturing Technology",0001,LEC,2173,MoWeFr 8:00AM - 8:50AM,Boardman Hall 309,David S Morrison,8/29/2011 - 12/9/2011
+MET,312,"Machine Tool Processing II",0001,LEC,2174,Tu 2:10PM - 3:00PM,Machine Tool Laboratory 106,Joel C Anderson,8/29/2011 - 12/9/2011
+MET,312,"Machine Tool Processing II",1001,LAB,2175,Tu 3:00PM - 6:00PM,Machine Tool Laboratory 1,Joel C Anderson,8/29/2011 - 12/9/2011
+MET,312,"Machine Tool Processing II",1002,LAB,2176,Th 2:10PM - 5:00PM,Machine Tool Laboratory 1,Joel C Anderson,8/29/2011 - 12/9/2011
+MET,312,"Machine Tool Processing II",1003,LAB,2898,We 2:10PM - 5:00PM,Machine Tool Laboratory 1,Joel C Anderson,8/29/2011 - 12/9/2011
+MET,313,"CAD / CAM Projects",0001,LAB,3304,Th 8:00AM - 11:50AM,Machine Tool Laboratory 116,Joel C Anderson,8/29/2011 - 12/9/2011
+MET,317,"Dynamics",0001,LEC,2177,MoWeFr 1:10PM - 2:00PM,Machine Tool Laboratory 106,S David Dvorak,8/29/2011 - 12/9/2011
+MET,320,"Selected Topics in Mechanical Engineering Technology II",0002,IND,3398,TBA,TBA,S David Dvorak,8/29/2011 - 12/9/2011
+MET,327,"Automotive Engineering",0001,LEC,7611,MoWeFr 11:00AM - 11:50AM,Barrows Hall 125,Charles F Maguire,8/29/2011 - 12/9/2011
+MET,362,"Power Transmission and Control",0001,LEC,3772,We 5:35PM - 7:35PM,Barrows Hall 119,Thomas Christensen,8/29/2011 - 12/9/2011
+MET,362,"Power Transmission and Control",1001,LAB,3773,Tu 4:00PM - 5:50PM,Barrows Hall 26,Thomas Christensen,8/29/2011 - 12/9/2011
+MET,362,"Power Transmission and Control",1002,LAB,3774,Tu 6:00PM - 7:50PM,Barrows Hall 26,Thomas Christensen,8/29/2011 - 12/9/2011
+MET,362,"Power Transmission and Control",1003,LAB,3775,Tu 10:00AM - 11:50AM,Barrows Hall 26,Thomas Christensen,8/29/2011 - 12/9/2011
+MET,365,"Control of Industrial Machines",0001,LEC,3857,Tu 3:10PM - 5:00PM,Boardman Hall 118,David S Morrison,8/29/2011 - 12/9/2011
+MET,365,"Control of Industrial Machines",1001,LAB,3858,Th 3:10PM - 5:00PM,Boardman Hall 118,David S Morrison,8/29/2011 - 12/9/2011
+MET,394,"Mechanical Engineering Technology Practice",0001,RSG,2178,TBA,TBA,Charles F Maguire,8/29/2011 - 12/9/2011
+MET,433,"Thermodynamics",0001,LEC,2179,MoWeFr 8:00AM - 8:50AM,Barrows Hall 130,Charles F Maguire,8/29/2011 - 12/9/2011
+MET,462,"Design I",0001,LEC,2180,MoWeFr 9:00AM - 9:50AM,Boardman Hall 210,Herbert L Crosby,8/29/2011 - 12/9/2011
+MET,464,"Senior Design Project I",0001,LEC,2181,MoWeFr 10:00AM - 10:50AM,Boardman Hall 309,Herbert L Crosby,8/29/2011 - 12/9/2011
+MET,484,"Engineering Economics",0860,LEC,2963,MoWe 4:10PM - 5:25PM,Bennett Hall 137,Charles F Maguire,8/29/2011 - 12/9/2011
+MLC,190,"Topics in Modern Languages",0500,IND,7602,TuTh 2:30PM - 3:45PM,Stevens Hall North 237,Lindsay Kaplan,8/29/2011 - 12/9/2011
+MLC,190,"Topics in Modern Languages",0805,IND,2854,TBA,TBA,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+MLC,190,"Topics in Modern Languages",0807,IND,2856,TBA,TBA,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+MLC,190,"Topics in Modern Languages",0812,IND,2857,TBA,TBA,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+MLC,190,"Topics in Modern Languages",0814,IND,2858,TBA,TBA,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+MLC,190,"Topics in Modern Languages",0815,IND,2859,TBA,TBA,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+MLC,466,"The Teaching of Modern Languages",0001,LEC,2182,Th 5:00PM - 8:00PM,Barrows Hall 130,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+MLC,490,"Topics in Modern Languages",0990,IND,8864,TBA,On-line Course,Kristina Passman,8/29/2011 - 12/9/2011
+MLC,566,"The Teaching of Modern Languages",0001,LEC,3949,Th 5:00PM - 8:00PM,Barrows Hall 130,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
+MLC,598,"Topics in Modern Languages",0869,LEC,3662,Sa 9:00AM - 11:00AM,Little Hall 212,Shelly V Chasse-Johndro,9/10/2011 - 9/10/2011
+MSE,395,"Practicum in Museum Education",0001,RSG,2184,TBA,TBA,Laurie E Hicks,8/29/2011 - 12/9/2011
+MSE,396,"Internship",0001,RSG,2185,TBA,TBA,Laurie E Hicks,8/29/2011 - 12/9/2011
+MSE,497,"Independent Study in Museum Studies/Museum Education",0001,IND,2186,TBA,TBA,Laurie E Hicks,8/29/2011 - 12/9/2011
+MSL,100,"Leadership Laboratory",0001,LAB,2187,Tu 5:30PM - 7:30PM,Memorial Gymnasium FH,Sean Michael Harmon,8/29/2011 - 12/9/2011
+MSL,101,"Foundations of Officership",0001,LEC,2188,We 8:00AM - 8:50AM,Armory A,Randy Sink,8/29/2011 - 12/9/2011
+MSL,101,"Foundations of Officership",0002,LEC,2189,Tu 1:00PM - 1:50PM,Armory A,Randy Sink,8/29/2011 - 12/9/2011
+MSL,101,"Foundations of Officership",0003,LEC,2190,Th 2:10PM - 3:00PM,Armory A,Randy Sink,8/29/2011 - 12/9/2011
+MSL,105,"Leadership and Physical Fitness",0001,LEC,2191,MoWeFr 6:00AM - 6:50AM,Memorial Gymnasium FH,Sean Michael Harmon,8/29/2011 - 12/9/2011
+MSL,201,"Individual Leadership Studies",0001,LEC,2192,We 2:10PM - 3:50PM,Armory A,Joseph Richard Miller,8/29/2011 - 12/9/2011
+MSL,201,"Individual Leadership Studies",0002,LEC,2193,Tu 12:30PM - 2:10PM,Armory A,Joseph Richard Miller,8/29/2011 - 12/9/2011
+MSL,301,"Leadership and Problem Solving",0001,LEC,2194,TuTh 3:30PM - 4:45PM,Armory B,Sean Michael Harmon,8/29/2011 - 12/9/2011
+MSL,350,"The Evolution of American Warfare",0001,LEC,3110,TuTh 9:30AM - 10:45AM,Armory A,Joseph Richard Miller,8/29/2011 - 12/9/2011
+MSL,401,"Leadership and Management",0001,LEC,2195,TuTh 3:30PM - 4:45PM,Armory A,Stephen P Szewc,8/29/2011 - 12/9/2011,Fr 7:00AM - 8:00AM,Armory A,Stephen P Szewc,8/29/2011 - 12/9/2011
+MUE,207,"Voice Class",0001,LEC,2196,MoWe 8:00AM - 8:50AM,Class of 1944 Hall 102,Jeremy David Milton,8/29/2011 - 12/9/2011
+MUE,209,"String Class",0001,LEC,2197,MoWeFr 9:00AM - 9:50AM,Class of 1944 Hall 100,Noreen Silver,8/29/2011 - 12/9/2011
+MUE,209,"String Class",0002,LEC,2198,MoWeFr 12:10PM - 1:00PM,Class of 1944 Hall 102,Alan Dale Clark,8/29/2011 - 12/9/2011
+MUE,210,"Introduction to Music Education",0001,LEC,2199,TuTh 9:30AM - 10:45AM,Class of 1944 Hall 100,,8/29/2011 - 12/9/2011
+MUE,213,"Woodwinds I",0001,LEC,2200,TuTh 1:00PM - 2:15PM,Class of 1944 Hall 100,Louis O Hall,8/29/2011 - 12/9/2011
+MUE,320,"Teaching of General Music: Elementary",0001,LEC,2201,TuTh 11:00AM - 12:15PM,Class of 1944 Hall 100,Laura Artesani,8/29/2011 - 12/9/2011
+MUE,400,"Choral Music Education",0001,LEC,2202,MoWeFr 10:00AM - 10:50AM,Class of 1944 Hall 102,Dennis K Cox,8/29/2011 - 12/9/2011
+MUE,401,"Organization and Development of the Instrumental Music Program",0001,LEC,2203,MoWeFr 9:00AM - 9:50AM,Class of 1944 Hall 102,Curvin G Farnham,8/29/2011 - 12/9/2011
+MUE,403,"Instrumental Laboratory",0001,LAB,2204,Fr 8:00AM - 8:50AM,Class of 1944 Hall 100,Curvin G Farnham,8/29/2011 - 12/9/2011
+MUH,201,"History of Western Music I",0001,LEC,2205,MoWeFr 10:00AM - 10:50AM,Class of 1944 Hall 107,Laura Artesani,8/29/2011 - 12/9/2011
+MUL,101,"The Art of Listening to Music: Elements",0001,LEC,2206,TuTh 9:30AM - 10:45AM,Donald P Corbett Business 100,Anatole Wieck,8/29/2011 - 12/9/2011
+MUL,101,"The Art of Listening to Music: Elements",0665,LEC,4230,We 5:30PM - 8:30PM,Fred Hutchinson Center,Richard E Brown,8/29/2011 - 12/9/2011
+MUL,101,"The Art of Listening to Music: Elements",0990,LEC,4119,TBA,TBA,Anatole Wieck,8/29/2011 - 12/9/2011
+MUL,200,"Music Literature Laboratory",0001,LEC,2207,TuTh 2:00PM - 2:50PM,Class of 1944 Hall 316,Beth A Wiemann,8/29/2011 - 12/9/2011,TuTh 2:00PM - 2:50PM,Class of 1944 Hall 107,Beth A Wiemann,8/29/2011 - 12/9/2011
+MUL,202,"The Art of Listening to Music: Historical Survey",0001,LEC,2208,MoWeFr 10:00AM - 10:50AM,Class of 1944 Hall 100,Phillip A Silver,8/29/2011 - 12/9/2011
+MUL,531,"Choral Literature and Performance Practice",0001,LEC,7320,Th 5:00PM - 7:30PM,Class of 1944 Hall 102,Dennis K Cox,8/29/2011 - 12/9/2011
+MUL,541,"Instrumental Ensemble Literature and Performance Practice",0001,LEC,7321,TBA,TBA,Anatole Wieck,8/29/2011 - 12/9/2011
+MUO,101,"University Singers",0001,MUS,2209,TuTh 2:00PM - 2:50PM,Class of 1944 Hall 102,Dennis K Cox,8/29/2011 - 12/9/2011,MoWeFr 3:10PM - 4:00PM,Class of 1944 Hall 102,Staff,8/29/2011 - 12/9/2011
+MUO,103,"Oratorio Society",0001,MUS,2210,Mo 7:00PM - 9:00PM,Class of 1944 Hall 102,Ludlow B Hallman,8/29/2011 - 12/9/2011
+MUO,109,"Collegiate Chorale",0001,MUS,2211,TuTh 12:30PM - 1:20PM,Class of 1944 Hall 102,Jeremy David Milton,8/29/2011 - 12/9/2011
+MUO,111,"Marching Band",0001,MUS,2212,TuTh 3:30PM - 4:50PM,Class of 1944 Hall 100,Christopher G White,8/29/2011 - 12/9/2011,Fr 4:10PM - 5:30PM,Class of 1944 Hall 100,Staff,8/29/2011 - 12/9/2011
+MUO,111,"Marching Band",0002,MUS,2213,TuTh 3:30PM - 5:30PM,Class of 1944 Hall 130,Christopher G White,8/29/2011 - 12/9/2011,Fr 4:10PM - 5:30PM,Class of 1944 Hall 226,Staff,8/29/2011 - 12/9/2011
+MUO,113,"Pep Band",0001,MUS,2214,Th 6:30PM - 9:00PM,Class of 1944 Hall 100,Christopher G White,8/29/2011 - 12/9/2011
+MUO,114,"Symphonic Band",0001,MUS,2215,MoWe 4:10PM - 5:30PM,Class of 1944 Hall 100,Christopher G White,8/29/2011 - 12/9/2011
+MUO,121,"University Orchestra",0001,MUS,2216,MoWe 7:00PM - 9:00PM,Class of 1944 Hall 100,Anatole Wieck,8/29/2011 - 12/9/2011
+MUO,132,"Opera Workshop",0001,MUS,2217,WeFr 4:10PM - 6:30PM,Class of 1944 Hall 130,Ludlow B Hallman,8/29/2011 - 12/9/2011
+MUO,141,"Brass Ensemble",0001,MUS,2218,Fr 1:10PM - 2:00PM,Class of 1944 Hall 100,Jack W Burt,8/29/2011 - 12/9/2011
+MUO,143,"UMAINE Jazz Ensemble",0001,MUS,2219,MoWeFr 12:10PM - 1:00PM,Class of 1944 Hall 100,Jack W Burt,8/29/2011 - 12/9/2011
+MUO,149,"Chamber Music",0001,MUS,2220,TBA,TBA,Noreen Silver,8/29/2011 - 12/9/2011
+MUO,149,"Chamber Music",0002,MUS,2221,TBA,TBA,Richard Kenefic,8/29/2011 - 12/9/2011
+MUO,150,"Percussion Ensemble",0001,LAB,2222,Tu 6:00PM - 8:00PM,Class of 1944 Hall 100,Thomas M Wubbenhorst,8/29/2011 - 12/9/2011
+MUO,155,"Chamber Jazz Ensemble",0001,LAB,2223,MoWe 1:10PM - 2:00PM,Class of 1944 Hall 100,Karel Lidral,8/29/2011 - 12/9/2011
+MUO,160,"Black Bear Men's Chorus",0001,LEC,3637,Tu 7:00PM - 9:00PM,Class of 1944 Hall 102,Daniel B Williams,8/29/2011 - 12/9/2011
+MUO,165,"Athena Consort",0001,LEC,3639,Th 3:00PM - 5:00PM,Class of 1944 Hall 102,Heidi E Corliss,8/29/2011 - 12/9/2011
+MUO,502,"University Singers",0001,MUS,2224,TuTh 2:00PM - 2:50PM,Class of 1944 Hall 102,Dennis K Cox,8/29/2011 - 12/9/2011,MoWeFr 3:10PM - 4:00PM,Class of 1944 Hall 102,Staff,8/29/2011 - 12/9/2011
+MUO,503,"Oratorio Society",0001,MUS,2225,Mo 7:00PM - 9:00PM,Class of 1944 Hall 102,Ludlow B Hallman,8/29/2011 - 12/9/2011
+MUO,504,"Collegiate Chorale",0001,MUS,2226,TuTh 12:30PM - 1:20PM,Class of 1944 Hall 102,Dennis K Cox,8/29/2011 - 12/9/2011
+MUO,505,"Marching Band",0001,MUS,2227,TuTh 3:30PM - 4:50PM,Class of 1944 Hall 100,Christopher G White,8/29/2011 - 12/9/2011,Fr 4:10PM - 5:30PM,Class of 1944 Hall 100,Staff,8/29/2011 - 12/9/2011
+MUO,507,"Pep Band",0001,MUS,2228,Th 6:30PM - 9:00PM,Class of 1944 Hall 100,Christopher G White,8/29/2011 - 12/9/2011
+MUO,508,"Symphonic Band",0001,MUS,2229,MoWe 4:10PM - 5:30PM,Class of 1944 Hall 100,Christopher G White,8/29/2011 - 12/9/2011
+MUO,509,"University Orchestra",0001,MUS,2230,MoWe 7:00PM - 9:00PM,Class of 1944 Hall 100,Anatole Wieck,8/29/2011 - 12/9/2011
+MUO,511,"Opera Workshop",0001,MUS,2231,WeFr 4:10PM - 6:30PM,Class of 1944 Hall 130,Ludlow B Hallman,8/29/2011 - 12/9/2011
+MUO,514,"UM Jazz Ensemble",0001,MUS,2232,MoWeFr 12:10PM - 1:00PM,Class of 1944 Hall 100,Jack W Burt,8/29/2011 - 12/9/2011
+MUO,518,"Percussion Ensemble",0001,MUS,2233,Tu 6:00PM - 8:00PM,Class of 1944 Hall 100,Thomas M Wubbenhorst,8/29/2011 - 12/9/2011
+MUO,520,"Chamber Jazz Ensemble",0001,MUS,3367,MoWe 1:10PM - 2:00PM,Class of 1944 Hall 100,Karel Lidral,8/29/2011 - 12/9/2011
+MUP,205,"Piano Class I",0001,MUS,2234,MoWe 8:00AM - 8:50AM,Class of 1944 Hall 316,Ginger Y Hwalek,8/29/2011 - 12/9/2011
+MUP,205,"Piano Class I",0002,MUS,2236,MoWe 9:00AM - 9:50AM,Class of 1944 Hall 316,Ginger Y Hwalek,8/29/2011 - 12/9/2011
+MUP,205,"Piano Class I",0003,MUS,2235,MoWe 11:00AM - 11:50AM,Class of 1944 Hall 316,Ginger Y Hwalek,8/29/2011 - 12/9/2011
+MUP,215,"Piano Class I",0001,MUS,2237,MoWe 12:10PM - 1:00PM,Class of 1944 Hall 316,Ginger Y Hwalek,8/29/2011 - 12/9/2011
+MUP,215,"Piano Class I",0002,MUS,2238,MoWe 1:10PM - 2:00PM,Class of 1944 Hall 316,Ginger Y Hwalek,8/29/2011 - 12/9/2011
+MUP,340,"Basic Conducting",0001,MUS,2239,MoWeFr 11:00AM - 11:50AM,Class of 1944 Hall 100,Louis O Hall,8/29/2011 - 12/9/2011
+MUP,401,"Performance",0001,MUS,2240,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+MUP,401,"Performance",0002,MUS,2241,TBA,TBA,James Adams,8/29/2011 - 12/9/2011
+MUP,401,"Performance",0004,MUS,2242,TBA,TBA,Noreen Silver,8/29/2011 - 12/9/2011
+MUP,401,"Performance",0005,MUS,2243,TBA,TBA,Beth A Wiemann,8/29/2011 - 12/9/2011
+MUP,401,"Performance",0006,MUS,2244,TBA,TBA,Elizabeth A Downing,8/29/2011 - 12/9/2011
+MUP,401,"Performance",0007,MUS,2245,TBA,TBA,Jack W Burt,8/29/2011 - 12/9/2011
+MUP,405,"Keyboard Musicianship",0001,MUS,2259,TBA,TBA,Baycka Voronietsky,8/29/2011 - 12/9/2011
+MUP,511,"Advanced Chamber Music I",0001,MUS,2260,TBA,TBA,Noreen Silver,8/29/2011 - 12/9/2011
+MUP,511,"Advanced Chamber Music I",0002,MUS,4041,TBA,TBA,Richard Kenefic,8/29/2011 - 12/9/2011
+MUP,610,"Vocal Performance",0001,MUS,2261,TBA,TBA,,8/29/2011 - 12/9/2011
+MUP,611,"Keyboard Performance",0001,MUS,2262,TBA,TBA,Baycka Voronietsky,8/29/2011 - 12/9/2011
+MUP,612,"String Instrument Performance",0001,MUS,2263,TBA,TBA,Anatole Wieck,8/29/2011 - 12/9/2011
+MUP,612,"String Instrument Performance",0002,MUS,3455,TBA,TBA,Richard Kenefic,8/29/2011 - 12/9/2011
+MUP,613,"Wind Instrument and Percussion Performance",0001,MUS,2264,TBA,TBA,Stuart L Marrs,8/29/2011 - 12/9/2011
+MUP,695,"Graduate Recital",0001,MUS,2265,TBA,TBA,,8/29/2011 - 12/9/2011
+MUS,100,"Recital Laboratory",0001,LEC,2266,Mo 2:10PM - 3:00PM,Class of 1944 Hall 130,Beth A Wiemann,8/29/2011 - 12/9/2011
+MUS,121,"Principles of Singing I",0001,IND,2267,TuTh 11:00AM - 11:50AM,Class of 1944 Hall 102,Nancy E Ogle,8/29/2011 - 12/9/2011
+MUS,298,"Special Subjects in Music",0042,IND,3851,TBA,TBA,Beth A Wiemann,8/29/2011 - 12/9/2011
+MUS,298,"Special Subjects in Music",0067,IND,2308,Fr 1:10PM - 2:00PM,Class of 1944 Hall 102,Elizabeth A Downing,8/29/2011 - 12/9/2011
+MUS,312,"Piano Pedagogy I",0001,LEC,7322,TBA,TBA,Baycka Voronietsky,8/29/2011 - 12/9/2011
+MUS,498,"Senior Project",0001,IND,2349,TBA,TBA,Phillip A Silver,8/29/2011 - 12/9/2011
+MUS,600,"Research in Music",0001,LEC,4043,TBA,TBA,Louis O Hall,8/29/2011 - 12/9/2011
+MUS,698,"Special Studies in Music",0001,IND,2350,TBA,TBA,Dennis K Cox,8/29/2011 - 12/9/2011
+MUY,101,"Fundamentals of Music",0001,LEC,2351,MoWeFr 2:10PM - 3:00PM,Class of 1944 Hall 107,Staff,8/29/2011 - 12/9/2011
+MUY,101,"Fundamentals of Music",0990,LEC,4120,TBA,On-line Course,Thomas M Wubbenhorst,8/29/2011 - 12/9/2011
+MUY,111,"Elementary Harmony I",0001,LEC,2352,TuTh 8:00AM - 8:50AM,Class of 1944 Hall 15,Karel Lidral,8/29/2011 - 12/9/2011
+MUY,113,"Elementary Sight Singing and Ear Training I",0001,LEC,2353,MoWe 11:00AM - 11:50AM,Class of 1944 Hall 15,Noreen Silver,8/29/2011 - 12/9/2011
+MUY,113,"Elementary Sight Singing and Ear Training I",0002,LEC,2354,MoWe 1:10PM - 2:00PM,Class of 1944 Hall 107,Noreen Silver,8/29/2011 - 12/9/2011
+MUY,211,"Advanced Harmony I",0001,LEC,2355,TuTh 11:00AM - 11:50AM,Class of 1944 Hall 15,Karel Lidral,8/29/2011 - 12/9/2011
+MUY,213,"Advanced Sight Singing and Ear Training I",0001,LEC,2357,MoWe 9:00AM - 9:50AM,Class of 1944 Hall 107,Marisa Solomon,8/29/2011 - 12/9/2011
+MUY,213,"Advanced Sight Singing and Ear Training I",0002,LEC,2356,MoWe 11:00AM - 11:50AM,Class of 1944 Hall 107,Marisa Solomon,8/29/2011 - 12/9/2011
+MUY,315,"Twentieth Century Musical Techniques",0001,LEC,7323,TuTh 9:30AM - 10:45AM,Class of 1944 Hall 107,Staff,8/29/2011 - 12/9/2011
+MUY,410,"Chamber Jazz Arranging and Piano I",0001,LEC,7324,TuTh 12:30PM - 1:45PM,Class of 1944 Hall 316,Karel Lidral,8/29/2011 - 12/9/2011
+MUY,650,"Topics in Music Theory",0001,IND,2358,Tu 5:00PM - 7:30PM,Nutting Hall 212,Beth A Wiemann,8/29/2011 - 12/9/2011
+NAS,101,"Introduction to Native American Studies",0001,LEC,2359,MoWeFr 10:00AM - 10:50AM,Boardman Hall 216,Mr Gkisedtanamoogk,8/29/2011 - 12/9/2011
+NAS,101,"Introduction to Native American Studies",0002,LEC,2360,TuTh 2:00PM - 3:15PM,Barrows Hall 130,Lisa K Neuman,8/29/2011 - 12/9/2011
+NAS,101,"Introduction to Native American Studies",0990,LEC,4184,TBA,TBA,Maureen E Smith,8/29/2011 - 12/9/2011
+NAS,270,"Native American Women",0001,LEC,3783,MoWeFr 9:00AM - 9:50AM,Little Hall 202,Maureen E Smith,8/29/2011 - 12/9/2011
+NAS,298,"Directed Study in Native American Studies",0001,IND,2361,TBA,TBA,Maureen E Smith,8/29/2011 - 12/9/2011
+NAS,498,"Directed Study in Native American Studies",0001,IND,2362,TBA,TBA,Maureen E Smith,8/29/2011 - 12/9/2011
+NAV,100,"Naval Leadership Laboratory",0001,LAB,2363,We 2:10PM - 3:00PM,Lengyel Hall 127,Staff,8/29/2011 - 12/9/2011,We 3:00PM - 4:00PM,Lengyel Hall GYM,Staff,8/29/2011 - 12/9/2011,MoWeFr 6:00AM - 7:00AM,Memorial Gymnasium FH,Staff,8/29/2011 - 12/9/2011
+NAV,101,"Introduction to Naval Science",0001,LEC,2364,TuTh 8:00AM - 9:15AM,Struchtmeyer,Michael Dowell,8/29/2011 - 12/9/2011
+NAV,301,"Navigation and Naval Operations I",0001,LEC,7246,TuTh 11:00AM - 12:15PM,Struchtmeyer,Michael Dowell,8/29/2011 - 12/9/2011
+NMD,100,"Introduction to New Media",0001,LEC,2380,MoWeFr 10:00AM - 10:50AM,Little Hall 211,William Kuykendall,8/29/2011 - 12/9/2011
+NMD,100,"Introduction to New Media",1001,LAB,2383,MoWe 12:10PM - 1:00PM,Barrows Hall 124,Staff,8/29/2011 - 12/9/2011
+NMD,100,"Introduction to New Media",1002,LAB,2381,TuTh 5:00PM - 5:50PM,Barrows Hall 124,Staff,8/29/2011 - 12/9/2011
+NMD,100,"Introduction to New Media",1003,LAB,2382,MoWe 11:00AM - 11:50AM,Barrows Hall 124,Staff,8/29/2011 - 12/9/2011
+NMD,102,"Fundamentals of Information Systems",0500,LEC,7445,TuTh 12:30PM - 1:45PM,Lord Hall 100,Michael D Scott,8/29/2011 - 12/9/2011
+NMD,102,"Fundamentals of Information Systems",1501,LAB,7446,Mo 1:10PM - 3:10PM,Lord Hall 200,Staff,8/29/2011 - 12/9/2011
+NMD,102,"Fundamentals of Information Systems",1502,LAB,7447,Mo 3:30PM - 5:30PM,Lord Hall 200,Staff,8/29/2011 - 12/9/2011
+NMD,102,"Fundamentals of Information Systems",1503,LAB,7448,Fr 2:10PM - 4:10PM,Lord Hall 200,Staff,8/29/2011 - 12/9/2011
+NMD,104,"Design Basics for New Media",0001,LAB,7421,TuTh 11:00AM - 12:15PM,Lengyel Hall 121,Raphael A Diluzio,8/29/2011 - 12/9/2011
+NMD,104,"Design Basics for New Media",0500,LAB,3151,MoWeFr 12:10PM - 1:00PM,Lengyel Hall 121,Aaron D Boothroyd,8/29/2011 - 12/9/2011
+NMD,104,"Design Basics for New Media",0501,LAB,3152,TuTh 3:30PM - 4:45PM,Barrows Hall 124,Matthew P Leclair,8/29/2011 - 12/9/2011
+NMD,201,"Photographic Reporting and Storytelling",0860,LEC,2958,MoWe 5:30PM - 7:30PM,Chadbourne Hall 420,William Kuykendall,8/29/2011 - 12/9/2011
+NMD,202,"Information Design",0001,LEC,1268,TuTh 9:30AM - 10:45AM,Chadbourne Hall 420,Michael D Scott,8/29/2011 - 12/9/2011
+NMD,203,"Creative Hypertext",0001,LEC,2384,TuTh 12:30PM - 1:45PM,Chadbourne Hall 420,Joline J Blais,8/29/2011 - 12/9/2011
+NMD,204,"Introduction to Time",0001,LEC,2385,TuTh 3:30PM - 4:45PM,Lord Hall 311,Raphael A Diluzio,8/29/2011 - 12/9/2011
+NMD,206,"Project Design Laboratory: I",0001,LAB,2386,TuTh 11:00AM - 12:15PM,Chadbourne Hall 420,Joline J Blais,8/29/2011 - 12/9/2011
+NMD,250,"Electronic Music Composition I",0860,LEC,3429,Mo 4:30PM - 7:00PM,Lord Hall 312,Nathaniel B Aldrich,8/29/2011 - 12/9/2011
+NMD,270,"Digital Art I",0500,LAB,7422,MoWe 9:00AM - 11:30AM,Lord Hall 311,Matthew Smolinsky,8/29/2011 - 12/9/2011
+NMD,270,"Digital Art I",0990,LAB,4139,TBA,TBA,Andrew O Hurtt,8/29/2011 - 12/9/2011
+NMD,295,"Topics in New Media",0001,LEC,3615,MoWe 12:30PM - 3:00PM,Lord Hall 311,Matthew Smolinsky,8/29/2011 - 12/9/2011
+NMD,295,"Topics in New Media",0500,LEC,3154,TuTh 2:00PM - 3:15PM,Lengyel Hall 121,Sheridan L Kelley,8/29/2011 - 12/9/2011
+NMD,295,"Topics in New Media",0665,LEC,8013,Mo 12:30PM - 4:00PM,Fred Hutchinson Center,Tara Law,8/29/2011 - 12/9/2011
+NMD,295,"Topics in New Media",0990,LEC,4205,TBA,TBA,Andrew O Hurtt,8/29/2011 - 12/9/2011
+NMD,301,"Documentary Photography and Audio",0001,LEC,2960,MoWe 3:10PM - 5:10PM,Chadbourne Hall 420,William Kuykendall,8/29/2011 - 12/9/2011
+NMD,305,"Creative Networks",0001,SEM,7450,We 10:00AM - 11:50AM,Chadbourne Hall 420,Jon Ippolito,8/29/2011 - 12/9/2011
+NMD,324,"Year in Film I",0001,LEC,3957,We 6:45PM - 9:15PM,Lord Hall 100,Raphael A Diluzio,8/29/2011 - 12/9/2011
+NMD,370,"Digital Art IIA: 3D Modeling and Animation",0860,LAB,2962,MoWe 4:00PM - 6:30PM,Barrows Hall 124,Aaron D Boothroyd,8/29/2011 - 12/9/2011
+NMD,398,"Topics in New Media",0860,IND,2387,Sa 9:00AM - 4:00PM,Arranged,,8/29/2011 - 12/9/2011
+NMD,398,"Topics in New Media",0861,LAB,7454,Th 4:30PM - 7:00PM,Lengyel Hall 121,Sheridan L Kelley,8/29/2011 - 12/9/2011
+NMD,430,"Topics in New Media",0001,LEC,3161,Th 3:30PM - 6:00PM,Chadbourne Hall 420,Michael D Scott,8/29/2011 - 12/9/2011
+NMD,430,"Topics in New Media",0002,LEC,3300,Mo 11:00AM - 1:30PM,Lord Hall 312,Nathaniel B Aldrich,8/29/2011 - 12/9/2011
+NMD,430,"Topics in New Media",0003,LEC,8012,We 1:10PM - 3:00PM,Chadbourne Hall 420,Jon Ippolito,8/29/2011 - 12/9/2011
+NMD,430,"Topics in New Media",0860,LEC,3430,Mo 4:30PM - 7:00PM,Lord Hall 312,Nathaniel B Aldrich,8/29/2011 - 12/9/2011
+NMD,490,"Independent Study in New Media",0001,IND,2388,TBA,TBA,Joline J Blais,8/29/2011 - 12/9/2011
+NMD,490,"Independent Study in New Media",0002,IND,2389,TBA,TBA,Raphael A Diluzio,8/29/2011 - 12/9/2011
+NMD,490,"Independent Study in New Media",0003,IND,2390,TBA,TBA,Jon Ippolito,8/29/2011 - 12/9/2011
+NMD,490,"Independent Study in New Media",0005,IND,2391,TBA,TBA,William Kuykendall,8/29/2011 - 12/9/2011
+NMD,490,"Independent Study in New Media",0006,IND,2392,TBA,TBA,Michael D Scott,8/29/2011 - 12/9/2011
+NMD,490,"Independent Study in New Media",0007,IND,2393,TBA,TBA,Owen F Smith,8/29/2011 - 12/9/2011
+NMD,498,"Practicum in New Media I",0001,RSG,2394,Mo 9:00AM - 11:30AM,Chadbourne Hall 420,Jon Ippolito,8/29/2011 - 12/9/2011
+NMD,498,"Practicum in New Media I",0002,RSG,3443,Tu 3:30PM - 6:00PM,Chadbourne Hall 420,Michael D Scott,8/29/2011 - 12/9/2011
+NUR,503,"Advanced Health Appraisal and Physical Assessment: Nurse Practitioner",0001,LEC,2430,Th 9:00AM - 12:00PM,Dunn Hall 214,Judy J Kuhns-Hastings,8/29/2011 - 12/9/2011
+NUR,503,"Advanced Health Appraisal and Physical Assessment: Nurse Practitioner",1001,LAB,3863,Th 1:00PM - 4:00PM,Dunn Hall 140,Judy J Kuhns-Hastings,8/29/2011 - 12/9/2011
+NUR,503,"Advanced Health Appraisal and Physical Assessment: Nurse Practitioner",2001,CLN,3864,TBA,TBA,Judy J Kuhns-Hastings,8/29/2011 - 12/9/2011
+NUR,507,"Advanced Pathophysiology",0860,LEC,2431,We 5:10PM - 8:00PM,Dunn Hall 214,,8/29/2011 - 12/9/2011
+NUR,512,"Curriculum and Course Development and Evaluation in Nursing Education",0990,SEM,7431,TBA,On-line Course,,8/29/2011 - 12/9/2011
+NUR,522,"Family Nurse Practitioner Care of Adults I",0001,LEC,2432,Th 9:00AM - 12:30PM,Dunn Hall 202,Nancy J Fishwick,8/29/2011 - 12/9/2011
+NUR,522,"Family Nurse Practitioner Care of Adults I",2001,CLN,4278,TBA,TBA,Nancy J Fishwick,8/29/2011 - 12/9/2011
+NUR,693,"Ethical Inquiry in Health Care",0990,LEC,4177,TBA,TBA,,8/29/2011 - 12/9/2011
+NUR,695,"Topics in Nursing",0001,IND,3442,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+NUR,697,"Scholarly Project",0001,RSG,2433,TBA,TBA,Ursula A Pritham,8/29/2011 - 12/9/2011
+NUR,697,"Scholarly Project",0002,RSG,3406,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+NUR,697,"Scholarly Project",0003,RSG,3407,TBA,TBA,Ursula A Pritham,8/29/2011 - 12/9/2011
+NUR,698,"Independent Study in Nursing",0001,IND,2434,TBA,TBA,Ursula A Pritham,8/29/2011 - 12/9/2011
+NUR,698,"Independent Study in Nursing",0002,IND,2435,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+NUR,698,"Independent Study in Nursing",0003,IND,2436,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+NUR,698,"Independent Study in Nursing",0004,IND,2437,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+NUR,698,"Independent Study in Nursing",0005,IND,2438,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+NUR,698,"Independent Study in Nursing",0006,IND,2439,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+NUR,699,"Graduate Thesis / Research",0001,THS,2440,TBA,TBA,Ursula A Pritham,8/29/2011 - 12/9/2011
+ONM,,"11",0001,LEC,3355,MoWeFr 10:00AM - 10:50AM,Shibles Hall 217,Linda H Rottmann,8/29/2011 - 12/9/2011
+ONM,,"12",0001,LEC,3356,MoWeFr 1:10PM - 2:00PM,Shibles Hall 217,Linda H Rottmann,8/29/2011 - 12/9/2011
+ONO,,"11",0001,LEC,3357,TuTh 9:30AM - 10:30AM,Barrows Hall 119,Ann L Smith,8/29/2011 - 12/9/2011
+ONO,,"11",2001,REC,3358,Th 9:30AM - 10:30AM,Little Hall 215,Ann L Smith,8/29/2011 - 12/9/2011,Th 9:30AM - 10:30AM,Barrows Hall 131,Ann L Smith,8/29/2011 - 12/9/2011
+ONR,,"12",0001,LEC,3359,MoWeFr 9:00AM - 9:50AM,Stevens Hall 355,June K Carter,8/29/2011 - 12/9/2011
+ONS,,"11",0001,LEC,3360,TuTh 8:00AM - 9:15AM,Donald P Corbett Business 113,Molly Maclean,8/29/2011 - 12/9/2011
+ONS,,"11",0002,LEC,3361,TuTh 11:00AM - 12:15PM,Deering Hall 101C,Molly Maclean,8/29/2011 - 12/9/2011
+ONS,,"11",1002,LAB,3362,Th 1:10PM - 3:00PM,Deering Hall 101A,Molly Maclean,8/29/2011 - 12/9/2011
+ONS,,"11",1003,LAB,3363,Th 3:10PM - 5:00PM,Deering Hall 101A,Molly Maclean,8/29/2011 - 12/9/2011
+PAA,200,"Public Management",0001,LEC,13201,Tu 6:00PM - 8:30PM,Little Hall 110,Marie C Grady,8/29/2011 - 12/9/2011
+PAA,340,"Public Financial Management",0001,LEC,2950,MoWeFr 1:10PM - 2:00PM,Stevens Hall North 235,Kenneth L Nichols,8/29/2011 - 12/9/2011
+PAA,350,"Human Resources in Public Service",0001,LEC,2444,TuTh 11:00AM - 12:15PM,Stevens Hall North 235,Carolyn S Ball,8/29/2011 - 12/9/2011
+PAA,370,"Local Government Administration",0001,LEC,7527,MoWeFr 10:00AM - 10:50AM,Stevens Hall North 237,G Thomas Taylor,8/29/2011 - 12/9/2011
+PAA,405,"Administrative Law",0001,LEC,8863,Tu 3:10PM - 5:40PM,Stevens Hall 355,Edward B Laverty,8/29/2011 - 12/9/2011
+PAA,425,"Health Care System Management",0001,LEC,7528,Th 4:00PM - 6:30PM,Stevens Hall North 237,Carolyn S Ball,8/29/2011 - 12/9/2011
+PAA,498,"Independent Readings in Public Administration",0001,IND,2445,TBA,TBA,G Thomas Taylor,8/29/2011 - 12/9/2011
+PAA,516,"Information Technology and Public Policy",0981,LEC,7531,Mo 4:00PM - 6:45PM,Stevens Hall North 235,Kenneth L Nichols,8/29/2011 - 12/9/2011
+PAA,516,"Information Technology and Public Policy",0985,LEC,7711,Mo 4:00PM - 6:45PM,Fred Hutchinson Center,Kenneth L Nichols,8/29/2011 - 12/9/2011
+PAA,516,"Information Technology and Public Policy",5000,LEC,7708,Mo 4:00PM - 6:45PM,Katz Video Conferencing,Kenneth L Nichols,8/29/2011 - 12/9/2011
+PAA,516,"Information Technology and Public Policy",5001,LEC,7709,Mo 4:00PM - 6:45PM,Arranged,Kenneth L Nichols,8/29/2011 - 12/9/2011
+PAA,550,"Human Resources for Government and Nonprofits",0981,SEM,7534,Tu 4:00PM - 6:45PM,Stevens Hall North 235,Carolyn S Ball,8/29/2011 - 12/9/2011
+PAA,550,"Human Resources for Government and Nonprofits",0985,SEM,7718,Tu 4:00PM - 6:45PM,Fred Hutchinson Center,Carolyn S Ball,8/29/2011 - 12/9/2011
+PAA,550,"Human Resources for Government and Nonprofits",5000,SEM,7716,Tu 4:00PM - 6:45PM,Katz Video Conferencing,Carolyn S Ball,8/29/2011 - 12/9/2011
+PAA,550,"Human Resources for Government and Nonprofits",5001,SEM,7717,Tu 4:00PM - 6:45PM,Arranged,Carolyn S Ball,8/29/2011 - 12/9/2011
+PAA,600,"Accountability in Public Policy and Administration",0001,LEC,7526,Th 6:00PM - 8:30PM,Stevens Hall North 117,Edward B Laverty,8/29/2011 - 12/9/2011
+PAA,625,"Health Care and Human Services Administration and Policy",0860,LEC,7529,Th 3:10PM - 5:45PM,Stevens Hall North 117,Staff,8/29/2011 - 12/9/2011
+PAA,670,"Regional Governance",0001,LEC,7530,We 3:10PM - 5:40PM,Stevens Hall North 117,G Thomas Taylor,8/29/2011 - 12/9/2011
+PAA,696,"Public Adminstration Internship",0001,RSG,2447,TBA,TBA,,8/29/2011 - 12/9/2011
+PAA,697,"Directed Research",0001,IND,2448,TBA,TBA,Carolyn S Ball,8/29/2011 - 12/9/2011
+PAA,698,"Independent Readings",0001,IND,2449,TBA,TBA,Carolyn S Ball,8/29/2011 - 12/9/2011
+PAA,699,"Graduate Thesis / Research",0001,THS,2450,TBA,TBA,G Thomas Taylor,8/29/2011 - 12/9/2011
+PAX,201,"Introduction to Peace and Reconciliation Studies",0500,LEC,3039,We 2:10PM - 4:40PM,Barrows Hall 131,Barbara J Blazej,8/29/2011 - 12/9/2011
+PAX,201,"Introduction to Peace and Reconciliation Studies",0860,LEC,8014,Tu 5:30PM - 8:00PM,Little Hall 219,Yvonne M Thibodeau,8/29/2011 - 12/9/2011
+PAX,201,"Introduction to Peace and Reconciliation Studies",0861,LEC,8015,Th 5:30PM - 8:00PM,Stevens Hall North 119,Mr Gkisedtanamoogk,8/29/2011 - 12/9/2011
+PAX,201,"Introduction to Peace and Reconciliation Studies",0990,LEC,4122,TBA,TBA,Yvonne M Thibodeau,8/29/2011 - 12/9/2011
+PAX,250,"Peace and Pop Culture",0990,LEC,4192,TBA,TBA,James F Toner,8/29/2011 - 12/9/2011
+PAX,350,"Buddhism",0990,LEC,4123,TBA,TBA,Hugh J Curran,8/29/2011 - 12/9/2011
+PAX,351,"This Sacred Earth: Ecology and Spirituality",0990,LEC,4124,TBA,TBA,Hugh J Curran,8/29/2011 - 12/9/2011
+PAX,360,"Conflict Resolution: A Relational Approach To Working Through Conflict",0665,LEC,8016,Sa 8:30AM - 4:00PM,Fred Hutchinson Center,Joanne Boynton,9/17/2011 - 9/17/2011,Sa 8:30AM - 4:00PM,Fred Hutchinson Center,Joanne Boynton,10/1/2011 - 10/1/2011,Sa 8:30AM - 4:00PM,Fred Hutchinson Center,Joanne Boynton,10/15/2011 - 10/15/2011,Sa 8:30AM - 4:00PM,Fred Hutchinson Center,Joanne Boynton,10/29/2011 - 10/29/2011
+PAX,370,"Building Sustainable Communities",0860,LEC,2451,We 6:00PM - 8:30PM,Shibles Hall 217,Emily Markides,8/29/2011 - 12/9/2011
+PAX,398,"Topics in Peace and Reconciliation Studies",0669,LEC,8930,Tu 9:30AM - 12:15PM,Fred Hutchinson Center,Emily Markides,8/29/2011 - 12/9/2011
+PAX,398,"Topics in Peace and Reconciliation Studies",0869,LEC,1002,Tu 9:30AM - 12:15PM,Stevens Hall 310,Emily Markides,8/29/2011 - 12/9/2011
+PAX,401,"Women Activists: Warriors for Peace and Justice",0990,LEC,4145,TBA,TBA,Yvonne M Thibodeau,8/29/2011 - 12/9/2011
+PAX,495,"Advanced Topics in Peace and Reconciliation Studies",0669,LEC,4241,Fr 2:30PM - 5:00PM,Fred Hutchinson Center,Hugh J Curran,8/29/2011 - 12/9/2011
+PAX,495,"Advanced Topics in Peace and Reconciliation Studies",0860,LEC,3405,Sa 9:00AM - 4:00PM,Arranged,,8/29/2011 - 12/9/2011
+PAX,495,"Advanced Topics in Peace and Reconciliation Studies",0869,LEC,3480,Fr 2:30PM - 5:00PM,Hitchner Hall 147,Hugh J Curran,8/29/2011 - 12/9/2011
+PAX,498,"Special Projects in Peace and Reconciliation Studies",0860,IND,2452,TBA,TBA,Phyllis Brazee,8/29/2011 - 12/9/2011
+PAX,598,"Independent Graduate Study",0665,IND,8017,Sa 8:30AM - 4:00PM,Fred Hutchinson Center,Joanne Boynton,9/17/2011 - 9/17/2011,Sa 8:30AM - 4:00PM,Fred Hutchinson Center,Joanne Boynton,10/1/2011 - 10/1/2011,Sa 8:30AM - 4:00PM,Fred Hutchinson Center,Joanne Boynton,10/15/2011 - 10/15/2011,Sa 8:30AM - 4:00PM,Fred Hutchinson Center,Joanne Boynton,10/29/2011 - 10/29/2011
+PAX,598,"Independent Graduate Study",0669,IND,8935,Tu 9:30AM - 12:15PM,Fred Hutchinson Center,Emily Markides,8/29/2011 - 12/9/2011
+PAX,598,"Independent Graduate Study",0860,IND,3457,We 6:00PM - 8:30PM,Shibles Hall 217,Emily Markides,8/29/2011 - 12/9/2011
+PAX,598,"Independent Graduate Study",0869,IND,3452,Tu 9:30AM - 12:15PM,Stevens Hall 310,Emily Markides,8/29/2011 - 12/9/2011
+PAX,598,"Independent Graduate Study",0990,IND,4149,TBA,TBA,Yvonne M Thibodeau,8/29/2011 - 12/9/2011
+PAX,598,"Independent Graduate Study",0991,IND,4216,TBA,TBA,Hugh J Curran,8/29/2011 - 12/9/2011
+PHI,100,"Contemporary Moral Problems",0001,LEC,3619,MoWeFr 10:00AM - 10:50AM,Bennett Hall 140,Jessica P Miller,8/29/2011 - 12/9/2011
+PHI,100,"Contemporary Moral Problems",0002,LEC,7251,TuTh 12:30PM - 1:45PM,Neville Hall 227,Roger J H King,8/29/2011 - 12/9/2011
+PHI,102,"Introduction to Philosophy",0860,LEC,2453,Tu 4:30PM - 7:00PM,Jenness Hall 108,Edwin Martin,8/29/2011 - 12/9/2011
+PHI,102,"Introduction to Philosophy",0861,LEC,3187,We 4:30PM - 7:00PM,Stevens Hall 355,Edwin Martin,8/29/2011 - 12/9/2011
+PHI,103,"Methods of Reasoning",0001,LEC,7250,MoWe 4:10PM - 5:25PM,Hitchner Hall 203,James H Page,8/29/2011 - 12/9/2011
+PHI,104,"Existentialism and Literature",0001,LEC,3620,TuTh 9:30AM - 10:45AM,Deering Hall 113,Kirsten E Jacobson,8/29/2011 - 12/9/2011
+PHI,104,"Existentialism and Literature",0860,LEC,7249,Mo 4:30PM - 7:00PM,Stevens Hall 375,Nicholas Jenkins,8/29/2011 - 12/9/2011
+PHI,105,"Introduction to Religious Studies",0001,LEC,3621,TuTh 11:00AM - 12:15PM,Stevens Hall 355,Douglas M Allen,8/29/2011 - 12/9/2011
+PHI,210,"History of Ancient Philosophy",0001,LEC,2454,MoWeFr 10:00AM - 10:50AM,Deering Hall 101C,Michael W Howard,8/29/2011 - 12/9/2011
+PHI,232,"Environmental Ethics",0001,LEC,3194,TuTh 9:30AM - 10:45AM,Dunn Hall 115,Roger J H King,8/29/2011 - 12/9/2011
+PHI,235,"Biomedical Ethics",0001,LEC,2455,MoWeFr 9:00AM - 9:50AM,Winslow Hall 201,Jessica P Miller,8/29/2011 - 12/9/2011
+PHI,240,"Social and Political Philosophy",0001,LEC,3624,TuTh 11:00AM - 12:15PM,Stevens Hall North 121,Michael W Howard,8/29/2011 - 12/9/2011
+PHI,250,"Formal Logic",0001,LEC,2456,MoWeFr 2:10PM - 3:00PM,Donald P Corbett Business 115,Michael W Howard,8/29/2011 - 12/9/2011
+PHI,262,"Philosophy of Art",0001,LEC,7254,TuTh 12:30PM - 1:45PM,Stevens Hall North 121,Kirsten E Jacobson,8/29/2011 - 12/9/2011
+PHI,286,"Religions and Philosophies of the East: Hinduism",0001,LEC,3625,MoWe 4:10PM - 5:25PM,The Maples 17,Douglas M Allen,8/29/2011 - 12/9/2011
+PHI,317,"Existentialism and Phenomenology",0001,LEC,7252,We 4:30PM - 7:00PM,The Maples 10,Kirsten E Jacobson,8/29/2011 - 12/9/2011
+PHI,342,"Marxist Philosophy I: The Philosophy of Karl Marx",0001,LEC,3626,TuTh 2:00PM - 3:15PM,The Maples 10,Douglas M Allen,8/29/2011 - 12/9/2011
+PHI,351,"Topics in Philosophy and Literature",0001,LEC,7253,TuTh 9:30AM - 10:45AM,The Maples 10,Jessica P Miller,8/29/2011 - 12/9/2011
+PHI,466,"Readings in Philosophy",0001,IND,3076,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+PHI,566,"Graduate Readings in Philosophy",0001,IND,3874,TBA,TBA,Staff,TBA
+PHY,501,"Mechanics",0001,LEC,2521,TuTh 12:30PM - 1:45PM,Bennett Hall 101,Staff,8/29/2011 - 12/9/2011
+PHY,510,"Graduate Laboratory",0001,LAB,2522,TBA,TBA,Charles T Hess,8/29/2011 - 12/9/2011
+PHY,574,"Methods of Theoretical Physics I",0001,LEC,2523,MoWeFr 9:00AM - 9:50AM,Bennett Hall 101,Staff,8/29/2011 - 12/9/2011
+PHY,575,"Methods of Theoretical Physics II",0001,LEC,3420,MoWeFr 9:00AM - 9:50AM,Bennett Hall 101,Staff,8/29/2011 - 12/9/2011
+PHY,588,"Graduate Seminar",0001,SEM,2524,Tu 4:00PM - 5:00PM,Bennett Hall 102,,8/29/2011 - 12/9/2011
+PHY,588,"Graduate Seminar",0002,SEM,3969,Tu 1:00PM - 2:00PM,Bennett Hall 114,,8/29/2011 - 12/9/2011
+PHY,598,"Special Topics in Theoretical or Experimental Physics",0001,IND,2525,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+PHY,603,"Quantum Mechanics II",0001,LEC,7375,TuTh 2:00PM - 3:15PM,Bennett Hall 102,William N Unertl,8/29/2011 - 12/9/2011
+PHY,625,"Solid State Physics II",0001,LEC,7376,MoWeFr 1:10PM - 2:00PM,Bennett Hall 102,Staff,8/29/2011 - 12/9/2011
+PHY,699,"Graduate Thesis / Research",0001,THS,2526,TBA,TBA,James P McClymer,8/29/2011 - 12/9/2011
+POS,100,"American Government",0001,LEC,2527,TuTh 12:30PM - 1:45PM,Little Hall 120,Mark D Brewer,8/29/2011 - 12/9/2011
+POS,100,"American Government",0002,LEC,2528,TuTh 9:30AM - 10:45AM,Boardman Hall 210,Richard J Powell,8/29/2011 - 12/9/2011
+POS,100,"American Government",0665,LEC,12872,Mo 5:30PM - 8:00PM,Fred Hutchinson Center,Diana Rich,8/29/2011 - 12/9/2011
+POS,100,"American Government",0990,LEC,4125,TBA,TBA,Richard J Powell,8/29/2011 - 12/9/2011
+POS,120,"Introduction to World Politics",0500,LEC,7377,TuTh 2:00PM - 3:15PM,Donald P Corbett Business 100,Glen Paul Holman,8/29/2011 - 12/9/2011
+POS,201,"Introduction to Political Theory",0001,LEC,2530,MoWeFr 2:10PM - 3:00PM,Stevens Hall North 235,Michael J Palmer,8/29/2011 - 12/9/2011
+POS,241,"Introduction to Comparative Politics",0001,LEC,2531,MoWeFr 10:00AM - 10:50AM,Stevens Hall North 235,James W Warhola,8/29/2011 - 12/9/2011
+POS,243,"Canadian Government and Politics",0001,LEC,2532,MoWeFr 9:00AM - 9:50AM,Stevens Hall North 235,Howard H Cody,8/29/2011 - 12/9/2011
+POS,273,"International Relations",0990,LEC,4154,TBA,TBA,Mark R Hibben,8/29/2011 - 12/9/2011
+POS,282,"Introduction to American Law",0001,LEC,2533,TuTh 9:30AM - 10:45AM,Stevens Hall 355,Solomon Goldman,8/29/2011 - 12/9/2011
+POS,302,"Medieval Political Thought",0001,LEC,3189,MoWeFr 1:10PM - 2:00PM,Stevens Hall North 117,James W Warhola,8/29/2011 - 12/9/2011
+POS,303,"Early Modern Political Thought",0001,LEC,7755,TuTh 2:00PM - 3:15PM,Merrill Hall 114,Michael J Palmer,8/29/2011 - 12/9/2011
+POS,306,"Crafting the American Constitution",0990,LEC,7666,TBA,On-line Course,Mark D Brewer,8/29/2011 - 12/9/2011
+POS,336,"Government and Politics in Russia",0001,LEC,2534,TuTh 11:00AM - 12:15PM,Shibles Hall 316,James W Warhola,8/29/2011 - 12/9/2011
+POS,354,"The U.S. Presidency",0001,LEC,7370,TuTh 12:30PM - 1:45PM,Barrows Hall 130,Richard J Powell,8/29/2011 - 12/9/2011
+POS,359,"Topics in American Government",0001,LEC,7762,MoWeFr 12:10PM - 1:00PM,Stevens Hall North 235,Staff,8/29/2011 - 12/9/2011
+POS,359,"Topics in American Government",0665,LEC,12873,Th 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,8/29/2011 - 12/9/2011
+POS,359,"Topics in American Government",0990,LEC,4174,TBA,TBA,Mark R Hibben,8/29/2011 - 12/9/2011
+POS,368,"China",0001,LEC,7371,TuTh 12:30PM - 1:45PM,Deering Hall 113,Seth Singleton,8/29/2011 - 12/9/2011
+POS,370,"International Terrorism: The Challenges for America",0001,LEC,7418,TuTh 11:00AM - 12:15PM,Donald P Corbett Business 115,Glen Paul Holman,8/29/2011 - 12/9/2011
+POS,372,"Canadian Foreign Policy",0001,LEC,2535,MoWeFr 11:00AM - 11:50AM,Stevens Hall North 237,Howard H Cody,8/29/2011 - 12/9/2011
+POS,380,"Interest Groups and American Politics",0001,LEC,7372,TuTh 11:00AM - 12:15PM,Stevens Hall North 237,Mark D Brewer,8/29/2011 - 12/9/2011
+POS,383,"American Constitutional Law",0860,LEC,7373,Mo 4:10PM - 6:40PM,Rogers Hall 206,Richard J Powell,8/29/2011 - 12/9/2011
+POS,385,"Women and Politics",0001,LEC,7374,MoWeFr 11:00AM - 11:50AM,Little Hall 218,Amy Fried,8/29/2011 - 12/9/2011
+POS,401,"Seminar in Political Theory",0001,SEM,3545,We 2:10PM - 4:40PM,Merrill Hall 114,Michael J Palmer,8/29/2011 - 12/9/2011
+POS,475,"International Security",0001,LEC,7759,Th 3:30PM - 6:00PM,Little Hall 218,Seth Singleton,8/29/2011 - 12/9/2011
+POS,493,"American Politics Internship",0001,RSG,2536,TBA,TBA,Timothy M Cole,8/29/2011 - 12/9/2011
+POS,496,"International Affairs Internship",0001,RSG,2537,TBA,TBA,Howard H Cody,8/29/2011 - 12/9/2011
+POS,498,"Independent Study in Political Science",0001,IND,2538,TBA,TBA,Timothy M Cole,8/29/2011 - 12/9/2011
+POS,499,"Senior Seminar in Political Science",0001,SEM,2539,Th 2:00PM - 4:30PM,Stevens Hall North 121,Amy Fried,8/29/2011 - 12/9/2011
+POS,596,"Directed Research in Political Science",0001,RSG,2540,TBA,TBA,Timothy M Cole,8/29/2011 - 12/9/2011
+PPA,499,"Undergraduate Thesis",0001,THS,2541,TBA,TBA,Joseph M Genco,8/29/2011 - 12/9/2011
 PRT,225,"Readings in Outdoor Recreation",0001,LEC,2964,MoWeFr 10:00AM - 10:50AM,Winslow Hall 201,Jessica E Leahy,8/29/2011 - 12/9/2011
 PRT,345,"Special Problems",0001,IND,2542,TBA,TBA,John Joseph Daigle,8/29/2011 - 12/9/2011
 PRT,345,"Special Problems",0002,IND,2543,TBA,TBA,Jessica E Leahy,8/29/2011 - 12/9/2011
@@ -455,16 +1480,16 @@ PSE,305,"Problems in Plant",0003,IND,4073,TBA,TBA,Ivan J Fernandez,8/29/2011 - 1
 PSE,305,"Problems in Plant",0004,IND,2560,TBA,TBA,Eric R Gallandt,8/29/2011 - 12/9/2011
 PSE,305,"Problems in Plant",0005,IND,3397,TBA,TBA,David H Lambert,8/29/2011 - 12/9/2011
 PSE,305,"Problems in Plant",0006,IND,2561,TBA,TBA,Marianne Sarrantonio,8/29/2011 - 12/9/2011
-PSE,325,"Turfgrass Management",0001,LEC,7492,Fr 12:10PM - 1:00PM,Roger P Clapp Greenhouse 1,James Henry O&#039;Brien,8/29/2011 - 12/9/2011
-PSE,325,"Turfgrass Management",1001,LAB,8006,Fr 1:10PM - 4:00PM,Roger P Clapp Greenhouse 1,James Henry O&#039;Brien,8/29/2011 - 12/9/2011
+PSE,325,"Turfgrass Management",0001,LEC,7492,Fr 12:10PM - 1:00PM,Roger P Clapp Greenhouse 1,James Henry O'Brien,8/29/2011 - 12/9/2011
+PSE,325,"Turfgrass Management",1001,LAB,8006,Fr 1:10PM - 4:00PM,Roger P Clapp Greenhouse 1,James Henry O'Brien,8/29/2011 - 12/9/2011
 PSE,328,"Landscape Design",0001,LEC,2098,TuTh 11:00AM - 12:15PM,South Annex A 101,Jaina Young,8/29/2011 - 12/9/2011
 PSE,328,"Landscape Design",1001,LAB,2099,Th 2:00PM - 5:00PM,South Annex A 101,Jaina Young,8/29/2011 - 12/9/2011
 PSE,396,"Field Experience in Plant",0001,FEX,3515,TBA,TBA,Marianne Sarrantonio,8/29/2011 - 12/9/2011
-PSE,396,"Field Experience in Plant",0002,FEX,3516,Th 12:30PM - 1:45PM,Lord Hall 200,Stephanie Elaine Burnett,8/29/2011 - 12/9/2011
+PSE,396,"Field Experience in Plant",0002,FEX,3516,Th 12:30PM - 1:45PM,Deering Hall 101C,Stephanie Elaine Burnett,8/29/2011 - 12/9/2011
 PSE,403,"Weed Ecology and Management",0001,LEC,7493,MoWe 1:10PM - 3:00PM,Merrill Hall 330,Eric R Gallandt,8/29/2011 - 12/9/2011
 PSE,413,"Wetland Delineation and Mapping",0001,LEC,7494,Fr 11:00AM - 1:00PM,Deering Hall 17,Aram J K Calhoun,8/29/2011 - 12/9/2011
 PSE,413,"Wetland Delineation and Mapping",1001,LAB,7495,Fr 1:00PM - 5:00PM,Deering Hall 17,Aram J K Calhoun,8/29/2011 - 12/9/2011
-PSE,424,"Plant Production",0001,LEC,2100,MoWe 9:00AM - 9:50AM,Aubert Hall 428,Donglin Zhang,8/29/2011 - 12/9/2011
+PSE,424,"Plant Production",0001,LEC,2100,MoWe 9:00AM - 9:50AM,Deering Hall 113,Donglin Zhang,8/29/2011 - 12/9/2011
 PSE,424,"Plant Production",1001,LAB,2101,We 1:10PM - 3:00PM,Deering Hall 101C,Donglin Zhang,8/29/2011 - 12/9/2011
 PSE,457,"Plant Pathology",0001,LEC,2562,MoWeFr 8:00AM - 8:50AM,Deering Hall 113,David H Lambert,8/29/2011 - 12/9/2011
 PSE,457,"Plant Pathology",1001,LAB,2563,Mo 1:10PM - 4:00PM,Deering Hall 22,David H Lambert,8/29/2011 - 12/9/2011
@@ -485,7 +1510,6 @@ PSE,699,"Graduate Thesis / Research",0004,THS,3448,TBA,TBA,Ellen B Mallory,8/29/
 PSE,699,"Graduate Thesis / Research",0005,THS,3335,TBA,TBA,Renae E Moran,8/29/2011 - 12/9/2011
 PSE,699,"Graduate Thesis / Research",0006,THS,4065,TBA,TBA,Marianne Sarrantonio,8/29/2011 - 12/9/2011
 QUS,699,"Graduate Thesis / Research",0001,THS,2660,TBA,TBA,Paul A Mayewski,8/29/2011 - 12/9/2011
-SAR,540,"Introduction to Students at Risk",0860,LEC,7672,TBA,On-line Course,Cheryl A Robertson,8/29/2011 - 12/9/2011,Th 5:00PM - 7:30PM,Shibles Hall 316,Cheryl A Robertson,9/15/2011 - 9/15/2011,Th 5:00PM - 7:30PM,Shibles Hall 316,Cheryl A Robertson,10/13/2011 - 10/13/2011,Th 5:00PM - 7:30PM,Shibles Hall 316,Cheryl A Robertson,11/10/2011 - 11/10/2011,Th 5:00PM - 7:30PM,Shibles Hall 316,Cheryl A Robertson,12/8/2011 - 12/8/2011
 SED,402,"Adapting Instruction for Students With Disabilities",0001,LEC,2662,We 1:10PM - 3:50PM,Shibles Hall 202,Diane W Jackson,8/29/2011 - 12/9/2011
 SED,402,"Adapting Instruction for Students With Disabilities",0002,LEC,2663,TuTh 11:00AM - 12:15PM,Shibles Hall 311,Diane W Jackson,8/29/2011 - 12/9/2011
 SED,402,"Adapting Instruction for Students With Disabilities",0003,LEC,2664,TuTh 12:30PM - 1:45PM,Shibles Hall 311,Diane W Jackson,8/29/2011 - 12/9/2011
@@ -497,6 +1521,8 @@ SED,553,"Assessment in Special Education I",0001,LEC,4257,We 5:00PM - 8:00PM,Shi
 SED,556,"Severe Disabilities: Assessment II",0869,LEC,7670,Th 5:00PM - 8:00PM,Shibles Hall 35,Andrea Elizabeth Bilello,8/29/2011 - 12/9/2011
 SED,598,"Special Topics in Special Education",0001,IND,2985,TBA,TBA,Patricia F Martz,8/29/2011 - 12/9/2011
 SED,598,"Special Topics in Special Education",0002,IND,7673,Fr 5:00PM - 8:00PM,Shibles Hall 159,A James Artesani,10/7/2011 - 10/7/2011,Sa 9:00AM - 12:00PM,Shibles Hall 159,,10/8/2011 - 10/8/2011
+SED,598,"Special Topics in Special Education",0003,IND,13818,TBA,TBA,Sandra Doctoroff,8/29/2011 - 12/9/2011
+SED,598,"Special Topics in Special Education",0004,IND,13819,TBA,TBA,Deborah Rooks,8/29/2011 - 12/9/2011
 SED,598,"Special Topics in Special Education",0860,IND,7671,Th 5:00PM - 8:00PM,Shibles Hall 311,,8/29/2011 - 12/9/2011
 SED,610,"Internship in Special Education Teaching",0001,RSG,3091,TBA,TBA,Janet Spector,8/29/2011 - 12/9/2011
 SED,610,"Internship in Special Education Teaching",0002,RSG,4096,TBA,TBA,Janet Spector,8/29/2011 - 12/9/2011
@@ -575,11 +1601,13 @@ SOC,101,"Introduction to Sociology",0004,LEC,2702,TuTh 11:00AM - 12:15PM,Little 
 SOC,101,"Introduction to Sociology",0005,LEC,2703,TuTh 3:30PM - 4:45PM,Little Hall 203,Kathryn Maietta,8/29/2011 - 12/9/2011
 SOC,101,"Introduction to Sociology",0665,LEC,4254,Tu 2:30PM - 5:00PM,Fred Hutchinson Center,Kimberly A Huisman,8/29/2011 - 12/9/2011
 SOC,201,"Social Inequality",0001,LEC,3099,TuTh 9:30AM - 10:45AM,Little Hall 211,Ann Leffler,8/29/2011 - 12/9/2011
+SOC,214,"Crime and Criminal Justice",0001,LEC,12953,TuTh 3:30PM - 4:45PM,Little Hall 110,Michael Ansel Rocque,8/29/2011 - 12/9/2011
 SOC,301,"Microsociology: Interaction and the Self",0001,LEC,2705,We 2:10PM - 4:40PM,Jenness Hall 108,Kimberly A Huisman,8/29/2011 - 12/9/2011
 SOC,302,"Macrosociology: The Structure of Societies",0001,LEC,2706,TuTh 11:00AM - 12:15PM,Lord Hall 100,Steven F Cohn,8/29/2011 - 12/9/2011
 SOC,329,"Sociology of Gender",0990,LEC,7291,TBA,On-line Course,Amy M Blackstone,8/29/2011 - 12/9/2011
 SOC,337,"Sociology of Mental Illness",0001,LEC,2707,We 4:00PM - 6:30PM,Stevens Hall 375,Kyriacos C Markides,8/29/2011 - 12/9/2011
 SOC,340,"Intermediate Topics in Sociology",0001,IND,3708,TuTh 11:00AM - 12:15PM,Little Hall 220,Ann Leffler,8/29/2011 - 12/9/2011
+SOC,340,"Intermediate Topics in Sociology",0002,IND,13597,TuTh 12:30PM - 1:45PM,Lord Hall 200,Steven F Cohn,8/29/2011 - 12/9/2011
 SOC,460,"Major Ideas in Sociology",0001,LEC,2708,TuTh 2:00PM - 3:15PM,Stevens Hall 155,Kyriacos C Markides,8/29/2011 - 12/9/2011
 SOC,493,"Senior Thesis",0001,THS,7293,TBA,TBA,Amy M Blackstone,8/29/2011 - 12/9/2011
 SOC,495,"Internship in Sociology",0001,RSG,2709,TBA,TBA,Amy M Blackstone,8/29/2011 - 12/9/2011
@@ -644,8 +1672,8 @@ SWK,462,"Generalist Social Work Practice II",0001,LEC,7615,We 1:10PM - 3:40PM,Du
 SWK,462,"Generalist Social Work Practice II",0669,LEC,7616,We 1:10PM - 3:40PM,Fred Hutchinson Center,Staff,8/29/2011 - 12/9/2011
 SWK,462,"Generalist Social Work Practice II",0869,LEC,3223,We 1:10PM - 3:40PM,Social Work Building 104,Staff,8/29/2011 - 12/9/2011
 SWK,491,"Methods of Social Work Research",0001,LEC,2741,Mo 10:00AM - 12:30PM,Corbett Hall 220,Elizabeth Depoy,8/29/2011 - 12/9/2011
-SWK,491,"Methods of Social Work Research",0669,LEC,4227,Tu 9:30AM - 12:00PM,Fred Hutchinson Center,Staff,8/29/2011 - 12/9/2011
-SWK,491,"Methods of Social Work Research",0869,LEC,3224,Tu 9:30AM - 12:00PM,Social Work Building 104,Staff,8/29/2011 - 12/9/2011
+SWK,491,"Methods of Social Work Research",0669,LEC,4227,Tu 9:30AM - 12:00PM,Fred Hutchinson Center,Nancy Webster,8/29/2011 - 12/9/2011
+SWK,491,"Methods of Social Work Research",0869,LEC,3224,Tu 9:30AM - 12:00PM,Social Work Building 104,Nancy Webster,8/29/2011 - 12/9/2011
 SWK,491,"Methods of Social Work Research",0990,LEC,4200,TBA,On-line Course,Jennie Goldenberg,8/29/2011 - 12/9/2011
 SWK,495,"Field Practicum in Social Work",0001,FEX,2742,We 10:00AM - 11:50AM,Social Work Building 102,Staff,8/29/2011 - 12/9/2011
 SWK,495,"Field Practicum in Social Work",0002,FEX,7619,We 10:00AM - 11:50AM,Hitchner Hall 203,Leah Anne Maxwell,8/29/2011 - 12/9/2011
@@ -656,14 +1684,14 @@ SWK,497,"Special Topics in Social Work",0669,IND,3883,Th 4:00PM - 6:45PM,Fred Hu
 SWK,497,"Special Topics in Social Work",0869,IND,7614,Th 4:00PM - 6:45PM,Social Work Building 104,Mary D Moore,8/29/2011 - 12/9/2011
 SWK,540,"Social Welfare Policy and Issues for Generalist Practitioners",0001,LEC,2743,Mo 1:10PM - 3:40PM,Social Work Building 102,Sandra S Butler,8/29/2011 - 12/9/2011
 SWK,540,"Social Welfare Policy and Issues for Generalist Practitioners",0665,LEC,4252,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Sandra S Butler,9/9/2011 - 9/9/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Sandra S Butler,9/10/2011 - 9/10/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Sandra S Butler,9/23/2011 - 9/23/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Sandra S Butler,9/24/2011 - 9/24/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Sandra S Butler,10/7/2011 - 10/7/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Sandra S Butler,10/8/2011 - 10/8/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Sandra S Butler,10/21/2011 - 10/21/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Sandra S Butler,10/22/2011 - 10/22/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Sandra S Butler,11/4/2011 - 11/4/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Sandra S Butler,11/5/2011 - 11/5/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Sandra S Butler,11/18/2011 - 11/18/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Sandra S Butler,11/19/2011 - 11/19/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Sandra S Butler,12/9/2011 - 12/9/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Sandra S Butler,12/10/2011 - 12/10/2011
-SWK,550,"Human Behavior and The Social Environment I",0001,LEC,2744,Mo 9:30AM - 12:00PM,Social Work Building 102,Staff,8/29/2011 - 12/9/2011
+SWK,550,"Human Behavior and The Social Environment I",0001,LEC,2744,Mo 9:30AM - 12:00PM,Social Work Building 102,Jennie Goldenberg,8/29/2011 - 12/9/2011
 SWK,550,"Human Behavior and The Social Environment I",0665,LEC,4253,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,9/2/2011 - 9/2/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Staff,9/3/2011 - 9/3/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,9/16/2011 - 9/16/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Staff,9/17/2011 - 9/17/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,9/30/2011 - 9/30/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Staff,10/1/2011 - 10/1/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,10/14/2011 - 10/14/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Staff,10/15/2011 - 10/15/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,10/28/2011 - 10/28/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Staff,10/29/2011 - 10/29/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,11/11/2011 - 11/11/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Staff,11/12/2011 - 11/12/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Staff,12/3/2011 - 12/3/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Staff,12/2/2011 - 12/2/2011
 SWK,560,"Practice in Generalist Social Work I",0001,LEC,2745,Tu 9:30AM - 12:00PM,Social Work Building 102,Kelly Ann Jaksa,8/29/2011 - 12/9/2011
-SWK,563,"Practice in Generalist Social Work II",0669,LEC,4261,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,9/9/2011 - 9/9/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,9/23/2011 - 9/23/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,10/7/2011 - 10/7/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,10/21/2011 - 10/21/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,11/4/2011 - 11/4/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,11/18/2011 - 11/18/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,12/9/2011 - 12/9/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,9/10/2011 - 9/10/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,9/24/2011 - 9/24/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,10/8/2011 - 10/8/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,10/22/2011 - 10/22/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,11/5/2011 - 11/5/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,11/19/2011 - 11/19/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,12/10/2011 - 12/10/2011
-SWK,571,"Assessment and Intervention of Trauma in Social Work Practice",0001,LEC,7617,We 4:00PM - 6:45PM,Social Work Building 102,Jennie Goldenberg,8/29/2011 - 12/9/2011
+SWK,563,"Practice in Generalist Social Work II",0665,LEC,4261,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,9/9/2011 - 9/9/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,9/23/2011 - 9/23/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,10/7/2011 - 10/7/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,10/21/2011 - 10/21/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,11/4/2011 - 11/4/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,11/18/2011 - 11/18/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Loren J Andrews,12/9/2011 - 12/9/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,9/10/2011 - 9/10/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,9/24/2011 - 9/24/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,10/8/2011 - 10/8/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,10/22/2011 - 10/22/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,11/5/2011 - 11/5/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,11/19/2011 - 11/19/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Loren J Andrews,12/10/2011 - 12/10/2011
+SWK,571,"Assessment and Intervention of Trauma in Social Work Practice",0001,LEC,7617,We 1:00PM - 3:45PM,Social Work Building 102,Jennie Goldenberg,8/29/2011 - 12/9/2011
 SWK,580,"Adult and Child Psychopathology",0981,LEC,2899,Tu 7:00PM - 9:45PM,Chadbourne Hall 5A,Nancy Webster,8/29/2011 - 12/9/2011
 SWK,580,"Adult and Child Psychopathology",0985,LEC,4228,Tu 7:00PM - 9:45PM,Fred Hutchinson Center,Nancy Webster,8/29/2011 - 12/9/2011
-SWK,595,"Field Practicum in Social Work",0001,FEX,2746,Tu 1:10PM - 3:00PM,Social Work Building 104,Staff,8/29/2011 - 12/9/2011
+SWK,595,"Field Practicum in Social Work",0001,FEX,2746,Tu 1:10PM - 3:00PM,Social Work Building 104,Deborah Gail Mattson,8/29/2011 - 12/9/2011
 SWK,595,"Field Practicum in Social Work",0665,FEX,4262,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,9/10/2011 - 9/10/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,9/24/2011 - 9/24/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,10/8/2011 - 10/8/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,10/22/2011 - 10/22/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,11/5/2011 - 11/5/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,11/19/2011 - 11/19/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,12/10/2011 - 12/10/2011
 SWK,595,"Field Practicum in Social Work",0666,FEX,4255,Tu 1:10PM - 3:00PM,Fred Hutchinson Center,Deborah Gail Mattson,8/29/2011 - 12/9/2011
 SWK,597,"Advanced Topics in Social Work",0001,LEC,3414,We 4:00PM - 6:30PM,Bryand Global Science Cen 100,Lenard W Kaye,8/29/2011 - 12/9/2011
@@ -678,9 +1706,7 @@ SWK,692,"Social Work Research III",0669,RSG,7627,Fr 5:30PM - 8:00PM,Fred Hutchin
 SWK,695,"Advanced Field Practicum in Social Work",0001,FEX,2750,Th 12:30PM - 1:50PM,Social Work Building 102,Staff,8/29/2011 - 12/9/2011
 SWK,695,"Advanced Field Practicum in Social Work",0002,FEX,4238,Th 12:30PM - 1:50PM,Social Work Building 104,Staff,8/29/2011 - 12/9/2011
 SWK,695,"Advanced Field Practicum in Social Work",0669,FEX,7639,Fr 4:00PM - 5:20PM,Fred Hutchinson Center,Staff,9/2/2011 - 9/2/2011,Fr 4:00PM - 5:20PM,Fred Hutchinson Center,Staff,9/23/2011 - 9/23/2011,Fr 4:00PM - 5:20PM,Fred Hutchinson Center,Staff,10/7/2011 - 10/7/2011,Fr 4:00PM - 5:20PM,Fred Hutchinson Center,Staff,10/21/2011 - 10/21/2011,Fr 4:00PM - 5:20PM,Fred Hutchinson Center,Staff,11/4/2011 - 11/4/2011,Fr 4:00PM - 5:20PM,Fred Hutchinson Center,Staff,11/18/2011 - 11/18/2011,Fr 4:00PM - 5:20PM,Fred Hutchinson Center,Staff,12/9/2011 - 12/9/2011
-THE,111,"Introduction to Theatre",0400,LEC,4144,TBA,TBA,Thomas J Mikotowicz,8/29/2011 - 12/9/2011
 THE,111,"Introduction to Theatre",0990,LEC,4127,TBA,TBA,Thomas J Mikotowicz,8/29/2011 - 12/9/2011
-THE,112,"Survey of Dramatic Literature",0990,LEC,4181,TBA,TBA,Marcia J Douglas,8/29/2011 - 12/9/2011
 THE,117,"Fundamentals of Acting",0001,LEC,2752,TuTh 2:00PM - 3:50PM,Class of 1944 Hall 224,Marcia J Douglas,8/29/2011 - 12/9/2011
 THE,117,"Fundamentals of Acting",0002,LEC,7351,TuTh 9:30AM - 11:30AM,Pavilion Theatre 1,Sandra E Hardy,8/29/2011 - 12/9/2011
 THE,117,"Fundamentals of Acting",0500,LEC,3035,MoWe 12:10PM - 2:00PM,Class of 1944 Hall 224,Amy-Jane F Mooney,8/29/2011 - 12/9/2011
@@ -690,11 +1716,11 @@ THE,120,"Introduction to Stagecraft",0001,LEC,2938,MoWe 2:10PM - 4:00PM,Class of
 THE,121,"Introduction to Stagecraft Laboratory",0002,LAB,2939,Tu 12:30PM - 3:15PM,Class of 1944 Hall 207,Joseph P Donovan,8/29/2011 - 12/9/2011
 THE,121,"Introduction to Stagecraft Laboratory",0003,LAB,2940,Fr 1:10PM - 4:00PM,Class of 1944 Hall 207,Joseph P Donovan,8/29/2011 - 12/9/2011
 THE,121,"Introduction to Stagecraft Laboratory",0004,LAB,2941,Th 9:30AM - 12:20PM,Class of 1944 Hall 207,Joseph P Donovan,8/29/2011 - 12/9/2011
+THE,200,"Design for Performance",0001,LEC,13810,MoWe 11:00AM - 12:50PM,Hauck Auditorium 1,Daniel P Bilodeau,8/29/2011 - 12/9/2011
 THE,201,"Fundamentals of Characterization",0001,LEC,2942,MoWe 9:00AM - 10:50AM,Pavilion Theatre 1,Sandra E Hardy,8/29/2011 - 12/9/2011
 THE,202,"Script Analysis",0001,LEC,2753,MoWe 11:00AM - 12:50PM,Pavilion Theatre 1,Sandra E Hardy,8/29/2011 - 12/9/2011
 THE,216,"Play Production",0001,LEC,2751,TuTh 12:30PM - 1:45PM,Pavilion Theatre 1,Thomas J Mikotowicz,8/29/2011 - 12/9/2011
 THE,268,"Theatre Practicum",0001,FEX,4076,TBA,TBA,Daniel P Bilodeau,8/29/2011 - 12/9/2011
-THE,320,"Topics in Theatre Design",0001,IND,2890,MoWe 11:00AM - 12:50PM,Hauck Auditorium 1,Daniel P Bilodeau,8/29/2011 - 12/9/2011
 THE,415,"Capstone Experience in Theatre",0001,LEC,2754,TBA,TBA,Sandra E Hardy,8/29/2011 - 12/9/2011
 THE,415,"Capstone Experience in Theatre",0002,LEC,2755,TBA,TBA,Thomas J Mikotowicz,8/29/2011 - 12/9/2011
 THE,415,"Capstone Experience in Theatre",0003,LEC,2756,TBA,TBA,Marcia J Douglas,8/29/2011 - 12/9/2011
@@ -716,7 +1742,6 @@ TME,253,"Applied Calculus for Engineering Technology",0001,LEC,2764,MoWeFr 11:00
 TME,354,"Ordinary Differential Equations With Engineering Applications",0001,LEC,2766,MoWeFr 10:00AM - 10:50AM,Jenness Hall 102,Steven J Kimball,8/29/2011 - 12/9/2011
 UST,300,"Core Course in University Studies",0860,SEM,2767,Sa 9:00AM - 4:00PM,Arranged,,8/29/2011 - 12/9/2011
 UST,300,"Core Course in University Studies",0991,SEM,4212,TBA,TBA,James F Toner,8/29/2011 - 12/9/2011
-UST,300,"Core Course in University Studies",0992,SEM,4161,TBA,On-line Course,Glenn Kessler,8/29/2011 - 12/9/2011
 UST,400,"Advanced Topics in University Studies",0860,IND,3061,TBA,TBA,Barbara D Howard,8/29/2011 - 12/9/2011
 UST,499,"Senior Capstone",0860,SEM,2768,TBA,TBA,Barbara D Howard,8/29/2011 - 12/9/2011
 VOX,100,"Beginning Spoken Arabic I",0860,REC,3795,TBA,TBA,Nives Dalbo-Wheeler,8/29/2011 - 12/9/2011
@@ -791,28 +1816,27 @@ WSC,615,"Problems in Wood Technology",0004,IND,2804,TBA,TBA,Stephen M Shaler,8/2
 WSC,699,"Graduate Thesis / Research",0001,THS,2805,TBA,TBA,Douglas Jerome Gardner,8/29/2011 - 12/9/2011
 WSC,699,"Graduate Thesis / Research",0003,THS,2807,TBA,TBA,Robert W Rice,8/29/2011 - 12/9/2011
 WSC,699,"Graduate Thesis / Research",0004,THS,2808,TBA,TBA,Stephen M Shaler,8/29/2011 - 12/9/2011
-WST,101,"Introduction to Women&#039;s Studies",0001,LEC,2809,TuTh 9:30AM - 10:45AM,Boardman Hall 216,Mary L Hough,8/29/2011 - 12/9/2011
-WST,101,"Introduction to Women&#039;s Studies",0002,LEC,3779,TuTh 11:00AM - 12:15PM,Stevens Hall 370,Nancy M Lewis,8/29/2011 - 12/9/2011
-WST,101,"Introduction to Women&#039;s Studies",0500,LEC,3753,TuTh 2:00PM - 3:15PM,Shibles Hall 313,Rhea J Robbins,8/29/2011 - 12/9/2011
-WST,101,"Introduction to Women&#039;s Studies",0501,LEC,3752,TuTh 3:30PM - 4:45PM,Little Hall 219,Audrey Leigh Minutolo,8/29/2011 - 12/9/2011
-WST,101,"Introduction to Women&#039;s Studies",0860,LEC,7360,We 6:00PM - 8:40PM,Little Hall 219,Regina Grace Rooney,8/29/2011 - 12/9/2011
-WST,101,"Introduction to Women&#039;s Studies",0990,LEC,4132,TBA,TBA,Mary Okin,8/29/2011 - 12/9/2011
-WST,103,"Introduction to Lesbian",0860,LEC,7361,Mo 5:00PM - 7:45PM,Barrows Hall 131,Julie S Loppacher,8/29/2011 - 12/9/2011
-WST,201,"Topics in Women&#039;s Studies",0990,LEC,7362,TBA,On-line Course,Jennifer Pickard,8/29/2011 - 12/9/2011
-WST,201,"Topics in Women&#039;s Studies",0991,LEC,7367,TBA,On-line Course,Kristina Passman,8/29/2011 - 12/9/2011
+WST,101,"Introduction to Women's Studies",0001,LEC,2809,TuTh 9:30AM - 10:45AM,Boardman Hall 216,Mary L Hough,8/29/2011 - 12/9/2011
+WST,101,"Introduction to Women's Studies",0002,LEC,3779,TuTh 11:00AM - 12:15PM,Stevens Hall 370,Nancy M Lewis,8/29/2011 - 12/9/2011
+WST,101,"Introduction to Women's Studies",0500,LEC,3753,TuTh 2:00PM - 3:15PM,Shibles Hall 313,Rhea J Robbins,8/29/2011 - 12/9/2011
+WST,101,"Introduction to Women's Studies",0501,LEC,3752,TuTh 3:30PM - 4:45PM,Little Hall 219,Audrey Leigh Minutolo,8/29/2011 - 12/9/2011
+WST,101,"Introduction to Women's Studies",0990,LEC,4132,TBA,TBA,Mary Okin,8/29/2011 - 12/9/2011
+WST,103,"Introduction to Lesbian",0001,LEC,13714,Mo 5:00PM - 7:45PM,Stevens Hall North 121,Julie S Loppacher,8/29/2011 - 12/9/2011
+WST,201,"Topics in Women's Studies",0990,LEC,7362,TBA,On-line Course,Jennifer Pickard,8/29/2011 - 12/9/2011
+WST,201,"Topics in Women's Studies",0991,LEC,7367,TBA,On-line Course,Kristina Passman,8/29/2011 - 12/9/2011
 WST,230,"Women",0990,LEC,4129,TBA,TBA,Sandra S Haggard,8/29/2011 - 12/9/2011
-WST,235,"Franco American Women&#039;s Experience",0990,LEC,7364,TBA,On-line Course,Rhea J Robbins,8/29/2011 - 12/9/2011
+WST,235,"Franco American Women's Experience",0990,LEC,7364,TBA,On-line Course,Rhea J Robbins,8/29/2011 - 12/9/2011
 WST,250,"Women and Music",0860,LEC,2812,We 5:30PM - 8:00PM,Class of 1944 Hall 107,Laura Artesani,8/29/2011 - 12/9/2011
 WST,270,"Native American Women",0001,LEC,7728,MoWeFr 9:00AM - 9:50AM,Little Hall 202,Maureen E Smith,8/29/2011 - 12/9/2011
-WST,298,"Directed Study in Women&#039;s Studies",0001,IND,2813,TBA,TBA,Staff,8/29/2011 - 12/9/2011
-WST,401,"Advanced Topics in Women&#039;s Studies",0990,LEC,4156,TBA,TBA,Yvonne M Thibodeau,8/29/2011 - 12/9/2011
-WST,401,"Advanced Topics in Women&#039;s Studies",0991,LEC,7378,TBA,On-line Course,Kristina Passman,8/29/2011 - 12/9/2011
+WST,298,"Directed Study in Women's Studies",0001,IND,2813,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+WST,401,"Advanced Topics in Women's Studies",0990,LEC,4156,TBA,TBA,Yvonne M Thibodeau,8/29/2011 - 12/9/2011
+WST,401,"Advanced Topics in Women's Studies",0991,LEC,7378,TBA,On-line Course,Kristina Passman,8/29/2011 - 12/9/2011
 WST,410,"Feminist Theory",0001,LEC,2814,TuTh 2:00PM - 3:15PM,Winslow Hall 201,Heather Dawn Lakey,8/29/2011 - 12/9/2011
-WST,480,"Senior Seminar in Women&#039;s Studies",0001,SEM,2815,TuTh 9:30AM - 10:45AM,Fernald Hall 101,Ann K Schonberger,8/29/2011 - 12/9/2011
-WST,498,"Directed Study in Women&#039;s Studies",0001,IND,2816,TBA,TBA,Staff,8/29/2011 - 12/9/2011
-WST,498,"Directed Study in Women&#039;s Studies",0002,IND,4054,TBA,TBA,Staff,8/29/2011 - 12/9/2011
-WST,501,"Graduate Topics in Women&#039;s Studies",0990,LEC,7363,TBA,On-line Course,Jennifer Pickard,8/29/2011 - 12/9/2011
-WST,501,"Graduate Topics in Women&#039;s Studies",0991,LEC,7365,TBA,On-line Course,Rhea J Robbins,8/29/2011 - 12/9/2011
-WST,520,"Research Methodologies in Women&#039;s Studies",0001,LEC,7366,We 3:10PM - 5:00PM,Fernald Hall 101,,8/29/2011 - 12/9/2011
-WST,580,"Feminist Pedagogy and Women&#039;s Studies Practicum",0001,SEM,4304,TBA,TBA,Mary L Hough,8/29/2011 - 12/9/2011
-WST,698,"Individualized Projects in Women&#039;s Studies",0001,IND,2817,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+WST,480,"Senior Seminar in Women's Studies",0001,SEM,2815,TuTh 9:30AM - 10:45AM,Fernald Hall 101,Ann K Schonberger,8/29/2011 - 12/9/2011
+WST,498,"Directed Study in Women's Studies",0001,IND,2816,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+WST,498,"Directed Study in Women's Studies",0002,IND,4054,TBA,TBA,Staff,8/29/2011 - 12/9/2011
+WST,501,"Graduate Topics in Women's Studies",0990,LEC,7363,TBA,On-line Course,Jennifer Pickard,8/29/2011 - 12/9/2011
+WST,501,"Graduate Topics in Women's Studies",0991,LEC,7365,TBA,On-line Course,Rhea J Robbins,8/29/2011 - 12/9/2011
+WST,520,"Research Methodologies in Women's Studies",0001,LEC,7366,We 3:10PM - 5:00PM,Fernald Hall 101,,8/29/2011 - 12/9/2011
+WST,580,"Feminist Pedagogy and Women's Studies Practicum",0001,SEM,4304,TBA,TBA,Mary L Hough,8/29/2011 - 12/9/2011
+WST,698,"Individualized Projects in Women's Studies",0001,IND,2817,TBA,TBA,Staff,8/29/2011 - 12/9/2011

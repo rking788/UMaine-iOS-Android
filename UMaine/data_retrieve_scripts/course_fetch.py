@@ -16,7 +16,11 @@ Soup = BeautifulSoup.BeautifulSoup
 
 url = 'https://mainestreet.maine.edu/'
 
-departments = ["AED", "ANT", "ARH", "ARP", "ART", "AST", "AVS", "BIO", "BLE", "BMB", "BMS", "BUA", "CEC", "CET", "CHB", "CHE", "CHF", "CHY", "CIE", "CLA", "CMJ", "COS", "CSD", "PRT", "PSE", "PSY", "QUS", "SAR", "SED", "SEI", "SIE", "SMS", "SMT", "SOC", "SPA", "SPI", "STT", "SVT", "SWK", "THE", "TME", "UST", "VOX", "WLE", "WSC", "WST"]
+
+filename = "departments.txt"
+fread = open(filename, 'r')
+fcontents = fread.read()
+departments = fcontents.split('\n')
 
 
 print "department,courseNum,courseTitle,sectionNum,courseType,callNum,meetingTime,meetingLocation,instructor,startEndDate"
@@ -119,6 +123,7 @@ for dept in departments:
 		html = r.read()
 		assert br.viewing_html()
 		#print html
+        html = html.replace('&#039;', '\'')
 
 		soup = Soup(html)
 		t1 = soup.find('table', attrs={'id':"$ICField59$scroll$0", 'class':"PABACKGROUNDINVISIBLEWBO"})
