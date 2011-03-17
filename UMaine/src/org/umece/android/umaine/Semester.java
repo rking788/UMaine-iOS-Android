@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +12,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.text.Spannable;
 
-public class Semester {
+public class Semester{
+
 	public static Semester getSemester(String loc, String year, String season, Activity activity) throws IOException {
 //		boolean mExternalStorageAvailable = false;
 //		boolean mExternalStorageWriteable = false;

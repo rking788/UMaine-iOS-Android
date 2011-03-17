@@ -20,6 +20,7 @@ import android.app.Dialog;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -125,6 +126,16 @@ public class UMCourses extends Activity {
 					R.layout.list_item);
 			lv.setAdapter(courselistadapter);
 			registerForContextMenu(lv);
+			lv.setOnItemClickListener(new OnItemClickListener(){
+
+				public void onItemClick(AdapterView<?> arg0, View arg1,
+						int arg2, long arg3) {
+					Intent myIntent = new Intent(arg1.getContext(), UMCourseDetails.class);
+					myIntent.putExtra("selectedindex", arg2);
+					startActivity(myIntent);
+					//startActivityForResult(myIntent, 0);
+				}
+			});
 		}
 
 		me = this;
@@ -290,8 +301,7 @@ public class UMCourses extends Activity {
 	 * for department, course number, and description
 	 */
 	private void addCourse(List<String> courseinfo) {
-		@SuppressWarnings("unused")
-		String dep, num, title, inst, sec, days, starttime, endtime, meetingTime;
+		String dep, num, title, inst, sec, meetingTime, location;
 		// Formatter formatter = new Formatter();
 
 		/* Should handle the case where there is no start time or end time */
@@ -301,13 +311,14 @@ public class UMCourses extends Activity {
 		title = courseinfo.get(3);
 		meetingTime = courseinfo.get(4);
 		inst = courseinfo.get(5);
+		location = courseinfo.get(6);
 
 		if (semester != null) {
 			try {
 				if(semester.getCourseCount() == 0){
 					((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.GONE);
 				}
-				semester.addCourse(new Course(dep, num, title, sec, "", meetingTime, "", ""));
+				semester.addCourse(new Course(dep, num, title, sec, "", meetingTime, location, inst));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -318,7 +329,6 @@ public class UMCourses extends Activity {
 		List<NameValuePair> postParams = new ArrayList<NameValuePair>();
 		postParams.add(new BasicNameValuePair("field", POST_COURSENUM));
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
-		String sem = (semester.getYear() + semester.getSeason().toLowerCase());
 		postParams
 				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 		coursenumadapter.clear();
@@ -367,6 +377,14 @@ public class UMCourses extends Activity {
 
 	public ArrayAdapter<CharSequence> getSemAdapter() {
 		return semesteradapter;
+	}
+	
+	public Semester getSemester(){
+		return semester;
+	}
+	
+	public ArrayAdapter<Spannable> getCourseListAdapter(){
+		return courselistadapter;
 	}
 
 	public void setSemester(String string) {
@@ -475,5 +493,17 @@ public class UMCourses extends Activity {
 		in.close();
 
 		return ret;
+	}
+
+	public void removeCourse(int selIndex) {
+		try {
+			semester.remCourse(semester.getCourse(courselistadapter.getItem(selIndex)));
+		} catch (IOException e) {
+			throw new RuntimeException();
+		}
+		courselistadapter.remove(courselistadapter.getItem(selIndex));
+		if(courselistadapter.isEmpty()){
+			((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.VISIBLE);
+		}
 	}
 }

@@ -11,8 +11,8 @@ public class Course {
 	private String sessionnum;
 	private String description;
 	private String meetingtime;
-	private String building;
-	private String roomnum;
+	private String location;
+	private String inst;
 	private Spannable spannable;
 	
 	/**
@@ -30,15 +30,16 @@ public class Course {
 	 * @author jmonk
 	 */
 	public Course(String cdep, String cnum, String ctitle, String csession, String cdesc, 
-			String cmeetingtime, String cbuilding, String croomnum) {
+			String cmeetingtime, String clocation, String cinst) {
+		/* TODO: need to add instructor in here */
 		dep = cdep;
 		coursenum = cnum;
 		title = ctitle;
 		sessionnum = csession;
 		description = cdesc;
 		meetingtime = cmeetingtime;
-		building = cbuilding;
-		roomnum = croomnum;
+		location = clocation;
+		inst = cinst;
 	}
 	
 
@@ -60,8 +61,8 @@ public class Course {
 		sessionnum = strings[3];
 		description = strings[4];
 		meetingtime = strings[5];
-		building = strings[6];
-		roomnum = strings[7].replaceAll("\"", "");
+		location = strings[6];
+		inst = strings[7].replaceAll("\"", "");
 	}
 	
 	/**
@@ -82,8 +83,8 @@ public class Course {
 		return_val = (return_val + sessionnum + "\",\"");
 		return_val = (return_val + description + "\",\"");
 		return_val = (return_val + meetingtime + "\",\"");
-		return_val = (return_val + building + "\",\"");
-		return_val = (return_val + roomnum + "\"");
+		return_val = (return_val + location + "\",\"");
+		return_val = (return_val + inst + "\"");
 		
 		return return_val;
 	}
@@ -125,11 +126,11 @@ public class Course {
 		return meetingtime;
 	}
 	
-	public String getBuilding() {
-		return building;
+	public String getLocation() {
+		return location;
 	}
 	
-	public String getRoomnum() {
-		return roomnum;
+	public String getInstructor(){
+		return inst;
 	}
 }
