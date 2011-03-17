@@ -18,7 +18,9 @@
   		android:layout_width="fill_parent"
   		android:gravity="center_horizontal" 
   		android:visibility="gone"
-  		android:textStyle="bold"/>
+  		android:textStyle="bold"
+  		android:paddingTop="2px"
+  		android:paddingBottom="2px"/>
 	<ListView
 	  xmlns:android="http://schemas.android.com/apk/res/android"
 	  android:id="@+id/courseslist"

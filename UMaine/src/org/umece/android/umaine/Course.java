@@ -5,6 +5,7 @@ import android.text.Spannable;
 import android.widget.EditText;
 
 public class Course {
+	private String dep;
 	private String coursenum;
 	private String title;
 	private String sessionnum;
@@ -28,8 +29,9 @@ public class Course {
 	 * 
 	 * @author jmonk
 	 */
-	public Course(String cnum, String ctitle, String csession, String cdesc, 
+	public Course(String cdep, String cnum, String ctitle, String csession, String cdesc, 
 			String cmeetingtime, String cbuilding, String croomnum) {
+		dep = cdep;
 		coursenum = cnum;
 		title = ctitle;
 		sessionnum = csession;
@@ -51,18 +53,15 @@ public class Course {
 	 *
 	 * @author jmonk
 	 */
-	public Course(String[] strings) {
-		for (String string : strings) {
-			string.replaceAll("\"", "");
-		}
-		
-		coursenum = strings[0];
-		title = strings[1];
-		sessionnum = strings[2];
-		description = strings[3];
-		meetingtime = strings[4];
-		building = strings[5];
-		roomnum = strings[6];
+	public Course(String[] strings) {		
+		dep = strings[0].replaceAll("\"", "");
+		coursenum = strings[1];
+		title = strings[2];
+		sessionnum = strings[3];
+		description = strings[4];
+		meetingtime = strings[5];
+		building = strings[6];
+		roomnum = strings[7].replaceAll("\"", "");
 	}
 	
 	/**
@@ -77,7 +76,8 @@ public class Course {
 	public String toString() {
 		String return_val;
 		
-		return_val = "\"" + coursenum + "\",\"";
+		return_val = "\"" + dep + "\",\"";
+		return_val = (return_val + coursenum + "\",\"");
 		return_val = (return_val + title + "\",\"");
 		return_val = (return_val + sessionnum + "\",\"");
 		return_val = (return_val + description + "\",\"");
@@ -92,7 +92,7 @@ public class Course {
 		if (spannable != null) return spannable;
 		if (context == null) return null;
 		EditText newet = new EditText(context);
-        newet.setText(getTitle() + " " + meetingtime);
+        newet.setText(getDep() + " " + getCoursenum()+ " - " + getTitle());
         Spannable str = newet.getText();
 //        str.setSpan(new StyleSpan(android.graphics.Typeface.ITALIC), 0, str.length()-1, 
 //        			Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
@@ -101,6 +101,10 @@ public class Course {
         return spannable;
 	}
 	
+	public String getDep(){
+		return dep;
+	}
+
 	public String getCoursenum() {
 		return coursenum;
 	}

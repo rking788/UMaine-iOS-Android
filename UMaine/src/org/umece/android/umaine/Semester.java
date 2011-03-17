@@ -148,7 +148,7 @@ public class Semester {
 		fos.write((";" + new_course.toString()).getBytes());
 		
 		fos.close();
-		
+
 		courses.add(new_course);
 		if (sd != null) {
 			sd.onChange();
@@ -159,6 +159,10 @@ public class Semester {
 		return campus;
 	}
 
+	public int getCourseCount(){
+		return courses.size();
+	}
+	
 	public Course getCourse(int i) {
 		return courses.get(i);
 	}

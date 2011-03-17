@@ -155,6 +155,9 @@ public class UMCourses extends Activity {
 				throw new RuntimeException();
 			}
 			courselistadapter.remove(courselistadapter.getItem((int) info.id));
+			if(courselistadapter.isEmpty()){
+				((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.VISIBLE);
+			}
 			return true;
 		default:
 			return super.onContextItemSelected(item);
@@ -301,7 +304,10 @@ public class UMCourses extends Activity {
 
 		if (semester != null) {
 			try {
-				semester.addCourse(new Course(num, title, sec, "", meetingTime, "", ""));
+				if(semester.getCourseCount() == 0){
+					((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.GONE);
+				}
+				semester.addCourse(new Course(dep, num, title, sec, "", meetingTime, "", ""));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -375,6 +381,10 @@ public class UMCourses extends Activity {
 			throw new RuntimeException();
 		}
 
+		if(semester.getCourseCount() != 0){
+			((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.GONE);
+		}
+		
 		TextView tv = (TextView) findViewById(R.id.courses_semester);
 		if (tv.getVisibility() == View.GONE) {
 			tv.setVisibility(View.VISIBLE);
