@@ -132,6 +132,7 @@ public class Semester{
 	
 	public void setScheduleDraw(ScheduleDrawable sd) {
 		this.sd = sd;
+		sd.setSemester(this);
 	}
 
 	/**

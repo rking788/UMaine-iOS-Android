@@ -6,9 +6,10 @@ import java.util.Map;
 public enum Color {
 	BLACK(0, 0xFF000000),
 	WHITE(1, 0xFFFFFFFF),
-	RED(2, 0xFFFF0000),
-	BLUE(3, 0xFF0000FF),
-	GREEN(4, 0xFF00FF00);
+	GRAY(2, 0xFF666666),
+	RED(3, 0xFFFF0000),
+	BLUE(4, 0xFF0000FF),
+	GREEN(5, 0xFF00FF00);
 	
 	private final int id;
 	private final int color;
