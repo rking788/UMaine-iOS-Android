@@ -15,6 +15,7 @@
   	android:layout_width="fill_parent"
   	android:layout_height="wrap_content"
   	android:completionThreshold="1" android:capitalize="characters"/>
+  	<!--  TODO: Change this to an autocomplete text view -->
   	<TextView android:text="Course Number"
   		android:id="@+id/coursenum_tv"
   		android:layout_width="wrap_content"

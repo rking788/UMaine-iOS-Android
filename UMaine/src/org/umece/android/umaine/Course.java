@@ -13,6 +13,10 @@ public class Course {
 	private String meetingtime;
 	private String location;
 	private String inst;
+	private String phone;
+	private String email;
+	private String office;
+	private String book;
 	private Spannable spannable;
 	
 	/**
@@ -30,7 +34,7 @@ public class Course {
 	 * @author jmonk
 	 */
 	public Course(String cdep, String cnum, String ctitle, String csession, String cdesc, 
-			String cmeetingtime, String clocation, String cinst) {
+			String cmeetingtime, String clocation, String cinst, String cphone, String cemail, String coffice, String cbook) {
 		/* TODO: need to add instructor in here */
 		dep = cdep;
 		coursenum = cnum;
@@ -40,6 +44,10 @@ public class Course {
 		meetingtime = cmeetingtime;
 		location = clocation;
 		inst = cinst;
+		phone = cphone;
+		email = cemail;
+		office = coffice;
+		book = cbook;
 	}
 	
 
@@ -62,7 +70,11 @@ public class Course {
 		description = strings[4];
 		meetingtime = strings[5];
 		location = strings[6];
-		inst = strings[7].replaceAll("\"", "");
+		inst = strings[7];
+		phone = strings[8];
+		email = strings[9];
+		office = strings[10];
+		book = strings[11].replaceAll("\"", "");
 	}
 	
 	/**
@@ -84,7 +96,11 @@ public class Course {
 		return_val = (return_val + description + "\",\"");
 		return_val = (return_val + meetingtime + "\",\"");
 		return_val = (return_val + location + "\",\"");
-		return_val = (return_val + inst + "\"");
+		return_val = (return_val + inst + "\",\"");
+		return_val = (return_val + phone + "\",\"");
+		return_val = (return_val + email + "\",\"");
+		return_val = (return_val + office + "\",\"");
+		return_val = (return_val + book + "\"");
 		
 		return return_val;
 	}
@@ -132,5 +148,21 @@ public class Course {
 	
 	public String getInstructor(){
 		return inst;
+	}
+	
+	public String getPhone(){
+		return phone;
+	}
+	
+	public String getEmail(){
+		return email;
+	}
+	
+	public String getOffice(){
+		return office;
+	}
+	
+	public String getBook(){
+		return book;
 	}
 }

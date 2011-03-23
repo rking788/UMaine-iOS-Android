@@ -20,4 +20,7 @@
     <uses-sdk android:minSdkVersion="8" />
 
 <uses-permission android:name="android.permission.INTERNET" />
+<!-- TODO: Can probably remove the call phone permission
+the link in the contact info goes to the dialer before calling  -->
+<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 </manifest> 

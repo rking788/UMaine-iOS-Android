@@ -69,6 +69,7 @@ public class UMCourses extends Activity {
 	private static final String POST_COURSENUM = "coursenums";
 	private static final String POST_SECTIONS = "sections";
 	private static final String POST_ADDCOURSE = "addcourse";
+	private static final String POST_TEXTBOOK = "textbook";
 
 	/* Dialog Types */
 	private static final int DIALOG_ADD_COURSE = 0;
@@ -301,7 +302,7 @@ public class UMCourses extends Activity {
 	 * for department, course number, and description
 	 */
 	private void addCourse(List<String> courseinfo) {
-		String dep, num, title, inst, sec, meetingTime, location;
+		String dep, num, title, inst, sec, meetingTime, location, book, phone, email, office;
 		// Formatter formatter = new Formatter();
 
 		/* Should handle the case where there is no start time or end time */
@@ -312,13 +313,17 @@ public class UMCourses extends Activity {
 		meetingTime = courseinfo.get(4);
 		inst = courseinfo.get(5);
 		location = courseinfo.get(6);
+		phone = courseinfo.get(7);
+		email = courseinfo.get(8);
+		office = courseinfo.get(9);
+		book = courseinfo.get(10);
 
 		if (semester != null) {
 			try {
 				if(semester.getCourseCount() == 0){
 					((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.GONE);
 				}
-				semester.addCourse(new Course(dep, num, title, sec, "", meetingTime, location, inst));
+				semester.addCourse(new Course(dep, num, title, sec, "", meetingTime, location, inst, phone, email, office, book));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
