@@ -70,19 +70,24 @@ html = r.read();
 
 #print br.links()
 
+# Select the Institution
+br.select_form(name="win1")
+br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$48$").value = ["UMS05"]
+br.submit()
+html = br.response().read()
+
+br.select_form(name="win1")
+# 1120: Spring 2011 
+# 1210: Fall 2011 
+# 1130: Summer 2011
+br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1130"]
+br.submit()
+html = br.response().read()
+
+
 Careers = ["UGRD", "GRAD"];
 for dept in departments:
 	for career in Careers:
-		# Select the Institution
-		br.select_form(name="win1")
-		br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$48$").value = ["UMS05"]
-		br.submit()
-		html = br.response().read()
-
-		br.select_form(name="win1")
-		br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1210"] # 1120: Spring 2011 # 1210: Fall 2011 # 1130: Summer 2011
-		br.submit()
-		html = br.response().read()
 
 		br.select_form(name="win1")
 		#br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$60$").selected = False
@@ -123,6 +128,19 @@ for dept in departments:
 		html = r.read()
 		assert br.viewing_html()
 		#print html
+
+                if html.find('Your search will return over 50 classes') >= 0 :
+                        br.select_form(name="win1")
+                        post_url, post_data, headers =  br.form.click_request_data()
+                        post_data = post_data.replace('ICAction=None', 'ICAction=%23ICSave')
+                        #post_data = 'ICType=Panel&ICElementNum=1&ICStateNum=6&ICAction=%23ICSave&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
+                        #print post_data
+                        r = br.open(post_url, post_data, timeout=100000)
+                        html = r.read()
+			larger_50  = 1
+		else:
+			larger_50  = 0 
+
         	html = html.replace('&#039;', '\'')
 
 		soup = Soup(html)
@@ -180,8 +198,22 @@ for dept in departments:
 				print courseTitle +  str
 
 		# Return and select a different department
-		post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=4&ICAction=CLASS_SRCH_WRK2_SSR_PB_CLOSE&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
+		#print html
+		br.select_form(name="win1")
+       		post_url, post_data, headers = br.form.click_request_data()
+		post_data = post_data.replace('ICAction=None', 'ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2455%24')
+		#print post_data	
+
+		#if larger_50 == 0:
+		#	post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=4&ICAction=CLASS_SRCH_WRK2_SSR_PB_CLOSE&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
+			#post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=13&ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH&ICXPos=11&ICYPos=174&ICFocus=&ICChanged=-1&ICResubmit=0'
+			#post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=15&ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2455%24&ICXPos=0&ICYPos=6451&ICFocus=&ICChanged=-1&ICResubmit=0'
+		#else:
+		#	post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=7&ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2455%24&ICXPos=13&ICYPos=9145&ICFocus=&ICChanged=-1&ICResubmit=0'
+		#print post_data
 		r = br.open(post_url, post_data, timeout=100000)
 		html = r.read()
+		#print html
+
 
 

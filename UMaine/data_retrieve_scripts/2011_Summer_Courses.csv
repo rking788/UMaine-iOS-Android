@@ -1,790 +1,815 @@
-"department","courseNum","courseTitle","sectionNum","courseType","callNum","meetingTime","meetingLocation","instructor","startEndDate"
-"AED",597,"Independent Study in Art Education",1,"IND",1862,"TBA","TBA","Roger Dell","5/9/2011 - 8/19/2011"
-"ANT",120,"Religions of the World",990,"LEC",1031,"TBA","On-line Course",,"5/16/2011 - 7/1/2011"
-"ANT",249,"Religion and Violence",990,"LEC",1108,"TBA","TBA","Henry L Munson","7/5/2011 - 8/19/2011"
-"ANT",422,"Folklore of Maine and The Maritime Provinces",990,"LEC",3070,"TBA","On-line Course","Pauleena M Macdougall","6/13/2011 - 8/5/2011"
-"ANT",492,"Capstone in Anthropology",1,"IND",1137,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"ANT",497,"Department Projects",1,"IND",1138,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"ANT",597,"Advanced Topics in Anthropology",1,"IND",1140,"TBA","TBA","Staff","TBA"
-"ANT",597,"Advanced Topics in Anthropology",2,"IND",1142,"TBA","TBA","Staff","TBA"
-"ARH",496,"Field Experience in Art History",1,"FEX",1850,"TBA","TBA","Michael H Grillo","5/9/2011 - 8/19/2011"
-"ART",107,"Topics: Intro Arts",665,"STU",5289,"MoFrSaSu 9:30AM - 4:30PM","Fred Hutchinson Center","Dina M Petrillo","6/17/2011 - 6/20/2011"
-"ART",180,"Photography I",1,"LAB",3233,"MoTuWeThFr 9:00AM - 12:00PM","Carnegie Hall 102","Michael H Grillo","5/9/2011 - 5/27/2011"
-"ART",182,"Photography and Digital Imaging",869,"LAB",1736,"Sa 9:00AM - 12:00PM","Lord Hall 311","Michael H Grillo","5/31/2011 - 7/9/2011"
-"ART",260,"Topics in Studio Art",3,"LAB",1784,"MoTuWeThFr 9:00AM - 12:00PM","East Annex 124",,"5/9/2011 - 5/27/2011"
-"ART",260,"Topics in Studio Art",665,"LAB",3234,"TuTh 9:00AM - 5:00PM","Fred Hutchinson Center","Kerstin L Engman","7/5/2011 - 8/4/2011"
-"ART",260,"Topics in Studio Art",666,"LAB",1024,"MoWe 9:00AM - 5:00PM","Fred Hutchinson Center","Dina M Petrillo","5/9/2011 - 6/15/2011"
-"ART",260,"Topics in Studio Art",667,"LAB",1002,"TuTh 9:00AM - 5:00PM","Fred Hutchinson Center","Kerstin L Engman","5/31/2011 - 6/30/2011"
-"ART",360,"Topics in Studio Art",1,"LAB",1766,"TuWeFr 9:00AM - 12:00PM","Old Fire Station 100",,"5/31/2011 - 7/1/2011"
-"ART",360,"Topics in Studio Art",3,"LAB",1734,"MoTuWeThFr 9:00AM - 12:00PM","East Annex 124",,"5/9/2011 - 5/27/2011"
-"ART",360,"Topics in Studio Art",665,"LAB",3235,"TuTh 9:00AM - 5:00PM","Fred Hutchinson Center","Kerstin L Engman","7/5/2011 - 8/4/2011"
-"ART",360,"Topics in Studio Art",667,"LAB",1003,"TuTh 9:00AM - 5:00PM","Fred Hutchinson Center","Kerstin L Engman","5/31/2011 - 6/30/2011"
-"ART",397,"Independent Study in Studio Art",1,"IND",1792,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"ART",460,"Topics in Studio Art",1,"LAB",1152,"TuWeFr 9:00AM - 12:00PM","Old Fire Station 100",,"5/31/2011 - 7/1/2011"
-"ART",460,"Topics in Studio Art",2,"LAB",3237,"MoTuWeThFr 9:00AM - 5:00PM","Lengyel Hall 121","Sheridan L Kelley","8/15/2011 - 8/19/2011"
-"ART",460,"Topics in Studio Art",3,"LAB",1735,"MoTuWeThFr 9:00AM - 12:00PM","East Annex 124",,"5/9/2011 - 5/27/2011"
-"ART",460,"Topics in Studio Art",665,"LAB",3236,"TuTh 9:00AM - 5:00PM","Fred Hutchinson Center","Kerstin L Engman","7/5/2011 - 8/4/2011"
-"ART",460,"Topics in Studio Art",667,"LAB",1004,"TuTh 9:00AM - 5:00PM","Fred Hutchinson Center","Kerstin L Engman","5/31/2011 - 6/30/2011"
-"ART",497,"Independent Study in Studio Art",1,"IND",1851,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"ART",570,"Intermedia Studio Critique I",1,"STU",1159,"TBA","TBA","Staff","TBA"
-"AST",109,"Introduction to Astronomy",1,"LEC",1352,"MoTuWeTh 9:40AM - 11:10AM","Bennett Hall 137","David W Pearson","7/11/2011 - 8/19/2011"
-"AST",109,"Introduction to Astronomy",990,"LEC",1064,"TBA","TBA","David J Batuski","5/23/2011 - 7/8/2011"
-"AST",110,"Introduction to Astronomy Laboratory",1,"LAB",1353,"MoWe 12:10PM - 2:00PM","Bennett Hall 302","Nicholas Lewchanin Meek","7/11/2011 - 8/19/2011"
-"AST",110,"Introduction to Astronomy Laboratory",990,"LAB",1065,"TBA","On-line Course","Staff","5/9/2011 - 8/19/2011"
-"AST",497,"Topics in Astrophysics",1,"IND",1358,"TBA","TBA","Staff","TBA"
-"AVS",249,"Laboratory and Companion Animal Science",990,"LEC",1109,"TBA","On-line Course","Robert C Causey","5/9/2011 - 8/19/2011"
-"AVS",347,"Dairy Cattle Technology Laboratory",1,"LAB",1559,"TBA","TBA","David P Marcinkowski","5/9/2011 - 8/19/2011"
-"AVS",368,"Independent Study in the Animal Sciences",1,"IND",1557,"TBA","TBA","Robert C Causey","5/9/2011 - 8/19/2011"
-"AVS",368,"Independent Study in the Animal Sciences",3,"IND",1709,"TBA","TBA","Norinne H Daly","5/9/2011 - 8/19/2011"
-"AVS",368,"Independent Study in the Animal Sciences",4,"IND",1710,"TBA","TBA","David P Marcinkowski","5/9/2011 - 8/19/2011"
-"AVS",396,"Field Experience in Animal and Veterinary Science",1,"FEX",1558,"TBA","TBA","James Weber","5/9/2011 - 8/19/2011"
-"AVS",397,"Equine Internship",1,"FEX",1633,"TBA","TBA","Robert C Causey","5/9/2011 - 8/19/2011"
-"AVS",397,"Equine Internship",2,"FEX",1711,"TBA","TBA","Norinne H Daly","5/9/2011 - 8/19/2011"
-"AVS",690,"Graduate Research in Animal Science",1,"IND",1560,"TBA","TBA","Martin R Stokes","5/9/2011 - 8/19/2011"
-"AVS",699,"Graduate Thesis / Research",1,"THS",1561,"TBA","TBA","Robert C Bayer","5/9/2011 - 8/19/2011"
-"BIO",100,"Basic Biology",1,"LEC",1320,"MoTuWeThFr 9:30AM - 11:00AM","Murray Hall 102","Charlene L Kozerow","5/31/2011 - 7/1/2011"
-"BIO",100,"Basic Biology",1001,"LAB",1321,"TuTh 11:00AM - 1:00PM","Murray Hall 103","Charlene L Kozerow","5/31/2011 - 7/1/2011"
-"BIO",100,"Basic Biology",1002,"LAB",1322,"TuTh 1:10PM - 3:10PM","Murray Hall 103","Charlene L Kozerow","5/31/2011 - 7/1/2011"
-"BIO",208,"Anatomy and Physiology",1,"LEC",1324,"MoTuWeThFr 11:00AM - 12:30PM","Murray Hall 106","Lynn Ann Atkins","5/31/2011 - 7/1/2011"
-"BIO",208,"Anatomy and Physiology",1001,"LAB",1325,"MoWe 1:10PM - 4:00PM","Murray Hall 304","Lynn Ann Atkins","5/31/2011 - 7/1/2011"
-"BIO",450,"Histology",1,"LEC",1715,"MoTuWeThFr 9:15AM - 12:00PM","Murray Hall 214","Mary S Tyler","5/9/2011 - 5/27/2011"
-"BIO",450,"Histology",1001,"LAB",1716,"MoTuWeThFr 1:10PM - 5:00PM","Murray Hall 214","Mary S Tyler","5/9/2011 - 5/27/2011"
-"BIO",496,"Field Experience in Biological Sciences",1,"FEX",1836,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"BIO",699,"Graduate Thesis / Research",1,"THS",1659,"TBA","TBA","Andrei Alyokhin","5/9/2011 - 8/19/2011"
-"BIO",699,"Graduate Thesis / Research",2,"THS",1660,"TBA","TBA","Christopher Campbell","5/9/2011 - 8/19/2011"
-"BIO",699,"Graduate Thesis / Research",3,"THS",1661,"TBA","TBA","Benildo G De Los Reyes","5/9/2011 - 8/19/2011"
-"BIO",699,"Graduate Thesis / Research",4,"THS",1662,"TBA","TBA","Francis A Drummond","5/9/2011 - 8/19/2011"
-"BIO",699,"Graduate Thesis / Research",5,"THS",1663,"TBA","TBA","Eleanor Groden","5/9/2011 - 8/19/2011"
-"BIO",699,"Graduate Thesis / Research",6,"THS",1664,"TBA","TBA","Clarissa A Henry","5/9/2011 - 8/19/2011"
-"BLE",497,"Special Problems in Biological Engineering",1,"IND",1284,"TBA","TBA","Darrell W Donahue","5/9/2011 - 8/19/2011"
-"BLE",497,"Special Problems in Biological Engineering",2,"IND",1285,"TBA","TBA","John G Riley","5/9/2011 - 8/19/2011"
-"BLE",599,"Independent Study in Biological Engineering",1,"IND",1281,"TBA","TBA","Staff","TBA"
-"BLE",697,"Problems in Biological Engineering I",1,"IND",1286,"TBA","TBA","Darrell W Donahue","5/9/2011 - 8/19/2011"
-"BLE",698,"Problems in Biological Engineering II",1,"IND",1287,"TBA","TBA","Darrell W Donahue","5/9/2011 - 8/19/2011"
-"BLE",699,"Graduate Thesis / Research",1,"THS",1288,"TBA","TBA","Darrell W Donahue","5/9/2011 - 8/19/2011"
-"BLE",699,"Graduate Thesis / Research",2,"THS",5107,"TBA","TBA","Michael D Mason","5/9/2011 - 8/19/2011"
-"BLE",699,"Graduate Thesis / Research",3,"THS",5108,"TBA","TBA","Paul J Millard","5/9/2011 - 8/19/2011"
-"BLE",699,"Graduate Thesis / Research",4,"THS",5109,"TBA","TBA","Gerard P Van Walsum","5/9/2011 - 8/19/2011"
-"BMB",207,"Fundamentals of Chemistry",1,"LEC",1200,"MoTuWeThFr 8:00AM - 9:20AM","Rogers Hall 206","Charlene L Kozerow","5/31/2011 - 7/1/2011"
-"BMB",300,"General Microbiology",1,"LEC",1201,"MoTuWeThFr 9:30AM - 11:00AM","Rogers Hall 206","Charles E Moody","5/31/2011 - 7/1/2011"
-"BMB",305,"General Microbiology Laboratory",1,"LAB",1202,"MoWeTh 11:15AM - 2:30PM","Hitchner Hall 180","Catherine A Hopper","5/31/2011 - 7/1/2011"
-"BMB",491,"Biochemistry",1,"IND",1203,"TBA","TBA","Sharon L Ashworth","5/9/2011 - 8/19/2011"
-"BMB",491,"Biochemistry",2,"IND",1204,"TBA","TBA","Dorothy E Croall","5/9/2011 - 8/19/2011"
-"BMB",491,"Biochemistry",3,"IND",1205,"TBA","TBA","Julie Gosse","5/9/2011 - 8/19/2011"
-"BMB",491,"Biochemistry",4,"IND",1206,"TBA","TBA","Robert E Gundersen","5/9/2011 - 8/19/2011"
-"BMB",491,"Biochemistry",5,"IND",1207,"TBA","TBA","Keith W Hutchison","5/9/2011 - 8/19/2011"
-"BMB",491,"Biochemistry",6,"IND",1208,"TBA","TBA","Carol H Kim","5/9/2011 - 8/19/2011"
-"BMB",699,"Graduate Thesis / Research",1,"THS",1214,"TBA","TBA","Sharon L Ashworth","5/9/2011 - 8/19/2011"
-"BMB",699,"Graduate Thesis / Research",2,"THS",1215,"TBA","TBA","Dorothy E Croall","5/9/2011 - 8/19/2011"
-"BMB",699,"Graduate Thesis / Research",3,"THS",1217,"TBA","TBA","Julie Gosse","5/9/2011 - 8/19/2011"
-"BMB",699,"Graduate Thesis / Research",4,"THS",1218,"TBA","TBA","Robert E Gundersen","5/9/2011 - 8/19/2011"
-"BMB",699,"Graduate Thesis / Research",5,"THS",1219,"TBA","TBA","Keith W Hutchison","5/9/2011 - 8/19/2011"
-"BMB",699,"Graduate Thesis / Research",6,"THS",1220,"TBA","TBA","Carol H Kim","5/9/2011 - 8/19/2011"
-"BMS",699,"Graduate Thesis / Research",1,"THS",1678,"TBA","TBA","Carol H Kim","5/9/2011 - 8/19/2011"
-"BUA",201,"Principles of Financial Accounting",990,"LEC",1033,"TBA","TBA","Steven C Colburn","5/9/2011 - 6/10/2011"
-"BUA",202,"Principles of Managerial Accounting",1,"LEC",3214,"MoTuWeThFr 9:15AM - 12:00PM","Shibles Hall 201","Wendy R Coons","6/13/2011 - 7/1/2011"
-"BUA",327,"Business ans Society",1,"SEM",3215,"MoWe 6:00PM - 9:15PM","Shibles Hall 201","Martha Broderick","6/1/2011 - 6/29/2011"
-"BUA",350,"Business Finance",1,"LEC",3216,"MoTuWeThFr 9:15AM - 12:00PM","Donald P Corbett Business 115","Robert A Strong","5/9/2011 - 5/27/2011"
-"BUA",370,"Marketing",1,"LEC",1160,"MoTuWeThFr 9:15AM - 12:00PM","Donald P Corbett Business 105","Harold Z Daniel","5/9/2011 - 5/27/2011"
-"BUA",396,"Field Experience/Internship",1,"FEX",1161,"TBA","TBA","Stephanie Welcomer","5/9/2011 - 8/19/2011"
-"BUA",400,"Introduction to Accounting",990,"LEC",1116,"TBA","TBA","David J Barrett","6/13/2011 - 8/5/2011"
-"BUA",490,"Special Topics in Business Administration",870,"LEC",3431,"TBA","TBA",,"5/26/2011 - 6/4/2011"
-"BUA",596,"International Field Study",1,"FEX",3220,"TBA","TBA","Jason Harkins","5/9/2011 - 8/19/2011"
-"BUA",596,"International Field Study",2,"FEX",3221,"TBA","TBA","John F Mahon","5/9/2011 - 8/19/2011"
-"BUA",609,"Financial Statement Analysis",1,"LEC",3219,"TuTh 6:00PM - 9:15PM","Donald P Corbett Business 218","Ferdinand T Siagian","7/5/2011 - 8/4/2011"
-"BUA",645,"Selected Advanced Topics in Business Administration",3,"LEC",1737,"MoTuWeThFr 1:15PM - 4:00PM","Donald P Corbett Business 113","Omar J Khan","5/9/2011 - 5/27/2011"
-"BUA",652,"Management of Financial Institutions",1,"LEC",3217,"MoWe 6:00PM - 9:15PM","Barrows Hall 126","Richard H Borgman","6/1/2011 - 6/29/2011"
-"BUA",668,"Electronic Commerce",984,"LEC",3213,"TuTh 1:00PM - 3:45PM","Barrows Hall 126","Nory B Jones","5/31/2011 - 7/7/2011"
-"BUA",668,"Electronic Commerce",994,"LEC",5642,"TuTh 1:00PM - 3:45PM","On-line Course","Nory B Jones","7/5/2011 - 8/5/2011"
-"BUA",695,"MBA Internship",1,"RSG",1178,"TBA","TBA","Nory B Jones","5/9/2011 - 8/19/2011"
-"BUA",697,"Field Experience in Accounting",1,"FEX",1179,"TBA","TBA","Nory B Jones","5/9/2011 - 8/19/2011"
-"BUA",698,"Independent Study",1,"IND",1180,"TBA","TBA","Nory B Jones","5/9/2011 - 8/19/2011"
-"CEC",523,"The Use of Standardized Tests and Inventories",990,"LEC",1071,"TBA","On-line Course","Annette F Nelligan","5/9/2011 - 6/17/2011"
-"CEC",525,"DSM Diagnosis and Treatment Plan",1,"LEC",1499,"MoWeFr 1:00PM - 5:00PM","Shibles Hall 320","John Yasenchak","6/20/2011 - 7/8/2011"
-"CEC",552,"Effective Group Work in the Helping Professions",1,"LEC",1563,"MoTh 4:00PM - 8:30PM","Shibles Hall 320","Annette F Nelligan","5/9/2011 - 6/2/2011"
-"CEC",553,"The Profession of Counseling",1,"LEC",2932,"We 4:00PM - 8:00PM","Shibles Hall 313","Toni C Moleon","6/1/2011 - 8/3/2011"
-"CEC",557,"Play Therapy",1,"LEC",1255,"MoTuWeThFr 9:00AM - 4:00PM","Shibles Hall 202","Dorothy T Breen","6/20/2011 - 6/24/2011"
-"CEC",560,"Counselor Education Prepracticum",1,"IND",1498,"We 4:00PM - 8:00PM","Shibles Hall 159","Melissa A Rosenberg","5/11/2011 - 7/6/2011"
-"CEC",580,"Counselor Education Institute",1,"LEC",1566,"MoTuWeThFr 9:00AM - 4:00PM","Shibles Hall 320","Donald Frederick Lynch","8/8/2011 - 8/12/2011"
-"CEC",580,"Counselor Education Institute",2,"LEC",2933,"MoTuWeThFr 9:00AM - 4:00PM","Shibles Hall 217","John Yasenchak","7/18/2011 - 7/22/2011"
-"CEC",580,"Counselor Education Institute",3,"LEC",2934,"MoTuWeThFr 9:00AM - 4:00PM","Arranged","Staff","8/1/2011 - 8/5/2011"
-"CEC",585,"Substance Abuse: Contemporary Approaches to Counseling",1,"LEC",1568,"MoTuWeThFr 9:00AM - 4:00PM","Shibles Hall 320","Robert Q Dana","7/25/2011 - 7/29/2011"
-"CEC",655,"Individual Counseling Practicum",1,"IND",5061,"Tu 4:00PM - 8:00PM","Shibles Hall 320","Tamara J Hunt","5/10/2011 - 7/5/2011"
-"CEC",661,"Research Seminar in Counselor Education",990,"SEM",2931,"TBA","TBA","Annette F Nelligan","5/9/2011 - 6/17/2011"
-"CEC",690,"Counselor Education Internship",1,"FEX",3081,"TBA","TBA","Dorothy T Breen","5/9/2011 - 8/19/2011"
-"CEC",694,"Advanced Counselor Education Internship",1,"FEX",3082,"TBA","TBA","Dorothy T Breen","5/9/2011 - 8/19/2011"
-"CET",394,"Construction Management Technology Practice",1,"RSG",1241,"TBA","TBA","Howard M Gray","5/9/2011 - 8/19/2011"
-"CHE",352,"Process Control",1,"LEC",1227,"MoTuWeTh 9:00AM - 12:00PM","Jenness Hall 102","John J Hwalek","5/9/2011 - 5/27/2011"
-"CHE",360,"Elements of Chemical Engineering I",1,"LEC",1264,"MoTuWeTh 1:10PM - 4:00PM","Jenness Hall 104","Albert Co","5/31/2011 - 7/1/2011"
-"CHE",361,"Chemical Engineering Laboratory I",1,"LAB",1269,"WeTh 1:10PM - 5:00PM","Jenness Hall 102",,"7/5/2011 - 8/5/2011"
-"CHE",362,"Elements of Chemical Engineering II",1,"LEC",1272,"MoTuWeTh 1:10PM - 4:00PM","Jenness Hall 102","John J Hwalek","5/31/2011 - 7/1/2011"
-"CHE",368,"Kinetics and Reactor Design",1,"LEC",1278,"MoTuWeTh 9:00AM - 11:00AM","Jenness Hall 102","Hemant P Pendse","7/5/2011 - 8/5/2011"
-"CHE",386,"Chemical Engineering Thermodynamics II",1,"LEC",1279,"MoTuWeTh 1:10PM - 4:00PM","Jenness Hall 104","Douglas M Ruthven","7/5/2011 - 8/5/2011"
-"CHE",494,"Chemical Engineering Practice",1,"FEX",1289,"TBA","TBA","Hemant P Pendse","5/9/2011 - 8/19/2011"
-"CHE",498,"Special Topics in Chemical Engineering",1,"LEC",1280,"MoTuWeTh 9:00AM - 11:00AM","Jenness Hall 102","Michael D Mason","5/31/2011 - 7/1/2011"
-"CHE",699,"Graduate Thesis / Research",1,"THS",1290,"TBA","TBA","Douglas W Bousfield","5/9/2011 - 8/19/2011"
-"CHE",699,"Graduate Thesis / Research",2,"THS",5095,"TBA","TBA","Albert Co","5/9/2011 - 8/19/2011"
-"CHE",699,"Graduate Thesis / Research",3,"THS",5096,"TBA","TBA","William Desisto","5/9/2011 - 8/19/2011"
-"CHE",699,"Graduate Thesis / Research",4,"THS",5097,"TBA","TBA","Darrell W Donahue","5/9/2011 - 8/19/2011"
-"CHE",699,"Graduate Thesis / Research",5,"THS",5098,"TBA","TBA","Joseph M Genco","5/9/2011 - 8/19/2011"
-"CHE",699,"Graduate Thesis / Research",6,"THS",5099,"TBA","TBA","John J Hwalek","5/9/2011 - 8/19/2011"
-"CHF",201,"Introduction to Child Development",990,"LEC",1067,"TBA","TBA","Barbara D Howard","5/9/2011 - 5/27/2011"
-"CHF",201,"Introduction to Child Development",991,"LEC",1068,"TBA","TBA","Barbara D Howard","8/1/2011 - 8/19/2011"
-"CHF",311,"Creativity and the Young Child",1,"LEC",2942,"MoTuWeThFr 9:00AM - 11:30AM","Merrill Hall 114","Margo Jill Brown","5/9/2011 - 5/27/2011"
-"CHF",321,"Curriculum and Methods for Teaching Young Children Science",990,"LEC",1069,"TBA","TBA","Mary Ellin Logue","5/9/2011 - 6/17/2011"
-"CHF",351,"Human Sexuality",990,"LEC",3835,"TBA","TBA","Sandra L Caron","5/9/2011 - 5/27/2011"
-"CHF",351,"Human Sexuality",991,"LEC",1070,"TBA","TBA","Sandra L Caron","7/11/2011 - 7/29/2011"
-"CHF",409,"Special Problems in Child Development and Family Life",1,"IND",1359,"TBA","TBA","Sandra L Caron","5/9/2011 - 8/19/2011"
-"CHF",409,"Special Problems in Child Development and Family Life",2,"IND",1360,"TBA","TBA","Margo Jill Brown","5/9/2011 - 8/19/2011"
-"CHF",409,"Special Problems in Child Development and Family Life",3,"IND",1361,"TBA","TBA","Julie M Dellamattera","5/9/2011 - 8/19/2011"
-"CHF",409,"Special Problems in Child Development and Family Life",4,"IND",1362,"TBA","TBA","Barbara D Howard","5/9/2011 - 8/19/2011"
-"CHF",409,"Special Problems in Child Development and Family Life",5,"IND",1363,"TBA","TBA","Renate Klein","5/9/2011 - 8/19/2011"
-"CHF",409,"Special Problems in Child Development and Family Life",6,"IND",1367,"TBA","TBA","Mary Ellin Logue","5/9/2011 - 8/19/2011"
-"CHF",432,"Socialization of the Child",990,"LEC",2944,"TBA","TBA","Barbara D Howard","6/6/2011 - 7/1/2011"
-"CHF",450,"Early Childhood Special Education",1,"LEC",2941,"MoTuWeThFr 1:00PM - 3:30PM","Merrill Hall 114","Margo Jill Brown","5/9/2011 - 5/27/2011"
-"CHF",496,"Field Experience in Human Development and Family Studies",1,"FEX",1646,"TBA","TBA","Sandra L Caron","5/9/2011 - 8/19/2011"
-"CHF",496,"Field Experience in Human Development and Family Studies",2,"FEX",1376,"TBA","TBA","Margo Jill Brown","5/9/2011 - 8/19/2011"
-"CHF",496,"Field Experience in Human Development and Family Studies",3,"FEX",1377,"TBA","TBA","Julie M Dellamattera","5/9/2011 - 8/19/2011"
-"CHF",496,"Field Experience in Human Development and Family Studies",4,"FEX",1379,"TBA","TBA","Barbara D Howard","5/9/2011 - 8/19/2011"
-"CHF",496,"Field Experience in Human Development and Family Studies",5,"FEX",1381,"TBA","TBA","Renate Klein","5/9/2011 - 8/19/2011"
-"CHF",496,"Field Experience in Human Development and Family Studies",6,"FEX",1382,"TBA","TBA","Mary Ellin Logue","5/9/2011 - 8/19/2011"
-"CHY",121,"Introduction to Chemistry",1,"LEC",1508,"MoTuWeThFr 9:30AM - 11:00AM","Aubert Hall 316","Rebecca J Rowe","5/31/2011 - 7/1/2011"
-"CHY",122,"The Molecular Basis of Chemical Change",1,"LEC",1516,"MoTuWeThFr 9:30AM - 11:00AM","Aubert Hall 316","Howard H Patterson","7/5/2011 - 8/5/2011"
-"CHY",123,"Introduction to Chemistry Laboratory",1,"LAB",1509,"MoWeTh 12:10PM - 3:00PM","Aubert Hall 227","Mitchell R M Bruce","5/31/2011 - 7/1/2011"
-"CHY",123,"Introduction to Chemistry Laboratory",2,"LAB",1511,"MoWeTh 12:10PM - 3:00PM","Aubert Hall 228","Mitchell R M Bruce","5/31/2011 - 7/1/2011"
-"CHY",124,"The Molecular Basis of Chemical Change Laboratory",1,"LAB",1517,"MoWeTh 12:10PM - 3:00PM","Aubert Hall 227","Mitchell R M Bruce","7/5/2011 - 8/5/2011"
-"CHY",124,"The Molecular Basis of Chemical Change Laboratory",2,"LAB",1518,"MoWeTh 12:10PM - 3:00PM","Aubert Hall 228","Mitchell R M Bruce","7/5/2011 - 8/5/2011"
-"CHY",251,"Organic Chemistry I",1,"LEC",1512,"MoTuWeThFr 9:30AM - 11:00AM","Aubert Hall 428","Bruce L Jensen","5/31/2011 - 7/1/2011"
-"CHY",252,"Organic Chemistry II",1,"LEC",1524,"MoTuWeThFr 9:30AM - 11:00AM","Aubert Hall 428","Rebecca J Rowe","7/5/2011 - 8/5/2011"
-"CHY",253,"Organic Chemistry Laboratory I",1,"LAB",5825,"MoWeTh 1:10PM - 5:00PM","Aubert Hall 462","Bruce L Jensen","5/31/2011 - 7/1/2011"
-"CHY",253,"Organic Chemistry Laboratory I",2,"LAB",5824,"MoWeTh 1:10PM - 5:00PM","Aubert Hall 428","Bruce L Jensen","5/31/2011 - 7/1/2011"
-"CHY",394,"Field Experience/Cooperative Education",1,"FEX",1535,"TBA","TBA","Alice E Bruce","5/9/2011 - 8/19/2011"
-"CHY",398,"Undergraduate Research",1,"IND",1537,"TBA","TBA","Alice E Bruce","5/9/2011 - 8/19/2011"
-"CHY",399,"Undergraduate Thesis",1,"THS",1538,"TBA","TBA","Alice E Bruce","5/9/2011 - 8/19/2011"
-"CHY",490,"Topics in Chemistry",1,"LEC",1515,"TBA","TBA","Alice E Bruce","5/9/2011 - 8/19/2011"
-"CHY",490,"Topics in Chemistry",2,"LEC",1528,"TBA","TBA","Alice E Bruce","5/9/2011 - 8/19/2011"
-"CHY",698,"Graduate Research",1,"IND",1540,"TBA","TBA","Alice E Bruce","5/9/2011 - 8/19/2011"
-"CHY",699,"Graduate Thesis / Research",1,"THS",1541,"TBA","TBA","Francois G Amar","5/9/2011 - 8/19/2011"
-"CHY",699,"Graduate Thesis / Research",2,"THS",1542,"TBA","TBA","Alice E Bruce","5/9/2011 - 8/19/2011"
-"CHY",699,"Graduate Thesis / Research",3,"THS",1544,"TBA","TBA","Mitchell R M Bruce","5/9/2011 - 8/19/2011"
-"CHY",699,"Graduate Thesis / Research",4,"THS",1545,"TBA","TBA","Barbara J W Cole","5/9/2011 - 8/19/2011"
-"CHY",699,"Graduate Thesis / Research",5,"THS",1547,"TBA","TBA","Scott Collins","5/9/2011 - 8/19/2011"
-"CHY",699,"Graduate Thesis / Research",6,"THS",1548,"TBA","TBA","Raymond C Fort","5/9/2011 - 8/19/2011"
-"CIE",394,"Civil Engineering Practice",1,"RSG",1462,"TBA","TBA","Thomas C Sandford","5/9/2011 - 8/19/2011"
-"CIE",699,"Graduate Thesis / Research",1,"THS",1463,"TBA","TBA","Aria Amirbahman","5/9/2011 - 8/19/2011"
-"CIE",699,"Graduate Thesis / Research",3,"THS",1465,"TBA","TBA","Habib-J Dagher","5/9/2011 - 8/19/2011"
-"CIE",699,"Graduate Thesis / Research",4,"THS",1466,"TBA","TBA","William Glenn Davids","5/9/2011 - 8/19/2011"
-"CIE",699,"Graduate Thesis / Research",5,"THS",1467,"TBA","TBA","Per Erik Garder","5/9/2011 - 8/19/2011"
-"CIE",699,"Graduate Thesis / Research",6,"THS",1468,"TBA","TBA","Dana N Humphrey","5/9/2011 - 8/19/2011"
-"CIE",699,"Graduate Thesis / Research",7,"THS",1469,"TBA","TBA","Shaleen Jain","5/9/2011 - 8/19/2011"
-"CMJ",100,"Introduction to Mass Communication",990,"LEC",3188,"TBA","TBA","Jessica E Brophy","5/31/2011 - 7/22/2011"
-"CMJ",103,"Fundamentals of Public Communication",1,"LEC",1148,"MoTuWeThFr 9:15AM - 12:00PM","Dunn Hall 44","Staff","5/9/2011 - 5/27/2011"
-"CMJ",103,"Fundamentals of Public Communication",2,"LEC",1149,"MoTuWeThFr 1:15PM - 4:00PM","Dunn Hall 417","Staff","5/9/2011 - 5/27/2011"
-"CMJ",103,"Fundamentals of Public Communication",3,"LEC",1150,"MoTuWeThFr 1:15PM - 4:00PM","Dunn Hall 401","Staff","5/9/2011 - 5/27/2011"
-"CMJ",103,"Fundamentals of Public Communication",4,"LEC",3182,"MoTuWeThFr 9:15AM - 12:00PM","Dunn Hall 401","Staff","6/6/2011 - 6/24/2011"
-"CMJ",103,"Fundamentals of Public Communication",5,"LEC",3183,"MoTuWeThFr 9:15AM - 12:00PM","Dunn Hall 401","Staff","7/5/2011 - 7/22/2011"
-"CMJ",225,"Sex",1,"LEC",3184,"MoTuWeThFr 9:15AM - 12:00PM","Dunn Hall 401","Claire F Sullivan","5/9/2011 - 5/27/2011"
-"CMJ",236,"Journalism Writing and Editing",1,"LEC",3185,"MoTuWeThFr 9:15AM - 12:00PM","Dunn Hall 4","Staff","5/9/2011 - 5/27/2011"
-"CMJ",237,"Journalism Across Platforms",1,"LEC",3186,"MoTuWeThFr 1:15PM - 4:00PM","Dunn Hall 4","Douglas Alan Kelly","5/9/2011 - 5/27/2011"
-"CMJ",257,"Business and Professional Communication",1,"LEC",3187,"MoTuWeThFr 9:15AM - 12:00PM","Dunn Hall 417","Jeremiah Ray Miner","5/9/2011 - 5/27/2011"
-"CMJ",495,"Internship",1,"RSG",1617,"TBA","TBA","Claire F Sullivan","5/9/2011 - 8/19/2011"
-"CMJ",498,"Advanced Topics in Mass Communication",1,"LEC",3189,"MoTuWeThFr 9:15AM - 12:00PM","Boardman Hall 207","Claire F Sullivan","5/31/2011 - 6/17/2011"
-"CMJ",593,"Topics in Communication",1,"IND",1729,"TuTh 6:00PM - 8:30PM","Dunn Hall 424","Staff","5/31/2011 - 7/22/2011"
-"CMJ",690,"Directed Research",1,"RSG",1618,"TBA","TBA","Nathan E Stormer","5/9/2011 - 8/19/2011"
-"CMJ",693,"Reading for Master's Comprehensive",1,"IND",1619,"TBA","TBA","Nathan E Stormer","5/9/2011 - 8/19/2011"
-"CMJ",695,"Graduate Internship",1,"RSG",1620,"TBA","TBA","Claire F Sullivan","5/9/2011 - 8/19/2011"
-"CMJ",699,"Graduate Thesis / Research",1,"THS",1621,"TBA","TBA","Nathan E Stormer","5/9/2011 - 8/19/2011"
-"COS",103,"Introduction to Spreadsheets",1,"LEC",3224,"MoTuWeThFr 9:15AM - 12:00PM","Neville Hall 204","Carol A Roberts","5/9/2011 - 5/13/2011"
-"COS",103,"Introduction to Spreadsheets",990,"LEC",1036,"TBA","TBA","Carol A Roberts","5/31/2011 - 6/17/2011"
-"COS",104,"Introduction of Presentation Software",990,"LEC",1037,"TBA","TBA","Carol A Roberts","6/20/2011 - 7/8/2011"
-"COS",115,"Web Design in HTML",990,"LEC",1035,"TBA","TBA","Carol A Roberts","5/31/2011 - 7/22/2011"
-"COS",120,"Introduction to Programming I",1,"LEC",3225,"MoWeFr 9:15AM - 12:00PM","Neville Hall 106","Carol A Roberts","5/31/2011 - 7/1/2011"
-"COS",211,"Principles of Data Processing",1,"LEC",1708,"ThFr 1:00PM - 4:00PM","Neville Hall 204","Robert J Shuman","5/9/2011 - 7/1/2011"
-"COS",213,"Advanced Excel Spreadsheet Design",990,"LEC",3226,"TBA","TBA","Carol A Roberts","6/20/2011 - 7/29/2011"
-"COS",298,"Topics in Computer Science",1,"IND",1838,"TBA","TBA","Sudarshan S Chawathe","5/9/2011 - 8/19/2011"
-"COS",497,"Computer Science Capstone 2",2,"LEC",1630,"TBA","TBA","Sudarshan S Chawathe","5/9/2011 - 8/19/2011"
-"COS",499,"Senior Project",1,"LEC",1688,"TBA","TBA","Phillip M Dickens","5/9/2011 - 8/19/2011"
-"COS",499,"Senior Project",2,"LEC",1689,"TBA","TBA","Sudarshan S Chawathe","5/9/2011 - 8/19/2011"
-"COS",499,"Senior Project",3,"LEC",1690,"TBA","TBA","James L Fastook","5/9/2011 - 8/19/2011"
-"COS",499,"Senior Project",4,"LEC",1691,"TBA","TBA","Laurence J Latour","5/9/2011 - 8/19/2011"
-"COS",499,"Senior Project",5,"LEC",1692,"TBA","TBA","George Markowsky","5/9/2011 - 8/19/2011"
-"COS",499,"Senior Project",6,"LEC",1693,"TBA","TBA","Curtis L Meadow","5/9/2011 - 8/19/2011"
-"COS",699,"Graduate Thesis / Research",1,"THS",1636,"TBA","TBA","Phillip M Dickens","5/9/2011 - 8/19/2011"
-"COS",699,"Graduate Thesis / Research",2,"THS",1683,"TBA","TBA","Sudarshan S Chawathe","5/9/2011 - 8/19/2011"
-"COS",699,"Graduate Thesis / Research",3,"THS",1818,"TBA","TBA","Roy M Turner","5/9/2011 - 8/19/2011"
-"CSD",101,"American Sign Language I",665,"LEC",1016,"Th 5:00PM - 8:00PM","Fred Hutchinson Center","Carrie J Pierce","5/12/2011 - 8/4/2011"
-"CSD",102,"American Sign Language II",665,"LEC",3529,"Tu 5:00PM - 8:00PM","Fred Hutchinson Center","Carrie J Pierce","5/10/2011 - 8/2/2011"
-"CSD",686,"Clinical Practicum",1,"RSG",1781,"TBA","TBA",,"5/9/2011 - 8/19/2011"
-"CSD",686,"Clinical Practicum",2,"RSG",1153,"TBA","TBA","Judith L Stickles","5/9/2011 - 8/19/2011"
-"CSD",686,"Clinical Practicum",3,"RSG",1154,"TBA","TBA","Amy Engler Booth","5/9/2011 - 8/19/2011"
-"CSD",699,"Graduate Thesis / Research",2,"THS",1155,"TBA","TBA","Nancy E Hall","5/9/2011 - 8/19/2011"
-"DAN",498,"Dance Project/Thesis",1,"IND",1810,"TBA","Arranged","Ann P Ross","5/9/2011 - 8/19/2011"
-"DIS",300,"Disability: Interaction of Human Diversity and Global Environment",990,"LEC",1082,"TBA","TBA","Stephen F Gilson","5/9/2011 - 5/27/2011"
-"DIS",520,"Disability as Diversity",990,"LEC",3151,"TBA","TBA","Elizabeth Depoy","5/31/2011 - 7/8/2011"
-"DIS",530,"Disability Policy",990,"LEC",1107,"TBA","TBA","Elizabeth Depoy","5/9/2011 - 5/27/2011"
-"DIS",650,"Research Seminar in Disability Studies",990,"IND",3983,"TBA","TBA","Elizabeth Depoy","5/31/2011 - 7/8/2011"
-"DIS",650,"Research Seminar in Disability Studies",991,"IND",3984,"TBA","TBA","Elizabeth Depoy","7/11/2011 - 8/19/2011"
-"DIS",680,"Independent Study in Disability Studies",1,"IND",1562,"TBA","TBA","Lucille A Zeph","5/9/2011 - 8/19/2011"
-"EAD",531,"School Law for Administrators",1,"LEC",1762,"Th 4:30PM - 7:30PM","Arranged","Betsy M Webb","6/2/2011 - 7/28/2011"
-"EAD",562,"Group Leadership and Decision",1,"LEC",3134,"We 5:00PM - 8:00PM","Merrill Hall 114","Richard H Ackerman","5/11/2011 - 6/1/2011"
-"EAD",562,"Group Leadership and Decision",2,"LEC",3135,"We 5:00PM - 8:00PM","Merrill Hall 335","Paul D Knowles","5/11/2011 - 6/1/2011"
-"EAD",562,"Group Leadership and Decision",3,"LEC",3136,"We 5:00PM - 8:00PM","Merrill Hall 330","Cathy A Lewis","5/11/2011 - 6/1/2011"
-"EAD",563,"Individual Leadership: Problems",1,"LEC",3122,"Th 5:00PM - 8:00PM","Merrill Hall 114","Richard H Ackerman","5/12/2011 - 5/12/2011"
-"EAD",615,"The Principalship",1,"LEC",2936,"MoTuWeTh 9:00AM - 12:00PM","Merrill Hall 330","Donald A Buckingham","7/11/2011 - 7/28/2011"
-"EAD",656,"Social and Ethical Foundations of Educational Leadership",1,"LEC",2937,"Tu 4:30PM - 7:30PM","Merrill Hall 114","Sarah V Mackenzie","5/10/2011 - 6/28/2011"
-"EAD",658,"Advanced Leadership Studies in Education",1,"LEC",5088,"TBA","TBA","Paul D Knowles","5/19/2011 - 7/30/2011"
-"ECE",209,"Fundamentals of Electric Circuits",1,"LEC",1519,"MoTuWeThFr 9:15AM - 12:00PM","Barrows Hall 125","Duane Hanselman","5/9/2011 - 5/27/2011"
-"ECE",210,"Electrical Networks I",1,"LEC",1767,"MoTuWeThFr 9:15AM - 12:00PM","Barrows Hall 125","Duane Hanselman","5/9/2011 - 5/27/2011"
-"ECE",394,"Electrical and Computer Engineering Practice",1,"FEX",1532,"TBA","TBA","Bruce E Segee","5/9/2011 - 8/19/2011"
-"ECE",401,"Electrical and Computer Engineering Design Project",1,"LEC",1529,"TBA","TBA",,"5/9/2011 - 8/19/2011"
-"ECE",402,"Electrical and Computer Engineering Design Project",1,"LEC",1531,"TBA","TBA","Andrew K Sheaff","5/9/2011 - 8/19/2011"
-"ECE",465,"Introduction to Sensors",1,"LEC",1520,"TBA","TBA","John F Vetelino","6/6/2011 - 8/19/2011"
-"ECE",552,"Wave Propagation",1,"LEC",3130,"TBA","TBA","John F Vetelino","6/6/2011 - 8/19/2011"
-"ECE",667,"Solid State Device Theory II",1,"LEC",3131,"TBA","TBA","John F Vetelino","6/6/2011 - 8/19/2011"
-"ECE",699,"Graduate Thesis / Research",1,"THS",1525,"TBA","TBA","John F Vetelino","5/9/2011 - 8/19/2011"
-"ECE",699,"Graduate Thesis / Research",2,"THS",1698,"TBA","TBA","Yifeng Zhu","5/9/2011 - 8/19/2011"
-"ECE",699,"Graduate Thesis / Research",3,"THS",1702,"TBA","TBA","Nuri W Emanetoglu","5/9/2011 - 8/19/2011"
-"ECE",699,"Graduate Thesis / Research",4,"THS",1699,"TBA","TBA","Rosemary L Smith","5/9/2011 - 8/19/2011"
-"ECE",699,"Graduate Thesis / Research",5,"THS",1700,"TBA","TBA","Mauricio Pereira Da Cunha","5/9/2011 - 8/19/2011"
-"ECE",699,"Graduate Thesis / Research",6,"THS",1701,"TBA","TBA","Donald M Hummels","5/9/2011 - 8/19/2011"
-"ECO",100,"Intro to Economics",990,"LEC",1076,"TBA","TBA","Todd M Gabe","5/9/2011 - 8/19/2011"
-"ECO",120,"Principles of Microeconomics",1,"LEC",3077,"MoTuWeThFr 9:15AM - 12:00PM","Winslow Hall 201","James D Leiby","5/9/2011 - 5/27/2011"
-"ECO",120,"Principles of Microeconomics",990,"LEC",3083,"TBA","TBA","Caroline Lundquist Noblet","5/9/2011 - 8/19/2011"
-"ECO",121,"Principles of Macroeconomics",1,"LEC",1506,"MoTuWeThFr 9:15AM - 12:00PM","Hitchner Hall 203","Michael R Montgomery","5/9/2011 - 5/27/2011"
-"ECO",190,"World Food Supply",990,"LEC",5656,"TBA","On-line Course","Aaron Kinyu Hoshide","5/9/2011 - 8/19/2011"
-"ECO",370,"Topics in Economics",870,"IND",3432,"TBA","TBA","Paul J Myer","5/26/2011 - 6/4/2011"
-"ECO",395,"Field Experience",1,"FEX",1507,"TBA","TBA","Hsiang-Tai Cheng","5/9/2011 - 8/19/2011"
-"ECO",497,"Independent Studies",1,"IND",1676,"TBA","TBA","George K Criner","5/9/2011 - 8/19/2011"
-"ECO",595,"Graduate Internship in Economics",1,"RSG",1731,"TBA","TBA","George K Criner","5/9/2011 - 8/19/2011"
-"ECO",597,"Independent Studies",1,"IND",1674,"TBA","TBA","Mario F Teisl","5/9/2011 - 8/19/2011"
-"ECO",699,"Graduate Thesis / Research",1,"THS",1510,"TBA","TBA","Mario F Teisl","5/9/2011 - 8/19/2011"
-"EDB",202,"Education in a Multicultural Society",1,"LEC",1250,"MoTuWeThFr 9:15AM - 12:00PM","Shibles Hall 313","Cheryl A Robertson","5/9/2011 - 5/27/2011"
-"EDB",204,"The Teaching Process",1,"LEC",1536,"MoTuWeThFr 9:00AM - 12:00PM","Shibles Hall 202","Joan Ellen Staffiere","7/5/2011 - 7/22/2011"
-"EDB",221,"Educational Psychology",990,"LEC",2939,"TBA","TBA","Sidney Mitchell","5/9/2011 - 5/27/2011"
-"EDC",524,"Curriculum and Organization of Middle Schools and Junior High Schools",990,"LEC",1074,"TBA","TBA","Edward N Brazee","6/20/2011 - 7/15/2011"
-"EDC",533,"Dynamics of the Curriculum",990,"LEC",5089,"TBA","TBA","Edward N Brazee","6/20/2011 - 7/31/2011"
-"EDG",498,"Problems in Education",1,"IND",5662,"MoTuWeThFr 8:30AM - 11:30AM","Shibles Hall 201","Diane W Jackson","7/18/2011 - 7/29/2011"
-"EDG",657,"Education Practicum",1,"RSG",1533,"TBA","TBA","Richard B Kent","5/9/2011 - 8/19/2011"
-"EDG",657,"Education Practicum",2,"RSG",1628,"TBA","TBA","Robert A Lehnhard","5/9/2011 - 8/19/2011"
-"EDG",657,"Education Practicum",3,"RSG",5730,"TBA","TBA","Abigail C Garthwait","5/9/2011 - 8/19/2011"
-"EDG",691,"Graduate Apprenticeship",1,"IND",1627,"TBA","TBA","Robert A Lehnhard","5/9/2011 - 8/19/2011"
-"EDG",691,"Graduate Apprenticeship",2,"IND",5682,"TBA","TBA","Stephen Butterfield","5/9/2011 - 8/19/2011"
-"EDH",501,"Social Context of Education",1,"LEC",5304,"MoTuWeThFr 9:00AM - 12:15PM","Shibles Hall 316","John E Maddaus","7/11/2011 - 7/29/2011"
-"EDS",320,"Educational Assessment",1,"LEC",2940,"MoTuWeThFr 9:00AM - 12:00PM","Merrill Hall 335","Sidney Mitchell","5/9/2011 - 5/27/2011"
-"EDS",521,"Statistical Methods in Education I",990,"LEC",1100,"TBA","TBA","Brian E Doore","5/16/2011 - 7/22/2011"
-"EDS",569,"Seminar in Educational Leadership",1,"SEM",3228,"Mo 5:00PM - 8:00PM","Merrill Hall 330","George F Marnik","5/9/2011 - 5/23/2011"
-"EDS",569,"Seminar in Educational Leadership",2,"SEM",3230,"Mo 5:00PM - 8:00PM","Merrill Hall 335","Sarah V Mackenzie","5/9/2011 - 5/23/2011"
-"EDS",569,"Seminar in Educational Leadership",3,"SEM",3231,"TBA","Arranged","George F Marnik","5/10/2011 - 6/28/2011"
-"EDS",699,"Graduate Thesis / Research",1,"THS",1635,"TBA","TBA","Abigail C Garthwait","5/9/2011 - 8/19/2011"
-"EDS",699,"Graduate Thesis / Research",2,"THS",1639,"TBA","TBA","Robert A Lehnhard","5/9/2011 - 8/19/2011"
-"EDS",699,"Graduate Thesis / Research",3,"THS",1644,"TBA","TBA","Sarah V Mackenzie","5/9/2011 - 8/19/2011"
-"EDS",699,"Graduate Thesis / Research",4,"THS",1675,"TBA","TBA","George F Marnik","5/9/2011 - 8/19/2011"
-"EDS",699,"Graduate Thesis / Research",5,"THS",1687,"TBA","TBA","Elizabeth J Allan","5/9/2011 - 8/19/2011"
-"EDS",699,"Graduate Thesis / Research",6,"THS",1805,"TBA","TBA","Susan K Gardner","5/9/2011 - 8/19/2011"
-"EDT",520,"Methods of Teaching with Computer Technology",990,"LEC",1101,"TBA","On-line Course","Jason K Baack","6/20/2011 - 7/30/2011"
-"EDT",527,"Networking and Troubleshooting Basics for Educators",869,"LEC",3094,"Tu 5:00PM - 7:30PM","Shibles Hall 35","Jason K Baack","6/14/2011 - 8/6/2011"
-"EDT",550,"Video Communication in the 21st Century",990,"LEC",3075,"TBA","On-line Course","Jason K Baack","7/6/2011 - 8/20/2011"
-"EDT",560,"Applying Technology to Assessment in Education",990,"LEC",3074,"TBA","TBA","Abigail C Garthwait","6/13/2011 - 8/5/2011"
-"EDT",580,"Instructional Technology Institute",665,"LEC",1019,"MoTuWeThFr 8:00AM - 4:30PM","Fred Hutchinson Center","Abigail C Garthwait","6/20/2011 - 6/24/2011"
-"EDT",598,"Special Topics in Instructional Technology",990,"IND",3076,"TBA","On-line Course","Abigail C Garthwait","6/13/2011 - 8/5/2011"
-"EDU",580,"Educational Institute (Activity)",1,"LEC",1530,"Sa 8:30AM - 4:00PM","Shibles Hall 204","Kenneth H Martin","5/14/2011 - 5/14/2011"
-"EDU",580,"Educational Institute (Activity)",2,"LEC",3086,"MoTuWeThFr 8:30AM - 4:30PM","Shibles Hall 320",,"7/11/2011 - 7/15/2011"
-"EDU",590,"Topics in Education",1,"LEC",5127,"MoTuWeThFr 8:00AM - 4:00PM","Arranged","Gertrude Nesin","6/27/2011 - 7/1/2011"
-"EDU",590,"Topics in Education",2,"LEC",5128,"MoTuWeThFr 9:00AM - 1:00PM","Arranged","Maryellen Mahoney-O'Neil","8/8/2011 - 8/19/2011"
-"EDU",590,"Topics in Education",3,"LEC",5130,"TBA","On-line Course","David Charles Boardman","6/27/2011 - 8/15/2011"
-"EDU",590,"Topics in Education",4,"LEC",5131,"MoTuWeTh 4:00PM - 8:00PM","On-line Course","Deborah Rooks","8/1/2011 - 8/19/2011"
-"EDU",590,"Topics in Education",5,"LEC",5661,"MoTuWeThFr 9:00AM - 4:00PM","Lengyel Hall 125","Stephen Butterfield","7/18/2011 - 7/22/2011"
-"EDU",590,"Topics in Education",665,"LEC",5126,"MoTuWeThFr 8:00AM - 4:30PM","Fred Hutchinson Center","Abigail C Garthwait","6/20/2011 - 6/24/2011"
-"EDW",462,"Workshop in Elementary Education (Activity)",665,"LEC",3533,"MoTuWeThFr 8:00AM - 5:00PM","Fred Hutchinson Center","Staff","7/11/2011 - 7/22/2011"
-"EDW",472,"Workshop in Secondary Education (Activity)",665,"LEC",3534,"MoTuWeThFr 8:00AM - 5:00PM","Fred Hutchinson Center","Staff","7/11/2011 - 7/22/2011"
-"EEL",534,"Language and Literacy Acquisition for Young Children: Birth to 8",1,"LEC",2960,"TuTh 4:30PM - 8:30PM","Shibles Hall 201","Victoria S Bennett-Armistead","5/10/2011 - 6/9/2011"
-"EES",396,"Field Experience in Ecology and Environmental Sciences",1,"FEX",1502,"TBA","TBA","Mark W Anderson","5/9/2011 - 8/19/2011"
-"EES",497,"Independent Studies in Ecology and Environmental Sciences",1,"IND",1503,"TBA","TBA","Mark W Anderson","5/9/2011 - 8/19/2011"
-"EES",590,"Special Topics in Ecology and Environmental Science",1,"IND",1504,"TBA","TBA","Christopher S Cronan","5/9/2011 - 8/19/2011"
-"EES",699,"Graduate Thesis / Research",1,"THS",1505,"TBA","TBA","Christopher S Cronan","5/9/2011 - 8/19/2011"
-"EET",394,"Electrical Engineering Technology Practice",1,"RSG",1242,"TBA","TBA","John W Allen","5/9/2011 - 8/19/2011"
-"EET",498,"Selected Topics in Electrical Engineering Technology",1,"IND",1243,"TBA","TBA","Judith Ellen Pearse","5/9/2011 - 8/19/2011"
-"ELL",470,"Methods of Teaching English as a Second Language",665,"LEC",3142,"MoTuWeThFr 9:00AM - 4:30PM","Fred Hutchinson Center","Nives Dalbo-Wheeler","6/27/2011 - 7/1/2011"
-"ELL",475,"Curriculum Development in English as a Second Language/English as a Foreign Language Contexts",1,"LEC",3120,"MoTuWeThFr 8:30AM - 4:30PM","Shibles Hall 313","Jean Leighton Mileham","8/8/2011 - 8/12/2011"
-"ELL",480,"Testing and Assessment in English as a Second Language/English as a Foreign Language Contexts",1,"LEC",3121,"MoTuWeThFr 8:30AM - 4:30PM","Shibles Hall 320","Jean Leighton Mileham","8/15/2011 - 8/19/2011"
-"ELL",485,"Applied Linguistics/Second Language Acquisition Principles for English as a Second Language/English",1,"LEC",3119,"MoTuWeThFr 8:30AM - 4:30PM","Arranged","Staff","8/1/2011 - 8/5/2011"
-"ELL",491,"Multiculturalism and Diversity for ESL/EFL Contexts",1,"LEC",3115,"MoTuWeThFr 9:15AM - 12:00PM","Lord Hall 200","John B Mitchell","5/9/2011 - 5/27/2011"
-"ELL",491,"Multiculturalism and Diversity for ESL/EFL Contexts",2,"LEC",3118,"MoTuWeThFr 8:30AM - 4:30PM","Lord Hall 200","John B Mitchell","7/18/2011 - 7/22/2011"
-"ELL",570,"Methods of Teaching English as a Second Language",665,"LEC",3143,"MoTuWeThFr 9:00AM - 4:30PM","Fred Hutchinson Center","Nives Dalbo-Wheeler","6/27/2011 - 7/1/2011"
-"ELL",575,"Curriculum and Development in English as a Second Language (ESL) Context",1,"LEC",5856,"MoTuWeThFr 8:30AM - 4:30PM","Shibles Hall 313","Jean Leighton Mileham","8/8/2011 - 8/12/2011"
-"ELL",580,"Testing and Assessment in English as a Second Language (ESL) Context",1,"LEC",5239,"MoTuWeThFr 8:30AM - 4:30PM","Shibles Hall 320","Jean Leighton Mileham","8/15/2011 - 8/19/2011"
-"ELL",585,"Applied Linguistics and Second Language Acquisition Principles for ESL/EFL",1,"LEC",5240,"MoTuWeThFr 8:30AM - 4:30PM","Arranged","Staff","8/1/2011 - 8/5/2011"
-"ELL",591,"Multiculturalism and Diversity for English as a Second Language (ESL) Contexts",1,"LEC",5857,"MoTuWeThFr 9:15AM - 12:00PM","Lord Hall 200","John B Mitchell","5/9/2011 - 5/27/2011"
-"ELL",591,"Multiculturalism and Diversity for English as a Second Language (ESL) Contexts",2,"LEC",5859,"MoTuWeThFr 8:30AM - 4:30PM","Lord Hall 200","John B Mitchell","7/18/2011 - 7/22/2011"
-"ENG",101,"College Composition",1,"LEC",1849,"MoTuWeThFr 9:15AM - 12:00PM","Barrows Hall 124","Travis G Baker","5/9/2011 - 5/27/2011"
-"ENG",101,"College Composition",665,"LEC",1015,"TuTh 5:00PM - 9:00PM","Fred Hutchinson Center","Dorathy Martel","5/31/2011 - 6/30/2011"
-"ENG",101,"College Composition",990,"LEC",1072,"TBA","TBA","Alan P Marks","5/31/2011 - 7/22/2011"
-"ENG",129,"Topics in English",990,"LEC",1089,"TBA","TBA","Audrey Leigh Minutolo","7/11/2011 - 8/19/2011"
-"ENG",129,"Topics in English",991,"LEC",3173,"TBA","TBA","Alan P Marks","6/13/2011 - 8/5/2011"
-"ENG",205,"An Introduction to Creative Writing",1,"LEC",1185,"MoTuWeThFr 9:15AM - 12:00PM","Stevens Hall North 117","Bruce E Pratt","5/9/2011 - 5/27/2011"
-"ENG",205,"An Introduction to Creative Writing",669,"LEC",1028,"MoWe 12:00PM - 5:00PM","Fred Hutchinson Center","Judy L G Williams","7/6/2011 - 7/27/2011"
-"ENG",205,"An Introduction to Creative Writing",869,"LEC",3245,"MoWe 12:00PM - 5:00PM","Barrows Hall 126","Judy L G Williams","7/6/2011 - 7/27/2011"
-"ENG",212,"Persuasive and Analytical Writing",1,"LEC",1732,"TuTh 5:30PM - 8:30PM","Neville Hall 406","Irene C Jackson","5/31/2011 - 7/7/2011"
-"ENG",212,"Persuasive and Analytical Writing",669,"LEC",3246,"MoWeFr 8:00AM - 12:00PM","Fred Hutchinson Center","Mary A Larlee","5/9/2011 - 5/27/2011"
-"ENG",212,"Persuasive and Analytical Writing",869,"LEC",4289,"MoWeFr 8:00AM - 12:00PM","Neville Hall 208","Mary A Larlee","5/9/2011 - 5/27/2011"
-"ENG",229,"Topics in Literature",990,"LEC",1091,"TBA","On-line Course","Audrey Leigh Minutolo","5/31/2011 - 7/8/2011"
-"ENG",229,"Topics in Literature",991,"LEC",1092,"TBA","TBA","Alan P Marks","6/13/2011 - 8/5/2011"
-"ENG",237,"Coming of Age in America",1,"LEC",3247,"MoTuWeThFr 9:15AM - 12:00PM","Stevens Hall 365","James J Bishop","5/9/2011 - 5/27/2011"
-"ENG",243,"Topics in Multicultural Literature",669,"IND",3248,"TuTh 5:00PM - 9:00PM","Fred Hutchinson Center","Sarah J Ruddy","7/5/2011 - 8/4/2011"
-"ENG",243,"Topics in Multicultural Literature",869,"IND",4298,"TuTh 5:00PM - 9:00PM","Hitchner Hall 147","Sarah J Ruddy","7/5/2011 - 8/4/2011"
-"ENG",245,"American Short Fiction",990,"LEC",1043,"TBA","TBA","Murray T Callaway","5/9/2011 - 6/17/2011"
-"ENG",317,"Business and Technical Writing",1,"LEC",1184,"MoTuWeThFr 9:15AM - 12:00PM","Neville Hall 406","Kathleen Ellis","5/9/2011 - 5/27/2011"
-"ENG",317,"Business and Technical Writing",2,"LEC",1216,"MoWeFr 8:00AM - 12:00PM","Neville Hall 204","Leon Raikes","6/13/2011 - 7/8/2011"
-"ENG",317,"Business and Technical Writing",990,"LEC",1039,"TBA","TBA","Jane Beecher","7/11/2011 - 8/19/2011"
-"ENG",317,"Business and Technical Writing",991,"LEC",1038,"TBA","TBA","Murray T Callaway","5/16/2011 - 6/24/2011"
-"ENG",429,"Topics in Literature",1,"LEC",1757,"MoTuWeThFr 1:15PM - 4:00PM","Neville Hall 227","William Yellow Robe","5/9/2011 - 5/27/2011"
-"ENG",429,"Topics in Literature",990,"LEC",3249,"TBA","On-line Course","Judith Hakola","7/11/2011 - 8/19/2011"
-"ENG",429,"Topics in Literature",991,"LEC",4299,"TBA","TBA","John R Wilson","5/9/2011 - 8/19/2011"
-"ENG",470,"Topics in Literary Theory and Criticism",1,"IND",3252,"MoTh 12:00PM - 3:15PM","Neville Hall 406","Dylan Dryer","6/2/2011 - 8/8/2011"
-"ENG",480,"Topics in Film",665,"LEC",1194,"TuTh 5:00PM - 9:00PM","Fred Hutchinson Center","Sanford E Phippen","5/31/2011 - 6/30/2011"
-"ENG",496,"Field Experience in Professional Writing",1,"FEX",1614,"TBA","Arranged","Scott D Peterson","5/9/2011 - 8/19/2011"
-"ENG",499,"Capstone Experience in English",1,"LEC",1534,"TBA","TBA","Naomi Jacobs","5/9/2011 - 8/19/2011"
-"ENG",529,"Studies in Literature",1,"LEC",1733,"TuTh 6:00PM - 9:00PM","Neville Hall 406","Robert A Brinkley","7/12/2011 - 8/18/2011"
-"ENG",570,"Critical Theory",1,"LEC",3253,"MoTh 12:00PM - 3:15PM","Neville Hall 406","Dylan Dryer","6/2/2011 - 8/8/2011"
-"ENG",699,"Graduate Thesis / Research",1,"THS",1543,"TBA","TBA","Steven R Evans","5/9/2011 - 8/19/2011"
-"EPY",521,"Educational Psychology (Masters)",1,"SEM",1770,"MoTuWeThFr 9:00AM - 12:15PM","Shibles Hall 311","Sidney Mitchell","6/1/2011 - 6/17/2011"
-"ERL",535,"Current Practices in Reading",1,"LEC",2959,"MoWe 4:30PM - 8:30PM","Merrill 228A","Victoria S Bennett-Armistead","5/9/2011 - 6/8/2011"
-"ERL",538,"Current Practices in Vocabulary Teaching and Learning",1,"LEC",2961,"TuWeTh 8:00AM - 1:00PM","Shibles Hall 216","Jane W Wellman-Little","6/21/2011 - 6/23/2011"
-"ERL",539,"Current Theories and Practices in Reading Comprehension",1,"LEC",2963,"TuWeTh 8:00AM - 1:00PM","Shibles Hall 216","Jane W Wellman-Little","7/12/2011 - 7/14/2011"
-"ERL",590,"Special Topics in English Language Arts and Related Fields",1,"IND",3085,"MoTuWeThFr 8:30AM - 4:00PM","Shibles Hall 313","Staff","8/1/2011 - 8/5/2011"
-"ERL",590,"Special Topics in English Language Arts and Related Fields",665,"IND",5472,"MoWe 4:30PM - 8:30PM","Fred Hutchinson Center","Julie M Dellamattera","5/9/2011 - 6/8/2011"
-"ERS",101,"Introduction to Geology",1,"LEC",1130,"MoTuWeTh 9:15AM - 10:30AM","Merrill Hall 114","Daniel R Lux","7/11/2011 - 8/18/2011"
-"ERS",101,"Introduction to Geology",1001,"LAB",1131,"We 11:00AM - 1:00PM","Bryand Global Science Cen 101","Daniel R Lux","7/13/2011 - 8/17/2011"
-"ERS",103,"Dynamic Earth",990,"LEC",1030,"TBA","On-line Course","Scott E Johnson","5/9/2011 - 5/27/2011"
-"ERS",699,"Graduate Thesis / Research",1,"THS",1625,"TBA","TBA","Joseph T Kelley","5/9/2011 - 8/19/2011"
-"FAS",329,"Topics in Franco American Studies",1,"IND",3181,"MoTuWeTh 9:00AM - 12:00PM","Donald P Corbett Business 111","Susan Ann Pinette","5/16/2011 - 5/19/2011"
-"FES",345,"Special Problems",1,"IND",1574,"TBA","TBA","William H Livingston","5/9/2011 - 8/19/2011"
-"FES",607,"Silviculture Problems",1,"IND",1575,"TBA","TBA","Robert S Seymour","5/9/2011 - 8/19/2011"
-"FES",615,"Forest Biology Problems",1,"IND",1576,"TBA","TBA","William H Livingston","5/9/2011 - 8/19/2011"
-"FES",615,"Forest Biology Problems",2,"IND",1577,"TBA","TBA","Alan S White","5/9/2011 - 8/19/2011"
-"FES",699,"Graduate Thesis / Research",1,"THS",1578,"TBA","TBA","Alan S White","5/9/2011 - 8/19/2011"
-"FRE",397,"French (May Term)",870,"LEC",5319,"TBA","TBA","Jane S Smith","5/9/2011 - 5/22/2011"
-"FRE",490,"Advanced Topics in French",4,"IND",1863,"TBA","TBA","Raymond J Pelletier","5/9/2011 - 8/19/2011"
-"FRE",490,"Advanced Topics in French",665,"IND",3312,"MoTuWeThFr 9:00AM - 2:30PM","Fred Hutchinson Center","Staff","7/5/2011 - 7/15/2011"
-"FRE",490,"Advanced Topics in French",990,"IND",1121,"TBA","TBA","Nancy K Erickson","6/1/2011 - 8/19/2011"
-"FRE",598,"Projects in French II",665,"IND",3314,"MoTuWeThFr 9:00AM - 2:30PM","Fred Hutchinson Center","Staff","7/5/2011 - 7/15/2011"
-"FRE",598,"Projects in French II",990,"IND",1120,"TBA","TBA","Nancy K Erickson","6/1/2011 - 8/19/2011"
-"FSC",345,"Special Problems",1,"IND",1569,"TBA","TBA","Robert W Rice","5/9/2011 - 8/19/2011"
-"FSC",394,"Cooperative Education",1,"FEX",1570,"TBA","TBA","Robert W Rice","5/9/2011 - 8/19/2011"
-"FSC",395,"Internship",1,"RSG",1571,"TBA","TBA","Robert W Rice","5/9/2011 - 8/19/2011"
-"FSC",396,"Field Experience",1,"FEX",1572,"TBA","TBA","Robert W Rice","5/9/2011 - 8/19/2011"
-"FSC",699,"Graduate Thesis / Research",1,"THS",1573,"TBA","TBA","Alan S White","5/9/2011 - 8/19/2011"
-"FSN",101,"Introduction to Food and Nutrition",1,"LEC",1158,"MoTuWeThFr 9:00AM - 10:15AM","Murray Hall 106","Katherine O Musgrave","5/31/2011 - 7/8/2011"
-"FSN",115,"Vtrim Behavioral Weight Management",990,"SEM",3126,"Mo 6:00PM - 7:00PM","On-line Course","Douglas Roger Mathews","5/9/2011 - 8/19/2011"
-"FSN",115,"Vtrim Behavioral Weight Management",991,"SEM",3127,"We 6:00PM - 7:00PM","On-line Course","Douglas Roger Mathews","5/9/2011 - 8/19/2011"
-"FSN",230,"Nutritional and Medical Terminology",990,"LEC",1034,"TBA","TBA","Mary E Camire","5/9/2011 - 8/19/2011"
-"FSN",270,"World Food and Nutrition",990,"LEC",1029,"TBA","TBA","Richard A Cook","5/9/2011 - 5/27/2011"
-"FSN",301,"Life Cycle Nutrition",1,"LEC",3129,"MoTuWeThFr 9:00AM - 10:30AM","Hitchner Hall 203","Kathryn Graham Logan Yerxa","5/31/2011 - 7/1/2011"
-"FSN",396,"Field Experience in Food Science and Human Nutrition",1,"FEX",1162,"TBA","TBA","Alfred A Bushway","5/9/2011 - 8/19/2011"
-"FSN",397,"Independent Studies",3,"IND",1163,"TBA","TBA","Adrienne A White","5/9/2011 - 8/19/2011"
-"FSN",489,"Senior Project in Food Science and Human Nutrition",1,"IND",1157,"TBA","TBA","Alfred A Bushway","5/9/2011 - 8/19/2011"
-"FSN",508,"Nutrition and Aging",990,"LEC",3489,"TBA","TBA","Mary E Camire","5/31/2011 - 7/22/2011"
-"FSN",581,"Problems in Food Science and Human Nutrition",2,"IND",1164,"TBA","TBA","Adrienne A White","5/9/2011 - 8/19/2011"
-"FSN",581,"Problems in Food Science and Human Nutrition",4,"IND",1165,"TBA","TBA","Susan S Sullivan","5/9/2011 - 8/19/2011"
-"FSN",581,"Problems in Food Science and Human Nutrition",5,"IND",1166,"TBA","TBA","Vivian Chi-Hua Wu","5/9/2011 - 8/19/2011"
-"FSN",581,"Problems in Food Science and Human Nutrition",6,"IND",3834,"TBA","TBA","Dorothy J Klimis","5/9/2011 - 8/19/2011"
-"FSN",681,"Dietetic Supervised Practice",1,"RSG",1167,"TBA","TBA","Adrienne A White","5/9/2011 - 8/19/2011"
-"FSN",699,"Graduate Thesis / Research",1,"THS",1168,"TBA","TBA","Alfred A Bushway","5/9/2011 - 8/19/2011"
-"FSN",699,"Graduate Thesis / Research",2,"THS",1169,"TBA","TBA","Rodney J Bushway","5/9/2011 - 8/19/2011"
-"FSN",699,"Graduate Thesis / Research",4,"THS",1170,"TBA","TBA","Mary E Camire","5/9/2011 - 8/19/2011"
-"FSN",699,"Graduate Thesis / Research",6,"THS",1172,"TBA","TBA","Dorothy J Klimis","5/9/2011 - 8/19/2011"
-"FSN",699,"Graduate Thesis / Research",7,"THS",1173,"TBA","TBA","Adrienne A White","5/9/2011 - 8/19/2011"
-"FSN",699,"Graduate Thesis / Research",8,"THS",1174,"TBA","TBA","Denise I Skonberg","5/9/2011 - 8/19/2011"
-"FTY",241,"Field Practice in Forest Management",1,"FEX",1579,"MoTuWeThFr 7:30AM - 5:00PM","Deering Hall 113","Louis Morin","5/9/2011 - 5/27/2011"
-"FTY",345,"Special Problems",1,"IND",1580,"TBA","TBA","Jeremy S Wilson","5/9/2011 - 8/19/2011"
-"FTY",345,"Special Problems",870,"IND",3487,"MoTuWeThFr 8:00AM - 4:00PM","Arranged","Robert J. Lilieholm","7/11/2011 - 8/24/2011"
-"FTY",394,"Cooperative Education",1,"RSG",1581,"TBA","TBA","Jeremy S Wilson","5/9/2011 - 8/19/2011"
-"FTY",396,"Field Experience",1,"FEX",1582,"TBA","TBA","Jeremy S Wilson","5/9/2011 - 8/19/2011"
-"FTY",601,"Forest Mensuration Problems",1,"IND",1583,"TBA","TBA","Aaron R Weiskittel","5/9/2011 - 8/19/2011"
-"FTY",603,"Forest Management Problems",1,"IND",1584,"TBA","TBA","Jeremy S Wilson","5/9/2011 - 8/19/2011"
-"FTY",609,"Remote Sensing Problems",1,"IND",1585,"TBA","TBA","Steven A Sader","5/9/2011 - 8/19/2011"
-"FTY",611,"Research Problems in Forest Economics",1,"RSG",1586,"TBA","TBA","Robert J. Lilieholm","5/9/2011 - 8/19/2011"
-"FTY",617,"Forest Policy Problems",1,"IND",1587,"TBA","TBA","Robert J. Lilieholm","5/9/2011 - 8/19/2011"
-"FTY",617,"Forest Policy Problems",870,"IND",3488,"MoTuWeThFr 8:00AM - 4:00PM","Arranged","Robert J. Lilieholm","7/11/2011 - 8/24/2011"
-"FTY",690,"Master of Forestry Project",1,"LEC",1588,"TBA","TBA","Jeremy S Wilson","5/9/2011 - 8/19/2011"
-"FTY",699,"Graduate Thesis / Research",1,"THS",1589,"TBA","TBA","Alan S White","5/9/2011 - 8/19/2011"
-"GEO",100,"World Geography",990,"LEC",1079,"TBA","On-line Course","Samuel Hanes","5/11/2011 - 5/29/2011"
-"GEO",210,"Geography of Maine",990,"LEC",1032,"TBA","On-line Course","Samuel Hanes","5/31/2011 - 7/8/2011"
-"HED",598,"Special Topics in Higher Education",1,"LEC",3092,"TuTh 5:00PM - 8:00PM","Shibles Hall 11","Susan K Gardner","6/7/2011 - 7/7/2011"
-"HED",598,"Special Topics in Higher Education",2,"LEC",3132,"TuTh 2:00PM - 6:00PM","Merrill Hall 335","Staff","5/10/2011 - 6/9/2011"
-"HED",690,"Higher Education Internship",990,"RSG",3091,"TBA","TBA","Elizabeth J Allan","6/21/2011 - 8/9/2011"
-"HTY",104,"United States History II",1,"LEC",3137,"MoTuWeThFr 9:15AM - 12:00PM","Stevens Hall 155","Katherine M O'Flaherty","5/9/2011 - 5/27/2011"
-"HTY",105,"History of European Civilization I",990,"LEC",1081,"TBA","TBA","Paulette E Barton","5/31/2011 - 7/1/2011"
-"HTY",106,"History of European Civilization II",990,"LEC",3138,"TBA","TBA","Paulette E Barton","7/5/2011 - 8/5/2011"
-"HTY",464,"America at the Crossroads: The Era of Civil War Reconstruction 1840",1,"LEC",3139,"MoTuWeThFr 1:15PM - 4:00PM","Stevens Hall 155","Staff","5/9/2011 - 5/27/2011"
-"HTY",550,"Readings in Bibliography and Criticism in:",1,"IND",1228,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"HTY",550,"Readings in Bibliography and Criticism in:",2,"IND",1229,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"HTY",550,"Readings in Bibliography and Criticism in:",3,"IND",1230,"TBA","TBA","Staff","TBA"
-"HTY",550,"Readings in Bibliography and Criticism in:",4,"IND",1231,"TBA","TBA","Jacques Ferland","5/9/2011 - 8/19/2011"
-"HTY",550,"Readings in Bibliography and Criticism in:",5,"IND",1232,"TBA","TBA","Stephen Miller","5/9/2011 - 8/19/2011"
-"HTY",550,"Readings in Bibliography and Criticism in:",6,"IND",1233,"TBA","TBA","Vinh-Long Ngo","5/9/2011 - 8/19/2011"
-"HTY",597,"Field Work in Historical Institutions",1,"FEX",1234,"TBA","TBA","Staff","TBA"
-"HTY",699,"Graduate Thesis / Research",1,"THS",1235,"TBA","TBA","Jacques Ferland","5/9/2011 - 8/19/2011"
-"HUD",601,"Supervised Fieldwork in Child Development and Family Relations",1,"FEX",1386,"TBA","TBA","Sandra L Caron","5/9/2011 - 8/19/2011"
-"HUD",649,"Investigation of Special Topics",1,"IND",1387,"TBA","TBA","Sandra L Caron","5/9/2011 - 8/19/2011"
-"HUD",699,"Graduate Thesis / Research",1,"THS",1388,"TBA","TBA","Sandra L Caron","5/9/2011 - 8/19/2011"
-"IEI",,"10",1,"LEC",1293,"MoTuWeTh 8:00AM - 8:50AM","Arranged","Kristopher B McClure","6/6/2011 - 7/1/2011"
-"IEI",,"10",2,"LEC",5120,"MoTuWeTh 9:00AM - 9:50AM","Arranged","Erin-Kate Sousa","6/6/2011 - 7/1/2011"
-"IEI",,"10",3,"LEC",5121,"MoTuWeTh 10:00AM - 10:50AM","Arranged","Jean Leighton Mileham","6/6/2011 - 7/1/2011"
-"IEI",,"10",4,"LEC",5122,"MoTuWeTh 12:10PM - 1:00PM","Arranged","Christopher A Mares","6/6/2011 - 7/1/2011"
-"IEI",,"10",11,"LEC",1294,"MoTuWeTh 8:00AM - 8:50AM","Arranged","Kristopher B McClure","7/11/2011 - 8/5/2011"
-"IEI",,"10",12,"LEC",5123,"MoTuWeTh 9:00AM - 9:50AM","Arranged","Erin-Kate Sousa","6/6/2011 - 7/1/2011"
-"IEI",,"13",1,"LEC",1356,"MoTuWeTh 8:00AM - 8:50AM","Arranged","Jean Leighton Mileham","6/6/2011 - 7/1/2011"
-"IEI",,"13",2,"LEC",1303,"MoTuWeTh 9:00AM - 9:50AM","Arranged","Christopher A Mares","6/6/2011 - 7/1/2011"
-"IEI",,"13",3,"LEC",1314,"MoTuWeTh 10:00AM - 10:50AM","Arranged","Jean Leighton Mileham","6/6/2011 - 7/1/2011"
-"IEI",,"13",4,"LEC",1316,"MoTuWeTh 12:10PM - 1:00PM","Arranged","Erin-Kate Sousa","6/6/2011 - 7/1/2011"
-"IEI",,"13",11,"LEC",1357,"MoTuWeTh 8:00AM - 8:50AM","Arranged","Jean Leighton Mileham","7/11/2011 - 8/5/2011"
-"IEI",,"13",12,"LEC",1304,"MoTuWeTh 9:00AM - 9:50AM","Arranged","Christopher A Mares","7/11/2011 - 8/5/2011"
-"IEI",,"14",1,"LEC",1312,"MoTuWeTh 8:00AM - 8:50AM","Arranged","Kristopher B McClure","6/6/2011 - 7/1/2011"
-"IEI",,"14",2,"LEC",1307,"MoTuWeTh 9:00AM - 9:50AM","Arranged","Erin-Kate Sousa","6/6/2011 - 7/1/2011"
-"IEI",,"14",3,"LEC",1373,"MoTuWeTh 10:00AM - 10:50AM","Arranged","Jean Leighton Mileham","6/6/2011 - 7/1/2011"
-"IEI",,"14",4,"LEC",1354,"MoTuWeTh 12:10PM - 1:00PM","Arranged","Erin-Kate Sousa","6/6/2011 - 7/1/2011"
-"IEI",,"14",11,"LEC",1313,"MoTuWeTh 8:00AM - 8:50AM","Arranged","Kristopher B McClure","6/6/2011 - 7/1/2011"
-"IEI",,"14",12,"LEC",1308,"MoTuWeTh 9:00AM - 9:50AM","Arranged","Erin-Kate Sousa","7/11/2011 - 8/5/2011"
-"IEI",,"19",1,"IND",1397,"MoTuWeTh 1:10PM - 2:00PM","Arranged",,"6/6/2011 - 7/1/2011"
-"IEI",,"19",11,"IND",1398,"MoTuWeTh 1:10PM - 2:00PM","Arranged",,"7/11/2011 - 8/5/2011"
-"IEI",,"20",1,"LEC",1301,"MoTuWeTh 8:00AM - 8:50AM","Arranged","Erin-Kate Sousa","6/6/2011 - 7/1/2011"
-"IEI",,"20",2,"LEC",5113,"MoTuWeTh 9:00AM - 9:50AM","Arranged","Kristopher B McClure","6/6/2011 - 7/1/2011"
-"IEI",,"20",3,"LEC",5116,"MoTuWeTh 10:00AM - 10:50AM","Arranged","Christopher A Mares","6/6/2011 - 7/1/2011"
-"IEI",,"20",4,"LEC",5117,"MoTuWeTh 12:10PM - 1:00PM","Arranged","Jean Leighton Mileham","6/6/2011 - 7/1/2011"
-"IEI",,"20",11,"LEC",1302,"MoTuWeTh 8:00AM - 8:50AM","Arranged","Erin-Kate Sousa","7/11/2011 - 8/5/2011"
-"IEI",,"20",12,"LEC",5114,"MoTuWeTh 9:00AM - 9:50AM","Arranged","Kristopher B McClure","7/11/2011 - 8/5/2011"
-"IMD",520,"Topics in Media Production",1,"STU",1623,"TBA","TBA","Leon Johnson","5/9/2011 - 8/19/2011"
-"IMD",530,"Topics in Technical Development",2,"STU",1723,"MoTuWeThFr 9:00AM - 5:00PM","Lengyel Hall 121","Sheridan L Kelley","8/15/2011 - 8/19/2011"
-"IMD",570,"Intermedia Studio Critique I",1,"STU",1684,"TBA","TBA","Owen F Smith","5/9/2011 - 8/19/2011"
-"IMD",571,"Intermedia Studio Critique II",1,"STU",1776,"TBA","TBA","Owen F Smith","5/9/2011 - 8/19/2011"
-"IMD",572,"Intermedia Studio Critique III",1,"STU",1777,"TBA","TBA","Owen F Smith","5/9/2011 - 8/19/2011"
-"IMD",597,"Independent Study in Intermedia",1,"IND",1778,"TBA","TBA","Leon Johnson","5/9/2011 - 8/19/2011"
-"IMD",650,"Field Study and Research",990,"FEX",1123,"TBA","TBA","Owen F Smith","5/9/2011 - 8/19/2011"
-"IMD",670,"Without Borders Exhibition",1,"LAB",1779,"TBA","TBA","Owen F Smith","5/9/2011 - 8/19/2011"
-"IMD",699,"Graduate Thesis / Research",1,"THS",1780,"TBA","TBA","Owen F Smith","5/9/2011 - 8/19/2011"
-"INA",201,"Topics in International Affairs",870,"LEC",3433,"TBA","TBA","Paul J Myer","5/26/2011 - 6/4/2011"
-"INA",201,"Topics in International Affairs",990,"LEC",1058,"TBA","On-line Course","Mark R Hibben","5/9/2011 - 5/27/2011"
-"IND",699,"Graduate Thesis / Research",1,"THS",1622,"TBA","TBA","Amaranta Ruiz-Nelson","5/9/2011 - 8/19/2011"
-"INT",196,"(University Wide) Academic and Career Exploration Internship",2,"RSG",1802,"TBA","TBA","Patricia B Counihan","5/9/2011 - 8/19/2011"
-"INT",398,"(CHB",1,"IND",1522,"TBA","TBA",,"6/6/2011 - 8/19/2011"
-"INT",421,"(CHB) Directed Study in Biomedical Engineering",1,"IND",1292,"TBA","TBA","Darrell W Donahue","5/9/2011 - 8/19/2011"
-"INT",494,"(PAA",1,"FEX",1295,"TBA","TBA","Timothy M Cole","5/9/2011 - 8/19/2011"
-"INT",570,"(CHE",1,"LEC",1523,"TBA","TBA","John F Vetelino","6/6/2011 - 8/19/2011"
-"KPE",209,"Wilderness First Responder",1,"LEC",1141,"MoTuWeThFr 8:00AM - 6:00PM","Maine Bound Adventure Center","Charlie Bloedon","5/9/2011 - 5/27/2011"
-"KPE",250,"First Aid and Emergency Care",1,"LEC",2950,"MoTuWeThFr 8:00AM - 12:00PM","Lengyel 26","Sherrie L Weeks","5/9/2011 - 5/27/2011"
-"KPE",253,"Theory and Techniques for Strength and Conditioning",1,"LEC",1143,"MoTuWeThFr 8:00AM - 12:00PM","Lengyel Hall 125","David Michael Cusano","5/9/2011 - 5/27/2011"
-"KPE",262,"Methods of Teaching Physical Activity",1,"LEC",1144,"MoTuWeThFr 9:15AM - 12:00PM","Merrill 228A","Glenn H Reif","5/9/2011 - 5/27/2011"
-"KPE",378,"Physiology of Exercise",1,"LEC",1139,"MoTuWeThFr 8:00AM - 12:00PM","Lengyel Hall 127","Robert A Lehnhard","5/9/2011 - 5/27/2011"
-"KPE",384,"Practicum in Kinesiology and Physical Education",3,"FEX",5515,"TBA","Arranged","Charlie Bloedon","5/9/2011 - 8/19/2011"
-"KPE",398,"Problems in Kinesiology and Physical Education",1,"IND",5516,"TBA","TBA","Charlie Bloedon","5/9/2011 - 8/19/2011"
-"KPE",427,"Health Fitness Internship",1,"RSG",1647,"TBA","TBA","Robert A Lehnhard","5/9/2011 - 8/19/2011"
-"KPE",427,"Health Fitness Internship",2,"RSG",1147,"TBA","TBA","Sherrie L Weeks","5/9/2011 - 8/19/2011"
-"LIB",500,"Graduate Seminar in Liberal Studies",990,"SEM",1063,"TBA","TBA",,"5/31/2011 - 8/19/2011"
-"LIB",697,"Independent Study",1,"IND",1704,"TBA","TBA","Kristina Passman","5/31/2011 - 8/19/2011"
-"LIB",699,"Master Project in Liberal Studies",1,"THS",1685,"TBA","TBA","Amaranta Ruiz-Nelson","5/9/2011 - 8/19/2011"
-"MAT",101,"The Nature and Language of Mathematics",665,"LEC",4311,"TuTh 5:00PM - 9:00PM","Fred Hutchinson Center","Todd Zoroya","5/17/2011 - 6/16/2011"
-"MAT",103,"Elementary Algebraic Models in Our World",1,"LEC",3087,"MoTuWeThFr 9:00AM - 12:00PM","Neville Hall 206","Jennifer G Tyne","5/9/2011 - 5/27/2011"
-"MAT",107,"Elementary Descriptive Geometry",1,"LEC",1195,"MoTuWeThFr 1:15PM - 4:00PM","Neville Hall 108","Tandy L Del Vecchio","5/9/2011 - 5/27/2011"
-"MAT",108,"Elementary Numerical Mathematics From A Modern Perspective",1,"LEC",1728,"MoTuWeFr 9:15AM - 12:00PM","Jenness Hall 106","Lora Anderson Lindyberg","5/9/2011 - 5/27/2011"
-"MAT",111,"College Algebra",990,"LEC",1114,"TBA","TBA","Jennifer G Tyne","5/9/2011 - 6/24/2011"
-"MAT",115,"Applied Mathematics for Business and Economics",1,"LEC",3088,"MoTuWeThFr 9:00AM - 12:00PM","Neville Hall 227","Steven J Kimball","5/9/2011 - 5/27/2011"
-"MAT",122,"Pre",665,"LEC",1006,"MoWe 5:00PM - 9:30PM","Fred Hutchinson Center","Todd Zoroya","5/16/2011 - 6/15/2011"
-"MAT",122,"Pre",990,"LEC",1040,"TBA","On-line Course","Todd Zoroya","5/9/2011 - 8/19/2011"
-"MAT",126,"Calculus I",1,"LEC",1197,"MoTuWeThFr 9:00AM - 11:00AM","Donald P Corbett Business 117","Robert D Franzosa","5/31/2011 - 7/1/2011"
-"MAT",126,"Calculus I",665,"LEC",3530,"MoWe 5:00PM - 9:30PM","Fred Hutchinson Center","Tandy L Del Vecchio","6/27/2011 - 7/27/2011"
-"MAT",126,"Calculus I",990,"LEC",1041,"TBA","TBA","David M Bradley","5/9/2011 - 8/19/2011"
-"MAT",127,"Calculus II",1,"LEC",3089,"MoTuWeThFr 9:00AM - 12:00PM","Neville Hall 206","Ali E Ozluk","5/31/2011 - 7/1/2011"
-"MAT",127,"Calculus II",990,"LEC",1042,"TBA","TBA","David M Bradley","5/9/2011 - 8/19/2011"
-"MAT",228,"Calculus III",990,"LEC",1084,"TBA","TBA","William O Bray","5/9/2011 - 7/1/2011"
-"MAT",232,"Principles of Statistical Inference",1,"LEC",1198,"MoTuWeThFr 9:15AM - 12:00PM","Neville Hall 108","Ramesh C Gupta","5/9/2011 - 5/27/2011"
-"MAT",232,"Principles of Statistical Inference",990,"LEC",1086,"TBA","TBA","Jennifer G Tyne","5/9/2011 - 6/24/2011"
-"MAT",258,"Introduction to Differential Equations with Linear Algebra",990,"LEC",1085,"TBA","TBA","David M Bradley","5/9/2011 - 8/19/2011"
-"MEE",150,"Applied Mechanics: Statics",1,"LEC",3174,"MoTuWeThFr 9:00AM - 10:30AM","Boardman Hall 210","Richard Sayles","5/31/2011 - 7/1/2011"
-"MEE",251,"Strength of Materials",1,"LEC",3175,"MoTuWeThFr 11:30AM - 1:00PM","Boardman Hall 210","Richard Sayles","5/31/2011 - 7/1/2011"
-"MEE",394,"Mechanical Engineering Practice",1,"RSG",1181,"TBA","TBA","Michael T Boyle","5/9/2011 - 8/19/2011"
-"MEE",697,"Mechanical Engineering Projects",1,"IND",1182,"TBA","TBA","Roberto A Lopez-Anido","5/9/2011 - 8/19/2011"
-"MEE",699,"Graduate Thesis / Research",1,"THS",1183,"TBA","TBA","Michael T Boyle","5/9/2011 - 8/19/2011"
-"MEE",699,"Graduate Thesis / Research",2,"THS",1186,"TBA","TBA","Vincent Caccese","5/9/2011 - 8/19/2011"
-"MEE",699,"Graduate Thesis / Research",3,"THS",1187,"TBA","TBA","Michael L Peterson","5/9/2011 - 8/19/2011"
-"MEE",699,"Graduate Thesis / Research",4,"THS",1188,"TBA","TBA","Justin H Poland","5/9/2011 - 8/19/2011"
-"MEE",699,"Graduate Thesis / Research",5,"THS",1189,"TBA","TBA","Richard Sayles","5/9/2011 - 8/19/2011"
-"MEE",699,"Graduate Thesis / Research",6,"THS",1190,"TBA","TBA","James Sucec","5/9/2011 - 8/19/2011"
-"MES",101,"Introduction to Maine Studies",990,"LEC",1075,"TBA","TBA","Katherine M O'Flaherty","7/11/2011 - 8/19/2011"
-"MES",201,"The Maine Coast",990,"LEC",1094,"TBA","TBA","Jennifer Pickard","5/31/2011 - 7/8/2011"
-"MES",520,"Advanced Topics in Maine Studies",990,"LEC",3071,"TBA","On-line Course","Pauleena M Macdougall","6/13/2011 - 8/5/2011"
-"MES",520,"Advanced Topics in Maine Studies",991,"LEC",3251,"TBA","TBA","Judith Hakola","7/11/2011 - 8/19/2011"
-"MET",121,"Technical Drawing",1,"LEC",3100,"MoTuWeTh 8:00AM - 10:50AM","Machine Tool Laboratory 116","Charles F Maguire","5/31/2011 - 7/1/2011"
-"MET",394,"Mechanical Engineering Technology Practice",1,"RSG",1244,"TBA","TBA","Charles F Maguire","5/9/2011 - 8/19/2011"
-"MLC",175,"Multiculturalism in America",990,"LEC",3276,"TBA","On-line Course","Yvonne M Thibodeau","7/5/2011 - 8/19/2011"
-"MLC",190,"Topics in Modern Languages",667,"IND",5328,"Sa 10:00AM - 2:00PM","Fred Hutchinson Center","Maria D Sandweiss","6/4/2011 - 6/4/2011"
-"MLC",190,"Topics in Modern Languages",668,"IND",5324,"TBA","On-line Course","Madelon Kohler-Busch","5/9/2011 - 8/19/2011"
-"MLC",190,"Topics in Modern Languages",669,"IND",5317,"TBA","On-line Course","Jane S Smith","5/31/2011 - 7/1/2011"
-"MLC",190,"Topics in Modern Languages",867,"IND",5329,"TBA","On-line Course","Maria D Sandweiss","5/31/2011 - 7/1/2011"
-"MLC",190,"Topics in Modern Languages",868,"IND",5320,"TBA","On-line Course","Madelon Kohler-Busch","5/31/2011 - 7/1/2011"
-"MLC",190,"Topics in Modern Languages",869,"IND",5316,"TBA","On-line Course","Jane S Smith","5/31/2011 - 7/1/2011"
-"MLC",466,"The Teaching of Modern Languages",665,"LEC",1326,"MoTuWeThFr 9:00AM - 4:30PM","Fred Hutchinson Center","Nives Dalbo-Wheeler","6/27/2011 - 7/1/2011"
-"MLC",496,"Field Work in Modern Languages",1,"FEX",3281,"TBA","TBA","Kathleen N March","5/9/2011 - 5/27/2011"
-"MLC",566,"The Teaching of Modern Languages",665,"LEC",1782,"MoTuWeThFr 9:00AM - 4:30PM","Fred Hutchinson Center","Nives Dalbo-Wheeler","6/27/2011 - 7/1/2011"
-"MUE",650,"Topics in Music Education",1,"IND",3067,"MoTuWeThFr 9:15AM - 12:00PM","Class of 1944 Hall 107","Laura Artesani","6/27/2011 - 7/1/2011"
-"MUE",650,"Topics in Music Education",2,"IND",3068,"MoTuWeThFr 9:15AM - 12:00PM","Class of 1944 Hall 107","Sandra Allison Howard","7/11/2011 - 7/15/2011"
-"MUH",650,"Topics in Music History",1,"IND",3066,"MoTuWeThFr 9:15AM - 12:00PM","Class of 1944 Hall 107","Phillip A Silver","6/20/2011 - 6/24/2011"
-"MUL",101,"The Art of Listening to Music: Elements",990,"LEC",1062,"TBA","On-line Course","Anatole Wieck","5/9/2011 - 8/19/2011"
-"MUY",101,"Fundamentals of Music",990,"LEC",3069,"TBA","On-line Course","Thomas M Wubbenhorst","5/9/2011 - 8/19/2011"
-"NAS",101,"Introduction to Native American Studies",990,"LEC",3090,"TBA","TBA","Maureen E Smith","5/16/2011 - 7/1/2011"
-"NAS",102,"Introduction to Wabanaki Culture",990,"LEC",1051,"TBA","TBA","Maureen E Smith","7/1/2011 - 8/5/2011"
-"NAS",401,"Advanced Topics in Native American Studies",1,"IND",3986,"MoTuWeThFr 1:15PM - 4:00PM","Neville Hall 227","William Yellow Robe","5/9/2011 - 5/27/2011"
-"NAS",498,"Directed Study in Native American Studies",1,"IND",1852,"TBA","TBA","Maureen E Smith","5/9/2011 - 8/19/2011"
-"NMD",240,"Introduction to Web Concepts and Design",665,"LAB",3241,"MoTuWeThFr 8:30AM - 4:00PM","Fred Hutchinson Center","Andrew O Hurtt","8/15/2011 - 8/19/2011"
-"NMD",295,"Topics in New Media",1,"LEC",1722,"MoTuWeThFr 1:15PM - 4:00PM","Chadbourne Hall 420","Michael D Scott","5/9/2011 - 5/27/2011"
-"NMD",295,"Topics in New Media",665,"LEC",3242,"MoTuWeThFr 8:30AM - 4:00PM","Fred Hutchinson Center","Tara Law","8/8/2011 - 8/12/2011"
-"NMD",306,"Project Design Laboratory: II",1,"SEM",1300,"MoTuWeThFr 9:15AM - 12:00PM","Chadbourne Hall 420","Michael D Scott","5/9/2011 - 5/27/2011"
-"NMD",430,"Topics in New Media",1,"LEC",1775,"TBA","TBA","Leon Johnson","5/9/2011 - 8/19/2011"
-"NUR",201,"Fundamentals of Nursing Care Management",1,"CLN",1477,"MoTuWeThFr 1:00PM - 7:30PM","Arranged","Dale Francis Lowe","5/9/2011 - 5/27/2011"
-"NUR",201,"Fundamentals of Nursing Care Management",2,"CLN",1478,"MoTuWeThFr 6:30AM - 1:00PM","Arranged","Dale Francis Lowe","5/9/2011 - 5/27/2011"
-"NUR",201,"Fundamentals of Nursing Care Management",3,"CLN",1479,"MoTuWeThFr 6:30AM - 1:00PM","Arranged",,"5/9/2011 - 5/27/2011"
-"NUR",201,"Fundamentals of Nursing Care Management",4,"CLN",1480,"MoTuWeThFr 6:30AM - 1:00PM","Arranged",,"5/9/2011 - 5/27/2011"
-"NUR",201,"Fundamentals of Nursing Care Management",5,"CLN",1481,"MoTuWeThFr 6:30AM - 1:00PM","Arranged",,"5/9/2011 - 5/27/2011"
-"NUR",201,"Fundamentals of Nursing Care Management",6,"CLN",3254,"MoTuWeThFr 1:00PM - 7:30PM","Arranged",,"5/9/2011 - 5/27/2011"
-"NUR",495,"Independent Study in Nursing",1,"IND",1482,"TBA","TBA","Staff","TBA"
-"NUR",495,"Independent Study in Nursing",2,"IND",1483,"TBA","TBA","Staff","TBA"
-"NUR",502,"Families in Health and Illness",990,"LEC",3258,"TBA","Dunn Hall 202","Nancy J Fishwick","7/6/2011 - 8/12/2011"
-"NUR",505,"Nursing Research",990,"RSG",3259,"TBA","TBA","Ann E Rosebush Sossong","5/23/2011 - 6/30/2011"
-"NUR",505,"Nursing Research",991,"RSG",3262,"TBA","TBA","Patricia A Poirier","5/23/2011 - 6/30/2011"
-"NUR",521,"Nurse Practitioner Gynecologic and Reproductive Care of Women",869,"LEC",1706,"We 9:00AM - 5:00PM","Dunn Hall 115","Ursula A Pritham","5/11/2011 - 5/11/2011"
-"NUR",521,"Nurse Practitioner Gynecologic and Reproductive Care of Women",1869,"CLN",1801,"TBA","TBA","Ursula A Pritham","5/11/2011 - 8/19/2011"
-"NUR",695,"Topics in Nursing",1,"IND",1634,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"NUR",697,"Scholarly Project",1,"RSG",1484,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"NUR",697,"Scholarly Project",2,"RSG",1485,"TBA","TBA","Staff","5/9/2011 - 8/19/2011"
-"NUR",698,"Independent Study in Nursing",1,"IND",1486,"TBA","TBA","Staff","TBA"
-"NUR",698,"Independent Study in Nursing",2,"IND",1487,"TBA","TBA","Staff","TBA"
-"NUR",699,"Graduate Thesis / Research",1,"THS",1488,"TBA","TBA","Staff","TBA"
-"PAA",400,"Issues in Public Administration",990,"LEC",1080,"TBA","On-line Course","Carolyn S Ball","5/31/2011 - 7/8/2011"
-"PAA",493,"Public Administration Internship",1,"FEX",1318,"TBA","TBA","Carolyn S Ball","5/9/2011 - 8/19/2011"
-"PAA",495,"Municipal Government Internship",1,"FEX",1319,"TBA","TBA","G Thomas Taylor","5/9/2011 - 8/19/2011"
-"PAA",498,"Independent Readings in Public Administration",1,"IND",1816,"TBA","TBA","G Thomas Taylor","5/9/2011 - 8/19/2011"
-"PAA",505,"Intergovernmental Relations",990,"LEC",3140,"TBA","TBA","Kenneth L Nichols","7/5/2011 - 8/5/2011"
-"PAA",520,"Public Policy Studies",1,"LEC",3141,"Tu 4:00PM - 8:30PM","Stevens Hall North 117","Edward B Laverty","5/9/2011 - 7/1/2011"
-"PAA",691,"Topics in Public Administration",990,"LEC",5687,"TBA","On-line Course","Carolyn S Ball","5/31/2011 - 7/8/2011"
-"PAA",696,"Public Adminstration Internship",1,"RSG",1825,"TBA","TBA","Carolyn S Ball","5/9/2011 - 8/19/2011"
-"PAA",698,"Independent Readings",1,"IND",1824,"TBA","TBA","Carolyn S Ball","5/9/2011 - 8/19/2011"
-"PAA",699,"Graduate Thesis / Research",1,"THS",1788,"TBA","TBA","G Thomas Taylor","5/9/2011 - 8/19/2011"
-"PAX",201,"Introduction to Peace and Reconciliation Studies",990,"LEC",3178,"TBA","TBA","Yvonne M Thibodeau","5/31/2011 - 8/19/2011"
-"PAX",250,"Peace and Pop Culture",990,"LEC",1053,"TBA","On-line Course","James F Toner","7/5/2011 - 8/5/2011"
-"PAX",350,"Buddhism",990,"LEC",1061,"TBA","TBA","Hugh J Curran","6/6/2011 - 7/29/2011"
-"PAX",398,"Topics in Peace and Reconciliation Studies",990,"LEC",3176,"TBA","On-line Course","James F Toner","5/9/2011 - 5/27/2011"
-"PAX",400,"Martin Luther King and the Beloved Community",990,"LEC",3179,"TBA","TBA","Kristina Passman","5/31/2011 - 8/19/2011"
-"PAX",495,"Advanced Topics in Peace and Reconciliation Studies",665,"LEC",3177,"MoTuWeThFr 8:30AM - 4:30PM","Fred Hutchinson Center","Joanne Boynton","7/11/2011 - 7/15/2011"
-"PAX",495,"Advanced Topics in Peace and Reconciliation Studies",666,"LEC",3180,"MoTuWeThFr 8:30AM - 4:30PM","Fred Hutchinson Center","Peggy Robin Smith","8/8/2011 - 8/12/2011"
-"PAX",598,"Independent Graduate Study",665,"IND",3531,"MoTuWeThFr 8:30AM - 4:30PM","Fred Hutchinson Center","Joanne Boynton","7/11/2011 - 7/15/2011"
-"PAX",598,"Independent Graduate Study",666,"IND",3532,"MoTuWeThFr 8:30AM - 4:30PM","Fred Hutchinson Center","Peggy Robin Smith","8/8/2011 - 8/12/2011"
-"PHI",100,"Contemporary Moral Problems",990,"LEC",1066,"TBA","On-line Course","Jessica P Miller","5/9/2011 - 5/27/2011"
-"PHY",111,"General Physics I",1,"LEC",1330,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 140","Staff","5/31/2011 - 7/8/2011"
-"PHY",111,"General Physics I",2,"LEC",1331,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 140","Staff","5/31/2011 - 7/8/2011"
-"PHY",111,"General Physics I",1001,"LAB",1332,"MoWe 10:00AM - 11:50AM","Bennett Hall 301","Staff","5/31/2011 - 7/8/2011"
-"PHY",111,"General Physics I",1002,"LAB",1333,"MoWe 12:10PM - 2:00PM","Bennett Hall 301","Staff","5/31/2011 - 7/8/2011"
-"PHY",111,"General Physics I",2001,"REC",1334,"TuTh 10:00AM - 11:15AM","Bennett Hall 140","Staff","5/31/2011 - 7/8/2011"
-"PHY",111,"General Physics I",2002,"REC",1335,"TuTh 10:00AM - 11:15AM","Bennett Hall 140","Staff","5/31/2011 - 7/8/2011"
-"PHY",112,"General Physics II",1,"LEC",1342,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 140","Staff","7/11/2011 - 8/19/2011"
-"PHY",112,"General Physics II",2,"LEC",1343,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 140","Staff","7/11/2011 - 8/19/2011"
-"PHY",112,"General Physics II",1001,"LAB",1344,"MoWe 10:00AM - 11:50AM","Bennett Hall 301","Staff","7/11/2011 - 8/19/2011"
-"PHY",112,"General Physics II",2001,"REC",1345,"TuTh 10:00AM - 11:15AM","Bennett Hall 140","Staff","7/11/2011 - 8/19/2011"
-"PHY",112,"General Physics II",2002,"REC",1752,"TuTh 10:00AM - 11:15AM","Bennett Hall 140","Staff","7/11/2011 - 8/19/2011"
-"PHY",121,"Physics for Engineers and Physical Scientists I",1,"LEC",1336,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 141","George P Bernhardt","5/31/2011 - 7/8/2011"
-"PHY",121,"Physics for Engineers and Physical Scientists I",2,"LEC",1337,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 141","George P Bernhardt","5/31/2011 - 7/8/2011"
-"PHY",121,"Physics for Engineers and Physical Scientists I",1001,"LAB",1338,"TuTh 10:00AM - 11:50AM","Bennett Hall 310","Staff","5/31/2011 - 7/8/2011"
-"PHY",121,"Physics for Engineers and Physical Scientists I",1002,"LAB",1339,"TuTh 12:10PM - 2:00PM","Bennett Hall 310","Staff","5/31/2011 - 7/8/2011"
-"PHY",121,"Physics for Engineers and Physical Scientists I",2001,"REC",1340,"MoWe 10:00AM - 11:15AM","Bennett Hall 141","George P Bernhardt","5/31/2011 - 7/8/2011"
-"PHY",121,"Physics for Engineers and Physical Scientists I",2002,"REC",1341,"MoWe 10:00AM - 11:15AM","Bennett Hall 141","George P Bernhardt","5/31/2011 - 7/8/2011"
-"PHY",122,"Physics for Engineers and Physical Scientists II",1,"LEC",1346,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 141","George P Bernhardt","7/11/2011 - 8/19/2011"
-"PHY",122,"Physics for Engineers and Physical Scientists II",2,"LEC",1347,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 141","George P Bernhardt","7/11/2011 - 8/19/2011"
-"PHY",122,"Physics for Engineers and Physical Scientists II",3,"LEC",1642,"MoTuWeThFr 8:15AM - 9:30AM","Bennett Hall 141","George P Bernhardt","7/11/2011 - 8/19/2011"
-"PHY",122,"Physics for Engineers and Physical Scientists II",1001,"LAB",1348,"TuTh 10:00AM - 11:50AM","Bennett Hall 310","Staff","7/11/2011 - 8/19/2011"
-"PHY",122,"Physics for Engineers and Physical Scientists II",1002,"LAB",1349,"TuTh 12:10PM - 2:00PM","Bennett Hall 310","Staff","7/11/2011 - 8/19/2011"
-"PHY",122,"Physics for Engineers and Physical Scientists II",1003,"LAB",1641,"TuTh 2:10PM - 4:00PM","Bennett Hall 310","Staff","7/11/2011 - 8/19/2011"
-"PHY",481,"Project Laboratory in Physics I",1,"LAB",1366,"TBA","TBA","James P McClymer","5/9/2011 - 8/19/2011"
-"PHY",482,"Project Laboratory in Physics II",1,"LAB",1369,"TBA","TBA","James P McClymer","5/9/2011 - 8/19/2011"
-"PHY",495,"Engineering Physics Practice",1,"FEX",1380,"TBA","TBA","Donald B Mountcastle","5/9/2011 - 8/19/2011"
-"PHY",496,"Field Experience in Physics",1,"FEX",1383,"TBA","TBA","Donald B Mountcastle","5/9/2011 - 8/19/2011"
-"PHY",497,"Topics in Physics",1,"IND",1391,"TBA","TBA","David J Batuski","5/9/2011 - 8/19/2011"
-"PHY",499,"Problems in Physics",1,"IND",1392,"TBA","TBA","Staff","TBA"
-"PHY",510,"Graduate Laboratory",1,"LAB",1826,"TBA","TBA","Charles T Hess","5/9/2011 - 8/19/2011"
-"PHY",598,"Special Topics in Theoretical or Experimental Physics",1,"IND",1632,"TBA","TBA","Staff","TBA"
-"PHY",699,"Graduate Thesis / Research",1,"THS",1393,"TBA","TBA","James P McClymer","5/9/2011 - 8/19/2011"
-"POS",100,"American Government",990,"LEC",1056,"TBA","On-line Course","Richard J Powell","5/31/2011 - 7/8/2011"
-"POS",120,"Introduction to World Politics",990,"LEC",1087,"TBA","On-line Course","Glen Paul Holman","7/11/2011 - 7/29/2011"
-"POS",241,"Introduction to Comparative Politics",990,"LEC",1057,"TBA","On-line Course","Howard H Cody","6/20/2011 - 7/8/2011"
-"POS",273,"International Relations",990,"LEC",1054,"TBA","On-line Course","Mark R Hibben","5/31/2011 - 6/17/2011"
-"POS",359,"Topics in American Government",870,"LEC",3434,"TBA","TBA","Paul J Myer","5/26/2011 - 6/4/2011"
-"POS",359,"Topics in American Government",990,"LEC",3063,"TBA","On-line Course","Richard J Powell","5/31/2011 - 7/8/2011"
-"POS",359,"Topics in American Government",991,"LEC",3064,"TBA","On-line Course","Mark R Hibben","6/20/2011 - 7/8/2011"
-"POS",363,"Urban Government and Politics",990,"LEC",1059,"TBA","On-line Course","Mark D Brewer","7/5/2011 - 7/22/2011"
-"POS",381,"Political Parties and Elections",990,"LEC",1055,"TBA","On-line Course","Mark D Brewer","5/9/2011 - 5/27/2011"
-"POS",493,"American Politics Internship",1,"RSG",1296,"TBA","TBA","Timothy M Cole","5/9/2011 - 8/19/2011"
-"POS",496,"International Affairs Internship",1,"RSG",1297,"TBA","TBA","Howard H Cody","5/9/2011 - 8/19/2011"
-"POS",498,"Independent Study in Political Science",1,"IND",1298,"TBA","TBA","Timothy M Cole","5/9/2011 - 8/19/2011"
-"POS",596,"Directed Research in Political Science",1,"RSG",1299,"TBA","TBA","Timothy M Cole","5/9/2011 - 8/19/2011"
-"PPA",499,"Undergraduate Thesis",1,"THS",1291,"TBA","TBA","Joseph M Genco","5/9/2011 - 8/19/2011"
-"PRT",345,"Special Problems",1,"IND",1590,"TBA","TBA","Jessica E Leahy","5/9/2011 - 8/19/2011"
-"PRT",345,"Special Problems",2,"IND",1591,"TBA","TBA","Jessica E Leahy","5/9/2011 - 8/19/2011"
-"PRT",394,"Cooperative Education",1,"RSG",1592,"TBA","TBA","John Joseph Daigle","5/9/2011 - 8/19/2011"
-"PRT",394,"Cooperative Education",2,"RSG",1593,"TBA","TBA","Jessica E Leahy","5/9/2011 - 8/19/2011"
-"PRT",395,"Internship",1,"RSG",1594,"TBA","TBA","John Joseph Daigle","5/9/2011 - 8/19/2011"
-"PRT",395,"Internship",2,"RSG",1595,"TBA","TBA","Jessica E Leahy","5/9/2011 - 8/19/2011"
-"PRT",396,"Field Experience",1,"FEX",1596,"TBA","TBA","John Joseph Daigle","5/9/2011 - 8/19/2011"
-"PRT",396,"Field Experience",2,"FEX",1597,"TBA","TBA","Jessica E Leahy","5/9/2011 - 8/19/2011"
-"PRT",613,"Forest Recreation Problems",1,"IND",1598,"TBA","TBA","John Joseph Daigle","5/9/2011 - 8/19/2011"
-"PRT",613,"Forest Recreation Problems",2,"IND",1599,"TBA","TBA","Jessica E Leahy","5/9/2011 - 8/19/2011"
-"PRT",699,"Graduate Thesis / Research",1,"THS",1600,"TBA","TBA","John Joseph Daigle","5/9/2011 - 8/19/2011"
-"PRT",699,"Graduate Thesis / Research",2,"THS",1601,"TBA","TBA","Jessica E Leahy","5/9/2011 - 8/19/2011"
-"PSE",305,"Problems in Plant",1,"IND",1132,"TBA","TBA","Staff","TBA"
-"PSE",396,"Field Experience in Plant",1,"FEX",1133,"TBA","TBA","Marianne Sarrantonio","5/9/2011 - 8/19/2011"
-"PSE",396,"Field Experience in Plant",2,"FEX",1707,"TBA","TBA","Jaina Young","5/9/2011 - 8/19/2011"
-"PSE",597,"Special Topics in Plant",1,"IND",1134,"TBA","TBA","Staff","TBA"
-"PSE",699,"Graduate Thesis / Research",1,"THS",5094,"TBA","TBA","M Susan Erich","5/9/2011 - 8/19/2011"
-"PSE",699,"Graduate Thesis / Research",2,"THS",1135,"TBA","TBA","Ivan J Fernandez","5/9/2011 - 8/19/2011"
-"PSE",699,"Graduate Thesis / Research",3,"THS",5090,"TBA","TBA","Eric R Gallandt","5/9/2011 - 8/19/2011"
-"PSE",699,"Graduate Thesis / Research",4,"THS",5091,"TBA","TBA","Renae E Moran","5/9/2011 - 8/19/2011"
-"PSE",699,"Graduate Thesis / Research",5,"THS",5092,"TBA","TBA","Marianne Sarrantonio","5/9/2011 - 8/19/2011"
-"PSE",699,"Graduate Thesis / Research",6,"THS",5093,"TBA","TBA","John M Smagula","5/9/2011 - 8/19/2011"
-"PSY",100,"General Psychology",1,"LEC",1245,"MoTuWeThFr 9:15AM - 12:00PM","Little Hall 203","G William Farthing","5/9/2011 - 5/27/2011"
-"PSY",100,"General Psychology",2,"LEC",1249,"MoTuWeThFr 9:00AM - 10:30AM","Little Hall 219","Amber Ann Martinson","5/31/2011 - 7/1/2011"
-"PSY",100,"General Psychology",3,"LEC",3196,"MoTuWeThFr 1:15PM - 4:00PM","Little Hall 211","Ryan M Pickering","5/31/2011 - 6/17/2011"
-"PSY",100,"General Psychology",665,"LEC",1008,"MoTuWe 5:30PM - 8:30PM","Fred Hutchinson Center","Charles L Dufour","6/6/2011 - 6/29/2011"
-"PSY",208,"Theories of Personality",669,"LEC",3491,"MoTuWeThFr 9:15AM - 12:00PM","Fred Hutchinson Center","Michael A Robbins","5/31/2011 - 6/17/2011"
-"PSY",208,"Theories of Personality",869,"LEC",3492,"MoTuWeThFr 9:15AM - 12:00PM","Little Hall 350","Michael A Robbins","5/31/2011 - 6/17/2011"
-"PSY",212,"Abnormal Psychology",1,"LEC",1246,"MoTuWeThFr 1:15PM - 4:00PM","Little Hall 211","Julia Rhea Craner","5/9/2011 - 5/27/2011"
-"PSY",212,"Abnormal Psychology",2,"LEC",3197,"MoWe 6:00PM - 8:30PM","Little Hall 211","Craig Steven Lodis","5/31/2011 - 7/22/2011"
-"PSY",223,"Psychology of Childhood",1,"LEC",3198,"MoTuWeThFr 9:15AM - 12:00PM","Little Hall 211","Nicole Ann Heller","7/5/2011 - 7/22/2011"
-"PSY",224,"Psychology of Adolescence",984,"LEC",1247,"TuTh 10:00AM - 12:45PM","Little Hall 215","Cynthia Erdley","5/16/2011 - 7/1/2011"
-"PSY",224,"Psychology of Adolescence",994,"LEC",1048,"TBA","TBA","Cynthia Erdley","5/16/2011 - 7/1/2011"
-"PSY",230,"Social Psychology",1,"LEC",3493,"MoTuWeThFr 1:00PM - 2:30PM","Little Hall 205","Ellen E Newell","7/5/2011 - 8/5/2011"
-"PSY",230,"Social Psychology",669,"LEC",1021,"MoTuWe 5:30PM - 8:30PM","Fred Hutchinson Center","Charles L Dufour","5/9/2011 - 6/1/2011"
-"PSY",230,"Social Psychology",869,"LEC",3490,"MoTuWe 5:30PM - 8:30PM","Little Hall 350","Charles L Dufour","5/9/2011 - 6/1/2011"
-"PSY",241,"Statistics in Psychology",1,"LEC",1721,"MoTuWeThFr 9:00AM - 1:45PM","Little Hall 205","Joseph David Wellman","5/9/2011 - 5/27/2011"
-"PSY",245,"Principles of Psychological Research",1,"LEC",1248,"MoTuWeThFr 9:00AM - 10:30AM","Little Hall 205","Brandon Joseph Cosley","5/31/2011 - 7/1/2011"
-"PSY",401,"Health Psychology",1,"LEC",3199,"MoTuWeThFr 9:15AM - 12:00PM","Little Hall 211","Michael A Robbins","5/9/2011 - 5/27/2011"
-"PSY",412,"Foundations of Clinical Psychology",1,"LEC",3200,"TuTh 6:00PM - 8:30PM","Little Hall 211","Agnieszka Karolina Serwik","5/31/2011 - 7/22/2011"
-"PSY",492,"Problems in Psychology",1,"IND",1259,"TBA","TBA","Michael A Robbins","5/9/2011 - 8/19/2011"
-"PSY",493,"Field Experience in Psychology",1,"FEX",1260,"TBA","TBA","Michael A Robbins","5/9/2011 - 8/19/2011"
-"PSY",494,"Senior Research Project",1,"RSG",1261,"TBA","TBA","Michael A Robbins","5/9/2011 - 8/19/2011"
-"PSY",592,"Directed Readings:(area)",1,"IND",1258,"TBA","TBA","Michael A Robbins","5/9/2011 - 8/19/2011"
-"PSY",691,"Practicum (activity)",1,"RSG",1256,"TBA","TBA","Mary E Cuddy","5/9/2011 - 8/19/2011"
-"PSY",691,"Practicum (activity)",2,"RSG",1257,"TBA","TBA","Nina E Boulard","5/9/2011 - 8/19/2011"
-"PSY",692,"Directed Research",1,"IND",1262,"TBA","TBA","Michael A Robbins","5/9/2011 - 8/19/2011"
-"PSY",699,"Graduate Thesis / Research",1,"THS",1263,"TBA","TBA","Michael A Robbins","5/9/2011 - 8/19/2011"
-"QUS",699,"Graduate Thesis / Research",1,"THS",1624,"TBA","TBA","Paul A Mayewski","5/9/2011 - 8/19/2011"
-"SAR",541,"Alternative Models and Methods for At Risk Students",1,"LEC",5112,"MoTuWeThFrSa 8:00AM - 3:00PM","Arranged","Anna Pender Makin","6/24/2011 - 6/30/2011"
-"SAR",541,"Alternative Models and Methods for At Risk Students",2,"LEC",5132,"TBA","TBA","Cheryl A Robertson","6/27/2011 - 8/1/2011"
-"SED",402,"Adapting Instruction for Students With Disabilities",990,"LEC",1049,"TBA","On-line Course","Owen J Logue","5/31/2011 - 7/1/2011"
-"SED",520,"Law and Policy Affecting Individuals with Disabilities",1,"LEC",5644,"MoFr 1:00PM - 5:00PM","Shibles Hall 217","Sharon Jordan Brady","7/25/2011 - 8/5/2011"
-"SED",528,"Educational Methods for Students with Autism",1,"LEC",1023,"MoTuWeThFr 9:00AM - 4:00PM","Shibles Hall 311","A James Artesani","8/1/2011 - 8/5/2011"
-"SED",532,"Behavior Management and Intervention",665,"LEC",5321,"MoTuWeThFr 9:00AM - 1:00PM","Fred Hutchinson Center","Brian Joseph Cavanaugh","8/8/2011 - 8/19/2011"
-"SED",544,"Mathematical Methods in Special Education",869,"LEC",1098,"TuTh 4:00PM - 7:30PM","Shibles Hall 313","Diane W Jackson","7/5/2011 - 7/22/2011"
-"SED",570,"Technology for Individual with Disabilities",869,"LEC",1022,"TBA","On-line Course","Andrea Elizabeth Bilello","7/5/2011 - 7/22/2011"
-"SED",598,"Special Topics in Special Education",1,"IND",3109,"MoTuWeThFr 9:00AM - 4:00PM","Shibles Hall 201",,"7/11/2011 - 7/15/2011"
-"SED",651,"Seminar in Emotional and Behavioral Disabilities",665,"SEM",5322,"MoWe 5:00PM - 8:00PM","Fred Hutchinson Center","A James Artesani","6/6/2011 - 6/29/2011"
-"SEI",501,"Typical and Atypical Development in Infancy and Early Childhood",1,"LEC",3222,"TBA","TBA","Deborah Rooks","5/9/2011 - 8/19/2011"
-"SIE",589,"Graduate Project",1,"IND",1658,"TBA","TBA","Mary Kate Beard-Tisdale","5/9/2011 - 8/19/2011"
-"SIE",590,"Information Systems Internship",1,"FEX",1783,"TBA","TBA","Harlan J Onsrud","5/9/2011 - 8/19/2011"
-"SIE",598,"Selected Studies in Spatial Information Engineering",1,"IND",1253,"TBA","TBA","Staff","TBA"
-"SIE",699,"Graduate Thesis / Research",1,"THS",1254,"TBA","TBA","Mary Kate Beard-Tisdale","5/9/2011 - 8/19/2011"
-"SIE",699,"Graduate Thesis / Research",2,"THS",1271,"TBA","TBA","Max J Egenhofer","5/9/2011 - 8/19/2011"
-"SIE",699,"Graduate Thesis / Research",3,"THS",1273,"TBA","TBA","Harlan J Onsrud","5/9/2011 - 8/19/2011"
-"SIE",699,"Graduate Thesis / Research",4,"THS",1274,"TBA","TBA","Silvia E Nittel","5/9/2011 - 8/19/2011"
-"SIE",699,"Graduate Thesis / Research",5,"THS",1275,"TBA","TBA","Michael F Worboys","5/9/2011 - 8/19/2011"
-"SIE",699,"Graduate Thesis / Research",6,"THS",1276,"TBA","TBA","Nicholas Giudice","5/9/2011 - 8/19/2011"
-"SMS",110,"Concepts in Oceanography",665,"LEC",1009,"Mo 4:30PM - 7:00PM","Fred Hutchinson Center","William G Ellis","5/9/2011 - 8/19/2011"
-"SMS",111,"Concepts in Oceanography Laboratory",665,"LAB",5685,"Mo 7:00PM - 9:00PM","Fred Hutchinson Center","Staff","5/16/2011 - 8/15/2011"
-"SMS",120,"Introduction to Forensics",990,"LEC",1088,"TBA","TBA","Irving L Kornfield","6/6/2011 - 7/11/2011"
-"SMS",309,"Techniques in Shellfish Aquaculture",1,"LEC",3232,"MoTuWeThFr 8:00AM - 5:00PM","Darling Marine Center","Christopher V Davis","5/11/2011 - 5/27/2011"
-"SMS",450,"Field Experience in Marine Sciences",1,"FEX",1626,"TBA","TBA","William G Ellis","5/9/2011 - 8/19/2011"
-"SMS",491,"Problems in Marine Science",1,"IND",1771,"MoTuWe 9:00AM - 5:00PM","Darling Marine Center","David Wheeler","6/13/2011 - 6/17/2011"
-"SMS",491,"Problems in Marine Science",2,"LEC",3227,"TBA","Darling Marine Center","Lawrence M Mayer","5/11/2011 - 5/27/2011"
-"SMS",491,"Problems in Marine Science",3,"IND",3229,"TBA","Darling Marine Center","Kevin J Eckelbarger","5/11/2011 - 5/27/2011"
-"SMS",491,"Problems in Marine Science",4,"IND",3833,"TBA","Darling Marine Center","Damian Brady","5/31/2011 - 6/10/2011"
-"SMS",497,"Independent Study in Marine Science",1,"IND",1680,"TBA","TBA","William G Ellis","5/9/2011 - 8/19/2011"
-"SMS",598,"Special Topics in Marine Science",1,"IND",5517,"TBA","Darling Marine Center",,"7/11/2011 - 7/29/2011"
-"SMS",598,"Special Topics in Marine Science",2,"IND",5823,"MoWe 1:00PM - 4:00PM","Aubert Hall 354","Rita S Heimes","6/20/2011 - 7/1/2011"
-"SMS",699,"Graduate Thesis / Research",1,"THS",1629,"TBA","TBA","William G Ellis","5/9/2011 - 8/19/2011"
-"SMT",699,"Graduate Thesis / Research",1,"THS",1394,"TBA","TBA","Susan R McKay","5/9/2011 - 8/19/2011"
-"SPA",101,"Elementary Spanish I",1,"LEC",1311,"MoTuWeThFr 9:15AM - 12:00PM","Little Hall 202","Maria D Sandweiss","5/9/2011 - 5/27/2011"
-"SPA",102,"Elementary Spanish II",1,"LEC",3284,"MoTuWeThFr 9:15AM - 12:00PM","Little Hall 202","Eugene F Del Vecchio","5/31/2011 - 6/17/2011"
-"SPA",203,"Intermediate Spanish I",990,"LEC",3286,"TBA","On-line Course","Kathleen N March","5/31/2011 - 6/17/2011"
-"SPA",204,"Intermediate Spanish II",990,"LEC",4341,"TBA","On-line Course","Kathleen N March","6/20/2011 - 7/8/2011"
-"SPA",390,"Topics in Spanish",665,"SEM",5688,"MoTuWeThFr 9:00AM - 4:30PM","Fred Hutchinson Center","Eugene F Del Vecchio","7/11/2011 - 7/15/2011"
-"SPA",490,"Topics and Individual Authors in Spanish",665,"IND",3294,"MoTuWeThFr 9:00AM - 4:30PM","Fred Hutchinson Center","Staff","7/18/2011 - 7/22/2011"
-"SPA",490,"Topics and Individual Authors in Spanish",990,"IND",1112,"TBA","TBA","Kathleen N March","5/31/2011 - 6/17/2011"
-"SPA",495,"Senior Project in Spanish",1,"IND",4454,"TBA","TBA","Kathleen N March","5/9/2011 - 5/27/2011"
-"SPA",496,"Service Learning in Spanish",1,"FEX",3290,"TBA","TBA","Kathleen N March","5/9/2011 - 5/27/2011"
-"SPA",551,"Women of the Hispanic World: Advanced Readings",990,"LEC",3296,"TBA","TBA","Kathleen N March","5/31/2011 - 6/17/2011"
-"SPA",597,"Projects in Spanish I",1,"IND",3300,"TBA","TBA","Kathleen N March","5/9/2011 - 5/27/2011"
-"SPA",598,"Projects in Spanish II",665,"IND",3297,"MoTuWeThFr 9:00AM - 4:30PM","Fred Hutchinson Center","Staff","7/18/2011 - 7/22/2011"
-"SPI",595,"SPIA Internship",1,"FEX",1793,"TBA","TBA","James Settele","5/9/2011 - 8/19/2011"
-"SPI",697,"Independent Study",1,"IND",4304,"TBA","TBA","James Settele","5/9/2011 - 5/27/2011"
-"SPI",697,"Independent Study",2,"IND",4305,"TBA","TBA","James Settele","5/31/2011 - 7/8/2011"
-"SPI",697,"Independent Study",3,"IND",4307,"TBA","TBA","James Settele","7/11/2011 - 8/19/2011"
-"SVT",322,"Preparing Effective Property Descriptions",999,"LEC",1046,"TBA","TBA","Carlton Arthur Brown","5/9/2011 - 8/19/2011"
-"SVT",325,"Surveying/Engineering Ethics",999,"LEC",1047,"TBA","TBA","Carlton Arthur Brown","5/9/2011 - 8/19/2011"
-"SVT",326,"Record Research",999,"LEC",1060,"TBA","TBA","Carlton Arthur Brown","5/9/2011 - 8/19/2011"
-"SWK",350,"Human Behavior and the Social Environment I",990,"LEC",1096,"TBA","TBA","Jennie Goldenberg","5/9/2011 - 8/19/2011"
-"SWK",380,"The Biological Person and the Environment",990,"LEC",1095,"TBA","TBA","Nancy Webster","5/9/2011 - 8/19/2011"
-"SWK",497,"Special Topics in Social Work",1,"IND",5778,"TBA","TBA","Gail B Werrbach","5/9/2011 - 8/19/2011"
-"SWK",530,"MSW Advanced Standing Bridging",1,"LEC",1491,"MoTuWeTh 9:30AM - 3:30PM","Social Work Building 104","Sandra S Butler","6/13/2011 - 6/16/2011"
-"SWK",531,"MSW Advanced Standing Bridging",1,"LEC",1492,"MoTuWeTh 9:30AM - 3:30PM","Social Work Building 104","Gail B Werrbach","6/20/2011 - 6/23/2011"
-"SWK",532,"Advanced Standing Bridging",1,"LEC",1493,"MoTuWeTh 9:30AM - 3:30PM","Social Work Building 104","Robin S Russel","7/11/2011 - 7/14/2011"
-"SWK",533,"MSW Advanced Standing Bridging",1,"LEC",1494,"MoTuWeTh 9:30AM - 3:30PM","Social Work Building 104","Nancy A Kelly","6/27/2011 - 6/30/2011"
-"SWK",560,"Practice in Generalist Social Work I",665,"LEC",1010,"Fr 5:30PM - 8:00PM","Fred Hutchinson Center","Wendy S Rapaport","5/20/2011 - 5/20/2011"
-"SWK",577,"Group Strategies in Health/Mental Health Settings",665,"LEC",1011,"TuWeTh 4:00PM - 8:00PM","Fred Hutchinson Center","Wendy S Rapaport","7/19/2011 - 8/4/2011"
-"SWK",580,"Adult and Child Psychopathology",1,"LEC",1495,"MoTuWeThFr 9:30AM - 3:30PM","Social Work Building 104",,"6/1/2011 - 6/9/2011"
-"SWK",582,"Supporting Families Under Stress",669,"LEC",1012,"Fr 5:30PM - 8:00PM","Fred Hutchinson Center","Nancy Webster","5/13/2011 - 5/13/2011"
-"SWK",595,"Field Practicum in Social Work",665,"FEX",1013,"Sa 12:00PM - 2:30PM","Fred Hutchinson Center","Susan Kaye","5/21/2011 - 5/21/2011"
-"SWK",661,"Advanced Generalist Social Work Practice with Individuals",669,"LEC",1027,"Fr 5:30PM - 8:00PM","Fred Hutchinson Center","Kelly Ann Jaksa","5/20/2011 - 5/20/2011"
-"SWK",695,"Advanced Field Practicum in Social Work",1,"FEX",1496,"Mo 5:00PM - 7:00PM","Merrill Hall 114","Nancy A Kelly","5/9/2011 - 8/19/2011"
-"SWK",695,"Advanced Field Practicum in Social Work",2,"FEX",1497,"TBA","TBA","Nancy A Kelly","5/9/2011 - 8/19/2011"
-"SWK",695,"Advanced Field Practicum in Social Work",665,"FEX",3318,"Mo 5:00PM - 7:30PM","Fred Hutchinson Center","Deirdre F Boylan","5/16/2011 - 5/16/2011"
-"SWK",695,"Advanced Field Practicum in Social Work",666,"FEX",3319,"Mo 5:00PM - 7:30PM","Fred Hutchinson Center","Deirdre F Boylan","7/11/2011 - 7/11/2011"
-"THE",111,"Introduction to Theatre",990,"LEC",1050,"TBA","On-line Course","Thomas J Mikotowicz","6/6/2011 - 6/24/2011"
-"THE",112,"Survey of Dramatic Literature",990,"LEC",3065,"TBA","On-line Course","Marcia J Douglas","5/31/2011 - 7/8/2011"
-"THE",268,"Theatre Practicum",1,"FEX",1265,"TBA","Arranged","Thomas J Mikotowicz","5/9/2011 - 8/19/2011"
-"THE",269,"Theatre Practicum in Acting",1,"FEX",1266,"TBA","Arranged","Thomas J Mikotowicz","5/9/2011 - 8/19/2011"
-"THE",480,"Topics in Theatre",1,"IND",3463,"MoTuWeThFr 1:15PM - 4:00PM","Neville Hall 227","William Yellow Robe","5/9/2011 - 5/27/2011"
-"THE",497,"Independent Study in Theatre I",1,"IND",1631,"TBA","Arranged","Thomas J Mikotowicz","5/9/2011 - 8/19/2011"
-"THE",596,"Field Services in Theatre Production",1,"FEX",1267,"TBA","Arranged","Thomas J Mikotowicz","5/9/2011 - 8/19/2011"
-"THE",697,"Directed Research I",1,"IND",1268,"TBA","Arranged","Thomas J Mikotowicz","5/9/2011 - 8/19/2011"
-"UST",300,"Core Course in University Studies",990,"SEM",1127,"TBA","On-line Course","James F Toner","7/5/2011 - 8/5/2011"
-"UST",300,"Core Course in University Studies",991,"SEM",5653,"TBA","On-line Course","James F Toner","5/9/2011 - 5/27/2011"
-"UST",400,"Advanced Topics in University Studies",1,"IND",1682,"TBA","TBA","Barbara D Howard","5/9/2011 - 8/19/2011"
-"UST",400,"Advanced Topics in University Studies",665,"IND",5110,"MoTuWeThFr 8:30AM - 4:30PM","Fred Hutchinson Center","Joanne Boynton","7/11/2011 - 7/15/2011"
-"UST",400,"Advanced Topics in University Studies",666,"IND",5111,"MoTuWeThFr 8:30AM - 4:30PM","Fred Hutchinson Center","Peggy Robin Smith","8/8/2011 - 8/12/2011"
-"UST",499,"Senior Capstone",1,"SEM",1306,"TBA","TBA","Barbara D Howard","5/9/2011 - 8/19/2011"
-"WLE",250,"Wildlife Field Survey",1,"LEC",1236,"MoTuWeThFr 8:00AM - 5:00PM","Deering Hall 101C","Lindsay C Seward","5/9/2011 - 5/27/2011"
-"WLE",435,"Field Experience",1,"FEX",1237,"TBA","TBA","James R Gilbert","5/9/2011 - 8/19/2011"
-"WLE",490,"Special Problems",1,"IND",1238,"TBA","TBA","James R Gilbert","5/9/2011 - 8/19/2011"
-"WLE",697,"Special Problems in Wildlife Ecology",1,"IND",1239,"TBA","TBA","James R Gilbert","5/9/2011 - 8/19/2011"
-"WLE",699,"Graduate Thesis / Research",1,"THS",1240,"TBA","TBA","James R Gilbert","5/9/2011 - 8/19/2011"
-"WLE",699,"Graduate Thesis / Research",2,"THS",1649,"TBA","TBA","Daniel J Harrison","5/9/2011 - 8/19/2011"
-"WLE",699,"Graduate Thesis / Research",3,"THS",1650,"TBA","TBA","Malcolm L Hunter","5/9/2011 - 8/19/2011"
-"WLE",699,"Graduate Thesis / Research",4,"THS",1651,"TBA","TBA","William Krohn","5/9/2011 - 8/19/2011"
-"WLE",699,"Graduate Thesis / Research",5,"THS",1652,"TBA","TBA","Cynthia S Loftin","5/9/2011 - 8/19/2011"
-"WLE",699,"Graduate Thesis / Research",6,"THS",1653,"TBA","TBA","Frederick A Servello","5/9/2011 - 8/19/2011"
-"WSC",345,"Special Problems",1,"IND",1602,"TBA","TBA","Douglas Jerome Gardner","5/9/2011 - 8/19/2011"
-"WSC",345,"Special Problems",2,"IND",1603,"TBA","TBA","Barry S Goodell","5/9/2011 - 8/19/2011"
-"WSC",345,"Special Problems",3,"IND",1604,"TBA","TBA","Robert W Rice","5/9/2011 - 8/19/2011"
-"WSC",345,"Special Problems",4,"IND",1605,"TBA","TBA","Stephen M Shaler","5/9/2011 - 8/19/2011"
-"WSC",396,"Field Experience",1,"FEX",1606,"TBA","TBA","Douglas Jerome Gardner","5/9/2011 - 8/19/2011"
-"WSC",396,"Field Experience",2,"FEX",1607,"TBA","TBA","Barry S Goodell","5/9/2011 - 8/19/2011"
-"WSC",396,"Field Experience",3,"FEX",1608,"TBA","TBA","Robert W Rice","5/9/2011 - 8/19/2011"
-"WSC",396,"Field Experience",4,"FEX",1609,"TBA","TBA","Stephen M Shaler","5/9/2011 - 8/19/2011"
-"WSC",615,"Problems in Wood Technology",1,"IND",1612,"TBA","TBA","Robert W Rice","5/9/2011 - 8/19/2011"
-"WSC",615,"Problems in Wood Technology",2,"IND",1610,"TBA","TBA","Douglas Jerome Gardner","5/9/2011 - 8/19/2011"
-"WSC",615,"Problems in Wood Technology",3,"IND",1613,"TBA","TBA","Stephen M Shaler","5/9/2011 - 8/19/2011"
-"WSC",615,"Problems in Wood Technology",4,"IND",1611,"TBA","TBA","Barry S Goodell","5/9/2011 - 8/19/2011"
-"WSC",699,"Graduate Thesis / Research",1,"THS",1323,"TBA","TBA","Douglas Jerome Gardner","5/9/2011 - 8/19/2011"
-"WSC",699,"Graduate Thesis / Research",2,"THS",1327,"TBA","TBA","Barry S Goodell","5/9/2011 - 8/19/2011"
-"WSC",699,"Graduate Thesis / Research",3,"THS",1328,"TBA","TBA","Robert W Rice","5/9/2011 - 8/19/2011"
-"WSC",699,"Graduate Thesis / Research",4,"THS",1329,"TBA","TBA","Stephen M Shaler","5/9/2011 - 8/19/2011"
-"WST",101,"Introduction to Women's Studies",990,"LEC",1106,"TBA","TBA","Mary Okin","7/11/2011 - 8/19/2011"
-"WST",201,"Topics in Women's Studies",990,"LEC",1105,"TBA","On-line Course","Audrey Leigh Minutolo","5/31/2011 - 7/8/2011"
-"WST",230,"Women",990,"LEC",3114,"TBA","TBA","Jennifer Pickard","5/9/2011 - 7/1/2011"
-"WST",401,"Advanced Topics in Women's Studies",990,"LEC",3250,"TBA","TBA","Judith Hakola","7/11/2011 - 8/19/2011"
+department,courseNum,courseTitle,sectionNum,courseType,callNum,meetingTime,meetingLocation,instructor,startEndDate
+AED,597,"Independent Study in Art Education",0001,IND,1862,TBA,TBA,Roger Dell,5/9/2011 - 8/19/2011
+ANT,120,"Religions of the World",0990,LEC,1031,TBA,On-line Course,,5/16/2011 - 7/1/2011
+ANT,249,"Religion and Violence",0990,LEC,1108,TBA,TBA,Henry L Munson,7/5/2011 - 8/19/2011
+ANT,422,"Folklore of Maine and The Maritime Provinces",0990,LEC,3070,TBA,On-line Course,Pauleena M Macdougall,6/13/2011 - 8/5/2011
+ANT,492,"Capstone in Anthropology",0001,IND,1137,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+ANT,497,"Department Projects",0001,IND,1138,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+ANT,597,"Advanced Topics in Anthropology",0001,IND,1140,TBA,TBA,Staff,TBA
+ANT,597,"Advanced Topics in Anthropology",0002,IND,1142,TBA,TBA,Staff,TBA
+ARH,496,"Field Experience in Art History",0001,FEX,1850,TBA,TBA,Michael H Grillo,5/9/2011 - 8/19/2011
+ART,107,"Topics: Intro Arts",0665,STU,5289,MoFrSaSu 9:30AM - 4:30PM,Fred Hutchinson Center,Dina M Petrillo,6/17/2011 - 6/20/2011
+ART,180,"Photography I",0001,LAB,3233,MoTuWeThFr 9:00AM - 12:00PM,Carnegie Hall 102,Michael H Grillo,5/9/2011 - 5/27/2011,MoTuWeThFr 1:00PM - 3:00PM,Carnegie Hall 102,Michael H Grillo,5/9/2011 - 5/27/2011
+ART,182,"Photography and Digital Imaging",0869,LAB,1736,Sa 9:00AM - 12:00PM,Lord Hall 311,Michael H Grillo,5/31/2011 - 7/9/2011
+ART,260,"Topics in Studio Art",0003,LAB,1784,MoTuWeThFr 9:00AM - 12:00PM,East Annex 124,,5/9/2011 - 5/27/2011,MoTuWeThFr 1:00PM - 3:00PM,East Annex 124,,5/9/2011 - 5/27/2011,MoTuWeThFr 9:00AM - 12:00PM,East Annex 126,,5/9/2011 - 5/27/2011,MoTuWeThFr 1:00PM - 3:00PM,East Annex 126,,5/9/2011 - 5/27/2011
+ART,260,"Topics in Studio Art",0665,LAB,3234,TuTh 9:00AM - 5:00PM,Fred Hutchinson Center,Kerstin L Engman,7/5/2011 - 8/4/2011
+ART,260,"Topics in Studio Art",0666,LAB,1024,MoWe 9:00AM - 5:00PM,Fred Hutchinson Center,Dina M Petrillo,5/9/2011 - 6/15/2011
+ART,260,"Topics in Studio Art",0667,LAB,1002,TuTh 9:00AM - 5:00PM,Fred Hutchinson Center,Kerstin L Engman,5/31/2011 - 6/30/2011
+ART,360,"Topics in Studio Art",0001,LAB,1766,TuWeFr 9:00AM - 12:00PM,Old Fire Station 100,,5/31/2011 - 7/1/2011,TuWeFr 1:00PM - 3:00PM,Old Fire Station 100,,5/31/2011 - 7/1/2011
+ART,360,"Topics in Studio Art",0003,LAB,1734,MoTuWeThFr 9:00AM - 12:00PM,East Annex 124,,5/9/2011 - 5/27/2011,MoTuWeThFr 1:00PM - 3:00PM,East Annex 124,,5/9/2011 - 5/27/2011,MoTuWeThFr 9:00AM - 12:00PM,East Annex 126,,5/9/2011 - 5/27/2011,MoTuWeThFr 1:00PM - 3:00PM,East Annex 126,,5/9/2011 - 5/27/2011
+ART,360,"Topics in Studio Art",0665,LAB,3235,TuTh 9:00AM - 5:00PM,Fred Hutchinson Center,Kerstin L Engman,7/5/2011 - 8/4/2011
+ART,360,"Topics in Studio Art",0667,LAB,1003,TuTh 9:00AM - 5:00PM,Fred Hutchinson Center,Kerstin L Engman,5/31/2011 - 6/30/2011
+ART,397,"Independent Study in Studio Art",0001,IND,1792,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+ART,460,"Topics in Studio Art",0001,LAB,1152,TuWeFr 9:00AM - 12:00PM,Old Fire Station 100,,5/31/2011 - 7/1/2011,TuWeFr 1:00PM - 3:00PM,Old Fire Station 100,,5/31/2011 - 7/1/2011
+ART,460,"Topics in Studio Art",0002,LAB,3237,MoTuWeThFr 9:00AM - 5:00PM,Lengyel Hall 121,Sheridan L Kelley,8/15/2011 - 8/19/2011
+ART,460,"Topics in Studio Art",0003,LAB,1735,MoTuWeThFr 9:00AM - 12:00PM,East Annex 124,,5/9/2011 - 5/27/2011,MoTuWeThFr 1:00PM - 3:00PM,East Annex 124,,5/9/2011 - 5/27/2011,MoTuWeThFr 9:00AM - 12:00PM,East Annex 126,,5/9/2011 - 5/27/2011,MoTuWeThFr 1:00PM - 3:00PM,East Annex 126,,5/9/2011 - 5/27/2011
+ART,460,"Topics in Studio Art",0665,LAB,3236,TuTh 9:00AM - 5:00PM,Fred Hutchinson Center,Kerstin L Engman,7/5/2011 - 8/4/2011
+ART,460,"Topics in Studio Art",0667,LAB,1004,TuTh 9:00AM - 5:00PM,Fred Hutchinson Center,Kerstin L Engman,5/31/2011 - 6/30/2011
+ART,497,"Independent Study in Studio Art",0001,IND,1851,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+ART,570,"Intermedia Studio Critique I",0001,STU,1159,TBA,TBA,Staff,TBA
+AST,109,"Introduction to Astronomy",0001,LEC,1352,MoTuWeTh 9:40AM - 11:10AM,Bennett Hall 137,David W Pearson,7/11/2011 - 8/19/2011
+AST,109,"Introduction to Astronomy",0990,LEC,1064,TBA,TBA,David J Batuski,5/23/2011 - 7/8/2011
+AST,110,"Introduction to Astronomy Laboratory",0001,LAB,1353,MoWe 12:10PM - 2:00PM,Bennett Hall 302,Nicholas Lewchanin Meek,7/11/2011 - 8/19/2011
+AST,110,"Introduction to Astronomy Laboratory",0990,LAB,1065,TBA,On-line Course,Staff,5/9/2011 - 8/19/2011
+AST,497,"Topics in Astrophysics",0001,IND,1358,TBA,TBA,Staff,TBA
+AVS,249,"Laboratory and Companion Animal Science",0990,LEC,1109,TBA,On-line Course,Robert C Causey,5/9/2011 - 8/19/2011
+AVS,347,"Dairy Cattle Technology Laboratory",0001,LAB,1559,TBA,TBA,David P Marcinkowski,5/9/2011 - 8/19/2011
+AVS,368,"Independent Study in the Animal Sciences",0001,IND,1557,TBA,TBA,Robert C Causey,5/9/2011 - 8/19/2011
+AVS,368,"Independent Study in the Animal Sciences",0003,IND,1709,TBA,TBA,Norinne H Daly,5/9/2011 - 8/19/2011
+AVS,368,"Independent Study in the Animal Sciences",0004,IND,1710,TBA,TBA,David P Marcinkowski,5/9/2011 - 8/19/2011
+AVS,396,"Field Experience in Animal and Veterinary Science",0001,FEX,1558,TBA,TBA,James Weber,5/9/2011 - 8/19/2011
+AVS,397,"Equine Internship",0001,FEX,1633,TBA,TBA,Robert C Causey,5/9/2011 - 8/19/2011
+AVS,397,"Equine Internship",0002,FEX,1711,TBA,TBA,Norinne H Daly,5/9/2011 - 8/19/2011
+AVS,690,"Graduate Research in Animal Science",0001,IND,1560,TBA,TBA,Martin R Stokes,5/9/2011 - 8/19/2011
+AVS,699,"Graduate Thesis / Research",0001,THS,1561,TBA,TBA,Robert C Bayer,5/9/2011 - 8/19/2011
+BIO,100,"Basic Biology",0001,LEC,1320,MoTuWeThFr 9:30AM - 11:00AM,Murray Hall 102,Charlene L Kozerow,5/31/2011 - 7/1/2011
+BIO,100,"Basic Biology",1001,LAB,1321,TuTh 11:00AM - 1:00PM,Murray Hall 103,Charlene L Kozerow,5/31/2011 - 7/1/2011
+BIO,100,"Basic Biology",1002,LAB,1322,TuTh 1:10PM - 3:10PM,Murray Hall 103,Charlene L Kozerow,5/31/2011 - 7/1/2011
+BIO,208,"Anatomy and Physiology",0001,LEC,1324,MoTuWeThFr 11:00AM - 12:30PM,Murray Hall 106,Lynn Ann Atkins,5/31/2011 - 7/1/2011
+BIO,208,"Anatomy and Physiology",1001,LAB,1325,MoWe 1:10PM - 4:00PM,Murray Hall 304,Lynn Ann Atkins,6/1/2011 - 6/29/2011
+BIO,450,"Histology",0001,LEC,1715,MoTuWeThFr 9:15AM - 12:00PM,Murray Hall 214,Mary S Tyler,5/9/2011 - 5/27/2011
+BIO,450,"Histology",1001,LAB,1716,MoTuWeThFr 1:10PM - 5:00PM,Murray Hall 214,Mary S Tyler,5/9/2011 - 5/27/2011
+BIO,496,"Field Experience in Biological Sciences",0001,FEX,1836,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+BIO,699,"Graduate Thesis / Research",0001,THS,1659,TBA,TBA,Andrei Alyokhin,5/9/2011 - 8/19/2011
+BIO,699,"Graduate Thesis / Research",0002,THS,1660,TBA,TBA,Christopher Campbell,5/9/2011 - 8/19/2011
+BIO,699,"Graduate Thesis / Research",0003,THS,1661,TBA,TBA,Benildo G De Los Reyes,5/9/2011 - 8/19/2011
+BIO,699,"Graduate Thesis / Research",0004,THS,1662,TBA,TBA,Francis A Drummond,5/9/2011 - 8/19/2011
+BIO,699,"Graduate Thesis / Research",0005,THS,1663,TBA,TBA,Eleanor Groden,5/9/2011 - 8/19/2011
+BIO,699,"Graduate Thesis / Research",0006,THS,1664,TBA,TBA,Clarissa A Henry,5/9/2011 - 8/19/2011
+BLE,497,"Special Problems in Biological Engineering",0001,IND,1284,TBA,TBA,Darrell W Donahue,5/9/2011 - 8/19/2011
+BLE,497,"Special Problems in Biological Engineering",0002,IND,1285,TBA,TBA,John G Riley,5/9/2011 - 8/19/2011
+BLE,599,"Independent Study in Biological Engineering",0001,IND,1281,TBA,TBA,Staff,TBA
+BLE,697,"Problems in Biological Engineering I",0001,IND,1286,TBA,TBA,Darrell W Donahue,5/9/2011 - 8/19/2011
+BLE,698,"Problems in Biological Engineering II",0001,IND,1287,TBA,TBA,Darrell W Donahue,5/9/2011 - 8/19/2011
+BLE,699,"Graduate Thesis / Research",0001,THS,1288,TBA,TBA,Darrell W Donahue,5/9/2011 - 8/19/2011
+BLE,699,"Graduate Thesis / Research",0002,THS,5107,TBA,TBA,Michael D Mason,5/9/2011 - 8/19/2011
+BLE,699,"Graduate Thesis / Research",0003,THS,5108,TBA,TBA,Paul J Millard,5/9/2011 - 8/19/2011
+BLE,699,"Graduate Thesis / Research",0004,THS,5109,TBA,TBA,Gerard P Van Walsum,5/9/2011 - 8/19/2011
+BMB,207,"Fundamentals of Chemistry",0001,LEC,1200,MoTuWeThFr 8:00AM - 9:20AM,Rogers Hall 206,Charlene L Kozerow,5/31/2011 - 7/1/2011
+BMB,300,"General Microbiology",0001,LEC,1201,MoTuWeThFr 9:30AM - 11:00AM,Rogers Hall 206,Charles E Moody,5/31/2011 - 7/1/2011
+BMB,305,"General Microbiology Laboratory",0001,LAB,1202,MoWeTh 11:15AM - 2:30PM,Hitchner Hall 180,Catherine A Hopper,5/31/2011 - 7/1/2011
+BMB,491,"Biochemistry",0001,IND,1203,TBA,TBA,Sharon L Ashworth,5/9/2011 - 8/19/2011
+BMB,491,"Biochemistry",0002,IND,1204,TBA,TBA,Dorothy E Croall,5/9/2011 - 8/19/2011
+BMB,491,"Biochemistry",0003,IND,1205,TBA,TBA,Julie Gosse,5/9/2011 - 8/19/2011
+BMB,491,"Biochemistry",0004,IND,1206,TBA,TBA,Robert E Gundersen,5/9/2011 - 8/19/2011
+BMB,491,"Biochemistry",0005,IND,1207,TBA,TBA,Keith W Hutchison,5/9/2011 - 8/19/2011
+BMB,491,"Biochemistry",0006,IND,1208,TBA,TBA,Carol H Kim,5/9/2011 - 8/19/2011
+BMB,699,"Graduate Thesis / Research",0001,THS,1214,TBA,TBA,Sharon L Ashworth,5/9/2011 - 8/19/2011
+BMB,699,"Graduate Thesis / Research",0002,THS,1215,TBA,TBA,Dorothy E Croall,5/9/2011 - 8/19/2011
+BMB,699,"Graduate Thesis / Research",0003,THS,1217,TBA,TBA,Julie Gosse,5/9/2011 - 8/19/2011
+BMB,699,"Graduate Thesis / Research",0004,THS,1218,TBA,TBA,Robert E Gundersen,5/9/2011 - 8/19/2011
+BMB,699,"Graduate Thesis / Research",0005,THS,1219,TBA,TBA,Keith W Hutchison,5/9/2011 - 8/19/2011
+BMB,699,"Graduate Thesis / Research",0006,THS,1220,TBA,TBA,Carol H Kim,5/9/2011 - 8/19/2011
+BMS,699,"Graduate Thesis / Research",0001,THS,1678,TBA,TBA,Carol H Kim,5/9/2011 - 8/19/2011
+BUA,201,"Principles of Financial Accounting",0990,LEC,1033,TBA,TBA,Steven C Colburn,5/9/2011 - 6/10/2011
+BUA,202,"Principles of Managerial Accounting",0001,LEC,3214,MoTuWeThFr 9:15AM - 12:00PM,Shibles Hall 201,Wendy R Coons,6/13/2011 - 7/1/2011
+BUA,327,"Business ans Society",0001,SEM,3215,MoWe 6:00PM - 9:15PM,Shibles Hall 201,Martha Broderick,6/1/2011 - 6/29/2011
+BUA,350,"Business Finance",0001,LEC,3216,MoTuWeThFr 9:15AM - 12:00PM,Donald P Corbett Business 115,Robert A Strong,5/9/2011 - 5/27/2011
+BUA,370,"Marketing",0001,LEC,1160,MoTuWeThFr 9:15AM - 12:00PM,Donald P Corbett Business 105,Harold Z Daniel,5/9/2011 - 5/27/2011
+BUA,396,"Field Experience/Internship",0001,FEX,1161,TBA,TBA,Stephanie Welcomer,5/9/2011 - 8/19/2011
+BUA,400,"Introduction to Accounting",0990,LEC,1116,TBA,TBA,David J Barrett,6/13/2011 - 8/5/2011
+BUA,596,"International Field Study",0001,FEX,3220,TBA,TBA,Jason Harkins,5/9/2011 - 8/19/2011
+BUA,596,"International Field Study",0002,FEX,3221,TBA,TBA,John F Mahon,5/9/2011 - 8/19/2011
+BUA,609,"Financial Statement Analysis",0001,LEC,3219,TuTh 6:00PM - 9:15PM,Donald P Corbett Business 218,Ferdinand T Siagian,7/5/2011 - 8/4/2011
+BUA,645,"Selected Advanced Topics in Business Administration",0003,LEC,1737,MoTuWeThFr 1:15PM - 4:00PM,Donald P Corbett Business 113,Omar J Khan,5/9/2011 - 5/27/2011
+BUA,652,"Management of Financial Institutions",0001,LEC,3217,MoWe 6:00PM - 9:15PM,Barrows Hall 126,Richard H Borgman,6/1/2011 - 6/29/2011
+BUA,668,"Electronic Commerce",0984,LEC,3213,TuTh 1:00PM - 3:45PM,Barrows Hall 126,Nory B Jones,5/31/2011 - 7/7/2011
+BUA,668,"Electronic Commerce",0994,LEC,5642,TuTh 1:00PM - 3:45PM,On-line Course,Nory B Jones,7/5/2011 - 8/5/2011
+BUA,695,"MBA Internship",0001,RSG,1178,TBA,TBA,Nory B Jones,5/9/2011 - 8/19/2011
+BUA,697,"Field Experience in Accounting",0001,FEX,1179,TBA,TBA,Nory B Jones,5/9/2011 - 8/19/2011
+BUA,698,"Independent Study",0001,IND,1180,TBA,TBA,Nory B Jones,5/9/2011 - 8/19/2011
+CEC,523,"The Use of Standardized Tests and Inventories",0990,LEC,1071,TBA,On-line Course,Annette F Nelligan,5/9/2011 - 6/17/2011
+CEC,525,"DSM Diagnosis and Treatment Plan",0001,LEC,1499,MoWeFr 1:00PM - 5:00PM,Shibles Hall 320,John Yasenchak,6/20/2011 - 7/8/2011
+CEC,552,"Effective Group Work in the Helping Professions",0001,LEC,1563,MoTh 4:00PM - 8:30PM,Shibles Hall 320,Annette F Nelligan,5/9/2011 - 6/2/2011
+CEC,553,"The Profession of Counseling",0001,LEC,2932,We 4:00PM - 8:00PM,Shibles Hall 313,Toni C Moleon,6/1/2011 - 8/3/2011
+CEC,557,"Play Therapy",0001,LEC,1255,MoTuWeThFr 9:00AM - 4:00PM,Shibles Hall 202,Dorothy T Breen,6/20/2011 - 6/24/2011
+CEC,560,"Counselor Education Prepracticum",0001,IND,1498,We 4:00PM - 8:00PM,Shibles Hall 159,Melissa A Rosenberg,5/11/2011 - 7/6/2011
+CEC,580,"Counselor Education Institute",0001,LEC,1566,MoTuWeThFr 9:00AM - 4:00PM,Shibles Hall 320,Donald Frederick Lynch,8/8/2011 - 8/12/2011
+CEC,580,"Counselor Education Institute",0002,LEC,2933,MoTuWeThFr 9:00AM - 4:00PM,Shibles Hall 217,John Yasenchak,7/18/2011 - 7/22/2011
+CEC,580,"Counselor Education Institute",0003,LEC,2934,MoTuWeThFr 9:00AM - 4:00PM,Arranged,Staff,8/1/2011 - 8/5/2011
+CEC,585,"Substance Abuse: Contemporary Approaches to Counseling",0001,LEC,1568,MoTuWeThFr 9:00AM - 4:00PM,Shibles Hall 320,Robert Q Dana,7/25/2011 - 7/29/2011
+CEC,655,"Individual Counseling Practicum",0001,IND,5061,Tu 4:00PM - 8:00PM,Shibles Hall 320,Tamara J Hunt,5/10/2011 - 7/5/2011
+CEC,661,"Research Seminar in Counselor Education",0990,SEM,2931,TBA,TBA,Annette F Nelligan,5/9/2011 - 6/17/2011
+CEC,690,"Counselor Education Internship",0001,FEX,3081,TBA,TBA,Dorothy T Breen,5/9/2011 - 8/19/2011
+CEC,694,"Advanced Counselor Education Internship",0001,FEX,3082,TBA,TBA,Dorothy T Breen,5/9/2011 - 8/19/2011
+CET,394,"Construction Management Technology Practice",0001,RSG,1241,TBA,TBA,Howard M Gray,5/9/2011 - 8/19/2011
+CHE,352,"Process Control",0001,LEC,1227,MoTuWeTh 9:00AM - 12:00PM,Jenness Hall 102,John J Hwalek,5/9/2011 - 5/27/2011
+CHE,360,"Elements of Chemical Engineering I",0001,LEC,1264,MoTuWeTh 1:10PM - 4:00PM,Jenness Hall 104,Albert Co,5/31/2011 - 7/1/2011
+CHE,361,"Chemical Engineering Laboratory I",0001,LAB,1269,WeTh 1:10PM - 5:00PM,Jenness Hall 102,,7/5/2011 - 8/5/2011
+CHE,362,"Elements of Chemical Engineering II",0001,LEC,1272,MoTuWeTh 1:10PM - 4:00PM,Jenness Hall 102,John J Hwalek,5/31/2011 - 7/1/2011
+CHE,368,"Kinetics and Reactor Design",0001,LEC,1278,MoTuWeTh 9:00AM - 11:00AM,Jenness Hall 102,Hemant P Pendse,7/5/2011 - 8/5/2011
+CHE,386,"Chemical Engineering Thermodynamics II",0001,LEC,1279,MoTuWeTh 1:10PM - 4:00PM,Jenness Hall 104,Douglas M Ruthven,7/5/2011 - 8/5/2011
+CHE,494,"Chemical Engineering Practice",0001,FEX,1289,TBA,TBA,Hemant P Pendse,5/9/2011 - 8/19/2011
+CHE,498,"Special Topics in Chemical Engineering",0001,LEC,1280,MoTuWeTh 9:00AM - 11:00AM,Jenness Hall 102,Michael D Mason,5/31/2011 - 7/1/2011
+CHE,699,"Graduate Thesis / Research",0001,THS,1290,TBA,TBA,Douglas W Bousfield,5/9/2011 - 8/19/2011
+CHE,699,"Graduate Thesis / Research",0002,THS,5095,TBA,TBA,Albert Co,5/9/2011 - 8/19/2011
+CHE,699,"Graduate Thesis / Research",0003,THS,5096,TBA,TBA,William Desisto,5/9/2011 - 8/19/2011
+CHE,699,"Graduate Thesis / Research",0004,THS,5097,TBA,TBA,Darrell W Donahue,5/9/2011 - 8/19/2011
+CHE,699,"Graduate Thesis / Research",0005,THS,5098,TBA,TBA,Joseph M Genco,5/9/2011 - 8/19/2011
+CHE,699,"Graduate Thesis / Research",0006,THS,5099,TBA,TBA,John J Hwalek,5/9/2011 - 8/19/2011
+CHF,201,"Introduction to Child Development",0990,LEC,1067,TBA,TBA,Barbara D Howard,5/9/2011 - 5/27/2011
+CHF,201,"Introduction to Child Development",0991,LEC,1068,TBA,TBA,Barbara D Howard,8/1/2011 - 8/19/2011
+CHF,311,"Creativity and the Young Child",0001,LEC,2942,MoTuWeThFr 9:00AM - 11:30AM,Merrill Hall 114,Margo Jill Brown,5/9/2011 - 5/27/2011
+CHF,321,"Curriculum and Methods for Teaching Young Children Science",0990,LEC,1069,TBA,TBA,Mary Ellin Logue,5/9/2011 - 6/17/2011
+CHF,351,"Human Sexuality",0990,LEC,3835,TBA,TBA,Sandra L Caron,5/9/2011 - 5/27/2011
+CHF,351,"Human Sexuality",0991,LEC,1070,TBA,TBA,Sandra L Caron,7/11/2011 - 7/29/2011
+CHF,409,"Special Problems in Child Development and Family Life",0001,IND,1359,TBA,TBA,Sandra L Caron,5/9/2011 - 8/19/2011
+CHF,409,"Special Problems in Child Development and Family Life",0002,IND,1360,TBA,TBA,Margo Jill Brown,5/9/2011 - 8/19/2011
+CHF,409,"Special Problems in Child Development and Family Life",0003,IND,1361,TBA,TBA,Julie M Dellamattera,5/9/2011 - 8/19/2011
+CHF,409,"Special Problems in Child Development and Family Life",0004,IND,1362,TBA,TBA,Barbara D Howard,5/9/2011 - 8/19/2011
+CHF,409,"Special Problems in Child Development and Family Life",0005,IND,1363,TBA,TBA,Renate Klein,5/9/2011 - 8/19/2011
+CHF,409,"Special Problems in Child Development and Family Life",0006,IND,1367,TBA,TBA,Mary Ellin Logue,5/9/2011 - 8/19/2011
+CHF,432,"Socialization of the Child",0990,LEC,2944,TBA,TBA,Barbara D Howard,6/6/2011 - 7/1/2011
+CHF,450,"Early Childhood Special Education",0001,LEC,2941,MoTuWeThFr 1:00PM - 3:30PM,Merrill Hall 114,Margo Jill Brown,5/9/2011 - 5/27/2011
+CHF,496,"Field Experience in Human Development and Family Studies",0001,FEX,1646,TBA,TBA,Sandra L Caron,5/9/2011 - 8/19/2011
+CHF,496,"Field Experience in Human Development and Family Studies",0002,FEX,1376,TBA,TBA,Margo Jill Brown,5/9/2011 - 8/19/2011
+CHF,496,"Field Experience in Human Development and Family Studies",0003,FEX,1377,TBA,TBA,Julie M Dellamattera,5/9/2011 - 8/19/2011
+CHF,496,"Field Experience in Human Development and Family Studies",0004,FEX,1379,TBA,TBA,Barbara D Howard,5/9/2011 - 8/19/2011
+CHF,496,"Field Experience in Human Development and Family Studies",0005,FEX,1381,TBA,TBA,Renate Klein,5/9/2011 - 8/19/2011
+CHF,496,"Field Experience in Human Development and Family Studies",0006,FEX,1382,TBA,TBA,Mary Ellin Logue,5/9/2011 - 8/19/2011
+CHY,121,"Introduction to Chemistry",0001,LEC,1508,MoTuWeThFr 9:30AM - 11:00AM,Aubert Hall 316,Rebecca J Rowe,5/31/2011 - 7/1/2011
+CHY,122,"The Molecular Basis of Chemical Change",0001,LEC,1516,MoTuWeThFr 9:30AM - 11:00AM,Aubert Hall 316,Howard H Patterson,7/5/2011 - 8/5/2011
+CHY,123,"Introduction to Chemistry Laboratory",0001,LAB,1509,MoWeTh 12:10PM - 3:00PM,Aubert Hall 227,Mitchell R M Bruce,5/31/2011 - 7/1/2011
+CHY,123,"Introduction to Chemistry Laboratory",0002,LAB,1511,MoWeTh 12:10PM - 3:00PM,Aubert Hall 228,Mitchell R M Bruce,5/31/2011 - 7/1/2011
+CHY,124,"The Molecular Basis of Chemical Change Laboratory",0001,LAB,1517,MoWeTh 12:10PM - 3:00PM,Aubert Hall 227,Mitchell R M Bruce,7/5/2011 - 8/5/2011
+CHY,124,"The Molecular Basis of Chemical Change Laboratory",0002,LAB,1518,MoWeTh 12:10PM - 3:00PM,Aubert Hall 228,Mitchell R M Bruce,7/5/2011 - 8/5/2011
+CHY,251,"Organic Chemistry I",0001,LEC,1512,MoTuWeThFr 9:30AM - 11:00AM,Aubert Hall 428,Bruce L Jensen,5/31/2011 - 7/1/2011
+CHY,252,"Organic Chemistry II",0001,LEC,1524,MoTuWeThFr 9:30AM - 11:00AM,Aubert Hall 428,Rebecca J Rowe,7/5/2011 - 8/5/2011
+CHY,253,"Organic Chemistry Laboratory I",0001,LAB,5825,MoWeTh 1:10PM - 5:00PM,Aubert Hall 462,Bruce L Jensen,5/31/2011 - 7/1/2011
+CHY,253,"Organic Chemistry Laboratory I",0002,LAB,5824,MoWeTh 1:10PM - 5:00PM,Aubert Hall 428,Bruce L Jensen,5/31/2011 - 7/1/2011
+CHY,254,"Organic Chemistry Laboratory II",0001,LAB,5860,MoWeTh 1:10PM - 5:00PM,Aubert Hall 428,Rebecca J Rowe,7/6/2011 - 8/4/2011
+CHY,254,"Organic Chemistry Laboratory II",0002,LAB,1526,MoWeTh 1:10PM - 5:00PM,Aubert Hall 462,Rebecca J Rowe,7/6/2011 - 8/4/2011
+CHY,394,"Field Experience/Cooperative Education",0001,FEX,1535,TBA,TBA,Alice E Bruce,5/9/2011 - 8/19/2011
+CHY,398,"Undergraduate Research",0001,IND,1537,TBA,TBA,Alice E Bruce,5/9/2011 - 8/19/2011
+CHY,399,"Undergraduate Thesis",0001,THS,1538,TBA,TBA,Alice E Bruce,5/9/2011 - 8/19/2011
+CHY,490,"Topics in Chemistry",0001,LEC,1515,TBA,TBA,Alice E Bruce,5/9/2011 - 8/19/2011
+CHY,490,"Topics in Chemistry",0002,LEC,1528,TBA,TBA,Alice E Bruce,5/9/2011 - 8/19/2011
+CHY,698,"Graduate Research",0001,IND,1540,TBA,TBA,Alice E Bruce,5/9/2011 - 8/19/2011
+CHY,699,"Graduate Thesis / Research",0001,THS,1541,TBA,TBA,Francois G Amar,5/9/2011 - 8/19/2011
+CHY,699,"Graduate Thesis / Research",0002,THS,1542,TBA,TBA,Alice E Bruce,5/9/2011 - 8/19/2011
+CHY,699,"Graduate Thesis / Research",0003,THS,1544,TBA,TBA,Mitchell R M Bruce,5/9/2011 - 8/19/2011
+CHY,699,"Graduate Thesis / Research",0004,THS,1545,TBA,TBA,Barbara J W Cole,5/9/2011 - 8/19/2011
+CHY,699,"Graduate Thesis / Research",0005,THS,1547,TBA,TBA,Scott Collins,5/9/2011 - 8/19/2011
+CHY,699,"Graduate Thesis / Research",0006,THS,1548,TBA,TBA,Raymond C Fort,5/9/2011 - 8/19/2011
+CIE,394,"Civil Engineering Practice",0001,RSG,1462,TBA,TBA,Thomas C Sandford,5/9/2011 - 8/19/2011
+CIE,699,"Graduate Thesis / Research",0001,THS,1463,TBA,TBA,Aria Amirbahman,5/9/2011 - 8/19/2011
+CIE,699,"Graduate Thesis / Research",0003,THS,1465,TBA,TBA,Habib-J Dagher,5/9/2011 - 8/19/2011
+CIE,699,"Graduate Thesis / Research",0004,THS,1466,TBA,TBA,William Glenn Davids,5/9/2011 - 8/19/2011
+CIE,699,"Graduate Thesis / Research",0005,THS,1467,TBA,TBA,Per Erik Garder,5/9/2011 - 8/19/2011
+CIE,699,"Graduate Thesis / Research",0006,THS,1468,TBA,TBA,Dana N Humphrey,5/9/2011 - 8/19/2011
+CIE,699,"Graduate Thesis / Research",0007,THS,1469,TBA,TBA,Shaleen Jain,5/9/2011 - 8/19/2011
+CMJ,100,"Introduction to Mass Communication",0990,LEC,3188,TBA,TBA,Jessica E Brophy,5/31/2011 - 7/22/2011
+CMJ,103,"Fundamentals of Public Communication",0001,LEC,1148,MoTuWeThFr 9:15AM - 12:00PM,Dunn Hall 44,Staff,5/9/2011 - 5/27/2011
+CMJ,103,"Fundamentals of Public Communication",0002,LEC,1149,MoTuWeThFr 1:15PM - 4:00PM,Dunn Hall 417,Staff,5/9/2011 - 5/27/2011
+CMJ,103,"Fundamentals of Public Communication",0003,LEC,1150,MoTuWeThFr 1:15PM - 4:00PM,Dunn Hall 401,Staff,5/9/2011 - 5/27/2011
+CMJ,103,"Fundamentals of Public Communication",0004,LEC,3182,MoTuWeThFr 9:15AM - 12:00PM,Dunn Hall 401,Staff,6/6/2011 - 6/24/2011
+CMJ,103,"Fundamentals of Public Communication",0005,LEC,3183,MoTuWeThFr 9:15AM - 12:00PM,Dunn Hall 401,Staff,7/5/2011 - 7/22/2011
+CMJ,225,"Sex",0001,LEC,3184,MoTuWeThFr 9:15AM - 12:00PM,Dunn Hall 401,Claire F Sullivan,5/9/2011 - 5/27/2011
+CMJ,236,"Journalism Writing and Editing",0001,LEC,3185,MoTuWeThFr 9:15AM - 12:00PM,Dunn Hall 4,Staff,5/9/2011 - 5/27/2011
+CMJ,237,"Journalism Across Platforms",0001,LEC,3186,MoTuWeThFr 1:15PM - 4:00PM,Dunn Hall 4,Douglas Alan Kelly,5/9/2011 - 5/27/2011,MoTuWeThFr 1:15PM - 4:00PM,Dunn Hall 1,Douglas Alan Kelly,5/9/2011 - 5/27/2011
+CMJ,257,"Business and Professional Communication",0001,LEC,3187,MoTuWeThFr 9:15AM - 12:00PM,Dunn Hall 417,Jeremiah Ray Miner,5/9/2011 - 5/27/2011
+CMJ,495,"Internship",0001,RSG,1617,TBA,TBA,Claire F Sullivan,5/9/2011 - 8/19/2011
+CMJ,498,"Advanced Topics in Mass Communication",0001,LEC,3189,MoTuWeThFr 9:15AM - 12:00PM,Boardman Hall 207,Claire F Sullivan,5/31/2011 - 6/17/2011
+CMJ,593,"Topics in Communication",0001,IND,1729,TuTh 6:00PM - 8:30PM,Dunn Hall 424,Staff,5/31/2011 - 7/22/2011
+CMJ,690,"Directed Research",0001,RSG,1618,TBA,TBA,Nathan E Stormer,5/9/2011 - 8/19/2011
+CMJ,693,"Reading for Master's Comprehensive",0001,IND,1619,TBA,TBA,Nathan E Stormer,5/9/2011 - 8/19/2011
+CMJ,695,"Graduate Internship",0001,RSG,1620,TBA,TBA,Claire F Sullivan,5/9/2011 - 8/19/2011
+CMJ,699,"Graduate Thesis / Research",0001,THS,1621,TBA,TBA,Nathan E Stormer,5/9/2011 - 8/19/2011
+COS,103,"Introduction to Spreadsheets",0001,LEC,3224,MoTuWeThFr 9:15AM - 12:00PM,Neville Hall 204,Carol A Roberts,5/9/2011 - 5/13/2011
+COS,103,"Introduction to Spreadsheets",0990,LEC,1036,TBA,TBA,Carol A Roberts,5/31/2011 - 6/17/2011
+COS,104,"Introduction of Presentation Software",0990,LEC,1037,TBA,TBA,Carol A Roberts,6/20/2011 - 7/8/2011
+COS,115,"Web Design in HTML/XHTML/CSS",0990,LEC,1035,TBA,TBA,Carol A Roberts,5/31/2011 - 7/22/2011
+COS,120,"Introduction to Programming I",0001,LEC,3225,MoWeFr 9:15AM - 12:00PM,Neville Hall 106,Carol A Roberts,5/31/2011 - 7/1/2011
+COS,211,"Principles of Data Processing",0001,LEC,1708,ThFr 1:00PM - 4:00PM,Neville Hall 204,Robert J Shuman,5/9/2011 - 7/1/2011
+COS,213,"Advanced Excel Spreadsheet Design",0990,LEC,3226,TBA,TBA,Carol A Roberts,6/20/2011 - 7/29/2011
+COS,298,"Topics in Computer Science",0001,IND,1838,TBA,TBA,Sudarshan S Chawathe,5/9/2011 - 8/19/2011
+COS,497,"Computer Science Capstone 2",0002,LEC,1630,TBA,TBA,Sudarshan S Chawathe,5/9/2011 - 8/19/2011
+COS,499,"Senior Project",0001,LEC,1688,TBA,TBA,Phillip M Dickens,5/9/2011 - 8/19/2011
+COS,499,"Senior Project",0002,LEC,1689,TBA,TBA,Sudarshan S Chawathe,5/9/2011 - 8/19/2011
+COS,499,"Senior Project",0003,LEC,1690,TBA,TBA,James L Fastook,5/9/2011 - 8/19/2011
+COS,499,"Senior Project",0004,LEC,1691,TBA,TBA,Laurence J Latour,5/9/2011 - 8/19/2011
+COS,499,"Senior Project",0005,LEC,1692,TBA,TBA,George Markowsky,5/9/2011 - 8/19/2011
+COS,499,"Senior Project",0006,LEC,1693,TBA,TBA,Curtis L Meadow,5/9/2011 - 8/19/2011
+COS,699,"Graduate Thesis / Research",0001,THS,1636,TBA,TBA,Phillip M Dickens,5/9/2011 - 8/19/2011
+COS,699,"Graduate Thesis / Research",0002,THS,1683,TBA,TBA,Sudarshan S Chawathe,5/9/2011 - 8/19/2011
+COS,699,"Graduate Thesis / Research",0003,THS,1818,TBA,TBA,Roy M Turner,5/9/2011 - 8/19/2011
+CSD,101,"American Sign Language I",0665,LEC,1016,Th 5:00PM - 8:00PM,Fred Hutchinson Center,Carrie J Pierce,5/12/2011 - 8/4/2011
+CSD,102,"American Sign Language II",0665,LEC,3529,Tu 5:00PM - 8:00PM,Fred Hutchinson Center,Carrie J Pierce,5/10/2011 - 8/2/2011
+CSD,498,"Directed Study in Communication Sciences and Disorders",0001,IND,5862,TBA,TBA,Nancy E Hall,6/1/2011 - 7/31/2011
+CSD,686,"Clinical Practicum",0001,RSG,1781,TBA,TBA,,5/9/2011 - 8/19/2011
+CSD,686,"Clinical Practicum",0002,RSG,1153,TBA,TBA,Judith L Stickles,5/9/2011 - 8/19/2011
+CSD,686,"Clinical Practicum",0003,RSG,1154,TBA,TBA,Amy Engler Booth,5/9/2011 - 8/19/2011
+CSD,699,"Graduate Thesis / Research",0002,THS,1155,TBA,TBA,Nancy E Hall,5/9/2011 - 8/19/2011
+DAN,498,"Dance Project/Thesis",0001,IND,1810,TBA,Arranged,Ann P Ross,5/9/2011 - 8/19/2011
+DIS,300,"Disability: Interaction of Human Diversity and Global Environment",0990,LEC,1082,TBA,TBA,Stephen F Gilson,5/9/2011 - 5/27/2011
+DIS,520,"Disability as Diversity",0990,LEC,3151,TBA,TBA,Elizabeth Depoy,5/31/2011 - 7/8/2011
+DIS,530,"Disability Policy",0990,LEC,1107,TBA,TBA,Elizabeth Depoy,5/9/2011 - 5/27/2011
+DIS,550,"Research Seminar in Disability Studies",0990,IND,3983,TBA,TBA,Elizabeth Depoy,5/31/2011 - 7/8/2011
+DIS,550,"Research Seminar in Disability Studies",0991,IND,3984,TBA,TBA,Elizabeth Depoy,7/11/2011 - 8/19/2011
+DIS,680,"Independent Study in Disability Studies",0001,IND,1562,TBA,TBA,Lucille A Zeph,5/9/2011 - 8/19/2011
+EAD,531,"School Law for Administrators",0001,LEC,1762,Th 4:30PM - 7:30PM,Arranged,Betsy M Webb,6/2/2011 - 7/28/2011
+EAD,562,"Group Leadership and Decision",0001,LEC,3134,We 5:00PM - 8:00PM,Merrill Hall 114,Richard H Ackerman,5/11/2011 - 6/1/2011,Sa 8:30AM - 2:30PM,Merrill Hall 114,Richard H Ackerman,6/11/2011 - 6/18/2011,We 5:00PM - 8:00PM,Merrill Hall 114,Richard H Ackerman,6/29/2011 - 6/29/2011
+EAD,562,"Group Leadership and Decision",0002,LEC,3135,We 5:00PM - 8:00PM,Merrill Hall 335,Paul D Knowles,5/11/2011 - 6/1/2011,Sa 8:30AM - 2:30PM,Merrill Hall 335,Paul D Knowles,6/11/2011 - 6/18/2011,We 5:00PM - 8:00PM,Merrill Hall 335,Paul D Knowles,6/29/2011 - 6/29/2011
+EAD,562,"Group Leadership and Decision",0003,LEC,3136,We 5:00PM - 8:00PM,Merrill Hall 330,Cathy A Lewis,5/11/2011 - 6/1/2011,Sa 8:30AM - 2:30PM,Merrill Hall 330,Cathy A Lewis,6/11/2011 - 6/18/2011,We 5:00PM - 8:00PM,Merrill Hall 330,Cathy A Lewis,6/29/2011 - 6/29/2011
+EAD,563,"Individual Leadership: Problems",0001,LEC,3122,Th 5:00PM - 8:00PM,Merrill Hall 114,Richard H Ackerman,5/12/2011 - 5/12/2011,Sa 8:30AM - 2:30PM,Merrill Hall 114,Richard H Ackerman,5/21/2011 - 5/21/2011,Th 5:00PM - 8:00PM,Merrill Hall 114,Richard H Ackerman,5/26/2011 - 6/30/2011
+EAD,615,"The Principalship",0001,LEC,2936,MoTuWeTh 9:00AM - 12:00PM,Merrill Hall 330,Donald A Buckingham,7/11/2011 - 7/28/2011
+EAD,656,"Social and Ethical Foundations of Educational Leadership",0001,LEC,2937,Tu 4:30PM - 7:30PM,Merrill Hall 114,Sarah V Mackenzie,5/10/2011 - 6/28/2011
+EAD,658,"Advanced Leadership Studies in Education",0001,LEC,5088,TBA,TBA,Paul D Knowles,5/19/2011 - 7/30/2011
+ECE,209,"Fundamentals of Electric Circuits",0001,LEC,1519,MoTuWeThFr 9:15AM - 12:00PM,Barrows Hall 125,Duane Hanselman,5/9/2011 - 5/27/2011
+ECE,210,"Electrical Networks I",0001,LEC,1767,MoTuWeThFr 9:15AM - 12:00PM,Barrows Hall 125,Duane Hanselman,5/9/2011 - 5/27/2011
+ECE,394,"Electrical and Computer Engineering Practice",0001,FEX,1532,TBA,TBA,Bruce E Segee,5/9/2011 - 8/19/2011
+ECE,401,"Electrical and Computer Engineering Design Project",0001,LEC,1529,TBA,TBA,,5/9/2011 - 8/19/2011
+ECE,402,"Electrical and Computer Engineering Design Project",0001,LEC,1531,TBA,TBA,Andrew K Sheaff,5/9/2011 - 8/19/2011
+ECE,465,"Introduction to Sensors",0001,LEC,1520,TBA,TBA,John F Vetelino,6/6/2011 - 8/19/2011
+ECE,552,"Wave Propagation",0001,LEC,3130,TBA,TBA,John F Vetelino,6/6/2011 - 8/19/2011
+ECE,667,"Solid State Device Theory II",0001,LEC,3131,TBA,TBA,John F Vetelino,6/6/2011 - 8/19/2011
+ECE,699,"Graduate Thesis / Research",0001,THS,1525,TBA,TBA,John F Vetelino,5/9/2011 - 8/19/2011
+ECE,699,"Graduate Thesis / Research",0002,THS,1698,TBA,TBA,Yifeng Zhu,5/9/2011 - 8/19/2011
+ECE,699,"Graduate Thesis / Research",0003,THS,1702,TBA,TBA,Nuri W Emanetoglu,5/9/2011 - 8/19/2011
+ECE,699,"Graduate Thesis / Research",0004,THS,1699,TBA,TBA,Rosemary L Smith,5/9/2011 - 8/19/2011
+ECE,699,"Graduate Thesis / Research",0005,THS,1700,TBA,TBA,Mauricio Pereira Da Cunha,5/9/2011 - 8/19/2011
+ECE,699,"Graduate Thesis / Research",0006,THS,1701,TBA,TBA,Donald M Hummels,5/9/2011 - 8/19/2011
+ECO,100,"Intro to Economics",0990,LEC,1076,TBA,TBA,Todd M Gabe,5/9/2011 - 8/19/2011
+ECO,120,"Principles of Microeconomics",0001,LEC,3077,MoTuWeThFr 9:15AM - 12:00PM,Winslow Hall 201,James D Leiby,5/9/2011 - 5/27/2011
+ECO,120,"Principles of Microeconomics",0990,LEC,3083,TBA,TBA,Caroline Lundquist Noblet,5/9/2011 - 8/19/2011
+ECO,121,"Principles of Macroeconomics",0001,LEC,1506,MoTuWeThFr 9:15AM - 12:00PM,Hitchner Hall 203,Michael R Montgomery,5/9/2011 - 5/27/2011
+ECO,190,"World Food Supply",0990,LEC,5656,TBA,On-line Course,Aaron Kinyu Hoshide,5/9/2011 - 8/19/2011
+ECO,395,"Field Experience",0001,FEX,1507,TBA,TBA,Hsiang-Tai Cheng,5/9/2011 - 8/19/2011
+ECO,497,"Independent Studies",0001,IND,1676,TBA,TBA,George K Criner,5/9/2011 - 8/19/2011
+ECO,595,"Graduate Internship in Economics",0001,RSG,1731,TBA,TBA,George K Criner,5/9/2011 - 8/19/2011
+ECO,597,"Independent Studies",0001,IND,1674,TBA,TBA,Mario F Teisl,5/9/2011 - 8/19/2011
+ECO,699,"Graduate Thesis / Research",0001,THS,1510,TBA,TBA,Mario F Teisl,5/9/2011 - 8/19/2011
+EDB,202,"Education in a Multicultural Society",0001,LEC,1250,MoTuWeThFr 9:15AM - 12:00PM,Shibles Hall 313,Cheryl A Robertson,5/9/2011 - 5/27/2011
+EDB,204,"The Teaching Process",0001,LEC,1536,MoTuWeThFr 9:00AM - 12:00PM,Shibles Hall 202,Joan Ellen Staffiere,7/5/2011 - 7/22/2011
+EDB,221,"Educational Psychology",0990,LEC,2939,TBA,TBA,Sidney Mitchell,5/9/2011 - 5/27/2011
+EDC,524,"Curriculum and Organization of Middle Schools and Junior High Schools",0990,LEC,1074,TBA,TBA,Edward N Brazee,6/20/2011 - 7/15/2011
+EDC,533,"Dynamics of the Curriculum",0990,LEC,5089,TBA,TBA,Edward N Brazee,6/20/2011 - 7/31/2011
+EDG,498,"Problems in Education",0001,IND,5662,MoTuWeThFr 8:30AM - 11:30AM,Shibles Hall 201,Diane W Jackson,7/18/2011 - 7/29/2011
+EDG,657,"Education Practicum",0001,RSG,1533,TBA,TBA,Richard B Kent,5/9/2011 - 8/19/2011
+EDG,657,"Education Practicum",0002,RSG,1628,TBA,TBA,Robert A Lehnhard,5/9/2011 - 8/19/2011
+EDG,657,"Education Practicum",0003,RSG,5730,TBA,TBA,Abigail C Garthwait,5/9/2011 - 8/19/2011
+EDG,691,"Graduate Apprenticeship",0001,IND,1627,TBA,TBA,Robert A Lehnhard,5/9/2011 - 8/19/2011
+EDG,691,"Graduate Apprenticeship",0002,IND,5682,TBA,TBA,Stephen Butterfield,5/9/2011 - 8/19/2011
+EDH,501,"Social Context of Education",0001,LEC,5304,MoTuWeThFr 9:00AM - 12:15PM,Shibles Hall 316,John E Maddaus,7/11/2011 - 7/29/2011
+EDS,320,"Educational Assessment",0001,LEC,2940,MoTuWeThFr 9:00AM - 12:00PM,Merrill Hall 335,Sidney Mitchell,5/9/2011 - 5/27/2011
+EDS,521,"Statistical Methods in Education I",0990,LEC,1100,TBA,TBA,Brian E Doore,5/16/2011 - 7/22/2011
+EDS,569,"Seminar in Educational Leadership",0001,SEM,3228,Mo 5:00PM - 8:00PM,Merrill Hall 330,George F Marnik,5/9/2011 - 5/23/2011,Sa 8:30AM - 2:30PM,Merrill Hall 330,George F Marnik,6/4/2011 - 6/4/2011,MoTh 5:00PM - 8:00PM,Merrill Hall 330,George F Marnik,6/13/2011 - 6/20/2011,Mo 8:30AM - 2:30PM,Merrill Hall 330,George F Marnik,6/27/2011 - 6/27/2011
+EDS,569,"Seminar in Educational Leadership",0002,SEM,3230,Mo 5:00PM - 8:00PM,Merrill Hall 335,Sarah V Mackenzie,5/9/2011 - 5/23/2011,Sa 8:30AM - 2:30PM,Merrill Hall 335,Sarah V Mackenzie,6/4/2011 - 6/4/2011,MoTh 5:00PM - 8:00PM,Merrill Hall 335,Sarah V Mackenzie,6/13/2011 - 6/20/2011,Mo 8:30AM - 2:30PM,Arranged,Sarah V Mackenzie,6/27/2011 - 6/27/2011
+EDS,569,"Seminar in Educational Leadership",0003,SEM,3231,TBA,Arranged,George F Marnik,5/10/2011 - 6/28/2011
+EDS,699,"Graduate Thesis / Research",0001,THS,1635,TBA,TBA,Abigail C Garthwait,5/9/2011 - 8/19/2011
+EDS,699,"Graduate Thesis / Research",0002,THS,1639,TBA,TBA,Robert A Lehnhard,5/9/2011 - 8/19/2011
+EDS,699,"Graduate Thesis / Research",0003,THS,1644,TBA,TBA,Sarah V Mackenzie,5/9/2011 - 8/19/2011
+EDS,699,"Graduate Thesis / Research",0004,THS,1675,TBA,TBA,George F Marnik,5/9/2011 - 8/19/2011
+EDS,699,"Graduate Thesis / Research",0005,THS,1687,TBA,TBA,Elizabeth J Allan,5/9/2011 - 8/19/2011
+EDS,699,"Graduate Thesis / Research",0006,THS,1805,TBA,TBA,Susan K Gardner,5/9/2011 - 8/19/2011
+EDT,520,"Methods of Teaching with Computer Technology",0990,LEC,1101,TBA,On-line Course,Jason K Baack,6/20/2011 - 7/30/2011
+EDT,527,"Networking and Troubleshooting Basics for Educators",0869,LEC,3094,Tu 5:00PM - 7:30PM,Shibles Hall 35,Jason K Baack,6/14/2011 - 8/6/2011,TBA,On-line Course,Jason K Baack,6/14/2011 - 8/6/2011
+EDT,550,"Video Communication in the 21st Century",0990,LEC,3075,TBA,On-line Course,Jason K Baack,7/6/2011 - 8/20/2011
+EDT,560,"Applying Technology to Assessment in Education",0990,LEC,3074,TBA,TBA,Abigail C Garthwait,6/13/2011 - 8/5/2011
+EDT,580,"Instructional Technology Institute",0665,LEC,1019,MoTuWeThFr 8:00AM - 4:30PM,Fred Hutchinson Center,Abigail C Garthwait,6/20/2011 - 6/24/2011
+EDT,598,"Special Topics in Instructional Technology",0990,IND,3076,TBA,On-line Course,Abigail C Garthwait,6/13/2011 - 8/5/2011
+EDU,580,"Educational Institute (Activity)",0001,LEC,1530,Sa 8:30AM - 4:00PM,Shibles Hall 204,Kenneth H Martin,5/14/2011 - 5/14/2011,TuWeThFr 8:30AM - 4:00PM,Shibles Hall 204,Kenneth H Martin,6/28/2011 - 7/1/2011,TuWeThFr 8:30AM - 4:00PM,Shibles Hall 204,Kenneth H Martin,7/5/2011 - 7/8/2011,MoTuWeThFr 8:30AM - 4:00PM,Shibles Hall 204,Kenneth H Martin,7/11/2011 - 7/15/2011,MoTuWeThFr 8:30AM - 4:00PM,Shibles Hall 204,Kenneth H Martin,7/18/2011 - 7/22/2011,Fr 8:30AM - 4:00PM,Arranged,Kenneth H Martin,9/30/2011 - 9/30/2011
+EDU,580,"Educational Institute (Activity)",0002,LEC,3086,MoTuWeThFr 8:30AM - 4:30PM,Shibles Hall 320,,7/11/2011 - 7/15/2011
+EDU,590,"Topics in Education",0001,LEC,5127,MoTuWeThFr 8:00AM - 4:00PM,Arranged,Gertrude Nesin,6/27/2011 - 7/1/2011
+EDU,590,"Topics in Education",0002,LEC,5128,MoTuWeThFr 9:00AM - 1:00PM,Arranged,Maryellen Mahoney-O'Neil,8/8/2011 - 8/19/2011
+EDU,590,"Topics in Education",0003,LEC,5130,TBA,On-line Course,David Charles Boardman,6/27/2011 - 8/15/2011
+EDU,590,"Topics in Education",0004,LEC,5131,MoTuWeTh 4:00PM - 8:00PM,On-line Course,Deborah Rooks,8/1/2011 - 8/19/2011
+EDU,590,"Topics in Education",0005,LEC,5661,MoTuWeThFr 9:00AM - 4:00PM,Lengyel Hall 125,Stephen Butterfield,7/18/2011 - 7/22/2011
+EDU,590,"Topics in Education",0665,LEC,5126,MoTuWeThFr 8:00AM - 4:30PM,Fred Hutchinson Center,Abigail C Garthwait,6/20/2011 - 6/24/2011
+EDW,462,"Workshop in Elementary Education (Activity)",0665,LEC,3533,MoTuWeThFr 8:00AM - 5:00PM,Fred Hutchinson Center,Staff,7/11/2011 - 7/22/2011
+EDW,472,"Workshop in Secondary Education (Activity)",0665,LEC,3534,MoTuWeThFr 8:00AM - 5:00PM,Fred Hutchinson Center,Staff,7/11/2011 - 7/22/2011
+EEL,534,"Language and Literacy Acquisition for Young Children: Birth to 8",0001,LEC,2960,TuTh 4:30PM - 8:30PM,Shibles Hall 201,Victoria S Bennett-Armistead,5/10/2011 - 6/9/2011
+EES,396,"Field Experience in Ecology and Environmental Sciences",0001,FEX,1502,TBA,TBA,Mark W Anderson,5/9/2011 - 8/19/2011
+EES,497,"Independent Studies in Ecology and Environmental Sciences",0001,IND,1503,TBA,TBA,Mark W Anderson,5/9/2011 - 8/19/2011
+EES,590,"Special Topics in Ecology and Environmental Science",0001,IND,1504,TBA,TBA,Christopher S Cronan,5/9/2011 - 8/19/2011
+EES,699,"Graduate Thesis / Research",0001,THS,1505,TBA,TBA,Christopher S Cronan,5/9/2011 - 8/19/2011
+EET,394,"Electrical Engineering Technology Practice",0001,RSG,1242,TBA,TBA,John W Allen,5/9/2011 - 8/19/2011
+EET,498,"Selected Topics in Electrical Engineering Technology",0001,IND,1243,TBA,TBA,Judith Ellen Pearse,5/9/2011 - 8/19/2011
+ELL,470,"Methods of Teaching English as a Second Language",0665,LEC,3142,MoTuWeThFr 9:00AM - 4:30PM,Fred Hutchinson Center,Nives Dalbo-Wheeler,6/27/2011 - 7/1/2011
+ELL,475,"Curriculum Development in English as a Second Language/English as a Foreign Language Contexts",0001,LEC,3120,MoTuWeThFr 8:30AM - 4:30PM,Shibles Hall 313,Jean Leighton Mileham,8/8/2011 - 8/12/2011
+ELL,480,"Testing and Assessment in English as a Second Language/English as a Foreign Language Contexts",0001,LEC,3121,MoTuWeThFr 8:30AM - 4:30PM,Shibles Hall 320,Jean Leighton Mileham,8/15/2011 - 8/19/2011
+ELL,485,"Applied Linguistics/Second Language Acquisition Principles for English as a Second Language/English",0001,LEC,3119,MoTuWeThFr 8:30AM - 4:30PM,Arranged,Staff,8/1/2011 - 8/5/2011
+ELL,491,"Multiculturalism and Diversity for ESL/EFL Contexts",0001,LEC,3115,MoTuWeThFr 9:15AM - 12:00PM,Lord Hall 200,John B Mitchell,5/9/2011 - 5/27/2011
+ELL,491,"Multiculturalism and Diversity for ESL/EFL Contexts",0002,LEC,3118,MoTuWeThFr 8:30AM - 4:30PM,Lord Hall 200,John B Mitchell,7/18/2011 - 7/22/2011
+ELL,570,"Methods of Teaching English as a Second Language",0665,LEC,3143,MoTuWeThFr 9:00AM - 4:30PM,Fred Hutchinson Center,Nives Dalbo-Wheeler,6/27/2011 - 7/1/2011
+ELL,575,"Curriculum and Development in English as a Second Language (ESL) Context",0001,LEC,5856,MoTuWeThFr 8:30AM - 4:30PM,Shibles Hall 313,Jean Leighton Mileham,8/8/2011 - 8/12/2011
+ELL,580,"Testing and Assessment in English as a Second Language (ESL) Context",0001,LEC,5239,MoTuWeThFr 8:30AM - 4:30PM,Shibles Hall 320,Jean Leighton Mileham,8/15/2011 - 8/19/2011
+ELL,580,"Testing and Assessment in English as a Second Language (ESL) Context",0001,LEC,5887,MoTuWeThFr 8:30AM - 4:30PM,Shibles Hall 320,Jean Leighton Mileham,8/15/2011 - 8/19/2011
+ELL,585,"Applied Linguistics and Second Language Acquisition Principles for ESL/EFL",0001,LEC,5240,MoTuWeThFr 8:30AM - 4:30PM,Arranged,Staff,8/1/2011 - 8/5/2011
+ELL,591,"Multiculturalism and Diversity for English as a Second Language (ESL) Contexts",0001,LEC,5857,MoTuWeThFr 9:15AM - 12:00PM,Lord Hall 200,John B Mitchell,5/9/2011 - 5/27/2011
+ELL,591,"Multiculturalism and Diversity for English as a Second Language (ESL) Contexts",0002,LEC,5859,MoTuWeThFr 8:30AM - 4:30PM,Lord Hall 200,John B Mitchell,7/18/2011 - 7/22/2011
+ENG,101,"College Composition",0001,LEC,1849,MoTuWeThFr 9:15AM - 12:00PM,Barrows Hall 124,Travis G Baker,5/9/2011 - 5/27/2011
+ENG,101,"College Composition",0665,LEC,1015,TuTh 5:00PM - 9:00PM,Fred Hutchinson Center,Staff,5/31/2011 - 6/30/2011
+ENG,101,"College Composition",0990,LEC,1072,TBA,TBA,Alan P Marks,5/31/2011 - 7/22/2011
+ENG,129,"Topics in English",0990,LEC,1089,TBA,TBA,Audrey Leigh Minutolo,7/11/2011 - 8/19/2011
+ENG,129,"Topics in English",0991,LEC,3173,TBA,TBA,Alan P Marks,6/13/2011 - 8/5/2011
+ENG,205,"An Introduction to Creative Writing",0001,LEC,1185,MoTuWeThFr 9:15AM - 12:00PM,Stevens Hall North 117,Bruce E Pratt,5/9/2011 - 5/27/2011
+ENG,205,"An Introduction to Creative Writing",0669,LEC,1028,MoWe 12:00PM - 5:00PM,Fred Hutchinson Center,Judy L G Williams,7/6/2011 - 7/27/2011
+ENG,205,"An Introduction to Creative Writing",0869,LEC,3245,MoWe 12:00PM - 5:00PM,Barrows Hall 126,Judy L G Williams,7/6/2011 - 7/27/2011
+ENG,212,"Persuasive and Analytical Writing",0001,LEC,1732,TuTh 5:30PM - 8:30PM,Neville Hall 406,Irene C Jackson,5/31/2011 - 7/7/2011
+ENG,212,"Persuasive and Analytical Writing",0669,LEC,3246,MoWeFr 8:00AM - 12:00PM,Fred Hutchinson Center,Staff,5/9/2011 - 5/27/2011
+ENG,212,"Persuasive and Analytical Writing",0869,LEC,4289,MoWeFr 8:00AM - 12:00PM,Neville Hall 208,Mary A Larlee,5/9/2011 - 5/27/2011
+ENG,229,"Topics in Literature",0990,LEC,1091,TBA,On-line Course,Audrey Leigh Minutolo,5/31/2011 - 7/8/2011
+ENG,229,"Topics in Literature",0991,LEC,1092,TBA,TBA,Alan P Marks,6/13/2011 - 8/5/2011
+ENG,237,"Coming of Age in America",0001,LEC,3247,MoTuWeThFr 9:15AM - 12:00PM,Stevens Hall 365,James J Bishop,5/9/2011 - 5/27/2011
+ENG,243,"Topics in Multicultural Literature",0669,IND,3248,TuTh 5:00PM - 9:00PM,Fred Hutchinson Center,Sarah J Ruddy,7/5/2011 - 8/4/2011
+ENG,243,"Topics in Multicultural Literature",0869,IND,4298,TuTh 5:00PM - 9:00PM,Hitchner Hall 147,Sarah J Ruddy,7/5/2011 - 8/4/2011
+ENG,245,"American Short Fiction",0990,LEC,1043,TBA,TBA,Murray T Callaway,5/9/2011 - 6/17/2011
+ENG,317,"Business and Technical Writing",0001,LEC,1184,MoTuWeThFr 9:15AM - 12:00PM,Neville Hall 406,Kathleen Ellis,5/9/2011 - 5/27/2011
+ENG,317,"Business and Technical Writing",0002,LEC,1216,MoWeFr 8:00AM - 12:00PM,Neville Hall 204,Leon Raikes,6/13/2011 - 7/8/2011
+ENG,317,"Business and Technical Writing",0990,LEC,1039,TBA,TBA,Jane Beecher,7/11/2011 - 8/19/2011
+ENG,317,"Business and Technical Writing",0991,LEC,1038,TBA,TBA,Murray T Callaway,5/16/2011 - 6/24/2011
+ENG,429,"Topics in Literature",0001,LEC,1757,MoTuWeThFr 1:15PM - 4:00PM,Neville Hall 227,William Yellow Robe,5/9/2011 - 5/27/2011
+ENG,429,"Topics in Literature",0990,LEC,3249,TBA,On-line Course,Judith Hakola,7/11/2011 - 8/19/2011
+ENG,429,"Topics in Literature",0991,LEC,4299,TBA,TBA,John R Wilson,5/9/2011 - 8/19/2011
+ENG,470,"Topics in Literary Theory and Criticism",0001,IND,3252,MoTh 12:00PM - 3:15PM,Neville Hall 406,Dylan Dryer,6/2/2011 - 8/8/2011
+ENG,480,"Topics in Film",0665,LEC,1194,TuTh 5:00PM - 9:00PM,Fred Hutchinson Center,Sanford E Phippen,5/31/2011 - 6/30/2011
+ENG,496,"Field Experience in Professional Writing",0001,FEX,1614,TBA,Arranged,Scott D Peterson,5/9/2011 - 8/19/2011
+ENG,499,"Capstone Experience in English",0001,LEC,1534,TBA,TBA,Naomi Jacobs,5/9/2011 - 8/19/2011
+ENG,529,"Studies in Literature",0001,LEC,1733,TuTh 6:00PM - 9:00PM,Neville Hall 406,Robert A Brinkley,7/12/2011 - 8/18/2011
+ENG,570,"Critical Theory",0001,LEC,3253,MoTh 12:00PM - 3:15PM,Neville Hall 406,Dylan Dryer,6/2/2011 - 8/8/2011
+ENG,699,"Graduate Thesis / Research",0001,THS,1543,TBA,TBA,Steven R Evans,5/9/2011 - 8/19/2011
+EPY,521,"Educational Psychology (Masters)",0001,SEM,1770,MoTuWeThFr 9:00AM - 12:15PM,Shibles Hall 311,Sidney Mitchell,6/1/2011 - 6/17/2011
+ERL,535,"Current Practices in Reading",0001,LEC,2959,MoWe 4:30PM - 8:30PM,Merrill 228A,Victoria S Bennett-Armistead,5/9/2011 - 6/8/2011
+ERL,538,"Current Practices in Vocabulary Teaching and Learning",0001,LEC,2961,TuWeTh 8:00AM - 1:00PM,Shibles Hall 216,Jane W Wellman-Little,6/21/2011 - 6/23/2011,TuWeTh 8:00AM - 1:00PM,Shibles Hall 216,Jane W Wellman-Little,6/28/2011 - 6/30/2011,TuWeTh 8:00AM - 1:00PM,Shibles Hall 216,Jane W Wellman-Little,7/5/2011 - 7/7/2011
+ERL,539,"Current Theories and Practices in Reading Comprehension",0001,LEC,2963,TuWeTh 8:00AM - 1:00PM,Shibles Hall 216,Jane W Wellman-Little,7/12/2011 - 7/14/2011,TuWeTh 8:00AM - 1:00PM,Shibles Hall 216,Jane W Wellman-Little,7/19/2011 - 7/21/2011,TuWeTh 8:00AM - 1:00PM,Shibles Hall 216,Jane W Wellman-Little,7/26/2011 - 7/28/2011
+ERL,590,"Special Topics in English Language Arts and Related Fields",0001,IND,3085,MoTuWeThFr 8:30AM - 4:00PM,Shibles Hall 313,Staff,8/1/2011 - 8/5/2011
+ERL,590,"Special Topics in English Language Arts and Related Fields",0665,IND,5472,MoWe 4:30PM - 8:30PM,Fred Hutchinson Center,Julie M Dellamattera,5/9/2011 - 6/8/2011
+ERS,101,"Introduction to Geology",0001,LEC,1130,MoTuWeTh 9:15AM - 10:30AM,Merrill Hall 114,Daniel R Lux,7/11/2011 - 8/18/2011
+ERS,101,"Introduction to Geology",1001,LAB,1131,We 11:00AM - 1:00PM,Bryand Global Science Cen 101,Daniel R Lux,7/13/2011 - 8/17/2011
+ERS,103,"Dynamic Earth",0990,LEC,1030,TBA,On-line Course,Scott E Johnson,5/9/2011 - 5/27/2011
+ERS,699,"Graduate Thesis / Research",0001,THS,1625,TBA,TBA,Joseph T Kelley,5/9/2011 - 8/19/2011
+FAS,329,"Topics in Franco American Studies",0001,IND,3181,MoTuWeTh 9:00AM - 12:00PM,Donald P Corbett Business 111,Susan Ann Pinette,5/16/2011 - 5/19/2011,Fr 8:00AM - 5:00PM,Donald P Corbett Business 111,Susan Ann Pinette,5/20/2011 - 5/20/2011,Sa 8:00AM - 5:00PM,Little Hall 215,Susan Ann Pinette,5/21/2011 - 5/21/2011,Su 8:00AM - 5:00PM,Little Hall 215,Susan Ann Pinette,5/22/2011 - 5/22/2011
+FES,345,"Special Problems",0001,IND,1574,TBA,TBA,William H Livingston,5/9/2011 - 8/19/2011
+FES,607,"Silviculture Problems",0001,IND,1575,TBA,TBA,Robert S Seymour,5/9/2011 - 8/19/2011
+FES,615,"Forest Biology Problems",0001,IND,1576,TBA,TBA,William H Livingston,5/9/2011 - 8/19/2011
+FES,615,"Forest Biology Problems",0002,IND,1577,TBA,TBA,Alan S White,5/9/2011 - 8/19/2011
+FES,699,"Graduate Thesis / Research",0001,THS,1578,TBA,TBA,Alan S White,5/9/2011 - 8/19/2011
+FRE,397,"French (May Term)",0870,LEC,5319,TBA,TBA,Jane S Smith,5/9/2011 - 5/22/2011
+FRE,490,"Advanced Topics in French",0004,IND,1863,TBA,TBA,Raymond J Pelletier,5/9/2011 - 8/19/2011
+FRE,490,"Advanced Topics in French",0665,IND,3312,MoTuWeThFr 9:00AM - 2:30PM,Fred Hutchinson Center,Staff,7/5/2011 - 7/15/2011
+FRE,490,"Advanced Topics in French",0990,IND,1121,TBA,TBA,Nancy K Erickson,6/1/2011 - 8/19/2011
+FRE,598,"Projects in French II",0665,IND,3314,MoTuWeThFr 9:00AM - 2:30PM,Fred Hutchinson Center,Staff,7/5/2011 - 7/15/2011
+FRE,598,"Projects in French II",0990,IND,1120,TBA,TBA,Nancy K Erickson,6/1/2011 - 8/19/2011
+FSC,345,"Special Problems",0001,IND,1569,TBA,TBA,Robert W Rice,5/9/2011 - 8/19/2011
+FSC,394,"Cooperative Education",0001,FEX,1570,TBA,TBA,Robert W Rice,5/9/2011 - 8/19/2011
+FSC,395,"Internship",0001,RSG,1571,TBA,TBA,Robert W Rice,5/9/2011 - 8/19/2011
+FSC,396,"Field Experience",0001,FEX,1572,TBA,TBA,Robert W Rice,5/9/2011 - 8/19/2011
+FSC,699,"Graduate Thesis / Research",0001,THS,1573,TBA,TBA,Alan S White,5/9/2011 - 8/19/2011
+FSN,101,"Introduction to Food and Nutrition",0001,LEC,1158,MoTuWeThFr 9:00AM - 10:15AM,Murray Hall 106,Katherine O Musgrave,5/31/2011 - 7/8/2011
+FSN,115,"Vtrim Behavioral Weight Management",0990,SEM,3126,Mo 6:00PM - 7:00PM,On-line Course,Douglas Roger Mathews,5/9/2011 - 8/19/2011
+FSN,115,"Vtrim Behavioral Weight Management",0991,SEM,3127,We 6:00PM - 7:00PM,On-line Course,Douglas Roger Mathews,5/9/2011 - 8/19/2011
+FSN,230,"Nutritional and Medical Terminology",0990,LEC,1034,TBA,TBA,Mary E Camire,5/9/2011 - 8/19/2011
+FSN,270,"World Food and Nutrition",0990,LEC,1029,TBA,TBA,Richard A Cook,5/9/2011 - 5/27/2011
+FSN,301,"Life Cycle Nutrition",0001,LEC,3129,MoTuWeThFr 9:00AM - 10:30AM,Hitchner Hall 203,Kathryn Graham Logan Yerxa,5/31/2011 - 7/1/2011
+FSN,396,"Field Experience in Food Science and Human Nutrition",0001,FEX,1162,TBA,TBA,Alfred A Bushway,5/9/2011 - 8/19/2011
+FSN,397,"Independent Studies",0003,IND,1163,TBA,TBA,Adrienne A White,5/9/2011 - 8/19/2011
+FSN,489,"Senior Project in Food Science and Human Nutrition",0001,IND,1157,TBA,TBA,Alfred A Bushway,5/9/2011 - 8/19/2011
+FSN,508,"Nutrition and Aging",0990,LEC,3489,TBA,TBA,Mary E Camire,5/31/2011 - 7/22/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0002,IND,1164,TBA,TBA,Adrienne A White,5/9/2011 - 8/19/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0004,IND,1165,TBA,TBA,Susan S Sullivan,5/9/2011 - 8/19/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0005,IND,1166,TBA,TBA,Vivian Chi-Hua Wu,5/9/2011 - 8/19/2011
+FSN,581,"Problems in Food Science and Human Nutrition",0006,IND,3834,TBA,TBA,Dorothy J Klimis,5/9/2011 - 8/19/2011
+FSN,681,"Dietetic Supervised Practice",0001,RSG,1167,TBA,TBA,Adrienne A White,5/9/2011 - 8/19/2011
+FSN,699,"Graduate Thesis / Research",0001,THS,1168,TBA,TBA,Alfred A Bushway,5/9/2011 - 8/19/2011
+FSN,699,"Graduate Thesis / Research",0002,THS,1169,TBA,TBA,Rodney J Bushway,5/9/2011 - 8/19/2011
+FSN,699,"Graduate Thesis / Research",0003,THS,5878,TBA,TBA,Lewis B Perkins,5/9/2011 - 8/19/2011
+FSN,699,"Graduate Thesis / Research",0004,THS,1170,TBA,TBA,Mary E Camire,5/9/2011 - 8/19/2011
+FSN,699,"Graduate Thesis / Research",0006,THS,1172,TBA,TBA,Dorothy J Klimis,5/9/2011 - 8/19/2011
+FSN,699,"Graduate Thesis / Research",0007,THS,1173,TBA,TBA,Adrienne A White,5/9/2011 - 8/19/2011
+FTY,241,"Field Practice in Forest Management",0001,FEX,1579,MoTuWeThFr 7:30AM - 5:00PM,Deering Hall 113,Louis Morin,5/9/2011 - 5/27/2011
+FTY,345,"Special Problems",0001,IND,1580,TBA,TBA,Jeremy S Wilson,5/9/2011 - 8/19/2011
+FTY,345,"Special Problems",0870,IND,3487,MoTuWeThFr 8:00AM - 4:00PM,Arranged,Robert J. Lilieholm,7/11/2011 - 8/24/2011
+FTY,394,"Cooperative Education",0001,RSG,1581,TBA,TBA,Jeremy S Wilson,5/9/2011 - 8/19/2011
+FTY,396,"Field Experience",0001,FEX,1582,TBA,TBA,Jeremy S Wilson,5/9/2011 - 8/19/2011
+FTY,601,"Forest Mensuration Problems",0001,IND,1583,TBA,TBA,Aaron R Weiskittel,5/9/2011 - 8/19/2011
+FTY,603,"Forest Management Problems",0001,IND,1584,TBA,TBA,Jeremy S Wilson,5/9/2011 - 8/19/2011
+FTY,609,"Remote Sensing Problems",0001,IND,1585,TBA,TBA,Steven A Sader,5/9/2011 - 8/19/2011
+FTY,611,"Research Problems in Forest Economics",0001,RSG,1586,TBA,TBA,Robert J. Lilieholm,5/9/2011 - 8/19/2011
+FTY,617,"Forest Policy Problems",0001,IND,1587,TBA,TBA,Robert J. Lilieholm,5/9/2011 - 8/19/2011
+FTY,617,"Forest Policy Problems",0870,IND,3488,MoTuWeThFr 8:00AM - 4:00PM,Arranged,Robert J. Lilieholm,7/11/2011 - 8/24/2011
+FTY,690,"Master of Forestry Project",0001,LEC,1588,TBA,TBA,Jeremy S Wilson,5/9/2011 - 8/19/2011
+FTY,699,"Graduate Thesis / Research",0001,THS,1589,TBA,TBA,Alan S White,5/9/2011 - 8/19/2011
+GEO,100,"World Geography",0990,LEC,1079,TBA,On-line Course,Samuel Hanes,5/11/2011 - 5/29/2011
+GEO,210,"Geography of Maine",0990,LEC,1032,TBA,On-line Course,Samuel Hanes,5/31/2011 - 7/8/2011
+HED,598,"Special Topics in Higher Education",0001,LEC,3092,TuTh 5:00PM - 8:00PM,Shibles Hall 11,Susan K Gardner,6/7/2011 - 7/7/2011
+HED,598,"Special Topics in Higher Education",0002,LEC,3132,TuTh 2:00PM - 6:00PM,Merrill Hall 335,Staff,5/10/2011 - 6/9/2011
+HED,690,"Higher Education Internship",0990,RSG,3091,TBA,TBA,Elizabeth J Allan,6/21/2011 - 8/9/2011
+HED,697,"Independent Study in Higher Education",0001,IND,5893,TBA,TBA,Susan K Gardner,5/9/2011 - 8/19/2011
+HON,190,"Honors Summer Readings: Basic",0001,IND,1399,TBA,TBA,Staff,TBA
+HON,290,"Honors Summer Readings: Intermediate",0001,IND,1400,TBA,TBA,Staff,TBA
+HON,396,"Honors Independent Study",0001,IND,1401,TBA,TBA,Staff,TBA
+HON,397,"Honors Specialized Study",0001,IND,1402,TBA,TBA,Staff,TBA
+HON,398,"Honors Independent Research",0001,IND,1403,TBA,TBA,Staff,TBA
+HON,498,"Honors Directed Study",0001,IND,1404,TBA,TBA,Staff,TBA
+HON,498,"Honors Directed Study",0002,IND,1405,TBA,TBA,Staff,TBA
+HON,498,"Honors Directed Study",0003,IND,1406,TBA,TBA,Staff,TBA
+HON,498,"Honors Directed Study",0004,IND,1407,TBA,TBA,Staff,TBA
+HON,498,"Honors Directed Study",0005,IND,1408,TBA,TBA,Staff,TBA
+HON,498,"Honors Directed Study",0006,IND,1409,TBA,TBA,Staff,TBA
+HON,499,"Honors Thesis",0001,IND,1433,TBA,TBA,Staff,TBA
+HON,499,"Honors Thesis",0002,IND,1434,TBA,TBA,Staff,TBA
+HON,499,"Honors Thesis",0003,IND,1435,TBA,TBA,Staff,TBA
+HON,499,"Honors Thesis",0004,IND,1436,TBA,TBA,Staff,TBA
+HON,499,"Honors Thesis",0005,IND,1437,TBA,TBA,Staff,TBA
+HON,499,"Honors Thesis",0006,IND,1438,TBA,TBA,Staff,TBA
+HTY,104,"United States History II",0001,LEC,3137,MoTuWeThFr 9:15AM - 12:00PM,Stevens Hall 155,Katherine M O'Flaherty,5/9/2011 - 5/27/2011
+HTY,105,"History of European Civilization I",0990,LEC,1081,TBA,TBA,Paulette E Barton,5/31/2011 - 7/1/2011
+HTY,106,"History of European Civilization II",0990,LEC,3138,TBA,TBA,Paulette E Barton,7/5/2011 - 8/5/2011
+HTY,464,"America at the Crossroads: The Era of Civil War Reconstruction 1840",0001,LEC,3139,MoTuWeThFr 1:15PM - 4:00PM,Stevens Hall 155,Staff,5/9/2011 - 5/27/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0001,IND,1228,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0002,IND,1229,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0003,IND,1230,TBA,TBA,Staff,TBA
+HTY,550,"Readings in Bibliography and Criticism in:",0004,IND,1231,TBA,TBA,Jacques Ferland,5/9/2011 - 8/19/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0005,IND,1232,TBA,TBA,Stephen Miller,5/9/2011 - 8/19/2011
+HTY,550,"Readings in Bibliography and Criticism in:",0006,IND,1233,TBA,TBA,Vinh-Long Ngo,5/9/2011 - 8/19/2011
+HTY,597,"Field Work in Historical Institutions",0001,FEX,1234,TBA,TBA,Staff,TBA
+HTY,699,"Graduate Thesis / Research",0001,THS,1235,TBA,TBA,Jacques Ferland,5/9/2011 - 8/19/2011
+HUD,601,"Supervised Fieldwork in Child Development and Family Relations",0001,FEX,1386,TBA,TBA,Sandra L Caron,5/9/2011 - 8/19/2011
+HUD,649,"Investigation of Special Topics",0001,IND,1387,TBA,TBA,Sandra L Caron,5/9/2011 - 8/19/2011
+HUD,699,"Graduate Thesis / Research",0001,THS,1388,TBA,TBA,Sandra L Caron,5/9/2011 - 8/19/2011
+IEI,,"10",0001,LEC,1293,MoTuWeTh 8:00AM - 8:50AM,Arranged,Kristopher B McClure,6/6/2011 - 7/1/2011
+IEI,,"10",0002,LEC,5120,MoTuWeTh 9:00AM - 9:50AM,Arranged,Erin-Kate Sousa,6/6/2011 - 7/1/2011
+IEI,,"10",0003,LEC,5121,MoTuWeTh 10:00AM - 10:50AM,Arranged,Jean Leighton Mileham,6/6/2011 - 7/1/2011
+IEI,,"10",0004,LEC,5122,MoTuWeTh 12:10PM - 1:00PM,Arranged,Christopher A Mares,6/6/2011 - 7/1/2011
+IEI,,"10",0011,LEC,1294,MoTuWeTh 8:00AM - 8:50AM,Arranged,Kristopher B McClure,7/11/2011 - 8/5/2011
+IEI,,"10",0012,LEC,5123,MoTuWeTh 9:00AM - 9:50AM,Arranged,Erin-Kate Sousa,6/6/2011 - 7/1/2011
+IEI,,"13",0001,LEC,1356,MoTuWeTh 8:00AM - 8:50AM,Arranged,Jean Leighton Mileham,6/6/2011 - 7/1/2011
+IEI,,"13",0002,LEC,1303,MoTuWeTh 9:00AM - 9:50AM,Arranged,Christopher A Mares,6/6/2011 - 7/1/2011
+IEI,,"13",0003,LEC,1314,MoTuWeTh 10:00AM - 10:50AM,Arranged,Jean Leighton Mileham,6/6/2011 - 7/1/2011
+IEI,,"13",0004,LEC,1316,MoTuWeTh 12:10PM - 1:00PM,Arranged,Erin-Kate Sousa,6/6/2011 - 7/1/2011
+IEI,,"13",0011,LEC,1357,MoTuWeTh 8:00AM - 8:50AM,Arranged,Jean Leighton Mileham,7/11/2011 - 8/5/2011
+IEI,,"13",0012,LEC,1304,MoTuWeTh 9:00AM - 9:50AM,Arranged,Christopher A Mares,7/11/2011 - 8/5/2011
+IEI,,"14",0001,LEC,1312,MoTuWeTh 8:00AM - 8:50AM,Arranged,Kristopher B McClure,6/6/2011 - 7/1/2011
+IEI,,"14",0002,LEC,1307,MoTuWeTh 9:00AM - 9:50AM,Arranged,Erin-Kate Sousa,6/6/2011 - 7/1/2011
+IEI,,"14",0003,LEC,1373,MoTuWeTh 10:00AM - 10:50AM,Arranged,Jean Leighton Mileham,6/6/2011 - 7/1/2011
+IEI,,"14",0004,LEC,1354,MoTuWeTh 12:10PM - 1:00PM,Arranged,Erin-Kate Sousa,6/6/2011 - 7/1/2011
+IEI,,"14",0011,LEC,1313,MoTuWeTh 8:00AM - 8:50AM,Arranged,Kristopher B McClure,6/6/2011 - 7/1/2011
+IEI,,"14",0012,LEC,1308,MoTuWeTh 9:00AM - 9:50AM,Arranged,Erin-Kate Sousa,7/11/2011 - 8/5/2011
+IEI,,"19",0001,IND,1397,MoTuWeTh 1:10PM - 2:00PM,Arranged,,6/6/2011 - 7/1/2011
+IEI,,"19",0011,IND,1398,MoTuWeTh 1:10PM - 2:00PM,Arranged,,7/11/2011 - 8/5/2011
+IEI,,"20",0001,LEC,1301,MoTuWeTh 8:00AM - 8:50AM,Arranged,Erin-Kate Sousa,6/6/2011 - 7/1/2011
+IEI,,"20",0002,LEC,5113,MoTuWeTh 9:00AM - 9:50AM,Arranged,Kristopher B McClure,6/6/2011 - 7/1/2011
+IEI,,"20",0003,LEC,5116,MoTuWeTh 10:00AM - 10:50AM,Arranged,Christopher A Mares,6/6/2011 - 7/1/2011
+IEI,,"20",0004,LEC,5117,MoTuWeTh 12:10PM - 1:00PM,Arranged,Jean Leighton Mileham,6/6/2011 - 7/1/2011
+IEI,,"20",0011,LEC,1302,MoTuWeTh 8:00AM - 8:50AM,Arranged,Erin-Kate Sousa,7/11/2011 - 8/5/2011
+IEI,,"20",0012,LEC,5114,MoTuWeTh 9:00AM - 9:50AM,Arranged,Kristopher B McClure,7/11/2011 - 8/5/2011
+IMD,520,"Topics in Media Production",0001,STU,1623,TBA,TBA,Leon Johnson,5/9/2011 - 8/19/2011
+IMD,530,"Topics in Technical Development",0002,STU,1723,MoTuWeThFr 9:00AM - 5:00PM,Lengyel Hall 121,Sheridan L Kelley,8/15/2011 - 8/19/2011
+IMD,570,"Intermedia Studio Critique I",0001,STU,1684,TBA,TBA,Owen F Smith,5/9/2011 - 8/19/2011
+IMD,571,"Intermedia Studio Critique II",0001,STU,1776,TBA,TBA,Owen F Smith,5/9/2011 - 8/19/2011
+IMD,572,"Intermedia Studio Critique III",0001,STU,1777,TBA,TBA,Owen F Smith,5/9/2011 - 8/19/2011
+IMD,597,"Independent Study in Intermedia",0001,IND,1778,TBA,TBA,Leon Johnson,5/9/2011 - 8/19/2011
+IMD,650,"Field Study and Research",0990,FEX,1123,TBA,TBA,Owen F Smith,5/9/2011 - 8/19/2011
+IMD,670,"Without Borders Exhibition",0001,LAB,1779,TBA,TBA,Owen F Smith,5/9/2011 - 8/19/2011
+IMD,699,"Graduate Thesis / Research",0001,THS,1780,TBA,TBA,Owen F Smith,5/9/2011 - 8/19/2011
+INA,201,"Topics in International Affairs",0990,LEC,1058,TBA,On-line Course,Mark R Hibben,5/9/2011 - 5/27/2011
+IND,699,"Graduate Thesis / Research",0001,THS,1622,TBA,TBA,Amaranta Ruiz-Nelson,5/9/2011 - 8/19/2011
+INT,196,"(University Wide) Academic and Career Exploration Internship",0002,RSG,1802,TBA,TBA,Patricia B Counihan,5/9/2011 - 8/19/2011
+INT,398,"(CHB",0001,IND,1522,TBA,TBA,,6/6/2011 - 8/19/2011
+INT,421,"(CHB) Directed Study in Biomedical Engineering",0001,IND,1292,TBA,TBA,Darrell W Donahue,5/9/2011 - 8/19/2011
+INT,494,"(PAA",0001,FEX,1295,TBA,TBA,Timothy M Cole,5/9/2011 - 8/19/2011
+INT,570,"(CHE",0001,LEC,1523,TBA,TBA,John F Vetelino,6/6/2011 - 8/19/2011
+KPE,209,"Wilderness First Responder",0001,LEC,1141,MoTuWeThFr 8:00AM - 6:00PM,Maine Bound Adventure Center,Charlie Bloedon,5/9/2011 - 5/27/2011
+KPE,250,"First Aid and Emergency Care",0001,LEC,2950,MoTuWeThFr 8:00AM - 12:00PM,Lengyel 26,Sherrie L Weeks,5/9/2011 - 5/27/2011
+KPE,253,"Theory and Techniques for Strength and Conditioning",0001,LEC,1143,MoTuWeThFr 8:00AM - 12:00PM,Lengyel Hall 125,David Michael Cusano,5/9/2011 - 5/27/2011
+KPE,262,"Methods of Teaching Physical Activity",0001,LEC,1144,MoTuWeThFr 9:15AM - 12:00PM,Merrill 228A,Glenn H Reif,5/9/2011 - 5/27/2011
+KPE,378,"Physiology of Exercise",0001,LEC,1139,MoTuWeThFr 8:00AM - 12:00PM,Lengyel Hall 127,Robert A Lehnhard,5/9/2011 - 5/27/2011
+KPE,384,"Practicum in Kinesiology and Physical Education",0003,FEX,5515,TBA,Arranged,Charlie Bloedon,5/9/2011 - 8/19/2011
+KPE,398,"Problems in Kinesiology and Physical Education",0001,IND,5516,TBA,TBA,Charlie Bloedon,5/9/2011 - 8/19/2011
+KPE,427,"Health Fitness Internship",0001,RSG,1647,TBA,TBA,Robert A Lehnhard,5/9/2011 - 8/19/2011
+KPE,427,"Health Fitness Internship",0002,RSG,1147,TBA,TBA,Sherrie L Weeks,5/9/2011 - 8/19/2011
+LIB,500,"Graduate Seminar in Liberal Studies",0990,SEM,1063,TBA,TBA,,5/31/2011 - 8/19/2011
+LIB,697,"Independent Study",0001,IND,1704,TBA,TBA,Kristina Passman,5/31/2011 - 8/19/2011
+LIB,699,"Master Project in Liberal Studies",0001,THS,1685,TBA,TBA,Amaranta Ruiz-Nelson,5/9/2011 - 8/19/2011
+MAT,101,"The Nature and Language of Mathematics",0665,LEC,4311,TuTh 5:00PM - 9:00PM,Fred Hutchinson Center,Todd Zoroya,5/17/2011 - 6/16/2011
+MAT,103,"Elementary Algebraic Models in Our World",0001,LEC,3087,MoTuWeThFr 9:00AM - 12:00PM,Neville Hall 206,Jennifer G Tyne,5/9/2011 - 5/27/2011
+MAT,107,"Elementary Descriptive Geometry",0001,LEC,1195,MoTuWeThFr 1:15PM - 4:00PM,Neville Hall 108,Tandy L Del Vecchio,5/9/2011 - 5/27/2011
+MAT,108,"Elementary Numerical Mathematics From A Modern Perspective",0001,LEC,1728,MoTuWeFr 9:15AM - 12:00PM,Jenness Hall 106,Lora Anderson Lindyberg,5/9/2011 - 5/27/2011
+MAT,111,"College Algebra",0990,LEC,1114,TBA,TBA,Jennifer G Tyne,5/9/2011 - 6/24/2011
+MAT,115,"Applied Mathematics for Business and Economics",0001,LEC,3088,MoTuWeThFr 9:00AM - 12:00PM,Neville Hall 227,Steven J Kimball,5/9/2011 - 5/27/2011
+MAT,122,"Pre",0665,LEC,1006,MoWe 5:00PM - 9:30PM,Fred Hutchinson Center,Todd Zoroya,5/16/2011 - 6/15/2011
+MAT,122,"Pre",0990,LEC,1040,TBA,On-line Course,Todd Zoroya,5/9/2011 - 8/19/2011
+MAT,126,"Calculus I",0001,LEC,1197,MoTuWeThFr 9:00AM - 11:00AM,Donald P Corbett Business 117,Robert D Franzosa,5/31/2011 - 7/1/2011
+MAT,126,"Calculus I",0665,LEC,3530,MoWe 5:00PM - 9:30PM,Fred Hutchinson Center,Tandy L Del Vecchio,6/27/2011 - 7/27/2011
+MAT,126,"Calculus I",0990,LEC,1041,TBA,TBA,David M Bradley,5/9/2011 - 8/19/2011
+MAT,127,"Calculus II",0001,LEC,3089,MoTuWeThFr 9:00AM - 12:00PM,Neville Hall 206,Ali E Ozluk,5/31/2011 - 7/1/2011
+MAT,127,"Calculus II",0990,LEC,1042,TBA,TBA,David M Bradley,5/9/2011 - 8/19/2011
+MAT,228,"Calculus III",0990,LEC,1084,TBA,TBA,William O Bray,5/9/2011 - 7/1/2011
+MAT,232,"Principles of Statistical Inference",0001,LEC,1198,MoTuWeThFr 9:15AM - 12:00PM,Neville Hall 108,Ramesh C Gupta,5/9/2011 - 5/27/2011
+MAT,232,"Principles of Statistical Inference",0990,LEC,1086,TBA,TBA,Jennifer G Tyne,5/9/2011 - 6/24/2011
+MAT,258,"Introduction to Differential Equations with Linear Algebra",0990,LEC,1085,TBA,TBA,David M Bradley,5/9/2011 - 8/19/2011
+MEE,150,"Applied Mechanics: Statics",0001,LEC,3174,MoTuWeThFr 9:00AM - 10:30AM,Boardman Hall 210,Richard Sayles,5/31/2011 - 7/1/2011
+MEE,251,"Strength of Materials",0001,LEC,3175,MoTuWeThFr 11:30AM - 1:00PM,Boardman Hall 210,Richard Sayles,5/31/2011 - 7/1/2011
+MEE,394,"Mechanical Engineering Practice",0001,RSG,1181,TBA,TBA,Michael T Boyle,5/9/2011 - 8/19/2011
+MEE,697,"Mechanical Engineering Projects",0001,IND,1182,TBA,TBA,Roberto A Lopez-Anido,5/9/2011 - 8/19/2011
+MEE,699,"Graduate Thesis / Research",0001,THS,1183,TBA,TBA,Michael T Boyle,5/9/2011 - 8/19/2011
+MEE,699,"Graduate Thesis / Research",0002,THS,1186,TBA,TBA,Vincent Caccese,5/9/2011 - 8/19/2011
+MEE,699,"Graduate Thesis / Research",0003,THS,1187,TBA,TBA,Michael L Peterson,5/9/2011 - 8/19/2011
+MEE,699,"Graduate Thesis / Research",0004,THS,1188,TBA,TBA,Justin H Poland,5/9/2011 - 8/19/2011
+MEE,699,"Graduate Thesis / Research",0005,THS,1189,TBA,TBA,Richard Sayles,5/9/2011 - 8/19/2011
+MEE,699,"Graduate Thesis / Research",0006,THS,1190,TBA,TBA,James Sucec,5/9/2011 - 8/19/2011
+MES,101,"Introduction to Maine Studies",0990,LEC,1075,TBA,TBA,Katherine M O'Flaherty,7/11/2011 - 8/19/2011
+MES,201,"The Maine Coast",0990,LEC,1094,TBA,TBA,Jennifer Pickard,5/31/2011 - 7/8/2011
+MES,520,"Advanced Topics in Maine Studies",0990,LEC,3071,TBA,On-line Course,Pauleena M Macdougall,6/13/2011 - 8/5/2011
+MES,520,"Advanced Topics in Maine Studies",0991,LEC,3251,TBA,TBA,Judith Hakola,7/11/2011 - 8/19/2011
+MES,598,"Directed Study in Maine Studies",0001,IND,5871,TBA,TBA,Carol N Toner,6/1/2011 - 8/19/2011
+MES,598,"Directed Study in Maine Studies",0002,IND,5886,TBA,TBA,Pauleena M Macdougall,6/1/2011 - 8/19/2011
+MET,121,"Technical Drawing",0001,LEC,3100,MoTuWeTh 8:00AM - 10:50AM,Machine Tool Laboratory 116,Charles F Maguire,5/31/2011 - 7/1/2011
+MET,394,"Mechanical Engineering Technology Practice",0001,RSG,1244,TBA,TBA,Charles F Maguire,5/9/2011 - 8/19/2011
+MLC,175,"Multiculturalism in America",0990,LEC,3276,TBA,On-line Course,Yvonne M Thibodeau,7/5/2011 - 8/19/2011
+MLC,190,"Topics in Modern Languages",0667,IND,5328,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Maria D Sandweiss,6/4/2011 - 6/4/2011,TBA,On-line Course,Maria D Sandweiss,5/31/2011 - 7/1/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Maria D Sandweiss,6/11/2011 - 6/11/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Maria D Sandweiss,6/18/2011 - 6/18/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Maria D Sandweiss,6/25/2011 - 6/25/2011
+MLC,190,"Topics in Modern Languages",0668,IND,5324,TBA,On-line Course,Madelon Kohler-Busch,5/9/2011 - 8/19/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Madelon Kohler-Busch,6/4/2011 - 6/4/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Madelon Kohler-Busch,6/11/2011 - 6/11/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Madelon Kohler-Busch,6/18/2011 - 6/18/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Madelon Kohler-Busch,6/25/2011 - 6/25/2011
+MLC,190,"Topics in Modern Languages",0669,IND,5317,TBA,On-line Course,Jane S Smith,5/31/2011 - 7/1/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Jane S Smith,6/4/2011 - 6/4/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Jane S Smith,6/11/2011 - 6/11/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Jane S Smith,6/18/2011 - 6/18/2011,Sa 10:00AM - 2:00PM,Fred Hutchinson Center,Jane S Smith,6/25/2011 - 6/25/2011
+MLC,190,"Topics in Modern Languages",0867,IND,5329,TBA,On-line Course,Maria D Sandweiss,5/31/2011 - 7/1/2011,Sa 10:00AM - 2:00PM,Hitchner Hall 147,Maria D Sandweiss,6/4/2011 - 6/4/2011,Sa 10:00AM - 2:00PM,Hitchner Hall 147,Maria D Sandweiss,6/11/2011 - 6/11/2011,Sa 10:00AM - 2:00PM,Hitchner Hall 147,Maria D Sandweiss,6/18/2011 - 6/18/2011,Sa 10:00AM - 2:00PM,Hitchner Hall 147,Maria D Sandweiss,6/25/2011 - 6/25/2011
+MLC,190,"Topics in Modern Languages",0868,IND,5320,TBA,On-line Course,Madelon Kohler-Busch,5/31/2011 - 7/1/2011,Sa 10:00AM - 2:00PM,Donald P Corbett Business 105,Madelon Kohler-Busch,6/4/2011 - 6/4/2011,Sa 10:00AM - 2:00PM,Donald P Corbett Business 105,Madelon Kohler-Busch,6/11/2011 - 6/11/2011,Sa 10:00AM - 2:00PM,Donald P Corbett Business 105,Madelon Kohler-Busch,6/18/2011 - 6/18/2011,Sa 10:00AM - 2:00PM,Donald P Corbett Business 105,Madelon Kohler-Busch,6/25/2011 - 6/25/2011
+MLC,190,"Topics in Modern Languages",0869,IND,5316,TBA,On-line Course,Jane S Smith,5/31/2011 - 7/1/2011,Sa 10:00AM - 2:00PM,Hitchner Hall 203,Jane S Smith,6/4/2011 - 6/4/2011,Sa 10:00AM - 2:00PM,Hitchner Hall 203,Jane S Smith,6/11/2011 - 6/11/2011,Sa 10:00AM - 2:00PM,Hitchner Hall 203,Jane S Smith,6/18/2011 - 6/18/2011,Sa 10:00AM - 2:00PM,Hitchner Hall 203,Jane S Smith,6/25/2011 - 6/25/2011
+MLC,466,"The Teaching of Modern Languages",0665,LEC,1326,MoTuWeThFr 9:00AM - 4:30PM,Fred Hutchinson Center,Nives Dalbo-Wheeler,6/27/2011 - 7/1/2011
+MLC,496,"Field Work in Modern Languages",0001,FEX,3281,TBA,TBA,Kathleen N March,5/9/2011 - 5/27/2011
+MLC,566,"The Teaching of Modern Languages",0665,LEC,1782,MoTuWeThFr 9:00AM - 4:30PM,Fred Hutchinson Center,Nives Dalbo-Wheeler,6/27/2011 - 7/1/2011
+MUE,650,"Topics in Music Education",0001,IND,3067,MoTuWeThFr 9:15AM - 12:00PM,Class of 1944 Hall 107,Laura Artesani,6/27/2011 - 7/1/2011,MoTuWeThFr 1:00PM - 4:00PM,Class of 1944 Hall 107,Laura Artesani,6/27/2011 - 7/1/2011
+MUE,650,"Topics in Music Education",0002,IND,3068,MoTuWeThFr 9:15AM - 12:00PM,Class of 1944 Hall 107,Sandra Allison Howard,7/11/2011 - 7/15/2011,MoTuWeThFr 1:00PM - 4:00PM,Class of 1944 Hall 107,Sandra Allison Howard,7/11/2011 - 7/15/2011
+MUH,650,"Topics in Music History",0001,IND,3066,MoTuWeThFr 9:15AM - 12:00PM,Class of 1944 Hall 107,Phillip A Silver,6/20/2011 - 6/24/2011,MoTuWeThFr 1:15PM - 4:00PM,Class of 1944 Hall 107,Phillip A Silver,6/20/2011 - 6/24/2011
+MUL,101,"The Art of Listening to Music: Elements",0990,LEC,1062,TBA,On-line Course,Anatole Wieck,5/9/2011 - 8/19/2011
+MUY,101,"Fundamentals of Music",0990,LEC,3069,TBA,On-line Course,Thomas M Wubbenhorst,5/9/2011 - 8/19/2011
+NAS,101,"Introduction to Native American Studies",0990,LEC,3090,TBA,TBA,Maureen E Smith,5/16/2011 - 7/1/2011
+NAS,102,"Introduction to Wabanaki Culture",0990,LEC,1051,TBA,TBA,Maureen E Smith,7/1/2011 - 8/5/2011
+NAS,401,"Advanced Topics in Native American Studies",0001,IND,3986,MoTuWeThFr 1:15PM - 4:00PM,Neville Hall 227,William Yellow Robe,5/9/2011 - 5/27/2011
+NAS,498,"Directed Study in Native American Studies",0001,IND,1852,TBA,TBA,Maureen E Smith,5/9/2011 - 8/19/2011
+NMD,240,"Introduction to Web Concepts and Design",0665,LAB,3241,MoTuWeThFr 8:30AM - 4:00PM,Fred Hutchinson Center,Andrew O Hurtt,8/15/2011 - 8/19/2011
+NMD,295,"Topics in New Media",0001,LEC,1722,MoTuWeThFr 1:15PM - 4:00PM,Chadbourne Hall 420,Michael D Scott,5/9/2011 - 5/27/2011
+NMD,295,"Topics in New Media",0665,LEC,3242,MoTuWeThFr 8:30AM - 4:00PM,Fred Hutchinson Center,Tara Law,8/8/2011 - 8/12/2011
+NMD,306,"Project Design Laboratory: II",0001,SEM,1300,MoTuWeThFr 9:15AM - 12:00PM,Chadbourne Hall 420,Michael D Scott,5/9/2011 - 5/27/2011
+NMD,430,"Topics in New Media",0001,LEC,1775,TBA,TBA,Leon Johnson,5/9/2011 - 8/19/2011
+NUR,201,"Fundamentals of Nursing Care Management",0001,CLN,1477,MoTuWeThFr 1:00PM - 7:30PM,Arranged,Dale Francis Lowe,5/9/2011 - 5/27/2011
+NUR,201,"Fundamentals of Nursing Care Management",0002,CLN,1478,MoTuWeThFr 6:30AM - 1:00PM,Arranged,Dale Francis Lowe,5/9/2011 - 5/27/2011
+NUR,201,"Fundamentals of Nursing Care Management",0003,CLN,1479,MoTuWeThFr 6:30AM - 1:00PM,Arranged,,5/9/2011 - 5/27/2011
+NUR,201,"Fundamentals of Nursing Care Management",0004,CLN,1480,MoTuWeThFr 6:30AM - 1:00PM,Arranged,,5/9/2011 - 5/27/2011
+NUR,201,"Fundamentals of Nursing Care Management",0005,CLN,1481,MoTuWeThFr 6:30AM - 1:00PM,Arranged,,5/9/2011 - 5/27/2011
+NUR,201,"Fundamentals of Nursing Care Management",0006,CLN,3254,MoTuWeThFr 1:00PM - 7:30PM,Arranged,,5/9/2011 - 5/27/2011
+NUR,495,"Independent Study in Nursing",0001,IND,1482,TBA,TBA,Staff,TBA
+NUR,495,"Independent Study in Nursing",0002,IND,1483,TBA,TBA,Staff,TBA
+NUR,502,"Families in Health and Illness",0990,LEC,3258,TBA,Dunn Hall 202,Nancy J Fishwick,7/6/2011 - 8/12/2011
+NUR,505,"Nursing Research",0990,RSG,3259,TBA,TBA,Ann E Rosebush Sossong,5/23/2011 - 6/30/2011
+NUR,505,"Nursing Research",0991,RSG,3262,TBA,TBA,Patricia A Poirier,5/23/2011 - 6/30/2011
+NUR,521,"Nurse Practitioner Gynecologic and Reproductive Care of Women",0869,LEC,1706,We 9:00AM - 5:00PM,Dunn Hall 115,Ursula A Pritham,5/11/2011 - 5/11/2011,TBA,On-line Course,Ursula A Pritham,5/12/2011 - 8/19/2011
+NUR,521,"Nurse Practitioner Gynecologic and Reproductive Care of Women",1869,CLN,1801,TBA,TBA,Ursula A Pritham,5/11/2011 - 8/19/2011
+NUR,695,"Topics in Nursing",0001,IND,1634,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+NUR,697,"Scholarly Project",0001,RSG,1484,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+NUR,697,"Scholarly Project",0002,RSG,1485,TBA,TBA,Staff,5/9/2011 - 8/19/2011
+NUR,698,"Independent Study in Nursing",0001,IND,1486,TBA,TBA,Staff,TBA
+NUR,698,"Independent Study in Nursing",0002,IND,1487,TBA,TBA,Staff,TBA
+NUR,699,"Graduate Thesis / Research",0001,THS,1488,TBA,TBA,Staff,TBA
+PAA,400,"Issues in Public Administration",0990,LEC,1080,TBA,On-line Course,Carolyn S Ball,5/31/2011 - 7/8/2011
+PAA,493,"Public Administration Internship",0001,FEX,1318,TBA,TBA,Carolyn S Ball,5/9/2011 - 8/19/2011
+PAA,495,"Municipal Government Internship",0001,FEX,1319,TBA,TBA,G Thomas Taylor,5/9/2011 - 8/19/2011
+PAA,498,"Independent Readings in Public Administration",0001,IND,1816,TBA,TBA,G Thomas Taylor,5/9/2011 - 8/19/2011
+PAA,505,"Intergovernmental Relations",0990,LEC,3140,TBA,TBA,Kenneth L Nichols,7/5/2011 - 8/5/2011
+PAA,520,"Public Policy Studies",0001,LEC,3141,Tu 4:00PM - 8:30PM,Stevens Hall North 117,Edward B Laverty,5/10/2011 - 6/28/2011
+PAA,691,"Topics in Public Administration",0990,LEC,5687,TBA,On-line Course,Carolyn S Ball,5/31/2011 - 7/8/2011
+PAA,696,"Public Adminstration Internship",0001,RSG,1825,TBA,TBA,Carolyn S Ball,5/9/2011 - 8/19/2011
+PAA,698,"Independent Readings",0001,IND,1824,TBA,TBA,Carolyn S Ball,5/9/2011 - 8/19/2011
+PAA,699,"Graduate Thesis / Research",0001,THS,1788,TBA,TBA,G Thomas Taylor,5/9/2011 - 8/19/2011
+PAX,201,"Introduction to Peace and Reconciliation Studies",0990,LEC,3178,TBA,TBA,Yvonne M Thibodeau,5/31/2011 - 8/19/2011
+PAX,250,"Peace and Pop Culture",0990,LEC,1053,TBA,On-line Course,James F Toner,7/5/2011 - 8/5/2011
+PAX,350,"Buddhism",0990,LEC,1061,TBA,TBA,Hugh J Curran,6/6/2011 - 7/29/2011
+PAX,398,"Topics in Peace and Reconciliation Studies",0990,LEC,3176,TBA,On-line Course,James F Toner,5/9/2011 - 5/27/2011
+PAX,400,"Martin Luther King and the Beloved Community",0990,LEC,3179,TBA,TBA,Kristina Passman,5/31/2011 - 8/19/2011
+PAX,495,"Advanced Topics in Peace and Reconciliation Studies",0665,LEC,3177,MoTuWeThFr 8:30AM - 4:30PM,Fred Hutchinson Center,Joanne Boynton,7/11/2011 - 7/15/2011
+PAX,495,"Advanced Topics in Peace and Reconciliation Studies",0666,LEC,3180,MoTuWeThFr 8:30AM - 4:30PM,Fred Hutchinson Center,Peggy Robin Smith,8/8/2011 - 8/12/2011
+PAX,598,"Independent Graduate Study",0665,IND,3531,MoTuWeThFr 8:30AM - 4:30PM,Fred Hutchinson Center,Joanne Boynton,7/11/2011 - 7/15/2011
+PAX,598,"Independent Graduate Study",0666,IND,3532,MoTuWeThFr 8:30AM - 4:30PM,Fred Hutchinson Center,Peggy Robin Smith,8/8/2011 - 8/12/2011
+PHI,100,"Contemporary Moral Problems",0990,LEC,1066,TBA,On-line Course,Jessica P Miller,5/9/2011 - 5/27/2011
+PHY,111,"General Physics I",0001,LEC,1330,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 140,Staff,5/31/2011 - 7/8/2011
+PHY,111,"General Physics I",0002,LEC,1331,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 140,Staff,5/31/2011 - 7/8/2011
+PHY,111,"General Physics I",1001,LAB,1332,MoWe 10:00AM - 11:50AM,Bennett Hall 301,Staff,5/31/2011 - 7/8/2011
+PHY,111,"General Physics I",1002,LAB,1333,MoWe 12:10PM - 2:00PM,Bennett Hall 301,Staff,5/31/2011 - 7/8/2011
+PHY,111,"General Physics I",2001,REC,1334,TuTh 10:00AM - 11:15AM,Bennett Hall 140,Staff,5/31/2011 - 7/8/2011
+PHY,111,"General Physics I",2002,REC,1335,TuTh 10:00AM - 11:15AM,Bennett Hall 140,Staff,5/31/2011 - 7/8/2011
+PHY,112,"General Physics II",0001,LEC,1342,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 140,Staff,7/11/2011 - 8/19/2011
+PHY,112,"General Physics II",0002,LEC,1343,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 140,Staff,7/11/2011 - 8/19/2011
+PHY,112,"General Physics II",1001,LAB,1344,MoWe 10:00AM - 11:50AM,Bennett Hall 301,Staff,7/11/2011 - 8/19/2011
+PHY,112,"General Physics II",2001,REC,1345,TuTh 10:00AM - 11:15AM,Bennett Hall 140,Staff,7/11/2011 - 8/19/2011
+PHY,112,"General Physics II",2002,REC,1752,TuTh 10:00AM - 11:15AM,Bennett Hall 140,Staff,7/11/2011 - 8/19/2011
+PHY,121,"Physics for Engineers and Physical Scientists I",0001,LEC,1336,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 141,George P Bernhardt,5/31/2011 - 7/8/2011
+PHY,121,"Physics for Engineers and Physical Scientists I",0002,LEC,1337,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 141,George P Bernhardt,5/31/2011 - 7/8/2011
+PHY,121,"Physics for Engineers and Physical Scientists I",1001,LAB,1338,TuTh 10:00AM - 11:50AM,Bennett Hall 310,Staff,5/31/2011 - 7/8/2011
+PHY,121,"Physics for Engineers and Physical Scientists I",1002,LAB,1339,TuTh 12:10PM - 2:00PM,Bennett Hall 310,Staff,5/31/2011 - 7/8/2011
+PHY,121,"Physics for Engineers and Physical Scientists I",2001,REC,1340,MoWe 10:00AM - 11:15AM,Bennett Hall 141,George P Bernhardt,5/31/2011 - 7/8/2011
+PHY,121,"Physics for Engineers and Physical Scientists I",2002,REC,1341,MoWe 10:00AM - 11:15AM,Bennett Hall 141,George P Bernhardt,5/31/2011 - 7/8/2011
+PHY,122,"Physics for Engineers and Physical Scientists II",0001,LEC,1346,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 141,George P Bernhardt,7/11/2011 - 8/19/2011
+PHY,122,"Physics for Engineers and Physical Scientists II",0002,LEC,1347,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 141,George P Bernhardt,7/11/2011 - 8/19/2011
+PHY,122,"Physics for Engineers and Physical Scientists II",0003,LEC,1642,MoTuWeThFr 8:15AM - 9:30AM,Bennett Hall 141,George P Bernhardt,7/11/2011 - 8/19/2011
+PHY,122,"Physics for Engineers and Physical Scientists II",1001,LAB,1348,TuTh 10:00AM - 11:50AM,Bennett Hall 310,Staff,7/11/2011 - 8/19/2011
+PHY,122,"Physics for Engineers and Physical Scientists II",1002,LAB,1349,TuTh 12:10PM - 2:00PM,Bennett Hall 310,Staff,7/11/2011 - 8/19/2011
+PHY,122,"Physics for Engineers and Physical Scientists II",1003,LAB,1641,TuTh 2:10PM - 4:00PM,Bennett Hall 310,Staff,7/11/2011 - 8/19/2011
+PHY,481,"Project Laboratory in Physics I",0001,LAB,1366,TBA,TBA,James P McClymer,5/9/2011 - 8/19/2011
+PHY,482,"Project Laboratory in Physics II",0001,LAB,1369,TBA,TBA,James P McClymer,5/9/2011 - 8/19/2011
+PHY,495,"Engineering Physics Practice",0001,FEX,1380,TBA,TBA,Donald B Mountcastle,5/9/2011 - 8/19/2011
+PHY,496,"Field Experience in Physics",0001,FEX,1383,TBA,TBA,Donald B Mountcastle,5/9/2011 - 8/19/2011
+PHY,497,"Topics in Physics",0001,IND,1391,TBA,TBA,David J Batuski,5/9/2011 - 8/19/2011
+PHY,499,"Problems in Physics",0001,IND,1392,TBA,TBA,Staff,TBA
+PHY,510,"Graduate Laboratory",0001,LAB,1826,TBA,TBA,Charles T Hess,5/9/2011 - 8/19/2011
+PHY,598,"Special Topics in Theoretical or Experimental Physics",0001,IND,1632,TBA,TBA,Staff,TBA
+PHY,699,"Graduate Thesis / Research",0001,THS,1393,TBA,TBA,James P McClymer,5/9/2011 - 8/19/2011
+POS,100,"American Government",0990,LEC,1056,TBA,On-line Course,Richard J Powell,5/31/2011 - 7/8/2011
+POS,120,"Introduction to World Politics",0990,LEC,1087,TBA,On-line Course,Glen Paul Holman,7/11/2011 - 7/29/2011
+POS,241,"Introduction to Comparative Politics",0990,LEC,1057,TBA,On-line Course,Howard H Cody,6/20/2011 - 7/8/2011
+POS,273,"International Relations",0990,LEC,1054,TBA,On-line Course,Mark R Hibben,5/31/2011 - 6/17/2011
+POS,359,"Topics in American Government",0990,LEC,3063,TBA,On-line Course,Richard J Powell,5/31/2011 - 7/8/2011
+POS,359,"Topics in American Government",0991,LEC,3064,TBA,On-line Course,Mark R Hibben,6/20/2011 - 7/8/2011
+POS,363,"Urban Government and Politics",0990,LEC,1059,TBA,On-line Course,Mark D Brewer,7/5/2011 - 7/22/2011
+POS,381,"Political Parties and Elections",0990,LEC,1055,TBA,On-line Course,Mark D Brewer,5/9/2011 - 5/27/2011
+POS,493,"American Politics Internship",0001,RSG,1296,TBA,TBA,Timothy M Cole,5/9/2011 - 8/19/2011
+POS,496,"International Affairs Internship",0001,RSG,1297,TBA,TBA,Howard H Cody,5/9/2011 - 8/19/2011
+POS,498,"Independent Study in Political Science",0001,IND,1298,TBA,TBA,Timothy M Cole,5/9/2011 - 8/19/2011
+POS,596,"Directed Research in Political Science",0001,RSG,1299,TBA,TBA,Timothy M Cole,5/9/2011 - 8/19/2011
+PPA,499,"Undergraduate Thesis",0001,THS,1291,TBA,TBA,Joseph M Genco,5/9/2011 - 8/19/2011
+PRT,345,"Special Problems",0001,IND,1590,TBA,TBA,Jessica E Leahy,5/9/2011 - 8/19/2011
+PRT,345,"Special Problems",0002,IND,1591,TBA,TBA,Jessica E Leahy,5/9/2011 - 8/19/2011
+PRT,394,"Cooperative Education",0001,RSG,1592,TBA,TBA,John Joseph Daigle,5/9/2011 - 8/19/2011
+PRT,394,"Cooperative Education",0002,RSG,1593,TBA,TBA,Jessica E Leahy,5/9/2011 - 8/19/2011
+PRT,395,"Internship",0001,RSG,1594,TBA,TBA,John Joseph Daigle,5/9/2011 - 8/19/2011
+PRT,395,"Internship",0002,RSG,1595,TBA,TBA,Jessica E Leahy,5/9/2011 - 8/19/2011
+PRT,396,"Field Experience",0001,FEX,1596,TBA,TBA,John Joseph Daigle,5/9/2011 - 8/19/2011
+PRT,396,"Field Experience",0002,FEX,1597,TBA,TBA,Jessica E Leahy,5/9/2011 - 8/19/2011
+PRT,613,"Forest Recreation Problems",0001,IND,1598,TBA,TBA,John Joseph Daigle,5/9/2011 - 8/19/2011
+PRT,613,"Forest Recreation Problems",0002,IND,1599,TBA,TBA,Jessica E Leahy,5/9/2011 - 8/19/2011
+PRT,699,"Graduate Thesis / Research",0001,THS,1600,TBA,TBA,John Joseph Daigle,5/9/2011 - 8/19/2011
+PRT,699,"Graduate Thesis / Research",0002,THS,1601,TBA,TBA,Jessica E Leahy,5/9/2011 - 8/19/2011
+PSE,305,"Problems in Plant",0001,IND,1132,TBA,TBA,Staff,TBA
+PSE,396,"Field Experience in Plant",0001,FEX,1133,TBA,TBA,Marianne Sarrantonio,5/9/2011 - 8/19/2011
+PSE,396,"Field Experience in Plant",0002,FEX,1707,TBA,TBA,Jaina Young,5/9/2011 - 8/19/2011
+PSE,597,"Special Topics in Plant",0001,IND,1134,TBA,TBA,Staff,TBA
+PSE,699,"Graduate Thesis / Research",0001,THS,5094,TBA,TBA,M Susan Erich,5/9/2011 - 8/19/2011
+PSE,699,"Graduate Thesis / Research",0002,THS,1135,TBA,TBA,Ivan J Fernandez,5/9/2011 - 8/19/2011
+PSE,699,"Graduate Thesis / Research",0003,THS,5090,TBA,TBA,Eric R Gallandt,5/9/2011 - 8/19/2011
+PSE,699,"Graduate Thesis / Research",0004,THS,5091,TBA,TBA,Renae E Moran,5/9/2011 - 8/19/2011
+PSE,699,"Graduate Thesis / Research",0005,THS,5092,TBA,TBA,Marianne Sarrantonio,5/9/2011 - 8/19/2011
+PSE,699,"Graduate Thesis / Research",0006,THS,5093,TBA,TBA,John M Smagula,5/9/2011 - 8/19/2011
+PSY,100,"General Psychology",0001,LEC,1245,MoTuWeThFr 9:15AM - 12:00PM,Little Hall 203,G William Farthing,5/9/2011 - 5/27/2011
+PSY,100,"General Psychology",0002,LEC,1249,MoTuWeThFr 9:00AM - 10:30AM,Little Hall 219,Amber Ann Martinson,5/31/2011 - 7/1/2011
+PSY,100,"General Psychology",0003,LEC,3196,MoTuWeThFr 1:15PM - 4:00PM,Little Hall 211,Ryan M Pickering,5/31/2011 - 6/17/2011
+PSY,100,"General Psychology",0665,LEC,1008,MoTuWe 5:30PM - 8:30PM,Fred Hutchinson Center,Charles L Dufour,6/6/2011 - 6/29/2011
+PSY,208,"Theories of Personality",0669,LEC,3491,MoTuWeThFr 9:15AM - 12:00PM,Fred Hutchinson Center,Michael A Robbins,5/31/2011 - 6/17/2011
+PSY,208,"Theories of Personality",0869,LEC,3492,MoTuWeThFr 9:15AM - 12:00PM,Little Hall 350,Michael A Robbins,5/31/2011 - 6/17/2011
+PSY,212,"Abnormal Psychology",0001,LEC,1246,MoTuWeThFr 1:15PM - 4:00PM,Little Hall 211,Julia Rhea Craner,5/9/2011 - 5/27/2011
+PSY,212,"Abnormal Psychology",0002,LEC,3197,MoWe 6:00PM - 8:30PM,Little Hall 211,Craig Steven Lodis,6/1/2011 - 7/20/2011
+PSY,223,"Psychology of Childhood",0001,LEC,3198,MoTuWeThFr 9:15AM - 12:00PM,Little Hall 211,Nicole Ann Heller,7/5/2011 - 7/22/2011
+PSY,224,"Psychology of Adolescence",0984,LEC,1247,TuTh 10:00AM - 12:45PM,Barrows Hall 126,Cynthia Erdley,5/16/2011 - 7/1/2011
+PSY,224,"Psychology of Adolescence",0994,LEC,1048,TBA,TBA,Cynthia Erdley,5/16/2011 - 7/1/2011
+PSY,230,"Social Psychology",0001,LEC,3493,MoTuWeThFr 1:00PM - 2:30PM,Little Hall 205,Ellen E Newell,7/5/2011 - 8/5/2011
+PSY,230,"Social Psychology",0669,LEC,1021,MoTuWe 5:30PM - 8:30PM,Fred Hutchinson Center,Charles L Dufour,5/9/2011 - 6/1/2011
+PSY,230,"Social Psychology",0869,LEC,3490,MoTuWe 5:30PM - 8:30PM,Little Hall 350,Charles L Dufour,5/9/2011 - 6/1/2011
+PSY,241,"Statistics in Psychology",0001,LEC,1721,MoTuWeThFr 9:00AM - 1:45PM,Little Hall 205,Joseph David Wellman,5/9/2011 - 5/27/2011
+PSY,245,"Principles of Psychological Research",0001,LEC,1248,MoTuWeThFr 9:00AM - 10:30AM,Little Hall 205,Brandon Joseph Cosley,5/31/2011 - 7/1/2011
+PSY,401,"Health Psychology",0001,LEC,3199,MoTuWeThFr 9:15AM - 12:00PM,Little Hall 211,Michael A Robbins,5/9/2011 - 5/27/2011
+PSY,412,"Foundations of Clinical Psychology",0001,LEC,3200,TuTh 6:00PM - 8:30PM,Little Hall 211,Agnieszka Karolina Serwik,5/31/2011 - 7/22/2011
+PSY,492,"Problems in Psychology",0001,IND,1259,TBA,TBA,Michael A Robbins,5/9/2011 - 8/19/2011
+PSY,493,"Field Experience in Psychology",0001,FEX,1260,TBA,TBA,Michael A Robbins,5/9/2011 - 8/19/2011
+PSY,494,"Senior Research Project",0001,RSG,1261,TBA,TBA,Michael A Robbins,5/9/2011 - 8/19/2011
+PSY,592,"Directed Readings:(area)",0001,IND,1258,TBA,TBA,Michael A Robbins,5/9/2011 - 8/19/2011
+PSY,691,"Practicum (activity)",0001,RSG,1256,TBA,TBA,Mary E Cuddy,5/9/2011 - 8/19/2011
+PSY,691,"Practicum (activity)",0002,RSG,1257,TBA,TBA,Nina E Boulard,5/9/2011 - 8/19/2011
+PSY,692,"Directed Research",0001,IND,1262,TBA,TBA,Michael A Robbins,5/9/2011 - 8/19/2011
+PSY,699,"Graduate Thesis / Research",0001,THS,1263,TBA,TBA,Michael A Robbins,5/9/2011 - 8/19/2011
+QUS,699,"Graduate Thesis / Research",0001,THS,1624,TBA,TBA,Paul A Mayewski,5/9/2011 - 8/19/2011
+SAR,541,"Alternative Models and Methods for At Risk Students",0001,LEC,5112,MoTuWeThFrSa 8:00AM - 3:00PM,Arranged,Anna Pender Makin,6/24/2011 - 6/30/2011
+SAR,541,"Alternative Models and Methods for At Risk Students",0002,LEC,5132,TBA,TBA,Cheryl A Robertson,6/27/2011 - 8/1/2011
+SED,402,"Adapting Instruction for Students With Disabilities",0990,LEC,1049,TBA,On-line Course,Owen J Logue,5/31/2011 - 7/1/2011
+SED,520,"Law and Policy Affecting Individuals with Disabilities",0001,LEC,5644,MoFr 1:00PM - 5:00PM,Shibles Hall 217,Sharon Jordan Brady,7/25/2011 - 8/5/2011
+SED,528,"Educational Methods for Students with Autism",0001,LEC,1023,MoTuWeThFr 9:00AM - 4:00PM,Shibles Hall 311,A James Artesani,8/1/2011 - 8/5/2011
+SED,532,"Behavior Management and Intervention",0665,LEC,5321,MoTuWeThFr 9:00AM - 1:00PM,Fred Hutchinson Center,Brian Joseph Cavanaugh,8/8/2011 - 8/19/2011
+SED,544,"Mathematical Methods in Special Education",0869,LEC,1098,TuTh 4:00PM - 7:30PM,Shibles Hall 313,Diane W Jackson,7/5/2011 - 7/22/2011,TuTh 4:00PM - 7:30PM,On-line Course,Diane W Jackson,7/5/2011 - 7/22/2011
+SED,570,"Technology for Individual with Disabilities",0869,LEC,1022,TBA,On-line Course,Andrea Elizabeth Bilello,7/5/2011 - 7/22/2011,Tu 10:00AM - 3:00PM,Shibles Hall 35,Andrea Elizabeth Bilello,7/5/2011 - 7/5/2011,Mo 10:00AM - 3:00PM,Shibles Hall 35,Andrea Elizabeth Bilello,7/11/2011 - 7/11/2011,Mo 10:00AM - 3:00PM,Shibles Hall 35,Andrea Elizabeth Bilello,7/18/2011 - 7/18/2011
+SED,598,"Special Topics in Special Education",0001,IND,3109,MoTuWeThFr 9:00AM - 4:00PM,Shibles Hall 201,,7/11/2011 - 7/15/2011
+SED,598,"Special Topics in Special Education",0002,IND,5872,MoTuWeTh 4:00PM - 8:00PM,On-line Course,Deborah Rooks,5/31/2011 - 6/17/2011
+SED,651,"Seminar in Emotional and Behavioral Disabilities",0665,SEM,5322,MoWe 5:00PM - 8:00PM,Fred Hutchinson Center,A James Artesani,6/6/2011 - 6/29/2011
+SEI,501,"Typical and Atypical Development in Infancy and Early Childhood",0001,LEC,3222,TBA,TBA,Deborah Rooks,5/9/2011 - 8/19/2011
+SIE,589,"Graduate Project",0001,IND,1658,TBA,TBA,Mary Kate Beard-Tisdale,5/9/2011 - 8/19/2011
+SIE,590,"Information Systems Internship",0001,FEX,1783,TBA,TBA,Harlan J Onsrud,5/9/2011 - 8/19/2011
+SIE,598,"Selected Studies in Spatial Information Engineering",0001,IND,1253,TBA,TBA,Staff,TBA
+SIE,699,"Graduate Thesis / Research",0001,THS,1254,TBA,TBA,Mary Kate Beard-Tisdale,5/9/2011 - 8/19/2011
+SIE,699,"Graduate Thesis / Research",0002,THS,1271,TBA,TBA,Max J Egenhofer,5/9/2011 - 8/19/2011
+SIE,699,"Graduate Thesis / Research",0003,THS,1273,TBA,TBA,Harlan J Onsrud,5/9/2011 - 8/19/2011
+SIE,699,"Graduate Thesis / Research",0004,THS,1274,TBA,TBA,Silvia E Nittel,5/9/2011 - 8/19/2011
+SIE,699,"Graduate Thesis / Research",0005,THS,1275,TBA,TBA,Michael F Worboys,5/9/2011 - 8/19/2011
+SIE,699,"Graduate Thesis / Research",0006,THS,1276,TBA,TBA,Nicholas Giudice,5/9/2011 - 8/19/2011
+SMS,110,"Concepts in Oceanography",0665,LEC,1009,Mo 4:30PM - 7:00PM,Fred Hutchinson Center,William G Ellis,5/9/2011 - 8/19/2011
+SMS,111,"Concepts in Oceanography Laboratory",0665,LAB,5685,Mo 7:00PM - 9:00PM,Fred Hutchinson Center,Staff,5/16/2011 - 8/15/2011
+SMS,120,"Introduction to Forensics",0990,LEC,1088,TBA,TBA,Irving L Kornfield,6/6/2011 - 7/11/2011
+SMS,309,"Techniques in Shellfish Aquaculture",0001,LEC,3232,MoTuWeThFr 8:00AM - 5:00PM,Darling Marine Center,Christopher V Davis,5/11/2011 - 5/27/2011
+SMS,450,"Field Experience in Marine Sciences",0001,FEX,1626,TBA,TBA,William G Ellis,5/9/2011 - 8/19/2011
+SMS,491,"Problems in Marine Science",0001,IND,1771,MoTuWeThFr 9:00AM - 5:00PM,Darling Marine Center,David Wheeler,6/13/2011 - 6/17/2011
+SMS,491,"Problems in Marine Science",0002,LEC,3227,TBA,Darling Marine Center,Lawrence M Mayer,5/11/2011 - 5/27/2011
+SMS,491,"Problems in Marine Science",0003,IND,3229,TBA,Darling Marine Center,Kevin J Eckelbarger,5/11/2011 - 5/27/2011
+SMS,491,"Problems in Marine Science",0004,IND,3833,TBA,Darling Marine Center,Damian Brady,5/31/2011 - 6/10/2011
+SMS,497,"Independent Study in Marine Science",0001,IND,1680,TBA,TBA,William G Ellis,5/9/2011 - 8/19/2011
+SMS,598,"Special Topics in Marine Science",0001,IND,5517,TBA,Darling Marine Center,,7/11/2011 - 7/29/2011
+SMS,598,"Special Topics in Marine Science",0002,IND,5823,MoWe 1:00PM - 4:00PM,Aubert Hall 354,Rita S Heimes,6/20/2011 - 7/1/2011,Fr 9:00AM - 12:00PM,Aubert Hall 354,Rita S Heimes,6/20/2011 - 7/1/2011
+SMS,699,"Graduate Thesis / Research",0001,THS,1629,TBA,TBA,William G Ellis,5/9/2011 - 8/19/2011
+SMT,699,"Graduate Thesis / Research",0001,THS,1394,TBA,TBA,Susan R McKay,5/9/2011 - 8/19/2011
+SOC,498,"Departmental Projects II",0001,IND,5869,TBA,TBA,Ann Leffler,5/9/2011 - 8/19/2011
+SPA,101,"Elementary Spanish I",0001,LEC,1311,MoTuWeThFr 9:15AM - 12:00PM,Little Hall 202,Maria D Sandweiss,5/9/2011 - 5/27/2011
+SPA,102,"Elementary Spanish II",0001,LEC,3284,MoTuWeThFr 9:15AM - 12:00PM,Little Hall 202,Eugene F Del Vecchio,5/31/2011 - 6/17/2011
+SPA,203,"Intermediate Spanish I",0990,LEC,3286,TBA,On-line Course,Kathleen N March,5/31/2011 - 6/17/2011
+SPA,204,"Intermediate Spanish II",0990,LEC,4341,TBA,On-line Course,Kathleen N March,6/20/2011 - 7/8/2011
+SPA,390,"Topics in Spanish",0665,SEM,5688,MoTuWeThFr 9:00AM - 4:30PM,Fred Hutchinson Center,Eugene F Del Vecchio,7/11/2011 - 7/15/2011
+SPA,490,"Topics and Individual Authors in Spanish",0665,IND,3294,MoTuWeThFr 9:00AM - 4:30PM,Fred Hutchinson Center,Staff,7/18/2011 - 7/22/2011
+SPA,490,"Topics and Individual Authors in Spanish",0990,IND,1112,TBA,TBA,Kathleen N March,5/31/2011 - 6/17/2011
+SPA,495,"Senior Project in Spanish",0001,IND,4454,TBA,TBA,Kathleen N March,5/9/2011 - 5/27/2011
+SPA,496,"Service Learning in Spanish",0001,FEX,3290,TBA,TBA,Kathleen N March,5/9/2011 - 5/27/2011
+SPA,551,"Women of the Hispanic World: Advanced Readings",0990,LEC,3296,TBA,TBA,Kathleen N March,5/31/2011 - 6/17/2011
+SPA,597,"Projects in Spanish I",0001,IND,3300,TBA,TBA,Kathleen N March,5/9/2011 - 5/27/2011
+SPA,598,"Projects in Spanish II",0665,IND,3297,MoTuWeThFr 9:00AM - 4:30PM,Fred Hutchinson Center,Staff,7/18/2011 - 7/22/2011
+SPI,595,"SPIA Internship",0001,FEX,1793,TBA,TBA,James Settele,5/9/2011 - 8/19/2011
+SPI,697,"Independent Study",0001,IND,4304,TBA,TBA,James Settele,5/9/2011 - 5/27/2011
+SPI,697,"Independent Study",0002,IND,4305,TBA,TBA,James Settele,5/31/2011 - 7/8/2011
+SPI,697,"Independent Study",0003,IND,4307,TBA,TBA,James Settele,7/11/2011 - 8/19/2011
+SVT,322,"Preparing Effective Property Descriptions",0999,LEC,1046,TBA,TBA,Carlton Arthur Brown,5/9/2011 - 8/19/2011
+SVT,325,"Surveying/Engineering Ethics",0999,LEC,1047,TBA,TBA,Carlton Arthur Brown,5/9/2011 - 8/19/2011
+SVT,326,"Record Research",0999,LEC,1060,TBA,TBA,Carlton Arthur Brown,5/9/2011 - 8/19/2011
+SWK,350,"Human Behavior and the Social Environment I",0990,LEC,1096,TBA,TBA,Jennie Goldenberg,5/9/2011 - 8/19/2011
+SWK,380,"The Biological Person and the Environment",0990,LEC,1095,TBA,TBA,Nancy Webster,5/9/2011 - 8/19/2011
+SWK,497,"Special Topics in Social Work",0001,IND,5778,TBA,TBA,Gail B Werrbach,5/9/2011 - 8/19/2011
+SWK,530,"MSW Advanced Standing Bridging",0001,LEC,1491,MoTuWeTh 9:30AM - 3:30PM,Social Work Building 104,Sandra S Butler,6/13/2011 - 6/16/2011
+SWK,531,"MSW Advanced Standing Bridging",0001,LEC,1492,MoTuWeTh 9:30AM - 3:30PM,Social Work Building 104,Gail B Werrbach,6/20/2011 - 6/23/2011
+SWK,532,"Advanced Standing Bridging",0001,LEC,1493,MoTuWeTh 9:30AM - 3:30PM,Social Work Building 104,Robin S Russel,7/11/2011 - 7/14/2011
+SWK,533,"MSW Advanced Standing Bridging",0001,LEC,1494,MoTuWeTh 9:30AM - 3:30PM,Social Work Building 104,Nancy A Kelly,6/27/2011 - 6/30/2011
+SWK,560,"Practice in Generalist Social Work I",0665,LEC,1010,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Wendy S Rapaport,5/20/2011 - 5/20/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Wendy S Rapaport,5/21/2011 - 5/21/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Wendy S Rapaport,6/10/2011 - 6/10/2011,Sa 9:30AM - 11:30AM,Fred Hutchinson Center,Wendy S Rapaport,6/11/2011 - 6/11/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Wendy S Rapaport,6/24/2011 - 6/24/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Wendy S Rapaport,6/25/2011 - 6/25/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Wendy S Rapaport,7/8/2011 - 7/8/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Wendy S Rapaport,7/9/2011 - 7/9/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Wendy S Rapaport,7/22/2011 - 7/22/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Wendy S Rapaport,7/23/2011 - 7/23/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Wendy S Rapaport,8/5/2011 - 8/5/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Wendy S Rapaport,8/6/2011 - 8/6/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Wendy S Rapaport,8/19/2011 - 8/19/2011,Sa 9:00AM - 11:30AM,Fred Hutchinson Center,Wendy S Rapaport,8/20/2011 - 8/20/2011
+SWK,577,"Group Strategies in Health/Mental Health Settings",0665,LEC,1011,TuWeTh 4:00PM - 8:00PM,Fred Hutchinson Center,Wendy S Rapaport,7/19/2011 - 8/4/2011
+SWK,580,"Adult and Child Psychopathology",0001,LEC,1495,MoTuWeThFr 9:30AM - 3:30PM,Social Work Building 104,,6/1/2011 - 6/9/2011
+SWK,582,"Supporting Families Under Stress",0669,LEC,1012,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Nancy Webster,5/13/2011 - 5/13/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Nancy Webster,5/14/2011 - 5/14/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Nancy Webster,6/3/2011 - 6/3/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Nancy Webster,6/4/2011 - 6/4/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Nancy Webster,6/17/2011 - 6/17/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Nancy Webster,6/18/2011 - 6/18/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Nancy Webster,7/8/2011 - 7/8/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Nancy Webster,7/9/2011 - 7/9/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Nancy Webster,7/22/2011 - 7/22/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Nancy Webster,7/23/2011 - 7/23/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Nancy Webster,8/5/2011 - 8/5/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Nancy Webster,8/6/2011 - 8/6/2011
+SWK,595,"Field Practicum in Social Work",0665,FEX,1013,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,5/21/2011 - 5/21/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,6/11/2011 - 6/11/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,6/25/2011 - 6/25/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,7/9/2011 - 7/9/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,7/23/2011 - 7/23/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,8/6/2011 - 8/6/2011,Sa 12:00PM - 2:30PM,Fred Hutchinson Center,Susan Kaye,8/20/2011 - 8/20/2011
+SWK,661,"Advanced Generalist Social Work Practice with Individuals",0669,LEC,1027,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Kelly Ann Jaksa,5/20/2011 - 5/20/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Kelly Ann Jaksa,5/21/2011 - 5/21/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Kelly Ann Jaksa,6/10/2011 - 6/10/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Kelly Ann Jaksa,6/11/2011 - 6/11/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Kelly Ann Jaksa,6/24/2011 - 6/24/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Kelly Ann Jaksa,6/25/2011 - 6/25/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Kelly Ann Jaksa,7/15/2011 - 7/15/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Kelly Ann Jaksa,7/16/2011 - 7/16/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Kelly Ann Jaksa,7/29/2011 - 7/29/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Kelly Ann Jaksa,7/30/2011 - 7/30/2011,Fr 5:30PM - 8:00PM,Fred Hutchinson Center,Kelly Ann Jaksa,8/12/2011 - 8/12/2011,Sa 9:00AM - 12:30PM,Fred Hutchinson Center,Kelly Ann Jaksa,8/13/2011 - 8/13/2011
+SWK,695,"Advanced Field Practicum in Social Work",0001,FEX,1496,Mo 5:00PM - 7:00PM,Merrill Hall 114,Nancy A Kelly,5/9/2011 - 8/19/2011
+SWK,695,"Advanced Field Practicum in Social Work",0002,FEX,1497,TBA,TBA,Nancy A Kelly,5/9/2011 - 8/19/2011
+SWK,695,"Advanced Field Practicum in Social Work",0665,FEX,3318,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,5/16/2011 - 5/16/2011,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,5/23/2011 - 5/23/2011,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,6/6/2011 - 6/6/2011,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,6/13/2011 - 6/13/2011,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,6/20/2011 - 6/20/2011
+SWK,695,"Advanced Field Practicum in Social Work",0666,FEX,3319,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,7/11/2011 - 7/11/2011,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,7/18/2011 - 7/18/2011,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,7/25/2011 - 7/25/2011,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,8/8/2011 - 8/8/2011,Mo 5:00PM - 7:30PM,Fred Hutchinson Center,Deirdre F Boylan,8/15/2011 - 8/15/2011
+THE,111,"Introduction to Theatre",0990,LEC,1050,TBA,On-line Course,Thomas J Mikotowicz,6/6/2011 - 6/24/2011
+THE,112,"Survey of Dramatic Literature",0990,LEC,3065,TBA,On-line Course,Marcia J Douglas,5/31/2011 - 7/8/2011
+THE,268,"Theatre Practicum",0001,FEX,1265,TBA,Arranged,Thomas J Mikotowicz,5/9/2011 - 8/19/2011
+THE,269,"Theatre Practicum in Acting",0001,FEX,1266,TBA,Arranged,Thomas J Mikotowicz,5/9/2011 - 8/19/2011
+THE,480,"Topics in Theatre",0001,IND,3463,MoTuWeThFr 1:15PM - 4:00PM,Neville Hall 227,William Yellow Robe,5/9/2011 - 5/27/2011
+THE,497,"Independent Study in Theatre I",0001,IND,1631,TBA,Arranged,Thomas J Mikotowicz,5/9/2011 - 8/19/2011
+THE,596,"Field Services in Theatre Production",0001,FEX,1267,TBA,Arranged,Thomas J Mikotowicz,5/9/2011 - 8/19/2011
+THE,697,"Directed Research I",0001,IND,1268,TBA,Arranged,Thomas J Mikotowicz,5/9/2011 - 8/19/2011
+UST,300,"Core Course in University Studies",0990,SEM,1127,TBA,On-line Course,James F Toner,7/5/2011 - 8/5/2011
+UST,300,"Core Course in University Studies",0991,SEM,5653,TBA,On-line Course,James F Toner,5/9/2011 - 5/27/2011
+UST,400,"Advanced Topics in University Studies",0001,IND,1682,TBA,TBA,Barbara D Howard,5/9/2011 - 8/19/2011
+UST,400,"Advanced Topics in University Studies",0665,IND,5110,MoTuWeThFr 8:30AM - 4:30PM,Fred Hutchinson Center,Joanne Boynton,7/11/2011 - 7/15/2011
+UST,400,"Advanced Topics in University Studies",0666,IND,5111,MoTuWeThFr 8:30AM - 4:30PM,Fred Hutchinson Center,Peggy Robin Smith,8/8/2011 - 8/12/2011
+UST,499,"Senior Capstone",0001,SEM,1306,TBA,TBA,Barbara D Howard,5/9/2011 - 8/19/2011
+WLE,250,"Wildlife Field Survey",0001,LEC,1236,MoTuWeThFr 8:00AM - 5:00PM,Deering Hall 101C,Lindsay C Seward,5/9/2011 - 5/27/2011
+WLE,435,"Field Experience",0001,FEX,1237,TBA,TBA,James R Gilbert,5/9/2011 - 8/19/2011
+WLE,490,"Special Problems",0001,IND,1238,TBA,TBA,James R Gilbert,5/9/2011 - 8/19/2011
+WLE,697,"Special Problems in Wildlife Ecology",0001,IND,1239,TBA,TBA,James R Gilbert,5/9/2011 - 8/19/2011
+WLE,699,"Graduate Thesis / Research",0001,THS,1240,TBA,TBA,James R Gilbert,5/9/2011 - 8/19/2011
+WLE,699,"Graduate Thesis / Research",0002,THS,1649,TBA,TBA,Daniel J Harrison,5/9/2011 - 8/19/2011
+WLE,699,"Graduate Thesis / Research",0003,THS,1650,TBA,TBA,Malcolm L Hunter,5/9/2011 - 8/19/2011
+WLE,699,"Graduate Thesis / Research",0004,THS,1651,TBA,TBA,William Krohn,5/9/2011 - 8/19/2011
+WLE,699,"Graduate Thesis / Research",0005,THS,1652,TBA,TBA,Cynthia S Loftin,5/9/2011 - 8/19/2011
+WLE,699,"Graduate Thesis / Research",0006,THS,1653,TBA,TBA,Frederick A Servello,5/9/2011 - 8/19/2011
+WSC,345,"Special Problems",0001,IND,1602,TBA,TBA,Douglas Jerome Gardner,5/9/2011 - 8/19/2011
+WSC,345,"Special Problems",0002,IND,1603,TBA,TBA,Barry S Goodell,5/9/2011 - 8/19/2011
+WSC,345,"Special Problems",0003,IND,1604,TBA,TBA,Robert W Rice,5/9/2011 - 8/19/2011
+WSC,345,"Special Problems",0004,IND,1605,TBA,TBA,Stephen M Shaler,5/9/2011 - 8/19/2011
+WSC,396,"Field Experience",0001,FEX,1606,TBA,TBA,Douglas Jerome Gardner,5/9/2011 - 8/19/2011
+WSC,396,"Field Experience",0002,FEX,1607,TBA,TBA,Barry S Goodell,5/9/2011 - 8/19/2011
+WSC,396,"Field Experience",0003,FEX,1608,TBA,TBA,Robert W Rice,5/9/2011 - 8/19/2011
+WSC,396,"Field Experience",0004,FEX,1609,TBA,TBA,Stephen M Shaler,5/9/2011 - 8/19/2011
+WSC,615,"Problems in Wood Technology",0001,IND,1612,TBA,TBA,Robert W Rice,5/9/2011 - 8/19/2011
+WSC,615,"Problems in Wood Technology",0002,IND,1610,TBA,TBA,Douglas Jerome Gardner,5/9/2011 - 8/19/2011
+WSC,615,"Problems in Wood Technology",0003,IND,1613,TBA,TBA,Stephen M Shaler,5/9/2011 - 8/19/2011
+WSC,615,"Problems in Wood Technology",0004,IND,1611,TBA,TBA,Barry S Goodell,5/9/2011 - 8/19/2011
+WSC,699,"Graduate Thesis / Research",0001,THS,1323,TBA,TBA,Douglas Jerome Gardner,5/9/2011 - 8/19/2011
+WSC,699,"Graduate Thesis / Research",0002,THS,1327,TBA,TBA,Barry S Goodell,5/9/2011 - 8/19/2011
+WSC,699,"Graduate Thesis / Research",0003,THS,1328,TBA,TBA,Robert W Rice,5/9/2011 - 8/19/2011
+WSC,699,"Graduate Thesis / Research",0004,THS,1329,TBA,TBA,Stephen M Shaler,5/9/2011 - 8/19/2011
+WST,101,"Introduction to Women's Studies",0990,LEC,1106,TBA,TBA,Mary Okin,7/11/2011 - 8/19/2011
+WST,201,"Topics in Women's Studies",0990,LEC,1105,TBA,On-line Course,Audrey Leigh Minutolo,5/31/2011 - 7/8/2011
+WST,230,"Women",0990,LEC,3114,TBA,TBA,Jennifer Pickard,5/9/2011 - 7/1/2011
+WST,298,"Directed Study in Women's Studies",0001,IND,5875,TBA,TBA,Ann K Schonberger,5/9/2011 - 8/19/2011
+WST,401,"Advanced Topics in Women's Studies",0990,LEC,3250,TBA,TBA,Judith Hakola,7/11/2011 - 8/19/2011
+WST,498,"Directed Study in Women's Studies",0001,IND,5874,TBA,TBA,Ann K Schonberger,5/9/2011 - 8/19/2011
+WST,698,"Individualized Projects in Women's Studies",0001,IND,5873,TBA,TBA,Susan K Gardner,5/9/2011 - 8/19/2011
