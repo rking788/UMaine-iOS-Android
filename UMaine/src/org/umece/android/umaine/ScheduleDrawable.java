@@ -112,6 +112,14 @@ public class ScheduleDrawable extends View {
 		double left = mRect.right;
 		
 		for (i = 0; i < colors.length; i++) {
+			if (((i % 2) == 0) && (colors[i].toString().equals("BLACK"))) {
+				rect_queue.add(new Rect(
+						(int)(left + each_width - 1),
+						mRect.top + 1,
+						(int)(left + each_width + 1),
+						mRect.bottom - 1));
+				color_queue.add(colors[i]);
+			}
 			rect_queue.add(new Rect(
 					(int)(left + 1),
 					mRect.top + 1,
@@ -119,6 +127,14 @@ public class ScheduleDrawable extends View {
 					mRect.bottom - 1));
 			left += each_width;
 			color_queue.add(colors[i]);
+			if ((i < (colors.length - 1)) && (!colors[i].toString().equals("BLACK")) && (colors[i].equals(colors[i + 1]))) {
+				rect_queue.add(new Rect(
+						(int)(left - 1),
+						mRect.top + 1,
+						(int)(left + 1),
+						mRect.bottom - 1));
+				color_queue.add(colors[i]);
+			}
 		}
 	}
 	
