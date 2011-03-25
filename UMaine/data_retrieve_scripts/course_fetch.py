@@ -80,7 +80,7 @@ for dept in departments:
 		html = br.response().read()
 
 		br.select_form(name="win1")
-		br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1130"] # 1120: Spring 2011 # 1210: Fall 2011 # 1130: Summer 2011
+		br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1210"] # 1120: Spring 2011 # 1210: Fall 2011 # 1130: Summer 2011
 		br.submit()
 		html = br.response().read()
 
@@ -123,7 +123,7 @@ for dept in departments:
 		html = r.read()
 		assert br.viewing_html()
 		#print html
-        html = html.replace('&#039;', '\'')
+        	html = html.replace('&#039;', '\'')
 
 		soup = Soup(html)
 		t1 = soup.find('table', attrs={'id':"$ICField59$scroll$0", 'class':"PABACKGROUNDINVISIBLEWBO"})
