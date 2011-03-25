@@ -117,14 +117,17 @@ public class Course {
 		EditText newet = new EditText(context);
         newet.setText(getDep() + " " + getCoursenum()+ " - " + getTitle());
         Spannable str = newet.getText();
-//        str.setSpan(new StyleSpan(android.graphics.Typeface.ITALIC), 0, str.length()-1, 
-//        			Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        
         if (color != null) {
         	str.setSpan(new ForegroundColorSpan(color.getColor()), 0, 
         			str.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
 
         spannable = str;
+	}
+	
+	public void addNotification() {
+		
 	}
 	
 	public Spannable getSpannable(Context context) {

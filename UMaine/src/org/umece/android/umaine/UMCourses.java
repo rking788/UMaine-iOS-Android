@@ -451,6 +451,9 @@ public class UMCourses extends Activity {
 							.getSpannable(UMCourses.getActivity()));
 				}
 			}
+//			ListView lv = (ListView)findViewById(R.id.courseslist);
+//			View v = lv.getChildAt(1);
+//			v.setBackgroundResource(0xffff0000);
 		} catch (IOException e1) {
 			throw new RuntimeException();
 		}

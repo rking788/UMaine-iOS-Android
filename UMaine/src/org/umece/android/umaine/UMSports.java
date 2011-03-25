@@ -1,15 +1,11 @@
 package org.umece.android.umaine;
 
 import android.app.ActivityGroup;
-import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import android.widget.TabHost;
-import android.widget.TextView;
 import android.widget.TabHost.TabSpec;
 
 public class UMSports extends ActivityGroup {
