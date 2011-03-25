@@ -428,6 +428,22 @@ public class UMCourses extends Activity {
 			String year = string.split(" ")[1];
 			String season = string.split(" ")[0];
 			semester = Semester.getSemester(campus, year, season, this);
+
+			if(semester.getCourseCount() != 0){
+				((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.GONE);
+			}
+			
+			TextView tv = (TextView) findViewById(R.id.courses_semester);
+			if (tv.getVisibility() == View.GONE) {
+				tv.setVisibility(View.VISIBLE);
+			}
+			ScheduleDrawable sd = (ScheduleDrawable)findViewById(R.id.scheduledraw);
+			semester.setScheduleDraw(sd);
+			sd.onChange();
+
+			tv.setText("Semester: " + semester.getSeason() + " "
+					+ semester.getYear() + " " + semester.getCampus());
+			
 			courselistadapter.clear();
 			for (Object course : semester.getCourses()) {
 				if (course instanceof Course) {
@@ -438,21 +454,6 @@ public class UMCourses extends Activity {
 		} catch (IOException e1) {
 			throw new RuntimeException();
 		}
-
-		if(semester.getCourseCount() != 0){
-			((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.GONE);
-		}
-		
-		TextView tv = (TextView) findViewById(R.id.courses_semester);
-		if (tv.getVisibility() == View.GONE) {
-			tv.setVisibility(View.VISIBLE);
-		}
-		ScheduleDrawable sd = (ScheduleDrawable)findViewById(R.id.scheduledraw);
-		semester.setScheduleDraw(sd);
-		sd.onChange();
-
-		tv.setText("Semester: " + semester.getSeason() + " "
-				+ semester.getYear() + " " + semester.getCampus());
 		
 		if (coursenumadapter != null) {
 			coursenumadapter.clear();

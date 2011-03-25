@@ -137,6 +137,7 @@ public class ScheduleDrawable extends View {
 		if (semester == null) return;
 		
 		for (Course course : semester.getCourses()) {
+			course.setColor(Color.getColor(i));
 			colors.put(course, Color.getColor(i++));
 			if (i == (Color.getMaxId() + 1)) i = Color.getColor("RED").getId();
 		}

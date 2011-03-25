@@ -2,6 +2,7 @@ package org.umece.android.umaine;
 
 import android.content.Context;
 import android.text.Spannable;
+import android.text.style.ForegroundColorSpan;
 import android.widget.EditText;
 
 public class Course {
@@ -106,16 +107,30 @@ public class Course {
 		return return_val;
 	}
 	
-	public Spannable getSpannable(Context context) {
-		if (spannable != null) return spannable;
-		if (context == null) return null;
+	public void setColor(Color color) {
+		this.color = color;
+		this.spannable = null;
+	}
+	
+	public void createSpannable(Context context) {
+		if (context == null) return;
 		EditText newet = new EditText(context);
         newet.setText(getDep() + " " + getCoursenum()+ " - " + getTitle());
         Spannable str = newet.getText();
 //        str.setSpan(new StyleSpan(android.graphics.Typeface.ITALIC), 0, str.length()-1, 
 //        			Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        
+        if (color != null) {
+        	str.setSpan(new ForegroundColorSpan(color.getColor()), 0, 
+        			str.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        }
+
         spannable = str;
+	}
+	
+	public Spannable getSpannable(Context context) {
+		if (spannable != null) return spannable;
+		
+		createSpannable(context);
         return spannable;
 	}
 	
