@@ -24,7 +24,7 @@ public class ScheduleDrawable extends View {
 	private List<Rect> rect_queue;
 	private List<Color> color_queue;
 	public int x, y;
-	public int each_width;
+	public double each_width;
 	private HashMap<Course, Color> colors;
 	
 	public ScheduleDrawable(Context context, AttributeSet attrs) {
@@ -107,21 +107,17 @@ public class ScheduleDrawable extends View {
 
 	private void addRects(Rect mRect, Color[] colors) {
 		int rect_width = mRect.left - mRect.right;
-		each_width = (rect_width) / colors.length;
-		int addition = 0;
-		if (each_width != ((rect_width + (colors.length / 2)) / colors.length)) {
-			addition = 1;
-		}
+		each_width = ((double)rect_width) / colors.length;
 		int i;
-		int left = mRect.right;
+		double left = mRect.right;
 		
 		for (i = 0; i < colors.length; i++) {
 			rect_queue.add(new Rect(
-					left + 1,
+					(int)(left + 1),
 					mRect.top + 1,
-					left + each_width - 1 + (((i % 2) == 1)?addition:0),
+					(int)(left + each_width - 1),
 					mRect.bottom - 1));
-			left += each_width + (((i % 2) == 1)?addition:0);
+			left += each_width;
 			color_queue.add(colors[i]);
 		}
 	}
