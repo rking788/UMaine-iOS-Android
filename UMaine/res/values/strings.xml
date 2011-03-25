@@ -135,6 +135,11 @@
 		<item>WSC</item>
 		<item>WST</item>
 	</string-array>
+	
+	
+
+    <string name="start_title">Start!!</string>
+    <string name="hello_sports">Please select!</string>
     <string name="allSch_button_title">all schedule</string>
     <string name="hockeySch_button_title">hockey schedule</string>
     <string name="basketballSch_button_title">basketball schedule</string>
