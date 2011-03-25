@@ -13,6 +13,8 @@
         </activity>
 		<activity android:name=".UMMap"></activity>
 		<activity android:name=".UMCourses"></activity>
+
+
 		<activity android:name=".UMSports" android:label="@string/sports_title"></activity>
 		<activity android:name=".SportsDisplay" ></activity>
 		<activity android:name=".UMCourseDetails"></activity>
