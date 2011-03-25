@@ -139,6 +139,7 @@ public class ScheduleDrawable extends View {
 		}
 		
 		for (Course course : semester.getCourses()) {
+			if (course.getMeetingTime().split(" ").length < 4) continue;
 			int start = parseTime(course.getMeetingTime().split(" ")[1], false);
 			int end = parseTime(course.getMeetingTime().split(" ")[3], true);
 			
@@ -174,6 +175,7 @@ public class ScheduleDrawable extends View {
 		}
 		
 		String time = string;//.split(" ")[0];
+		if (time.split(":").length < 2) return 0;
 		int val = 2 * Integer.parseInt(time.split(":")[0]);
 		if (pm && (val != 24)) {
 			val += 24;
