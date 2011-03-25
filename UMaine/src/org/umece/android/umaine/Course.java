@@ -18,6 +18,7 @@ public class Course {
 	private String office;
 	private String book;
 	private Spannable spannable;
+	private Color color;
 	
 	/**
 	 * Creates a course to be added to a semester.

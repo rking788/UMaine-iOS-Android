@@ -135,4 +135,10 @@
 		<item>WSC</item>
 		<item>WST</item>
 	</string-array>
+    <string name="allSch_button_title">all schedule</string>
+    <string name="hockeySch_button_title">hockey schedule</string>
+    <string name="basketballSch_button_title">basketball schedule</string>
+    <string name="othersSch_button_title">others schedule</string>
+    <string name="sports_title">Date\t\tEvent\t\t\tLocation\t\tTime \tBand</string>
+    <string name ="search_title">Date\t\tEvent\t\t\tLocation\t\tTime \tBand</string>
 </resources>
