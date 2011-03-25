@@ -69,11 +69,13 @@ public class UMCourses extends Activity {
 	private static final String POST_COURSENUM = "coursenums";
 	private static final String POST_SECTIONS = "sections";
 	private static final String POST_ADDCOURSE = "addcourse";
+	@SuppressWarnings("unused")
 	private static final String POST_TEXTBOOK = "textbook";
 
 	/* Dialog Types */
 	private static final int DIALOG_ADD_COURSE = 0;
 	private static final int DIALOG_SELECT_SEMESTER = 1;
+	private static final int DIALOG_DELETE_SEMESTER = 2;
 
 	public ArrayAdapter<CharSequence> semesteradapter;
 	public ArrayAdapter<String> departadapter;
@@ -198,6 +200,9 @@ public class UMCourses extends Activity {
 		case R.id.change_semester:
 			showDialog(DIALOG_SELECT_SEMESTER);
 			return true;
+		case R.id.delete_semester:
+			showDialog(DIALOG_DELETE_SEMESTER);
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -292,9 +297,34 @@ public class UMCourses extends Activity {
 			ret.setPositiveButton("OK", new SemListener());
 			ret.setNegativeButton("Cancel", blankListener);
 			return ret.create();
+		case DIALOG_DELETE_SEMESTER:
+
+			OnClickListener blankListener_2 = new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+				}
+			};
+
+			OnClickListener sem_delete = new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					UMCourses.getActivity().deleteSemester();
+				}
+			};
+
+			Builder ret_2 = new AlertDialog.Builder((Context) this);
+			ret_2.setTitle("Delete Semester " + semester.getSeason() + " " + semester.getYear() + "?");
+			ret_2.setPositiveButton("OK", sem_delete);
+			ret_2.setNegativeButton("Cancel", blankListener_2);
+			return ret_2.create();
 		}
 
 		return null;
+	}
+
+	protected void deleteSemester() {
+		semester.delete();
+		semester = null;
+		
+		showDialog(DIALOG_SELECT_SEMESTER);
 	}
 
 	/*
@@ -423,6 +453,16 @@ public class UMCourses extends Activity {
 
 		tv.setText("Semester: " + semester.getSeason() + " "
 				+ semester.getYear() + " " + semester.getCampus());
+		
+		if (coursenumadapter != null) {
+			coursenumadapter.clear();
+		}
+		if (departac != null) {
+			departac.clearComposingText();
+		}
+		if (sectionadapter != null) {
+			sectionadapter.clear();
+		}
 	}
 
 	public String getDepartSpin() {

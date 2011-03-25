@@ -5,4 +5,5 @@
 		android:title="Add Course"/>
 	<item android:id="@+id/change_semester"
 		android:title="Change Semester"/>
+	<item android:id="@+id/delete_semester" android:title="Delete Semester"></item>
 </menu>

@@ -4,7 +4,7 @@
   	android:layout_width="fill_parent"
   	android:layout_height="fill_parent"
   	android:orientation="vertical">
-    <org.umece.android.umaine.ScheduleDrawable android:id="@+id/scheduledraw" android:layout_width="wrap_content" android:layout_height="150dip"></org.umece.android.umaine.ScheduleDrawable>
+    <org.umece.android.umaine.ScheduleDrawable android:id="@+id/scheduledraw" android:layout_width="wrap_content" android:layout_height="150dip" android:background="@drawable/schedulebackground"></org.umece.android.umaine.ScheduleDrawable>
   	<LinearLayout
 		android:layout_width="fill_parent"
   		android:layout_height="fill_parent"

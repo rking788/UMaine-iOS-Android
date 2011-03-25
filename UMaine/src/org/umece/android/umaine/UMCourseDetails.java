@@ -2,7 +2,6 @@ package org.umece.android.umaine;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.style.StyleSpan;

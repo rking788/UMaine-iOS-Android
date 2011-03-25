@@ -80,11 +80,11 @@ public class ScheduleDrawable extends View {
 		color_queue.clear();
 		int start_rect = (int)(.98 * x);
 		int end_rect = (int)(.05 * x);
-		Rect m_rect = new Rect(start_rect, (int)(y * .10), end_rect, (int)(y * .27));
-		Rect t_rect = new Rect(start_rect, (int)(y * .29), end_rect, (int)(y * .46));
-		Rect w_rect = new Rect(start_rect, (int)(y * .48), end_rect, (int)(y * .65));
-		Rect h_rect = new Rect(start_rect, (int)(y * .67), end_rect, (int)(y * .82));
-		Rect f_rect = new Rect(start_rect, (int)(y * .84), end_rect, (int)(y * .99));
+		Rect m_rect = new Rect(start_rect, (int)(y * .15), end_rect, (int)(y * .32));
+		Rect t_rect = new Rect(start_rect, (int)(y * .33), end_rect, (int)(y * .50));
+		Rect w_rect = new Rect(start_rect, (int)(y * .51), end_rect, (int)(y * .68));
+		Rect h_rect = new Rect(start_rect, (int)(y * .69), end_rect, (int)(y * .84));
+		Rect f_rect = new Rect(start_rect, (int)(y * .85), end_rect, (int)(y * 1.00));
 		Color white = Color.getColor("GRAY");
 		
 		rect_queue.add(m_rect);
@@ -227,25 +227,25 @@ public class ScheduleDrawable extends View {
 	@Override
 	protected void onDraw(Canvas canvas) {
 		drawQueue(canvas);
-		Paint paint = new Paint();
-		paint.setStrokeWidth(3);
-		paint.setColor(Color.getColor("WHITE").getColor());
-		paint.setTextSize(20);
-		String text = "M";
-		float[] pos = new float[] { (float) (.005*x), (float) (.20*y) };
-		canvas.drawPosText(text, pos, paint);
-		text = "T";
-		pos = new float[] { (float) (.01*x), (float) (.40*y) };
-		canvas.drawPosText(text, pos, paint);
-		text = "W";
-		pos = new float[] { (float) (.005*x), (float) (.59*y) };
-		canvas.drawPosText(text, pos, paint);
-		text = "H";
-		pos = new float[] { (float) (.01*x), (float) (.76*y) };
-		canvas.drawPosText(text, pos, paint);
-		text = "F";
-		pos = new float[] { (float) (.01*x), (float) (.94*y) };
-		canvas.drawPosText(text, pos, paint);
+//		Paint paint = new Paint();
+//		paint.setStrokeWidth(3);
+//		paint.setColor(Color.getColor("WHITE").getColor());
+//		paint.setTextSize(20);
+//		String text = "M";
+//		float[] pos = new float[] { (float) (.005*x), (float) (.25*y) };
+//		canvas.drawPosText(text, pos, paint);
+//		text = "T";
+//		pos = new float[] { (float) (.01*x), (float) (.43*y) };
+//		canvas.drawPosText(text, pos, paint);
+//		text = "W";
+//		pos = new float[] { (float) (.005*x), (float) (.61*y) };
+//		canvas.drawPosText(text, pos, paint);
+//		text = "H";
+//		pos = new float[] { (float) (.01*x), (float) (.78*y) };
+//		canvas.drawPosText(text, pos, paint);
+//		text = "F";
+//		pos = new float[] { (float) (.01*x), (float) (.95*y) };
+//		canvas.drawPosText(text, pos, paint);
 		
 	}
 
