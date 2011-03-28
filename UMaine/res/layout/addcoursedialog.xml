@@ -15,20 +15,20 @@
   	android:layout_width="fill_parent"
   	android:layout_height="wrap_content"
   	android:completionThreshold="1" android:capitalize="characters"/>
-  	<!--  TODO: Change this to an autocomplete text view -->
-  	<TextView android:text="Course Number"
-  		android:id="@+id/coursenum_tv"
-  		android:layout_width="wrap_content"
-  		android:layout_height="wrap_content"/>
-  <Spinner
-  	android:id="@+id/coursenumspin"
+  <TextView android:text="Course Number"
+  	android:id="@+id/coursenum_tv"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"/>
+  <AutoCompleteTextView
+  	android:id="@+id/coursenum_ac"
   	android:layout_width="fill_parent"
   	android:layout_height="wrap_content"
-  	android:prompt="@string/coursenum_prompt"/>
+  	android:completionThreshold="1"
+  	android:numeric="integer"/>
   <TextView android:text="Section Number"
-  		android:id="@+id/sectionnum_tv"
-  		android:layout_width="wrap_content"
-  		android:layout_height="wrap_content"/>
+	android:id="@+id/sectionnum_tv"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"/>
   <Spinner
   	android:id="@+id/sectionspin"
   	android:layout_width="fill_parent"

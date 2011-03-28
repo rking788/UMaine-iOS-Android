@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+  <TextView
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:text="Search:" />
+  <EditText
+  	android:id="@+id/dirsearch_et"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"/>
+  	<LinearLayout
+  		android:layout_height="wrap_content"
+  		android:layout_width="fill_parent"
+  		android:weightSum="4">
+  	<RadioGroup 
+  		android:layout_height="wrap_content" 
+  		android:layout_width="0dp" 
+  		android:id="@+id/name_rb_group"
+  		android:orientation="horizontal"
+  		android:layout_weight="4"
+  		android:weightSum="4">
+  	<RadioButton 
+  		android:layout_height="wrap_content" 
+  		android:layout_weight="2" 
+  		android:text="First Name" 
+  		android:id="@+id/fname_rb" 
+  		android:layout_width="0dp">
+  	</RadioButton>
+  	<RadioButton
+  		android:text="Last Name" 
+  		android:id="@+id/lname_rb" 
+  		android:layout_width="0dp"
+  		android:layout_weight="2"
+  		android:layout_height="wrap_content">
+  	</RadioButton>
+  	</RadioGroup>
+  	</LinearLayout>
+  <View
+  	android:layout_height="2dp"
+  	android:layout_width="fill_parent"
+  	android:background="#ff003263"/>
+  <ListView
+  	android:id="@+id/directory_lv"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"/>
+</LinearLayout>

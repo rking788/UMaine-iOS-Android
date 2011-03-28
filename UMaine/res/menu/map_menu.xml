@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/getlocation"
+		android:title="My Location On/Off" />
+	<item android:id="@+id/myparkingspace"
+		android:title="My Parking Spot" />
 	<item android:id="@+id/lots"
 		android:title="Lots"/>
 	<item android:id="@+id/buildings"
-		android:title="Buildings"/>	
+		android:title="Buildings"/>
 </menu>

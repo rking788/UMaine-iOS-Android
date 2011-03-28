@@ -46,10 +46,8 @@ public class UMCourses extends Activity {
 		return me;
 	}
 
-	/*
-	 * TODO: FIX SO THAT THE SELECT SEMESTER DIALOG IS NOT SHOWN IF THE USER
-	 * GOES BACK AND THEN BACK INTO THE SCHEDULE ACTIVITY
-	 */
+	/* TODO: Add course title to course number spinner (change back to spinner) */
+	
 	/*
 	 * TODO: Need to do a lot more error checking for instance when they try to
 	 * add a course with incomplete information
@@ -88,7 +86,7 @@ public class UMCourses extends Activity {
 
 	private AutoCompleteTextView departac;
 
-	private Spinner coursenumspin;
+	private AutoCompleteTextView coursenumac;
 
 	private Spinner sectionspin;
 
@@ -111,7 +109,7 @@ public class UMCourses extends Activity {
 		departadapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_dropdown_item_1line, departs);
 		coursenumadapter = new ArrayAdapter<CharSequence>(this,
-				android.R.layout.simple_spinner_item);
+				android.R.layout.simple_dropdown_item_1line);
 		coursenumadapter
 				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		sectionadapter = new ArrayAdapter<CharSequence>(this,
@@ -238,7 +236,7 @@ public class UMCourses extends Activity {
 			/* Get references to the spinners */
 			departac = (AutoCompleteTextView) layout
 					.findViewById(R.id.depart_ac);
-			coursenumspin = (Spinner) layout.findViewById(R.id.coursenumspin);
+			coursenumac = (AutoCompleteTextView) layout.findViewById(R.id.coursenum_ac);
 			sectionspin = (Spinner) layout.findViewById(R.id.sectionspin);
 
 			OnClickListener listener = new AddListener();
@@ -262,19 +260,15 @@ public class UMCourses extends Activity {
 			};
 			departac.setOnItemClickListener(delistener);
 
-			OnItemSelectedListener celistener = new AdapterView.OnItemSelectedListener() {
-				public void onItemSelected(AdapterView<?> parentView,
+			OnItemClickListener celistener = new AdapterView.OnItemClickListener() {
+				public void onItemClick(AdapterView<?> parentView,
 						View selectedItemView, int position, long id) {
 					postSections();
 				}
-
-				public void onNothingSelected(AdapterView<?> parentView) {
-					// do nothing?
-				}
 			};
-			/* Course number spinner */
-			coursenumspin.setAdapter(coursenumadapter);
-			coursenumspin.setOnItemSelectedListener(celistener);
+			/* Course number autocomplete */
+			coursenumac.setAdapter(coursenumadapter);
+			coursenumac.setOnItemClickListener(celistener);
 
 			OnItemSelectedListener seclistener = new AdapterView.OnItemSelectedListener() {
 				public void onItemSelected(AdapterView<?> parentView,
@@ -386,8 +380,8 @@ public class UMCourses extends Activity {
 		} catch (Exception e) {
 			throw new RuntimeException();
 		}
-		coursenumspin.setSelection(0);
-		coursenumspin.getSelectedItem().toString();
+		//coursenumac.setSelection(0);
+		//coursenumac.getSelectedItem().toString();
 	}
 
 	public void postSemesters() {
@@ -401,7 +395,7 @@ public class UMCourses extends Activity {
 		} catch (Exception e) {
 			throw new RuntimeException();
 		}
-		coursenumspin.getSelectedItem().toString();
+		//coursenumspin.getSelectedItem().toString();
 	}
 
 	public void postSections() {
@@ -409,7 +403,7 @@ public class UMCourses extends Activity {
 		postParams.add(new BasicNameValuePair("field", POST_SECTIONS));
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
 		postParams
-				.add(new BasicNameValuePair(POST_COURSENUM, getCoursesSpin()));
+				.add(new BasicNameValuePair(POST_COURSENUM, getCoursesAC()));
 		postParams
 				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 		sectionadapter.clear();
@@ -484,8 +478,8 @@ public class UMCourses extends Activity {
 		return departac.getText().toString();
 	}
 
-	public String getCoursesSpin() {
-		return coursenumspin.getSelectedItem().toString();
+	public String getCoursesAC() {
+		return coursenumac.getText().toString();
 	}
 
 	public String getSectionSpin() {
@@ -503,20 +497,23 @@ public class UMCourses extends Activity {
 		postParams.add(new BasicNameValuePair("field", POST_ADDCOURSE));
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
 		postParams
-				.add(new BasicNameValuePair(POST_COURSENUM, getCoursesSpin()));
+				.add(new BasicNameValuePair(POST_COURSENUM, getCoursesAC()));
 		postParams.add(new BasicNameValuePair(POST_SECTIONS, getSectionSpin()));
 		postParams
 				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 
 		/* Insert the info we already know */
 		ci.add(getDepartSpin());
-		ci.add(getCoursesSpin());
+		ci.add(getCoursesAC());
 		ci.add(getSectionSpin());
 		/* Add the new course Spannable to the list view adapter */
 		courselistadapter.clear();
 		try {
 
 			for (String s : httpRequest(postParams)) {
+				if(s.startsWith("Error:")){
+					s = null;
+				}
 				ci.add(s);
 			}
 

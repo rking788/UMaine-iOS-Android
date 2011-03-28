@@ -5,7 +5,11 @@
 	<string name="depart_prompt">Department</string>
 	<string name="coursenum_prompt">Course Number</string>
 	<string name="section_prompt">Section Number</string>
-	<string name="courselist_directions">To get started, press the menu button to display a menu that will allow you to add a course.</string>
+	<string name="courselist_directions">Press the menu button to add/delete a course.</string>
+	<string-array name="parkingspot_dialog_choices">
+		<item>Save current location as new space.</item>
+		<item>Load current location of last space.</item>
+	</string-array>
 	<string-array name="departments">
 		<item>AED</item>
 		<item>ANT</item>

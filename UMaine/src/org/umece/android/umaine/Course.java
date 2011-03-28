@@ -37,7 +37,6 @@ public class Course {
 	 */
 	public Course(String cdep, String cnum, String ctitle, String csession, String cdesc, 
 			String cmeetingtime, String clocation, String cinst, String cphone, String cemail, String coffice, String cbook) {
-		/* TODO: need to add instructor in here */
 		dep = cdep;
 		coursenum = cnum;
 		title = ctitle;

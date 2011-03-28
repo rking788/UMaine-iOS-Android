@@ -7,7 +7,7 @@ public class AddListener implements android.content.DialogInterface.OnClickListe
 		UMCourses courses = UMCourses.getActivity();
 		
 		String department = courses.getDepartSpin();
-		String coursenum = courses.getCoursesSpin();
+		String coursenum = courses.getCoursesAC();
 		String section = courses.getSectionSpin();
 		
 		courses.addCourse(department, coursenum, section);
