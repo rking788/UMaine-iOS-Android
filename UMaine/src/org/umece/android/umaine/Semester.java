@@ -9,7 +9,6 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
-import android.text.Spannable;
 
 public class Semester{
 
@@ -238,9 +237,9 @@ public class Semester{
 		return courses.size();
 	}
 
-	public Course getCourse(Spannable item) {
+	public Course getCourse(String item) {
 		for (Course course : courses) {
-			if (course.getSpannable(null).equals(item)) {
+			if (course.getString().equals(item)) {
 				return course;
 			}
 		}

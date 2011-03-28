@@ -23,7 +23,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
-import android.text.Spannable;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -61,7 +60,7 @@ public class UMCourses extends Activity {
 	 */
 
 	/* PHP script */
-	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/drupal/sample.php";
+	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
 
 	/* Post Values for data to be queried */
 	private static final String POST_SEMESTERS = "semesters";
@@ -81,7 +80,7 @@ public class UMCourses extends Activity {
 	public ArrayAdapter<String> departadapter;
 	public ArrayAdapter<CharSequence> coursenumadapter;
 	public ArrayAdapter<CharSequence> sectionadapter;
-	public ArrayAdapter<Spannable> courselistadapter;
+	public ArrayAdapter<Course> courselistadapter;
 
 	private static UMCourses me;
 
@@ -92,6 +91,8 @@ public class UMCourses extends Activity {
 	private Spinner coursenumspin;
 
 	private Spinner sectionspin;
+
+	public LayoutInflater mInflater;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -117,29 +118,40 @@ public class UMCourses extends Activity {
 				android.R.layout.simple_spinner_item);
 		sectionadapter
 				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-		courselistadapter = null;
-
-		/*
-		 * If the adapter for the course list hasn't been created yet then
-		 * create it and set the adapter of the list view
-		 */
-		if (courselistadapter == null) {
-			ListView lv = (ListView) findViewById(R.id.courseslist);
-			courselistadapter = new ArrayAdapter<Spannable>(this,
-					R.layout.list_item);
-			lv.setAdapter(courselistadapter);
-			registerForContextMenu(lv);
-			lv.setOnItemClickListener(new OnItemClickListener(){
-
-				public void onItemClick(AdapterView<?> arg0, View arg1,
-						int arg2, long arg3) {
-					Intent myIntent = new Intent(arg1.getContext(), UMCourseDetails.class);
-					myIntent.putExtra("selectedindex", arg2);
-					startActivity(myIntent);
-					//startActivityForResult(myIntent, 0);
+		
+		mInflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		ListView lv = (ListView) findViewById(R.id.courseslist);
+		courselistadapter = new ArrayAdapter<Course>(this,
+				R.layout.list_item) {
+			@Override
+			public View getView(int position, View convertView, ViewGroup parent) {
+				View row;
+				
+				if (convertView == null) {
+					row = mInflater.inflate(R.layout.list_item, parent, false);
+					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position).getString());
+					row.findViewById(R.id.view1).setBackgroundColor(getItem(position).getColor());
+				} else {
+					row = convertView;
+					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position).getString());
+					row.findViewById(R.id.view1).setBackgroundColor(getItem(position).getColor());
 				}
-			});
-		}
+				
+				return row;
+			}
+		};
+		lv.setAdapter(courselistadapter);
+		registerForContextMenu(lv);
+		lv.setOnItemClickListener(new OnItemClickListener(){
+
+			public void onItemClick(AdapterView<?> arg0, View arg1,
+					int arg2, long arg3) {
+				Intent myIntent = new Intent(arg1.getContext(), UMCourseDetails.class);
+				myIntent.putExtra("selectedindex", arg2);
+				startActivity(myIntent);
+				//startActivityForResult(myIntent, 0);
+			}
+		});
 
 		me = this;
 
@@ -164,7 +176,7 @@ public class UMCourses extends Activity {
 		switch (item.getItemId()) {
 		case R.id.delete:
 			try {
-				semester.remCourse(semester.getCourse(courselistadapter.getItem((int) info.id)));
+				semester.remCourse(courselistadapter.getItem((int) info.id));
 			} catch (IOException e) {
 				throw new RuntimeException();
 			}
@@ -350,7 +362,7 @@ public class UMCourses extends Activity {
 
 		if (semester != null) {
 			try {
-				if(semester.getCourseCount() == 0){
+				if(semester.getCourseCount() == 0) {
 					((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.GONE);
 				}
 				semester.addCourse(new Course(dep, num, title, sec, "", meetingTime, location, inst, phone, email, office, book));
@@ -418,7 +430,7 @@ public class UMCourses extends Activity {
 		return semester;
 	}
 	
-	public ArrayAdapter<Spannable> getCourseListAdapter(){
+	public ArrayAdapter<Course> getCourseListAdapter(){
 		return courselistadapter;
 	}
 
@@ -447,8 +459,7 @@ public class UMCourses extends Activity {
 			courselistadapter.clear();
 			for (Object course : semester.getCourses()) {
 				if (course instanceof Course) {
-					courselistadapter.add(((Course) course)
-							.getSpannable(UMCourses.getActivity()));
+					courselistadapter.add(((Course) course));
 				}
 			}
 //			ListView lv = (ListView)findViewById(R.id.courseslist);
@@ -513,7 +524,7 @@ public class UMCourses extends Activity {
 			if ((semester != null) && (semester.getCourses() != null)
 					&& (semester.getCourses().length > 0)) {
 				for (Course course : semester.getCourses()) {
-					courselistadapter.add(course.getSpannable(this));
+					courselistadapter.add(course);
 				}
 			}
 		} catch (Exception e) {
@@ -546,7 +557,7 @@ public class UMCourses extends Activity {
 
 	public void removeCourse(int selIndex) {
 		try {
-			semester.remCourse(semester.getCourse(courselistadapter.getItem(selIndex)));
+			semester.remCourse(courselistadapter.getItem(selIndex));
 		} catch (IOException e) {
 			throw new RuntimeException();
 		}

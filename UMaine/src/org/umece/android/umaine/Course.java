@@ -112,6 +112,10 @@ public class Course {
 		this.spannable = null;
 	}
 	
+	public String getString() {
+		return getDep() + " " + getCoursenum()+ " - " + getTitle();
+	}
+	
 	public void createSpannable(Context context) {
 		if (context == null) return;
 		EditText newet = new EditText(context);
@@ -183,5 +187,14 @@ public class Course {
 	
 	public String getBook(){
 		return book;
+	}
+
+
+	public int getColor() {
+		if (color != null) {
+			return color.getColor();
+		} else {
+			return Color.getColor("BLACK").getColor();
+		}
 	}
 }
