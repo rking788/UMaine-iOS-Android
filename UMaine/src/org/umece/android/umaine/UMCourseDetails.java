@@ -5,8 +5,10 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
+import android.text.Spanned;
 import android.text.style.StyleSpan;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -41,10 +43,19 @@ public class UMCourseDetails extends Activity {
 	private void populateCourseDetails(Course c){
 		/* TODO: isbn is being recognized as a phone number which is wrong */
 		TextView title_tv = (TextView) findViewById(R.id.cdetail_title_tv);
-		TextView details_tv = (TextView) findViewById(R.id.cdetails_tv);
+		TextView courseinfo_tv = (TextView) findViewById(R.id.cdetails_courseinfo_tv);
+		TextView textbookinfo_tv = (TextView) findViewById(R.id.cdetails_tbi_tv);
+		TextView instinfo_tv = (TextView) findViewById(R.id.cdetails_ii_tv);
 		
+		/* Set the course title line */
 		String titleline = c.getDep() +  " " + c.getCoursenum() + " - " + c.getTitle();
 		title_tv.setText(titleline);
+		
+		/* Set the course information text */
+		Spanned courseinfo = Html.fromHtml(c.getMeetingTime() + "<br/>" + c.getLocation());
+		courseinfo_tv.setText(courseinfo);
+		
+		/* Set the textbook information */
 		String bookInfo = c.getBook();
 		if((bookInfo == null)||(bookInfo.equals("null"))){
 			bookInfo = "Information Unavailable";
@@ -53,15 +64,11 @@ public class UMCourseDetails extends Activity {
 			bookInfo = "No Textbook";
 		}
 		
-		String details = "\t" + c.getMeetingTime() + "\n\t" + c.getLocation() + "\n\t" + "Textbook:" + "\n\t\t" + bookInfo +
-							"\n\t" + "Instructor:" + "\n\t\t" + c.getInstructor() + "\n\t\t" + c.getOffice() + "\n\t\t" + 
-							c.getPhone() + "\n\t\t" + c.getEmail();
-		int beginBoldINST = details.indexOf("Instructor");
-		int beginBoldTB = details.indexOf("Textbook:");
-		SpannableStringBuilder ssb = new SpannableStringBuilder(details);
-		ssb.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), beginBoldINST, (beginBoldINST + 11), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-		ssb.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), beginBoldTB, (beginBoldTB + 9), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-		details_tv.setText(ssb);
+		textbookinfo_tv.setText(bookInfo);
+		
+		/* Set instructor information */
+		Spanned instinfo = Html.fromHtml(c.getInstructor() + "<br/>" + c.getOffice() + "<br/>" + c.getPhone() + "<br/>" + c.getEmail());
+		instinfo_tv.setText(instinfo);
 	}
 	
 	private void setButtonHandlers(){

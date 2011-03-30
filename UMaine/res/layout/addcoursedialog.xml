@@ -4,7 +4,6 @@
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
   android:id="@+id/addcourseroot" android:orientation="vertical">
-  
   <TextView android:text="Department" 
   	android:id="@+id/depart_tv" 
   	android:layout_width="wrap_content" 
@@ -19,12 +18,11 @@
   	android:id="@+id/coursenum_tv"
   	android:layout_width="wrap_content"
   	android:layout_height="wrap_content"/>
-  <AutoCompleteTextView
-  	android:id="@+id/coursenum_ac"
+  <Spinner
+  	android:id="@+id/coursenum_spin"
   	android:layout_width="fill_parent"
   	android:layout_height="wrap_content"
-  	android:completionThreshold="1"
-  	android:numeric="integer"/>
+  	android:prompt="@string/coursenum_prompt"/>
   <TextView android:text="Section Number"
 	android:id="@+id/sectionnum_tv"
 	android:layout_width="wrap_content"

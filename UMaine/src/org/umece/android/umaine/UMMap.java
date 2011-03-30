@@ -15,10 +15,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-import android.location.LocationProvider;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -45,7 +41,6 @@ public class UMMap extends MapActivity {
 	private static final int FAILED_LOCATION_LOAD = 3;
 	private static final int OVERWRITE_SPOT_WARNING = 4;
 	private static final int WAIT_FOR_POSITION = 5;
-	private static final int SAVE_LOCATION_SUCCESS = 6;
 	
 	/* Permit Types */
 	private static final int PERMIT_STAFF = 0;
@@ -97,19 +92,20 @@ public class UMMap extends MapActivity {
         showDialog(DIALOG_LOTS);
     }
 
+    /* Do we want to re-enable "my location" when resuming the activity? */
+    /* Causes a problem where the location is turned on when the activity first starts */
+    /*
     @Override
     public void onResume(){
     	super.onResume();
-    	if(mylocOverlay != null){
-    		mylocOverlay.enableMyLocation();
-    		mv.getOverlays().add(mylocOverlay);
-    	}
-    }
+   		mylocOverlay.enableMyLocation();
+   		mv.getOverlays().add(mylocOverlay);
+    }*/
     
     @Override
     public void onPause(){
     	super.onPause();
-    	if((mylocOverlay != null) && (mylocOverlay.isMyLocationEnabled())){
+    	if(mylocOverlay.isMyLocationEnabled()){
     		mylocOverlay.disableMyLocation();
     		mv.getOverlays().remove(mylocOverlay);
     	}
@@ -435,18 +431,6 @@ public class UMMap extends MapActivity {
     			.setMessage("Please wait while your current position is found so that it can be saved.")
     			.setCancelable(false)
     			.create();
-    		
-    	case SAVE_LOCATION_SUCCESS:
-    		return new AlertDialog.Builder(this)
-			.setTitle("Success")
-			.setMessage("Current parking space location has been saved successfully")
-			.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-				
-				public void onClick(DialogInterface dialog, int which) {
-					dialog.dismiss();
-				}
-			})
-			.create();
     	}
     	
     	return null;
@@ -492,7 +476,6 @@ public class UMMap extends MapActivity {
     }
     
     private void savePos(GeoPoint p){
-    	Toast.makeText(this, "Found Location: " + p.toString(), Toast.LENGTH_LONG).show();
     	try {
 			FileOutputStream foutstream = openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
 			foutstream.write(p.toString().getBytes());
@@ -504,8 +487,8 @@ public class UMMap extends MapActivity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    	
-		showDialog(SAVE_LOCATION_SUCCESS);
+		
+    	Toast.makeText(this, "Spot Saved " + p.toString(), Toast.LENGTH_LONG).show();
     }
     
     private void getSavedPos(File fin){

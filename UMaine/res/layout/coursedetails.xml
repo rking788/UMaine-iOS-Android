@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent"
-  android:orientation="vertical">
-  <TextView
-  	android:id="@+id/cdetail_title_tv"
-  	android:layout_width="fill_parent"
-  	android:layout_height="wrap_content"
-  	android:textStyle="bold"
-  	android:paddingLeft="5px"
-  	android:paddingTop="5px"
-  	android:paddingRight="5px"/>
-  <TextView
-  	android:id="@+id/cdetails_tv"
-  	android:layout_width="fill_parent"
-  	android:layout_height="wrap_content"
-  	android:text="nothing"
-  	android:lineSpacingMultiplier="1.5"
-  	android:autoLink="phone|email"
-  	android:padding="5px"/>
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<!-- Course Title -->
+	<TextView
+  		android:id="@+id/cdetail_title_tv"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:textStyle="bold"
+  		android:padding="5px"/>
+	<!-- Course Info -->
+	<TextView
+ 	 	android:id="@+id/cdetails_courseinfo_tv"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:lineSpacingMultiplier="1.5"
+  		android:paddingLeft="15px"/>
+	<!-- Textbook heading -->
+	<TextView
+	  	android:id="@+id/cdetails_tbh_tv"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+  		android:text="Textbook:"
+  		android:lineSpacingMultiplier="1.0"
+  		android:textStyle="bold"
+  		android:paddingLeft="15px"/>
+  	<!-- Textbook information -->
+	<TextView
+	  	android:id="@+id/cdetails_tbi_tv"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+	  	android:lineSpacingMultiplier="1.5"
+	  	android:paddingLeft="30px"/>
+	<!-- Instructor heading -->
+	<TextView
+		android:id="@+id/cdetails_ih_tv"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Instructor:"
+		android:lineSpacingMultiplier="1.0"
+		android:textStyle="bold"
+		android:paddingLeft="15px"/>
+	<TextView
+  		android:id="@+id/cdetails_ii_tv"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:lineSpacingMultiplier="1.5"
+  		android:autoLink="phone|email"
+  		android:paddingLeft="30px"/>
   <LinearLayout 
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"

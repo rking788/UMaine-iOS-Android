@@ -23,6 +23,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -35,6 +37,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView.AdapterContextMenuInfo;
@@ -58,7 +61,7 @@ public class UMCourses extends Activity {
 	 */
 
 	/* PHP script */
-	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
+	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample-testing.php";
 
 	/* Post Values for data to be queried */
 	private static final String POST_SEMESTERS = "semesters";
@@ -86,7 +89,7 @@ public class UMCourses extends Activity {
 
 	private AutoCompleteTextView departac;
 
-	private AutoCompleteTextView coursenumac;
+	private Spinner coursenumspin;
 
 	private Spinner sectionspin;
 
@@ -109,7 +112,7 @@ public class UMCourses extends Activity {
 		departadapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_dropdown_item_1line, departs);
 		coursenumadapter = new ArrayAdapter<CharSequence>(this,
-				android.R.layout.simple_dropdown_item_1line);
+				android.R.layout.simple_spinner_item);
 		coursenumadapter
 				.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		sectionadapter = new ArrayAdapter<CharSequence>(this,
@@ -236,7 +239,7 @@ public class UMCourses extends Activity {
 			/* Get references to the spinners */
 			departac = (AutoCompleteTextView) layout
 					.findViewById(R.id.depart_ac);
-			coursenumac = (AutoCompleteTextView) layout.findViewById(R.id.coursenum_ac);
+			coursenumspin = (Spinner) layout.findViewById(R.id.coursenum_spin);
 			sectionspin = (Spinner) layout.findViewById(R.id.sectionspin);
 
 			OnClickListener listener = new AddListener();
@@ -260,15 +263,20 @@ public class UMCourses extends Activity {
 			};
 			departac.setOnItemClickListener(delistener);
 
-			OnItemClickListener celistener = new AdapterView.OnItemClickListener() {
-				public void onItemClick(AdapterView<?> parentView,
+			OnItemSelectedListener celistener = new AdapterView.OnItemSelectedListener() {
+				public void onItemSelected(AdapterView<?> parentView,
 						View selectedItemView, int position, long id) {
 					postSections();
 				}
+
+				public void onNothingSelected(AdapterView<?> arg0) {
+					// TODO Auto-generated method stub
+					
+				}
 			};
-			/* Course number autocomplete */
-			coursenumac.setAdapter(coursenumadapter);
-			coursenumac.setOnItemClickListener(celistener);
+			/* Course number spinner */
+			coursenumspin.setAdapter(coursenumadapter);
+			coursenumspin.setOnItemSelectedListener(celistener);
 
 			OnItemSelectedListener seclistener = new AdapterView.OnItemSelectedListener() {
 				public void onItemSelected(AdapterView<?> parentView,
@@ -380,7 +388,7 @@ public class UMCourses extends Activity {
 		} catch (Exception e) {
 			throw new RuntimeException();
 		}
-		//coursenumac.setSelection(0);
+		coursenumspin.setSelection(0);
 		//coursenumac.getSelectedItem().toString();
 	}
 
@@ -402,8 +410,11 @@ public class UMCourses extends Activity {
 		List<NameValuePair> postParams = new ArrayList<NameValuePair>();
 		postParams.add(new BasicNameValuePair("field", POST_SECTIONS));
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
+		
+		/* Coursenum spin now has the title in it, we just want the coursenum here */
+		String[] sar = getCoursesSpin().split(" ", 2);
 		postParams
-				.add(new BasicNameValuePair(POST_COURSENUM, getCoursesAC()));
+				.add(new BasicNameValuePair(POST_COURSENUM, sar[0]));
 		postParams
 				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 		sectionadapter.clear();
@@ -478,8 +489,8 @@ public class UMCourses extends Activity {
 		return departac.getText().toString();
 	}
 
-	public String getCoursesAC() {
-		return coursenumac.getText().toString();
+	public String getCoursesSpin() {
+		return coursenumspin.getSelectedItem().toString();
 	}
 
 	public String getSectionSpin() {
@@ -489,7 +500,11 @@ public class UMCourses extends Activity {
 	public void addCourse(String department, String coursenum, String section) {
 		List<NameValuePair> postParams = new ArrayList<NameValuePair>();
 		ArrayList<String> ci = new ArrayList<String>();
-
+		
+		/* Coursenum spin now has the title in it, we just want the coursenum here */
+		String[] sar = getCoursesSpin().split(" ", 2);
+		String cn = sar[0];
+		
 		/*
 		 * If adding a course we need to know department, course number, and
 		 * section
@@ -497,15 +512,16 @@ public class UMCourses extends Activity {
 		postParams.add(new BasicNameValuePair("field", POST_ADDCOURSE));
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
 		postParams
-				.add(new BasicNameValuePair(POST_COURSENUM, getCoursesAC()));
+				.add(new BasicNameValuePair(POST_COURSENUM, cn));
 		postParams.add(new BasicNameValuePair(POST_SECTIONS, getSectionSpin()));
 		postParams
 				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 
 		/* Insert the info we already know */
 		ci.add(getDepartSpin());
-		ci.add(getCoursesAC());
+		ci.add(cn);
 		ci.add(getSectionSpin());
+
 		/* Add the new course Spannable to the list view adapter */
 		courselistadapter.clear();
 		try {
