@@ -2,7 +2,6 @@ package org.umece.android.umaine;
 
 import java.util.ArrayList;
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.widget.Toast;
@@ -24,6 +23,17 @@ public class UMItemizedOverlay extends ItemizedOverlay {
 	public void addOverlay(OverlayItem overlay) {
 	    mOverlays.add(overlay);
 	    populate();
+	}
+	
+	public void addOverlay(OverlayItem overlay, Drawable marker){
+		overlay.setMarker(boundCenterBottom(marker));
+		mOverlays.add(overlay);
+		populate();
+	}
+	
+	public void removeOverlay(OverlayItem overlay){
+		mOverlays.remove(overlay);
+		populate();
 	}
 	
 	public void clearOverlays(){

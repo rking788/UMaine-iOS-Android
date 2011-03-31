@@ -4,12 +4,10 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
-import android.text.Spannable;
-import android.text.SpannableStringBuilder;
 import android.text.Spanned;
-import android.text.style.StyleSpan;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -73,12 +71,26 @@ public class UMCourseDetails extends Activity {
 	
 	private void setButtonHandlers(){
 		Button delbtn = (Button) findViewById(R.id.cdetails_delete_btn);
+		Button mapbtn = (Button) findViewById(R.id.cdetails_map_btn);
 		
 		delbtn.setOnClickListener(new OnClickListener(){
 
 			public void onClick(View v) {
 				showDialog(DIALOG_CONFIRM_DELETE);
 			}
+		});
+		
+		mapbtn.setOnClickListener(new OnClickListener(){
+
+			public void onClick(View v) {
+				Intent myIntent = new Intent(v.getContext(), UMMap.class);
+				myIntent.putExtra("lat", 44902860);
+				myIntent.putExtra("longitude", -68668796);
+				myIntent.putExtra("buildingname", "Bennett Hall");
+				startActivity(myIntent);
+				finish();
+			}
+			
 		});
 	}
 

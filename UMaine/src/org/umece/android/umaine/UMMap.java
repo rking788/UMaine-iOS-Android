@@ -3,7 +3,6 @@ package org.umece.android.umaine;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -12,14 +11,12 @@ import org.umece.android.umaine.R;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
@@ -47,6 +44,9 @@ public class UMMap extends MapActivity {
 	private static final int PERMIT_RESIDENT = 1;
 	private static final int PERMIT_COMMUTER = 2;
 	private static final int PERMIT_VISITOR = 3;
+	private static final int LOCATION_CURRENT = 4;
+	private static final int LOCATION_PARKING_SPOT = 5;
+	private static final int LOCATION_CLASS = 6;
 	
 	private boolean[] selectedPermits = {false, true, false, false};
 	private boolean[] prevSelectedPermits = {false, false, false, false};
@@ -55,11 +55,13 @@ public class UMMap extends MapActivity {
 	private UMItemizedOverlay resitemizedoverlay;
 	private UMItemizedOverlay commitemizedoverlay;
 	private UMItemizedOverlay visitemizedoverlay;
-	private UMItemizedOverlay curlocoverlay;
+	private UMItemizedOverlay poioverlays;
 	
 	private MapView mv;
 	
 	private MyLocationOverlay mylocOverlay;
+	private OverlayItem parkingOverlay;
+	private OverlayItem classOverlay;
 	
 	/** Called when the activity is first created. */
     @Override
@@ -85,11 +87,33 @@ public class UMMap extends MapActivity {
         populateOverlays();
         
         /* Create the current location overlay list */
-        curlocoverlay = new UMItemizedOverlay(getResources().getDrawable(R.drawable.aicar), this);
+        poioverlays = new UMItemizedOverlay(getResources().getDrawable(R.drawable.aicar), this);
         mylocOverlay = new MyLocationOverlay(this, mv);
+        mylocOverlay.runOnFirstFix(new Runnable(){
+
+			public void run() {
+				mv.getController().animateTo(mylocOverlay.getMyLocation());
+			}
+			
+		});
 		
-        /* TODO: Maybe prompt the user to see which lot they want to be displayed first */
-        showDialog(DIALOG_LOTS);
+        /* If we didn't get here from the course details page 
+         * then show the lot selection dialog */
+        Bundle extras = getIntent().getExtras();
+        if(extras != null){
+        	int	lat = extras.getInt("lat");
+			int longitude = extras.getInt("longitude");
+			String buildingName = extras.getString("buildingname");
+			GeoPoint building = new GeoPoint(lat, longitude);
+			classOverlay = new OverlayItem(building, buildingName, "");
+			Drawable d = getResources().getDrawable(R.drawable.icon);
+			poioverlays.addOverlay(classOverlay,d);
+			mc.setCenter(building);
+			drawOverlays(LOCATION_CLASS);
+        }
+        else{
+        	showDialog(DIALOG_LOTS);
+        }
     }
 
     /* Do we want to re-enable "my location" when resuming the activity? */
@@ -107,7 +131,7 @@ public class UMMap extends MapActivity {
     	super.onPause();
     	if(mylocOverlay.isMyLocationEnabled()){
     		mylocOverlay.disableMyLocation();
-    		mv.getOverlays().remove(mylocOverlay);
+    		clearOverlays(LOCATION_CURRENT);
     	}
     }
     
@@ -276,6 +300,14 @@ public class UMMap extends MapActivity {
     	case PERMIT_VISITOR:
     		mapOverlays.add(visitemizedoverlay);
     		break;
+    	case LOCATION_CURRENT:
+    		mapOverlays.add(mylocOverlay);
+    		break;
+    	case LOCATION_PARKING_SPOT:
+    		break;
+    	case LOCATION_CLASS:
+    		mapOverlays.add(poioverlays);
+    		break;
     	}
     	
     	mv.invalidate();
@@ -297,9 +329,16 @@ public class UMMap extends MapActivity {
     	case PERMIT_VISITOR:
     		mapOverlays.remove(visitemizedoverlay);
     		break;
+    	case LOCATION_CURRENT:
+    		mapOverlays.remove(mylocOverlay);
+        	break;
+        case LOCATION_PARKING_SPOT:
+        	break;
+        case LOCATION_CLASS:
+        	break;
     	}
     	
-    	mv.invalidate();;
+    	mv.invalidate();
     }
     
     @Override
@@ -318,13 +357,6 @@ public class UMMap extends MapActivity {
     		return true;
     	case R.id.getlocation:
     		toggleCurrentLocation();
-    		mylocOverlay.runOnFirstFix(new Runnable(){
-
-				public void run() {
-					mv.getController().animateTo(mylocOverlay.getMyLocation());
-				}
-    			
-    		});
     		return true;
     	case R.id.myparkingspace:
     		showDialog(SAVE_LOAD_SPOT);
@@ -383,7 +415,7 @@ public class UMMap extends MapActivity {
 								showDialog(OVERWRITE_SPOT_WARNING);
 							}
 							else{
-								saveCurrentPos();
+								//saveCurrentPos();
 							}
 						}
 						else if(which == 1){
@@ -416,7 +448,7 @@ public class UMMap extends MapActivity {
     			.setPositiveButton("Yes", new DialogInterface.OnClickListener(){
     				public void onClick(DialogInterface dialog, int id){
     					dialog.dismiss();
-    					saveCurrentPos();
+    					//saveCurrentPos();
     				}
     			})
     			.setNegativeButton("No", new DialogInterface.OnClickListener(){
@@ -439,56 +471,12 @@ public class UMMap extends MapActivity {
     private void toggleCurrentLocation(){
     	if(!(mylocOverlay.isMyLocationEnabled())){
     		mylocOverlay.enableMyLocation();
-    		mv.getOverlays().add(mylocOverlay);
+    		drawOverlays(LOCATION_CURRENT);
     	}
     	else if(mylocOverlay.isMyLocationEnabled()){
     		mylocOverlay.disableMyLocation();
-    		mv.getOverlays().remove(mylocOverlay);
+    		clearOverlays(LOCATION_CURRENT);
     	}
-    }
-    
-    private void saveCurrentPos(){
-    	
-    	showDialog(WAIT_FOR_POSITION);
-    	
-    	/* If the position is not available then set the onfirstfix listener
-    	 * if there is a position then just save that.
-    	 */
-    	if(mylocOverlay.getMyLocation() == null){
-    		mylocOverlay.runOnFirstFix(new Runnable(){
-
-				public void run() {
-					savePos(mylocOverlay.getMyLocation());
-				}
-    			
-    		});
-    		
-    		if((!mylocOverlay.isMyLocationEnabled())){
-        		toggleCurrentLocation();
-        	}	
-    	}
-    	else{
-    		savePos(mylocOverlay.getMyLocation());
-    	}
-    	
-    	dismissDialog(WAIT_FOR_POSITION);
-    	
-    }
-    
-    private void savePos(GeoPoint p){
-    	try {
-			FileOutputStream foutstream = openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
-			foutstream.write(p.toString().getBytes());
-			foutstream.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-    	Toast.makeText(this, "Spot Saved " + p.toString(), Toast.LENGTH_LONG).show();
     }
     
     private void getSavedPos(File fin){
@@ -507,18 +495,18 @@ public class UMMap extends MapActivity {
 			GeoPoint carLocation = new GeoPoint((int)Integer.parseInt(coords[0]), (int)Integer.parseInt(coords[1]));
 		
 			/* Display the point found above as an overlay on the map */
-			OverlayItem oi = new OverlayItem(carLocation, "Current Parking Space", "");
+			parkingOverlay = new OverlayItem(carLocation, "Current Parking Space", "");
 			
 			/* Move the map to the current parking space */
 			mv.getController().animateTo(carLocation);
 			
-			if(curlocoverlay.size() != 0){
-				mapOverlays.remove(curlocoverlay);
-				curlocoverlay.clearOverlays();
+			if(poioverlays.size() != 0){
+				mapOverlays.remove(poioverlays);
+				poioverlays.clearOverlays();
 			}
 			
-			curlocoverlay.addOverlay(oi);
-			mapOverlays.add(curlocoverlay);
+			poioverlays.addOverlay(parkingOverlay);
+			mapOverlays.add(poioverlays);
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
