@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Staff Lot Info -->
+	<string-array name="staff_lots">
+		<item>Crossland Lot</item>
+		<item>Corbett Lot</item>
+		<item>Field House Lot</item>
+		<item>Bennett Lot</item>
+		<item>Cutler Lot</item>
+		<item>near Adroscoggin</item>
+		<item>Hilltop Lot</item>
+		<item>Steam Plant Lot</item>
+		<item>Jenness Lot</item>
+		<item>AEWC Lot</item>
+		<item>AEWC Advanced Structures Lot</item>
+		<item>CCA Lot</item>
+		<item>Keyo Public Affairs Lot</item>
+		<item>The Depot Lots</item>
+		<item>Norman Smith Lots</item>
+		<item>Small Animal Research Building Lot</item>
+		<item>next to Hitchner</item>
+		<item>Nutting Hall</item>
+		<item>Merrill Lot</item>
+		<item>Deering Hall Lot</item>
+		<item>Carnegie Lot</item>
+		<item>Libby Hall Lot</item>
+		<item>Edward Bryand Global Sciences Center Lot</item>
+		<item>near Lengyl Field Lot</item>
+		<item>Lengyl Gym Lot</item>
+		<item>Chadbourne / Stodder Lot</item>
+		<item>Phi Kappa Sigma Lot</item>
+		<item>Libby / Fogler Lot</item>
+	</string-array>
+	<integer-array name="staff_lat">
+		<item>44903443</item>
+		<item>44903536</item>
+		<item>44904255</item>
+		<item>44903273</item>
+		<item>44903759</item>
+		<item>44903895</item>
+		<item>44904771</item>
+		<item>44900157</item>
+		<item>44902672</item>
+		<item>44902069</item>
+		<item>44901724</item>
+		<item>44899988</item>
+		<item>44900735</item>
+		<item>44899346</item>
+		<item>44898546</item>
+		<item>44897745</item>
+		<item>44897304</item>
+		<item>44896973</item>
+		<item>44897923</item>
+		<item>44896218</item>
+		<item>44897691</item>
+		<item>44895350</item>
+		<item>44894653</item>
+		<item>44893286</item>
+		<item>44895054</item>
+		<item>44896447</item>
+		<item>44894417</item>
+		<item>44899193</item>
+	</integer-array>
+	<integer-array name="staff_long">
+		<item>-68673012</item>
+		<item>-68671554</item>
+		<item>-68670142</item>
+		<item>-68668198</item>
+		<item>-68667202</item>
+		<item>-68665125</item>
+		<item>-68662141</item>
+		<item>-68673217</item>
+		<item>-68665413</item>
+		<item>-68664483</item>
+		<item>-68665773</item>
+		<item>-68665473</item>
+		<item>-68661642</item>
+		<item>-68660609</item>
+		<item>-68666972</item>
+		<item>-68666676</item>
+		<item>-68667152</item>
+		<item>-68666454</item>
+		<item>-68668991</item>
+		<item>-68668577</item>
+		<item>-68671267</item>
+		<item>-68666904</item>
+		<item>-68666703</item>
+		<item>-68669357</item>
+		<item>-68672197</item>
+		<item>-68672903</item>
+		<item>-68674041</item>
+		<item>-68670205</item>
+	</integer-array>
+	
+	<!-- Resident Lot Info -->
+	<string-array name="resident_lots">
+		<item>College Avenue Lot</item>
+		<item>Beta Lot</item>
+		<item>Next to Beta Lot</item>
+		<item>Steam Plant Lot</item>
+		<item>Stodder Lot</item>
+		<item>Next to Carnegie</item>
+		<item>Next to Merrill</item>
+		<item>Behind Estabrooke</item>
+		<item>Near Estabrooke</item>
+		<item>Aroostook Lots</item>
+		<item>Lengyl Field Lot</item>
+		<item>AEWC Lot</item>
+		<item>Gannett Lot</item>
+		<item>Cumberland Lot</item>
+		<item>Androscogin Lot</item>
+		<item>Knox Hall Lot</item>
+		<item>Hilltop Lot</item>
+	</string-array>
+	<integer-array name="resident_lat">
+		<item>44902571</item>
+		<item>44902546</item>
+		<item>44903020</item>
+		<item>44900358</item>
+		<item>44897846</item>
+		<item>44897353</item>
+		<item>44897159</item>
+		<item>44896114</item>
+		<item>44895790</item>
+		<item>44894546</item>
+		<item>44893645</item>
+		<item>44901600</item>
+		<item>44903706</item>
+		<item>44903364</item>
+		<item>44903698</item>
+		<item>44903600</item>
+		<item>44904564</item>
+	</integer-array>
+	<integer-array name="resident_long">
+		<item>-68673820</item>
+		<item>-68672612</item>
+		<item>-68672652</item>
+		<item>-68673411</item>
+		<item>-68672905</item>
+		<item>-68670496</item>
+		<item>-68669323</item>
+		<item>-68670192</item>
+		<item>-68668831</item>
+		<item>-68668553</item>
+		<item>-68669430</item>
+		<item>-68664345</item>
+		<item>-68666187</item>
+		<item>-68665532</item>
+		<item>-68665104</item>
+		<item>-68664112</item>
+		<item>-68660993</item>
+	</integer-array>
+	
+	<!-- Commuter Lot Info -->
+	<string-array name="commuter_lots">
+		<item>Satellite Lot</item>
+		<item>Alfond Lot</item>
+		<item>Football Field Lot</item>
+		<item>Steam Plant Lot</item>
+		<item>Chadbourne Hall Lot</item>
+		<item>Sawyer Environmental Research Center Lot</item>
+		<item>near Libby Hall Lot</item>
+		<item>near Nutting Hall Lot</item>
+		<item>Sebago Lot</item>
+		<item>CCA Lot</item>
+		<item>Student Rec Center Lot</item>
+	</string-array>
+	<integer-array name="commuter_lat">
+		<item>44905600</item>
+		<item>44904604</item>
+		<item>44904043</item>
+		<item>44900204</item>
+		<item>44896433</item>
+		<item>44894484</item>
+		<item>44895433</item>
+		<item>44897032</item>
+		<item>44898900</item>
+		<item>44900165</item>
+		<item>44905288</item>
+	</integer-array>
+	<integer-array name="commuter_long">
+		<item>-68673180</item>
+		<item>-68672796</item>
+		<item>-68671536</item>
+		<item>-68673878</item>
+		<item>-68671891</item>
+		<item>-68667980</item>
+		<item>-68666380</item>
+		<item>-68665872</item>
+		<item>-68664591</item>
+		<item>-68663975</item>
+		<item>-68662770</item>
+	</integer-array>
+	
+	<!-- Visitor Lot Info -->
+	<string-array name="visitor_lots">
+		<item>Crossland Hall Lot</item>
+		<item>West of Lord Hall Lot</item>
+		<item>South of Lord Hall Lot</item>
+		<item>near Small Animal Research Lot</item>
+		<item>near Maine Bound Lot</item>
+		<item>near Union Lot</item>
+	</string-array>
+	<integer-array name="visitor_lat">
+		<item>44903164</item>
+		<item>44900533</item>
+		<item>44900485</item>
+		<item>44897564</item>
+		<item>44898544</item>
+		<item>44900492</item>
+	</integer-array>
+	<integer-array name="visitor_long">
+		<item>-68672766</item>
+		<item>-68671210</item>
+		<item>-68670366</item>
+		<item>-68666540</item>
+		<item>-68666879</item>
+		<item>-68667990</item>
+	</integer-array>
+</resources>

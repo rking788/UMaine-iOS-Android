@@ -55,7 +55,7 @@
 		<item>the_maples</item>
 		<item>winslow_hall</item>
 		<item>witter_center</item>
-		<item>witter_center_farm</item>
+		<item>witter_center_farm</item>	
 	</string-array>
 	<integer-array name="latitude">
 		<item>44898251</item>

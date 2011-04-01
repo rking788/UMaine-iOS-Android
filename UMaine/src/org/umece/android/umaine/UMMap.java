@@ -138,107 +138,37 @@ public class UMMap extends MapActivity {
     private void populateOverlays(){
     	Drawable drawable;
     	OverlayItem oi;
+    	int i = 0;
+    	String[] names;
+        int[] lats;
+        int[] longs;
     	
     	/* Staff Overlays */
         drawable = this.getResources().getDrawable(R.drawable.staffmarker);
     	staffitemizedoverlay = new UMItemizedOverlay(drawable, this);
     	
-    	oi = new OverlayItem(new GeoPoint(44903443, -68673012), "Crossland Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44903536, -68671554), "Corbett Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44904255, -68670142), "Field House Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44903273, -68668198), "Bennett Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44903759, -68667202), "Cutler Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44903895, -68665125), "near Adroscoggin", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44904771, -68662141), "Hilltop Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44900157, -68673217), "Steam Plant Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44902672, -68665413), "Jenness Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44902069, -68664483), "AEWC Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44901724, -68665773), "AEWC Advanced Structures Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44899988, -68665473), "CCA Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44900735, -68661642), "Keyo Public Affairs Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44899346, -68660609), "The Depot Lots", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44898546, -68666972), "Norman Smith Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44897745, -68666676), "Small Animal Research Building", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44897304, -68667152), "next to Hitchner", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44896973, -68666454), "Nutting Hall", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44897923, -68668991), "Merrill Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44896218, -68668577), "Deering Hall Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44897691, -68671267), "Carnegie Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(4489535, -68666904), "Libby Hall Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44894653, -68666703), "Edward Bryand Glocal Sciences Center Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44893286, -68669357), "near Lengyl Field Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44895054, -68672197), "Lengyl Gym Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44896447, -68672903), "Chadbourne / Stodder Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44894417, -68674041), "Phi Kappa Sigma Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
-    	oi = new OverlayItem(new GeoPoint(44899193, -68670205), "Libby / Fogler Lot", "");
-    	staffitemizedoverlay.addOverlay(oi);
+    	names = getResources().getStringArray(R.array.staff_lots);
+    	lats = getResources().getIntArray(R.array.staff_lat);
+    	longs = getResources().getIntArray(R.array.staff_long);
+    	
+    	for(i = 0; i < names.length; i++){
+        	oi = new OverlayItem(new GeoPoint(lats[i], longs[i]), names[i], "");
+        	staffitemizedoverlay.addOverlay(oi);
+        }
     	
     	/* Resident Overlays */
     	drawable = this.getResources().getDrawable(R.drawable.residentmarker);
         resitemizedoverlay = new UMItemizedOverlay(drawable, this); 
         
-        oi = new OverlayItem(new GeoPoint(44902571, -68673820), "College Ave Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44902546, -68672612), "Beta Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44903020, -68672652), "Next to Beta Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44900358, -68673411), "Steam Plant", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44897846, -68672905), "Stodder Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44897353, -68670496), "Next to Carnegie", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44897159, -68669323), "Next to Merrill", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44896114, -68670192), "Behind Estabrooke", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44895790, -68668831), "Near Estabrooke", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44894546, -68668553), "Aroostook Lots", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44893645, -68669430), "Lengyl Field Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44901600, -68664345), "AEWC Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44903706, -68666187), "Gannett Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44903364, -68665532), "Cumberland Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44903698, -68665104), "Androscogin Lot", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44903600, -68664112), "Knox Hall", "");
-        resitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44904564, -68660993), "Hilltop Lot", "");
-        resitemizedoverlay.addOverlay(oi);
+        names = getResources().getStringArray(R.array.resident_lots);
+    	lats = getResources().getIntArray(R.array.resident_lat);
+    	longs = getResources().getIntArray(R.array.resident_long);
     	
+    	for(i = 0; i < names.length; i++){
+        	oi = new OverlayItem(new GeoPoint(lats[i], longs[i]), names[i], "");
+        	resitemizedoverlay.addOverlay(oi);
+        }
+
     	/* Commuter Overlays */
         drawable = this.getResources().getDrawable(R.drawable.commutermarker);
         commitemizedoverlay = new UMItemizedOverlay(drawable, this);
@@ -269,19 +199,14 @@ public class UMMap extends MapActivity {
     	/* Visitor Overlays */
         drawable = this.getResources().getDrawable(R.drawable.commutermarker);
         visitemizedoverlay = new UMItemizedOverlay(drawable, this);
+        names = getResources().getStringArray(R.array.visitor_lots);
+        lats = getResources().getIntArray(R.array.visitor_lat);
+        longs = getResources().getIntArray(R.array.visitor_long);
         
-        oi = new OverlayItem(new GeoPoint(44903164, -68672766), "Crossland Hall Lot", "");
-        visitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44900533, -68671210), "West of Lord Hall", "");
-        visitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44900485, -68670366), "South of Lord Hall", "");
-        visitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44897564, -68666540), "near Small Animal Research", "");
-        visitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44898544, -68666879), "near Maine Bound", "");
-        visitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44900492, -68667990), "near Union", "");
-        visitemizedoverlay.addOverlay(oi);
+        for(i = 0; i < names.length; i++){
+        	oi = new OverlayItem(new GeoPoint(lats[i], longs[i]), names[i], "");
+        	visitemizedoverlay.addOverlay(oi);
+        }
     }
     
     private void drawOverlays(int permitType){

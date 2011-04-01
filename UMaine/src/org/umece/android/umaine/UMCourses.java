@@ -58,7 +58,7 @@ public class UMCourses extends Activity {
 	 */
 
 	/* PHP script */
-	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample-testing.php";
+	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
 
 	/* Post Values for data to be queried */
 	private static final String POST_SEMESTERS = "semesters";
