@@ -21,9 +21,12 @@
 			android:layout_height="wrap_content"
 			android:src="@drawable/mapbutton" android:visibility="visible"/>
 		<Button android:id="@+id/sportsbtn"
+			
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
 			android:text="Sports"/>
+		<!-- 	android:src="@drawable/sports_button" android:visibility="visible" -->
+			
 		<Button android:id="@+id/directorybtn"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"

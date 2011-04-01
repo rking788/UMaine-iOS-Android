@@ -148,6 +148,8 @@
     <string name="hockeySch_button_title">hockey schedule</string>
     <string name="basketballSch_button_title">basketball schedule</string>
     <string name="othersSch_button_title">others schedule</string>
-    <string name="sports_title">Date\t\tEvent\t\t\tLocation\t\tTime \tBand</string>
-    <string name ="search_title">Date\t\tEvent\t\t\tLocation\t\tTime \tBand</string>
+    <string name="sports_title">Date\t\tEvent\t\t\t\t\tLocation\t\t\t\tTime</string>
+    <string name ="search_title">Date\t\tEvent\t\t\t\tLocation\t\t\tTime</string>
+    
+    <string name = "test">test</string>
 </resources>
