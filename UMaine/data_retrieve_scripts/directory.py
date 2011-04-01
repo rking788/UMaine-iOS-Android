@@ -33,7 +33,12 @@ names = fcontents.split('\n')
 
 print "firstName,middleName,lastName,department,title,phone,email,office"
 
+#names = ['Alfred Bushway']
+
 for myName in names:
+    #print myName
+    myName = myName.replace('\t', ' ')
+    
     r = br.open(url)
     html = r.read()
     br.select_form(nr=0)
@@ -76,27 +81,32 @@ for myName in names:
         dept = ""
 
     title = dd[2].string
-    if not title:
+    try:
+        title = title.replace('&amp;', '&')
+    except:
         title = ""
 
-    phone = dd[3].string
+
+    office = ""
+    for d in dd:
+        if d.find('span'):
+            office = d.text
+            office = office.replace('&nbsp;', ' ')
+
+
+    phonePattern = re.search(r'(\d{3}) (\d{3}) (\d{4})', html);
     try:
+        phone = phonePattern.group(0)
         phone = phone.replace(' ', '')
     except:
         phone = ""
-
-    e = dd[4];
+        
+    e = soup.find('a', attrs={'onblur': "this.href='#'"})
     try:
-        email = e.find('a').string
+        email = e.string
         email = email.replace('&#64;', '@')
     except:
         email = ""
         
-    s = dd[5]
-    try:
-        office = s.text
-    except:
-        office = ""
-
     str = '"' + firstName +'","' + middleName +'","' + lastName +'","' + dept + '","' + title + '","' + phone + '","' + email + '","' + office + '"'
     print str
