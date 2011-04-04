@@ -19,6 +19,7 @@
 		<activity android:name=".SportsDisplay" ></activity>
 		<activity android:name=".UMCourseDetails"></activity>
 		<activity android:name=".UMDirectory"></activity>
+		<activity android:name=".UMDirectoryDetails"></activity>
 		<uses-library android:required="true" android:name="com.google.android.maps"></uses-library>
     </application>
     <uses-sdk android:minSdkVersion="8" />

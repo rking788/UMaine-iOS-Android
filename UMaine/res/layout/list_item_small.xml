@@ -4,8 +4,6 @@
 	android:orientation="horizontal"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent">
-    <org.umece.android.umaine.DotDrawable android:id="@+id/view1" android:layout_height="match_parent" android:layout_width="15dip">
-    </org.umece.android.umaine.DotDrawable>
 	<TextView
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		android:id="@+id/listtextview"

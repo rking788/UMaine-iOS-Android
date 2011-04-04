@@ -5,10 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
 
 public class ScheduleDrawable extends View {
@@ -26,6 +28,36 @@ public class ScheduleDrawable extends View {
 	public int x, y;
 	public double each_width;
 	private HashMap<Course, Color> colors;
+	
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		int i;
+		for (i = 5; i < rect_queue.size(); i++) {
+			if (rect_queue.get(i).contains((int)event.getX(), (int)event.getY())) {
+				break;
+			}
+		}
+		
+		if (i < rect_queue.size()) {
+			Color color = color_queue.get(i);
+			
+			Course[] courses = semester.getCourses();
+			
+			for (i = 0; i < courses.length; i++) {
+				if (courses[i].getColor() == color.getColor()) {
+					Intent myIntent = new Intent(UMCourses.getActivity(), UMCourseDetails.class);
+					myIntent.putExtra("selectedindex", i);
+					UMCourses.getActivity().startActivity(myIntent);
+					
+					return true;
+				}
+			}
+			
+			return true;
+		}
+		
+		return super.onTouchEvent(event);
+	}
 	
 	public ScheduleDrawable(Context context, AttributeSet attrs) {
 		super(context, attrs);

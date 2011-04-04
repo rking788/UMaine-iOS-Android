@@ -126,11 +126,11 @@ public class UMCourses extends Activity {
 				if (convertView == null) {
 					row = mInflater.inflate(R.layout.list_item, parent, false);
 					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position).getString());
-					row.findViewById(R.id.view1).setBackgroundColor(getItem(position).getColor());
+					((DotDrawable)row.findViewById(R.id.view1)).setCourse(getItem(position));
 				} else {
 					row = convertView;
 					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position).getString());
-					row.findViewById(R.id.view1).setBackgroundColor(getItem(position).getColor());
+					((DotDrawable)row.findViewById(R.id.view1)).setCourse(getItem(position));
 				}
 				
 				return row;
@@ -145,7 +145,6 @@ public class UMCourses extends Activity {
 				Intent myIntent = new Intent(arg1.getContext(), UMCourseDetails.class);
 				myIntent.putExtra("selectedindex", arg2);
 				startActivity(myIntent);
-				//startActivityForResult(myIntent, 0);
 			}
 		});
 
@@ -540,7 +539,7 @@ public class UMCourses extends Activity {
 		}
 	}
 
-	public List<String> httpRequest(List<? extends NameValuePair> postParams)
+	public static List<String> httpRequest(List<? extends NameValuePair> postParams)
 			throws Exception {
 		HttpClient client = new DefaultHttpClient();
 		HttpPost request = new HttpPost(SERVER_SCRIPT);

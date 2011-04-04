@@ -7,3 +7,4 @@
 		android:title="Change Semester"/>
 	<item android:id="@+id/delete_semester" android:title="Delete Semester"></item>
 </menu>
+ 
