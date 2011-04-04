@@ -57,7 +57,7 @@
 		<item>witter_center</item>
 		<item>witter_center_farm</item>	
 	</string-array>
-	<integer-array name="latitude">
+	<integer-array name="building_latitude">
 		<item>44898251</item>
 		<item>44903784</item>
 		<item>44901292</item>
@@ -114,7 +114,7 @@
 		<item>44914323</item>
 		<item>44914323</item>
 	</integer-array>
-	<integer-array name="longitude">
+	<integer-array name="building_longitude">
 		<item>-68665184</item>
 		<item>-68669114</item>
 		<item>-68670333</item>

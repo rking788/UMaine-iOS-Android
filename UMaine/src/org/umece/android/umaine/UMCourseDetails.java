@@ -1,5 +1,8 @@
 package org.umece.android.umaine;
 
+import java.util.Arrays;
+import java.util.List;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -14,14 +17,14 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class UMCourseDetails extends Activity {
-	/* TODO: Fix ISBN "autolink" problem */
-	/* TODO: ECE 210 textbook information not showing up */
 	
 	/* Dialog Types */
 	private static final int DIALOG_CONFIRM_DELETE = 0;
 	
 	private int selIndex;
 	private Semester sem;
+	private int courseBuildingLat;
+	private int courseBuildingLong;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -35,11 +38,12 @@ public class UMCourseDetails extends Activity {
 	
 		populateCourseDetails(sem.getCourse(selIndex));
 		
+		findCourseCoords(sem.getCourse(selIndex));
+		
 		setButtonHandlers();
 	}
 	
 	private void populateCourseDetails(Course c){
-		/* TODO: isbn is being recognized as a phone number which is wrong */
 		TextView title_tv = (TextView) findViewById(R.id.cdetail_title_tv);
 		TextView courseinfo_tv = (TextView) findViewById(R.id.cdetails_courseinfo_tv);
 		TextView textbookinfo_tv = (TextView) findViewById(R.id.cdetails_tbi_tv);
@@ -58,7 +62,7 @@ public class UMCourseDetails extends Activity {
 		if((bookInfo == null)||(bookInfo.equals("null"))){
 			bookInfo = "Information Unavailable";
 		}
-		else if(bookInfo.equals("()")){
+		else if(bookInfo.equals(" ()")){
 			bookInfo = "No Textbook";
 		}
 		
@@ -67,6 +71,31 @@ public class UMCourseDetails extends Activity {
 		/* Set instructor information */
 		Spanned instinfo = Html.fromHtml(c.getInstructor() + "<br/>" + c.getOffice() + "<br/>" + c.getPhone() + "<br/>" + c.getEmail());
 		instinfo_tv.setText(instinfo);
+	}
+	
+	private void findCourseCoords(Course c){
+		/* Find the coordinates for the course meeting location, to be used if they 
+		 * press the "map it" button 
+		 */
+		String[] campusBuildings = getResources().getStringArray(R.array.building_names);
+		List<String> buildingList = Arrays.asList(campusBuildings);
+		String buildingName = c.getLocation();
+		
+		/* Replace spaces with underscores */
+		buildingName = buildingName.replaceAll(" \\d+", "");
+		buildingName = buildingName.replace(' ', '_');
+		buildingName = buildingName.toLowerCase();
+		
+		if(buildingList.contains(buildingName)){
+			int index = buildingList.indexOf(buildingName);
+			courseBuildingLat = getResources().getIntArray(R.array.building_latitude)[index];
+			courseBuildingLong = getResources().getIntArray(R.array.building_longitude)[index];
+		}
+		else{
+			courseBuildingLat = -1;
+			courseBuildingLong = -1;
+			((Button) findViewById(R.id.cdetails_map_btn)).setVisibility(View.GONE);
+		}
 	}
 	
 	private void setButtonHandlers(){
@@ -84,8 +113,8 @@ public class UMCourseDetails extends Activity {
 
 			public void onClick(View v) {
 				Intent myIntent = new Intent(v.getContext(), UMMap.class);
-				myIntent.putExtra("lat", 44902860);
-				myIntent.putExtra("longitude", -68668796);
+				myIntent.putExtra("lat", courseBuildingLat);
+				myIntent.putExtra("longitude", courseBuildingLong);
 				myIntent.putExtra("buildingname", "Bennett Hall");
 				startActivity(myIntent);
 				finish();

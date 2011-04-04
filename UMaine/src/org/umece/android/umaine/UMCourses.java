@@ -45,8 +45,6 @@ public class UMCourses extends Activity {
 	public static UMCourses getActivity() {
 		return me;
 	}
-
-	/* TODO: Add course title to course number spinner (change back to spinner) */
 	
 	/*
 	 * TODO: Need to do a lot more error checking for instance when they try to
