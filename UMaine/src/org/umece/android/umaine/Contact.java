@@ -1,5 +1,7 @@
 package org.umece.android.umaine;
 
+import java.util.List;
+
 public class Contact {
 	private String name;
 	private String office;
@@ -17,13 +19,13 @@ public class Contact {
 		title = "Nothing";
 	}
 	
-	public Contact(String name, String values[]) {
+	public Contact(String name, List<String> list) {
 		this.name = name;
-		department = values[0];
-		title = values[1];
-		number = values[2];
-		email = values[3];
-		office = values[4];
+		department = list.get(0);
+		title = list.get(1);
+		number = list.get(2);
+		email = list.get(3);
+		office = list.get(4);
 	}
 	
 	public String getName() {
