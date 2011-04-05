@@ -13,7 +13,7 @@
   	<View
   		android:layout_height="2dp"
   		android:layout_width="fill_parent"
-  		android:background="#ff003263"/>
+  		android:background="@color/maine_blue"/>
   	<TextView
   		android:id="@+id/courselist_directions"
   		android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
   	<View
   		android:layout_height="2dp"
   		android:layout_width="fill_parent"
-  		android:background="#ff003263"/>
+  		android:background="@color/maine_blue"/>
 	<ListView
 	  xmlns:android="http://schemas.android.com/apk/res/android"
 	  android:id="@+id/courseslist"

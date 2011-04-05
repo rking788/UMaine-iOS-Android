@@ -50,7 +50,7 @@ public class UMCourseDetails extends Activity {
 		TextView instinfo_tv = (TextView) findViewById(R.id.cdetails_ii_tv);
 		
 		/* Set the course title line */
-		String titleline = c.getDep() +  " " + c.getCoursenum() + " - " + c.getTitle();
+		Spanned titleline = Html.fromHtml(c.getDep() +  " " + c.getCoursenum() + "<br/>" + c.getTitle());
 		title_tv.setText(titleline);
 		
 		/* Set the course information text */

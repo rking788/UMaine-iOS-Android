@@ -3,53 +3,75 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:orientation="vertical">
+	android:orientation="vertical"
+	android:background="@color/maine_lightblue">
 	<!-- Course Title -->
 	<TextView
   		android:id="@+id/cdetail_title_tv"
   		android:layout_width="fill_parent"
   		android:layout_height="wrap_content"
   		android:textStyle="bold"
-  		android:padding="5px"/>
+  		android:textSize="18sp"
+  		android:paddingTop="5dip"
+  		android:paddingLeft="5dip"
+  		android:paddingRight="5dip"
+  		android:paddingBottom="2dip"
+  		android:textColor="@android:color/black"/>
+  	<View
+  		android:layout_height="2dp"
+  		android:layout_width="fill_parent"
+  		android:background="@color/maine_blue"/>
 	<!-- Course Info -->
 	<TextView
  	 	android:id="@+id/cdetails_courseinfo_tv"
   		android:layout_width="fill_parent"
   		android:layout_height="wrap_content"
   		android:lineSpacingMultiplier="1.5"
-  		android:paddingLeft="15px"/>
+  		android:paddingTop="5dip"
+  		android:paddingLeft="15dip"
+  		android:textColor="@android:color/black"/>
 	<!-- Textbook heading -->
 	<TextView
 	  	android:id="@+id/cdetails_tbh_tv"
 	  	android:layout_width="fill_parent"
 	  	android:layout_height="wrap_content"
-  		android:text="Textbook:"
+  		android:text="Textbook"
   		android:lineSpacingMultiplier="1.0"
   		android:textStyle="bold"
-  		android:paddingLeft="15px"/>
+  		android:textColor="@android:color/white"
+  		android:textSize="16sp"
+  		android:background="@color/maine_blue"
+  		android:paddingLeft="5dip"/>
   	<!-- Textbook information -->
 	<TextView
 	  	android:id="@+id/cdetails_tbi_tv"
 	  	android:layout_width="fill_parent"
 	  	android:layout_height="wrap_content"
 	  	android:lineSpacingMultiplier="1.5"
-	  	android:paddingLeft="30px"/>
+	  	android:paddingTop="5dip"
+	  	android:paddingLeft="15dip"
+	  	android:textColor="@android:color/black"/>
 	<!-- Instructor heading -->
 	<TextView
 		android:id="@+id/cdetails_ih_tv"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
-		android:text="Instructor:"
+		android:text="Instructor"
 		android:lineSpacingMultiplier="1.0"
+		android:textSize="16sp"
+		android:textColor="@android:color/white"
 		android:textStyle="bold"
-		android:paddingLeft="15px"/>
+		android:background="@color/maine_blue"
+		android:paddingLeft="5dip"/>
 	<TextView
   		android:id="@+id/cdetails_ii_tv"
   		android:layout_width="fill_parent"
   		android:layout_height="wrap_content"
   		android:lineSpacingMultiplier="1.5"
   		android:autoLink="phone|email"
-  		android:paddingLeft="30px"/>
+  		android:paddingTop="5dip"
+  		android:paddingLeft="15dip"
+  		android:textColor="@android:color/black"/>
   <LinearLayout 
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"

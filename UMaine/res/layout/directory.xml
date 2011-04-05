@@ -15,7 +15,7 @@
   <View
   	android:layout_height="2dp"
   	android:layout_width="fill_parent"
-  	android:background="#ff003263"/>
+  	android:background="@color/maine_blue"/>
   <ListView
   	android:id="@+id/directory_lv"
   	android:layout_width="fill_parent"
