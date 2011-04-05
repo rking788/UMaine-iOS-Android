@@ -56,7 +56,8 @@ public class UMCourses extends Activity {
 	 */
 
 	/* PHP script */
-	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
+	/* TODO: Change that back to sample.php */
+	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample-testing.php";
 
 	/* Post Values for data to be queried */
 	private static final String POST_SEMESTERS = "semesters";
@@ -498,6 +499,9 @@ public class UMCourses extends Activity {
 		/* Coursenum spin now has the title in it, we just want the coursenum here */
 		String[] sar = getCoursesSpin().split(" ", 2);
 		String cn = sar[0];
+		
+		/* Section Spinner now has the course type in it so seperate that part out */
+		String secNum = getSectionSpin().replaceAll("\\s+(\\S+)", "");
 		
 		/*
 		 * If adding a course we need to know department, course number, and

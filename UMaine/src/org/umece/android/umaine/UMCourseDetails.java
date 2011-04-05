@@ -94,7 +94,7 @@ public class UMCourseDetails extends Activity {
 		else{
 			courseBuildingLat = -1;
 			courseBuildingLong = -1;
-			((Button) findViewById(R.id.cdetails_map_btn)).setVisibility(View.GONE);
+			((Button) findViewById(R.id.cdetails_map_btn)).setEnabled(false);
 		}
 	}
 	
