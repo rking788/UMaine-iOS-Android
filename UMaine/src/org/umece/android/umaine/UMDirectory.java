@@ -10,6 +10,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.InputType;
+import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +38,7 @@ public class UMDirectory extends Activity {
 		setContentView(R.layout.directory);
 		
 		et = (EditText) findViewById(R.id.dirsearch_et);
+		et.setInputType(InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS);
 		
 		mInflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		
@@ -45,11 +49,25 @@ public class UMDirectory extends Activity {
 				View row;
 				
 				if (convertView == null) {
-					row = mInflater.inflate(R.layout.list_item, parent, false);
-					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position));
+					row = mInflater.inflate(R.layout.list_item_small, parent, false);
+					((TextView)row.findViewById(R.id.listitemtext)).setText(getItem(position));
+					if ((position % 2) == 0) {
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("MAINE_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("WHITE").getColor());
+					} else {
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("LIGHT_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
+					}
 				} else {
 					row = convertView;
-					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position));
+					((TextView)row.findViewById(R.id.listitemtext)).setText(getItem(position));
+					if ((position % 2) == 0) {
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("MAINE_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("WHITE").getColor());
+					} else {
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("LIGHT_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
+					}
 				}
 				
 				return row;
@@ -81,14 +99,48 @@ public class UMDirectory extends Activity {
 		updateList("".toLowerCase());
 		
 		et.setOnKeyListener(new OnKeyListener(){
-
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
-				String s = et.getText().toString().toLowerCase();
-				updateList(s);
+				if (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
+					return true;
+				}
 				return false;
 			}
 			
 		});
+		
+		et.addTextChangedListener(new TextWatcher() {
+
+			@Override
+			public void afterTextChanged(Editable s) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void beforeTextChanged(CharSequence s, int start, int count,
+					int after) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void onTextChanged(CharSequence s, int start, int before,
+					int count) {
+				updateList(s.toString().toLowerCase());
+			}
+		});
+		
+//		et.setOnTouchListener(new OnTouchListener(){
+//			@Override
+//			public boolean onTouch(View v, MotionEvent event) {
+//				if (et.getText().toString().contains("\n")) {
+//					et.setText(et.getText().toString().replace("\n", ""));
+//				}
+//				String s = et.getText().toString().toLowerCase();
+//				updateList(s);
+//				return false;
+//			}
+//		});
 	}
 	
 	public static Contact getContact(int i) {

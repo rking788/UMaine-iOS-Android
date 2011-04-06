@@ -144,7 +144,7 @@ public class ScheduleDrawable extends View {
 		double left = mRect.right;
 		
 		for (i = 0; i < colors.length; i++) {
-			if (((i % 2) == 0) && (colors[i].toString().equals("BLACK"))) {
+			if (((i % 2) == 0) && (colors[i].toString().equals("MAINE_BLUE"))) {
 				rect_queue.add(new Rect(
 						(int)(left + each_width - 1),
 						mRect.top + 2,
@@ -159,7 +159,7 @@ public class ScheduleDrawable extends View {
 					mRect.bottom - 2));
 			left += each_width;
 			color_queue.add(colors[i]);
-			if ((i < (colors.length - 1)) && (!colors[i].toString().equals("BLACK")) && (colors[i].equals(colors[i + 1]))) {
+			if ((i < (colors.length - 1)) && (!colors[i].toString().equals("MAINE_BLUE")) && (colors[i].equals(colors[i + 1]))) {
 				rect_queue.add(new Rect(
 						(int)(left - 1),
 						mRect.top + 2,
@@ -243,11 +243,11 @@ public class ScheduleDrawable extends View {
 	private void clearArrays() {
 		int i;
 		for (i = 0; i < m.length; i++) {
-			m[i] = Color.getColor("BLACK");
-			t[i] = Color.getColor("BLACK");
-			w[i] = Color.getColor("BLACK");
-			h[i] = Color.getColor("BLACK");
-			f[i] = Color.getColor("BLACK");
+			m[i] = Color.getColor("MAINE_BLUE");
+			t[i] = Color.getColor("MAINE_BLUE");
+			w[i] = Color.getColor("MAINE_BLUE");
+			h[i] = Color.getColor("MAINE_BLUE");
+			f[i] = Color.getColor("MAINE_BLUE");
 		}
 	}
 

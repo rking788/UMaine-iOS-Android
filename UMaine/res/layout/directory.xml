@@ -3,10 +3,12 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
+  android:background="@color/maine_lightblue"
   android:orientation="vertical">
   <TextView
   	android:layout_width="fill_parent"
   	android:layout_height="wrap_content"
+  	android:textColor="@android:color/black"
   	android:text="Search:" />
   <EditText
   	android:id="@+id/dirsearch_et"

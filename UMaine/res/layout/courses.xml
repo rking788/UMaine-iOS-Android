@@ -3,6 +3,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
   	android:layout_width="fill_parent"
   	android:layout_height="fill_parent"
+  	android:background="@color/maine_lightblue"
   	android:orientation="vertical">
     <org.umece.android.umaine.ScheduleDrawable android:id="@+id/scheduledraw" android:layout_width="wrap_content" android:layout_height="150dip" android:background="@drawable/schedulebackground"></org.umece.android.umaine.ScheduleDrawable>
   	<LinearLayout
@@ -15,13 +16,6 @@
   		android:layout_width="fill_parent"
   		android:background="@color/maine_blue"/>
   	<TextView
-  		android:id="@+id/courselist_directions"
-  		android:layout_height="wrap_content"
-  		android:layout_width="fill_parent" 
-  		android:text="@string/courselist_directions"
-  		android:padding="4px"
-  		android:gravity="center_horizontal"/>
-  	<TextView
   		android:id="@+id/courses_semester"
   		android:layout_height="wrap_content"
   		android:layout_width="fill_parent"
@@ -29,11 +23,13 @@
   		android:visibility="gone"
   		android:textStyle="bold"
   		android:paddingTop="2px"
+  		android:textColor="@android:color/black"
   		android:paddingBottom="2px"/>
   	<View
   		android:layout_height="2dp"
   		android:layout_width="fill_parent"
   		android:background="@color/maine_blue"/>
+  	<TextView android:id="@+id/courselist_directions" android:layout_height="wrap_content" android:gravity="center_horizontal" android:text="@string/courselist_directions" android:textColor="@android:color/black" android:padding="4px" android:layout_width="fill_parent"></TextView>
 	<ListView
 	  xmlns:android="http://schemas.android.com/apk/res/android"
 	  android:id="@+id/courseslist"

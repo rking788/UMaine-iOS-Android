@@ -18,6 +18,7 @@ public class DotDrawable extends View {
 	public int x, y;
 	public double each_width;
 	private Course course;
+	private Color color;
 	
 	public DotDrawable(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -28,6 +29,7 @@ public class DotDrawable extends View {
 		y_queue = new ArrayList<Float>();
 		rad_queue = new ArrayList<Float>();
 		color_queue = new ArrayList<Integer>();
+		color = null;
 	}
 	
 	public DotDrawable(Context context) {
@@ -43,6 +45,7 @@ public class DotDrawable extends View {
 		y_queue = new ArrayList<Float>();
 		rad_queue = new ArrayList<Float>();
 		color_queue = new ArrayList<Integer>();
+		color = null;
 	}
 	
 	public void onChange() {
@@ -58,6 +61,13 @@ public class DotDrawable extends View {
 			color_queue.add(course.getColor());
 		}
 		
+		if (color != null) {
+			x_queue.add((float)x / 2);
+			y_queue.add((float)y / 2);
+			rad_queue.add((float)10);
+			color_queue.add(color.getColor());
+		}
+		
 		invalidate();
 	}
 
@@ -66,6 +76,10 @@ public class DotDrawable extends View {
 		if (course != null) {
 			onChange();
 		}
+	}
+	
+	public void setColor(Color color) {
+		this.color = color;
 	}
 	
 	public Course getCourse() {

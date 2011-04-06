@@ -3,23 +3,46 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-  android:orientation="vertical">
-    <TextView 
-    	android:layout_width="wrap_content" 
-  		android:textStyle="bold"
-    	android:id="@+id/title"
-    	android:text="@string/hello" 
-    	android:layout_height="wrap_content">
-    	</TextView>
-    <TextView 
-    	android:text="TextView" 
-    	android:id="@+id/room" 
-    	android:layout_width="wrap_content" 
-    	android:layout_height="wrap_content">
-    	</TextView>
+  android:orientation="vertical"
+  android:background="@color/maine_lightblue">
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout1" 
+       	android:background="@color/maine_blue"
+    	android:layout_width="match_parent">
+    	
+        <ImageView android:id="@+id/imageView1"
+        	android:src="@drawable/contact"
+        	android:scaleType="centerInside"
+        	android:layout_width="wrap_content" 
+        	android:layout_height="match_parent"></ImageView>
+        <LinearLayout android:id="@+id/linearLayout2" 
+        	android:layout_height="match_parent" 
+        	android:layout_width="fill_parent">
+            <TextView android:id="@+id/title" 
+            	android:text="TextView" 
+            	android:layout_height="fill_parent" 
+            	android:textSize="16sp" 
+            	android:paddingLeft="5dip" 
+            	android:textColor="@android:color/white" 
+            	android:layout_width="fill_parent" 
+            	android:textStyle="bold" 
+            	android:lineSpacingMultiplier="1.0"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/room" android:layout_height="wrap_content" android:text="TextView" android:paddingLeft="15dip" android:textColor="@android:color/black" android:layout_width="fill_parent" android:paddingTop="5dip" android:lineSpacingMultiplier="1.5"></TextView>
+    <View 
+    	android:id="@+id/view1" 
+    	android:layout_height="2dp" 
+    	android:layout_width="fill_parent" 
+    	android:background="@color/maine_blue"></View>
     <ListView 
     	android:id="@+id/dd_lv" 
     	android:layout_height="wrap_content" 
     	android:layout_width="match_parent">
     	</ListView>
+	  <View
+	  	android:layout_height="2dp"
+	  	android:layout_width="fill_parent"
+	  	android:background="@color/maine_blue"/>
 </LinearLayout>
