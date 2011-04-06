@@ -20,7 +20,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ImageView.ScaleType;
 
 public class UMDirectoryDetails extends Activity {
 	
@@ -58,17 +57,36 @@ public class UMDirectoryDetails extends Activity {
 		 
 		tv.setText(contact.getTitle() + "\n" + contact.getDepartment());
 
-		tempadapter = new ArrayAdapter<String>(this, R.layout.list_item_small) {
+		tempadapter = new ArrayAdapter<String>(this, R.layout.list_item_small_icon) {
 			@Override
 			public View getView(int position, View convertView, ViewGroup parent) {
 				View row;
 				
 				if (convertView == null) {
-					row = mInflater.inflate(R.layout.list_item, parent, false);
+					row = mInflater.inflate(R.layout.list_item_small_icon, parent, false);
 					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position));
 					((TextView)row.findViewById(R.id.listtextview)).setTextColor(Color.getColor("BLACK").getColor());
+					if (position == 0) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.number);
+					} 
+					if (position == 1) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.email);
+					}
+					if (position == 2) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.location);
+					}
+//					((ImageView)row.findViewById(R.id.image)).setScaleType(ScaleType.CENTER);
 				} else {
 					row = convertView;
+					if (position == 0) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.number);
+					} 
+					if (position == 1) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.email);
+					}
+					if (position == 2) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.location);
+					}
 					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position));
 					((TextView)row.findViewById(R.id.listtextview)).setTextColor(Color.getColor("BLACK").getColor());
 				}
@@ -80,7 +98,7 @@ public class UMDirectoryDetails extends Activity {
 		tempadapter.add(contact.getNumber());
 		tempadapter.add(contact.getEmail());
 		tempadapter.add(contact.getOffice());
-		ListView lv = (ListView) findViewById(R.id.dd_lv);
+		ListView lv = (ListView) findViewById(R.id.dd_lv); 
 		lv.setAdapter(tempadapter);
 		registerForContextMenu(lv);
 		
