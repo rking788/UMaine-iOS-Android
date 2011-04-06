@@ -7,7 +7,7 @@ import org.umece.android.umaine.R.layout;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.ViewGroup.LayoutParams;
+import android.widget.TableRow.LayoutParams;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -30,7 +30,7 @@ public class SportsDisplaySchAll extends Activity {
 
 		/* Find Tablelayout defined in main.xml */
 		TableLayout tl = (TableLayout) findViewById(R.id.myTableLayout);
-		
+	
 	/*	
 		 Create a new row to be added. 
 		TableRow tr = new TableRow(this);
@@ -63,13 +63,13 @@ public class SportsDisplaySchAll extends Activity {
             tr.setId(100+current);
             tr.setLayoutParams(new LayoutParams(
                     LayoutParams.FILL_PARENT,
-                    LayoutParams.WRAP_CONTENT));   
+                    LayoutParams.FILL_PARENT));   
 
             // Create a TextView to house the name of the province
             TextView labelTV = new TextView(this);
             labelTV.setId(200+current);
             labelTV.setText(testData[current]);
-            labelTV.setTextColor(Color.BLACK);
+            labelTV.setTextColor(Color.WHITE);
             labelTV.setLayoutParams(new LayoutParams(
                     LayoutParams.FILL_PARENT,
                     LayoutParams.WRAP_CONTENT));
@@ -79,7 +79,7 @@ public class SportsDisplaySchAll extends Activity {
             TextView valueTV = new TextView(this);
             valueTV.setId(current);
             valueTV.setText("$0");
-            valueTV.setTextColor(Color.BLACK);
+            valueTV.setTextColor(Color.WHITE);
             valueTV.setLayoutParams(new LayoutParams(
                     LayoutParams.FILL_PARENT,
                     LayoutParams.WRAP_CONTENT));
@@ -130,7 +130,7 @@ public class SportsDisplaySchAll extends Activity {
         
 
 	}
-	
+		
 	}
 }
 	
