@@ -94,6 +94,26 @@ public class SportsDisplaySchOthers extends Activity {
 		
 //		setContentView(textView);
 */
+		
+
+		/*
+		 * Create a new row to be added. TableRow tr = new TableRow(this);
+		 * tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
+		 * LayoutParams.WRAP_CONTENT));
+		 * 
+		 * 
+		 * Create a TextView to be the row-content. TextView[] textView = new
+		 * TextView[5]; for (int i =0; i < 5; i++){
+		 * textView[i].setText("Dynamic Button"+i);
+		 * textView[i].setLayoutParams(new
+		 * LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+		 * Add Button to row. tr.addView(textView[i]); }
+		 * 
+		 * 
+		 * Add row to TableLayout. tl.addView(tr, new
+		 * TableLayout.LayoutParams(LayoutParams.FILL_PARENT,
+		 * LayoutParams.WRAP_CONTENT));
+		 */
 
 	}
 }
