@@ -1,4 +1,4 @@
-package org.umece.android.umaine;
+package org.umece.android.umaine.sports;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -64,7 +64,9 @@ public class SportsGrabData {
 			for (String s : httpRequest(postParams)) {
 				String[] row = s.split(";");
 				//
-				row = row;
+				//row = row;
+				System.out.println("s = "+s);
+				
 			}
 		} catch (Exception e) {
 			throw new RuntimeException();

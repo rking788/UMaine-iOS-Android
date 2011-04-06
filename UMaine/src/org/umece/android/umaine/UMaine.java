@@ -1,5 +1,8 @@
 package org.umece.android.umaine;
 
+
+import org.umece.android.umaine.sports.UMSports;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
