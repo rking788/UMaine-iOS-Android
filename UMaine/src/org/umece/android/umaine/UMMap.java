@@ -12,11 +12,13 @@ import org.umece.android.umaine.R;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
@@ -33,11 +35,12 @@ public class UMMap extends MapActivity {
 	
 	/* Dialog Types */
 	private static final int DIALOG_LOTS = 0;
-	private static final int SAVE_LOAD_SPOT = 1;
-	private static final int NO_SAVED_SPACE = 2;
-	private static final int FAILED_LOCATION_LOAD = 3;
-	private static final int OVERWRITE_SPOT_WARNING = 4;
-	private static final int WAIT_FOR_POSITION = 5;
+	private static final int DIALOG_BUILDINGS = 1;
+	private static final int SAVE_LOAD_SPOT = 2;
+	private static final int NO_SAVED_SPACE = 3;
+	private static final int FAILED_LOCATION_LOAD = 4;
+	private static final int OVERWRITE_SPOT_WARNING = 5;
+	private static final int WAIT_FOR_POSITION = 6;
 	
 	/* Permit Types */
 	private static final int PERMIT_STAFF = 0;
@@ -45,8 +48,7 @@ public class UMMap extends MapActivity {
 	private static final int PERMIT_COMMUTER = 2;
 	private static final int PERMIT_VISITOR = 3;
 	private static final int LOCATION_CURRENT = 4;
-	private static final int LOCATION_PARKING_SPOT = 5;
-	private static final int LOCATION_CLASS = 6;
+	private static final int LOCATION_POI = 5;
 	
 	private boolean[] selectedPermits = {false, true, false, false};
 	private boolean[] prevSelectedPermits = {false, false, false, false};
@@ -62,6 +64,9 @@ public class UMMap extends MapActivity {
 	private MyLocationOverlay mylocOverlay;
 	private OverlayItem parkingOverlay;
 	private OverlayItem classOverlay;
+	private OverlayItem buildingOverlay;
+	
+	private ArrayAdapter<String> buildingsAA;
 	
 	/** Called when the activity is first created. */
     @Override
@@ -97,6 +102,19 @@ public class UMMap extends MapActivity {
 			
 		});
 		
+        /* Create and populate the ArrayAdapter for the buildings list */
+        buildingsAA = new ArrayAdapter<String>(this,
+        				android.R.layout.simple_dropdown_item_1line);
+		for(String out : getResources().getStringArray(R.array.building_names)){
+			String correctStr = "";
+			for(String in : out.replaceAll("_", " ").split(" ")){
+				String firstchar = String.valueOf(in.charAt(0)).toUpperCase();
+				String rest = in.substring(1);
+				correctStr = correctStr.concat(firstchar + rest).concat(" ");
+			}
+			buildingsAA.add(correctStr.trim());
+		}
+		
         /* If we didn't get here from the course details page 
          * then show the lot selection dialog */
         Bundle extras = getIntent().getExtras();
@@ -109,7 +127,7 @@ public class UMMap extends MapActivity {
 			Drawable d = getResources().getDrawable(R.drawable.icon);
 			poioverlays.addOverlay(classOverlay,d);
 			mc.setCenter(building);
-			drawOverlays(LOCATION_CLASS);
+			drawOverlays(LOCATION_POI);
         }
         else{
         	showDialog(DIALOG_LOTS);
@@ -173,28 +191,14 @@ public class UMMap extends MapActivity {
         drawable = this.getResources().getDrawable(R.drawable.commutermarker);
         commitemizedoverlay = new UMItemizedOverlay(drawable, this);
         
-        oi = new OverlayItem(new GeoPoint(44905600, -68673180), "Satellite Lot", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44904604, -68672796), "Alfond Lot", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44904043, -68671536), "Football Field Lot", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44900204, -68673878), "Steam Plant Lot", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44896433, -68671891), "Chadbourne Hall Lot", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44894484, -68667980), "Sawyer Environmental Research Center", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44895433, -68666380), "near Libby Hall", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44897032, -68665872), "near Nutting Hall", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44898900, -68664591), "Sebago Lot", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44900165, -68663975), "CCA Lot", "");
-        commitemizedoverlay.addOverlay(oi);
-        oi = new OverlayItem(new GeoPoint(44905288, -68662770), "Rec Center Lot", "");
-        commitemizedoverlay.addOverlay(oi);
+        names = getResources().getStringArray(R.array.commuter_lots);
+    	lats = getResources().getIntArray(R.array.commuter_lat);
+    	longs = getResources().getIntArray(R.array.commuter_long);
+    	
+    	for(i = 0; i < names.length; i++){
+        	oi = new OverlayItem(new GeoPoint(lats[i], longs[i]), names[i], "");
+        	commitemizedoverlay.addOverlay(oi);
+        }
     	
     	/* Visitor Overlays */
         drawable = this.getResources().getDrawable(R.drawable.commutermarker);
@@ -228,9 +232,7 @@ public class UMMap extends MapActivity {
     	case LOCATION_CURRENT:
     		mapOverlays.add(mylocOverlay);
     		break;
-    	case LOCATION_PARKING_SPOT:
-    		break;
-    	case LOCATION_CLASS:
+    	case LOCATION_POI:
     		mapOverlays.add(poioverlays);
     		break;
     	}
@@ -257,9 +259,8 @@ public class UMMap extends MapActivity {
     	case LOCATION_CURRENT:
     		mapOverlays.remove(mylocOverlay);
         	break;
-        case LOCATION_PARKING_SPOT:
-        	break;
-        case LOCATION_CLASS:
+        case LOCATION_POI:
+        	mapOverlays.remove(poioverlays);
         	break;
     	}
     	
@@ -287,7 +288,7 @@ public class UMMap extends MapActivity {
     		showDialog(SAVE_LOAD_SPOT);
     		return true;
     	case R.id.buildings:
-    		// TODO: do something here
+    		showDialog(DIALOG_BUILDINGS);
     		return true;
     	default:
     		return super.onOptionsItemSelected(item);
@@ -324,6 +325,31 @@ public class UMMap extends MapActivity {
                     }
                 })
                 .create();
+    	case DIALOG_BUILDINGS:
+    		return new AlertDialog.Builder(this)
+    			.setTitle("Select a building")
+    			.setSingleChoiceItems(buildingsAA, 0, new OnClickListener(){
+
+					public void onClick(DialogInterface dialog, int which) {
+						clearOverlays(LOCATION_POI);
+						poioverlays.clearOverlays();
+						int	lat = getResources()
+									.getIntArray(R.array.building_latitude)[which];
+						int longitude = getResources()
+									.getIntArray(R.array.building_longitude)[which];
+						String buildingName = buildingsAA.getItem(which);
+						
+						GeoPoint building = new GeoPoint(lat, longitude);
+						buildingOverlay = new OverlayItem(building, buildingName, "");
+						Drawable d = getResources().getDrawable(R.drawable.icon);
+						poioverlays.addOverlay(buildingOverlay,d);
+						mv.getController().setCenter(building);
+						drawOverlays(LOCATION_POI);
+						dialog.dismiss();
+					}
+    				
+    			})
+    			.create();
     	case SAVE_LOAD_SPOT:
     		return new AlertDialog.Builder(this)
     			.setTitle("Save or Load")
