@@ -4,9 +4,6 @@
     android:layout_height="fill_parent">
     <TabHost android:id="@+id/sports_tab_host"
         android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ScrollView android:id="@+id/ScrollView"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:scrollbars="vertical">
         <LinearLayout android:orientation="vertical"
             android:layout_width="fill_parent" android:layout_height="fill_parent"
             android:padding="5dp">
@@ -17,6 +14,5 @@
                 android:layout_width="fill_parent" android:layout_height="wrap_content"
                 android:layout_weight="0" />
         </LinearLayout>
-        </ScrollView>
     </TabHost>
 </LinearLayout>

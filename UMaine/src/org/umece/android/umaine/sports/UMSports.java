@@ -20,85 +20,41 @@ public class UMSports extends ActivityGroup {
 	public static final int update = Menu.FIRST;
 	public static final int help = Menu.FIRST + 1;
 
-
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		/*
-		 * TabHost tabHost = getTabHost();
-		 * LayoutInflater.from(this).inflate(R.layout.sports,
-		 * tabHost.getTabContentView(), true);
-		 * tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("All")
-		 * .setContent(R.id.tab_view1));
-		 * tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("Hockey")
-		 * .setContent(R.id.tab_view2));
-		 * tabHost.addTab(tabHost.newTabSpec("tab3").setIndicator("Basketball")
-		 * .setContent(R.id.tab_view3));
-		 * tabHost.addTab(tabHost.newTabSpec("tab4").setIndicator("Other")
-		 * .setContent(R.id.tab_view4));
-		 */
-		
-		/*sgd = new SportsGrabData();
-		sgd.postEventType("hockey");*/
 
-//		setContentView(R.layout.sprotsbottomtab);
 		setContentView(R.layout.sprots_activity_sch_main);
 
 		TabHost tab_host = (TabHost) findViewById(R.id.sports_tab_host);
-		tab_host.setup();
+		tab_host.setup(this.getLocalActivityManager());
 
-/*		TabSpec ts1 = tab_host.newTabSpec("all_sch");
-		ts1.setIndicator(("All Sch"),
-				getResources().getDrawable(R.drawable.sports_all_sch));
-		ts1.setContent(R.id.sports_all_sch_text);
-		tab_host.addTab(ts1);
-
-		TabSpec ts2 = tab_host.newTabSpec("hockey_sch");
-		ts2.setIndicator(("Hockey"),
-				getResources().getDrawable(R.drawable.sports_hockey_sch));
-		ts2.setContent(R.id.sports_hockey_sch_text);
-		tab_host.addTab(ts2);
-
-		TabSpec ts3 = tab_host.newTabSpec("basketball_sch");
-		ts3.setIndicator(("Basketball"),
-				getResources().getDrawable(R.drawable.sports_basketball_sch));
-		ts3.setContent(R.id.sports_basketball_sch_text);
-		tab_host.addTab(ts3);
-
-		TabSpec ts4 = tab_host.newTabSpec("others_sch");
-		ts4.setIndicator(("Others"),
-				getResources().getDrawable(R.drawable.sports_others_sch));
-		ts4.setContent(R.id.sports_other_sch_text);
-		tab_host.addTab(ts4);*/
-		
 		TabSpec ts1 = tab_host.newTabSpec("all_sch");
 		ts1.setIndicator(("All Sch"),
-				getResources().getDrawable(R.drawable.sports_all_sch));
-		//ts1.setContent(R.id.sports_all_sch_text);
-		ts1.setContent(new Intent(this, SportsDisplaySchAll.class)); 
+			getResources().getDrawable(R.drawable.sports_all_sch));
+		Intent in1 = new Intent(this, SportsDisplaySchAll.class);
+		ts1.setContent(in1);
 		tab_host.addTab(ts1);
 
 		TabSpec ts2 = tab_host.newTabSpec("hockey_sch");
 		ts2.setIndicator(("Hockey"),
 				getResources().getDrawable(R.drawable.sports_hockey_sch));
-//		ts2.setContent(R.id.sports_hockey_sch_text);
-		ts1.setContent(new Intent(this, SportsDisplaySchHockey.class)); 
+		Intent in2 = new Intent(this, SportsDisplaySchHockey.class);
+		ts2.setContent(in2);
 		tab_host.addTab(ts2);
 
 		TabSpec ts3 = tab_host.newTabSpec("basketball_sch");
 		ts3.setIndicator(("Basketball"),
 				getResources().getDrawable(R.drawable.sports_basketball_sch));
-//		ts3.setContent(R.id.sports_basketball_sch_text);
-		ts1.setContent(new Intent(this, SportsDisplaySchBasketball.class)); 
+		Intent in3 = new Intent(this, SportsDisplaySchBasketball.class);
+		ts3.setContent(in3);
 		tab_host.addTab(ts3);
 
 		TabSpec ts4 = tab_host.newTabSpec("others_sch");
 		ts4.setIndicator(("Others"),
 				getResources().getDrawable(R.drawable.sports_others_sch));
-//		ts4.setContent(R.id.sports_other_sch_text);
-		ts1.setContent(new Intent(this, SportsDisplaySchOthers.class)); 
+		Intent in4 = new Intent(this, SportsDisplaySchOthers.class);
+		ts4.setContent(in4);
 		tab_host.addTab(ts4);
-
 
 		tab_host.setCurrentTab(0);
 

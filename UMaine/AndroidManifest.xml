@@ -15,16 +15,16 @@
 		<activity android:name=".UMCourses"></activity>
 
 
-		<activity android:name="sports.UMSports" android:label="@string/sports_title"></activity>
-		<activity android:name="sports.SportsDisplayisplay" ></activity>
+		<activity android:name=".sports.UMSports" android:label="@string/sports_title"></activity>
+		<activity android:name=".sports.SportsDisplayisplay" ></activity>
 		<activity android:name=".UMCourseDetails"></activity>
 		<activity android:name=".UMDirectory"></activity>
 		<activity android:name=".UMDirectoryDetails"></activity>
 		
-		<activity android:name="sports.SportsDisplaySchAll"></activity>
-		<activity android:name="sports.SportsDisplaySchHockeyHockey"></activity>
-		<activity android:name="sports.SportsDisplaySchBasketball"></activity>
-		<activity android:name="sports.SportsDisplaySchOthers"></activity>
+		<activity android:name=".sports.SportsDisplaySchAll"></activity>
+		<activity android:name=".sports.SportsDisplaySchHockey"></activity>
+		<activity android:name=".sports.SportsDisplaySchBasketball"></activity>
+		<activity android:name=".sports.SportsDisplaySchOthers"></activity>
 		
 		<uses-library android:required="true" android:name="com.google.android.maps"></uses-library>
     </application>
