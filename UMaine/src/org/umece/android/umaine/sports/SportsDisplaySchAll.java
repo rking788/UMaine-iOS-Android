@@ -16,12 +16,14 @@ import android.widget.TextView;
 
 public class SportsDisplaySchAll extends Activity {
 
-	SportsGrabData sgd;
+	SportsGrabData sgd = null;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		this.setContentView(R.layout.sprots_activity_sch_all);
 
+		sgd = new SportsGrabData();
+		
 		/* Find Tablelayout defined in myTableLayout.xml */
 		TableLayout tl = (TableLayout) findViewById(R.id.myTableLayout);
 
