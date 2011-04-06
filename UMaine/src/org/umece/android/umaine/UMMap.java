@@ -271,6 +271,14 @@ public class UMMap extends MapActivity {
     public boolean onCreateOptionsMenu(Menu menu){
     	MenuInflater inflater = getMenuInflater();
     	inflater.inflate(R.menu.map_menu, menu);
+    	
+    	if(mylocOverlay.getMyLocation() != null){
+    		menu.findItem(R.id.myparkingspace).setVisible(true);
+    	}
+    	else{
+    		menu.findItem(R.id.myparkingspace).setVisible(false);
+    	}
+    	
     	return true;
     }
     

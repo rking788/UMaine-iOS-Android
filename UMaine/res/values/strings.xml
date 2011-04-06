@@ -8,6 +8,7 @@
 	<string name="courselist_directions">Press the menu button to add/delete a course.</string>
 	<color name="maine_blue">#c0003263</color>
 	<color name="maine_lightblue">#ffb0d7ff</color>
+	<color name="maine_whiteblue">#ffdeeeff</color>
 	<string-array name="parkingspot_dialog_choices">
 		<item>Save current location as new space.</item>
 		<item>Load current location of last space.</item>

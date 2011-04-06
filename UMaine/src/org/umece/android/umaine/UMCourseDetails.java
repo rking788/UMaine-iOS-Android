@@ -23,6 +23,7 @@ public class UMCourseDetails extends Activity {
 	
 	private int selIndex;
 	private Semester sem;
+	private String courseBuildingName;
 	private int courseBuildingLat;
 	private int courseBuildingLong;
 	
@@ -88,10 +89,12 @@ public class UMCourseDetails extends Activity {
 		
 		if(buildingList.contains(buildingName)){
 			int index = buildingList.indexOf(buildingName);
+			courseBuildingName = c.getLocation();
 			courseBuildingLat = getResources().getIntArray(R.array.building_latitude)[index];
 			courseBuildingLong = getResources().getIntArray(R.array.building_longitude)[index];
 		}
 		else{
+			courseBuildingName = "";
 			courseBuildingLat = -1;
 			courseBuildingLong = -1;
 			((Button) findViewById(R.id.cdetails_map_btn)).setEnabled(false);
@@ -115,9 +118,8 @@ public class UMCourseDetails extends Activity {
 				Intent myIntent = new Intent(v.getContext(), UMMap.class);
 				myIntent.putExtra("lat", courseBuildingLat);
 				myIntent.putExtra("longitude", courseBuildingLong);
-				myIntent.putExtra("buildingname", "Bennett Hall");
+				myIntent.putExtra("buildingname", courseBuildingName);
 				startActivity(myIntent);
-				finish();
 			}
 			
 		});

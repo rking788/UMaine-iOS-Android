@@ -5,26 +5,26 @@
       android:versionName="1.0">
     <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
         <activity android:name=".UMaine"
-                  android:label="@string/app_name">
+                  android:label="@string/app_name" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		<activity android:name=".UMMap"></activity>
-		<activity android:name=".UMCourses"></activity>
+		<activity android:name=".UMMap" android:screenOrientation="portrait"></activity>
+		<activity android:name=".UMCourses" android:screenOrientation="portrait"></activity>
 
 
-		<activity android:name=".sports.UMSports" android:label="@string/sports_title"></activity>
-		<activity android:name=".sports.SportsDisplayisplay" ></activity>
-		<activity android:name=".UMCourseDetails"></activity>
-		<activity android:name=".UMDirectory"></activity>
-		<activity android:name=".UMDirectoryDetails"></activity>
+		<activity android:name=".sports.UMSports" android:label="@string/sports_title" android:screenOrientation="portrait"></activity>
+		<activity android:name=".sports.SportsDisplayisplay" android:screenOrientation="portrait"></activity>
+		<activity android:name=".UMCourseDetails" android:screenOrientation="portrait"></activity>
+		<activity android:name=".UMDirectory" android:screenOrientation="portrait"></activity>
+		<activity android:name=".UMDirectoryDetails" android:screenOrientation="portrait"></activity>
 		
-		<activity android:name=".sports.SportsDisplaySchAll"></activity>
-		<activity android:name=".sports.SportsDisplaySchHockey"></activity>
-		<activity android:name=".sports.SportsDisplaySchBasketball"></activity>
-		<activity android:name=".sports.SportsDisplaySchOthers"></activity>
+		<activity android:name=".sports.SportsDisplaySchAll" android:screenOrientation="portrait"></activity>
+		<activity android:name=".sports.SportsDisplaySchHockey" android:screenOrientation="portrait"></activity>
+		<activity android:name=".sports.SportsDisplaySchBasketball" android:screenOrientation="portrait"></activity>
+		<activity android:name=".sports.SportsDisplaySchOthers" android:screenOrientation="portrait"></activity>
 		
 		<uses-library android:required="true" android:name="com.google.android.maps"></uses-library>
     </application>
