@@ -14,11 +14,15 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.graphics.drawable.Drawable;
+import android.location.Location;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
@@ -84,11 +88,12 @@ public class UMMap extends MapActivity {
         /* Get the current MapController to set the center point to Barrows Hall */
         MapController mc = mv.getController();
         
-        /* Set the center and zoom on Barrows Hall */
-        GeoPoint p1 = new GeoPoint(44902222, -68667222);
+        /* Set the center and zoom on the middle of the "Mall" */
+        GeoPoint p1 = new GeoPoint(44901006, -68669536);
         mc.setCenter(p1);
-        mc.setZoom(17);
+        mc.setZoom(16);
           
+        /* Populate the itemizedoverlay objects */
         populateOverlays();
         
         /* Create the current location overlay list */
@@ -98,6 +103,7 @@ public class UMMap extends MapActivity {
 
 			public void run() {
 				mv.getController().animateTo(mylocOverlay.getMyLocation());
+				((Button)findViewById(R.id.map_savespot_btn)).setVisibility(View.VISIBLE);
 			}
 			
 		});
@@ -114,6 +120,9 @@ public class UMMap extends MapActivity {
 			}
 			buildingsAA.add(correctStr.trim());
 		}
+		
+		/* Set the click handler for the save spot button */
+		setSaveSpotHandler();
 		
         /* If we didn't get here from the course details page 
          * then show the lot selection dialog */
@@ -151,6 +160,18 @@ public class UMMap extends MapActivity {
     		mylocOverlay.disableMyLocation();
     		clearOverlays(LOCATION_CURRENT);
     	}
+    }
+    
+    private void setSaveSpotHandler(){
+    	Button savespotBtn = (Button) findViewById(R.id.map_savespot_btn);
+    	
+    	savespotBtn.setOnClickListener(new View.OnClickListener(){
+
+			public void onClick(View v) {
+				showDialog(SAVE_LOAD_SPOT);
+			}
+    		
+    	});
     }
     
     private void populateOverlays(){
@@ -271,14 +292,6 @@ public class UMMap extends MapActivity {
     public boolean onCreateOptionsMenu(Menu menu){
     	MenuInflater inflater = getMenuInflater();
     	inflater.inflate(R.menu.map_menu, menu);
-    	
-    	if(mylocOverlay.getMyLocation() != null){
-    		menu.findItem(R.id.myparkingspace).setVisible(true);
-    	}
-    	else{
-    		menu.findItem(R.id.myparkingspace).setVisible(false);
-    	}
-    	
     	return true;
     }
     
@@ -291,9 +304,6 @@ public class UMMap extends MapActivity {
     		return true;
     	case R.id.getlocation:
     		toggleCurrentLocation();
-    		return true;
-    	case R.id.myparkingspace:
-    		showDialog(SAVE_LOAD_SPOT);
     		return true;
     	case R.id.buildings:
     		showDialog(DIALOG_BUILDINGS);
@@ -374,7 +384,7 @@ public class UMMap extends MapActivity {
 								showDialog(OVERWRITE_SPOT_WARNING);
 							}
 							else{
-								//saveCurrentPos();
+								saveCurrentPos();
 							}
 						}
 						else if(which == 1){
@@ -407,7 +417,7 @@ public class UMMap extends MapActivity {
     			.setPositiveButton("Yes", new DialogInterface.OnClickListener(){
     				public void onClick(DialogInterface dialog, int id){
     					dialog.dismiss();
-    					//saveCurrentPos();
+    					saveCurrentPos();
     				}
     			})
     			.setNegativeButton("No", new DialogInterface.OnClickListener(){
@@ -417,6 +427,7 @@ public class UMMap extends MapActivity {
     			})
     			.create();
     	case WAIT_FOR_POSITION:
+    		/* TODO: Is this used anymore? */
     		return new AlertDialog.Builder(this)
     			.setTitle("Please Wait")
     			.setMessage("Please wait while your current position is found so that it can be saved.")
@@ -429,12 +440,32 @@ public class UMMap extends MapActivity {
     
     private void toggleCurrentLocation(){
     	if(!(mylocOverlay.isMyLocationEnabled())){
-    		mylocOverlay.enableMyLocation();
-    		drawOverlays(LOCATION_CURRENT);
+    		if(mylocOverlay.enableMyLocation()){
+    			drawOverlays(LOCATION_CURRENT);
+    			Toast.makeText(this, "Successfully enabled location", Toast.LENGTH_SHORT);
+    		}
+    		else{
+    			Toast.makeText(this, "Failed to enable location", Toast.LENGTH_SHORT);
+    		}
     	}
     	else if(mylocOverlay.isMyLocationEnabled()){
     		mylocOverlay.disableMyLocation();
     		clearOverlays(LOCATION_CURRENT);
+    	}
+    }
+    
+    private void saveCurrentPos(){
+    	Location loc = mylocOverlay.getLastFix();
+    	
+    	/* Is a location available? */
+    	if(loc == null){
+    		Toast.makeText(getApplicationContext(), "Location Info Unavailable", Toast.LENGTH_LONG);
+    	}
+    	else{
+    		Toast.makeText(getApplicationContext(), "Location Found", Toast.LENGTH_LONG);
+    		/* TODO: Write the location to the local file */
+    		/* TODO: Uncomment this when the above is implemented */
+    		//Toast.makeText(getApplicationContext(), "Saved to file", Toast.LENGTH_LONG);
     	}
     }
     

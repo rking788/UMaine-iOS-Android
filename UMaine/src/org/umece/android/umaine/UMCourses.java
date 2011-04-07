@@ -500,7 +500,7 @@ public class UMCourses extends Activity {
 		String[] sar = getCoursesSpin().split(" ", 2);
 		String cn = sar[0];
 		
-		/* Section Spinner now has the course type in it so seperate that part out */
+		/* Section Spinner now has the course type in it so separate that part out */
 		String secNum = getSectionSpin().replaceAll("\\s+(\\S+)", "");
 		
 		/*
@@ -511,7 +511,7 @@ public class UMCourses extends Activity {
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
 		postParams
 				.add(new BasicNameValuePair(POST_COURSENUM, cn));
-		postParams.add(new BasicNameValuePair(POST_SECTIONS, getSectionSpin()));
+		postParams.add(new BasicNameValuePair(POST_SECTIONS, secNum));
 		postParams
 				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
 

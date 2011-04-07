@@ -3,19 +3,20 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:orientation="vertical"
-	android:background="@color/maine_whiteblue">
+	android:orientation="vertical">
+	<com.google.android.maps.MapView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/mapview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:clickable="true"
+ 	   	android:apiKey="0f313PE-TV6zYS6HWA7i5_dbOgNiKsVGvHz4JDw"/>
 	<Button
-  		android:id="@+id/delbutn"
+  		android:id="@+id/map_savespot_btn"
+  		android:layout_alignParentTop="true"
+  		android:layout_centerHorizontal="true"
 		android:layout_height="wrap_content"
 		android:layout_width="wrap_content"
-		android:text="Delete Course"/>
-<com.google.android.maps.MapView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mapview"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:clickable="true"
-    android:apiKey="0f313PE-TV6zYS6HWA7i5_dbOgNiKsVGvHz4JDw"
-/>
+		android:visibility="visible"
+		android:text="Save Spot"/>
 </RelativeLayout>
