@@ -57,7 +57,7 @@ public class UMDirectoryDetails extends Activity {
 		 
 		tv.setText(contact.getTitle() + "\n" + contact.getDepartment());
 
-		tempadapter = new ArrayAdapter<String>(this, R.layout.list_item_small_icon) {
+		/*tempadapter = new ArrayAdapter<String>(this, R.layout.list_item_small_icon) {
 			@Override
 			public View getView(int position, View convertView, ViewGroup parent) {
 				View row;
@@ -93,7 +93,7 @@ public class UMDirectoryDetails extends Activity {
 				
 				return row;
 			}
-		};
+		};*/
 		 
 		tempadapter.add(contact.getNumber());
 		tempadapter.add(contact.getEmail());

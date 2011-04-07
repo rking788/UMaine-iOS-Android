@@ -16,7 +16,7 @@ public class UMItemizedOverlay extends ItemizedOverlay {
 	Context mContext;
 	
 	public UMItemizedOverlay(Drawable defaultMarker, Context context) {
-		super(boundCenter(defaultMarker));
+		super(boundCenterBottom(defaultMarker));
 		mContext = context;
 	}
 	

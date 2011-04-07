@@ -3,6 +3,7 @@ package org.umece.android.umaine;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -11,6 +12,7 @@ import org.umece.android.umaine.R;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.graphics.drawable.Drawable;
@@ -33,9 +35,14 @@ import com.google.android.maps.Overlay;
 import com.google.android.maps.OverlayItem;
 
 public class UMMap extends MapActivity {
+	private Context mContext;
 	
 	/* File name for saved parking spots */
-	private String FILE_NAME = "parkingspot.txt";
+	private static final String FILE_NAME = "parkingspot.txt";
+	
+	/* "Center of Campus" coordinates */
+	private static final int mCenterLat = 44901006;
+	private static final int mCenterLong = -68669536;
 	
 	/* Dialog Types */
 	private static final int DIALOG_LOTS = 0;
@@ -78,18 +85,20 @@ public class UMMap extends MapActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.map);
 
+        mContext = this;
+        
         /* Get a reference to the MapView from the main layout 
          * also set built in zoom controls to true 
          */
         mv = (MapView) findViewById(R.id.mapview);
         mv.setBuiltInZoomControls(true);
-        mv.setSatellite(true);
+        mv.setSatellite(false);
         
         /* Get the current MapController to set the center point to Barrows Hall */
         MapController mc = mv.getController();
         
         /* Set the center and zoom on the middle of the "Mall" */
-        GeoPoint p1 = new GeoPoint(44901006, -68669536);
+        GeoPoint p1 = new GeoPoint(mCenterLat, mCenterLong);
         mc.setCenter(p1);
         mc.setZoom(16);
           
@@ -183,7 +192,7 @@ public class UMMap extends MapActivity {
         int[] longs;
     	
     	/* Staff Overlays */
-        drawable = this.getResources().getDrawable(R.drawable.staffmarker);
+        drawable = this.getResources().getDrawable(R.drawable.staffpin);
     	staffitemizedoverlay = new UMItemizedOverlay(drawable, this);
     	
     	names = getResources().getStringArray(R.array.staff_lots);
@@ -196,7 +205,7 @@ public class UMMap extends MapActivity {
         }
     	
     	/* Resident Overlays */
-    	drawable = this.getResources().getDrawable(R.drawable.residentmarker);
+    	drawable = this.getResources().getDrawable(R.drawable.residentpin);
         resitemizedoverlay = new UMItemizedOverlay(drawable, this); 
         
         names = getResources().getStringArray(R.array.resident_lots);
@@ -209,7 +218,7 @@ public class UMMap extends MapActivity {
         }
 
     	/* Commuter Overlays */
-        drawable = this.getResources().getDrawable(R.drawable.commutermarker);
+        drawable = this.getResources().getDrawable(R.drawable.commuterpin);
         commitemizedoverlay = new UMItemizedOverlay(drawable, this);
         
         names = getResources().getStringArray(R.array.commuter_lots);
@@ -222,7 +231,7 @@ public class UMMap extends MapActivity {
         }
     	
     	/* Visitor Overlays */
-        drawable = this.getResources().getDrawable(R.drawable.commutermarker);
+        drawable = this.getResources().getDrawable(R.drawable.visitorpin);
         visitemizedoverlay = new UMItemizedOverlay(drawable, this);
         names = getResources().getStringArray(R.array.visitor_lots);
         lats = getResources().getIntArray(R.array.visitor_lat);
@@ -384,7 +393,7 @@ public class UMMap extends MapActivity {
 								showDialog(OVERWRITE_SPOT_WARNING);
 							}
 							else{
-								saveCurrentPos();
+								saveCurrentPos(((Dialog) dialog).getContext());
 							}
 						}
 						else if(which == 1){
@@ -417,7 +426,7 @@ public class UMMap extends MapActivity {
     			.setPositiveButton("Yes", new DialogInterface.OnClickListener(){
     				public void onClick(DialogInterface dialog, int id){
     					dialog.dismiss();
-    					saveCurrentPos();
+    					saveCurrentPos(((Dialog)dialog).getContext());
     				}
     			})
     			.setNegativeButton("No", new DialogInterface.OnClickListener(){
@@ -442,10 +451,10 @@ public class UMMap extends MapActivity {
     	if(!(mylocOverlay.isMyLocationEnabled())){
     		if(mylocOverlay.enableMyLocation()){
     			drawOverlays(LOCATION_CURRENT);
-    			Toast.makeText(this, "Successfully enabled location", Toast.LENGTH_SHORT);
+    			Toast.makeText(this, "Successfully enabled location", Toast.LENGTH_SHORT).show();
     		}
     		else{
-    			Toast.makeText(this, "Failed to enable location", Toast.LENGTH_SHORT);
+    			Toast.makeText(this, "Failed to enable location", Toast.LENGTH_SHORT).show();
     		}
     	}
     	else if(mylocOverlay.isMyLocationEnabled()){
@@ -454,18 +463,30 @@ public class UMMap extends MapActivity {
     	}
     }
     
-    private void saveCurrentPos(){
+    private void saveCurrentPos(Context cont){
     	Location loc = mylocOverlay.getLastFix();
     	
     	/* Is a location available? */
     	if(loc == null){
-    		Toast.makeText(getApplicationContext(), "Location Info Unavailable", Toast.LENGTH_LONG);
+    		Toast.makeText(mContext, "Location Info Unavailable", Toast.LENGTH_LONG).show();
     	}
     	else{
-    		Toast.makeText(getApplicationContext(), "Location Found", Toast.LENGTH_LONG);
-    		/* TODO: Write the location to the local file */
-    		/* TODO: Uncomment this when the above is implemented */
-    		//Toast.makeText(getApplicationContext(), "Saved to file", Toast.LENGTH_LONG);
+    		Toast.makeText(mContext, "Location Found", Toast.LENGTH_LONG).show();
+    		FileOutputStream outStream;
+			
+    		/*Write the location to file */
+    		try {
+				outStream = mContext.openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
+				outStream.write((loc.toString()).getBytes());
+				outStream.close();
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+    		
+			String res = "Saved " + loc.toString() + "to file";
+			Toast.makeText(mContext, res, Toast.LENGTH_LONG).show();
     	}
     }
     

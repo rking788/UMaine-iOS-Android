@@ -36,6 +36,7 @@
 	  xmlns:android="http://schemas.android.com/apk/res/android"
 	  android:id="@+id/courseslist"
 	  android:layout_width="fill_parent"
+	  android:cacheColorHint="@color/maine_whiteblue"
 	  android:textFilterEnabled="true"
 	  android:scrollbarAlwaysDrawVerticalTrack="true"
 	  android:layout_height="wrap_content"

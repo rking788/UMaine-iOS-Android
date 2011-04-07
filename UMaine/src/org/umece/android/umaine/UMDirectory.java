@@ -3,6 +3,8 @@ package org.umece.android.umaine;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.umece.android.umaine.R;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
@@ -108,27 +110,27 @@ public class UMDirectory extends Activity {
 			
 		});
 		
-		et.addTextChangedListener(new TextWatcher() {
+		//et.addTextChangedListener(new TextWatcher() {
 
-			@Override
+			/*@Override
 			public void afterTextChanged(Editable s) {
 				// TODO Auto-generated method stub
 				
-			}
+			}*/
 
-			@Override
+			/*@Override
 			public void beforeTextChanged(CharSequence s, int start, int count,
 					int after) {
 				// TODO Auto-generated method stub
 				
-			}
+			}*/
 
-			@Override
+			/*@Override
 			public void onTextChanged(CharSequence s, int start, int before,
 					int count) {
 				updateList(s.toString().toLowerCase());
-			}
-		});
+			}*/
+		//});
 		
 //		et.setOnTouchListener(new OnTouchListener(){
 //			@Override
