@@ -1,119 +1,108 @@
 package org.umece.android.umaine.sports;
 
+import java.util.List;
 import org.umece.android.umaine.R;
-import org.umece.android.umaine.R.id;
-import org.umece.android.umaine.R.layout;
-
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
-import android.view.ViewGroup.LayoutParams;
+import android.util.TypedValue;
+import android.widget.TableRow.LayoutParams;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 public class SportsDisplaySchOthers extends Activity {
-	// public static String results = "bbbbbbbbbbbbb";
 
-	// TextView textView;
+	SportsGrabData sgdot = null;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.sprots_activity_sch_others);
-
-		/*
-		 * Find Tablelayout defined in main.xml TableLayout tl = (TableLayout)
-		 * findViewById(R.id.myTableLayoutOthers); Create a new row to be added.
-		 * TableRow tr = new TableRow(this); tr.setLayoutParams(new
-		 * LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-		 * Create a Button to be the row-content. TextView textView = new
-		 * TextView(this); textView.setText("Dynamic text");
-		 * textView.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
-		 * LayoutParams.WRAP_CONTENT)); Add Button to row. tr.addView(textView);
-		 * Add row to TableLayout. tl.addView(tr, new
-		 * TableLayout.LayoutParams(LayoutParams.FILL_PARENT,
-		 * LayoutParams.WRAP_CONTENT));
-		 */
-
-		TextView textView = (TextView) findViewById(R.id.text_view_others);
-
-		textView.setText("test1 others");
-
-//		setContentView(textView);
+		this.setContentView(R.layout.sprots_activity_sch_others);
 		
-		
-		////
-	       
-	       
-		/*
-		 * setContentView(R.layout.sprots_activity_sch_all);
-		 * 
-		 * textView = (TextView) findViewById(R.id.text_view);
-		 * 
-		 * //textView.setText(showResults()); textView.setText("test1");
-		 * 
-		 * TableLayout tl=new TableLayout(this);
-		 * 
-		 * TableRow tr=new TableRow(this);
-		 * 
-		 * //for (int i = 0; i < R; i++){}
-		 * 
-		 * TextView textView1 = new TextView(this);
-		 * textView1.setText("Hello all");
-		 * 
-		 * tr.addView(textView1,0); tr.addView(textView1,1);
-		 * tr.addView(textView1,2); tr.addView(textView1,3);
-		 * tr.addView(textView1,4);
-		 * 
-		 * tl.addView(tr,0); tl.addView(tr,1); tl.addView(tr,2);
-		 * 
-		 * setContentView(tl);
-		 */
-/*
-		this.setContentView(R.layout.sprots_activity_sch_all);
+		sgdot = new SportsGrabData();
 
-		 Find Tablelayout defined in main.xml 
-		TableLayout tl = (TableLayout) findViewById(R.id.myTableLayoutAll);
-		 Create a new row to be added. 
-		TableRow tr = new TableRow(this);
-		tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
-				LayoutParams.WRAP_CONTENT));
-		 Create a Button to be the row-content. 
-		TextView textView = new TextView(this);
-		textView.setText("Dynamic text");
-		textView.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
-				LayoutParams.WRAP_CONTENT));
-		 Add Button to row. 
-		tr.addView(textView);
-		 Add row to TableLayout. 
-		tl.addView(tr, new TableLayout.LayoutParams(LayoutParams.FILL_PARENT,
-				LayoutParams.WRAP_CONTENT));
-		
-		TextView textView = (TextView) findViewById(R.id.text_view_all);
-		
-		textView.setText("test1 all");
-		
-//		setContentView(textView);
-*/
-		
+		/* Find Tablelayout defined in myTableLayout.xml */
+		TableLayout tlot = (TableLayout) findViewById(R.id.otTableLayout);
 
-		/*
-		 * Create a new row to be added. TableRow tr = new TableRow(this);
-		 * tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
-		 * LayoutParams.WRAP_CONTENT));
-		 * 
-		 * 
-		 * Create a TextView to be the row-content. TextView[] textView = new
-		 * TextView[5]; for (int i =0; i < 5; i++){
-		 * textView[i].setText("Dynamic Button"+i);
-		 * textView[i].setLayoutParams(new
-		 * LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-		 * Add Button to row. tr.addView(textView[i]); }
-		 * 
-		 * 
-		 * Add row to TableLayout. tl.addView(tr, new
-		 * TableLayout.LayoutParams(LayoutParams.FILL_PARENT,
-		 * LayoutParams.WRAP_CONTENT));
-		 */
+		// String[] testData = { "hello1", "hello2", "hello3", "hello4",
+		// "hello5","asdf","sadfa","dasfalsfje","143243","adfsa0832","dafadsfadsfoiehfoihfage","dafewfj;eljfa","000","10"
+		// };
 
+		List<String> retvalot = sgdot.postEventType("other");
+
+		int current = 0;
+		for (String s : retvalot) {
+			current++;
+
+			String[] row = s.split(";");
+
+			sgdot.setPostDate(row[0]);
+			sgdot.setPostEvent(row[1]);
+			sgdot.setPostLocation(row[2]);
+			sgdot.setPostTime(row[3]);
+			/*
+			 * }
+			 * 
+			 * // for (int current = 0; current < sgd.getRow().length;
+			 * current++) {
+			 */
+			// Create a TableRow and give it an ID
+			TableRow tr = new TableRow(this);
+			tr.setId(current);
+			tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
+					LayoutParams.FILL_PARENT));
+
+			// Create a TextView to house the name of the province
+			TextView labelDate = new TextView(this);
+			labelDate.setId(100 + current);
+			labelDate.setText(sgdot.getPostDate());
+			labelDate.setTextColor(Color.WHITE);
+			labelDate.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					UMSports.TEXT_SIZE);
+			labelDate.setGravity(android.view.Gravity.LEFT);
+			labelDate.setLayoutParams(new LayoutParams(
+					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+			tr.addView(labelDate);
+
+			// Create a TextView to house the value of the after-tax income
+			TextView labelEvent = new TextView(this);
+			labelEvent.setId(200 + current);
+			labelEvent.setText(sgdot.getPostEvent());
+			labelEvent.setTextColor(Color.WHITE);
+			labelEvent.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					UMSports.TEXT_SIZE);
+			labelEvent.setGravity(android.view.Gravity.LEFT);
+			labelEvent.setLayoutParams(new LayoutParams(
+					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+			tr.addView(labelEvent);
+
+			// Create a TextView to house the name of the province
+			TextView labelLocation = new TextView(this);
+			labelLocation.setId(300 + current);
+			labelLocation.setText(sgdot.getPostLocation());
+			labelLocation.setTextColor(Color.WHITE);
+			labelLocation.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					UMSports.TEXT_SIZE);
+			labelLocation.setGravity(android.view.Gravity.LEFT);
+			labelLocation.setLayoutParams(new LayoutParams(
+					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+			tr.addView(labelLocation);
+
+			// Create a TextView to house the value of the after-tax income
+			TextView labelTime = new TextView(this);
+			labelTime.setId(400 + current);
+			labelTime.setText(sgdot.getPostTime());
+			labelTime.setTextColor(Color.WHITE);
+			labelTime.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					UMSports.TEXT_SIZE);
+			labelTime.setGravity(android.view.Gravity.LEFT);
+			labelTime.setLayoutParams(new LayoutParams(
+					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+			tr.addView(labelTime);
+
+			// Add the TableRow to the TableLayout
+			tlot.addView(tr, new TableLayout.LayoutParams(
+					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+		}
 	}
 }

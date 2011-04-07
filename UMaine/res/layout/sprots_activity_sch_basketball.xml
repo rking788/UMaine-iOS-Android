@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-  	android:layout_width="fill_parent"
-  	android:layout_height="fill_parent"
-  	android:orientation="vertical">
-	<ScrollView android:id="@+id/ScrollView_basketball"
-			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:scrollbars="vertical">
-
-
-		<TextView android:id="@+id/text_view_basketball"
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:text="Static View" />
-	</ScrollView>
-</LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:scrollbars="vertical">
+	<TableLayout android:layout_width="wrap_content"
+		android:layout_height="fill_parent" android:stretchColumns="0,1,2,3"
+		
+		android:id="@+id/BaTableLayout">
+	</TableLayout>
+</ScrollView>
