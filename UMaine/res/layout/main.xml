@@ -31,7 +31,7 @@
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"
 				android:drawableTop="@drawable/bear"
-				android:text="Sports"/>
+				android:text="Go Blue!"/>
 			<!-- 	android:src="@drawable/sports_button" android:visibility="visible" -->
 				
 			<Button android:id="@+id/directorybtn"
