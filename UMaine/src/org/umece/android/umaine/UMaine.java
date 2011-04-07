@@ -28,7 +28,8 @@ public class UMaine extends Activity {
 		});
         
         /* Set up the listener for the parking button */
-        ImageButton parkingbtn = (ImageButton) findViewById(R.id.parkingbtn);
+        /*ImageButton parkingbtn = (ImageButton) findViewById(R.id.parkingbtn);*/
+        Button parkingbtn = (Button) findViewById(R.id.parkingbtn);
         parkingbtn.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
