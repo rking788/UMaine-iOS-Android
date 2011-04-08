@@ -17,6 +17,8 @@ public class Course {
 	private String phone;
 	private String email;
 	private String office;
+	private String departURL;
+	private String staffURL;
 	private String book;
 	private Spannable spannable;
 	private Color color;
@@ -36,7 +38,8 @@ public class Course {
 	 * @author jmonk
 	 */
 	public Course(String cdep, String cnum, String ctitle, String csession, String cdesc, 
-			String cmeetingtime, String clocation, String cinst, String cphone, String cemail, String coffice, String cbook) {
+			String cmeetingtime, String clocation, String cinst, String cphone, String cemail, 
+			String coffice, String cdeparturl, String cstaffurl, String cbook) {
 		dep = cdep;
 		coursenum = cnum;
 		title = ctitle;
@@ -48,6 +51,8 @@ public class Course {
 		phone = cphone;
 		email = cemail;
 		office = coffice;
+		departURL = cdeparturl;
+		staffURL = cstaffurl;
 		book = cbook;
 	}
 	
@@ -75,6 +80,8 @@ public class Course {
 		phone = strings[8];
 		email = strings[9];
 		office = strings[10];
+		departURL = strings[11];
+		staffURL = strings[12];
 		book = strings[11].replaceAll("\"", "");
 	}
 	
@@ -101,6 +108,8 @@ public class Course {
 		return_val = (return_val + phone + "\",\"");
 		return_val = (return_val + email + "\",\"");
 		return_val = (return_val + office + "\",\"");
+		return_val = (return_val + departURL + "\",\"");
+		return_val = (return_val + staffURL + "\",\"");
 		return_val = (return_val + book + "\"");
 		
 		return return_val;
@@ -184,10 +193,17 @@ public class Course {
 		return office;
 	}
 	
+	public String getDepartURL(){
+		return departURL;
+	}
+	
+	public String getStaffURL(){
+		return staffURL;
+	}
+	
 	public String getBook(){
 		return book;
 	}
-
 
 	public int getColor() {
 		if (color != null) {

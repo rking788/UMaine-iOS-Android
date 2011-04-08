@@ -70,7 +70,8 @@ public class UMCourseDetails extends Activity {
 		textbookinfo_tv.setText(bookInfo);
 		
 		/* Set instructor information */
-		Spanned instinfo = Html.fromHtml(c.getInstructor() + "<br/>" + c.getOffice() + "<br/>" + c.getPhone() + "<br/>" + c.getEmail());
+		Spanned instinfo = Html.fromHtml(c.getInstructor() + "<br/>" + c.getOffice() + "<br/>" + c.getPhone() + "<br/>" + c.getEmail()
+								+ "<br/>" + c.getDepartURL() + "<br/>" + c.getStaffURL());
 		instinfo_tv.setText(instinfo);
 	}
 	
