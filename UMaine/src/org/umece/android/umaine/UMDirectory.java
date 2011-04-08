@@ -111,21 +111,18 @@ public class UMDirectory extends Activity {
 		});
 		
 		et.addTextChangedListener(new TextWatcher() {
-
-			@Override
+			
+			public void onTextChanged(CharSequence s, int start, int before, int count) {
+				updateList(s.toString().toLowerCase());
+				
+			}
+			
 			public void beforeTextChanged(CharSequence s, int start, int count,
 					int after) {
 				// TODO Auto-generated method stub
 				
 			}
 			
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before,
-					int count) {
-				updateList(s.toString().toLowerCase());
-			}
-
-			@Override
 			public void afterTextChanged(Editable s) {
 				// TODO Auto-generated method stub
 				
@@ -133,7 +130,6 @@ public class UMDirectory extends Activity {
 		});
 		
 		et.setOnTouchListener(new OnTouchListener() {
-			@Override
 			public boolean onTouch(View v, MotionEvent event) {
 				if (et.getText().toString().contains("\n")) {
 					et.setText(et.getText().toString().replace("\n", ""));
