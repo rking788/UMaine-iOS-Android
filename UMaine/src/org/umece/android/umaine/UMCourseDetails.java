@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class UMCourseDetails extends Activity {
-	/* TODO: MAURICIO'S CONTACT INFORMATION NOT SHOWING UP */
 	/* Dialog Types */
 	private static final int DIALOG_CONFIRM_DELETE = 0;
 	

@@ -487,6 +487,7 @@ public class UMMap extends MapActivity {
     
     private void saveCurrentPos(Context cont){
     	Location loc = mylocOverlay.getLastFix();
+    	String locationString = null;
     	
     	/* Is a location available? */
     	if(loc == null){
@@ -500,7 +501,11 @@ public class UMMap extends MapActivity {
     		try {
 				outStream = mContext.openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
 				/* TODO: Write the latitude and longitude only not the whole toString (its a big mess) */
-				outStream.write((loc.toString()).getBytes());
+				Integer iLat = (int)((loc.getLatitude() * 1000000));
+				Integer iLong = (int)((loc.getLongitude() * 1000000));
+				
+				locationString = iLat.toString() + ";" + iLong.toString();
+				outStream.write(locationString.getBytes());
 				outStream.close();
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
@@ -508,7 +513,7 @@ public class UMMap extends MapActivity {
 				e.printStackTrace();
 			}
     		
-			String res = "Saved " + loc.toString() + "to file";
+			String res = "Saved " + locationString + " to file";
 			Toast.makeText(mContext, res, Toast.LENGTH_LONG).show();
     	}
     }
