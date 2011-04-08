@@ -106,7 +106,7 @@ public class UMMap extends MapActivity {
         populateOverlays();
         
         /* Create the current location overlay list */
-        poioverlays = new UMItemizedOverlay(getResources().getDrawable(R.drawable.aicar), this);
+        poioverlays = new UMItemizedOverlay(getResources().getDrawable(R.drawable.poiflag), this);
         mylocOverlay = new MyLocationOverlay(this, mv);
         mylocOverlay.runOnFirstFix(new Runnable(){
 
@@ -405,31 +405,42 @@ public class UMMap extends MapActivity {
     			.setSingleChoiceItems(R.array.parkingspot_dialog_choices, 0, new DialogInterface.OnClickListener() {
 					
 					public void onClick(DialogInterface dialog, int which) {
-						File fin = new File(FILE_NAME);
+						FileInputStream finStream = null;
 						
-						if(which == 0){
-							/* Save space */
-							dialog.dismiss();
-							
-							if(fin.exists()){
-								showDialog(OVERWRITE_SPOT_WARNING);
-							}
-							else{
-								saveCurrentPos(((Dialog) dialog).getContext());
-							}
-						}
-						else if(which == 1){
-							/* Load space */
-							dialog.dismiss();
-							
-							if(!fin.exists()){
-								showDialog(NO_SAVED_SPACE);
-							}
-							else{
-								getSavedPos(fin);
-							}
-						}
+						try {
+							finStream = openFileInput(FILE_NAME);
 						
+							if(which == 0){
+								/* Save space */
+								dialog.dismiss();
+								
+								if(finStream != null){
+									showDialog(OVERWRITE_SPOT_WARNING);
+								}
+								else{
+									saveCurrentPos(((Dialog) dialog).getContext());
+								}
+							}
+							else if(which == 1){
+								/* Load space */
+								dialog.dismiss();
+								
+								if(finStream == null){
+									showDialog(NO_SAVED_SPACE);
+								}
+								else{
+									getSavedPos(finStream);
+								}
+							}
+							
+							finStream.close();
+						} catch (FileNotFoundException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 					}
 				})
 				.create();
@@ -500,7 +511,7 @@ public class UMMap extends MapActivity {
     		/*Write the location to file */
     		try {
 				outStream = mContext.openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
-				/* TODO: Write the latitude and longitude only not the whole toString (its a big mess) */
+				
 				Integer iLat = (int)((loc.getLatitude() * 1000000));
 				Integer iLong = (int)((loc.getLongitude() * 1000000));
 				
@@ -518,7 +529,7 @@ public class UMMap extends MapActivity {
     	}
     }
     
-    private void getSavedPos(File fin){
+    private void getSavedPos(FileInputStream finStream){
     	try {
     		List<Overlay> mapOverlays = mv.getOverlays();
     		int num = -1;
@@ -530,9 +541,13 @@ public class UMMap extends MapActivity {
 			}
 			finstream.close();
 			
-			String[] coords = (new String(in, 0, num)).split(",");
-			GeoPoint carLocation = new GeoPoint((int)Integer.parseInt(coords[0]), (int)Integer.parseInt(coords[1]));
+			String[] coords = (new String(in, 0, num)).split(";");
+			int iLat = (int)Integer.parseInt(coords[0]);
+			int iLong = (int)Integer.parseInt(coords[1]);
+			GeoPoint carLocation = new GeoPoint(iLat, iLong);
 		
+			Toast.makeText(mContext, "Loaded location: " + coords[0] + ";" + coords[1], Toast.LENGTH_LONG).show();
+			
 			/* Display the point found above as an overlay on the map */
 			parkingOverlay = new OverlayItem(carLocation, "Current Parking Space", "");
 			
