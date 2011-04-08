@@ -21,14 +21,14 @@
         	android:text="TextView" 
         	android:layout_height="wrap_content" 
         	android:textSize="14sp" 
-			android:paddingLeft="10dp"
+			android:paddingLeft="5dp"
         	android:textColor="@android:color/black" 
         	android:layout_width="fill_parent"></TextView>
         <TextView 
         	android:text="TextView" 
         	android:id="@+id/link" 
         	android:textSize="10sp" 
-			android:paddingLeft="10dp"
+			android:paddingLeft="5dp"
         	android:textColor="@android:color/black" 
         	android:layout_width="fill_parent" 
         	android:layout_height="wrap_content"></TextView>
