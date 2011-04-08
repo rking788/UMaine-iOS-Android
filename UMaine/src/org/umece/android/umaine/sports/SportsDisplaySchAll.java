@@ -25,7 +25,7 @@ public class SportsDisplaySchAll extends Activity {
 		
 		Calendar ca =  Calendar.getInstance();
 		/* Find Tablelayout defined in myTableLayout.xml */
-		TableLayout tl = (TableLayout) findViewById(R.id.myTableLayout);
+		TableLayout tl = (TableLayout)findViewById(R.id.myTableLayout);
 
 		List<String> retval = sgd.postEventType("all");
 
