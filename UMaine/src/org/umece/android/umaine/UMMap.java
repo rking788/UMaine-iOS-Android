@@ -301,6 +301,17 @@ public class UMMap extends MapActivity {
     public boolean onCreateOptionsMenu(Menu menu){
     	MenuInflater inflater = getMenuInflater();
     	inflater.inflate(R.menu.map_menu, menu);
+    	
+    	/* Change the text of the "mylocation" button depending on 
+    	 * if it is currently enabled or not
+    	 */
+		if(mylocOverlay.isMyLocationEnabled()){
+			menu.findItem(R.id.getlocation).setTitle("My Location Off");
+		}
+		else{
+			menu.findItem(R.id.getlocation).setTitle("My Location On");
+		}
+		
     	return true;
     }
     
@@ -316,6 +327,12 @@ public class UMMap extends MapActivity {
     		return true;
     	case R.id.buildings:
     		showDialog(DIALOG_BUILDINGS);
+    		return true;
+    	case R.id.satview:
+    		mv.setSatellite(true);
+    		return true;
+    	case R.id.mapview:
+    		mv.setSatellite(false);
     		return true;
     	default:
     		return super.onOptionsItemSelected(item);

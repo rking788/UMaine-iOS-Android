@@ -3,7 +3,7 @@
 <resources>
      <style name="CustomWindowTitleText" parent="android:TextAppearance.WindowTitle">
           <item name="android:textSize">17dip</item>
-          <item name="android:textColor">#5599FF</item>
+          <item name="android:textColor">#c0003263</item>
           <item name="android:textStyle">bold</item>
      </style>
      <!-- Changes the background color of the title bar -->
@@ -15,7 +15,7 @@
      <!-- NOTE: setting android:textAppearence to style defined above -->
      <style name="CustomWindowTitle" parent="android:WindowTitle">
           <item name="android:textAppearance">@style/CustomWindowTitleText</item>
-          <item name="android:shadowDx">10</item>
+          <item name="android:shadowDx">5</item>
           <item name="android:shadowDy">0</item>
           <item name="android:shadowRadius">5</item>
           <item name="android:shadowColor">#1155CC</item>
