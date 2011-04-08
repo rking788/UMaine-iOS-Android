@@ -181,31 +181,41 @@ public class ScheduleDrawable extends View {
 		double left = mRect.right;
 		
 		for (i = 0; i < day.length; i++) {
-			if (day[i].size() > 0) {
-				if (((i % 2) == 0) && (day[i].get(0).toString().equals("WHITE_BLUE"))) {
+			int top = mRect.top + 2;
+			int length = (mRect.bottom - mRect.top) / day[i].size();
+			int bottom = (mRect.bottom - mRect.top) / day[i].size() + mRect.top - 2;
+			int k = 0;
+			for (Color color : day[i]) {
+				if (((i % 2) == 0) && (color.toString().equals("WHITE_BLUE"))) {
 					rect_queue.add(new Rect(
 							(int)(left + each_width - 1),
-							mRect.top + 2,
+							top,
 							(int)(left + each_width + 1),
-							mRect.bottom - 2));
-					color_queue.add(day[i].get(0));
+							bottom));
+					color_queue.add(color);
 				}
 				rect_queue.add(new Rect(
 						(int)(left + 1),
-						mRect.top + 2,
+						top,
 						(int)(left + each_width - 1),
-						mRect.bottom - 2));
-				left += each_width;
-				color_queue.add(day[i].get(0));
-				if ((i < (day.length - 1)) && (!day[i].get(0).toString().equals("WHITE_BLUE")) && (day[i].get(0).equals(day[i + 1].get(0)))) {
+						bottom));
+				color_queue.add(color);
+				if ((i < (day.length - 1)) && 
+						(!color.toString().equals("WHITE_BLUE")) && 
+						(day[i + 1].size() > k) &&
+						(color.equals(day[i + 1].get(k)))) {
 					rect_queue.add(new Rect(
-							(int)(left - 1),
-							mRect.top + 2,
-							(int)(left + 1),
-							mRect.bottom - 2));
-					color_queue.add(day[i].get(0));
+							(int)(left + each_width - 1),
+							top,
+							(int)(left + each_width + 1),
+							bottom));
+					color_queue.add(color);
 				}
+				top += length;
+				bottom += length;
+				k++;
 			}
+			left += each_width;
 		}
 	}
 	
