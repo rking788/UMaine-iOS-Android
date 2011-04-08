@@ -374,8 +374,8 @@ public class UMCourses extends Activity {
 		List<NameValuePair> postParams = new ArrayList<NameValuePair>();
 		postParams.add(new BasicNameValuePair("field", POST_COURSENUM));
 		postParams.add(new BasicNameValuePair(POST_DEPARTS, getDepartSpin()));
-		postParams
-				.add(new BasicNameValuePair(POST_SEMESTERS, (semester.getYear()+ semester.getSeason().toLowerCase())));
+		postParams.add(new BasicNameValuePair(POST_SEMESTERS, (semester
+				.getYear() + semester.getSeason().toLowerCase())));
 		coursenumadapter.clear();
 		try {
 			for (String s : httpRequest(postParams)) {
@@ -409,9 +409,12 @@ public class UMCourses extends Activity {
 		}
 		
 		try {
-			for (String s : httpRequest(postParams)) {
-				if (!existing.contains(s)) {
-					semesteradapter.add(s);
+			List<String> ret = httpRequest(postParams);
+			if (ret.get(0).equals(POST_SEMESTERS)) {
+				for (int i= 1; i < ret.size(); i++) {
+					if (!existing.contains(ret.get(i))) {
+						semesteradapter.add(ret.get(i));
+					}
 				}
 			}
 		} catch (Exception e) {
