@@ -72,11 +72,15 @@ public class SportsDisplaySchAll extends Activity {
 
 			int dateTotal = (ca.get(Calendar.YEAR)* 10000) +  (ca.get(Calendar.MONTH) * 100) + ca.get(Calendar.DATE);
 			if (dateTotal > tempTotal){
-				labelDate.setTextColor(R.color.maine_lightblue);
+				/*labelDate.setTextColor(R.color.maine_lightblue);
 				labelEvent.setTextColor(R.color.maine_lightblue);
 				labelLocation.setTextColor(R.color.maine_lightblue);
-				labelTime.setTextColor(R.color.maine_lightblue);
+				labelTime.setTextColor(R.color.maine_lightblue);*/
 				
+				labelDate.setTextColor(Color.GRAY);
+				labelEvent.setTextColor(Color.GRAY);
+				labelLocation.setTextColor(Color.GRAY);
+				labelTime.setTextColor(Color.GRAY);
 			}
 			else{
 				labelDate.setTextColor(Color.BLACK);

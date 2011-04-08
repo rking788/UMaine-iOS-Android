@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/maine_white">
+    android:background="@color/maine_whiteblue">
     <TabHost android:id="@+id/sports_tab_host"
         android:layout_width="fill_parent" android:layout_height="fill_parent">
         <LinearLayout android:orientation="vertical"
