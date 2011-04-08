@@ -6,13 +6,14 @@
 	android:orientation="vertical">
 	<!-- Yifeng's Key:  0vjOMltu-NuZ5RcuzLKPpLqY9K3Pc78JFx7vBEg -->
 	<!-- Rob's Key:     0f313PE-TV6zYS6HWA7i5_dbOgNiKsVGvHz4JDw -->
+	<!-- Monk's Key:    0lcMlJ7m1-0rj2fRK7gMebgzN3f3ZefJxCySAZg -->
 	<com.google.android.maps.MapView
 	    xmlns:android="http://schemas.android.com/apk/res/android"
 	    android:id="@+id/mapview"
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
 	    android:clickable="true"
- 	   	android:apiKey="0f313PE-TV6zYS6HWA7i5_dbOgNiKsVGvHz4JDw"/>
+ 	   	android:apiKey="0lcMlJ7m1-0rj2fRK7gMebgzN3f3ZefJxCySAZg"/>
 	<Button
   		android:id="@+id/map_savespot_btn"
   		android:layout_alignParentTop="true"
