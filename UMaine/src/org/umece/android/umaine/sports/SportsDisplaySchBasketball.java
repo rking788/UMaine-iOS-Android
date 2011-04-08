@@ -1,5 +1,6 @@
 package org.umece.android.umaine.sports;
 
+import java.util.Calendar;
 import java.util.List;
 import org.umece.android.umaine.R;
 import android.app.Activity;
@@ -20,6 +21,7 @@ public class SportsDisplaySchBasketball extends Activity {
 
 		sgdba = new SportsGrabData();
 		
+		Calendar ca =  Calendar.getInstance();
 		/* Find Tablelayout defined in myTableLayout.xml */
 		TableLayout batl = (TableLayout) findViewById(R.id.BaTableLayout);
 
@@ -37,54 +39,97 @@ public class SportsDisplaySchBasketball extends Activity {
 			sgdba.setPostTime(row[3]);
 
 			TableRow tr = new TableRow(this);
-			tr.setId(current);
-			tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
-					LayoutParams.FILL_PARENT));
+			TextView labelDate = new TextView(this);
+			TextView labelEvent = new TextView(this);
+			TextView labelLocation = new TextView(this);
+			TextView labelTime = new TextView(this);
+
+			String[] dateSplit = null ;
+			
+			if (!sgdba.getPostDate().contains("-")){
+				dateSplit = sgdba.getPostDate().split("/");
+			}
+			else {
+				String str2 = sgdba.getPostDate().substring(sgdba.getPostDate().indexOf("-")+1);
+				dateSplit = str2.split("/");
+			}
+			
+			int tempMonth = Integer.parseInt(dateSplit[0]);
+			int tempDay = Integer.parseInt(dateSplit[1]);
+			int tempYear = Integer.parseInt(dateSplit[2]);
+
+			int tempTotal = ((tempYear+2000) * 10000) + (tempMonth * 100) + tempDay;
+
+			int dateTotal = (ca.get(Calendar.YEAR)* 10000) +  (ca.get(Calendar.MONTH) * 100) + ca.get(Calendar.DATE);
+			if (dateTotal > tempTotal){
+				labelDate.setTextColor(R.color.maine_lightblue);
+				labelEvent.setTextColor(R.color.maine_lightblue);
+				labelLocation.setTextColor(R.color.maine_lightblue);
+				labelTime.setTextColor(R.color.maine_lightblue);
+				
+			}
+			else{
+				labelDate.setTextColor(Color.BLACK);
+				labelEvent.setTextColor(Color.BLACK);
+				labelLocation.setTextColor(Color.BLACK);
+				labelTime.setTextColor(Color.BLACK);
+			}
+			
+			
+			
 
 			// Create a TextView to house the name of the province
-			TextView labelDate = new TextView(this);
+			
 			labelDate.setId(100 + current);
 			labelDate.setText(sgdba.getPostDate());
-			labelDate.setTextColor(Color.WHITE);
-			labelDate.setTextSize(TypedValue.COMPLEX_UNIT_SP,UMSports.TEXT_SIZE);
+			labelDate.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					UMSports.TEXT_SIZE);
 			labelDate.setGravity(android.view.Gravity.LEFT);
 			labelDate.setLayoutParams(new LayoutParams(
 					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-			tr.addView(labelDate);
+			
 
 			// Create a TextView to house the value of the after-tax income
-			TextView labelEvent = new TextView(this);
-			labelEvent.setId(200+current);
+			
+			labelEvent.setId(200 + current);
 			labelEvent.setText(sgdba.getPostEvent());
-			labelEvent.setTextColor(Color.WHITE);
-			labelEvent.setTextSize(TypedValue.COMPLEX_UNIT_SP,UMSports.TEXT_SIZE);
+			labelEvent.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					UMSports.TEXT_SIZE);
 			labelEvent.setGravity(android.view.Gravity.LEFT);
 			labelEvent.setLayoutParams(new LayoutParams(
 					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-			tr.addView(labelEvent);
+			
 
 			// Create a TextView to house the name of the province
-			TextView labelLocation = new TextView(this);
+			
 			labelLocation.setId(300 + current);
 			labelLocation.setText(sgdba.getPostLocation());
-			labelLocation.setTextColor(Color.WHITE);
-			labelLocation.setTextSize(TypedValue.COMPLEX_UNIT_SP,UMSports.TEXT_SIZE);
+			labelLocation.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					UMSports.TEXT_SIZE);
 			labelLocation.setGravity(android.view.Gravity.LEFT);
 			labelLocation.setLayoutParams(new LayoutParams(
 					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-			tr.addView(labelLocation);
+			
 
 			// Create a TextView to house the value of the after-tax income
-			TextView labelTime = new TextView(this);
-			labelTime.setId(400+current);
+			labelTime.setId(400 + current);
 			labelTime.setText(sgdba.getPostTime());
-			labelTime.setTextColor(Color.WHITE);
-			labelTime.setTextSize(TypedValue.COMPLEX_UNIT_SP,UMSports.TEXT_SIZE);
+			labelTime.setTextSize(TypedValue.COMPLEX_UNIT_SP,
+					UMSports.TEXT_SIZE);
 			labelTime.setGravity(android.view.Gravity.LEFT);
 			labelTime.setLayoutParams(new LayoutParams(
 					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-			tr.addView(labelTime);
+		
 
+			// set the table
+			tr.setId(current);
+			tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
+					LayoutParams.FILL_PARENT));
+			tr.addView(labelDate);
+			tr.addView(labelEvent);
+			tr.addView(labelLocation);
+			tr.addView(labelTime);
+			
 			// Add the TableRow to the TableLayout
 			batl.addView(tr, new TableLayout.LayoutParams(
 					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));

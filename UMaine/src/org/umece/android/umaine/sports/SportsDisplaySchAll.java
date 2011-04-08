@@ -1,5 +1,6 @@
 package org.umece.android.umaine.sports;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import org.umece.android.umaine.R;
@@ -21,7 +22,8 @@ public class SportsDisplaySchAll extends Activity {
 		this.setContentView(R.layout.sprots_activity_sch_all);
 
 		sgd = new SportsGrabData();
-
+		
+		Calendar ca =  Calendar.getInstance();
 		/* Find Tablelayout defined in myTableLayout.xml */
 		TableLayout tl = (TableLayout) findViewById(R.id.myTableLayout);
 
@@ -46,37 +48,30 @@ public class SportsDisplaySchAll extends Activity {
 			 * if the schedule has done, set the row textColor as R.color.maine_lightblue
 			 * 
 			 */
-			
-			Date date = new Date();
+
 			TextView labelDate = new TextView(this);
 			TextView labelEvent = new TextView(this);
 			TextView labelLocation = new TextView(this);
 			TextView labelTime = new TextView(this);
-			
-			/*String temp0 = sgd.getPostDate();
-			int temp1 = (int)sgd.getPostDate().charAt(0);
-			int temp2 = (int)sgd.getPostDate().charAt(1);
-			*/
-			
+
 			String[] dateSplit = null ;
-//			String str = null;
+			
 			if (!sgd.getPostDate().contains("-")){
 				dateSplit = sgd.getPostDate().split("/");
 			}
 			else {
-				String str2 = sgd.getPostDate().substring(sgd.getPostDate().indexOf("-"));
+				String str2 = sgd.getPostDate().substring(sgd.getPostDate().indexOf("-")+1);
 				dateSplit = str2.split("/");
 			}
 			
 			int tempMonth = Integer.parseInt(dateSplit[0]);
 			int tempDay = Integer.parseInt(dateSplit[1]);
-			/*String[] dateSplit = sgd.getPostDate().split("/");
-			int tempMonth = Integer.parseInt(dateSplit[0]);
-			int tempDay = Integer.parseInt(dateSplit[1]);*/
-			/*int tempMonth = sgd.getPostDate().charAt(0)+sgd.getPostDate().charAt(1);
-			int tempDay = sgd.getPostDate().charAt(3)+sgd.getPostDate().charAt(4);*/
-			
-			if (((date.getMonth())>tempMonth) && (date.getDay()>tempDay)){
+			int tempYear = Integer.parseInt(dateSplit[2]);
+
+			int tempTotal = ((tempYear+2000) * 10000) + (tempMonth * 100) + tempDay;
+
+			int dateTotal = (ca.get(Calendar.YEAR)* 10000) +  (ca.get(Calendar.MONTH) * 100) + ca.get(Calendar.DATE);
+			if (dateTotal > tempTotal){
 				labelDate.setTextColor(R.color.maine_lightblue);
 				labelEvent.setTextColor(R.color.maine_lightblue);
 				labelLocation.setTextColor(R.color.maine_lightblue);
@@ -97,8 +92,6 @@ public class SportsDisplaySchAll extends Activity {
 			
 			labelDate.setId(100 + current);
 			labelDate.setText(sgd.getPostDate());
-			//labelDate.setTextColor(Color.BLACK);
-//			labelDate.setTextColor(R.color.maine_lightblue);
 			labelDate.setTextSize(TypedValue.COMPLEX_UNIT_SP,
 					UMSports.TEXT_SIZE);
 			labelDate.setGravity(android.view.Gravity.LEFT);
@@ -110,7 +103,6 @@ public class SportsDisplaySchAll extends Activity {
 			
 			labelEvent.setId(200 + current);
 			labelEvent.setText(sgd.getPostEvent());
-//			labelEvent.setTextColor(Color.BLACK);
 			labelEvent.setTextSize(TypedValue.COMPLEX_UNIT_SP,
 					UMSports.TEXT_SIZE);
 			labelEvent.setGravity(android.view.Gravity.LEFT);
@@ -122,7 +114,6 @@ public class SportsDisplaySchAll extends Activity {
 			
 			labelLocation.setId(300 + current);
 			labelLocation.setText(sgd.getPostLocation());
-//			labelLocation.setTextColor(Color.BLACK);
 			labelLocation.setTextSize(TypedValue.COMPLEX_UNIT_SP,
 					UMSports.TEXT_SIZE);
 			labelLocation.setGravity(android.view.Gravity.LEFT);
@@ -131,10 +122,8 @@ public class SportsDisplaySchAll extends Activity {
 			
 
 			// Create a TextView to house the value of the after-tax income
-			
 			labelTime.setId(400 + current);
 			labelTime.setText(sgd.getPostTime());
-//			labelTime.setTextColor(Color.BLACK);
 			labelTime.setTextSize(TypedValue.COMPLEX_UNIT_SP,
 					UMSports.TEXT_SIZE);
 			labelTime.setGravity(android.view.Gravity.LEFT);
