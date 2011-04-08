@@ -54,8 +54,8 @@ public class UMDirectory extends Activity {
 					row = mInflater.inflate(R.layout.list_item_small, parent, false);
 					((TextView)row.findViewById(R.id.listitemtext)).setText(getItem(position));
 					if ((position % 2) == 0) {
-						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("MAINE_BLUE").getColor());
-						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("WHITE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("WHITE_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
 					} else {
 						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("LIGHT_BLUE").getColor());
 						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
@@ -64,8 +64,8 @@ public class UMDirectory extends Activity {
 					row = convertView;
 					((TextView)row.findViewById(R.id.listitemtext)).setText(getItem(position));
 					if ((position % 2) == 0) {
-						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("MAINE_BLUE").getColor());
-						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("WHITE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("WHITE_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
 					} else {
 						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("LIGHT_BLUE").getColor());
 						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());

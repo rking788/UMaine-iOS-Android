@@ -14,7 +14,7 @@
   	<View
   		android:layout_height="2dp"
   		android:layout_width="fill_parent"
-  		android:background="@color/maine_blue"/>
+  		android:background="@color/maine_whiteblue"/>
   	<TextView
   		android:id="@+id/courses_semester"
   		android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
   		android:paddingTop="2px"
   		android:textColor="@android:color/black"
 		android:typeface="serif"
-		android:background="@color/maine_lightblue"
+		android:background="@color/maine_whiteblue"
   		android:paddingBottom="2px"/>
   	<View
   		android:layout_height="2dp"

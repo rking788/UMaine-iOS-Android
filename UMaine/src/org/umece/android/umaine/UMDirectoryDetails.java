@@ -20,6 +20,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ImageView.ScaleType;
 
 public class UMDirectoryDetails extends Activity {
 	
@@ -57,7 +58,7 @@ public class UMDirectoryDetails extends Activity {
 		 
 		tv.setText(contact.getTitle() + "\n" + contact.getDepartment());
 
-		/*tempadapter = new ArrayAdapter<String>(this, R.layout.list_item_small_icon) {
+		tempadapter = new ArrayAdapter<String>(this, R.layout.list_item_small_icon) {
 			@Override
 			public View getView(int position, View convertView, ViewGroup parent) {
 				View row;
@@ -75,7 +76,7 @@ public class UMDirectoryDetails extends Activity {
 					if (position == 2) {
 						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.location);
 					}
-//					((ImageView)row.findViewById(R.id.image)).setScaleType(ScaleType.CENTER);
+					((ImageView)row.findViewById(R.id.image)).setScaleType(ScaleType.CENTER);
 				} else {
 					row = convertView;
 					if (position == 0) {
@@ -93,7 +94,7 @@ public class UMDirectoryDetails extends Activity {
 				
 				return row;
 			}
-		};*/
+		};
 		 
 		tempadapter.add(contact.getNumber());
 		tempadapter.add(contact.getEmail());
