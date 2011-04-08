@@ -1,6 +1,7 @@
 package org.umece.android.umaine;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -388,17 +389,34 @@ public class UMCourses extends Activity {
 	}
 
 	public void postSemesters() {
+		List<String> existing = new ArrayList<String>();
 		List<NameValuePair> postParams = new ArrayList<NameValuePair>();
 		postParams.add(new BasicNameValuePair("field", POST_SEMESTERS));
 		semesteradapter.clear();
+		
+		File dir = getFilesDir();
+		if ((dir != null) && (dir.listFiles().length > 0)) {
+			for (File file : dir.listFiles()) {
+				try {
+					if (file.getName().contains(".sem")) {
+						Semester sem = new Semester(file.getName(), this);
+						existing.add(sem.getSeason() + " " + sem.getYear());
+						semesteradapter.add(sem.getSeason() + " " + sem.getYear());
+					}
+				} catch (Exception e) {
+				}
+			}
+		}
+		
 		try {
 			for (String s : httpRequest(postParams)) {
-				semesteradapter.add(s);
+				if (!existing.contains(s)) {
+					semesteradapter.add(s);
+				}
 			}
 		} catch (Exception e) {
 			throw new RuntimeException();
 		}
-		//coursenumspin.getSelectedItem().toString();
 	}
 
 	public void postSections() {

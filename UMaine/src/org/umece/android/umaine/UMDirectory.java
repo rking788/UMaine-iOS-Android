@@ -3,8 +3,6 @@ package org.umece.android.umaine;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.umece.android.umaine.R;
-
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 
@@ -12,9 +10,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.InputType;
-import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,20 +50,20 @@ public class UMDirectory extends Activity {
 					row = mInflater.inflate(R.layout.list_item_small, parent, false);
 					((TextView)row.findViewById(R.id.listitemtext)).setText(getItem(position));
 					if ((position % 2) == 0) {
-						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("WHITE_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("LIGHT_BLUE").getColor());
 						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
 					} else {
-						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("LIGHT_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("WHITE_BLUE").getColor());
 						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
 					}
 				} else {
 					row = convertView;
 					((TextView)row.findViewById(R.id.listitemtext)).setText(getItem(position));
 					if ((position % 2) == 0) {
-						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("WHITE_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("LIGHT_BLUE").getColor());
 						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
 					} else {
-						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("LIGHT_BLUE").getColor());
+						((TextView)row.findViewById(R.id.listitemtext)).setBackgroundColor(Color.getColor("WHITE_BLUE").getColor());
 						((TextView)row.findViewById(R.id.listitemtext)).setTextColor(Color.getColor("BLACK").getColor());
 					}
 				}
