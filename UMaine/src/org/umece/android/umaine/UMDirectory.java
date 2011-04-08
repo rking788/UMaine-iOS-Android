@@ -10,12 +10,16 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.InputType;
+import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnKeyListener;
+import android.view.View.OnTouchListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -106,39 +110,39 @@ public class UMDirectory extends Activity {
 			
 		});
 		
-		//et.addTextChangedListener(new TextWatcher() {
+		et.addTextChangedListener(new TextWatcher() {
 
-			/*@Override
-			public void afterTextChanged(Editable s) {
-				// TODO Auto-generated method stub
-				
-			}*/
-
-			/*@Override
+			@Override
 			public void beforeTextChanged(CharSequence s, int start, int count,
 					int after) {
 				// TODO Auto-generated method stub
 				
-			}*/
-
-			/*@Override
+			}
+			
+			@Override
 			public void onTextChanged(CharSequence s, int start, int before,
 					int count) {
 				updateList(s.toString().toLowerCase());
-			}*/
-		//});
+			}
+
+			@Override
+			public void afterTextChanged(Editable s) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
 		
-//		et.setOnTouchListener(new OnTouchListener(){
-//			@Override
-//			public boolean onTouch(View v, MotionEvent event) {
-//				if (et.getText().toString().contains("\n")) {
-//					et.setText(et.getText().toString().replace("\n", ""));
-//				}
-//				String s = et.getText().toString().toLowerCase();
-//				updateList(s);
-//				return false;
-//			}
-//		});
+		et.setOnTouchListener(new OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				if (et.getText().toString().contains("\n")) {
+					et.setText(et.getText().toString().replace("\n", ""));
+				}
+				String s = et.getText().toString().toLowerCase();
+				updateList(s);
+				return false;
+			}
+		});
 	}
 	
 	public static Contact getContact(int i) {

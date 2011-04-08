@@ -9,6 +9,8 @@ public class Contact {
 	private String email;
 	private String title;
 	private String number;
+	private String website;
+	private String dept_website;
 	
 	public Contact() {
 		name = "John Smith";
@@ -17,6 +19,8 @@ public class Contact {
 		number = "(207) 581-2247";
 		email = "jason.monk@maine.edu";
 		title = "Nothing";
+		dept_website = "www.google.ca";
+		website = "www.google.com";
 	}
 	
 	public Contact(String name, List<String> list) {
@@ -26,6 +30,16 @@ public class Contact {
 		number = list.get(2);
 		email = list.get(3);
 		office = list.get(4);
+		dept_website = list.get(5);
+		website = list.get(6);
+	}
+	
+	public String getDeptWebsite() {
+		return dept_website;
+	}
+	
+	public String getWebsite() {
+		return website;
 	}
 	
 	public String getName() {

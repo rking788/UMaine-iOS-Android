@@ -64,32 +64,33 @@ public class UMDirectoryDetails extends Activity {
 				View row;
 				
 				if (convertView == null) {
-					row = mInflater.inflate(R.layout.list_item_small_icon, parent, false);
-					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position));
-					((TextView)row.findViewById(R.id.listtextview)).setTextColor(Color.getColor("BLACK").getColor());
-					if (position == 0) {
-						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.number);
-					} 
-					if (position == 1) {
-						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.email);
+					if (position < 3) {
+						row = mInflater.inflate(R.layout.list_item_small_icon, parent, false);
+					} else {
+						row = mInflater.inflate(R.layout.list_item_small_icon_url, parent, false);
 					}
-					if (position == 2) {
-						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.location);
-					}
-					((ImageView)row.findViewById(R.id.image)).setScaleType(ScaleType.CENTER);
 				} else {
-					row = convertView;
-					if (position == 0) {
-						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.number);
-					} 
-					if (position == 1) {
-						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.email);
-					}
-					if (position == 2) {
-						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.location);
+					if (position < 3) {
+						row = mInflater.inflate(R.layout.list_item_small_icon, parent, false);
+					} else {
+						row = mInflater.inflate(R.layout.list_item_small_icon_url, parent, false);
 					}
 					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position));
 					((TextView)row.findViewById(R.id.listtextview)).setTextColor(Color.getColor("BLACK").getColor());
+//					row = convertView;
+					if (position == 0) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.number);
+					} else if (position == 1) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.email);
+					} else if (position == 2) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.location);
+					} else if (position == 3) {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.link);
+						((TextView)row.findViewById(R.id.link)).setText(contact.getDeptWebsite());
+					} else {
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.link);
+						((TextView)row.findViewById(R.id.link)).setText(contact.getWebsite());
+					}
 				}
 				
 				return row;
@@ -99,6 +100,8 @@ public class UMDirectoryDetails extends Activity {
 		tempadapter.add(contact.getNumber());
 		tempadapter.add(contact.getEmail());
 		tempadapter.add(contact.getOffice());
+		tempadapter.add("Department Website");
+		tempadapter.add("Personal Website");
 		ListView lv = (ListView) findViewById(R.id.dd_lv); 
 		lv.setAdapter(tempadapter);
 		registerForContextMenu(lv);
@@ -120,6 +123,14 @@ public class UMDirectoryDetails extends Activity {
 					} else {
 						showDialog(DIALOG_LOCATION_NOT_AVAILABLE);
 					}
+				} else if (arg2 == 3) {
+					Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(contact.getDeptWebsite()));
+					
+					startActivity(myIntent);
+				} else if (arg2 == 4) {
+					Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(contact.getWebsite()));
+					
+					startActivity(myIntent);
 				}
 			}
 		});
