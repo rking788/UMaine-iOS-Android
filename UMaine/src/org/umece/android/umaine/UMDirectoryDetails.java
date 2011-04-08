@@ -20,7 +20,6 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ImageView.ScaleType;
 
 public class UMDirectoryDetails extends Activity {
 	
