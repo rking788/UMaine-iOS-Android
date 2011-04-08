@@ -9,6 +9,7 @@
 	<color name="maine_blue">#c0003263</color>
 	<color name="maine_lightblue">#ffb0d7ff</color>
 	<color name="maine_whiteblue">#ffdeeeff</color>
+	<color name="maine_white">#ffffffff</color>
 	<string-array name="parkingspot_dialog_choices">
 		<item>Save current location as new space.</item>
 		<item>Load current location of last space.</item>
@@ -152,7 +153,7 @@
     <string name="basketballSch_button_title">basketball schedule</string>
     <string name="othersSch_button_title">others schedule</string>
     <string name="sports_title">Date\t\t\t\tEvent\t\t\t\tLocation\t\t\tTime</string>
-    <string name ="search_title">Date\t\tEvent\t\t\t\tLocation\t\t\tTime</string>
+    <string name ="search_title">Date\t\tEvent\t\t\tLocation\t\t\tTime</string>
     
     <string name = "test">test</string>
 </resources>

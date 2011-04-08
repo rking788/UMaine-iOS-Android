@@ -7,6 +7,7 @@ import org.umece.android.umaine.R.layout;
 
 import android.app.ActivityGroup;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,7 +18,7 @@ import android.widget.TabHost.TabSpec;
 public class UMSports extends ActivityGroup {
 
 	public static final int TEXT_SIZE = 10;
-	
+
 	public static TabHost tab_host;
 	public static final int update = Menu.FIRST;
 	public static final int help = Menu.FIRST + 1;
@@ -58,7 +59,7 @@ public class UMSports extends ActivityGroup {
 		ts4.setContent(in4);
 		tab_host.addTab(ts4);
 
-		tab_host.setCurrentTab(3);
+		tab_host.setCurrentTab(0);
 
 	}
 

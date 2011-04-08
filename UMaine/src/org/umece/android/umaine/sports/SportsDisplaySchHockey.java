@@ -12,9 +12,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 public class SportsDisplaySchHockey extends Activity {
-	// public static String results = "bbbbbbbbbbbbb";
 
-	// TextView textView;
 	SportsGrabData sgdho = null;
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -24,8 +22,6 @@ public class SportsDisplaySchHockey extends Activity {
 		/* Find Tablelayout defined in myTableLayout.xml */
 		TableLayout tl = (TableLayout) findViewById(R.id.hoTableLayout);
 
-//		String[] testData = { "hello1", "hello2", "hello3", "hello4", "hello5","asdf","sadfa","dasfalsfje","143243","adfsa0832","dafadsfadsfoiehfoihfage","dafewfj;eljfa","000","10" };
-		
 		List<String>retvalho = sgdho.postEventType("hockey");
 		
 		int current = 0;
@@ -38,11 +34,7 @@ public class SportsDisplaySchHockey extends Activity {
 			sgdho.setPostEvent(row[1]);
 			sgdho.setPostLocation(row[2]);
 			sgdho.setPostTime(row[3]);
-/*		}
-		
-		//  
-		for (int current = 0; current < sgd.getRow().length; current++) {*/
-			// Create a TableRow and give it an ID
+
 			TableRow tr = new TableRow(this);
 			tr.setId(current);
 			tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,

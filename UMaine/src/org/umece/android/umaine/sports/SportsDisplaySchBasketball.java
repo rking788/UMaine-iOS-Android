@@ -23,8 +23,6 @@ public class SportsDisplaySchBasketball extends Activity {
 		/* Find Tablelayout defined in myTableLayout.xml */
 		TableLayout batl = (TableLayout) findViewById(R.id.BaTableLayout);
 
-//		String[] testData = { "hello1", "hello2", "hello3", "hello4", "hello5","asdf","sadfa","dasfalsfje","143243","adfsa0832","dafadsfadsfoiehfoihfage","dafewfj;eljfa","000","10" };
-		
 		List<String>retvalba = sgdba.postEventType("basketball");
 		
 		int current = 0;
@@ -37,11 +35,7 @@ public class SportsDisplaySchBasketball extends Activity {
 			sgdba.setPostEvent(row[1]);
 			sgdba.setPostLocation(row[2]);
 			sgdba.setPostTime(row[3]);
-/*		}
-		
-		//  
-		for (int current = 0; current < sgd.getRow().length; current++) {*/
-			// Create a TableRow and give it an ID
+
 			TableRow tr = new TableRow(this);
 			tr.setId(current);
 			tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,

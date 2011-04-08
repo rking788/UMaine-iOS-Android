@@ -24,10 +24,6 @@ public class SportsDisplaySchOthers extends Activity {
 		/* Find Tablelayout defined in myTableLayout.xml */
 		TableLayout tlot = (TableLayout) findViewById(R.id.otTableLayout);
 
-		// String[] testData = { "hello1", "hello2", "hello3", "hello4",
-		// "hello5","asdf","sadfa","dasfalsfje","143243","adfsa0832","dafadsfadsfoiehfoihfage","dafewfj;eljfa","000","10"
-		// };
-
 		List<String> retvalot = sgdot.postEventType("other");
 
 		int current = 0;
@@ -40,13 +36,7 @@ public class SportsDisplaySchOthers extends Activity {
 			sgdot.setPostEvent(row[1]);
 			sgdot.setPostLocation(row[2]);
 			sgdot.setPostTime(row[3]);
-			/*
-			 * }
-			 * 
-			 * // for (int current = 0; current < sgd.getRow().length;
-			 * current++) {
-			 */
-			// Create a TableRow and give it an ID
+
 			TableRow tr = new TableRow(this);
 			tr.setId(current);
 			tr.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,

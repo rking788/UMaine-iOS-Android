@@ -52,17 +52,13 @@ public class SportsGrabData {
 
 	public ArrayAdapter<CharSequence> eventTypeAdapter;
 
-
-
 	private String postDate;
 	private String postEvent;
 	private String postLocation;
 	private String postTime;
-	
-//	private String eachLine;
-	
+
 	private String[] row;
-	
+
 	public List<String> postEventType(String eventType) {
 		List<String> retList = null;
 		List<NameValuePair> postParams = new ArrayList<NameValuePair>();
@@ -70,12 +66,12 @@ public class SportsGrabData {
 		postParams.add(new BasicNameValuePair("field", POST_SPORTS));
 		postParams.add(new BasicNameValuePair(POST_EVENTTYPE, eventType));
 
-			try {
-				retList = httpRequest(postParams);
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+		try {
+			retList = httpRequest(postParams);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		return retList;
 	}
