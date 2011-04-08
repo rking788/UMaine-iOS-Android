@@ -142,7 +142,7 @@ public class UMMap extends MapActivity {
 			String buildingName = extras.getString("buildingname");
 			GeoPoint building = new GeoPoint(lat, longitude);
 			classOverlay = new OverlayItem(building, buildingName, "");
-			Drawable d = getResources().getDrawable(R.drawable.icon);
+			Drawable d = getResources().getDrawable(R.drawable.poiflag);
 			poioverlays.addOverlay(classOverlay,d);
 			mc.setCenter(building);
 			drawOverlays(LOCATION_POI);
@@ -368,7 +368,7 @@ public class UMMap extends MapActivity {
 						
 						GeoPoint building = new GeoPoint(lat, longitude);
 						buildingOverlay = new OverlayItem(building, buildingName, "");
-						Drawable d = getResources().getDrawable(R.drawable.icon);
+						Drawable d = getResources().getDrawable(R.drawable.poiflag);
 						poioverlays.addOverlay(buildingOverlay,d);
 						mv.getController().setCenter(building);
 						drawOverlays(LOCATION_POI);
@@ -477,6 +477,7 @@ public class UMMap extends MapActivity {
     		/*Write the location to file */
     		try {
 				outStream = mContext.openFileOutput(FILE_NAME, Context.MODE_PRIVATE);
+				/* TODO: Write the latitude and longitude only not the whole toString (its a big mess) */
 				outStream.write((loc.toString()).getBytes());
 				outStream.close();
 			} catch (FileNotFoundException e) {

@@ -57,7 +57,7 @@ public class UMCourses extends Activity {
 
 	/* PHP script */
 	/* TODO: Change that back to sample.php */
-	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample-testing.php";
+	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
 
 	/* Post Values for data to be queried */
 	private static final String POST_SEMESTERS = "semesters";
@@ -523,8 +523,9 @@ public class UMCourses extends Activity {
 		/* Add the new course Spannable to the list view adapter */
 		courselistadapter.clear();
 		try {
-
-			for (String s : httpRequest(postParams)) {
+			List<String> temp = httpRequest(postParams);
+			//for (String s : httpRequest(postParams)) {
+			for(String s: temp){
 				if(s.startsWith("Error:")){
 					s = null;
 				}

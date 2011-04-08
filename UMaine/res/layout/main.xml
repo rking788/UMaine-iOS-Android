@@ -3,15 +3,35 @@
 	android:orientation="vertical"
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
-	android:background="@drawable/blackbear"><!--"#ff003263"-->
+	android:background="@color/maine_lightblue"><!--"#ff003263"--> <!-- "@drawable/blackbear" -->
 	
-	<TableLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+	<ImageView android:id="@+id/umainelogo_iv" 
+		android:layout_width="wrap_content" 
+		android:layout_alignParentTop="true" 
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:paddingBottom="2dp"
+		android:paddingTop="5dp"
+		android:src="@drawable/pc_umainelogo_transparent">
+	</ImageView>
+	
+	<View
+		android:id="@+id/bluebar"
+		android:layout_below="@+id/umainelogo_iv"
+  		android:layout_height="2dp"
+  		android:layout_width="fill_parent"
+  		android:background="@color/maine_blue"/>
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/maine_whiteblue"
+		android:layout_below="@+id/bluebar" android:gravity="center">
+	<TableLayout
         android:orientation="vertical"
-        android:layout_alignParentBottom="false"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"  
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal">
         
         <TableRow
         	android:layout_width="wrap_content">
@@ -45,4 +65,5 @@
 				android:text="Staff Directory"/>
 		</TableRow>		
 	</TableLayout>
+	</LinearLayout>
 </RelativeLayout>
