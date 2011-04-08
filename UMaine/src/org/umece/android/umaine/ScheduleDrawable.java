@@ -117,18 +117,18 @@ public class ScheduleDrawable extends View {
 		Rect w_rect = new Rect(start_rect, (int)(y * .51), end_rect, (int)(y * .68));
 		Rect h_rect = new Rect(start_rect, (int)(y * .69), end_rect, (int)(y * .84));
 		Rect f_rect = new Rect(start_rect, (int)(y * .85), end_rect, (int)(y * 1.00));
-		Color white = Color.getColor("GRAY");
+		Color bg = Color.getColor("MAINE_BLUE");
 		
 		rect_queue.add(m_rect);
 		rect_queue.add(t_rect);
 		rect_queue.add(w_rect);
 		rect_queue.add(h_rect);
 		rect_queue.add(f_rect);
-		color_queue.add(white);
-		color_queue.add(white);
-		color_queue.add(white);
-		color_queue.add(white);
-		color_queue.add(white);
+		color_queue.add(bg);
+		color_queue.add(bg);
+		color_queue.add(bg);
+		color_queue.add(bg);
+		color_queue.add(bg);
 		
 		addRects(m_rect, m);
 		addRects(t_rect, t);
@@ -144,7 +144,7 @@ public class ScheduleDrawable extends View {
 		double left = mRect.right;
 		
 		for (i = 0; i < colors.length; i++) {
-			if (((i % 2) == 0) && (colors[i].toString().equals("MAINE_BLUE"))) {
+			if (((i % 2) == 0) && (colors[i].toString().equals("WHITE_BLUE"))) {
 				rect_queue.add(new Rect(
 						(int)(left + each_width - 1),
 						mRect.top + 2,
@@ -159,7 +159,7 @@ public class ScheduleDrawable extends View {
 					mRect.bottom - 2));
 			left += each_width;
 			color_queue.add(colors[i]);
-			if ((i < (colors.length - 1)) && (!colors[i].toString().equals("MAINE_BLUE")) && (colors[i].equals(colors[i + 1]))) {
+			if ((i < (colors.length - 1)) && (!colors[i].toString().equals("WHITE_BLUE")) && (colors[i].equals(colors[i + 1]))) {
 				rect_queue.add(new Rect(
 						(int)(left - 1),
 						mRect.top + 2,
@@ -243,11 +243,11 @@ public class ScheduleDrawable extends View {
 	private void clearArrays() {
 		int i;
 		for (i = 0; i < m.length; i++) {
-			m[i] = Color.getColor("MAINE_BLUE");
-			t[i] = Color.getColor("MAINE_BLUE");
-			w[i] = Color.getColor("MAINE_BLUE");
-			h[i] = Color.getColor("MAINE_BLUE");
-			f[i] = Color.getColor("MAINE_BLUE");
+			m[i] = Color.getColor("WHITE_BLUE");
+			t[i] = Color.getColor("WHITE_BLUE");
+			w[i] = Color.getColor("WHITE_BLUE");
+			h[i] = Color.getColor("WHITE_BLUE");
+			f[i] = Color.getColor("WHITE_BLUE");
 		}
 	}
 
