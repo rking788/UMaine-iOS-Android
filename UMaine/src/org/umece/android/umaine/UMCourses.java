@@ -342,7 +342,7 @@ public class UMCourses extends Activity {
 	 * for department, course number, and description
 	 */
 	private void addCourse(List<String> courseinfo) {
-		String dep, num, title, inst, sec, meetingTime, location, book, phone, email, office, departURL, staffURL;
+		String dep, num, title, inst, sec, meetingTime, location, book, phone, email, office, departURL;
 		// Formatter formatter = new Formatter();
 
 		/* Should handle the case where there is no start time or end time */
@@ -357,7 +357,6 @@ public class UMCourses extends Activity {
 		email = courseinfo.get(8);
 		office = courseinfo.get(9);
 		departURL = courseinfo.get(10);
-		staffURL = courseinfo.get(11);
 		book = courseinfo.get(12);
 
 		if (semester != null) {
@@ -365,7 +364,7 @@ public class UMCourses extends Activity {
 				if(semester.getCourseCount() == 0) {
 					((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.GONE);
 				}
-				semester.addCourse(new Course(dep, num, title, sec, "", meetingTime, location, inst, phone, email, office, departURL, staffURL, book));
+				semester.addCourse(new Course(dep, num, title, sec, "", meetingTime, location, inst, phone, email, office, departURL, book));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

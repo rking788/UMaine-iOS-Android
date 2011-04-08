@@ -39,7 +39,7 @@ public class Course {
 	 */
 	public Course(String cdep, String cnum, String ctitle, String csession, String cdesc, 
 			String cmeetingtime, String clocation, String cinst, String cphone, String cemail, 
-			String coffice, String cdeparturl, String cstaffurl, String cbook) {
+			String coffice, String cdeparturl,  String cbook) {
 		dep = cdep;
 		coursenum = cnum;
 		title = ctitle;
@@ -52,7 +52,6 @@ public class Course {
 		email = cemail;
 		office = coffice;
 		departURL = cdeparturl;
-		staffURL = cstaffurl;
 		book = cbook;
 	}
 	
@@ -81,7 +80,6 @@ public class Course {
 		email = strings[9];
 		office = strings[10];
 		departURL = strings[11];
-		staffURL = strings[12];
 		book = strings[11].replaceAll("\"", "");
 	}
 	
@@ -109,7 +107,6 @@ public class Course {
 		return_val = (return_val + email + "\",\"");
 		return_val = (return_val + office + "\",\"");
 		return_val = (return_val + departURL + "\",\"");
-		return_val = (return_val + staffURL + "\",\"");
 		return_val = (return_val + book + "\"");
 		
 		return return_val;
@@ -195,10 +192,6 @@ public class Course {
 	
 	public String getDepartURL(){
 		return departURL;
-	}
-	
-	public String getStaffURL(){
-		return staffURL;
 	}
 	
 	public String getBook(){
