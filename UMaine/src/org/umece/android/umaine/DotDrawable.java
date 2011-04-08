@@ -57,14 +57,14 @@ public class DotDrawable extends View {
 		if (course != null) {
 			x_queue.add((float)x / 2);
 			y_queue.add((float)y / 2);
-			rad_queue.add((float)10);
+			rad_queue.add((float)0.45*x);
 			color_queue.add(course.getColor());
 		}
 		
 		if (color != null) {
 			x_queue.add((float)x / 2);
 			y_queue.add((float)y / 2);
-			rad_queue.add((float)10);
+			rad_queue.add((float)0.45*x);
 			color_queue.add(color.getColor());
 		}
 		
