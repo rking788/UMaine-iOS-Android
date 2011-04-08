@@ -357,7 +357,7 @@ public class UMCourses extends Activity {
 		email = courseinfo.get(8);
 		office = courseinfo.get(9);
 		departURL = courseinfo.get(10);
-		book = courseinfo.get(12);
+		book = courseinfo.get(11);
 
 		if (semester != null) {
 			try {
