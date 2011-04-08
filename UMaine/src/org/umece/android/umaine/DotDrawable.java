@@ -115,6 +115,7 @@ public class DotDrawable extends View {
 	private void drawCirc(Float x, Float y, Float rad,
 			int color, Canvas canvas) {
 		Paint paint = new Paint();
+		paint.setAntiAlias(true);
 		paint.setStrokeWidth(3);
 		paint.setColor(color);
 		
