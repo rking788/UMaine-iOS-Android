@@ -71,7 +71,7 @@ public class UMDirectoryDetails extends Activity {
 				} else {
 					if (position < 3) {
 						row = mInflater.inflate(R.layout.list_item_small_icon, parent, false);
-					} else {
+				 	} else {
 						row = mInflater.inflate(R.layout.list_item_small_icon_url, parent, false);
 					}
 					((TextView)row.findViewById(R.id.listtextview)).setText(getItem(position));
@@ -82,7 +82,7 @@ public class UMDirectoryDetails extends Activity {
 					} else if (position == 1) {
 						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.email);
 					} else if (position == 2) {
-						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.location);
+						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.office);
 					} else if (position == 3) {
 						((ImageView)row.findViewById(R.id.image)).setImageResource(R.drawable.link);
 						((TextView)row.findViewById(R.id.link)).setText(contact.getDeptWebsite());
