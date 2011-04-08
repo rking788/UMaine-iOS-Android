@@ -112,7 +112,6 @@ public class UMMap extends MapActivity {
 
 			public void run() {
 				mv.getController().animateTo(mylocOverlay.getMyLocation());
-				((Button)findViewById(R.id.map_savespot_btn)).setVisibility(View.VISIBLE);
 			}
 			
 		});
@@ -298,19 +297,25 @@ public class UMMap extends MapActivity {
     }
     
     @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-    	MenuInflater inflater = getMenuInflater();
-    	inflater.inflate(R.menu.map_menu, menu);
-    	
+	public boolean onPrepareOptionsMenu(Menu menu){
+		
     	/* Change the text of the "mylocation" button depending on 
     	 * if it is currently enabled or not
     	 */
-		if(mylocOverlay.isMyLocationEnabled()){
+    	if(mylocOverlay.isMyLocationEnabled()){
 			menu.findItem(R.id.getlocation).setTitle("My Location Off");
 		}
 		else{
 			menu.findItem(R.id.getlocation).setTitle("My Location On");
 		}
+    	
+    	return true;
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+    	MenuInflater inflater = getMenuInflater();
+    	inflater.inflate(R.menu.map_menu, menu);
 		
     	return true;
     }

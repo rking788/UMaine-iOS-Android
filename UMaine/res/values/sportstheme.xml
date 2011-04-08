@@ -17,7 +17,7 @@
           <item name="android:textAppearance">@style/CustomWindowTitleText</item>
           <item name="android:shadowDx">5</item>
           <item name="android:shadowDy">0</item>
-          <item name="android:shadowRadius">5</item>
+          <item name="android:shadowRadius">0</item>
           <item name="android:shadowColor">#1155CC</item>
       </style>
       <!-- Override properties in the default theme -->
