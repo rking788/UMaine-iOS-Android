@@ -17,11 +17,11 @@ public class ScheduleDrawable extends View {
 	Context mContext;
 	private static final int start_time = 8;
 	private static final int end_time = 20;
-	private Color[] m;
-	private Color[] t;
-	private Color[] w;
-	private Color[] h;
-	private Color[] f;
+	private List<Color>[] m;
+	private List<Color>[] t;
+	private List<Color>[] w;
+	private List<Color>[] h;
+	private List<Color>[] f;
 	private Semester semester;
 	private List<Rect> rect_queue;
 	private List<Color> color_queue;
@@ -59,15 +59,24 @@ public class ScheduleDrawable extends View {
 		return super.onTouchEvent(event);
 	}
 	
+	@SuppressWarnings("unchecked")
 	public ScheduleDrawable(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		mContext = context;
 		this.semester = null;
-		m = new Color[(end_time - start_time) * 2];
-		t = new Color[(end_time - start_time) * 2];
-		w = new Color[(end_time - start_time) * 2];
-		h = new Color[(end_time - start_time) * 2];
-		f = new Color[(end_time - start_time) * 2];
+		m = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		t = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		w = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		h = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		f = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		int i;
+		for (i = 0; i < m.length; i++) {
+			m[i] = new ArrayList<Color>();
+			t[i] = new ArrayList<Color>();
+			w[i] = new ArrayList<Color>();
+			h[i] = new ArrayList<Color>();
+			f[i] = new ArrayList<Color>();
+		}
 		
 		rect_queue = new ArrayList<Rect>();
 		color_queue = new ArrayList<Color>();
@@ -77,15 +86,24 @@ public class ScheduleDrawable extends View {
 		this(context, (Semester)null);
 	}
 
+	@SuppressWarnings("unchecked")
 	public ScheduleDrawable(Context context, Semester sem) {
 		super(context);
 		mContext = context;
 		this.semester = sem;
-		m = new Color[(end_time - start_time) * 2];
-		t = new Color[(end_time - start_time) * 2];
-		w = new Color[(end_time - start_time) * 2];
-		h = new Color[(end_time - start_time) * 2];
-		f = new Color[(end_time - start_time) * 2];
+		m = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		t = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		w = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		h = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		f = (List<Color>[]) new List<?>[(end_time - start_time) * 2];
+		int i;
+		for (i = 0; i < m.length; i++) {
+			m[i] = new ArrayList<Color>();
+			t[i] = new ArrayList<Color>();
+			w[i] = new ArrayList<Color>();
+			h[i] = new ArrayList<Color>();
+			f[i] = new ArrayList<Color>();
+		}
 		
 		rect_queue = new ArrayList<Rect>();
 		color_queue = new ArrayList<Color>();
@@ -130,6 +148,25 @@ public class ScheduleDrawable extends View {
 		color_queue.add(bg);
 		color_queue.add(bg);
 		
+		int i;
+		for (i = 0; i < m.length; i++) {
+			if (m[i].size() == 0) {
+				m[i].add(Color.getColor("WHITE_BLUE"));
+			}
+			if (t[i].size() == 0) {
+				t[i].add(Color.getColor("WHITE_BLUE"));
+			}
+			if (w[i].size() == 0) {
+				w[i].add(Color.getColor("WHITE_BLUE"));
+			}
+			if (h[i].size() == 0) {
+				h[i].add(Color.getColor("WHITE_BLUE"));
+			}
+			if (f[i].size() == 0) {
+				f[i].add(Color.getColor("WHITE_BLUE"));
+			}
+		}
+		
 		addRects(m_rect, m);
 		addRects(t_rect, t);
 		addRects(w_rect, w);
@@ -137,35 +174,37 @@ public class ScheduleDrawable extends View {
 		addRects(f_rect, f);
 	}
 
-	private void addRects(Rect mRect, Color[] colors) {
+	private void addRects(Rect mRect, List<Color>[] day) {
 		int rect_width = mRect.left - mRect.right;
-		each_width = ((double)rect_width) / colors.length;
+		each_width = ((double)rect_width) / day.length;
 		int i;
 		double left = mRect.right;
 		
-		for (i = 0; i < colors.length; i++) {
-			if (((i % 2) == 0) && (colors[i].toString().equals("WHITE_BLUE"))) {
+		for (i = 0; i < day.length; i++) {
+			if (day[i].size() > 0) {
+				if (((i % 2) == 0) && (day[i].get(0).toString().equals("WHITE_BLUE"))) {
+					rect_queue.add(new Rect(
+							(int)(left + each_width - 1),
+							mRect.top + 2,
+							(int)(left + each_width + 1),
+							mRect.bottom - 2));
+					color_queue.add(day[i].get(0));
+				}
 				rect_queue.add(new Rect(
-						(int)(left + each_width - 1),
-						mRect.top + 2,
-						(int)(left + each_width + 1),
-						mRect.bottom - 2));
-				color_queue.add(colors[i]);
-			}
-			rect_queue.add(new Rect(
-					(int)(left + 1),
-					mRect.top + 2,
-					(int)(left + each_width - 1),
-					mRect.bottom - 2));
-			left += each_width;
-			color_queue.add(colors[i]);
-			if ((i < (colors.length - 1)) && (!colors[i].toString().equals("WHITE_BLUE")) && (colors[i].equals(colors[i + 1]))) {
-				rect_queue.add(new Rect(
-						(int)(left - 1),
-						mRect.top + 2,
 						(int)(left + 1),
+						mRect.top + 2,
+						(int)(left + each_width - 1),
 						mRect.bottom - 2));
-				color_queue.add(colors[i]);
+				left += each_width;
+				color_queue.add(day[i].get(0));
+				if ((i < (day.length - 1)) && (!day[i].get(0).toString().equals("WHITE_BLUE")) && (day[i].get(0).equals(day[i + 1].get(0)))) {
+					rect_queue.add(new Rect(
+							(int)(left - 1),
+							mRect.top + 2,
+							(int)(left + 1),
+							mRect.bottom - 2));
+					color_queue.add(day[i].get(0));
+				}
 			}
 		}
 	}
@@ -195,19 +234,19 @@ public class ScheduleDrawable extends View {
 					(start < m.length) &&
 					(start <= end)) {
 				if (course.getMeetingTime().split(" ")[0].contains("Mo")) {
-					m[start] = colors.get(course);
+					m[start].add(colors.get(course));
 				}
 				if (course.getMeetingTime().split(" ")[0].contains("Tu")) {
-					t[start] = colors.get(course);
+					t[start].add(colors.get(course));
 				}
 				if (course.getMeetingTime().split(" ")[0].contains("We")) {
-					w[start] = colors.get(course);
+					w[start].add(colors.get(course));
 				}
 				if (course.getMeetingTime().split(" ")[0].contains("Th")) {
-					h[start] = colors.get(course);
+					h[start].add(colors.get(course));
 				}
 				if (course.getMeetingTime().split(" ")[0].contains("Fr")) {
-					f[start] = colors.get(course);
+					f[start].add(colors.get(course));
 				}
 				
 				start++;
@@ -243,11 +282,11 @@ public class ScheduleDrawable extends View {
 	private void clearArrays() {
 		int i;
 		for (i = 0; i < m.length; i++) {
-			m[i] = Color.getColor("WHITE_BLUE");
-			t[i] = Color.getColor("WHITE_BLUE");
-			w[i] = Color.getColor("WHITE_BLUE");
-			h[i] = Color.getColor("WHITE_BLUE");
-			f[i] = Color.getColor("WHITE_BLUE");
+			m[i].clear();
+			t[i].clear();
+			w[i].clear();
+			h[i].clear();
+			f[i].clear();
 		}
 	}
 
