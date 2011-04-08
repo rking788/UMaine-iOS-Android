@@ -15,7 +15,7 @@
 		<activity android:name=".UMCourses" android:screenOrientation="portrait"></activity>
 
 
-		<activity android:name=".sports.UMSports" android:label="@string/sports_title" android:screenOrientation="portrait"></activity>
+		<activity android:name=".sports.UMSports" android:label="@string/sports_title" android:screenOrientation="portrait" android:theme="@style/CustomTheme"></activity>
 		<activity android:name=".sports.SportsDisplayisplay" android:screenOrientation="portrait"></activity>
 		<activity android:name=".UMCourseDetails" android:screenOrientation="portrait"></activity>
 		<activity android:name=".UMDirectory" android:screenOrientation="portrait"></activity>

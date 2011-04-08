@@ -1,10 +1,6 @@
 package org.umece.android.umaine.sports;
 
 import org.umece.android.umaine.R;
-import org.umece.android.umaine.R.drawable;
-import org.umece.android.umaine.R.id;
-import org.umece.android.umaine.R.layout;
-
 import android.app.ActivityGroup;
 import android.content.Intent;
 import android.graphics.Color;
@@ -12,7 +8,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TabHost;
-import android.widget.TextView;
 import android.widget.TabHost.TabSpec;
 
 public class UMSports extends ActivityGroup {
@@ -28,6 +23,9 @@ public class UMSports extends ActivityGroup {
 
 		setContentView(R.layout.sprots_activity_sch_main);
 
+//		this.setTheme(resid)
+		this.setTitleColor(Color.BLUE); 
+		
 		TabHost tab_host = (TabHost) findViewById(R.id.sports_tab_host);
 		tab_host.setup(this.getLocalActivityManager());
 
@@ -65,15 +63,24 @@ public class UMSports extends ActivityGroup {
 	    tab_host.addTab(ts2);
 	    tab_host.addTab(ts3);
 	    tab_host.addTab(ts4);
-
-		for(int i=0;i<tab_host.getTabWidget().getChildCount();i++)
-	    {
-	       tab_host.getTabWidget().getChildAt(i).setBackgroundColor(Color.parseColor("#ffdeeeff")); //unselected
-	    }
-	    tab_host.getTabWidget().getChildAt(tab_host.getCurrentTab()).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
-		
 	    
-	    tab_host.setCurrentTab(0);
+	    tab_host.getTabWidget().getChildAt(0).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
+	    tab_host.getTabWidget().getChildAt(1).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
+	    tab_host.getTabWidget().getChildAt(2).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
+	    tab_host.getTabWidget().getChildAt(3).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
+	    
+//	    tab_host.getChildTabViewAt(0).setBackgroundDrawable(mySelector);
+//	    tab_host.getTabWidget().getChildTabViewAt(0).setBackgroundDrawable(R.layout.my_selector);
+//	    tab_host.getTabWidget().getChildAt(tab_host.getCurrentTab()).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
+/*
+	    for(int i=0;i<tab_host.getTabWidget().getChildCount();i++)
+	    {
+	       tab_host.getTabWidget().getChildAt(i).setBackgroundColor(Color.parseColor("#ffdeeeff")); //unselected maine_whiteblue
+	    }
+	    tab_host.getTabWidget().getChildAt(tab_host.getCurrentTab()).setBackgroundColor(Color.parseColor("#ffb0d7ff")); // maine_lightblue
+		*/
+	    
+//	    tab_host.setCurrentTab(0);
 
 	}
 
@@ -95,4 +102,5 @@ public class UMSports extends ActivityGroup {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
 }
