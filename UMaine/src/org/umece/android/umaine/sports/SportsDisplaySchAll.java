@@ -1,7 +1,7 @@
 package org.umece.android.umaine.sports;
 
 import java.util.Calendar;
-import java.util.Date;
+/* import java.util.Date; */
 import java.util.List;
 import org.umece.android.umaine.R;
 import android.app.Activity;

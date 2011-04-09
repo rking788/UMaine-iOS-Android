@@ -2,8 +2,8 @@ package org.umece.android.umaine.sports;
 
 
 import org.umece.android.umaine.R;
-import org.umece.android.umaine.R.id;
-import org.umece.android.umaine.R.layout;
+/*import org.umece.android.umaine.R.id;*/
+/*import org.umece.android.umaine.R.layout;*/
 
 import android.app.Activity;
 import android.os.Bundle;
