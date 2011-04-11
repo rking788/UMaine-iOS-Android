@@ -31,6 +31,7 @@ public class UMSports extends ActivityGroup {
 
 		
 		TabSpec ts1 = tab_host.newTabSpec("all_sch");
+//		ts1.setIndicator(R.layou)
 		ts1.setIndicator(("All Sch"),
 			getResources().getDrawable(R.drawable.sports_all_sch));
 //		ts1.set
@@ -64,6 +65,7 @@ public class UMSports extends ActivityGroup {
 	    tab_host.addTab(ts3);
 	    tab_host.addTab(ts4);
 	    
+//	    tab_host.getTabWidget().getChildAt(0).
 	    tab_host.getTabWidget().getChildAt(0).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
 	    tab_host.getTabWidget().getChildAt(1).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
 	    tab_host.getTabWidget().getChildAt(2).setBackgroundColor(Color.parseColor("#ffb0d7ff"));
