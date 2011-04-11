@@ -211,6 +211,7 @@ public class ScheduleDrawable extends View {
 							bottom));
 					color_queue.add(color);
 				}
+				
 				top += length;
 				bottom += length;
 				k++;
@@ -240,7 +241,7 @@ public class ScheduleDrawable extends View {
 			int start = parseTime(course.getMeetingTime().split(" ")[1], false);
 			int end = parseTime(course.getMeetingTime().split(" ")[3], true);
 			
-			while ((start > 0) &&
+			while ((start >= 0) &&
 					(start < m.length) &&
 					(start <= end)) {
 				if (course.getMeetingTime().split(" ")[0].contains("Mo")) {
