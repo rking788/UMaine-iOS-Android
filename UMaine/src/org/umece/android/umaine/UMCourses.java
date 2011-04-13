@@ -30,6 +30,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnFocusChangeListener;
 import android.view.ViewGroup;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.AdapterView;
@@ -47,6 +48,12 @@ public class UMCourses extends Activity {
 		return me;
 	}
 	
+	/* TODO: URGENT Display a progress or please wait dialog 
+	 * when querying  the server. There is a bit of lag between
+	 * a selection being made and the results returned. The user
+	 * does not know what is happening.
+	 */
+	
 	/*
 	 * TODO: Need to do a lot more error checking for instance when they try to
 	 * add a course with incomplete information
@@ -57,7 +64,6 @@ public class UMCourses extends Activity {
 	 */
 
 	/* PHP script */
-	/* TODO: Change that back to sample.php */
 	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
 
 	/* Post Values for data to be queried */
@@ -258,7 +264,37 @@ public class UMCourses extends Activity {
 				}
 			};
 			departac.setOnItemClickListener(delistener);
+			
+			/* Hopefully these two listeners will fix the problem where a user presses
+			 * enter when selecting a department instead of clicking the dropdown item.
+			 */
+			departac.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
+				public void onItemSelected(AdapterView<?> arg0, View arg1,
+						int arg2, long arg3) {
+					if(getDepartSpin().length() != 0){
+						postCourseNum();
+						postSections();
+					}
+				}
+				
+				public void onNothingSelected(AdapterView<?> arg0) {
+					// TODO Auto-generated method stub
+					
+				}
+				
+			});
+			
+			departac.setOnFocusChangeListener(new OnFocusChangeListener(){
+
+				public void onFocusChange(View v, boolean hasFocus) {
+					if(getDepartSpin().length() != 0){
+						postCourseNum();
+						postSections();
+					}
+				}
+			});
+			
 			OnItemSelectedListener celistener = new AdapterView.OnItemSelectedListener() {
 				public void onItemSelected(AdapterView<?> parentView,
 						View selectedItemView, int position, long id) {
@@ -301,6 +337,9 @@ public class UMCourses extends Activity {
 				}
 			};
 
+			/* Set the default semester in case they hit the back button or cancel. */
+			setSemester(getSemAdapter().getItem(0).toString());
+			
 			Builder ret = new AlertDialog.Builder((Context) this);
 			ret.setTitle("Select a semester");
 			ret.setSingleChoiceItems(semesteradapter, 0, blankListener);
