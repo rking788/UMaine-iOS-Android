@@ -66,7 +66,7 @@ public class UMCourses extends Activity {
 	 */
 
 	/* PHP script */
-	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
+	private static final String SERVER_SCRIPT = "http://arch.eece.maine.edu/UMaineApps/android/and_dbaccess.php";
 
 	/* Post Values for data to be queried */
 	private static final String POST_SEMESTERS = "semesters";

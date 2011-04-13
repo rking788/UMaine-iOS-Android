@@ -21,7 +21,7 @@ import android.widget.ArrayAdapter;
 public class SportsGrabData {
 
 	/* PHP script */
-	private static final String SERVER_SCRIPT = "http://with.eece.maine.edu/sample.php";
+	private static final String SERVER_SCRIPT = "http://arch.eece.maine.edu/UMaineApps/android/and_dbaccess.php";
 
 	private static final String POST_EVENTTYPE = "event_type";
 	private static final String POST_YEAR = "year";
