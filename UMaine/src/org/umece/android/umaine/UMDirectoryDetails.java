@@ -123,13 +123,17 @@ public class UMDirectoryDetails extends Activity {
 						showDialog(DIALOG_LOCATION_NOT_AVAILABLE);
 					}
 				} else if (arg2 == 3) {
-					Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(contact.getDeptWebsite()));
-					
-					startActivity(myIntent);
+					if (contact.getDeptWebsite().length() > 0) {
+						Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(contact.getDeptWebsite()));
+						
+						startActivity(myIntent);
+					}
 				} else if (arg2 == 4) {
-					Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(contact.getWebsite()));
-					
-					startActivity(myIntent);
+					if (contact.getWebsite().length() > 0) {
+						Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(contact.getWebsite()));
+						
+						startActivity(myIntent);
+					}
 				}
 			}
 		});
@@ -227,10 +231,12 @@ public class UMDirectoryDetails extends Activity {
 	}
 	
 	public void sendEmail() {
-		Intent intent = new Intent(Intent.ACTION_SEND);
-		intent.setType("text/rfc822");
-		intent.putExtra(Intent.EXTRA_EMAIL, new String[] {contact.getEmail()});
-		Intent mailer = Intent.createChooser(intent, null);
-		startActivity(mailer);
+		if (contact.getEmail().length() > 0) {
+			Intent intent = new Intent(Intent.ACTION_SEND);
+			intent.setType("text/rfc822");
+			intent.putExtra(Intent.EXTRA_EMAIL, new String[] {contact.getEmail()});
+			Intent mailer = Intent.createChooser(intent, null);
+			startActivity(mailer);
+		}
 	}
 }

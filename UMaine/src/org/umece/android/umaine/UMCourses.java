@@ -25,14 +25,16 @@ import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.view.ContextMenu;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnFocusChangeListener;
 import android.view.ViewGroup;
 import android.view.ContextMenu.ContextMenuInfo;
+import android.view.View.OnFocusChangeListener;
+import android.view.View.OnKeyListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -292,6 +294,15 @@ public class UMCourses extends Activity {
 						postCourseNum();
 						postSections();
 					}
+				}
+			});
+			
+			departac.setOnKeyListener(new OnKeyListener() {
+				public boolean onKey(View v, int keyCode, KeyEvent event) {
+					if (event.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
+						return true;
+					}
+					return false;
 				}
 			});
 			
