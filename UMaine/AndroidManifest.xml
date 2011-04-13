@@ -12,14 +12,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		<activity android:name=".UMMap" android:screenOrientation="portrait"></activity>
+		<activity android:name=".UMMap"></activity>
 		<activity android:name=".UMCourses" android:screenOrientation="portrait"></activity>
 
 
 		<activity android:name=".sports.UMSports" android:label="@string/sports_title" android:screenOrientation="portrait" android:theme="@style/CustomTheme"></activity>
 		<activity android:name=".sports.SportsDisplayisplay" android:screenOrientation="portrait"></activity>
-		<activity android:name=".UMCourseDetails" android:screenOrientation="portrait"></activity>
-		<activity android:name=".UMDirectory" android:screenOrientation="portrait"></activity>
+		<activity android:name=".UMCourseDetails"></activity>
+		<activity android:name=".UMDirectory"></activity>
 		<activity android:name=".UMDirectoryDetails" android:screenOrientation="portrait"></activity>
 		
 		<activity android:name=".sports.SportsDisplaySchAll" android:screenOrientation="portrait"></activity>
