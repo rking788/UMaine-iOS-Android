@@ -106,6 +106,7 @@ public class UMMap extends MapActivity {
         populateOverlays();
         
         /* Create the current location overlay list */
+        /* Should change the parking space icon to like a car or something */
         poioverlays = new UMItemizedOverlay(getResources().getDrawable(R.drawable.poiflag), this);
         mylocOverlay = new MyLocationOverlay(this, mv);
         mylocOverlay.runOnFirstFix(new Runnable(){
