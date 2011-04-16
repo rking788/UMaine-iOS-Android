@@ -51,7 +51,6 @@ public class UMMap extends MapActivity {
 	private static final int NO_SAVED_SPACE = 3;
 	private static final int FAILED_LOCATION_LOAD = 4;
 	private static final int OVERWRITE_SPOT_WARNING = 5;
-	private static final int WAIT_FOR_POSITION = 6;
 	
 	/* Permit Types */
 	private static final int PERMIT_STAFF = 0;
@@ -468,13 +467,6 @@ public class UMMap extends MapActivity {
     					dialog.dismiss();
     				}
     			})
-    			.create();
-    	case WAIT_FOR_POSITION:
-    		/* TODO: Is this used anymore? */
-    		return new AlertDialog.Builder(this)
-    			.setTitle("Please Wait")
-    			.setMessage("Please wait while your current position is found so that it can be saved.")
-    			.setCancelable(false)
     			.create();
     	}
     	

@@ -18,7 +18,6 @@ public class Course {
 	private String email;
 	private String office;
 	private String departURL;
-	private String staffURL;
 	private String book;
 	private Spannable spannable;
 	private Color color;

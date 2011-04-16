@@ -19,6 +19,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.AlertDialog.Builder;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -49,12 +50,6 @@ public class UMCourses extends Activity {
 	public static UMCourses getActivity() {
 		return me;
 	}
-	
-	/* TODO: URGENT Display a progress or please wait dialog 
-	 * when querying  the server. There is a bit of lag between
-	 * a selection being made and the results returned. The user
-	 * does not know what is happening.
-	 */
 	
 	/*
 	 * TODO: Need to do a lot more error checking for instance when they try to
@@ -261,8 +256,10 @@ public class UMCourses extends Activity {
 
 				public void onItemClick(AdapterView<?> arg0, View arg1,
 						int arg2, long arg3) {
+					ProgressDialog dialog = ProgressDialog.show(me, "", "Loading course information...", true);
 					postCourseNum();
 					postSections();
+					dialog.dismiss();
 				}
 			};
 			departac.setOnItemClickListener(delistener);
@@ -275,8 +272,10 @@ public class UMCourses extends Activity {
 				public void onItemSelected(AdapterView<?> arg0, View arg1,
 						int arg2, long arg3) {
 					if(getDepartSpin().length() != 0){
+						ProgressDialog dialog = ProgressDialog.show(me, "", "Loading course information...", true);
 						postCourseNum();
 						postSections();
+						dialog.dismiss();
 					}
 				}
 				
@@ -291,8 +290,10 @@ public class UMCourses extends Activity {
 
 				public void onFocusChange(View v, boolean hasFocus) {
 					if(getDepartSpin().length() != 0){
+						ProgressDialog dialog = ProgressDialog.show(me, "", "Loading course information...", true);
 						postCourseNum();
 						postSections();
+						dialog.dismiss();
 					}
 				}
 			});
@@ -309,7 +310,9 @@ public class UMCourses extends Activity {
 			OnItemSelectedListener celistener = new AdapterView.OnItemSelectedListener() {
 				public void onItemSelected(AdapterView<?> parentView,
 						View selectedItemView, int position, long id) {
+					ProgressDialog dialog = ProgressDialog.show(me, "", "Loading course information...", true);
 					postSections();
+					dialog.dismiss();
 				}
 
 				public void onNothingSelected(AdapterView<?> arg0) {
