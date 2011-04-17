@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE5D34EE135AA96300F23691 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D34ED135AA96300F23691 /* UIKit.framework */; };
+		AE5D34F0135AA96300F23691 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D34EF135AA96300F23691 /* Foundation.framework */; };
+		AE5D34F2135AA96300F23691 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D34F1135AA96300F23691 /* CoreGraphics.framework */; };
+		AE5D34F8135AA96300F23691 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE5D34F6135AA96300F23691 /* InfoPlist.strings */; };
+		AE5D34FB135AA96300F23691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5D34FA135AA96300F23691 /* main.m */; };
+		AE5D34FE135AA96300F23691 /* iUMaineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5D34FD135AA96300F23691 /* iUMaineAppDelegate.m */; };
+		AE5D3501135AA96300F23691 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5D34FF135AA96300F23691 /* MainWindow.xib */; };
+		AE5D3504135AA96300F23691 /* iUMaineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5D3503135AA96300F23691 /* iUMaineViewController.m */; };
+		AE5D3507135AA96300F23691 /* iUMaineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5D3505135AA96300F23691 /* iUMaineViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE5D34E9135AA96300F23691 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE5D34ED135AA96300F23691 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE5D34EF135AA96300F23691 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE5D34F1135AA96300F23691 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE5D34F5135AA96300F23691 /* iUMaine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iUMaine-Info.plist"; sourceTree = "<group>"; };
+		AE5D34F7135AA96300F23691 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AE5D34F9135AA96300F23691 /* iUMaine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iUMaine-Prefix.pch"; sourceTree = "<group>"; };
+		AE5D34FA135AA96300F23691 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE5D34FC135AA96300F23691 /* iUMaineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iUMaineAppDelegate.h; sourceTree = "<group>"; };
+		AE5D34FD135AA96300F23691 /* iUMaineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iUMaineAppDelegate.m; sourceTree = "<group>"; };
+		AE5D3500135AA96300F23691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		AE5D3502135AA96300F23691 /* iUMaineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iUMaineViewController.h; sourceTree = "<group>"; };
+		AE5D3503135AA96300F23691 /* iUMaineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iUMaineViewController.m; sourceTree = "<group>"; };
+		AE5D3506135AA96300F23691 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/iUMaineViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE5D34E6135AA96200F23691 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5D34EE135AA96300F23691 /* UIKit.framework in Frameworks */,
+				AE5D34F0135AA96300F23691 /* Foundation.framework in Frameworks */,
+				AE5D34F2135AA96300F23691 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE5D34DE135AA96200F23691 = {
+			isa = PBXGroup;
+			children = (
+				AE5D34F3135AA96300F23691 /* iUMaine */,
+				AE5D34EC135AA96300F23691 /* Frameworks */,
+				AE5D34EA135AA96300F23691 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE5D34EA135AA96300F23691 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D34E9135AA96300F23691 /* iUMaine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE5D34EC135AA96300F23691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D34ED135AA96300F23691 /* UIKit.framework */,
+				AE5D34EF135AA96300F23691 /* Foundation.framework */,
+				AE5D34F1135AA96300F23691 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE5D34F3135AA96300F23691 /* iUMaine */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D34FC135AA96300F23691 /* iUMaineAppDelegate.h */,
+				AE5D34FD135AA96300F23691 /* iUMaineAppDelegate.m */,
+				AE5D34FF135AA96300F23691 /* MainWindow.xib */,
+				AE5D3502135AA96300F23691 /* iUMaineViewController.h */,
+				AE5D3503135AA96300F23691 /* iUMaineViewController.m */,
+				AE5D3505135AA96300F23691 /* iUMaineViewController.xib */,
+				AE5D34F4135AA96300F23691 /* Supporting Files */,
+			);
+			path = iUMaine;
+			sourceTree = "<group>";
+		};
+		AE5D34F4135AA96300F23691 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D34F5135AA96300F23691 /* iUMaine-Info.plist */,
+				AE5D34F6135AA96300F23691 /* InfoPlist.strings */,
+				AE5D34F9135AA96300F23691 /* iUMaine-Prefix.pch */,
+				AE5D34FA135AA96300F23691 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE5D34E8135AA96200F23691 /* iUMaine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5D350A135AA96300F23691 /* Build configuration list for PBXNativeTarget "iUMaine" */;
+			buildPhases = (
+				AE5D34E5135AA96200F23691 /* Sources */,
+				AE5D34E6135AA96200F23691 /* Frameworks */,
+				AE5D34E7135AA96200F23691 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iUMaine;
+			productName = iUMaine;
+			productReference = AE5D34E9135AA96300F23691 /* iUMaine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE5D34E0135AA96200F23691 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = AE5D34E3135AA96200F23691 /* Build configuration list for PBXProject "iUMaine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AE5D34DE135AA96200F23691;
+			productRefGroup = AE5D34EA135AA96300F23691 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE5D34E8135AA96200F23691 /* iUMaine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE5D34E7135AA96200F23691 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5D34F8135AA96300F23691 /* InfoPlist.strings in Resources */,
+				AE5D3501135AA96300F23691 /* MainWindow.xib in Resources */,
+				AE5D3507135AA96300F23691 /* iUMaineViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE5D34E5135AA96200F23691 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE5D34FB135AA96300F23691 /* main.m in Sources */,
+				AE5D34FE135AA96300F23691 /* iUMaineAppDelegate.m in Sources */,
+				AE5D3504135AA96300F23691 /* iUMaineViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE5D34F6135AA96300F23691 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE5D34F7135AA96300F23691 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AE5D34FF135AA96300F23691 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE5D3500135AA96300F23691 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		AE5D3505135AA96300F23691 /* iUMaineViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE5D3506135AA96300F23691 /* en */,
+			);
+			name = iUMaineViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE5D3508135AA96300F23691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE5D3509135AA96300F23691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		AE5D350B135AA96300F23691 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
+				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AE5D350C135AA96300F23691 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
+				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE5D34E3135AA96200F23691 /* Build configuration list for PBXProject "iUMaine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5D3508135AA96300F23691 /* Debug */,
+				AE5D3509135AA96300F23691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE5D350A135AA96300F23691 /* Build configuration list for PBXNativeTarget "iUMaine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5D350B135AA96300F23691 /* Debug */,
+				AE5D350C135AA96300F23691 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE5D34E0135AA96200F23691 /* Project object */;
+}
