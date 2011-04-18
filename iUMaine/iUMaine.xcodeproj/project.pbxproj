@@ -15,7 +15,7 @@
 		AE81583D135BD930008E9B84 /* iUMaineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */; };
 		AE815840135BD930008E9B84 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE81583E135BD930008E9B84 /* MainWindow.xib */; };
 		AE815843135BD930008E9B84 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815842135BD930008E9B84 /* ScheduleViewController.m */; };
-		AE815846135BD930008E9B84 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815845135BD930008E9B84 /* SecondViewController.m */; };
+		AE815846135BD930008E9B84 /* SportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815845135BD930008E9B84 /* SportsViewController.m */; };
 		AE815849135BD930008E9B84 /* ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE815847135BD930008E9B84 /* ScheduleView.xib */; };
 		AE81584C135BD930008E9B84 /* SportsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE81584A135BD930008E9B84 /* SportsView.xib */; };
 		AE81585B135BDC4E008E9B84 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81585A135BDC4E008E9B84 /* MapKit.framework */; };
@@ -39,10 +39,10 @@
 		AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iUMaineAppDelegate.h; sourceTree = "<group>"; };
 		AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iUMaineAppDelegate.m; sourceTree = "<group>"; };
 		AE81583F135BD930008E9B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		AE815841135BD930008E9B84 /* ScheduleViewController.h */ = {isa = PBXFileReference; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		AE815841135BD930008E9B84 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		AE815842135BD930008E9B84 /* ScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
-		AE815844135BD930008E9B84 /* SportsViewController.h */ = {isa = PBXFileReference; path = SportsViewController.h; sourceTree = "<group>"; };
-		AE815845135BD930008E9B84 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AE815844135BD930008E9B84 /* SportsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SportsViewController.h; sourceTree = "<group>"; };
+		AE815845135BD930008E9B84 /* SportsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SportsViewController.m; sourceTree = "<group>"; };
 		AE815848135BD930008E9B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ScheduleView.xib; sourceTree = "<group>"; };
 		AE81584B135BD930008E9B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SportsView.xib; sourceTree = "<group>"; };
 		AE81585A135BDC4E008E9B84 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -112,7 +112,7 @@
 				AE815877135BE491008E9B84 /* MapViewController.h */,
 				AE815878135BE497008E9B84 /* MapViewController.m */,
 				AE815844135BD930008E9B84 /* SportsViewController.h */,
-				AE815845135BD930008E9B84 /* SecondViewController.m */,
+				AE815845135BD930008E9B84 /* SportsViewController.m */,
 				AE815873135BE484008E9B84 /* DirectoryViewController.h */,
 				AE815875135BE48C008E9B84 /* DirectoryViewController.m */,
 				AEB1718B135BF09700DF742A /* POIAnnotation.h */,
@@ -204,7 +204,7 @@
 				AE81583A135BD930008E9B84 /* main.m in Sources */,
 				AE81583D135BD930008E9B84 /* iUMaineAppDelegate.m in Sources */,
 				AE815843135BD930008E9B84 /* ScheduleViewController.m in Sources */,
-				AE815846135BD930008E9B84 /* SecondViewController.m in Sources */,
+				AE815846135BD930008E9B84 /* SportsViewController.m in Sources */,
 				AE815876135BE48C008E9B84 /* DirectoryViewController.m in Sources */,
 				AE815879135BE497008E9B84 /* MapViewController.m in Sources */,
 				AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */,
