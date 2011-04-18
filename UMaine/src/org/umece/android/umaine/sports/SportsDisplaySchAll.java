@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.List;
 import org.umece.android.umaine.R;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -27,7 +28,10 @@ public class SportsDisplaySchAll extends Activity {
 		/* Find Tablelayout defined in myTableLayout.xml */
 		TableLayout tl = (TableLayout)findViewById(R.id.myTableLayout);
 
+		/* Get information from the server */
+		ProgressDialog dialog = ProgressDialog.show(this, "", "Loading sports information...", true);
 		List<String> retval = sgd.postEventType("all");
+		dialog.dismiss();
 
 		int current = 0;
 		for (String s : retval) {
