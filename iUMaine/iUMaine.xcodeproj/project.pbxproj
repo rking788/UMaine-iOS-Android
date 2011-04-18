@@ -14,10 +14,17 @@
 		AE81583A135BD930008E9B84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815839135BD930008E9B84 /* main.m */; };
 		AE81583D135BD930008E9B84 /* iUMaineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */; };
 		AE815840135BD930008E9B84 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE81583E135BD930008E9B84 /* MainWindow.xib */; };
-		AE815843135BD930008E9B84 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815842135BD930008E9B84 /* FirstViewController.m */; };
+		AE815843135BD930008E9B84 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815842135BD930008E9B84 /* ScheduleViewController.m */; };
 		AE815846135BD930008E9B84 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815845135BD930008E9B84 /* SecondViewController.m */; };
-		AE815849135BD930008E9B84 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE815847135BD930008E9B84 /* FirstView.xib */; };
-		AE81584C135BD930008E9B84 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE81584A135BD930008E9B84 /* SecondView.xib */; };
+		AE815849135BD930008E9B84 /* ScheduleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE815847135BD930008E9B84 /* ScheduleView.xib */; };
+		AE81584C135BD930008E9B84 /* SportsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE81584A135BD930008E9B84 /* SportsView.xib */; };
+		AE81585B135BDC4E008E9B84 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81585A135BDC4E008E9B84 /* MapKit.framework */; };
+		AE81585E135BDC57008E9B84 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81585D135BDC57008E9B84 /* CoreLocation.framework */; };
+		AE815868135BE0D2008E9B84 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE815867135BE0D2008E9B84 /* MapView.xib */; };
+		AE81586A135BE0EC008E9B84 /* DirectoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE815869135BE0EC008E9B84 /* DirectoryView.xib */; };
+		AE815876135BE48C008E9B84 /* DirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815875135BE48C008E9B84 /* DirectoryViewController.m */; };
+		AE815879135BE497008E9B84 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815878135BE497008E9B84 /* MapViewController.m */; };
+		AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB17181135BEED200DF742A /* POIAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +39,22 @@
 		AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iUMaineAppDelegate.h; sourceTree = "<group>"; };
 		AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iUMaineAppDelegate.m; sourceTree = "<group>"; };
 		AE81583F135BD930008E9B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		AE815841135BD930008E9B84 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		AE815842135BD930008E9B84 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		AE815844135BD930008E9B84 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		AE815841135BD930008E9B84 /* ScheduleViewController.h */ = {isa = PBXFileReference; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		AE815842135BD930008E9B84 /* ScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		AE815844135BD930008E9B84 /* SportsViewController.h */ = {isa = PBXFileReference; path = SportsViewController.h; sourceTree = "<group>"; };
 		AE815845135BD930008E9B84 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		AE815848135BD930008E9B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
-		AE81584B135BD930008E9B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		AE815848135BD930008E9B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ScheduleView.xib; sourceTree = "<group>"; };
+		AE81584B135BD930008E9B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SportsView.xib; sourceTree = "<group>"; };
+		AE81585A135BDC4E008E9B84 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AE81585D135BDC57008E9B84 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AE815867135BE0D2008E9B84 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		AE815869135BE0EC008E9B84 /* DirectoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryView.xib; sourceTree = "<group>"; };
+		AE815873135BE484008E9B84 /* DirectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryViewController.h; sourceTree = "<group>"; };
+		AE815875135BE48C008E9B84 /* DirectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryViewController.m; sourceTree = "<group>"; };
+		AE815877135BE491008E9B84 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		AE815878135BE497008E9B84 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		AEB17181135BEED200DF742A /* POIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIAnnotation.m; sourceTree = "<group>"; };
+		AEB1718B135BF09700DF742A /* POIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIAnnotation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE81585E135BDC57008E9B84 /* CoreLocation.framework in Frameworks */,
+				AE81585B135BDC4E008E9B84 /* MapKit.framework in Frameworks */,
 				AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */,
 				AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */,
 				AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */,
@@ -74,6 +93,8 @@
 		AE81582B135BD930008E9B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE81585A135BDC4E008E9B84 /* MapKit.framework */,
+				AE81585D135BDC57008E9B84 /* CoreLocation.framework */,
 				AE81582C135BD930008E9B84 /* UIKit.framework */,
 				AE81582E135BD930008E9B84 /* Foundation.framework */,
 				AE815830135BD930008E9B84 /* CoreGraphics.framework */,
@@ -86,13 +107,21 @@
 			children = (
 				AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */,
 				AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */,
-				AE81583E135BD930008E9B84 /* MainWindow.xib */,
-				AE815841135BD930008E9B84 /* FirstViewController.h */,
-				AE815842135BD930008E9B84 /* FirstViewController.m */,
-				AE815844135BD930008E9B84 /* SecondViewController.h */,
+				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
+				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
+				AE815877135BE491008E9B84 /* MapViewController.h */,
+				AE815878135BE497008E9B84 /* MapViewController.m */,
+				AE815844135BD930008E9B84 /* SportsViewController.h */,
 				AE815845135BD930008E9B84 /* SecondViewController.m */,
-				AE815847135BD930008E9B84 /* FirstView.xib */,
-				AE81584A135BD930008E9B84 /* SecondView.xib */,
+				AE815873135BE484008E9B84 /* DirectoryViewController.h */,
+				AE815875135BE48C008E9B84 /* DirectoryViewController.m */,
+				AEB1718B135BF09700DF742A /* POIAnnotation.h */,
+				AEB17181135BEED200DF742A /* POIAnnotation.m */,
+				AE81583E135BD930008E9B84 /* MainWindow.xib */,
+				AE815847135BD930008E9B84 /* ScheduleView.xib */,
+				AE81584A135BD930008E9B84 /* SportsView.xib */,
+				AE815867135BE0D2008E9B84 /* MapView.xib */,
+				AE815869135BE0EC008E9B84 /* DirectoryView.xib */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
 			);
 			path = iUMaine;
@@ -158,8 +187,10 @@
 			files = (
 				AE815837135BD930008E9B84 /* InfoPlist.strings in Resources */,
 				AE815840135BD930008E9B84 /* MainWindow.xib in Resources */,
-				AE815849135BD930008E9B84 /* FirstView.xib in Resources */,
-				AE81584C135BD930008E9B84 /* SecondView.xib in Resources */,
+				AE815849135BD930008E9B84 /* ScheduleView.xib in Resources */,
+				AE81584C135BD930008E9B84 /* SportsView.xib in Resources */,
+				AE815868135BE0D2008E9B84 /* MapView.xib in Resources */,
+				AE81586A135BE0EC008E9B84 /* DirectoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,8 +203,11 @@
 			files = (
 				AE81583A135BD930008E9B84 /* main.m in Sources */,
 				AE81583D135BD930008E9B84 /* iUMaineAppDelegate.m in Sources */,
-				AE815843135BD930008E9B84 /* FirstViewController.m in Sources */,
+				AE815843135BD930008E9B84 /* ScheduleViewController.m in Sources */,
 				AE815846135BD930008E9B84 /* SecondViewController.m in Sources */,
+				AE815876135BE48C008E9B84 /* DirectoryViewController.m in Sources */,
+				AE815879135BE497008E9B84 /* MapViewController.m in Sources */,
+				AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,20 +230,20 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		AE815847135BD930008E9B84 /* FirstView.xib */ = {
+		AE815847135BD930008E9B84 /* ScheduleView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AE815848135BD930008E9B84 /* en */,
 			);
-			name = FirstView.xib;
+			name = ScheduleView.xib;
 			sourceTree = "<group>";
 		};
-		AE81584A135BD930008E9B84 /* SecondView.xib */ = {
+		AE81584A135BD930008E9B84 /* SportsView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AE81584B135BD930008E9B84 /* en */,
 			);
-			name = SecondView.xib;
+			name = SportsView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -219,7 +253,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -236,7 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -294,6 +328,7 @@
 				AE815851135BD930008E9B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

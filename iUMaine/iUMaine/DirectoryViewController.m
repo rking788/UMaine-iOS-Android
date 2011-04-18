@@ -1,15 +1,15 @@
 //
-//  FirstViewController.m
+//  DirectoryViewController.m
 //  iUMaine
 //
-//  Created by Teacher on 4/17/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by RKing on 4/17/11.
+//  Copyright 2011 UMaineIRL. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "DirectoryViewController.h"
 
 
-@implementation FirstViewController
+@implementation DirectoryViewController
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

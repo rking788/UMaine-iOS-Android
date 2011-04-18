@@ -1,15 +1,15 @@
 //
-//  SportsViewController.m
+//  ScheduleViewController.m
 //  iUMaine
 //
 //  Created by RKing on 4/17/11.
 //  Copyright 2011 UMaineIRL. All rights reserved.
 //
 
-#import "SportsViewController.h"
+#import "ScheduleViewController.h"
 
 
-@implementation SportsViewController
+@implementation ScheduleViewController
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.

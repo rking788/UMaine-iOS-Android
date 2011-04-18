@@ -2,8 +2,8 @@
 //  main.m
 //  iUMaine
 //
-//  Created by Teacher on 4/17/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by RKing on 4/17/11.
+//  Copyright 2011 UMaineIRL. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
