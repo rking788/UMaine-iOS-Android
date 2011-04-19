@@ -14,7 +14,7 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
 	    android:clickable="true"
- 	   	android:apiKey="0vjOMltu-NuZ5RcuzLKPpLqY9K3Pc78JFx7vBEg"/>
+ 	   	android:apiKey="0vjOMltu-NuYf5bOKRqtbt4G-ZH7peLSJXR-2jQ"/>
 	<Button
   		android:id="@+id/map_savespot_btn"
   		android:layout_alignParentTop="true"
