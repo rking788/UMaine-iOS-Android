@@ -10,7 +10,7 @@
 #import "POIAnnotation.h"
 
 @implementation MapViewController
-@synthesize mapView, mapPOIAnnotations;
+@synthesize mapView, mapPOIAnnotations, managedObjectContext;
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -120,7 +120,9 @@
 {
     [mapView release];
     [mapPOIAnnotations release];
+    [managedObjectContext release];
     [super dealloc];
 }
+
 
 @end

@@ -7,9 +7,15 @@
 //
 
 #import "iUMaineAppDelegate.h"
+#import "MapViewController.h"
+
+// Only import this file when we need to initialize the sqlite file 
+//#import "dbInitializer.h"
 
 @implementation iUMaineAppDelegate
 
+// TODO: need to explicitly write these accessors
+@synthesize managedObjectModel, managedObjectContext, persistentStoreCoordinator;
 
 @synthesize window=_window;
 
@@ -20,6 +26,23 @@
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
+    
+    // Migrate the default DB if necessary
+    [self loadDefaultDB];
+    
+    // Assign the managedObjectContext to the MapViewController
+    NSManagedObjectContext* context = [self managedObjectContext];
+    
+    // May be dangerous to assume the mapviewcontroler is at index 1
+    MapViewController* mapViewController = [self.tabBarController.viewControllers objectAtIndex:1];
+    mapViewController.managedObjectContext = context;
+    
+    // Initialize the database file (should be removed after .sqlite file is setup
+    //DBInitializer* dbIniter = [[DBInitializer alloc] init];
+    //dbIniter.managedObjectContext = self.managedObjectContext;
+    //[dbIniter initializeDatabase];
+    //[dbIniter release];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -54,6 +77,104 @@
      */
 }
 
+/**
+ Returns the managed object context for the application.
+ If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+*/
+- (NSManagedObjectContext *) managedObjectContext {
+
+    if (managedObjectContext != nil) {
+        return managedObjectContext;
+    }
+
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (coordinator != nil) {
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [managedObjectContext setPersistentStoreCoordinator: coordinator];
+    }
+    
+    return managedObjectContext;
+}
+
+/**
+ Returns the managed object model for the application.
+ If the model doesn't already exist, it is created by merging all of the models found in the application bundle.
+ */
+- (NSManagedObjectModel *)managedObjectModel {
+    
+    if (managedObjectModel != nil) {
+        return managedObjectModel;
+    }
+    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
+ 
+    return managedObjectModel;
+}
+
+/**
+ Returns the persistent store coordinator for the application.
+ If the coordinator doesn't already exist, it is created and the application's store added to it.
+ */
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    
+    if (persistentStoreCoordinator != nil) {
+        return persistentStoreCoordinator;
+    }
+    
+    NSURL* storeURL = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"iUMaine.sqlite"]];
+    NSError *error = nil;
+    
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
+    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+        // Handle the error.
+        NSLog(@"Failed to create the persistent store in iUMaineAppDelegate");
+    }    
+    
+    return persistentStoreCoordinator;
+}
+
+/**
+ Returns the path to the application's documents directory.
+ */
+- (NSString *)applicationDocumentsDirectory {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    return basePath;
+}
+
+- (void)loadDefaultDB{
+    
+    BOOL success;
+    NSError* err;
+    NSFileManager* fm = [NSFileManager defaultManager];
+    NSString* dbPath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"iUMaine.sqlite"];
+    
+    success = [fm fileExistsAtPath:dbPath];
+    
+    // If the database exists then just return
+    if(success){
+        NSLog(@"DB File exists");
+        return;
+    }
+
+    NSString* defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"iUMaine.sqlite"];
+    
+    // If there is a default database file copy it, if not then fail
+    //if([fm fileExistsAtPath:defaultDBPath]){
+        success = [fm copyItemAtPath:defaultDBPath toPath:dbPath error:&err];
+        
+        if(!success){
+            NSLog(@"Failed to copy the default database");
+            NSAssert1(0, @"Failed to copy the default DB with message '%@'.", [err localizedDescription]);
+        }
+  //  }
+   // else{
+    //    NSLog(@"Default database does not exist");
+    //    NSAssert1(0, @"Default database file does not exist", nil);
+   // }
+    
+}
+
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     /*
@@ -61,6 +182,12 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+    NSError* err;
+    if(managedObjectContext != nil){
+        if([managedObjectContext hasChanges] && ![managedObjectContext save:&err]){
+            // Handle the error in here 
+        }
+    }
 }
 
 - (void)dealloc
@@ -69,6 +196,7 @@
     [_tabBarController release];
     [super dealloc];
 }
+
 
 /*
 // Optional UITabBarControllerDelegate method.

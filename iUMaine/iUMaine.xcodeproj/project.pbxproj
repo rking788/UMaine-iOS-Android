@@ -24,10 +24,15 @@
 		AE81586A135BE0EC008E9B84 /* DirectoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE815869135BE0EC008E9B84 /* DirectoryView.xib */; };
 		AE815876135BE48C008E9B84 /* DirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815875135BE48C008E9B84 /* DirectoryViewController.m */; };
 		AE815879135BE497008E9B84 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815878135BE497008E9B84 /* MapViewController.m */; };
+		AE81C78E135D0E6900E2F80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81C78D135D0E6900E2F80F /* CoreData.framework */; };
+		AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */; };
+		AE8AC0801360A8C900CBDA05 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AE8AC07F1360A8C900CBDA05 /* iUMaine.sqlite */; };
 		AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB17181135BEED200DF742A /* POIAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbInitializer.h; sourceTree = "<group>"; };
+		AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbInitializer.m; sourceTree = "<group>"; };
 		AE815828135BD930008E9B84 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE81582C135BD930008E9B84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AE81582E135BD930008E9B84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,9 @@
 		AE815875135BE48C008E9B84 /* DirectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryViewController.m; sourceTree = "<group>"; };
 		AE815877135BE491008E9B84 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		AE815878135BE497008E9B84 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		AE81C78D135D0E6900E2F80F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AE81C791135D0ED300E2F80F /* iumaine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iumaine.xcdatamodel; sourceTree = "<group>"; };
+		AE8AC07F1360A8C900CBDA05 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = SOURCE_ROOT; };
 		AEB17181135BEED200DF742A /* POIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIAnnotation.m; sourceTree = "<group>"; };
 		AEB1718B135BF09700DF742A /* POIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIAnnotation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE81C78E135D0E6900E2F80F /* CoreData.framework in Frameworks */,
 				AE81585E135BDC57008E9B84 /* CoreLocation.framework in Frameworks */,
 				AE81585B135BDC4E008E9B84 /* MapKit.framework in Frameworks */,
 				AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */,
@@ -93,6 +102,7 @@
 		AE81582B135BD930008E9B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE81C78D135D0E6900E2F80F /* CoreData.framework */,
 				AE81585A135BDC4E008E9B84 /* MapKit.framework */,
 				AE81585D135BDC57008E9B84 /* CoreLocation.framework */,
 				AE81582C135BD930008E9B84 /* UIKit.framework */,
@@ -105,6 +115,8 @@
 		AE815832135BD930008E9B84 /* iUMaine */ = {
 			isa = PBXGroup;
 			children = (
+				AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */,
+				AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */,
 				AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */,
 				AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */,
 				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
@@ -130,6 +142,8 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AE8AC07F1360A8C900CBDA05 /* iUMaine.sqlite */,
+				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
 				AE815835135BD930008E9B84 /* InfoPlist.strings */,
 				AE815838135BD930008E9B84 /* iUMaine-Prefix.pch */,
@@ -191,6 +205,7 @@
 				AE81584C135BD930008E9B84 /* SportsView.xib in Resources */,
 				AE815868135BE0D2008E9B84 /* MapView.xib in Resources */,
 				AE81586A135BE0EC008E9B84 /* DirectoryView.xib in Resources */,
+				AE8AC0801360A8C900CBDA05 /* iUMaine.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +223,7 @@
 				AE815876135BE48C008E9B84 /* DirectoryViewController.m in Sources */,
 				AE815879135BE497008E9B84 /* MapViewController.m in Sources */,
 				AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */,
+				AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +347,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE81C791135D0ED300E2F80F /* iumaine.xcdatamodel */,
+			);
+			currentVersion = AE81C791135D0ED300E2F80F /* iumaine.xcdatamodel */;
+			name = iumaine.xcdatamodeld;
+			path = ../iumaine.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AE81581F135BD930008E9B84 /* Project object */;
 }
