@@ -39,6 +39,7 @@ public class UMMap extends MapActivity {
 	
 	/* File name for saved parking spots */
 	private static final String FILE_NAME = "parkingspot.txt";
+	private static final String SELECTED_PERMIT_FILE_NAME = "selectedpermit.txt";
 	
 	/* "Center of Campus" coordinates */
 	private static final int mCenterLat = 44901006;
@@ -147,7 +148,18 @@ public class UMMap extends MapActivity {
 			drawOverlays(LOCATION_POI);
         }
         else{
-        	showDialog(DIALOG_LOTS);
+        	if(!loadSelectedPermits(selectedPermits)){
+        		showDialog(DIALOG_LOTS);
+        	}
+        	else{
+        		for(int i = 0; i < selectedPermits.length; i++){
+            		if(selectedPermits[i]){
+                		drawOverlays(i);
+            		}
+            		prevSelectedPermits[i] = selectedPermits[i];
+        		}
+        	}
+        		
         }
     }
 
@@ -371,6 +383,8 @@ public class UMMap extends MapActivity {
                     		prevSelectedPermits[i] = selectedPermits[i];
                     		
                     	}
+                    	
+                		saveSelectedPermits(selectedPermits);
                     }
                 })
                 .create();
@@ -562,6 +576,89 @@ public class UMMap extends MapActivity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+    }
+    
+    private void saveSelectedPermits(boolean[] selected){
+    	
+    	try {
+			FileOutputStream fout = openFileOutput(SELECTED_PERMIT_FILE_NAME, Context.MODE_PRIVATE);
+			int index = 0;
+			
+			String vals = "";
+			
+			for(index = 0; index < selected.length; index++){
+				if(selected[index] == true){
+					vals = vals.concat("true");
+				}
+				else{
+					vals = vals.concat("false");
+				}
+				
+				//if(index!= (selected.length - 1)){
+					vals = vals.concat(",");
+			//	}
+			}
+			
+			fout.write(vals.getBytes());
+			fout.close();
+			
+    	} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    }
+    
+    private boolean loadSelectedPermits(boolean[] selected){
+    	boolean ret = false;
+    	
+    	try {
+			FileInputStream fin = openFileInput(SELECTED_PERMIT_FILE_NAME); 
+			byte[] in = new byte[30];
+			int numread = -1;
+			int index = 0;
+			
+			// If the file does not exist then just return
+			if(fin == null){
+				return false;
+			}
+			
+			numread = fin.read(in);
+			if(numread == -1){
+				// If read failed then just return
+				return false;
+			}
+			
+			ret = true;
+			String[] vals = new String(in).split(",");
+			
+			// Loop over all values read in and set the selected permits array
+			for(index = 0; index < selected.length; index++){
+				if(vals[index].equals("true")){
+					selected[index] = true;
+				}
+				else{
+					selected[index] = false;
+				}
+				
+			}
+			
+			fin.close();
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			ret = false;
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			ret = false;
+			e.printStackTrace();
+		}
+		
+		return ret;
     }
     
 	@Override

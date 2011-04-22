@@ -2,6 +2,9 @@ package org.umece.android.umaine;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -62,6 +65,9 @@ public class UMCourses extends Activity {
 
 	/* PHP script */
 	private static final String SERVER_SCRIPT = "http://arch.eece.maine.edu/UMaineApps/android/and_dbaccess.php";
+	
+	/* File Names */
+	private static final String SELECTED_SEM_FILE_NAME = "selectedsemester.txt";
 
 	/* Post Values for data to be queried */
 	private static final String POST_SEMESTERS = "semesters";
@@ -156,7 +162,9 @@ public class UMCourses extends Activity {
 		me = this;
 
 		/* Show the dialog to select a semester */
-		showDialog(DIALOG_SELECT_SEMESTER);
+		if(!loadSelectedSemester()){
+			showDialog(DIALOG_SELECT_SEMESTER);
+		}
 	}
 
 	/* Create a context menu on long presses on the course list */
@@ -653,4 +661,63 @@ public class UMCourses extends Activity {
 			((TextView) findViewById(R.id.courselist_directions)).setVisibility(View.VISIBLE);
 		}
 	}
+
+	 public void saveSelectedPermits(String sem){
+		 
+		 try {
+			 FileOutputStream fout = openFileOutput(SELECTED_SEM_FILE_NAME, Context.MODE_PRIVATE);
+				
+			 sem = "\"" + sem + "\"";
+			 fout.write(sem.getBytes());
+			 fout.close();
+				
+		 	} catch (FileNotFoundException e) {
+		 		// TODO Auto-generated catch block
+		 		e.printStackTrace();
+		 	} catch (IOException e) {
+		 		// TODO Auto-generated catch block
+		 		e.printStackTrace();
+		 	}
+	 }
+
+	 private boolean loadSelectedSemester(){
+	    	boolean ret = false;
+	    	
+	    	try {
+				FileInputStream fin = openFileInput(SELECTED_SEM_FILE_NAME); 
+				byte[] in = new byte[45];
+				int numread = -1;
+				
+				// If the file does not exist then just return
+				if(fin == null){
+					return false;
+				}
+				
+				numread = fin.read(in);
+				if(numread == -1){
+					// If read failed then just return
+					return false;
+				}
+				
+				ret = true;
+				String sem = new String(in);
+				sem = sem.trim().replaceAll("\"", "");
+
+				setSemester(sem);
+				
+				fin.close();
+				
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				ret = false;
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				ret = false;
+				e.printStackTrace();
+			}
+			
+			return ret;
+	    }
+	 
 }
