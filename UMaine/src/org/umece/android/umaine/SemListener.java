@@ -10,7 +10,7 @@ public class SemListener implements
 				.getCheckedItemPosition();
 		UMCourses courses = UMCourses.getActivity();
 		courses.setSemester(courses.getSemAdapter().getItem(index).toString());
-		courses.saveSelectedPermits(courses.getSemAdapter().getItem(index).toString());
+		courses.saveSelectedSemester(courses.getSemAdapter().getItem(index).toString());
 	}
 
 }

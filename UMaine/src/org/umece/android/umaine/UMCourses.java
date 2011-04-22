@@ -227,7 +227,7 @@ public class UMCourses extends Activity {
 			return super.onOptionsItemSelected(item);
 		}
 	}
-
+	
 	@Override
 	protected Dialog onCreateDialog(int id) {
 
@@ -356,11 +356,15 @@ public class UMCourses extends Activity {
 
 			OnClickListener blankListener = new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which) {
+					String sem = semester.getSeason() + " " + semester.getYear();
+					saveSelectedSemester(sem);
 				}
 			};
 
 			/* Set the default semester in case they hit the back button or cancel. */
-			setSemester(getSemAdapter().getItem(0).toString());
+			if(semester == null){
+				setSemester(getSemAdapter().getItem(0).toString());
+			}
 			
 			Builder ret = new AlertDialog.Builder((Context) this);
 			ret.setTitle("Select a semester");
@@ -662,7 +666,7 @@ public class UMCourses extends Activity {
 		}
 	}
 
-	 public void saveSelectedPermits(String sem){
+	 public void saveSelectedSemester(String sem){
 		 
 		 try {
 			 FileOutputStream fout = openFileOutput(SELECTED_SEM_FILE_NAME, Context.MODE_PRIVATE);
