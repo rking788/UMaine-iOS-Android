@@ -45,6 +45,7 @@
 		D30C277B1361B0FF0020409F /* icon_user.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C27791361B0FF0020409F /* icon_user.png */; };
 		D30C277C1361B0FF0020409F /* icon_users.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C277A1361B0FF0020409F /* icon_users.png */; };
 		D30C277E1361B4EF0020409F /* bear-paw-r_24.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C277D1361B4EF0020409F /* bear-paw-r_24.png */; };
+		D348DB851361BC8900B0F1AD /* calendar_24_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D348DB841361BC8900B0F1AD /* calendar_24_2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		D30C27791361B0FF0020409F /* icon_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user.png; path = iUMaine/icons/icon_user.png; sourceTree = "<group>"; };
 		D30C277A1361B0FF0020409F /* icon_users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_users.png; path = iUMaine/icons/icon_users.png; sourceTree = "<group>"; };
 		D30C277D1361B4EF0020409F /* bear-paw-r_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bear-paw-r_24.png"; path = "iUMaine/icons/bear-paw-r_24.png"; sourceTree = "<group>"; };
+		D348DB841361BC8900B0F1AD /* calendar_24_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar_24_2.png; path = iUMaine/icons/calendar_24_2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 		D30C275B1361A9030020409F /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				D348DB841361BC8900B0F1AD /* calendar_24_2.png */,
 				D30C277D1361B4EF0020409F /* bear-paw-r_24.png */,
 				D30C27791361B0FF0020409F /* icon_user.png */,
 				D30C277A1361B0FF0020409F /* icon_users.png */,
@@ -282,6 +285,7 @@
 				D30C277B1361B0FF0020409F /* icon_user.png in Resources */,
 				D30C277C1361B0FF0020409F /* icon_users.png in Resources */,
 				D30C277E1361B4EF0020409F /* bear-paw-r_24.png in Resources */,
+				D348DB851361BC8900B0F1AD /* calendar_24_2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
