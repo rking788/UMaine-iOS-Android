@@ -9,6 +9,8 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
+	<string>UMaine_57.png</string>
+	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>UMaineIRL.${PRODUCT_NAME:rfc1034identifier}</string>
