@@ -26,7 +26,6 @@
 		AE815879135BE497008E9B84 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815878135BE497008E9B84 /* MapViewController.m */; };
 		AE81C78E135D0E6900E2F80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81C78D135D0E6900E2F80F /* CoreData.framework */; };
 		AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */; };
-		AE8AC0801360A8C900CBDA05 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AE8AC07F1360A8C900CBDA05 /* iUMaine.sqlite */; };
 		AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB17181135BEED200DF742A /* POIAnnotation.m */; };
 		D30C27611361A9210020409F /* earth_2_32.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C275D1361A9210020409F /* earth_2_32.png */; };
 		D30C27621361A9210020409F /* notes_32.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C275E1361A9210020409F /* notes_32.png */; };
@@ -47,6 +46,8 @@
 		D30C277E1361B4EF0020409F /* bear-paw-r_24.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C277D1361B4EF0020409F /* bear-paw-r_24.png */; };
 		D348DB851361BC8900B0F1AD /* calendar_24_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D348DB841361BC8900B0F1AD /* calendar_24_2.png */; };
 		D348DB881361C32E00B0F1AD /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = D348DB871361C32E00B0F1AD /* UMaine_57.png */; };
+		D35BECD913651AF70087EE42 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D35BECD813651AF70087EE42 /* Person.m */; };
+		D35BED041365E6760087EE42 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = D35BED031365E6760087EE42 /* iUMaine.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,7 +80,6 @@
 		AE815878135BE497008E9B84 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		AE81C78D135D0E6900E2F80F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AE81C791135D0ED300E2F80F /* iumaine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iumaine.xcdatamodel; sourceTree = "<group>"; };
-		AE8AC07F1360A8C900CBDA05 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = SOURCE_ROOT; };
 		AEB17181135BEED200DF742A /* POIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIAnnotation.m; sourceTree = "<group>"; };
 		AEB1718B135BF09700DF742A /* POIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIAnnotation.h; sourceTree = "<group>"; };
 		D30C275D1361A9210020409F /* earth_2_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earth_2_32.png; path = iUMaine/icons/earth_2_32.png; sourceTree = "<group>"; };
@@ -101,6 +101,9 @@
 		D30C277D1361B4EF0020409F /* bear-paw-r_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bear-paw-r_24.png"; path = "iUMaine/icons/bear-paw-r_24.png"; sourceTree = "<group>"; };
 		D348DB841361BC8900B0F1AD /* calendar_24_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar_24_2.png; path = iUMaine/icons/calendar_24_2.png; sourceTree = "<group>"; };
 		D348DB871361C32E00B0F1AD /* UMaine_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UMaine_57.png; path = iUMaine/icons/UMaine_57.png; sourceTree = "<group>"; };
+		D35BECD713651AF70087EE42 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D35BECD813651AF70087EE42 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		D35BED031365E6760087EE42 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 		AE815832135BD930008E9B84 /* iUMaine */ = {
 			isa = PBXGroup;
 			children = (
+				D35BECD713651AF70087EE42 /* Person.h */,
+				D35BECD813651AF70087EE42 /* Person.m */,
 				AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */,
 				AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */,
 				AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */,
@@ -181,7 +186,7 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE8AC07F1360A8C900CBDA05 /* iUMaine.sqlite */,
+				D35BED031365E6760087EE42 /* iUMaine.sqlite */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
 				AE815835135BD930008E9B84 /* InfoPlist.strings */,
@@ -270,7 +275,6 @@
 				AE81584C135BD930008E9B84 /* SportsView.xib in Resources */,
 				AE815868135BE0D2008E9B84 /* MapView.xib in Resources */,
 				AE81586A135BE0EC008E9B84 /* DirectoryView.xib in Resources */,
-				AE8AC0801360A8C900CBDA05 /* iUMaine.sqlite in Resources */,
 				D30C27611361A9210020409F /* earth_2_32.png in Resources */,
 				D30C27621361A9210020409F /* notes_32.png in Resources */,
 				D30C27631361A9210020409F /* bear_32.png in Resources */,
@@ -290,6 +294,7 @@
 				D30C277E1361B4EF0020409F /* bear-paw-r_24.png in Resources */,
 				D348DB851361BC8900B0F1AD /* calendar_24_2.png in Resources */,
 				D348DB881361C32E00B0F1AD /* UMaine_57.png in Resources */,
+				D35BED041365E6760087EE42 /* iUMaine.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +313,7 @@
 				AE815879135BE497008E9B84 /* MapViewController.m in Sources */,
 				AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */,
 				AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */,
+				D35BECD913651AF70087EE42 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

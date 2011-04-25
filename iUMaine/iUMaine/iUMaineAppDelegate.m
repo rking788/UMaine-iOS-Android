@@ -8,6 +8,7 @@
 
 #import "iUMaineAppDelegate.h"
 #import "MapViewController.h"
+#import "Person.h"
 
 // Only import this file when we need to initialize the sqlite file 
 //#import "dbInitializer.h"
@@ -23,6 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
