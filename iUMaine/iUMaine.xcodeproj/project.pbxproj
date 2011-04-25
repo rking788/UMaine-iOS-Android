@@ -21,7 +21,6 @@
 		AE81585B135BDC4E008E9B84 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81585A135BDC4E008E9B84 /* MapKit.framework */; };
 		AE81585E135BDC57008E9B84 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81585D135BDC57008E9B84 /* CoreLocation.framework */; };
 		AE815868135BE0D2008E9B84 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE815867135BE0D2008E9B84 /* MapView.xib */; };
-		AE81586A135BE0EC008E9B84 /* DirectoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE815869135BE0EC008E9B84 /* DirectoryView.xib */; };
 		AE815876135BE48C008E9B84 /* DirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815875135BE48C008E9B84 /* DirectoryViewController.m */; };
 		AE815879135BE497008E9B84 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815878135BE497008E9B84 /* MapViewController.m */; };
 		AE81C78E135D0E6900E2F80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81C78D135D0E6900E2F80F /* CoreData.framework */; };
@@ -44,6 +43,7 @@
 		D30C277B1361B0FF0020409F /* icon_user.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C27791361B0FF0020409F /* icon_user.png */; };
 		D30C277C1361B0FF0020409F /* icon_users.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C277A1361B0FF0020409F /* icon_users.png */; };
 		D30C277E1361B4EF0020409F /* bear-paw-r_24.png in Resources */ = {isa = PBXBuildFile; fileRef = D30C277D1361B4EF0020409F /* bear-paw-r_24.png */; };
+		D318D70B1365F0FB00AA0156 /* DirectoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D318D7091365F0FB00AA0156 /* DirectoryView.xib */; };
 		D348DB851361BC8900B0F1AD /* calendar_24_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D348DB841361BC8900B0F1AD /* calendar_24_2.png */; };
 		D348DB881361C32E00B0F1AD /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = D348DB871361C32E00B0F1AD /* UMaine_57.png */; };
 		D35BECD913651AF70087EE42 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D35BECD813651AF70087EE42 /* Person.m */; };
@@ -73,7 +73,6 @@
 		AE81585A135BDC4E008E9B84 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AE81585D135BDC57008E9B84 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AE815867135BE0D2008E9B84 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
-		AE815869135BE0EC008E9B84 /* DirectoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryView.xib; sourceTree = "<group>"; };
 		AE815873135BE484008E9B84 /* DirectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryViewController.h; sourceTree = "<group>"; };
 		AE815875135BE48C008E9B84 /* DirectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryViewController.m; sourceTree = "<group>"; };
 		AE815877135BE491008E9B84 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		D30C27791361B0FF0020409F /* icon_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_user.png; path = iUMaine/icons/icon_user.png; sourceTree = "<group>"; };
 		D30C277A1361B0FF0020409F /* icon_users.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_users.png; path = iUMaine/icons/icon_users.png; sourceTree = "<group>"; };
 		D30C277D1361B4EF0020409F /* bear-paw-r_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bear-paw-r_24.png"; path = "iUMaine/icons/bear-paw-r_24.png"; sourceTree = "<group>"; };
+		D318D70A1365F0FB00AA0156 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DirectoryView.xib; sourceTree = "<group>"; };
 		D348DB841361BC8900B0F1AD /* calendar_24_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar_24_2.png; path = iUMaine/icons/calendar_24_2.png; sourceTree = "<group>"; };
 		D348DB871361C32E00B0F1AD /* UMaine_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UMaine_57.png; path = iUMaine/icons/UMaine_57.png; sourceTree = "<group>"; };
 		D35BECD713651AF70087EE42 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
 				AE815867135BE0D2008E9B84 /* MapView.xib */,
-				AE815869135BE0EC008E9B84 /* DirectoryView.xib */,
+				D318D7091365F0FB00AA0156 /* DirectoryView.xib */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
 			);
 			path = iUMaine;
@@ -274,7 +274,6 @@
 				AE815849135BD930008E9B84 /* ScheduleView.xib in Resources */,
 				AE81584C135BD930008E9B84 /* SportsView.xib in Resources */,
 				AE815868135BE0D2008E9B84 /* MapView.xib in Resources */,
-				AE81586A135BE0EC008E9B84 /* DirectoryView.xib in Resources */,
 				D30C27611361A9210020409F /* earth_2_32.png in Resources */,
 				D30C27621361A9210020409F /* notes_32.png in Resources */,
 				D30C27631361A9210020409F /* bear_32.png in Resources */,
@@ -295,6 +294,7 @@
 				D348DB851361BC8900B0F1AD /* calendar_24_2.png in Resources */,
 				D348DB881361C32E00B0F1AD /* UMaine_57.png in Resources */,
 				D35BED041365E6760087EE42 /* iUMaine.sqlite in Resources */,
+				D318D70B1365F0FB00AA0156 /* DirectoryView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +350,14 @@
 				AE81584B135BD930008E9B84 /* en */,
 			);
 			name = SportsView.xib;
+			sourceTree = "<group>";
+		};
+		D318D7091365F0FB00AA0156 /* DirectoryView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D318D70A1365F0FB00AA0156 /* en */,
+			);
+			name = DirectoryView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

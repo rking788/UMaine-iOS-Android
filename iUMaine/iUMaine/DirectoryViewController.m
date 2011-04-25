@@ -17,7 +17,7 @@
 {
     
     
-	self.title = @"Person";
+	self.title = @"Directory";
 	
     // Create the master list for the main view controller.
 	 self.listContent = [[NSArray alloc] initWithObjects:
@@ -47,7 +47,7 @@
 	[self.tableView reloadData];
 	self.tableView.scrollEnabled = YES;
     
-     [super viewDidLoad];
+    [super viewDidLoad];
    
 }
 
