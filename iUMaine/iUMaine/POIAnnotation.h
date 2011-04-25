@@ -24,4 +24,6 @@
 @property (nonatomic, retain) NSNumber *latitude;
 @property (nonatomic, retain) NSNumber *longitude;
 
+-(id) initWithLat:(double) initLat withLong:(double) initLongitude;
+
 @end

@@ -6,7 +6,7 @@
 //  Copyright 2011 UMaineIRL. All rights reserved.
 //
 
-//#import "dbInitializer.h"
+#import "dbInitializer.h"
 
 
 @implementation DBInitializer
