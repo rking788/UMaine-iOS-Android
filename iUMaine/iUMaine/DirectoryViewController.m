@@ -1,5 +1,4 @@
 
-
 #import "DirectoryViewController.h"
 
 @implementation DirectoryViewController
@@ -13,10 +12,11 @@
 {
 	NSLog(@">>> Entering %s <<<", __PRETTY_FUNCTION__);
 	
+	//[mainTableView release], mainTableView = nil;
 	[contentsList release], contentsList = nil;
 	[searchResults release], searchResults = nil;
 	[savedSearchTerm release], savedSearchTerm = nil;
-	[mainTableView release], mainTableView = nil;
+	
     [super dealloc];
 	
 	NSLog(@"<<< Leaving %s >>>", __PRETTY_FUNCTION__);
@@ -26,14 +26,13 @@
 {
 	NSLog(@">>> Entering %s <<<", __PRETTY_FUNCTION__);
 	
+	[super viewDidUnload];
 	
 	// Save the state of the search UI so that it can be restored if the view is re-created.
 	[self setSavedSearchTerm:[[[self searchDisplayController] searchBar] text]];
 	
 	[self setSearchResults:nil];
 	
-    [super viewDidUnload];
-    
 	NSLog(@"<<< Leaving %s >>>", __PRETTY_FUNCTION__);
 }
 
@@ -41,8 +40,9 @@
 {
 	NSLog(@">>> Entering %s <<<", __PRETTY_FUNCTION__);
 	
-    
-	NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Red", @"Blue", @"Green", @"Black", @"Purple", nil];
+    [super viewDidLoad];
+	
+	NSMutableArray *array = [[NSMutableArray alloc] initWithObjects:@"Red", @"Blue", @"Green", @"Black", @"Purple",@"Red", @"Blue", @"Green", @"Black", @"Purple",@"Red", @"Blue", @"Green", @"Black", @"Purple", nil];
 	[self setContentsList:array];
 	[array release], array = nil;
 	
@@ -52,8 +52,6 @@
         [[[self searchDisplayController] searchBar] setText:[self savedSearchTerm]];
     }
 	
-    [super viewDidLoad];
-    
 	NSLog(@"<<< Leaving %s >>>", __PRETTY_FUNCTION__);
 }
 
@@ -69,12 +67,12 @@
 }
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -157,7 +155,7 @@
 	// Do anything that COULD be different on each cell here.  Text, images, etc.
 	[[cell textLabel] setText:contentForThisRow];
 	
-	NSLog(@"<<< Leaving %s >>>", __PRETTY_FUNCTION__);
+	//NSLog(@"<<< Leaving %s >>>", __PRETTY_FUNCTION__);
 	return cell;
 }
 
