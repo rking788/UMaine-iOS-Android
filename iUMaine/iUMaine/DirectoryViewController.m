@@ -15,9 +15,9 @@
 	//[mainTableView release], mainTableView = nil;
 	[contentsList release], contentsList = nil;
 	[searchResults release], searchResults = nil;
-	[savedSearchTerm release], savedSearchTerm = nil;
+    [savedSearchTerm release], savedSearchTerm = nil;
 	
-    [super dealloc];
+    //[super dealloc];
 	
 	NSLog(@"<<< Leaving %s >>>", __PRETTY_FUNCTION__);
 }
