@@ -8,12 +8,13 @@
 
 #import "MapViewController.h"
 #import "POIAnnotation.h"
+#import "BuildingSelectView.h"
 
 @implementation MapViewController
-@synthesize searchBar;
+
 @synthesize navBar;
-@synthesize pickerView;
 @synthesize actSheet;
+@synthesize curPermit, prevPermit;
 @synthesize mapView, mapPOIAnnotations, managedObjectContext, permitTitles;
 
 
@@ -27,40 +28,32 @@
     MKCoordinateRegion region;
     region.center.latitude = 44.901006;
     region.center.longitude = -68.669536;
-    region.span.latitudeDelta = 0.01;
-    region.span.longitudeDelta = 0.01;
-    [mapView setRegion:region animated:false];
+    region.span.latitudeDelta = 0.013;
+    region.span.longitudeDelta = 0.013;
+    [self.mapView setRegion:region animated:false];
     
     // Set up the array of annotations
     self.mapPOIAnnotations = [[NSMutableArray alloc] initWithCapacity:1];
     
-    POIAnnotation* poiAnnot = [[POIAnnotation alloc] init];
-    [poiAnnot setTitle:@"Barrows Hall"];
-    [poiAnnot setSubtitle:@"This is where I work."];
+    POIAnnotation* poiAnnot = [[POIAnnotation alloc] initWithLat:44.901006 withLong:-68.669536];
+    [poiAnnot setTitle:@"Center Title"];
+    [poiAnnot setSubtitle:@"Center Subtitle"];
     
     [self.mapPOIAnnotations insertObject:poiAnnot atIndex:0];
     [poiAnnot release];
     
-    poiAnnot = [[POIAnnotation alloc] initWithLat:44.901006 withLong:-68.669536];
-    [poiAnnot setTitle:@"Center Title"];
-    [poiAnnot setSubtitle:@"Center Subtitle"];
-    
-    [self.mapPOIAnnotations insertObject:poiAnnot atIndex:1];
-    [poiAnnot release];
-    
     // Add the annotation to the mapview
     [self.mapView addAnnotation:[self.mapPOIAnnotations objectAtIndex:0]];
-    [self.mapView addAnnotation:[self.mapPOIAnnotations objectAtIndex:1]];
 
-    // As a test lets add all of the commuter annotations
-    [self addCommuterAnnotations];
-    
-    // Hide the search bar and permit picker initially
-    [[self searchBar] setHidden:YES];
-    [[self pickerView] setHidden:YES];
+    // TODO: remove this As a test lets add all of the commuter annotations
+    [self addParkingAnnotationsOfType:@"Commuter"];
     
     // Initialize the titles for the parking permits
     self.permitTitles = [[NSArray alloc] initWithObjects:@"Staff / Faculty", @"Resident", @"Commuter", @"Visitor", nil];
+    
+    // TODO: Check to see if there is a selected permit already stored in persistent storage
+    self.prevPermit = nil;
+    self.curPermit = nil;
 }
 
 
@@ -77,28 +70,39 @@
     if(nSel == 0){
         if([[segControl titleForSegmentAtIndex:nSel] isEqualToString:@"Map"]){
             [segControl setTitle:@"Satellite" forSegmentAtIndex:0];
-            [[self mapView] setMapType:MKMapTypeStandard];
+            [self.mapView setMapType:MKMapTypeStandard];
         }
         else{
             [segControl setTitle:@"Map" forSegmentAtIndex:0];
-            [[self mapView] setMapType:MKMapTypeSatellite];   
+            [self.mapView setMapType:MKMapTypeSatellite];   
         }
     }
     else if(nSel == 1){
         [self showPickerview];
     }
     else if(nSel == 2){
-        // TODO: Actually do something when search bar is presented 
-        [[self searchBar] setHidden:NO];
-        [[self searchBar] becomeFirstResponder];
+        // TODO: Actually do something when search bar is presented
+        BuildingSelectView* bsView = [[BuildingSelectView alloc] initWithNibName:@"BuildingSelectView" bundle:nil];
+        
+        bsView.selectDelegate = self;
+        [bsView setManagedObjectContext:self.managedObjectContext];
+       // [self presentModalViewController:bsView animated:YES];
+        UINavigationController *navigationController = [[UINavigationController alloc]
+                                                        initWithRootViewController:bsView];
+        [self presentModalViewController:navigationController animated:YES];
+        [bsView release];
     }
 
 }
 
 - (void) showPickerview{
     self.actSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil]; 
+
+    NSInteger nCur = [self.permitTitles indexOfObject:[self curPermit]];
+    if(nCur == NSNotFound)
+        nCur = 0;
     
-    [actSheet setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
+    [self.actSheet setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
     
     CGRect pickerFrame = CGRectMake(0, 40, 0, 0);
 
@@ -106,71 +110,94 @@
     pickView.showsSelectionIndicator = YES;
     pickView.dataSource = self;
     pickView.delegate = self;
+    pickView.tag = 150;
+    [pickView selectRow: nCur inComponent: 0 animated: NO];
     [actSheet addSubview: pickView];
     
-    UISegmentedControl* closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Done", @"Cancel", nil]];
+    // TODO: Do not hard code these size values if possible
+    UISegmentedControl* closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Done", nil]];
     closeButton.momentary = YES;
-    closeButton.frame = CGRectMake(210, 7.0f, 100.0f, 30.0f);
-    closeButton.tag = 120;
+    closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
     closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
-    closeButton.tintColor = [UIColor blueColor];
+    closeButton.tintColor = [UIColor blackColor];
     [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
-    [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
-    [(UIButton*)[closeButton.subviews objectAtIndex: 0] setEnabled: NO];
-    [(UIButton*)[closeButton.subviews objectAtIndex: 0] setAlpha: 0.5f];
-    
-    [actSheet addSubview:closeButton];
+    [self.actSheet addSubview:closeButton];
     [closeButton release];
     
-    [actSheet showInView: self.view.window];
+    [self.actSheet showInView: self.view.window];
     
-    [actSheet setBounds:CGRectMake(0, 0, 320, 485)];
+    [self.actSheet setBounds:CGRectMake(0, 0, 320, 485)];
     
 }
 
 - (void) dismissActionSheet{
     [self.actSheet dismissWithClickedButtonIndex:0 animated:YES];
+    UIPickerView* picker = (UIPickerView*) [self.actSheet viewWithTag:150];
     [self setActSheet:nil];
+    
+    if(curPermit != nil)
+        self.prevPermit = self.curPermit;
+    
+    self.curPermit = [self.permitTitles objectAtIndex:[picker selectedRowInComponent:0]];
+    
+    if(!self.curPermit){
+        self.curPermit = [self.permitTitles objectAtIndex: 0];
+    }
+    
+    // Draw the correct permit overlays
+    if((!self.prevPermit) || (![self.prevPermit isEqualToString: self.curPermit])){
+        [self addParkingAnnotationsOfType: self.curPermit]; 
+    }
 }
 
-- (void) addCommuterAnnotations{
+- (void) addParkingAnnotationsOfType:(NSString*) permitType{
+    
+    //If there are already annotations on the map then remove them 
+    if([self.mapPOIAnnotations count] != 1){
+        [self.mapView removeAnnotations: self.mapPOIAnnotations];
+        [[self mapPOIAnnotations] removeAllObjects];
+    }
+    
+    /* Handle a special case where if the permit selected was staff/faculty
+        we only want to search for faculty in the database */
+    NSString* searchString;
+    if([permitType isEqualToString:@"Staff / Faculty"]){
+        searchString = @"faculty";
+    }
+    else{
+        searchString = [permitType lowercaseString];
+    }
+    
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"ParkingLot" inManagedObjectContext:self.managedObjectContext];
     [fetchrequest setEntity:entity];
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"permittype == %@", @"commuter"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"permittype == %@", searchString];
     [fetchrequest setPredicate:predicate];
     
     NSError *error = nil;
     NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
     if (array != nil) {
-        NSManagedObject* manObj = nil;
-        NSString* title = nil;
         double latitude = 0.0;
         double longitude = 0.0;
-        NSUInteger i = 0;
-        NSUInteger arrcount = [array count]; // May be 0 if the object has been deleted.
-        NSLog(@"Size of array: %d", arrcount);
         
-        for(i = 0; i < arrcount; i++){
-            manObj = [array objectAtIndex: i];
-            title = [manObj title];
+        for(NSManagedObject* manObj in array){
             
-            latitude = [[manObj latitude]doubleValue]/1000000.0;
-            longitude = [[manObj longitude] doubleValue]/1000000.0;
+            latitude = [[manObj valueForKey:@"latitude"] doubleValue]/1000000.0;
+            longitude = [[manObj valueForKey:@"longitude"] doubleValue]/1000000.0;
             
             POIAnnotation* poiAnnot = [[POIAnnotation alloc] initWithLat:latitude withLong:longitude];
-            [poiAnnot setTitle: title];
-            [poiAnnot setSubtitle:@"Commuter Lot"];
+            [poiAnnot setTitle: [manObj valueForKey:@"title"]];
+            [poiAnnot setSubtitle: [NSString stringWithFormat: @"%@ Lot", permitType]];
             
-            [self.mapPOIAnnotations insertObject:poiAnnot atIndex: i];
+            [self.mapPOIAnnotations insertObject:poiAnnot atIndex: 0];
             [poiAnnot release];
         }
         
     }
     else {
         // Deal with error.
-        NSLog(@"Error fetching lots lots");
+        NSLog(@"Error fetching lots");
     }
     
     // Add the annotation to the mapview
@@ -178,6 +205,21 @@
     [fetchrequest release];
 }
 
+// MapView animation method
+- (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray *)views { 
+    MKAnnotationView *aV; 
+    for (aV in views) {
+        CGRect endFrame = aV.frame;
+        
+        aV.frame = CGRectMake(aV.frame.origin.x, aV.frame.origin.y - 230.0, aV.frame.size.width, aV.frame.size.height);
+        
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.45];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+        [aV setFrame:endFrame];
+        [UIView commitAnimations];
+    }
+}
 
 - (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
@@ -190,28 +232,34 @@
     if ([annotation isKindOfClass:[POIAnnotation class]]) // for Golden Gate Bridge
     {
         // try to dequeue an existing pin view first
-        static NSString* BridgeAnnotationIdentifier = @"bridgeAnnotationIdentifier";
+        static NSString* POIAnnotationID = @"poiAnnotationIdentifier";
         MKPinAnnotationView* pinView = (MKPinAnnotationView *)
-        [mapView dequeueReusableAnnotationViewWithIdentifier:BridgeAnnotationIdentifier];
+        [self.mapView dequeueReusableAnnotationViewWithIdentifier:POIAnnotationID];
         if (!pinView)
         {
             // if an existing pin view was not available, create one
-            MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc]
-                                                   initWithAnnotation:annotation reuseIdentifier:BridgeAnnotationIdentifier] autorelease];
-            customPinView.pinColor = MKPinAnnotationColorPurple;
-            customPinView.animatesDrop = YES;
-            customPinView.canShowCallout = YES;
+            //MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc]
+             //                                      initWithAnnotation:annotation reuseIdentifier:BridgeAnnotationIdentifier] autorelease];
+            //customPinView.pinColor = MKPinAnnotationColorPurple;
+            //customPinView.animatesDrop = YES;
+            //customPinView.canShowCallout = YES;
             
             // add a detail disclosure button to the callout which will open a new view controller page
             //
             // note: you can assign a specific call out accessory view, or as MKMapViewDelegate you can implement:
             //  - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control;
             //
-            UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-            [rightButton addTarget:self
-                            action:@selector(showDetails:)
-                  forControlEvents:UIControlEventTouchUpInside];
-            customPinView.rightCalloutAccessoryView = rightButton;
+            //UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            //[rightButton addTarget:self
+            //                action:@selector(showDetails:)
+            //      forControlEvents:UIControlEventTouchUpInside];
+            //customPinView.rightCalloutAccessoryView = rightButton;
+            
+            // TODO: it would be cool if these custom views animated into the map
+            MKAnnotationView* customPinView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
+            
+            [customPinView setCanShowCallout:YES];
+            [customPinView setImage: [UIImage imageNamed:@"bear-paw-r_24.png"]];
             
             return customPinView;
         }
@@ -231,23 +279,27 @@
 }
 
 - (NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [permitTitles count];
+    return [self.permitTitles count];
 }
 
 - (NSString*) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [permitTitles objectAtIndex:row];
+    return [self.permitTitles objectAtIndex:row];
 }
 
 - (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    NSLog(@"Selected %@. at index: %i", [permitTitles objectAtIndex:row], row);
-    
-    UISegmentedControl* segcontrol = (UISegmentedControl*)[actSheet viewWithTag: 120];
-    
-    UIButton* butn1 =  (UIButton*)[segcontrol.subviews objectAtIndex: 0];
-    [butn1 setEnabled:YES];
-    [(UIButton*) [[[actSheet viewWithTag: 120] subviews] objectAtIndex: 0] setAlpha:1.0f];
 }
 
+#pragma mark BuildingSelectProtocol implementation
+
+- (void) selectBuildingLocation: (NSString*) buildingName{
+    
+    if(buildingName)
+        NSLog(@"Selected a building: %@", buildingName);
+    else
+        NSLog(@"Clicked the cancel button");
+    
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -263,12 +315,7 @@
     [self setMapView:nil];
     [self setMapPOIAnnotations:nil];
     [self setMapView:nil];
-    [self setRightBarButtonItem:nil];
-    [self setRightBarButtonItem:nil];
     [self setNavBar:nil];
-    [self setSearchBar:nil];
-    [self setPickerView:nil];
-    [self permitTitles:nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
@@ -283,8 +330,6 @@
     [managedObjectContext release];
     [mapView release];
     [navBar release];
-    [searchBar release];
-    [pickerView release];
     [permitTitles release];
     [super dealloc];
 }

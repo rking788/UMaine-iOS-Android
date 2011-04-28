@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreData/CoreData.h>
+#import "BuildingSelectView.h"
 
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource>{
+@interface MapViewController : UIViewController <MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, BuildingSelectDelegate>{
 
     MKMapView *mapView;
     NSMutableArray* mapPOIAnnotations;
@@ -20,20 +21,22 @@
     UINavigationBar *navBar;
     UIPickerView *pickerView;
     UINavigationItem *titleView;
-    UISearchBar *searchBar;
     
     UIActionSheet* actSheet;
     
     // Titles for picker view
     NSArray* permitTitles;
+    
+    NSString* curPermit;
+    NSString* prevPermit;
 }
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
-@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
 @property (nonatomic, retain) IBOutlet UINavigationBar *navBar;
-@property (nonatomic, retain) IBOutlet UIPickerView *pickerView;
 @property (nonatomic, retain) UIActionSheet* actSheet;
 @property (nonatomic, retain) NSArray* permitTitles;
+@property (nonatomic, retain) NSString* curPermit;
+@property (nonatomic, retain) NSString* prevPermit;
 
 @property (nonatomic, retain) NSMutableArray* mapPOIAnnotations;
 
@@ -42,7 +45,7 @@
 - (IBAction)valchange:(id)sender;
 
 - (void) showPickerview;
-- (void) addCommuterAnnotations;
+- (void) addParkingAnnotationsOfType:(NSString*) permitType;
 - (void) dismissActionSheet;
 
 @end
