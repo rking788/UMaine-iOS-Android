@@ -10,6 +10,7 @@
 
 @implementation BuildingSelectView
 @synthesize searchBar;
+@synthesize tblView;
 @synthesize listContents;
 @synthesize listSubContents;
 @synthesize searchListContents;
@@ -33,6 +34,7 @@
     [listSubContents release];
     [searchListContents release];
     [selectDelegate release];
+    [tblView release];
     [super dealloc];
 }
 
@@ -121,10 +123,15 @@
     
     NSError *error = nil;
     NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
+    
     if (array != nil) {
+        //NSMutableArray* arr = [[NSMutableArray alloc] initWithCapacity: [array count]];
+        //NSMutableArray* subcontentsArr = [[NSMutableArray alloc] initWithCapacity: [array count]];
         
         for(NSManagedObject* manObj in array){
-            [self.listContents addObject:[manObj valueForKey:@"title"]];
+            // TODO: Probably remove this titleString variable and combine it with the next line
+            NSString* titleString = [manObj valueForKey:@"title"];
+            [self.listContents addObject: titleString];
             [self.listSubContents addObject:[NSString stringWithFormat:@"Lat: %@, Long: %@", [manObj valueForKey:@"latitude"], [manObj valueForKey:@"longitude"]]];
         }
         
@@ -155,7 +162,7 @@
         [self setSearching: NO];
     }
     
-    [self.tableView reloadData];
+    [self.tblView reloadData];
 }
 
 - (void) searchBarButtonClicked: (UISearchBar*) theSearchBar{
@@ -164,12 +171,15 @@
 
 - (void) searchTable{
     
+    NSUInteger i = 0;
     for(NSString* str in self.listContents){
         NSRange range = [str rangeOfString:[searchBar text] options:NSCaseInsensitiveSearch];
         
         if(range.length > 0){
-            [self.searchListContents addObject:str];
+            [self.searchListContents addObject:[self.listContents objectAtIndex:i]];
         }
+
+        i++;
     }
 }
 
@@ -180,9 +190,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setListSubContents: [[NSMutableArray alloc] init]];
+    [self setListContents: [[NSMutableArray alloc] init]];
+    [self setSearchListContents: [[NSMutableArray alloc] init]];
     
-    listContents = [[NSMutableArray alloc] init];
-    listSubContents = [[NSMutableArray alloc] init];
     [self populateListContents];
     
     self.navigationItem.title = @"Search";
@@ -202,6 +213,7 @@
     [self setListSubContents: nil];
     [self setSelectDelegate: nil];
     [self setSearchListContents: nil];
+    [self setTblView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

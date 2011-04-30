@@ -28,11 +28,16 @@
     BOOL searching;
 }
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, retain) IBOutlet UITableView *tblView;
+
 @property (nonatomic, retain) NSMutableArray* listContents;
 @property (nonatomic, retain) NSMutableArray* listSubContents;
 @property (nonatomic, retain) NSMutableArray* searchListContents;
 @property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;
+
 @property (nonatomic, getter = isSearching) BOOL searching;
+
+// Delegate used when an item is selected from the table view 
 @property (nonatomic, retain) id<BuildingSelectDelegate> selectDelegate;
 
 - (void) populateListContents;
