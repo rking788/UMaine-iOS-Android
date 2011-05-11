@@ -9,6 +9,8 @@ import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TableRow.LayoutParams;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -34,6 +36,12 @@ public class SportsDisplaySchAll extends Activity {
 		dialog.dismiss();
 
 		int current = 0;
+		boolean bPassedLast = true;
+		
+		/* Define a solid line to be drawn between the last event and next event */
+		View solidBlueView = new View(this);
+		solidBlueView.setBackgroundColor(R.color.maine_blue);
+		
 		for (String s : retval) {
 			current++;
 
@@ -70,12 +78,22 @@ public class SportsDisplaySchAll extends Activity {
 			
 			int tempMonth = Integer.parseInt(dateSplit[0]);
 			int tempDay = Integer.parseInt(dateSplit[1]);
-			int tempYear = Integer.parseInt(dateSplit[2]);
+			int tempYear = (Integer.parseInt(dateSplit[2]) + 2000);
 
-			int tempTotal = ((tempYear+2000) * 10000) + (tempMonth * 100) + tempDay;
-
-			int dateTotal = (ca.get(Calendar.YEAR)* 10000) +  (ca.get(Calendar.MONTH) * 100) + ca.get(Calendar.DATE);
-			if (dateTotal > tempTotal){
+			boolean bPassed = false;
+			// The month is +1 because it is zero based and the database is not
+			int curMonth = ca.get(Calendar.MONTH) + 1;
+			int curDate = ca.get(Calendar.DATE);
+			int curYear = ca.get(Calendar.YEAR);
+			
+			if(tempYear < curYear)
+				bPassed = true;
+			else if((tempYear == curYear) && (tempMonth < curMonth))
+				bPassed = true;
+			else if((tempYear == curYear) && (tempMonth == curMonth) && (tempDay < curDate))
+				bPassed = true;
+			
+			if (bPassed){
 				/*labelDate.setTextColor(R.color.maine_lightblue);
 				labelEvent.setTextColor(R.color.maine_lightblue);
 				labelLocation.setTextColor(R.color.maine_lightblue);
@@ -148,9 +166,15 @@ public class SportsDisplaySchAll extends Activity {
 			tr.addView(labelLocation);
 			tr.addView(labelTime);
 			
+			// Draw the solid line if needed 
+			if((!bPassed) && (bPassedLast))
+				tl.addView(solidBlueView, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, 2));
+			
 			// Add the TableRow to the TableLayout
 			tl.addView(tr, new TableLayout.LayoutParams(
 					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+			
+			bPassedLast = bPassed;
 		}
 	}
 
