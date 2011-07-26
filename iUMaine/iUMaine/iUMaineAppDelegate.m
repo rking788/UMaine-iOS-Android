@@ -22,6 +22,9 @@
 
 @synthesize tabBarController=_tabBarController;
 
+// Constant for the database file name
+NSString* const DBFILENAME = @"iUMaine.sqlite"; 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
@@ -149,7 +152,7 @@
     BOOL success;
     NSError* err;
     NSFileManager* fm = [NSFileManager defaultManager];
-    NSString* dbPath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"iUMaine.sqlite"];
+    NSString* dbPath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:DBFILENAME];
     
     success = [fm fileExistsAtPath:dbPath];
     
@@ -159,7 +162,7 @@
         return;
     }
 
-    NSString* defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"iUMaine.sqlite"];
+    NSString* defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:DBFILENAME];
     
     // If there is a default database file copy it, if not then fail
     //if([fm fileExistsAtPath:defaultDBPath]){

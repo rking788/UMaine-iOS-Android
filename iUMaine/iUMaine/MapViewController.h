@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreData/CoreData.h>
+#import "POIAnnotation.h"
 #import "BuildingSelectView.h"
 
 
 @interface MapViewController : UIViewController <MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, BuildingSelectDelegate>{
 
     MKMapView *mapView;
+    POIAnnotation* mapSelBuildingAnnotation;
     NSMutableArray* mapPOIAnnotations;
     
     NSManagedObjectContext *managedObjectContext;
@@ -38,6 +40,7 @@
 @property (nonatomic, retain) NSString* curPermit;
 @property (nonatomic, retain) NSString* prevPermit;
 
+@property (nonatomic, retain) POIAnnotation* mapSelBuildingAnnotation;
 @property (nonatomic, retain) NSMutableArray* mapPOIAnnotations;
 
 @property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;

@@ -26,6 +26,7 @@
 		AE815879135BE497008E9B84 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE815878135BE497008E9B84 /* MapViewController.m */; };
 		AE81C78E135D0E6900E2F80F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81C78D135D0E6900E2F80F /* CoreData.framework */; };
 		AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */; };
+		AE8CC6C4136E3732000079E0 /* poiflag.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8CC6C3136E3731000079E0 /* poiflag.png */; };
 		AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB17181135BEED200DF742A /* POIAnnotation.m */; };
 		AECF0B0813660E3600D2F3B4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF0B0713660E3600D2F3B4 /* Person.m */; };
 		AECF0B0B13660E4700D2F3B4 /* DirectoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */; };
@@ -89,6 +90,7 @@
 		AE815878135BE497008E9B84 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		AE81C78D135D0E6900E2F80F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AE81C791135D0ED300E2F80F /* iumaine.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iumaine.xcdatamodel; sourceTree = "<group>"; };
+		AE8CC6C3136E3731000079E0 /* poiflag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poiflag.png; sourceTree = "<group>"; };
 		AEB17181135BEED200DF742A /* POIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIAnnotation.m; sourceTree = "<group>"; };
 		AEB1718B135BF09700DF742A /* POIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIAnnotation.h; sourceTree = "<group>"; };
 		AECF0B0513660E2C00D2F3B4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		AECF0B0C13660EBC00D2F3B4 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				AE8CC6C3136E3731000079E0 /* poiflag.png */,
 				AECF0B0D13660EBC00D2F3B4 /* bear-paw-r.gif */,
 				AECF0B0E13660EBC00D2F3B4 /* bear-paw-r_24.png */,
 				AECF0B0F13660EBC00D2F3B4 /* bear_32.png */,
@@ -333,6 +336,7 @@
 				AECF0B3F13660EBC00D2F3B4 /* UMaine_701_701.tif in Resources */,
 				AECF0B4013660EBC00D2F3B4 /* UMaine_750_750_centered.tif in Resources */,
 				AEEA62A713679F2D00E3A470 /* BuildingSelectView.xib in Resources */,
+				AE8CC6C4136E3732000079E0 /* poiflag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

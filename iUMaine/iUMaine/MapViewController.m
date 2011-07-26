@@ -7,7 +7,6 @@
 //
 
 #import "MapViewController.h"
-#import "POIAnnotation.h"
 #import "BuildingSelectView.h"
 
 @implementation MapViewController
@@ -15,7 +14,7 @@
 @synthesize navBar;
 @synthesize actSheet;
 @synthesize curPermit, prevPermit;
-@synthesize mapView, mapPOIAnnotations, managedObjectContext, permitTitles;
+@synthesize mapView, mapPOIAnnotations, mapSelBuildingAnnotation, managedObjectContext, permitTitles;
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -49,7 +48,7 @@
     [self addParkingAnnotationsOfType:@"Commuter"];
     
     // Initialize the titles for the parking permits
-    self.permitTitles = [[NSArray alloc] initWithObjects:@"Staff / Faculty", @"Resident", @"Commuter", @"Visitor", nil];
+    self.permitTitles = [[NSArray alloc] initWithObjects: @"None", @"Staff / Faculty", @"Resident", @"Commuter", @"Visitor", nil];
     
     // TODO: Check to see if there is a selected permit already stored in persistent storage
     self.prevPermit = nil;
@@ -127,6 +126,7 @@
     [self.actSheet showInView: self.view.window];
     
     [self.actSheet setBounds:CGRectMake(0, 0, 320, 485)];
+    [self.actSheet autorelease];
     
 }
 
@@ -156,6 +156,11 @@
     if([self.mapPOIAnnotations count] != 1){
         [self.mapView removeAnnotations: self.mapPOIAnnotations];
         [[self mapPOIAnnotations] removeAllObjects];
+    }
+    
+    //If 'None' was selected then just leave the annotations blank
+    if([permitType isEqualToString:@"None"]){
+        return;
     }
     
     /* Handle a special case where if the permit selected was staff/faculty
@@ -238,11 +243,11 @@
         if (!pinView)
         {
             // if an existing pin view was not available, create one
-            //MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc]
-             //                                      initWithAnnotation:annotation reuseIdentifier:BridgeAnnotationIdentifier] autorelease];
-            //customPinView.pinColor = MKPinAnnotationColorPurple;
-            //customPinView.animatesDrop = YES;
-            //customPinView.canShowCallout = YES;
+            MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc]
+                                                   initWithAnnotation:annotation reuseIdentifier:POIAnnotationID] autorelease];
+            customPinView.pinColor = MKPinAnnotationColorPurple;
+            customPinView.animatesDrop = NO;
+            customPinView.canShowCallout = YES;
             
             // add a detail disclosure button to the callout which will open a new view controller page
             //
@@ -256,10 +261,13 @@
             //customPinView.rightCalloutAccessoryView = rightButton;
             
             // TODO: it would be cool if these custom views animated into the map
-            MKAnnotationView* customPinView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
+           // MKAnnotationView* customPinView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
             
-            [customPinView setCanShowCallout:YES];
-            [customPinView setImage: [UIImage imageNamed:@"bear-paw-r_24.png"]];
+           // [customPinView setCanShowCallout: NO];
+           // [customPinView setDraggable: YES];
+           // NSLog(@"Draggable: %@", ([customPinView isDraggable] ? @"YES" : @"NO"));
+            
+           // [customPinView setImage: [UIImage imageNamed:@"bear-paw-r_24.png"]];
             
             return customPinView;
         }
@@ -271,6 +279,23 @@
     }
     
     return nil;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)annotationView didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState
+{
+    NSLog(@"Changing Drag State");
+    if(newState == MKAnnotationViewDragStateEnding){
+        POIAnnotation* annot = annotationView.annotation;
+        NSNumber* num1 = annot.latitude;
+        NSNumber* num2 = annot.longitude;
+        NSLog(@"New Lat: %@, New Long: %@", num1, num2);
+    }
+    else if(newState == MKAnnotationViewDragStateStarting){
+        POIAnnotation* annot = annotationView.annotation;
+        NSNumber* num1 = annot.latitude;
+        NSNumber* num2 = annot.longitude;
+        NSLog(@"Starting Lat: %@, Starting Long: %@", num1, num2);
+    }
 }
 
 // UIPickerView delegate and datasource methods
@@ -291,13 +316,31 @@
 
 #pragma mark BuildingSelectProtocol implementation
 
-- (void) selectBuildingLocation: (NSString*) buildingName{
+- (void) selectBuildingLocation: (NSString*) buildingName withLatitude:(double)dLatitude withLongitude:(double)dLongitude{
     
     if(buildingName)
         NSLog(@"Selected a building: %@", buildingName);
     else
         NSLog(@"Clicked the cancel button");
     
+    if(!buildingName){
+        [self dismissModalViewControllerAnimated: YES];
+        return;
+    }
+        
+    NSLog(@"Lat: %f", dLatitude);
+    NSLog(@"Long: %f", dLongitude);
+    
+    if (mapSelBuildingAnnotation) {
+        [self.mapView removeAnnotation: mapSelBuildingAnnotation];
+        [mapSelBuildingAnnotation release];
+        [self setMapSelBuildingAnnotation: nil];
+    }
+    
+    self.mapSelBuildingAnnotation = [[POIAnnotation alloc] initWithLat:dLatitude withLong:dLongitude];
+    [mapSelBuildingAnnotation setTitle: buildingName];
+    
+    [self.mapView addAnnotation: mapSelBuildingAnnotation];
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -316,6 +359,7 @@
     [self setMapPOIAnnotations:nil];
     [self setMapView:nil];
     [self setNavBar:nil];
+    [self setMapSelBuildingAnnotation: nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
@@ -331,6 +375,7 @@
     [mapView release];
     [navBar release];
     [permitTitles release];
+    [mapSelBuildingAnnotation release];
     [super dealloc];
 }
 

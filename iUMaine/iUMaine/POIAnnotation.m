@@ -47,6 +47,12 @@
     return theCoordinate; 
 }
 
+- (void)setCoordinate:(CLLocationCoordinate2D)newCoordinate
+{
+    [self setLatitude: [NSNumber numberWithDouble: newCoordinate.latitude]];
+    [self setLongitude: [NSNumber numberWithDouble: newCoordinate.longitude]];
+}
+
 - (void)dealloc
 {
     [title release];

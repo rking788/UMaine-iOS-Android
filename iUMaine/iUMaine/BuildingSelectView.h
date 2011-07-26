@@ -12,7 +12,7 @@
 
 @protocol BuildingSelectDelegate <NSObject>
 
-- (void) selectBuildingLocation: (NSString*) buildingName;
+- (void) selectBuildingLocation: (NSString*) buildingName withLatitude: (double) dLatitude withLongitude: (double) dLongitude;
 
 @end
 
@@ -24,6 +24,7 @@
     NSMutableArray* listContents;
     NSMutableArray* listSubContents;
     NSMutableArray* searchListContents;
+    NSMutableArray* searchListSubContents;
     NSManagedObjectContext* managedObjectContext;
     BOOL searching;
 }
@@ -33,6 +34,7 @@
 @property (nonatomic, retain) NSMutableArray* listContents;
 @property (nonatomic, retain) NSMutableArray* listSubContents;
 @property (nonatomic, retain) NSMutableArray* searchListContents;
+@property (nonatomic, retain) NSMutableArray* searchListSubContents;
 @property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;
 
 @property (nonatomic, getter = isSearching) BOOL searching;

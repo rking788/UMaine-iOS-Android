@@ -14,6 +14,7 @@
 @synthesize listContents;
 @synthesize listSubContents;
 @synthesize searchListContents;
+@synthesize searchListSubContents;
 @synthesize managedObjectContext;
 @synthesize selectDelegate;
 @synthesize searching;
@@ -33,6 +34,7 @@
     [listContents release];
     [listSubContents release];
     [searchListContents release];
+    [searchListSubContents release];
     [selectDelegate release];
     [tblView release];
     [super dealloc];
@@ -49,7 +51,7 @@
 - (void) cancelClicked: (id) sender{
     [self setSearching: NO];
     [searchBar setText: @""];
-    [self.selectDelegate selectBuildingLocation:nil];
+    [self.selectDelegate selectBuildingLocation:nil withLatitude:0.0 withLongitude:0.0];
 }
 
 #pragma mark Table view methods
@@ -84,6 +86,9 @@
     if([self isSearching]){
         UILabel* lbl = [cell textLabel];
         [lbl setText: [self.searchListContents objectAtIndex:indexPath.row]];
+        UILabel* lbl2 = [cell detailTextLabel];
+        NSString* lbl2text = [self.searchListSubContents objectAtIndex: indexPath.row];
+        [lbl2 setText: lbl2text];
     }
     else{
         NSString *cellValue = [self.listContents objectAtIndex:indexPath.row];
@@ -104,10 +109,16 @@
 	// [anotherViewController release];
     
     if([self isSearching]){
-        [self.selectDelegate selectBuildingLocation: [self.searchListContents objectAtIndex:indexPath.row]];
+        NSArray* temparr = [[self.searchListSubContents objectAtIndex: indexPath.row] componentsSeparatedByString:@","];
+        double dLat = ([[temparr objectAtIndex: 0] doubleValue]/1000000);
+        double dLong = ([[temparr objectAtIndex: 1] doubleValue]/1000000);
+        [self.selectDelegate selectBuildingLocation: [self.searchListContents objectAtIndex:indexPath.row] withLatitude: dLat withLongitude: dLong];
     }
     else{
-        [self.selectDelegate selectBuildingLocation: [self.listContents objectAtIndex:indexPath.row]];        
+        NSArray* temparr = [[self.listSubContents objectAtIndex: indexPath.row] componentsSeparatedByString:@","];
+        double dLat = ([[temparr objectAtIndex: 0] doubleValue]/1000000);
+        double dLong = ([[temparr objectAtIndex: 1] doubleValue]/1000000);
+        [self.selectDelegate selectBuildingLocation: [self.listContents objectAtIndex:indexPath.row]withLatitude: dLat withLongitude: dLong];        
     }
 }
 
@@ -132,7 +143,7 @@
             // TODO: Probably remove this titleString variable and combine it with the next line
             NSString* titleString = [manObj valueForKey:@"title"];
             [self.listContents addObject: titleString];
-            [self.listSubContents addObject:[NSString stringWithFormat:@"Lat: %@, Long: %@", [manObj valueForKey:@"latitude"], [manObj valueForKey:@"longitude"]]];
+            [self.listSubContents addObject:[NSString stringWithFormat:@"%@,%@", [manObj valueForKey:@"latitude"], [manObj valueForKey:@"longitude"]]];
         }
         
     }
@@ -150,9 +161,9 @@
 #pragma mark - Search Bar methods
 
 - (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText {
-    NSLog(@"New text: %@", searchText);
     
     [self.searchListContents removeAllObjects];
+    [self.searchListSubContents removeAllObjects];
     
     if([searchText length] > 0){
         [self setSearching: YES];
@@ -176,7 +187,8 @@
         NSRange range = [str rangeOfString:[searchBar text] options:NSCaseInsensitiveSearch];
         
         if(range.length > 0){
-            [self.searchListContents addObject:[self.listContents objectAtIndex:i]];
+            [self.searchListContents addObject:[self.listContents objectAtIndex: i]];
+            [self.searchListSubContents addObject:[self.listSubContents objectAtIndex: i]];
         }
 
         i++;
@@ -193,6 +205,7 @@
     [self setListSubContents: [[NSMutableArray alloc] init]];
     [self setListContents: [[NSMutableArray alloc] init]];
     [self setSearchListContents: [[NSMutableArray alloc] init]];
+    [self setSearchListSubContents: [[NSMutableArray alloc] init]];
     
     [self populateListContents];
     
@@ -213,6 +226,7 @@
     [self setListSubContents: nil];
     [self setSelectDelegate: nil];
     [self setSearchListContents: nil];
+    [self setsearchListSubContents: nil];
     [self setTblView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
