@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE250C74136119C900F65037 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = AE250C73136119C900F65037 /* iUMaine.sqlite */; };
+		960BB5F313E12301001C7D0A /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 960BB5F213E12301001C7D0A /* iUMaine.sqlite */; };
 		AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582C135BD930008E9B84 /* UIKit.framework */; };
 		AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582E135BD930008E9B84 /* Foundation.framework */; };
 		AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE815830135BD930008E9B84 /* CoreGraphics.framework */; };
@@ -61,7 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AE250C73136119C900F65037 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
+		960BB5F213E12301001C7D0A /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbInitializer.h; sourceTree = "<group>"; };
 		AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbInitializer.m; sourceTree = "<group>"; };
 		AE815828135BD930008E9B84 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,8 +210,8 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AE250C73136119C900F65037 /* iUMaine.sqlite */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
+				960BB5F213E12301001C7D0A /* iUMaine.sqlite */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
 				AE815835135BD930008E9B84 /* InfoPlist.strings */,
 				AE815838135BD930008E9B84 /* iUMaine-Prefix.pch */,
@@ -280,6 +280,9 @@
 /* Begin PBXProject section */
 		AE81581F135BD930008E9B84 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = AE815822135BD930008E9B84 /* Build configuration list for PBXProject "iUMaine" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -307,7 +310,6 @@
 				AE815849135BD930008E9B84 /* ScheduleView.xib in Resources */,
 				AE81584C135BD930008E9B84 /* SportsView.xib in Resources */,
 				AE815868135BE0D2008E9B84 /* MapView.xib in Resources */,
-				AE250C74136119C900F65037 /* iUMaine.sqlite in Resources */,
 				AECF0B0B13660E4700D2F3B4 /* DirectoryView.xib in Resources */,
 				AECF0B2713660EBC00D2F3B4 /* bear-paw-r.gif in Resources */,
 				AECF0B2813660EBC00D2F3B4 /* bear-paw-r_24.png in Resources */,
@@ -337,6 +339,7 @@
 				AECF0B4013660EBC00D2F3B4 /* UMaine_750_750_centered.tif in Resources */,
 				AEEA62A713679F2D00E3A470 /* BuildingSelectView.xib in Resources */,
 				AE8CC6C4136E3732000079E0 /* poiflag.png in Resources */,
+				960BB5F313E12301001C7D0A /* iUMaine.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

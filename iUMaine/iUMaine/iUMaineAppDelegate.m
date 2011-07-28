@@ -45,7 +45,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     // Initialize the database file (should be removed after .sqlite file is setup
     //DBInitializer* dbIniter = [[DBInitializer alloc] init];
     //dbIniter.managedObjectContext = self.managedObjectContext;
-    //[dbIniter initializeDatabase];
+    //[dbIniter initDatabase];
     //[dbIniter release];
     
     [self.window makeKeyAndVisible];

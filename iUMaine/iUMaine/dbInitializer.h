@@ -17,8 +17,9 @@
 
 @property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;
 
-- (void) initializeDatabase;
+- (void) initDatabase;
 - (void) initLotsOfType:(NSString*) permitType withFile:(NSString*) filePath;
 - (void) initBuildingsWithFile:(NSString*) filePath;
+- (void) initEmployeesWithFile:(NSString*) filePath;
 
 @end
