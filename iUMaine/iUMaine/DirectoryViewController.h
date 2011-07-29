@@ -6,16 +6,18 @@
 {
 	UITableView     *mainTableView;
 	
-	NSMutableArray  *contentsList;
+	NSMutableArray  *employeeArr;
 	NSMutableArray  *searchResults;
 	NSString        *savedSearchTerm;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *mainTableView;
-@property (nonatomic, retain) NSMutableArray *contentsList;
+@property (nonatomic, retain) NSMutableArray *employeeArr;
 @property (nonatomic, retain) NSMutableArray *searchResults;
-@property (nonatomic, copy)   NSString *savedSearchTerm;
+@property (nonatomic, retain)   NSString *savedSearchTerm;
 
 - (void)handleSearchForTerm:(NSString *)searchTerm;
+
+- (void) fillEmployees;
 
 @end

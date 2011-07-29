@@ -8,7 +8,6 @@
 
 #import "iUMaineAppDelegate.h"
 #import "MapViewController.h"
-#import "Person.h"
 
 // Only import this file when we need to initialize the sqlite file 
 //#import "dbInitializer.h"
@@ -178,6 +177,11 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     //    NSAssert1(0, @"Default database file does not exist", nil);
    // }
     
+}
+
++ (iUMaineAppDelegate*) sharedAppDelegate
+{
+    return (iUMaineAppDelegate*) [[UIApplication sharedApplication] delegate];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

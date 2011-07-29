@@ -29,5 +29,6 @@
 //- (void)saveContext;
 
 - (void)loadDefaultDB;
++ (iUMaineAppDelegate*) sharedAppDelegate;
 
 @end

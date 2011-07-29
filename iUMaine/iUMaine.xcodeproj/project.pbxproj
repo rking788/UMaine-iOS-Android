@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		960BB5F313E12301001C7D0A /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 960BB5F213E12301001C7D0A /* iUMaine.sqlite */; };
+		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
 		AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582C135BD930008E9B84 /* UIKit.framework */; };
 		AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582E135BD930008E9B84 /* Foundation.framework */; };
 		AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE815830135BD930008E9B84 /* CoreGraphics.framework */; };
@@ -28,7 +29,6 @@
 		AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */; };
 		AE8CC6C4136E3732000079E0 /* poiflag.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8CC6C3136E3731000079E0 /* poiflag.png */; };
 		AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB17181135BEED200DF742A /* POIAnnotation.m */; };
-		AECF0B0813660E3600D2F3B4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF0B0713660E3600D2F3B4 /* Person.m */; };
 		AECF0B0B13660E4700D2F3B4 /* DirectoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */; };
 		AECF0B2713660EBC00D2F3B4 /* bear-paw-r.gif in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B0D13660EBC00D2F3B4 /* bear-paw-r.gif */; };
 		AECF0B2813660EBC00D2F3B4 /* bear-paw-r_24.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B0E13660EBC00D2F3B4 /* bear-paw-r_24.png */; };
@@ -62,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		960BB5F213E12301001C7D0A /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
+		96C8AB9D13E1E98400656998 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbInitializer.h; sourceTree = "<group>"; };
 		AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbInitializer.m; sourceTree = "<group>"; };
 		AE815828135BD930008E9B84 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,8 +95,6 @@
 		AE8CC6C3136E3731000079E0 /* poiflag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poiflag.png; sourceTree = "<group>"; };
 		AEB17181135BEED200DF742A /* POIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIAnnotation.m; sourceTree = "<group>"; };
 		AEB1718B135BF09700DF742A /* POIAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIAnnotation.h; sourceTree = "<group>"; };
-		AECF0B0513660E2C00D2F3B4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		AECF0B0713660E3600D2F3B4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		AECF0B0A13660E4700D2F3B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DirectoryView.xib; sourceTree = "<group>"; };
 		AECF0B0D13660EBC00D2F3B4 /* bear-paw-r.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bear-paw-r.gif"; sourceTree = "<group>"; };
 		AECF0B0E13660EBC00D2F3B4 /* bear-paw-r_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bear-paw-r_24.png"; sourceTree = "<group>"; };
@@ -178,8 +178,6 @@
 		AE815832135BD930008E9B84 /* iUMaine */ = {
 			isa = PBXGroup;
 			children = (
-				AECF0B0713660E3600D2F3B4 /* Person.m */,
-				AECF0B0513660E2C00D2F3B4 /* Person.h */,
 				AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */,
 				AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */,
 				AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */,
@@ -201,6 +199,8 @@
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
 				AE815867135BE0D2008E9B84 /* MapView.xib */,
 				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
+				96C8AB9D13E1E98400656998 /* Employee.h */,
+				96C8AB9E13E1E98400656998 /* Employee.m */,
 				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
 			);
@@ -358,8 +358,8 @@
 				AE815879135BE497008E9B84 /* MapViewController.m in Sources */,
 				AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */,
 				AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */,
-				AECF0B0813660E3600D2F3B4 /* Person.m in Sources */,
 				AEEA62A613679F2D00E3A470 /* BuildingSelectView.m in Sources */,
+				96C8AB9F13E1E98400656998 /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +413,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robert KIng (PLJWL35TX2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert KIng (PLJWL35TX2)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -422,6 +423,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "2F7D09D7-F4A8-43EF-B877-C3E8D49ADD35";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2F7D09D7-F4A8-43EF-B877-C3E8D49ADD35";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -431,13 +434,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robert KIng (PLJWL35TX2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert KIng (PLJWL35TX2)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "2F7D09D7-F4A8-43EF-B877-C3E8D49ADD35";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2F7D09D7-F4A8-43EF-B877-C3E8D49ADD35";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
