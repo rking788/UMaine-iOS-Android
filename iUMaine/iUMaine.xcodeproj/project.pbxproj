@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		960BB5F313E12301001C7D0A /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 960BB5F213E12301001C7D0A /* iUMaine.sqlite */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
+		96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */; };
+		96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */; };
 		AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582C135BD930008E9B84 /* UIKit.framework */; };
 		AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582E135BD930008E9B84 /* Foundation.framework */; };
 		AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE815830135BD930008E9B84 /* CoreGraphics.framework */; };
@@ -64,6 +66,9 @@
 		960BB5F213E12301001C7D0A /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		96C8AB9D13E1E98400656998 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryDetailViewController.h; sourceTree = "<group>"; };
+		96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryDetailViewController.m; sourceTree = "<group>"; };
+		96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryDetailView.xib; sourceTree = "<group>"; };
 		AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbInitializer.h; sourceTree = "<group>"; };
 		AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbInitializer.m; sourceTree = "<group>"; };
 		AE815828135BD930008E9B84 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,17 +195,20 @@
 				AE815845135BD930008E9B84 /* SportsViewController.m */,
 				AE815873135BE484008E9B84 /* DirectoryViewController.h */,
 				AE815875135BE48C008E9B84 /* DirectoryViewController.m */,
+				96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */,
+				96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */,
 				AEEA62A313679F2D00E3A470 /* BuildingSelectView.h */,
 				AEEA62A413679F2D00E3A470 /* BuildingSelectView.m */,
 				AEB1718B135BF09700DF742A /* POIAnnotation.h */,
 				AEB17181135BEED200DF742A /* POIAnnotation.m */,
+				96C8AB9D13E1E98400656998 /* Employee.h */,
+				96C8AB9E13E1E98400656998 /* Employee.m */,
 				AE81583E135BD930008E9B84 /* MainWindow.xib */,
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
 				AE815867135BE0D2008E9B84 /* MapView.xib */,
 				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
-				96C8AB9D13E1E98400656998 /* Employee.h */,
-				96C8AB9E13E1E98400656998 /* Employee.m */,
+				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
 				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
 			);
@@ -340,6 +348,7 @@
 				AEEA62A713679F2D00E3A470 /* BuildingSelectView.xib in Resources */,
 				AE8CC6C4136E3732000079E0 /* poiflag.png in Resources */,
 				960BB5F313E12301001C7D0A /* iUMaine.sqlite in Resources */,
+				96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +369,7 @@
 				AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */,
 				AEEA62A613679F2D00E3A470 /* BuildingSelectView.m in Sources */,
 				96C8AB9F13E1E98400656998 /* Employee.m in Sources */,
+				96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

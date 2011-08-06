@@ -1,6 +1,7 @@
 
 #import "DirectoryViewController.h"
 #import "iUMaineAppDelegate.h"
+#import "DirectoryDetailViewController.h"
 #import "Employee.h"
 
 @implementation DirectoryViewController
@@ -147,8 +148,7 @@
 	return rows;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView
-		 cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {	
 	NSInteger row = [indexPath row];
 	NSString *contentForThisRow = nil;
@@ -189,10 +189,21 @@
 #pragma mark -
 #pragma mark UITableViewDelegate Methods
 
-- (void)tableView:(UITableView *)tableView
-didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {	
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    // Display the course details
+    DirectoryDetailViewController* ddvc = [[DirectoryDetailViewController alloc] initWithNibName:@"DirectoryDetailView" bundle:nil];
+    
+    if (tableView == [[self searchDisplayController] searchResultsTableView]){
+        [ddvc setEmployee: [self.searchResults objectAtIndex: indexPath.row]];
+    }
+    else{
+        [ddvc setEmployee: [self.employeeArr objectAtIndex: indexPath.row]];
+    }
+    [self.navigationController pushViewController:ddvc animated:YES];
+    [ddvc release];
 }
 
 #pragma mark -
