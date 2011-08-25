@@ -49,7 +49,7 @@ html = r.read()
 
 # Select the Semester
 br.select_form(name="noname")
-br.find_control(id="term").value = ["S11"]
+br.find_control(id="term").value = ["F11"]
 br.submit()
 html = br.response().read()
 

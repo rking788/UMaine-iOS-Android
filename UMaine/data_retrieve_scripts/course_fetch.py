@@ -72,7 +72,7 @@ html = r.read();
 
 # Select the Institution
 br.select_form(name="win1")
-br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$48$").value = ["UMS05"]
+br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$50$").value = ["UMS05"]
 br.submit()
 html = br.response().read()
 
@@ -80,7 +80,7 @@ br.select_form(name="win1")
 # 1120: Spring 2011 
 # 1210: Fall 2011 
 # 1130: Summer 2011
-br.find_control(id="CLASS_SRCH_WRK2_STRM$50$").value = ["1130"]
+br.find_control(id="CLASS_SRCH_WRK2_STRM$53$").value = ["1210"]
 br.submit()
 html = br.response().read()
 
@@ -111,7 +111,7 @@ for dept in departments:
 		html = r.read()
 		assert br.viewing_html()
 		br.select_form(name="win1")
-		br.find_control("CLASS_SRCH_WRK2_SUBJECT").value = dept
+		br.find_control("CLASS_SRCH_WRK2_SUBJECT$71$").value = dept
         	br.find_control("CLASS_SRCH_WRK2_ACAD_CAREER").value = [career]  # UGRD or GRAD
 		#NOTE: MaineStree requires at least two search constraints 
 
