@@ -378,7 +378,7 @@ public class UMCourses extends Activity {
 				public void onClick(DialogInterface dialog, int which) {
 				}
 			};
-
+		
 			OnClickListener sem_delete = new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface dialog, int which) {
 					UMCourses.getActivity().deleteSemester();

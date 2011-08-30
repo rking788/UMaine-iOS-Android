@@ -54,6 +54,7 @@ public class UMaine extends Activity {
         
         /* Set up the listener for the directory button */
         Button dirbtn = (Button) findViewById(R.id.directorybtn);
+        
         dirbtn.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) { 
