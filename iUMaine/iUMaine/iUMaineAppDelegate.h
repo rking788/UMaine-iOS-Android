@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+@class SportEvent;
+
 @interface iUMaineAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
 
     NSManagedObjectContext *managedObjectContext;
     NSManagedObjectModel* managedObjectModel;
     NSPersistentStoreCoordinator* persistentStoreCoordinator;
+    
+    NSUserDefaults* defaultPrefs;
+    NSString* lastUpdateStr;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -25,10 +30,17 @@
 @property (nonatomic, retain, readonly) NSManagedObjectModel* managedObjectModel;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator* persistentStoreCoordinator;
 
+@property (nonatomic, retain) NSUserDefaults* defaultPrefs;
+@property (nonatomic, retain) NSString* lastUpdateStr;
+
+
 - (NSString *)applicationDocumentsDirectory;
 //- (void)saveContext;
 
 - (void)loadDefaultDB;
 + (iUMaineAppDelegate*) sharedAppDelegate;
+
+- (void) checkSportsUpdates;
+- (void) updateOrAddEvent:(SportEvent *)newE;
 
 @end

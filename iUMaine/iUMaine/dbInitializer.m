@@ -91,8 +91,12 @@
             buildingObj = [NSEntityDescription insertNewObjectForEntityForName: @"Building" inManagedObjectContext: managedObjectContext];
             
             [buildingObj setTitle:[[lineFields objectAtIndex:0] stringByReplacingOccurrencesOfString: @"\"" withString: @""]];
-            [buildingObj setLatitude:[NSNumber numberWithInt:[[lineFields objectAtIndex: 1] integerValue]]];
-            [buildingObj setLongitude:[NSNumber numberWithInt:[[lineFields objectAtIndex: 2] integerValue]]];
+            float latfloat = [[lineFields objectAtIndex: 1] floatValue];
+            float longfloat = [[lineFields objectAtIndex: 2] floatValue];
+            NSInteger latInt = (NSInteger) ([[lineFields objectAtIndex: 1] floatValue] * 1000000.0);
+            NSInteger longInt = (NSInteger) ([[lineFields objectAtIndex: 2] floatValue] * 1000000.0);
+            [buildingObj setLatitude:[NSNumber numberWithInt: latInt]];
+            [buildingObj setLongitude:[NSNumber numberWithInt: longInt]];
             
         }
         

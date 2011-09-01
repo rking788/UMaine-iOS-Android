@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		960BB5F313E12301001C7D0A /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 960BB5F213E12301001C7D0A /* iUMaine.sqlite */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
+		96CD3516140DE79300C8C45C /* SportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD3515140DE79300C8C45C /* SportEvent.m */; };
+		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
+		96E9244213F61BF800A48C68 /* blackbearsports-clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9244013F61BF800A48C68 /* blackbearsports-clear.png */; };
+		96E9244313F61BF800A48C68 /* blackbearsports.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9244113F61BF800A48C68 /* blackbearsports.png */; };
 		96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */; };
 		96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */; };
+		96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96FB508D13F786020069836C /* sportsAbbrsDict.txt */; };
+		96FB509B13F788860069836C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509813F788860069836C /* NSDataAdditions.m */; };
+		96FB509C13F788860069836C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509A13F788860069836C /* TBXML.m */; };
+		96FB509E13F788F70069836C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FB509D13F788F70069836C /* libz.dylib */; };
+		96FD6825140F3F4F00FDC12F /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96FD6824140F3F4F00FDC12F /* iUMaine.sqlite */; };
 		AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582C135BD930008E9B84 /* UIKit.framework */; };
 		AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582E135BD930008E9B84 /* Foundation.framework */; };
 		AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE815830135BD930008E9B84 /* CoreGraphics.framework */; };
@@ -63,12 +71,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		960BB5F213E12301001C7D0A /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		96C8AB9D13E1E98400656998 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		96CD3514140DE79300C8C45C /* SportEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportEvent.h; sourceTree = "<group>"; };
+		96CD3515140DE79300C8C45C /* SportEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportEvent.m; sourceTree = "<group>"; };
+		96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventCellView.xib; sourceTree = "<group>"; };
+		96E9244013F61BF800A48C68 /* blackbearsports-clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackbearsports-clear.png"; sourceTree = "<group>"; };
+		96E9244113F61BF800A48C68 /* blackbearsports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackbearsports.png; sourceTree = "<group>"; };
 		96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryDetailViewController.h; sourceTree = "<group>"; };
 		96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryDetailViewController.m; sourceTree = "<group>"; };
 		96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryDetailView.xib; sourceTree = "<group>"; };
+		96FB508D13F786020069836C /* sportsAbbrsDict.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sportsAbbrsDict.txt; sourceTree = "<group>"; };
+		96FB509713F788860069836C /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		96FB509813F788860069836C /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		96FB509913F788860069836C /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		96FB509A13F788860069836C /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		96FB509D13F788F70069836C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		96FD6824140F3F4F00FDC12F /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbInitializer.h; sourceTree = "<group>"; };
 		AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbInitializer.m; sourceTree = "<group>"; };
 		AE815828135BD930008E9B84 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,17 +162,30 @@
 				AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */,
 				AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */,
 				AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */,
+				96FB509E13F788F70069836C /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96FB509613F788500069836C /* TBXML */ = {
+			isa = PBXGroup;
+			children = (
+				96FB509713F788860069836C /* NSDataAdditions.h */,
+				96FB509813F788860069836C /* NSDataAdditions.m */,
+				96FB509913F788860069836C /* TBXML.h */,
+				96FB509A13F788860069836C /* TBXML.m */,
+			);
+			name = TBXML;
+			sourceTree = "<group>";
+		};
 		AE81581D135BD930008E9B84 = {
 			isa = PBXGroup;
 			children = (
 				AECF0B0C13660EBC00D2F3B4 /* icons */,
 				AE815832135BD930008E9B84 /* iUMaine */,
+				96FB509613F788500069836C /* TBXML */,
 				AE81582B135BD930008E9B84 /* Frameworks */,
 				AE815829135BD930008E9B84 /* Products */,
 			);
@@ -170,6 +202,7 @@
 		AE81582B135BD930008E9B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96FB509D13F788F70069836C /* libz.dylib */,
 				AE81C78D135D0E6900E2F80F /* CoreData.framework */,
 				AE81585A135BDC4E008E9B84 /* MapKit.framework */,
 				AE81585D135BDC57008E9B84 /* CoreLocation.framework */,
@@ -203,13 +236,18 @@
 				AEB17181135BEED200DF742A /* POIAnnotation.m */,
 				96C8AB9D13E1E98400656998 /* Employee.h */,
 				96C8AB9E13E1E98400656998 /* Employee.m */,
+				96CD3514140DE79300C8C45C /* SportEvent.h */,
+				96CD3515140DE79300C8C45C /* SportEvent.m */,
 				AE81583E135BD930008E9B84 /* MainWindow.xib */,
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
+				96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */,
 				AE815867135BE0D2008E9B84 /* MapView.xib */,
 				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
 				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
 				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
+				96E9244113F61BF800A48C68 /* blackbearsports.png */,
+				96E9244013F61BF800A48C68 /* blackbearsports-clear.png */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
 			);
 			path = iUMaine;
@@ -218,8 +256,9 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
-				960BB5F213E12301001C7D0A /* iUMaine.sqlite */,
+				96FD6824140F3F4F00FDC12F /* iUMaine.sqlite */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
 				AE815835135BD930008E9B84 /* InfoPlist.strings */,
 				AE815838135BD930008E9B84 /* iUMaine-Prefix.pch */,
@@ -347,8 +386,12 @@
 				AECF0B4013660EBC00D2F3B4 /* UMaine_750_750_centered.tif in Resources */,
 				AEEA62A713679F2D00E3A470 /* BuildingSelectView.xib in Resources */,
 				AE8CC6C4136E3732000079E0 /* poiflag.png in Resources */,
-				960BB5F313E12301001C7D0A /* iUMaine.sqlite in Resources */,
 				96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */,
+				96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */,
+				96E9244213F61BF800A48C68 /* blackbearsports-clear.png in Resources */,
+				96E9244313F61BF800A48C68 /* blackbearsports.png in Resources */,
+				96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */,
+				96FD6825140F3F4F00FDC12F /* iUMaine.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +413,9 @@
 				AEEA62A613679F2D00E3A470 /* BuildingSelectView.m in Sources */,
 				96C8AB9F13E1E98400656998 /* Employee.m in Sources */,
 				96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */,
+				96FB509B13F788860069836C /* NSDataAdditions.m in Sources */,
+				96FB509C13F788860069836C /* TBXML.m in Sources */,
+				96CD3516140DE79300C8C45C /* SportEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

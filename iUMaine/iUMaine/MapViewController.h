@@ -29,6 +29,8 @@
     // Titles for picker view
     NSArray* permitTitles;
     
+    NSUserDefaults* uDefaults;
+    
     NSString* curPermit;
     NSString* prevPermit;
 }
@@ -37,6 +39,7 @@
 @property (nonatomic, retain) IBOutlet UINavigationBar *navBar;
 @property (nonatomic, retain) UIActionSheet* actSheet;
 @property (nonatomic, retain) NSArray* permitTitles;
+@property (nonatomic, retain) NSUserDefaults* uDefaults;
 @property (nonatomic, retain) NSString* curPermit;
 @property (nonatomic, retain) NSString* prevPermit;
 

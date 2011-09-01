@@ -13,6 +13,7 @@
 
 @synthesize navBar;
 @synthesize actSheet;
+@synthesize uDefaults;
 @synthesize curPermit, prevPermit;
 @synthesize mapView, mapPOIAnnotations, mapSelBuildingAnnotation, managedObjectContext, permitTitles;
 
@@ -25,31 +26,25 @@
     // Set the center to barrows or something
     MKCoordinateRegion region;
     region.center.latitude = 44.901006;
-    region.center.longitude = -68.669536;
-    region.span.latitudeDelta = 0.013;
-    region.span.longitudeDelta = 0.013;
+    region.center.longitude = -68.667536;
+    //0.013
+    region.span.latitudeDelta = 0.006;
+    region.span.longitudeDelta = 0.006;
     [self.mapView setRegion:region animated:false];
     
     // Set up the array of annotations
     self.mapPOIAnnotations = [[NSMutableArray alloc] initWithCapacity:1];
     
-    POIAnnotation* poiAnnot = [[POIAnnotation alloc] initWithLat:44.901006 withLong:-68.669536];
-    [poiAnnot setTitle:@"Center Title"];
-    [poiAnnot setSubtitle:@"Center Subtitle"];
-    
-    [self.mapPOIAnnotations insertObject:poiAnnot atIndex:0];
-    [poiAnnot release];
-    
-    // Add the annotation to the mapview
-    [self.mapView addAnnotation:[self.mapPOIAnnotations objectAtIndex:0]];
-
-    // TODO: remove this As a test lets add all of the commuter annotations
-    [self addParkingAnnotationsOfType:@"Commuter"];
-    
     // Initialize the titles for the parking permits
     self.permitTitles = [[NSArray alloc] initWithObjects: @"None", @"Staff / Faculty", @"Resident", @"Commuter", @"Visitor", nil];
     
     // TODO: Check to see if there is a selected permit already stored in persistent storage
+    [self setUDefaults: [NSUserDefaults standardUserDefaults]];
+    NSString* startingPermit = [self.uDefaults objectForKey: @"ParkingPermit"];
+    if(startingPermit){
+        [self addParkingAnnotationsOfType: startingPermit];
+    }
+    
     self.prevPermit = nil;
     self.curPermit = nil;
 }
@@ -79,14 +74,14 @@
         [self showPickerview];
     }
     else if(nSel == 2){
-        // TODO: Actually do something when search bar is presented
         BuildingSelectView* bsView = [[BuildingSelectView alloc] initWithNibName:@"BuildingSelectView" bundle:nil];
         
         bsView.selectDelegate = self;
         [bsView setManagedObjectContext:self.managedObjectContext];
-       // [self presentModalViewController:bsView animated:YES];
+        
         UINavigationController *navigationController = [[UINavigationController alloc]
                                                         initWithRootViewController:bsView];
+        [navigationController.navigationBar setBarStyle: UIBarStyleBlack];
         [self presentModalViewController:navigationController animated:YES];
         [bsView release];
     }
@@ -151,6 +146,14 @@
 
 - (void) addParkingAnnotationsOfType:(NSString*) permitType{
     
+    if(!permitType)
+        return;
+    
+    // Set the last used parking permit in the user defaults
+    // For right now set the default parking permit as the last permit displayed (this might not be right)
+    // Maybe have the default permit be set in a settings tab or something 
+    [self.uDefaults setObject: permitType forKey: @"ParkingPermit"];
+    
     //If there are already annotations on the map then remove them 
     if([self.mapPOIAnnotations count] != 1){
         [self.mapView removeAnnotations: self.mapPOIAnnotations];
@@ -203,6 +206,7 @@
         // Deal with error.
         NSLog(@"Error fetching lots");
     }
+
     
     // Add the annotation to the mapview
     [self.mapView addAnnotations:self.mapPOIAnnotations];
@@ -359,6 +363,7 @@
     [self setMapView:nil];
     [self setNavBar:nil];
     [self setMapSelBuildingAnnotation: nil];
+    [self setUDefaults: nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
@@ -375,6 +380,7 @@
     [navBar release];
     [permitTitles release];
     [mapSelBuildingAnnotation release];
+    [uDefaults release];
     [super dealloc];
 }
 

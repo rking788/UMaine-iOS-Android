@@ -226,7 +226,7 @@
     [self setListSubContents: nil];
     [self setSelectDelegate: nil];
     [self setSearchListContents: nil];
-    [self setsearchListSubContents: nil];
+    [self setSearchListSubContents: nil];
     [self setTblView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.

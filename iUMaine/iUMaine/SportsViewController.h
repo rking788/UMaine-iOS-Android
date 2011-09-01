@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class iUMaineAppDelegate;
 
-@interface SportsViewController : UIViewController {
+@interface SportsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    iUMaineAppDelegate* appDel;
     
+    NSDictionary* sportsAbbrDict;
 }
+
+@property (nonatomic, retain) iUMaineAppDelegate* appDel;
+@property (nonatomic, retain) NSDictionary* sportsAbbrDict;
 
 @end
