@@ -282,7 +282,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
             }
             
             SportEvent* tempEvent = [[SportEvent alloc] initWithEntity: [NSEntityDescription entityForName:@"SportEvent" inManagedObjectContext: self.managedObjectContext] insertIntoManagedObjectContext: nil];
-            
+            //TODO REMOVE THIS
             // Date
             [tempEvent setDate: [dateformatter dateFromString: [eComps objectAtIndex: 0]]];
             
