@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */; };
+		96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96950E41141D9D0E0059CFED /* EventRecapViewController.m */; };
+		96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96950E42141D9D0E0059CFED /* EventRecapView.xib */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
+		96C90287141C25D2000336A6 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96C90286141C25D2000336A6 /* iUMaine.sqlite */; };
 		96CD3516140DE79300C8C45C /* SportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD3515140DE79300C8C45C /* SportEvent.m */; };
 		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
 		96E9244213F61BF800A48C68 /* blackbearsports-clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9244013F61BF800A48C68 /* blackbearsports-clear.png */; };
@@ -18,7 +22,6 @@
 		96FB509B13F788860069836C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509813F788860069836C /* NSDataAdditions.m */; };
 		96FB509C13F788860069836C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509A13F788860069836C /* TBXML.m */; };
 		96FB509E13F788F70069836C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FB509D13F788F70069836C /* libz.dylib */; };
-		96FD6825140F3F4F00FDC12F /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96FD6824140F3F4F00FDC12F /* iUMaine.sqlite */; };
 		AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582C135BD930008E9B84 /* UIKit.framework */; };
 		AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582E135BD930008E9B84 /* Foundation.framework */; };
 		AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE815830135BD930008E9B84 /* CoreGraphics.framework */; };
@@ -71,8 +74,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cornell-big-red-logo.gif"; sourceTree = "<group>"; };
+		96950E40141D9D0E0059CFED /* EventRecapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRecapViewController.h; sourceTree = "<group>"; };
+		96950E41141D9D0E0059CFED /* EventRecapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRecapViewController.m; sourceTree = "<group>"; };
+		96950E42141D9D0E0059CFED /* EventRecapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventRecapView.xib; sourceTree = "<group>"; };
 		96C8AB9D13E1E98400656998 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		96C90286141C25D2000336A6 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		96CD3514140DE79300C8C45C /* SportEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportEvent.h; sourceTree = "<group>"; };
 		96CD3515140DE79300C8C45C /* SportEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportEvent.m; sourceTree = "<group>"; };
 		96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventCellView.xib; sourceTree = "<group>"; };
@@ -87,7 +95,6 @@
 		96FB509913F788860069836C /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		96FB509A13F788860069836C /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 		96FB509D13F788F70069836C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		96FD6824140F3F4F00FDC12F /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbInitializer.h; sourceTree = "<group>"; };
 		AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbInitializer.m; sourceTree = "<group>"; };
 		AE815828135BD930008E9B84 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +245,8 @@
 				96C8AB9E13E1E98400656998 /* Employee.m */,
 				96CD3514140DE79300C8C45C /* SportEvent.h */,
 				96CD3515140DE79300C8C45C /* SportEvent.m */,
+				96950E40141D9D0E0059CFED /* EventRecapViewController.h */,
+				96950E41141D9D0E0059CFED /* EventRecapViewController.m */,
 				AE81583E135BD930008E9B84 /* MainWindow.xib */,
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
@@ -246,8 +255,10 @@
 				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
 				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
 				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
+				96950E42141D9D0E0059CFED /* EventRecapView.xib */,
 				96E9244113F61BF800A48C68 /* blackbearsports.png */,
 				96E9244013F61BF800A48C68 /* blackbearsports-clear.png */,
+				962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
 			);
 			path = iUMaine;
@@ -256,9 +267,9 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96C90286141C25D2000336A6 /* iUMaine.sqlite */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
-				96FD6824140F3F4F00FDC12F /* iUMaine.sqlite */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
 				AE815835135BD930008E9B84 /* InfoPlist.strings */,
 				AE815838135BD930008E9B84 /* iUMaine-Prefix.pch */,
@@ -391,7 +402,9 @@
 				96E9244213F61BF800A48C68 /* blackbearsports-clear.png in Resources */,
 				96E9244313F61BF800A48C68 /* blackbearsports.png in Resources */,
 				96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */,
-				96FD6825140F3F4F00FDC12F /* iUMaine.sqlite in Resources */,
+				96C90287141C25D2000336A6 /* iUMaine.sqlite in Resources */,
+				962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */,
+				96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +429,7 @@
 				96FB509B13F788860069836C /* NSDataAdditions.m in Sources */,
 				96FB509C13F788860069836C /* TBXML.m in Sources */,
 				96CD3516140DE79300C8C45C /* SportEvent.m in Sources */,
+				96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@
 @synthesize tabBarController=_tabBarController;
 @synthesize defaultPrefs;
 @synthesize lastUpdateStr;
+@synthesize gettingSports;
 
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME = @"sportsAbbrsDict.txt";
@@ -299,9 +300,9 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
             // Result
             NSString* resultStr = [eComps objectAtIndex: 3];
             if([resultStr isEqualToString: @""])
-                [tempEvent setRecapLink: nil];
+                [tempEvent setResultStr: nil];
             else
-                [tempEvent setRecapLink: resultStr];
+                [tempEvent setResultStr: resultStr];
             
             // Sport
             [tempEvent setSport: [eComps objectAtIndex: 4]];
@@ -313,7 +314,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
             [tempEvent setTeamB: [eComps objectAtIndex: 6]];
             
             // Year
-            [tempEvent setYear: [NSNumber numberWithInteger: [[eComps objectAtIndex: 7] integerValue]]];
+            [tempEvent setYearRange: [eComps objectAtIndex: 7]];
             
             [self updateOrAddEvent: tempEvent];
             
@@ -372,7 +373,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
         [event setSport: newE.sport];
         [event setTeamA: newE.teamA];
         [event setTeamB: newE.teamB];
-        [event setYear: newE.year];
+        [event setYearRange: newE.yearRange];
     }
     
     [event setRecapLink: newE.recapLink];

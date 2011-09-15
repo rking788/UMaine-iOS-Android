@@ -19,6 +19,8 @@
     
     NSUserDefaults* defaultPrefs;
     NSString* lastUpdateStr;
+
+    BOOL gettingSports;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
@@ -32,6 +34,7 @@
 
 @property (nonatomic, retain) NSUserDefaults* defaultPrefs;
 @property (nonatomic, retain) NSString* lastUpdateStr;
+@property (nonatomic, assign, getter = isGettingSports) BOOL gettingSports;
 
 
 - (NSString *)applicationDocumentsDirectory;

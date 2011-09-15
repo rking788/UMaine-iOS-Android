@@ -20,6 +20,6 @@
 @property (nonatomic, retain) NSNumber * home;
 @property (nonatomic, retain) NSString * teamA;
 @property (nonatomic, retain) NSDate * date;
-@property (nonatomic, retain) NSNumber * year;
+@property (nonatomic, retain) NSString * yearRange;
 
 @end

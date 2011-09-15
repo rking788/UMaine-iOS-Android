@@ -17,6 +17,6 @@
 @dynamic home;
 @dynamic teamA;
 @dynamic date;
-@dynamic year;
+@dynamic yearRange;
 
 @end
