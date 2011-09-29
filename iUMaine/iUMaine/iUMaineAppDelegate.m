@@ -256,7 +256,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     NSURLResponse* resp = nil;
     NSError* err = nil;
     
-    // Add the course information into the POST request content
+    // Add the event information into the POST request content
     NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchSportsUpdates.php"];
     NSString* content = [NSString stringWithFormat: @"date=%@", self.lastUpdateStr];
     
@@ -268,9 +268,9 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     NSData* ret = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
     NSString* retStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
     
-    // Check if there were any new courses or not
+    // Check if there were any new events or not
     if(![retStr isEqualToString: @""]){
-        // Get an array of the new courses
+        // Get an array of the new events
         NSArray* eventsArr = [retStr componentsSeparatedByString: @"\n"];
         
         // The event lines are in the form
@@ -321,7 +321,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
             [tempEvent release];
         }
         
-        // Just updated the courses so set the last course update as today's date
+        // Just updated the events so set the last event update as today's date
         NSDate* lastUpdate = [NSDate date];
         [self.defaultPrefs setObject: lastUpdate forKey: @"LastSportsUpdate"];
         [self setLastUpdateStr: [dateformatter stringFromDate: [NSDate date]]];
@@ -335,7 +335,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
 
 - (void) updateOrAddEvent:(SportEvent *)newE
 {
-    // See if course is already on the phone
+    // See if event is already on the phone
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"SportEvent" inManagedObjectContext: self.managedObjectContext];
     [fetchrequest setEntity:entity];
@@ -365,7 +365,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     }
     
     if(!event){
-        // Add the new course into the persistent store
+        // Add the new event into the persistent store
         event = [NSEntityDescription insertNewObjectForEntityForName: @"SportEvent" inManagedObjectContext: self.managedObjectContext];
         
         [event setDate: newE.date];

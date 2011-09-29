@@ -22,6 +22,7 @@
     UITableViewCell *currentEventCell;
     UITableViewCell *otherEventCell;
     UITableView *tableV;
+    BOOL firstView;
 }
 @property (nonatomic, retain) IBOutlet UITableView *tableV;
 @property (nonatomic, assign) IBOutlet UITableViewCell *currentEventCell;
@@ -30,6 +31,8 @@
 @property (nonatomic, retain) iUMaineAppDelegate* appDel;
 @property (nonatomic, retain) NSDictionary* sportsAbbrDict;
 @property (nonatomic, retain) NSDictionary* eventsDict;
+
+@property (nonatomic, assign, getter = isFirstView) BOOL firstView;
 
 - (void) showLoadingView;
 - (void) loadSportsEvents;

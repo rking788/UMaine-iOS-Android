@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */; };
+		96301AC5142AF33B0012000C /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96301AC4142AF33B0012000C /* iUMaine.sqlite */; };
+		964A2B3E1433E39800F53F8A /* CustomSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */; };
+		964A2B411433E4CB00F53F8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964A2B401433E4CB00F53F8A /* QuartzCore.framework */; };
 		96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96950E41141D9D0E0059CFED /* EventRecapViewController.m */; };
 		96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96950E42141D9D0E0059CFED /* EventRecapView.xib */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
-		96C90287141C25D2000336A6 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96C90286141C25D2000336A6 /* iUMaine.sqlite */; };
 		96CD3516140DE79300C8C45C /* SportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD3515140DE79300C8C45C /* SportEvent.m */; };
 		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
 		96E9244213F61BF800A48C68 /* blackbearsports-clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9244013F61BF800A48C68 /* blackbearsports-clear.png */; };
@@ -75,12 +77,15 @@
 
 /* Begin PBXFileReference section */
 		962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cornell-big-red-logo.gif"; sourceTree = "<group>"; };
+		96301AC4142AF33B0012000C /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
+		964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSectionHeader.h; sourceTree = "<group>"; };
+		964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSectionHeader.m; sourceTree = "<group>"; };
+		964A2B401433E4CB00F53F8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		96950E40141D9D0E0059CFED /* EventRecapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRecapViewController.h; sourceTree = "<group>"; };
 		96950E41141D9D0E0059CFED /* EventRecapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRecapViewController.m; sourceTree = "<group>"; };
 		96950E42141D9D0E0059CFED /* EventRecapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventRecapView.xib; sourceTree = "<group>"; };
 		96C8AB9D13E1E98400656998 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
-		96C90286141C25D2000336A6 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		96CD3514140DE79300C8C45C /* SportEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportEvent.h; sourceTree = "<group>"; };
 		96CD3515140DE79300C8C45C /* SportEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportEvent.m; sourceTree = "<group>"; };
 		96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventCellView.xib; sourceTree = "<group>"; };
@@ -163,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964A2B411433E4CB00F53F8A /* QuartzCore.framework in Frameworks */,
 				AE81C78E135D0E6900E2F80F /* CoreData.framework in Frameworks */,
 				AE81585E135BDC57008E9B84 /* CoreLocation.framework in Frameworks */,
 				AE81585B135BDC4E008E9B84 /* MapKit.framework in Frameworks */,
@@ -209,6 +215,7 @@
 		AE81582B135BD930008E9B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				964A2B401433E4CB00F53F8A /* QuartzCore.framework */,
 				96FB509D13F788F70069836C /* libz.dylib */,
 				AE81C78D135D0E6900E2F80F /* CoreData.framework */,
 				AE81585A135BDC4E008E9B84 /* MapKit.framework */,
@@ -247,6 +254,8 @@
 				96CD3515140DE79300C8C45C /* SportEvent.m */,
 				96950E40141D9D0E0059CFED /* EventRecapViewController.h */,
 				96950E41141D9D0E0059CFED /* EventRecapViewController.m */,
+				964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */,
+				964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */,
 				AE81583E135BD930008E9B84 /* MainWindow.xib */,
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
@@ -267,7 +276,7 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96C90286141C25D2000336A6 /* iUMaine.sqlite */,
+				96301AC4142AF33B0012000C /* iUMaine.sqlite */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
@@ -402,9 +411,9 @@
 				96E9244213F61BF800A48C68 /* blackbearsports-clear.png in Resources */,
 				96E9244313F61BF800A48C68 /* blackbearsports.png in Resources */,
 				96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */,
-				96C90287141C25D2000336A6 /* iUMaine.sqlite in Resources */,
 				962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */,
 				96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */,
+				96301AC5142AF33B0012000C /* iUMaine.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +439,7 @@
 				96FB509C13F788860069836C /* TBXML.m in Sources */,
 				96CD3516140DE79300C8C45C /* SportEvent.m in Sources */,
 				96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */,
+				964A2B3E1433E39800F53F8A /* CustomSectionHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,8 +503,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				PROVISIONING_PROFILE = "2F7D09D7-F4A8-43EF-B877-C3E8D49ADD35";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2F7D09D7-F4A8-43EF-B877-C3E8D49ADD35";
+				PROVISIONING_PROFILE = "0D306BCF-60C0-42C1-8FF9-9F0E28C1EE3F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0D306BCF-60C0-42C1-8FF9-9F0E28C1EE3F";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -504,16 +514,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Robert KIng (PLJWL35TX2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert KIng (PLJWL35TX2)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "2F7D09D7-F4A8-43EF-B877-C3E8D49ADD35";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2F7D09D7-F4A8-43EF-B877-C3E8D49ADD35";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

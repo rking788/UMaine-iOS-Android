@@ -8,12 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventRecapViewController : UIViewController{
+@interface EventRecapViewController : UIViewController <UIWebViewDelegate>{
     
     NSString* recapURLStr;
     UIWebView *webView;
+    UIView *loadingView;
+    UIActivityIndicatorView *actIndicator;
+    UILabel *loadingErrLbl;
 }
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) IBOutlet UIView *loadingView;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *actIndicator;
+@property (nonatomic, retain) IBOutlet UILabel *loadingErrLbl;
 @property (nonatomic, retain) NSString* recapURLStr;
 
 @end

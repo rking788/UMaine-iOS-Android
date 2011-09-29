@@ -11,6 +11,7 @@
 #import "EventRecapViewController.h"
 #import "SportEvent.h"
 #import "TBXML.h"
+#import "CustomSectionHeader.h"
 
 @implementation SportsViewController
 
@@ -20,6 +21,7 @@
 @synthesize appDel;
 @synthesize sportsAbbrDict;
 @synthesize eventsDict;
+@synthesize firstView;
 
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
@@ -39,6 +41,8 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     NSString* abbrsPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: ABBRSDICTNAME2];
     self.sportsAbbrDict = [[NSDictionary alloc] initWithContentsOfFile: abbrsPath];
     
+    self.firstView = YES;
+    
     // Load Sports Events
     [self loadSportsEvents];
 }
@@ -53,13 +57,17 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
   //  }
 
     // Scroll to today's games (if any)
-    if([[self.eventsDict objectForKey: CUR_KEY] count] > 0){
-        NSIndexPath* indPath = [NSIndexPath indexPathForRow: 0 inSection: 1];
-        [self.tableV scrollToRowAtIndexPath: indPath atScrollPosition: UITableViewScrollPositionTop animated: NO];
-    }
-    else if([[self.eventsDict objectForKey: FUT_KEY] count] > 0){
-        NSIndexPath* indPath = [NSIndexPath indexPathForRow: 0 inSection: 2];
-        [self.tableV scrollToRowAtIndexPath: indPath atScrollPosition: UITableViewScrollPositionTop animated: NO];
+    if([self isFirstView]){
+        if([[self.eventsDict objectForKey: CUR_KEY] count] > 0){
+            NSIndexPath* indPath = [NSIndexPath indexPathForRow: 0 inSection: 1];
+            [self.tableV scrollToRowAtIndexPath: indPath atScrollPosition: UITableViewScrollPositionTop animated: NO];
+        }
+        else if([[self.eventsDict objectForKey: FUT_KEY] count] > 0){
+            NSIndexPath* indPath = [NSIndexPath indexPathForRow: 0 inSection: 2];
+            [self.tableV scrollToRowAtIndexPath: indPath atScrollPosition: UITableViewScrollPositionTop animated: NO];
+        }
+        
+        self.firstView = NO;
     }
 }
 
@@ -255,7 +263,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat height = 60;
+    CGFloat height = 65;
     
     // The rows for the current games are taller than the others
     if(indexPath.section == 1)
@@ -315,6 +323,9 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         if(SE.recapLink && ([SE.recapLink length] != 0)){
             [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
         }
+        else{
+            [cell setAccessoryType: UITableViewCellAccessoryNone];
+        }
     }
     else if(indexPath.section == 1){
         // Current Game cell
@@ -349,6 +360,9 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         if(SE.recapLink && ([SE.recapLink length] != 0)){
             [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
         }
+        else{
+            [cell setAccessoryType: UITableViewCellAccessoryNone];
+        }
     }
     else{
         // Other game cell
@@ -379,8 +393,6 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         [cell setAccessoryType: UITableViewCellAccessoryNone];
     }
     
-    
-    
     return cell;
 }
 
@@ -396,6 +408,51 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         retStr = @"Future Games";
     
     return retStr;
+}
+
+- (NSArray*) sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    // Use P for Past C for Current and F for Future games
+    return [NSArray arrayWithObjects: @"P", @"C", @"F", nil];
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if ([self tableView:tableView titleForHeaderInSection:section] != nil) {
+        return 25.0;
+    }
+    else {
+        // If no section header title, no section header needed
+        return 0;
+    }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    NSString *sectionTitle = [self tableView:tableView titleForHeaderInSection:section];
+    if (sectionTitle == nil) {
+        return nil;
+    }
+
+    // create the parent view that will hold header Label
+    CustomSectionHeader* customView = [[[CustomSectionHeader alloc] initWithFrame:CGRectMake(0.0, 0.0, 360.0, 25.0)] autorelease];
+    [customView setTopColor: [UIColor colorWithRed: (3.0/255.0) green: (32.0/255.0) blue: (62.0/255.0) alpha:1.0]];
+    [customView setBottomColor: [UIColor colorWithRed: (52.0/255.0) green: (160.0/255.0) blue: (206.0/255.0) alpha:1.0]];
+    [customView setLineColor: [UIColor blueColor]];
+    
+    // Create label with section title
+    UILabel *label = [[[UILabel alloc] init] autorelease];
+    label.frame = CGRectMake(10, 0, 300, 25);
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor whiteColor];
+    label.shadowColor = [UIColor blackColor];
+    label.shadowOffset = CGSizeMake(0.0, 1.0);
+    label.font = [UIFont boldSystemFontOfSize:16];
+    label.text = sectionTitle;
+    
+    [customView addSubview: label];
+    
+    return customView;
 }
 
 #pragma mark - UITableViewDelegate

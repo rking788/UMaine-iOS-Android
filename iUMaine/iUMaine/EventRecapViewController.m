@@ -12,6 +12,9 @@
 @implementation EventRecapViewController
 
 @synthesize webView;
+@synthesize loadingView;
+@synthesize actIndicator;
+@synthesize loadingErrLbl;
 @synthesize recapURLStr;
 
 
@@ -50,9 +53,17 @@
 {
     [self setWebView:nil];
     [self setRecapURLStr: nil];
+    [self setLoadingView:nil];
+    [self setActIndicator:nil];
+    [self setLoadingErrLbl:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.actIndicator startAnimating];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -64,6 +75,22 @@
 - (void)dealloc {
     [webView release];
     [recapURLStr release];
+    [loadingView release];
+    [actIndicator release];
+    [loadingErrLbl release];
     [super dealloc];
 }
+
+#pragma mark - WebView Delegate methods
+- (void) webViewDidFinishLoad:(UIWebView *)webView
+{
+    [self.actIndicator stopAnimating];
+    [self.loadingView setHidden: YES];
+}
+
+- (void) webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [self.loadingErrLbl setText: @"Error occurred"];
+}
+
 @end
