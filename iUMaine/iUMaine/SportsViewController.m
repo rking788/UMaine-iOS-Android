@@ -383,11 +383,10 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         
         [teamsLbl setText: teamStr];
         
-        // For todays game the time should probably be the result
-        if(SE.resultStr)
-            [timeLbl setText: SE.resultStr];
-        else
-            [timeLbl setText: @""];
+        NSDateFormatter *format = [[NSDateFormatter alloc] init];
+        [format setDateFormat:@"MMM d h:mm a"];
+        
+        [timeLbl setText: [format stringFromDate: SE.date]];
         
         // Need to do this because arrows will show up if the cell is reused
         [cell setAccessoryType: UITableViewCellAccessoryNone];
