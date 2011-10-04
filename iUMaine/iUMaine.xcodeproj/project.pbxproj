@@ -7,12 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961491041437E7EC0010FFE1 /* ScheduleTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 961491031437E7EC0010FFE1 /* ScheduleTabView.m */; };
+		9614910E1437FF7D0010FFE1 /* friTabAct.png in Resources */ = {isa = PBXBuildFile; fileRef = 961491081437FF7D0010FFE1 /* friTabAct.png */; };
+		961491101437FF7D0010FFE1 /* thuTabAct.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614910A1437FF7D0010FFE1 /* thuTabAct.png */; };
+		961491111437FF7D0010FFE1 /* tueTabAct.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614910B1437FF7D0010FFE1 /* tueTabAct.png */; };
+		961491121437FF7D0010FFE1 /* wedTabAct.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614910C1437FF7D0010FFE1 /* wedTabAct.png */; };
+		961491131437FF7D0010FFE1 /* weekTabAct.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614910D1437FF7D0010FFE1 /* weekTabAct.png */; };
+		96149119143803A70010FFE1 /* backgroundGradient.png in Resources */ = {isa = PBXBuildFile; fileRef = 96149118143803A70010FFE1 /* backgroundGradient.png */; };
+		9614911B143804EF0010FFE1 /* monTabAct.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614911A143804EF0010FFE1 /* monTabAct.png */; };
+		9614912314380A8C0010FFE1 /* friTabInact.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614911D14380A8C0010FFE1 /* friTabInact.png */; };
+		9614912414380A8C0010FFE1 /* monTabInact.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614911E14380A8C0010FFE1 /* monTabInact.png */; };
+		9614912514380A8C0010FFE1 /* thuTabInact.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614911F14380A8C0010FFE1 /* thuTabInact.png */; };
+		9614912614380A8C0010FFE1 /* tueTabInact.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614912014380A8C0010FFE1 /* tueTabInact.png */; };
+		9614912714380A8C0010FFE1 /* wedTabInact.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614912114380A8C0010FFE1 /* wedTabInact.png */; };
+		9614912814380A8C0010FFE1 /* weekTabInact.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614912214380A8C0010FFE1 /* weekTabInact.png */; };
+		9614912E1438133E0010FFE1 /* backgroundGradient@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614912D1438133E0010FFE1 /* backgroundGradient@2x.png */; };
+		96149130143813AF0010FFE1 /* friTabAct@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614912F143813AF0010FFE1 /* friTabAct@2x.png */; };
+		96149132143813CB0010FFE1 /* friTabInact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96149131143813CB0010FFE1 /* friTabInact@2x.png */; };
+		96149134143813D30010FFE1 /* monTabAct@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96149133143813D30010FFE1 /* monTabAct@2x.png */; };
+		96149136143813DB0010FFE1 /* monTabInact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96149135143813DB0010FFE1 /* monTabInact@2x.png */; };
+		961491391438140E0010FFE1 /* thuTabAct@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961491371438140E0010FFE1 /* thuTabAct@2x.png */; };
+		9614913A1438140E0010FFE1 /* thuTabInact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961491381438140E0010FFE1 /* thuTabInact@2x.png */; };
+		9614913D143814190010FFE1 /* tueTabAct@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614913B143814190010FFE1 /* tueTabAct@2x.png */; };
+		9614913E143814190010FFE1 /* tueTabInact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614913C143814190010FFE1 /* tueTabInact@2x.png */; };
+		96149141143814230010FFE1 /* wedTabAct@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614913F143814230010FFE1 /* wedTabAct@2x.png */; };
+		96149142143814230010FFE1 /* wedTabInact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96149140143814230010FFE1 /* wedTabInact@2x.png */; };
+		961491451438142F0010FFE1 /* weekTabAct@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961491431438142F0010FFE1 /* weekTabAct@2x.png */; };
+		961491461438142F0010FFE1 /* weekTabInact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961491441438142F0010FFE1 /* weekTabInact@2x.png */; };
+		961EE1CF1438FDDF00644449 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 961EE1CE1438FDDF00644449 /* Course.m */; };
+		961EE1D31438FDDF00644449 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 961EE1D21438FDDF00644449 /* Schedule.m */; };
+		961EE1D91439030100644449 /* CustomScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961EE1D81439030100644449 /* CustomScheduleCell.xib */; };
 		962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */; };
 		96301AC5142AF33B0012000C /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96301AC4142AF33B0012000C /* iUMaine.sqlite */; };
 		964A2B3E1433E39800F53F8A /* CustomSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */; };
 		964A2B411433E4CB00F53F8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964A2B401433E4CB00F53F8A /* QuartzCore.framework */; };
 		96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96950E41141D9D0E0059CFED /* EventRecapViewController.m */; };
 		96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96950E42141D9D0E0059CFED /* EventRecapView.xib */; };
+		9697EF40143912F000EC190A /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3E143912F000EC190A /* AddCourseViewController.m */; };
+		9697EF41143912F000EC190A /* AddCourseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9697EF3F143912F000EC190A /* AddCourseView.xib */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
 		96CD3516140DE79300C8C45C /* SportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD3515140DE79300C8C45C /* SportEvent.m */; };
 		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
@@ -76,6 +108,39 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		961491021437E7EC0010FFE1 /* ScheduleTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTabView.h; sourceTree = "<group>"; };
+		961491031437E7EC0010FFE1 /* ScheduleTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTabView.m; sourceTree = "<group>"; };
+		961491081437FF7D0010FFE1 /* friTabAct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friTabAct.png; sourceTree = "<group>"; };
+		9614910A1437FF7D0010FFE1 /* thuTabAct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thuTabAct.png; sourceTree = "<group>"; };
+		9614910B1437FF7D0010FFE1 /* tueTabAct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tueTabAct.png; sourceTree = "<group>"; };
+		9614910C1437FF7D0010FFE1 /* wedTabAct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wedTabAct.png; sourceTree = "<group>"; };
+		9614910D1437FF7D0010FFE1 /* weekTabAct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weekTabAct.png; sourceTree = "<group>"; };
+		96149118143803A70010FFE1 /* backgroundGradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundGradient.png; sourceTree = "<group>"; };
+		9614911A143804EF0010FFE1 /* monTabAct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monTabAct.png; sourceTree = "<group>"; };
+		9614911D14380A8C0010FFE1 /* friTabInact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friTabInact.png; sourceTree = "<group>"; };
+		9614911E14380A8C0010FFE1 /* monTabInact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monTabInact.png; sourceTree = "<group>"; };
+		9614911F14380A8C0010FFE1 /* thuTabInact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thuTabInact.png; sourceTree = "<group>"; };
+		9614912014380A8C0010FFE1 /* tueTabInact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tueTabInact.png; sourceTree = "<group>"; };
+		9614912114380A8C0010FFE1 /* wedTabInact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wedTabInact.png; sourceTree = "<group>"; };
+		9614912214380A8C0010FFE1 /* weekTabInact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weekTabInact.png; sourceTree = "<group>"; };
+		9614912D1438133E0010FFE1 /* backgroundGradient@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundGradient@2x.png"; sourceTree = "<group>"; };
+		9614912F143813AF0010FFE1 /* friTabAct@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friTabAct@2x.png"; sourceTree = "<group>"; };
+		96149131143813CB0010FFE1 /* friTabInact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friTabInact@2x.png"; sourceTree = "<group>"; };
+		96149133143813D30010FFE1 /* monTabAct@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monTabAct@2x.png"; sourceTree = "<group>"; };
+		96149135143813DB0010FFE1 /* monTabInact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monTabInact@2x.png"; sourceTree = "<group>"; };
+		961491371438140E0010FFE1 /* thuTabAct@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thuTabAct@2x.png"; sourceTree = "<group>"; };
+		961491381438140E0010FFE1 /* thuTabInact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thuTabInact@2x.png"; sourceTree = "<group>"; };
+		9614913B143814190010FFE1 /* tueTabAct@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tueTabAct@2x.png"; sourceTree = "<group>"; };
+		9614913C143814190010FFE1 /* tueTabInact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tueTabInact@2x.png"; sourceTree = "<group>"; };
+		9614913F143814230010FFE1 /* wedTabAct@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wedTabAct@2x.png"; sourceTree = "<group>"; };
+		96149140143814230010FFE1 /* wedTabInact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wedTabInact@2x.png"; sourceTree = "<group>"; };
+		961491431438142F0010FFE1 /* weekTabAct@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weekTabAct@2x.png"; sourceTree = "<group>"; };
+		961491441438142F0010FFE1 /* weekTabInact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weekTabInact@2x.png"; sourceTree = "<group>"; };
+		961EE1CD1438FDDF00644449 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Course.h; path = ../Course.h; sourceTree = "<group>"; };
+		961EE1CE1438FDDF00644449 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Course.m; path = ../Course.m; sourceTree = "<group>"; };
+		961EE1D11438FDDF00644449 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Schedule.h; path = ../Schedule.h; sourceTree = "<group>"; };
+		961EE1D21438FDDF00644449 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Schedule.m; path = ../Schedule.m; sourceTree = "<group>"; };
+		961EE1D81439030100644449 /* CustomScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomScheduleCell.xib; path = ../CustomScheduleCell.xib; sourceTree = "<group>"; };
 		962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cornell-big-red-logo.gif"; sourceTree = "<group>"; };
 		96301AC4142AF33B0012000C /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSectionHeader.h; sourceTree = "<group>"; };
@@ -84,6 +149,9 @@
 		96950E40141D9D0E0059CFED /* EventRecapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRecapViewController.h; sourceTree = "<group>"; };
 		96950E41141D9D0E0059CFED /* EventRecapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRecapViewController.m; sourceTree = "<group>"; };
 		96950E42141D9D0E0059CFED /* EventRecapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventRecapView.xib; sourceTree = "<group>"; };
+		9697EF3D143912F000EC190A /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		9697EF3E143912F000EC190A /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
+		9697EF3F143912F000EC190A /* AddCourseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCourseView.xib; sourceTree = "<group>"; };
 		96C8AB9D13E1E98400656998 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		96CD3514140DE79300C8C45C /* SportEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportEvent.h; sourceTree = "<group>"; };
@@ -182,6 +250,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9614911C14380A590010FFE1 /* Schedule Tab Images */ = {
+			isa = PBXGroup;
+			children = (
+				961491431438142F0010FFE1 /* weekTabAct@2x.png */,
+				961491441438142F0010FFE1 /* weekTabInact@2x.png */,
+				9614913F143814230010FFE1 /* wedTabAct@2x.png */,
+				96149140143814230010FFE1 /* wedTabInact@2x.png */,
+				9614913B143814190010FFE1 /* tueTabAct@2x.png */,
+				9614913C143814190010FFE1 /* tueTabInact@2x.png */,
+				961491371438140E0010FFE1 /* thuTabAct@2x.png */,
+				961491381438140E0010FFE1 /* thuTabInact@2x.png */,
+				96149135143813DB0010FFE1 /* monTabInact@2x.png */,
+				96149133143813D30010FFE1 /* monTabAct@2x.png */,
+				96149131143813CB0010FFE1 /* friTabInact@2x.png */,
+				9614912F143813AF0010FFE1 /* friTabAct@2x.png */,
+				9614912D1438133E0010FFE1 /* backgroundGradient@2x.png */,
+				9614911D14380A8C0010FFE1 /* friTabInact.png */,
+				9614911E14380A8C0010FFE1 /* monTabInact.png */,
+				9614911F14380A8C0010FFE1 /* thuTabInact.png */,
+				9614912014380A8C0010FFE1 /* tueTabInact.png */,
+				9614912114380A8C0010FFE1 /* wedTabInact.png */,
+				9614912214380A8C0010FFE1 /* weekTabInact.png */,
+				9614911A143804EF0010FFE1 /* monTabAct.png */,
+				96149118143803A70010FFE1 /* backgroundGradient.png */,
+				961491081437FF7D0010FFE1 /* friTabAct.png */,
+				9614910A1437FF7D0010FFE1 /* thuTabAct.png */,
+				9614910B1437FF7D0010FFE1 /* tueTabAct.png */,
+				9614910C1437FF7D0010FFE1 /* wedTabAct.png */,
+				9614910D1437FF7D0010FFE1 /* weekTabAct.png */,
+			);
+			name = "Schedule Tab Images";
+			sourceTree = "<group>";
+		};
+		961EE1D41438FE5C00644449 /* Managed Object Classes */ = {
+			isa = PBXGroup;
+			children = (
+				96C8AB9D13E1E98400656998 /* Employee.h */,
+				96C8AB9E13E1E98400656998 /* Employee.m */,
+				961EE1D11438FDDF00644449 /* Schedule.h */,
+				961EE1D21438FDDF00644449 /* Schedule.m */,
+				961EE1CD1438FDDF00644449 /* Course.h */,
+				961EE1CE1438FDDF00644449 /* Course.m */,
+				96CD3514140DE79300C8C45C /* SportEvent.h */,
+				96CD3515140DE79300C8C45C /* SportEvent.m */,
+			);
+			name = "Managed Object Classes";
+			sourceTree = "<group>";
+		};
 		96FB509613F788500069836C /* TBXML */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +352,10 @@
 				AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */,
 				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
 				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
+				9697EF3D143912F000EC190A /* AddCourseViewController.h */,
+				9697EF3E143912F000EC190A /* AddCourseViewController.m */,
+				961491021437E7EC0010FFE1 /* ScheduleTabView.h */,
+				961491031437E7EC0010FFE1 /* ScheduleTabView.m */,
 				AE815877135BE491008E9B84 /* MapViewController.h */,
 				AE815878135BE497008E9B84 /* MapViewController.m */,
 				AE815844135BD930008E9B84 /* SportsViewController.h */,
@@ -248,18 +368,16 @@
 				AEEA62A413679F2D00E3A470 /* BuildingSelectView.m */,
 				AEB1718B135BF09700DF742A /* POIAnnotation.h */,
 				AEB17181135BEED200DF742A /* POIAnnotation.m */,
-				96C8AB9D13E1E98400656998 /* Employee.h */,
-				96C8AB9E13E1E98400656998 /* Employee.m */,
-				96CD3514140DE79300C8C45C /* SportEvent.h */,
-				96CD3515140DE79300C8C45C /* SportEvent.m */,
 				96950E40141D9D0E0059CFED /* EventRecapViewController.h */,
 				96950E41141D9D0E0059CFED /* EventRecapViewController.m */,
 				964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */,
 				964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */,
 				AE81583E135BD930008E9B84 /* MainWindow.xib */,
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
+				9697EF3F143912F000EC190A /* AddCourseView.xib */,
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
 				96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */,
+				961EE1D81439030100644449 /* CustomScheduleCell.xib */,
 				AE815867135BE0D2008E9B84 /* MapView.xib */,
 				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
 				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
@@ -268,6 +386,8 @@
 				96E9244113F61BF800A48C68 /* blackbearsports.png */,
 				96E9244013F61BF800A48C68 /* blackbearsports-clear.png */,
 				962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */,
+				961EE1D41438FE5C00644449 /* Managed Object Classes */,
+				9614911C14380A590010FFE1 /* Schedule Tab Images */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
 			);
 			path = iUMaine;
@@ -414,6 +534,34 @@
 				962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */,
 				96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */,
 				96301AC5142AF33B0012000C /* iUMaine.sqlite in Resources */,
+				9614910E1437FF7D0010FFE1 /* friTabAct.png in Resources */,
+				961491101437FF7D0010FFE1 /* thuTabAct.png in Resources */,
+				961491111437FF7D0010FFE1 /* tueTabAct.png in Resources */,
+				961491121437FF7D0010FFE1 /* wedTabAct.png in Resources */,
+				961491131437FF7D0010FFE1 /* weekTabAct.png in Resources */,
+				96149119143803A70010FFE1 /* backgroundGradient.png in Resources */,
+				9614911B143804EF0010FFE1 /* monTabAct.png in Resources */,
+				9614912314380A8C0010FFE1 /* friTabInact.png in Resources */,
+				9614912414380A8C0010FFE1 /* monTabInact.png in Resources */,
+				9614912514380A8C0010FFE1 /* thuTabInact.png in Resources */,
+				9614912614380A8C0010FFE1 /* tueTabInact.png in Resources */,
+				9614912714380A8C0010FFE1 /* wedTabInact.png in Resources */,
+				9614912814380A8C0010FFE1 /* weekTabInact.png in Resources */,
+				9614912E1438133E0010FFE1 /* backgroundGradient@2x.png in Resources */,
+				96149130143813AF0010FFE1 /* friTabAct@2x.png in Resources */,
+				96149132143813CB0010FFE1 /* friTabInact@2x.png in Resources */,
+				96149134143813D30010FFE1 /* monTabAct@2x.png in Resources */,
+				96149136143813DB0010FFE1 /* monTabInact@2x.png in Resources */,
+				961491391438140E0010FFE1 /* thuTabAct@2x.png in Resources */,
+				9614913A1438140E0010FFE1 /* thuTabInact@2x.png in Resources */,
+				9614913D143814190010FFE1 /* tueTabAct@2x.png in Resources */,
+				9614913E143814190010FFE1 /* tueTabInact@2x.png in Resources */,
+				96149141143814230010FFE1 /* wedTabAct@2x.png in Resources */,
+				96149142143814230010FFE1 /* wedTabInact@2x.png in Resources */,
+				961491451438142F0010FFE1 /* weekTabAct@2x.png in Resources */,
+				961491461438142F0010FFE1 /* weekTabInact@2x.png in Resources */,
+				961EE1D91439030100644449 /* CustomScheduleCell.xib in Resources */,
+				9697EF41143912F000EC190A /* AddCourseView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +588,10 @@
 				96CD3516140DE79300C8C45C /* SportEvent.m in Sources */,
 				96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */,
 				964A2B3E1433E39800F53F8A /* CustomSectionHeader.m in Sources */,
+				961491041437E7EC0010FFE1 /* ScheduleTabView.m in Sources */,
+				961EE1CF1438FDDF00644449 /* Course.m in Sources */,
+				961EE1D31438FDDF00644449 /* Schedule.m in Sources */,
+				9697EF40143912F000EC190A /* AddCourseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

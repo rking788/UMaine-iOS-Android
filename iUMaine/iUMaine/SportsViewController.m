@@ -42,6 +42,14 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     self.sportsAbbrDict = [[NSDictionary alloc] initWithContentsOfFile: abbrsPath];
     
     self.firstView = YES;
+
+    UIButton* newbtn = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+    newbtn.frame = CGRectMake(0, 0, 100, 40);
+    newbtn.backgroundColor = [UIColor clearColor];
+    
+    [newbtn setTitle: @"New Title2" forState: UIControlStateNormal];
+    self.navigationItem.titleView = newbtn;
+
     
     // Load Sports Events
     [self loadSportsEvents];

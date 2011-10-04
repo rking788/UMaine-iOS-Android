@@ -8,9 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class ScheduleTabView;
 
-@interface ScheduleViewController : UIViewController {
+@interface ScheduleViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
 
+    ScheduleTabView *schedTabView;
+    UITableView *contentTable;
+    UITableViewCell *scheduleCourseCell;
 }
+@property (nonatomic, retain) IBOutlet ScheduleTabView *schedTabView;
+@property (nonatomic, retain) IBOutlet UITableView *contentTable;
+@property (nonatomic, retain) IBOutlet UITableViewCell *scheduleCourseCell;
+
+- (void) addBtnClicked;
+- (void) hideEmptySeparators;
 
 @end
