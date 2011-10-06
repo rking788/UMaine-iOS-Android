@@ -21,5 +21,6 @@
 - (void) initLotsOfType:(NSString*) permitType withFile:(NSString*) filePath;
 - (void) initBuildingsWithFile:(NSString*) filePath;
 - (void) initEmployeesWithFile:(NSString*) filePath;
+- (void) initCoursesForSeason: (NSString*) season andYear: (NSString*) year;
 
 @end

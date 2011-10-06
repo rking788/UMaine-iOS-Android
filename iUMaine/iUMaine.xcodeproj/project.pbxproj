@@ -38,7 +38,6 @@
 		961EE1D31438FDDF00644449 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 961EE1D21438FDDF00644449 /* Schedule.m */; };
 		961EE1D91439030100644449 /* CustomScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961EE1D81439030100644449 /* CustomScheduleCell.xib */; };
 		962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */; };
-		96301AC5142AF33B0012000C /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96301AC4142AF33B0012000C /* iUMaine.sqlite */; };
 		964A2B3E1433E39800F53F8A /* CustomSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */; };
 		964A2B411433E4CB00F53F8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964A2B401433E4CB00F53F8A /* QuartzCore.framework */; };
 		96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96950E41141D9D0E0059CFED /* EventRecapViewController.m */; };
@@ -52,6 +51,8 @@
 		96E9244313F61BF800A48C68 /* blackbearsports.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9244113F61BF800A48C68 /* blackbearsports.png */; };
 		96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */; };
 		96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */; };
+		96F6907F143D3F8000A4E5AB /* dbInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */; };
+		96F69084143D553700A4E5AB /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96F69083143D553700A4E5AB /* iUMaine.sqlite */; };
 		96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96FB508D13F786020069836C /* sportsAbbrsDict.txt */; };
 		96FB509B13F788860069836C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509813F788860069836C /* NSDataAdditions.m */; };
 		96FB509C13F788860069836C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509A13F788860069836C /* TBXML.m */; };
@@ -142,7 +143,6 @@
 		961EE1D21438FDDF00644449 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Schedule.m; path = ../Schedule.m; sourceTree = "<group>"; };
 		961EE1D81439030100644449 /* CustomScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomScheduleCell.xib; path = ../CustomScheduleCell.xib; sourceTree = "<group>"; };
 		962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cornell-big-red-logo.gif"; sourceTree = "<group>"; };
-		96301AC4142AF33B0012000C /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSectionHeader.h; sourceTree = "<group>"; };
 		964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSectionHeader.m; sourceTree = "<group>"; };
 		964A2B401433E4CB00F53F8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -162,6 +162,7 @@
 		96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryDetailViewController.h; sourceTree = "<group>"; };
 		96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryDetailViewController.m; sourceTree = "<group>"; };
 		96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryDetailView.xib; sourceTree = "<group>"; };
+		96F69083143D553700A4E5AB /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		96FB508D13F786020069836C /* sportsAbbrsDict.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sportsAbbrsDict.txt; sourceTree = "<group>"; };
 		96FB509713F788860069836C /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		96FB509813F788860069836C /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
@@ -396,7 +397,7 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96301AC4142AF33B0012000C /* iUMaine.sqlite */,
+				96F69083143D553700A4E5AB /* iUMaine.sqlite */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
@@ -533,7 +534,6 @@
 				96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */,
 				962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */,
 				96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */,
-				96301AC5142AF33B0012000C /* iUMaine.sqlite in Resources */,
 				9614910E1437FF7D0010FFE1 /* friTabAct.png in Resources */,
 				961491101437FF7D0010FFE1 /* thuTabAct.png in Resources */,
 				961491111437FF7D0010FFE1 /* tueTabAct.png in Resources */,
@@ -562,6 +562,7 @@
 				961491461438142F0010FFE1 /* weekTabInact@2x.png in Resources */,
 				961EE1D91439030100644449 /* CustomScheduleCell.xib in Resources */,
 				9697EF41143912F000EC190A /* AddCourseView.xib in Resources */,
+				96F69084143D553700A4E5AB /* iUMaine.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +573,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F6907F143D3F8000A4E5AB /* dbInitializer.m in Sources */,
 				AE81583A135BD930008E9B84 /* main.m in Sources */,
 				AE81583D135BD930008E9B84 /* iUMaineAppDelegate.m in Sources */,
 				AE815843135BD930008E9B84 /* ScheduleViewController.m in Sources */,

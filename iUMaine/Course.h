@@ -25,6 +25,7 @@
 @property (nonatomic, retain) NSDate * endDate;
 @property (nonatomic, retain) NSString * days;
 @property (nonatomic, retain) NSString * times;
+@property (nonatomic, retain) NSString* semester;
 @property (nonatomic, retain) NSManagedObject *schedule;
 
 @end

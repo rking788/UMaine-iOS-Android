@@ -7,7 +7,7 @@
 //
 
 #import "dbInitializer.h"
-
+#import "Course.h"
 
 @implementation DBInitializer
 
@@ -37,6 +37,9 @@
     
     // Init Employees
     [self initEmployeesWithFile: @"/Users/rking/Desktop/staff.csv"];
+    
+    // Init Fall 2011 courses
+    [self initCoursesForSeason: @"fall" andYear: @"2011"];
     
 }
 
@@ -174,6 +177,102 @@
     }
     
     [fileContents release];
+}
+
+- (void) initCoursesForSeason: (NSString*) season andYear: (NSString*) year
+{
+    NSString* semester = [NSString stringWithFormat: @"%@%@", year, season];
+    NSString* filePath = [NSString stringWithFormat: @"/Users/rking/Desktop/%@.csv", semester];
+    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    
+    NSLog(@"Loading courses from file: %@", filePath);
+    
+    NSError* err = nil;
+    NSArray* lines = [fileContents componentsSeparatedByString:@"\n"];
+    NSArray* lineFields = nil;
+    NSEnumerator* enumer = [lines objectEnumerator];
+    NSString* cur = [enumer nextObject];
+    Course* courseObj = nil;
+    
+    // Employee Fields
+    NSString* depart = nil;
+    NSNumber* number = nil;
+    NSString* title = nil;
+    NSNumber* section = nil;
+    NSString* type = nil;
+    NSNumber* idNum = nil;
+    NSString* days = nil;
+    NSString* times = nil;
+    NSString* location = nil;
+    NSString* instructor = nil;
+    NSDate* startDate = nil;
+    NSDate* endDate = nil;
+    
+    NSDateFormatter* df = [[NSDateFormatter alloc] init];
+    [df setDateFormat: @"L/d/yy"];
+    
+    while(cur){
+        if([cur length] != 0){
+            lineFields = [cur componentsSeparatedByString: @";"];
+            courseObj = [NSEntityDescription insertNewObjectForEntityForName: @"Course" inManagedObjectContext: self.managedObjectContext];
+            
+            depart = [[lineFields objectAtIndex: 1] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+            number = [NSNumber numberWithInteger:[[[lineFields objectAtIndex: 2] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue]];
+            title = [[lineFields objectAtIndex: 3] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+            section = [NSNumber numberWithInteger: [[[lineFields objectAtIndex: 4] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue]];
+            type = [[lineFields objectAtIndex: 5] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+            idNum = [NSNumber numberWithInteger:[[[lineFields objectAtIndex: 6] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue]];
+          
+            if([[lineFields objectAtIndex: 7] isEqualToString: @"\"TBA\""]){
+                days = nil;
+                times = nil;
+            }
+            else{
+                NSArray* daysTimes = [[lineFields objectAtIndex: 7] componentsSeparatedByString: @" "];
+            
+                days = [[daysTimes objectAtIndex: 0] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+                NSString* tempTimes = [NSString stringWithFormat: @"%@%@%@", [daysTimes objectAtIndex: 1], [daysTimes objectAtIndex: 2], [daysTimes objectAtIndex: 3]];
+                times = [tempTimes stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+            }
+            location = [[lineFields objectAtIndex: 8] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+            instructor = [[lineFields objectAtIndex: 9] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+            NSArray* startEndArr = [[lineFields objectAtIndex: 10] componentsSeparatedByString: @" - "];
+            
+            if (![[lineFields objectAtIndex: 10] isEqualToString: @"\"TBA\""]){
+                startDate = [df dateFromString: [[startEndArr objectAtIndex: 0] stringByReplacingOccurrencesOfString: @"\"" withString:@""]];
+            
+                endDate = [df dateFromString: [[startEndArr objectAtIndex: 1] stringByReplacingOccurrencesOfString: @"\"" withString: @""]];
+            }
+            else{
+                startDate = nil;
+                endDate = nil;
+            }
+            
+            [courseObj setDepart: depart];
+            [courseObj setNumber: number];
+            [courseObj setTitle: title];
+            [courseObj setSection: section];
+            [courseObj setType: type];
+            [courseObj setIdNum: idNum];
+            [courseObj setDays: days];
+            [courseObj setTimes: times];
+            [courseObj setLocation: location];
+            [courseObj setInstructor: instructor];
+            [courseObj setStartDate: startDate];
+            [courseObj setEndDate: endDate];
+            [courseObj setSemester: semester];
+        }
+        
+        cur = (NSString*)[enumer nextObject];
+    }
+    
+    if(![self.managedObjectContext save:&err]){
+        // Handle the error here
+        NSLog(@"Failed to save the course objects to managedObjectContext during initialization");
+    }
+    
+    [fileContents release];
+    [df release];
 }
 
 @end

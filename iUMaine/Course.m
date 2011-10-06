@@ -22,6 +22,7 @@
 @dynamic endDate;
 @dynamic days;
 @dynamic times;
+@dynamic semester;
 @dynamic schedule;
 
 @end
