@@ -331,6 +331,8 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     [request release];
     [dateformatter release];
     [pool release];
+    
+    [self checkForNewSemesters];
 }
 
 - (void) updateOrAddEvent:(SportEvent *)newE
@@ -390,5 +392,79 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     [fetchrequest release];
 }
 
+- (void) checkForNewSemesters
+{
+    NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+ 
+    NSArray* localSemesters = [[self getLocalSemesters] retain];
+    NSMutableArray* newSemesters = [[NSMutableArray alloc] init];
+    
+    NSURLResponse* resp = nil;
+    NSError* err = nil;
+    
+    // Add the event information into the POST request content
+    NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
+    NSString* content = [NSString stringWithFormat: @"op=%@", @"getsemesters"];
+    
+    NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody: [content dataUsingEncoding: NSUTF8StringEncoding]];
+    
+    NSData* ret = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
+    NSString* retStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
+    
+    // Check if there were any new events or not
+    if(![retStr isEqualToString: @""]){
+        // Get an array of the new events
+        NSArray* semArr = [retStr componentsSeparatedByString: @"\n"];
+        
+        for(NSString* sem in semArr){
+            if(![localSemesters containsObject: sem]){
+                [self fetchSemesterCourses: sem];
+            }
+        }
+    }
+    
+    [retStr release];
+    [request release];
+    [newSemesters release];
+    [localSemesters release];
+    [pool release];
+}
+
+- (NSArray*) getLocalSemesters
+{
+    NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"AvailableCourses" inManagedObjectContext: self.managedObjectContext];
+    [fetchrequest setEntity:entity];
+    
+    NSDictionary* entityProps = [entity propertiesByName];
+    NSArray* propArr = [[NSArray alloc] initWithObjects: [entityProps objectForKey: @"semesterStr"], nil];
+    [fetchrequest setPropertiesToFetch: propArr];
+    
+    NSError *error = nil;
+    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
+    if (array != nil) {
+        
+        for(NSManagedObject* obj in array){
+        }
+        
+    }
+    else {
+        // Deal with error.
+        NSLog(@"Error fetching the list of local semesters");
+    }
+    
+    [propArr release];
+    [fetchrequest release];
+    
+    return array;
+}
+
+- (void) fetchSemesterCourses:(NSString *)semStr
+{
+    NSLog(@"Getting courses for semester: %@", semStr);
+}
 
 @end

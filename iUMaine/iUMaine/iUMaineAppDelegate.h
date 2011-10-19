@@ -46,4 +46,8 @@
 - (void) checkSportsUpdates;
 - (void) updateOrAddEvent:(SportEvent *)newE;
 
+- (void) checkForNewSemesters;
+- (NSArray*) getLocalSemesters;
+- (void) fetchSemesterCourses: (NSString*) semStr;
+
 @end

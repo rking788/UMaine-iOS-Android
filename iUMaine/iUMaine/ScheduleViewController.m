@@ -99,6 +99,11 @@
     return 1;
 }
 
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ScheduleCourseCell";
@@ -119,14 +124,14 @@
     [titleLbl setText: @"Methods and Materials in Art Education "];
     
     // Configure the cell...
-  //  UILabel* lbl = [cell textLabel];
-  //  UILabel* lbl2 = [cell detailTextLabel];
+    //  UILabel* lbl = [cell textLabel];
+    //  UILabel* lbl2 = [cell detailTextLabel];
     
-   // [lbl setText: @"Course Name"];
-   // [lbl setTextColor: [UIColor colorWithRed:(66.0/255.0) green:(41.0/255.0) blue:(3.0/255) alpha:1.0]];
-   // UIFont* textFont = [UIFont fontWithName: @"Baskerville" size: 17.0];
-   // [lbl setFont: textFont];
-   // [lbl2 setText: @"12:00 PM"];
+    // [lbl setText: @"Course Name"];
+    // [lbl setTextColor: [UIColor colorWithRed:(66.0/255.0) green:(41.0/255.0) blue:(3.0/255) alpha:1.0]];
+    // UIFont* textFont = [UIFont fontWithName: @"Baskerville" size: 17.0];
+    // [lbl setFont: textFont];
+    // [lbl2 setText: @"12:00 PM"];
     
     return cell;
 

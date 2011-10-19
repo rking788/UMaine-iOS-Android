@@ -8,11 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddCourseViewController : UIViewController {
+@interface AddCourseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     UINavigationBar *navBar;
+    UITableView *tableV;
+    
+    NSArray* lblStrs;
+    NSMutableArray* detLblStrs;
 }
 
 @property (nonatomic, retain) IBOutlet UINavigationBar *navBar;
+@property (nonatomic, retain) IBOutlet UITableView *tableV;
+
+@property (nonatomic, retain) NSArray* lblStrs;
+@property (nonatomic, retain) NSMutableArray* detLblStrs;
 
 - (void) cancel;
 
