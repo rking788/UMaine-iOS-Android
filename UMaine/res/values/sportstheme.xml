@@ -13,7 +13,7 @@
 
      <!-- Set the theme for the window title -->
      <!-- NOTE: setting android:textAppearence to style defined above -->
-     <style name="CustomWindowTitle" parent="android:WindowTitle">
+     <style name="CustomWindowTitle" parent="android:TextAppearance.WindowTitle">
           <item name="android:textAppearance">@style/CustomWindowTitleText</item>
           <item name="android:shadowDx">5</item>
           <item name="android:shadowDy">0</item>

@@ -23,7 +23,7 @@ fcontents = fread.read()
 departments = fcontents.split('\n')
 
 
-print "department,courseNum,courseTitle,sectionNum,courseType,callNum,meetingTime,meetingLocation,instructor,startEndDate"
+print("department,courseNum,courseTitle,sectionNum,courseType,callNum,meetingTime,meetingLocation,instructor,startEndDate")
 #ANT,245,"Sex and Gender in Cross",0001,LEC,7261,TuTh 11:00AM - 12:15PM,Murray Hall 106,Lisa K Neuman,8/29/2011 - 12/9/2011
 
 br = mechanize.Browser()
@@ -72,7 +72,7 @@ html = r.read();
 
 # Select the Institution
 br.select_form(name="win1")
-br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$50$").value = ["UMS05"]
+br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$51$").value = ["UMS05"]
 br.submit()
 html = br.response().read()
 
@@ -80,8 +80,10 @@ br.select_form(name="win1")
 # 1120: Spring 2011 
 # 1210: Fall 2011 
 # 1130: Summer 2011
-br.find_control(id="CLASS_SRCH_WRK2_STRM$53$").value = ["1210"]
+# 1220: Spring 2012
+br.find_control(id="CLASS_SRCH_WRK2_STRM$54$").value = ["1220"]
 br.submit()
+html = br.response().read()
 html = br.response().read()
 
 
@@ -111,8 +113,9 @@ for dept in departments:
 		html = r.read()
 		assert br.viewing_html()
 		br.select_form(name="win1")
-		br.find_control("CLASS_SRCH_WRK2_SUBJECT$71$").value = dept
-        	br.find_control("CLASS_SRCH_WRK2_ACAD_CAREER").value = [career]  # UGRD or GRAD
+		br.find_control("CLASS_SRCH_WRK2_SUBJECT$72$").value = dept
+		br.find_control("CLASS_SRCH_WRK2_ACAD_CAREER").value = [career]
+		# UGRD or GRAD
 		#NOTE: MaineStree requires at least two search constraints 
 
         	#br.find_control("CLASS_SRCH_WRK2_SSR_OPEN_ONLY").value =["N"]
@@ -129,27 +132,27 @@ for dept in departments:
 		assert br.viewing_html()
 		#print html
 
-                if html.find('Your search will return over 50 classes') >= 0 :
-                        br.select_form(name="win1")
-                        post_url, post_data, headers =  br.form.click_request_data()
-                        post_data = post_data.replace('ICAction=None', 'ICAction=%23ICSave')
+		if html.find('Your search will return over 50 classes') >= 0 :
+			br.select_form(name="win1")
+			post_url, post_data, headers =  br.form.click_request_data()
+			post_data = post_data.replace('ICAction=None', 'ICAction=%23ICSave')
                         #post_data = 'ICType=Panel&ICElementNum=1&ICStateNum=6&ICAction=%23ICSave&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
                         #print post_data
-                        r = br.open(post_url, post_data, timeout=100000)
-                        html = r.read()
-			larger_50  = 1
+			r = br.open(post_url, post_data, timeout=100000)
+			html = r.read()
+			larger_50 = 1
 		else:
 			larger_50  = 0 
 
-        	html = html.replace('&#039;', '\'')
+		html = html.replace('&#039;', '\'')
 
 		soup = Soup(html)
 		t1 = soup.find('table', attrs={'id':"$ICField59$scroll$0", 'class':"PABACKGROUNDINVISIBLEWBO"})
 		#t2 = t1.find('table', attrs={'class': "PABACKGROUNDINVISIBLE", 'style': "border-style: none;"})
 		if not t1:
-	        	post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=4&ICAction=CLASS_SRCH_WRK2_SSR_PB_CLOSE&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
-        		r = br.open(post_url, post_data, timeout=100000)
-        		html = r.read()
+			post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=4&ICAction=CLASS_SRCH_WRK2_SSR_PB_CLOSE&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
+			r = br.open(post_url, post_data, timeout=100000)
+			html = r.read()
 			continue
 
 		t2 = t1.find('table', attrs={'class': "PABACKGROUNDINVISIBLE"})
@@ -195,12 +198,12 @@ for dept in departments:
 					except:
 						str = str + ","
 
-				print courseTitle +  str
+				print(courseTitle + str)
 
 		# Return and select a different department
 		#print html
 		br.select_form(name="win1")
-       		post_url, post_data, headers = br.form.click_request_data()
+		post_url, post_data, headers = br.form.click_request_data()
 		post_data = post_data.replace('ICAction=None', 'ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2455%24')
 		#print post_data	
 
