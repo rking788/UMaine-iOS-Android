@@ -213,6 +213,10 @@
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
                                                initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                target:self action:@selector(cancelClicked:)] autorelease];
+    [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (3.0/255.0) 
+                                                                           green: (32.0/255.0) 
+                                                                            blue: (62.0/255.0) 
+                                                                           alpha:1.0]];
    
     searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
     [self setSearching: NO];

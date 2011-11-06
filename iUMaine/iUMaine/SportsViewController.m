@@ -50,6 +50,10 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [newbtn setTitle: @"New Title2" forState: UIControlStateNormal];
     self.navigationItem.titleView = newbtn;
 
+    [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (3.0/255.0) 
+                                                                    green: (32.0/255.0) 
+                                                                    blue: (62.0/255.0) 
+                                                                    alpha:1.0]];
     
     // Load Sports Events
     [self loadSportsEvents];

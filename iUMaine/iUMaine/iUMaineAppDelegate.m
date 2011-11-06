@@ -9,6 +9,8 @@
 #import "iUMaineAppDelegate.h"
 #import "MapViewController.h"
 #import "SportEvent.h"
+#import "Course.h"
+#import "AvailableCourses.h"
 #import "TBXML.h"
 
 // Only import this file when we need to initialize the sqlite file 
@@ -211,12 +213,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
-    NSError* err;
-    if(managedObjectContext != nil){
-        if([managedObjectContext hasChanges] && ![managedObjectContext save:&err]){
-            // Handle the error in here 
-        }
-    }
+ //   [self saveContext];
 }
 
 - (void)dealloc
@@ -242,6 +239,16 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
 {
 }
 */
+
+- (void) saveContext
+{
+    NSError* err;
+    if(managedObjectContext != nil){
+        if([managedObjectContext hasChanges] && ![managedObjectContext save:&err]){
+            // Handle the error in here 
+        }
+    }   
+}
 
 #pragma mark - Sports related methods
 - (void) checkSportsUpdates
@@ -395,7 +402,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
 - (void) checkForNewSemesters
 {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
- 
+    
     NSArray* localSemesters = [[self getLocalSemesters] retain];
     NSMutableArray* newSemesters = [[NSMutableArray alloc] init];
     
@@ -412,11 +419,14 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     [request setHTTPBody: [content dataUsingEncoding: NSUTF8StringEncoding]];
     
     NSData* ret = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
-    NSString* retStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
+    NSString* tempRetStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
     
-    // Check if there were any new events or not
+    NSCharacterSet* charSet = [NSCharacterSet characterSetWithCharactersInString:@"\n"];
+    NSString* retStr = [tempRetStr stringByTrimmingCharactersInSet: charSet];
+    [tempRetStr release];
+    
     if(![retStr isEqualToString: @""]){
-        // Get an array of the new events
+        // Get an array of the semesters stored on the server
         NSArray* semArr = [retStr componentsSeparatedByString: @"\n"];
         
         for(NSString* sem in semArr){
@@ -426,11 +436,10 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
         }
     }
     
-    [retStr release];
     [request release];
     [newSemesters release];
     [localSemesters release];
-    [pool release];
+ //   [pool release];
 }
 
 - (NSArray*) getLocalSemesters
@@ -455,16 +464,123 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
         // Deal with error.
         NSLog(@"Error fetching the list of local semesters");
     }
-    
+
     [propArr release];
     [fetchrequest release];
     
-    return array;
+    return [array valueForKey: @"semesterStr"];
 }
 
 - (void) fetchSemesterCourses:(NSString *)semStr
 {
-    NSLog(@"Getting courses for semester: %@", semStr);
+    
+    AvailableCourses* ac = [NSEntityDescription insertNewObjectForEntityForName: @"AvailableCourses" 
+                                                inManagedObjectContext: self.managedObjectContext];
+    
+    [ac setSemesterStr: semStr];
+    
+    NSURLResponse* resp = nil;
+    NSError* err = nil;
+    
+    // Add the event information into the POST request content
+    NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
+    NSString* content = [NSString stringWithFormat: @"op=%@&sem=%@", @"getallforsemester", semStr];
+    
+    NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
+    
+    [request setHTTPMethod:@"POST"];
+    [request setHTTPBody: [content dataUsingEncoding: NSUTF8StringEncoding]];
+    
+    NSData* ret = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
+    NSString* retStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
+    NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat: @"M/d/YY"];
+    
+    // Check if there were any new events or not
+    if(![retStr isEqualToString: @""]){
+        // Get an array of the new events
+        NSArray* courseLines = [retStr componentsSeparatedByString: @"\n"];
+        
+        for(NSString* line in courseLines){
+            if([line isEqualToString: @""])
+                continue;
+            
+            Course* tempC = [NSEntityDescription insertNewObjectForEntityForName: @"Course" inManagedObjectContext: self.managedObjectContext];
+            
+            /* Create the relationship between the newly created availablecourses and this new course object */
+            tempC.semesteravailable = ac;
+            
+            NSArray* elements = [line componentsSeparatedByString: @";"];
+
+            /* Semester (not sure we need this since we have the above relationship "semesteravailable") */
+            tempC.semester = semStr;
+            /* Department */
+            tempC.depart = [elements objectAtIndex: 0];
+            /* Course Number */
+            tempC.number = [NSNumber numberWithInteger: [[elements objectAtIndex: 1] integerValue]];
+            /* Course Title */
+            tempC.title = [elements objectAtIndex: 2];
+            /* Section Number */
+            tempC.section = [NSNumber numberWithInteger: [[elements objectAtIndex: 3] integerValue]];
+            /* Course Type */
+            tempC.type = [elements objectAtIndex: 4];
+            /* Call Number */
+            tempC.idNum = [NSNumber numberWithInteger: [[elements objectAtIndex: 5] integerValue]];
+            /* Days */
+            tempC.days = [elements objectAtIndex: 6];
+            /* Times */
+            if([tempC.days isEqualToString: @"TBA"])
+                tempC.times = @"TBA";
+            else
+                tempC.times = [elements objectAtIndex: 7];
+            /* Meeting location */
+            tempC.location = [elements objectAtIndex: 8];
+            /* Instructor */
+            tempC.instructor = [elements objectAtIndex: 9];
+            if([tempC.instructor isEqualToString: @""])
+                tempC.instructor = @"N/A";
+            /* Start Date */
+            tempC.startDate = [dateFormatter dateFromString: [elements objectAtIndex: 10]];
+            /* End Date */
+            tempC.endDate = [dateFormatter dateFromString: [elements objectAtIndex: 11]];
+        }
+    }
+    
+    [retStr release];
+    [request release];
+    
+    /* This should be changed so that it inserts new courses from the server,
+     not gets it from the persistent store, it should also create a new 
+     available semester and assign that to its semester available property */
+#if 0    
+    NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext: self.managedObjectContext];
+    [fetchrequest setEntity:entity];
+    
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"(semester == %@)",
+                              semStr];
+    
+    [fetchrequest setPredicate:predicate];
+    
+    NSError *error = nil;
+    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
+    
+    if (array != nil) {
+        
+        for(Course* c in array){
+            c.semesteravailable = ac;
+        }
+    }
+    else {
+        // Deal with error.
+        NSLog(@"Error fetching lots");
+    }
+#endif    
+    /* END THE SECTION THAT NEEDS TO BE CHANGED */
+    
+    
+    
+    [self saveContext];
 }
 
 @end

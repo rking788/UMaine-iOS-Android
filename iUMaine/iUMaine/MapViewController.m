@@ -319,20 +319,12 @@
 
 #pragma mark BuildingSelectProtocol implementation
 
-- (void) selectBuildingLocation: (NSString*) buildingName withLatitude:(double)dLatitude withLongitude:(double)dLongitude{
-    
-    if(buildingName)
-        NSLog(@"Selected a building: %@", buildingName);
-    else
-        NSLog(@"Clicked the cancel button");
-    
+- (void) selectBuildingLocation: (NSString*) buildingName withLatitude:(double)dLatitude withLongitude:(double)dLongitude
+{    
     if(!buildingName){
         [self dismissModalViewControllerAnimated: YES];
         return;
     }
-        
-    NSLog(@"Lat: %f", dLatitude);
-    NSLog(@"Long: %f", dLongitude);
     
     if (mapSelBuildingAnnotation) {
         [self.mapView removeAnnotation: mapSelBuildingAnnotation];

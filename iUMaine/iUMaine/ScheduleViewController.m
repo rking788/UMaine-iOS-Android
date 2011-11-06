@@ -123,6 +123,8 @@
     
     [titleLbl setText: @"Methods and Materials in Art Education "];
     
+    [cell setSelectionStyle: UITableViewCellSelectionStyleGray];
+    
     // Configure the cell...
     //  UILabel* lbl = [cell textLabel];
     //  UILabel* lbl2 = [cell detailTextLabel];

@@ -43,6 +43,8 @@
 - (void)loadDefaultDB;
 + (iUMaineAppDelegate*) sharedAppDelegate;
 
+- (void) saveContext;
+
 - (void) checkSportsUpdates;
 - (void) updateOrAddEvent:(SportEvent *)newE;
 

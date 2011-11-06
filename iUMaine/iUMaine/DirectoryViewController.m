@@ -44,6 +44,11 @@
 	if ([self savedSearchTerm]){
         [[[self searchDisplayController] searchBar] setText:[self savedSearchTerm]];
     }
+    
+    [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (3.0/255.0) 
+                                                                           green: (32.0/255.0) 
+                                                                            blue: (62.0/255.0) 
+                                                                           alpha:1.0]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
