@@ -72,5 +72,35 @@ public class UMaine extends Activity {
 				startActivity(viewIntent);
 			}
 		});
+     
+        /* Set up the listener for the Emergency button */
+        Button emergencybtn = (Button) findViewById(R.id.emergencybtn);
+        emergencybtn.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) { 
+				Intent myIntent = new Intent(v.getContext(), Emergency.class);
+				startActivityForResult(myIntent, 0);
+			}
+		});
+        
+        /* Set up the listener for the Emergency button */
+        Button newsbtn = (Button) findViewById(R.id.newsbtn);
+        newsbtn.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) { 
+				Intent myIntent = new Intent(v.getContext(), RSSActivity.class);
+				startActivityForResult(myIntent, 0);
+			}
+		});
+        
+        /* Set up the listener for the Dining button */
+        Button diningbtn = (Button) findViewById(R.id.diningbtn);
+        diningbtn.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				Intent viewIntent = new Intent("android.intent.action.VIEW", Uri.parse("http://www.umaine.edu/dining/menus.htm"));
+				startActivity(viewIntent);
+			}
+		});
     }
 }

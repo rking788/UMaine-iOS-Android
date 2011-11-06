@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/maine_whiteblue"
+  android:orientation="vertical">
+  
+   <!-- Crime: 911 -->
+   <!-- Fire, Ambulance: 911 -->
+   <!-- Dispatcher: 207-581-4040 -->
+   <!-- Parking: 207-581-4047 -->
+   <!-- Crime Prevention: 207-581-4036 -->
+   <!-- Investigator: 207-581-4048 -->
+   <!-- Student Helpline: 207-581-4020 (Night and weekends) -->
+   <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:text="Crime, Fire, Ambulance, Emergency" android:layout_height="wrap_content" android:textColor="#000000"/>
+   <Button android:id="@+id/btn911" android:layout_height="wrap_content" android:text="911" android:layout_width="match_parent"></Button>
+   <TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Dispatcher" android:layout_height="wrap_content" android:textColor="#000000"/>
+   <Button android:id="@+id/btnDispatcher" android:layout_height="wrap_content" android:text="207-581-4040" android:layout_width="match_parent"></Button>   
+   <TextView android:layout_width="wrap_content" android:id="@+id/textView3" android:text="Parking" android:layout_height="wrap_content"  android:textColor="#000000" />
+   <Button android:id="@+id/btnParking" android:layout_height="wrap_content" android:text="207-581-4047" android:layout_width="match_parent"></Button>
+   <TextView android:layout_width="wrap_content" android:id="@+id/textView4" android:text="Crime Prevention" android:layout_height="wrap_content"  android:textColor="#000000"/>
+   <Button android:id="@+id/btnPrevention" android:layout_height="wrap_content" android:text="207-581-4036" android:layout_width="match_parent"></Button>
+   <TextView android:layout_width="wrap_content" android:id="@+id/textView5" android:text="Investigator" android:layout_height="wrap_content"  android:textColor="#000000" />
+   <Button android:id="@+id/btnInvestigator" android:layout_height="wrap_content" android:text="207-581-4048" android:layout_width="match_parent"></Button>
+   <TextView android:layout_width="wrap_content" android:id="@+id/textView6" android:text="Student Helpline(Night and weekends)" android:layout_height="wrap_content"  android:textColor="#000000" />
+   <Button android:id="@+id/btnHelpline" android:layout_height="wrap_content" android:text="207-581-4020" android:layout_width="match_parent"></Button>
+</LinearLayout>
+    
