@@ -2,7 +2,7 @@
 //  Schedule.h
 //  iUMaine
 //
-//  Created by Robert King on 10/2/11.
+//  Created by Robert King on 11/6/11.
 //  Copyright (c) 2011 University of Maine. All rights reserved.
 //
 
@@ -11,11 +11,9 @@
 
 @class Course;
 
-@interface Schedule : NSManagedObject {
-@private
-}
-@property (nonatomic, retain) NSString * season;
-@property (nonatomic, retain) NSNumber * year;
+@interface Schedule : NSManagedObject
+
+@property (nonatomic, retain) NSString * semester;
 @property (nonatomic, retain) NSSet *courses;
 @end
 

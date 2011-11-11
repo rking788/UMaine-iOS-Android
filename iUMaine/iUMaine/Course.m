@@ -2,12 +2,13 @@
 //  Course.m
 //  iUMaine
 //
-//  Created by Robert King on 11/3/11.
+//  Created by Robert King on 11/6/11.
 //  Copyright (c) 2011 University of Maine. All rights reserved.
 //
 
 #import "Course.h"
 #import "AvailableCourses.h"
+#import "Schedule.h"
 
 
 @implementation Course

@@ -2,14 +2,14 @@
 //  Course.h
 //  iUMaine
 //
-//  Created by Robert King on 11/3/11.
+//  Created by Robert King on 11/6/11.
 //  Copyright (c) 2011 University of Maine. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class AvailableCourses;
+@class AvailableCourses, Schedule;
 
 @interface Course : NSManagedObject
 
@@ -27,6 +27,6 @@
 @property (nonatomic, retain) NSNumber * idNum;
 @property (nonatomic, retain) NSString * depart;
 @property (nonatomic, retain) AvailableCourses *semesteravailable;
-@property (nonatomic, retain) NSManagedObject *schedule;
+@property (nonatomic, retain) Schedule *schedule;
 
 @end

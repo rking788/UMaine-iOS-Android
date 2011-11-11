@@ -39,7 +39,7 @@
     [self initEmployeesWithFile: @"/Users/rking/Desktop/staff.csv"];
     
     // Init Fall 2011 courses
-    [self initCoursesForSeason: @"fall" andYear: @"2011"];
+   // [self initCoursesForSeason: @"fall" andYear: @"2011"];
     
 }
 

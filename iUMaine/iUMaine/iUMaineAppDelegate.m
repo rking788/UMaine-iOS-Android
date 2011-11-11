@@ -13,8 +13,12 @@
 #import "AvailableCourses.h"
 #import "TBXML.h"
 
+#define INIT_DB 0
+
 // Only import this file when we need to initialize the sqlite file 
-//#import "dbInitializer.h"
+#if INIT_DB
+#import "dbInitializer.h"
+#endif
 
 @implementation iUMaineAppDelegate
 
@@ -58,10 +62,12 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     mapViewController.managedObjectContext = context;
     
     // Initialize the database file (should be removed after .sqlite file is setup
-    //DBInitializer* dbIniter = [[DBInitializer alloc] init];
-    //dbIniter.managedObjectContext = self.managedObjectContext;
-    //[dbIniter initDatabase];
-    //[dbIniter release];
+#if INIT_DB
+    DBInitializer* dbIniter = [[DBInitializer alloc] init];
+    dbIniter.managedObjectContext = self.managedObjectContext;
+    [dbIniter initDatabase];
+    [dbIniter release];
+#endif
     
     self.defaultPrefs = [NSUserDefaults standardUserDefaults];
     
@@ -439,7 +445,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
     [request release];
     [newSemesters release];
     [localSemesters release];
- //   [pool release];
+    [pool release];
 }
 
 - (NSArray*) getLocalSemesters

@@ -2,7 +2,7 @@
 //  Schedule.m
 //  iUMaine
 //
-//  Created by Robert King on 10/2/11.
+//  Created by Robert King on 11/6/11.
 //  Copyright (c) 2011 University of Maine. All rights reserved.
 //
 
@@ -11,8 +11,8 @@
 
 
 @implementation Schedule
-@dynamic season;
-@dynamic year;
+
+@dynamic semester;
 @dynamic courses;
 
 @end
