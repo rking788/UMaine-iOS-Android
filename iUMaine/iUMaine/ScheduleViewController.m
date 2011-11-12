@@ -153,38 +153,6 @@
     NSMutableArray* retArr = [NSMutableArray arrayWithCapacity: [unsortedCourses count]];
     
     NSEntityDescription* desc = [NSEntityDescription entityForName: @"Course" inManagedObjectContext: [[(iUMaineAppDelegate*)[UIApplication sharedApplication] delegate] managedObjectContext]];
-    Course* newC = [[Course alloc] initWithEntity: desc insertIntoManagedObjectContext: nil];
-    newC.depart = @"AED";
-    newC.number = [NSNumber numberWithInt: 371];
-    newC.title = @"Methods and Materials in Art Education";
-    newC.times = @"2:10PM - 3:25PM";
-    
-    Course* newC2 = [[Course alloc] initWithEntity: desc insertIntoManagedObjectContext: nil];
-    newC2.depart = @"BIO";
-    newC2.number = [NSNumber numberWithInt: 430];
-    newC2.title = @"Ecology and Systematics of Aquatic Insects";
-    newC2.times = @"1:10PM - 5:00PM";
-    
-    Course* newC3 = [[Course alloc] initWithEntity: desc insertIntoManagedObjectContext: nil];
-    newC3.depart = @"ENG";
-    newC3.number = [NSNumber numberWithInt: 170];
-    newC3.title = @"Foundations of Literary Analysis";
-    newC3.times = @"3:10PM - 4:25PM";
-    
-    Course* newC4 = [[Course alloc] initWithEntity: desc insertIntoManagedObjectContext: nil];
-    newC4.depart = @"KPE";
-    newC4.number = [NSNumber numberWithInt: 398];
-    newC4.title = @"Problems in Kinesiology and Physical Education";
-    newC4.times = @"TBA";
-    
-    Course* newC5 = [[Course alloc] initWithEntity: desc insertIntoManagedObjectContext: nil];
-    newC5.depart = @"PHY";
-    newC5.number = [NSNumber numberWithInt: 121];
-    newC5.title = @"Physics for Engineers and Physical Scientists I";
-    newC5.times = @"11:00AM - 11:50AM";
-    
-    unsortedCourses = [NSSet setWithObjects: newC, newC2, newC3, newC4, newC5, nil];
-    
     
     for(Course* _c in [unsortedCourses allObjects]){
         [ScheduleViewController insertCourse: _c IntoArray: retArr];
@@ -195,6 +163,10 @@
 
 + (void) insertCourse:(Course *) c IntoArray:(NSMutableArray *)outArr
 {
+    // If the course is already in the array then just exit
+    if([outArr containsObject: c])
+        return;
+    
     float time = [ScheduleViewController courseStartTime: c];
     BOOL wasInserted = NO;
     
@@ -299,6 +271,20 @@
     [tableView deselectRowAtIndexPath: indexPath animated: YES];
 }
 
+- (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Remove the new course from the schedule object
+    Schedule* curSched = [self.schedulesDict objectForKey: self.semStr];
+    Course* c = [self.activeCourses objectAtIndex: indexPath.row];
+    [curSched removeCoursesObject: c];
+    [self.appDel saveContext];
+    
+    // Add the new course into the array of active courses
+    [self.activeCourses removeObject: c];
+    
+    // Remove the object from the table view
+    [tableView deleteRowsAtIndexPaths: [NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+}
 
 #pragma mark - Table View Data Source Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -353,8 +339,6 @@
 
 - (void) addCourse:(Course *) _c
 {
-    NSLog(@"Course: %@, %@, %@", _c.depart, _c.number, _c.section);
-    
     // Insert the new course into the schedule object
     Schedule* curSched = [self.schedulesDict objectForKey: self.semStr];
     [curSched addCoursesObject: _c];

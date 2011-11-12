@@ -34,11 +34,14 @@
 		96149142143814230010FFE1 /* wedTabInact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96149140143814230010FFE1 /* wedTabInact@2x.png */; };
 		961491451438142F0010FFE1 /* weekTabAct@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961491431438142F0010FFE1 /* weekTabAct@2x.png */; };
 		961491461438142F0010FFE1 /* weekTabInact@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961491441438142F0010FFE1 /* weekTabInact@2x.png */; };
-		961EE1D31438FDDF00644449 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 961EE1D21438FDDF00644449 /* Schedule.m */; };
-		961EE1D91439030100644449 /* CustomScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961EE1D81439030100644449 /* CustomScheduleCell.xib */; };
 		962079D5141C7B8000909AE7 /* cornell-big-red-logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */; };
+		963DFC78146B8253007E41D4 /* CourseDetailSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DFC77146B8253007E41D4 /* CourseDetailSelectionViewController.m */; };
+		963DFC7C146B8293007E41D4 /* CustomScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963DFC7B146B8293007E41D4 /* CustomScheduleCell.xib */; };
 		964A2B3E1433E39800F53F8A /* CustomSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */; };
 		964A2B411433E4CB00F53F8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964A2B401433E4CB00F53F8A /* QuartzCore.framework */; };
+		965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */; };
+		967E8CB51467109000D9EA24 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB41467109000D9EA24 /* Schedule.m */; };
+		967E8CB81467109F00D9EA24 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB71467109F00D9EA24 /* Course.m */; };
 		96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96950E41141D9D0E0059CFED /* EventRecapViewController.m */; };
 		96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96950E42141D9D0E0059CFED /* EventRecapView.xib */; };
 		9697EF40143912F000EC190A /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3E143912F000EC190A /* AddCourseViewController.m */; };
@@ -51,13 +54,12 @@
 		96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */; };
 		96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */; };
 		96F2B46F146388820035832B /* AvailableCourses.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B46E146388820035832B /* AvailableCourses.m */; };
-		96F2B47C146389150035832B /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B47B146389150035832B /* Course.m */; };
-		96F2B49B1463931C0035832B /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96F2B49A1463931C0035832B /* iUMaine.sqlite */; };
 		96F6907F143D3F8000A4E5AB /* dbInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */; };
 		96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96FB508D13F786020069836C /* sportsAbbrsDict.txt */; };
 		96FB509B13F788860069836C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509813F788860069836C /* NSDataAdditions.m */; };
 		96FB509C13F788860069836C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509A13F788860069836C /* TBXML.m */; };
 		96FB509E13F788F70069836C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FB509D13F788F70069836C /* libz.dylib */; };
+		96FEE89E14660EEC000A0B47 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96FEE89D14660EEC000A0B47 /* iUMaine.sqlite */; };
 		AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582C135BD930008E9B84 /* UIKit.framework */; };
 		AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582E135BD930008E9B84 /* Foundation.framework */; };
 		AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE815830135BD930008E9B84 /* CoreGraphics.framework */; };
@@ -138,13 +140,18 @@
 		96149140143814230010FFE1 /* wedTabInact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wedTabInact@2x.png"; sourceTree = "<group>"; };
 		961491431438142F0010FFE1 /* weekTabAct@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weekTabAct@2x.png"; sourceTree = "<group>"; };
 		961491441438142F0010FFE1 /* weekTabInact@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weekTabInact@2x.png"; sourceTree = "<group>"; };
-		961EE1D11438FDDF00644449 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Schedule.h; path = ../Schedule.h; sourceTree = "<group>"; };
-		961EE1D21438FDDF00644449 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Schedule.m; path = ../Schedule.m; sourceTree = "<group>"; };
-		961EE1D81439030100644449 /* CustomScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomScheduleCell.xib; path = ../CustomScheduleCell.xib; sourceTree = "<group>"; };
 		962079D4141C7B8000909AE7 /* cornell-big-red-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "cornell-big-red-logo.gif"; sourceTree = "<group>"; };
+		963DFC76146B8253007E41D4 /* CourseDetailSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailSelectionViewController.h; sourceTree = "<group>"; };
+		963DFC77146B8253007E41D4 /* CourseDetailSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailSelectionViewController.m; sourceTree = "<group>"; };
+		963DFC7B146B8293007E41D4 /* CustomScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomScheduleCell.xib; sourceTree = "<group>"; };
 		964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSectionHeader.h; sourceTree = "<group>"; };
 		964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSectionHeader.m; sourceTree = "<group>"; };
 		964A2B401433E4CB00F53F8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseDetailSelectionView.xib; sourceTree = "<group>"; };
+		967E8CB31467109000D9EA24 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		967E8CB41467109000D9EA24 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		967E8CB61467109F00D9EA24 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		967E8CB71467109F00D9EA24 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		96950E40141D9D0E0059CFED /* EventRecapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRecapViewController.h; sourceTree = "<group>"; };
 		96950E41141D9D0E0059CFED /* EventRecapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRecapViewController.m; sourceTree = "<group>"; };
 		96950E42141D9D0E0059CFED /* EventRecapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventRecapView.xib; sourceTree = "<group>"; };
@@ -163,15 +170,13 @@
 		96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryDetailView.xib; sourceTree = "<group>"; };
 		96F2B46D146388820035832B /* AvailableCourses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableCourses.h; sourceTree = "<group>"; };
 		96F2B46E146388820035832B /* AvailableCourses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableCourses.m; sourceTree = "<group>"; };
-		96F2B47A146389150035832B /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
-		96F2B47B146389150035832B /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
-		96F2B49A1463931C0035832B /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		96FB508D13F786020069836C /* sportsAbbrsDict.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sportsAbbrsDict.txt; sourceTree = "<group>"; };
 		96FB509713F788860069836C /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		96FB509813F788860069836C /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
 		96FB509913F788860069836C /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		96FB509A13F788860069836C /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 		96FB509D13F788F70069836C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		96FEE89D14660EEC000A0B47 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbInitializer.h; sourceTree = "<group>"; };
 		AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbInitializer.m; sourceTree = "<group>"; };
 		AE815828135BD930008E9B84 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -292,14 +297,14 @@
 			children = (
 				96F2B46D146388820035832B /* AvailableCourses.h */,
 				96F2B46E146388820035832B /* AvailableCourses.m */,
-				96F2B47A146389150035832B /* Course.h */,
-				96F2B47B146389150035832B /* Course.m */,
 				96C8AB9D13E1E98400656998 /* Employee.h */,
 				96C8AB9E13E1E98400656998 /* Employee.m */,
-				961EE1D11438FDDF00644449 /* Schedule.h */,
-				961EE1D21438FDDF00644449 /* Schedule.m */,
 				96CD3514140DE79300C8C45C /* SportEvent.h */,
 				96CD3515140DE79300C8C45C /* SportEvent.m */,
+				967E8CB31467109000D9EA24 /* Schedule.h */,
+				967E8CB41467109000D9EA24 /* Schedule.m */,
+				967E8CB61467109F00D9EA24 /* Course.h */,
+				967E8CB71467109F00D9EA24 /* Course.m */,
 			);
 			name = "Managed Object Classes";
 			sourceTree = "<group>";
@@ -360,6 +365,8 @@
 				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
 				9697EF3D143912F000EC190A /* AddCourseViewController.h */,
 				9697EF3E143912F000EC190A /* AddCourseViewController.m */,
+				963DFC76146B8253007E41D4 /* CourseDetailSelectionViewController.h */,
+				963DFC77146B8253007E41D4 /* CourseDetailSelectionViewController.m */,
 				961491021437E7EC0010FFE1 /* ScheduleTabView.h */,
 				961491031437E7EC0010FFE1 /* ScheduleTabView.m */,
 				AE815877135BE491008E9B84 /* MapViewController.h */,
@@ -381,9 +388,10 @@
 				AE81583E135BD930008E9B84 /* MainWindow.xib */,
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
 				9697EF3F143912F000EC190A /* AddCourseView.xib */,
+				965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */,
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
 				96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */,
-				961EE1D81439030100644449 /* CustomScheduleCell.xib */,
+				963DFC7B146B8293007E41D4 /* CustomScheduleCell.xib */,
 				AE815867135BE0D2008E9B84 /* MapView.xib */,
 				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
 				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
@@ -402,7 +410,7 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96F2B49A1463931C0035832B /* iUMaine.sqlite */,
+				96FEE89D14660EEC000A0B47 /* iUMaine.sqlite */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
@@ -565,9 +573,10 @@
 				96149142143814230010FFE1 /* wedTabInact@2x.png in Resources */,
 				961491451438142F0010FFE1 /* weekTabAct@2x.png in Resources */,
 				961491461438142F0010FFE1 /* weekTabInact@2x.png in Resources */,
-				961EE1D91439030100644449 /* CustomScheduleCell.xib in Resources */,
 				9697EF41143912F000EC190A /* AddCourseView.xib in Resources */,
-				96F2B49B1463931C0035832B /* iUMaine.sqlite in Resources */,
+				96FEE89E14660EEC000A0B47 /* iUMaine.sqlite in Resources */,
+				963DFC7C146B8293007E41D4 /* CustomScheduleCell.xib in Resources */,
+				965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,10 +605,11 @@
 				96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */,
 				964A2B3E1433E39800F53F8A /* CustomSectionHeader.m in Sources */,
 				961491041437E7EC0010FFE1 /* ScheduleTabView.m in Sources */,
-				961EE1D31438FDDF00644449 /* Schedule.m in Sources */,
 				9697EF40143912F000EC190A /* AddCourseViewController.m in Sources */,
 				96F2B46F146388820035832B /* AvailableCourses.m in Sources */,
-				96F2B47C146389150035832B /* Course.m in Sources */,
+				967E8CB51467109000D9EA24 /* Schedule.m in Sources */,
+				967E8CB81467109F00D9EA24 /* Course.m in Sources */,
+				963DFC78146B8253007E41D4 /* CourseDetailSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

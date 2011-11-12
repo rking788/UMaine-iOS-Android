@@ -10,9 +10,12 @@
 
 @implementation CourseDetailSelectionViewController
 
+@synthesize searchBar;
 @synthesize contentArr;
 @synthesize delegate;
 @synthesize row;
+@synthesize savedSearchTerm;
+@synthesize searchResults;
 
 #pragma mark - TODO CRITICAL : Finish implementing the search bar, try changing the style of the search results table view
 
@@ -48,15 +51,21 @@
     // Add save and cancel buttons to the navigation bar
     [self.navigationItem setLeftBarButtonItem: [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target: self action: @selector(cancel)] autorelease]];
     [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (66.0/255.0) green: (41.0/255.0) blue: (3.0/255.0) alpha: 1.0]];
+
+    [self.searchBar setAutocapitalizationType: UITextAutocapitalizationTypeNone];
+    [self.searchBar setAutocorrectionType: UITextAutocorrectionTypeNo];
 }
 
 - (void)viewDidUnload
 {
+    [self setSearchBar:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     [self setContentArr: nil];
     [self setDelegate: nil];
+    [self setSearchResults: nil];
+    [self setSavedSearchTerm: nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -102,7 +111,14 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.contentArr count];
+    NSInteger rows = 0;
+    
+    if(tableView != self.searchDisplayController.searchResultsTableView)
+        rows = [self.contentArr count];
+    else
+        rows = [self.searchResults count];
+    
+    return rows;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -117,7 +133,17 @@
     // Configure the cell...
     UILabel* lbl = [cell textLabel];
     
-    [lbl setText: [self.contentArr objectAtIndex: indexPath.row]];
+    if(tableView != self.searchDisplayController.searchResultsTableView)
+        [lbl setText: [self.contentArr objectAtIndex: indexPath.row]];
+    else
+        [lbl setText: [self.searchResults objectAtIndex: indexPath.row]];
+    
+    [lbl setTextColor: [UIColor colorWithRed:(66.0/255.0) green:(41.0/255.0) blue:(3.0/255) alpha:1.0]];
+    UIFont* textFont = [UIFont fontWithName: @"Baskerville" size: 17.0];
+    [lbl setFont: textFont];
+    
+    [tableView setBackgroundColor: [UIColor colorWithRed:(238.0/255.0) green:(230.0/255.0) blue:(192.0/255) alpha:1.0]];
+    [tableView setSeparatorColor: [UIColor colorWithRed:(66.0/255.0) green:(41.0/255.0) blue:(3.0/255) alpha:1.0]];
     
     return cell;
 }
@@ -175,7 +201,55 @@
      */
     [tableView deselectRowAtIndexPath: indexPath animated: YES];
 
-    [self.delegate detailSelection: [self.contentArr objectAtIndex: indexPath.row] ForSection: self.row];
+    if(tableView != self.searchDisplayController.searchResultsTableView)
+        [self.delegate detailSelection: [self.contentArr objectAtIndex: indexPath.row] ForSection: self.row];
+    else
+        [self.delegate detailSelection: [self.searchResults objectAtIndex: indexPath.row] ForSection: self.row];
 }
 
+#pragma mark UISearchDisplayController Delegate Methods
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller 
+shouldReloadTableForSearchString:(NSString *)searchString
+{	
+	[self handleSearchForTerm: searchString];
+    
+    // Return YES to cause the search result table view to be reloaded.
+    return YES;
+}
+
+- (void)searchDisplayControllerWillEndSearch:(UISearchDisplayController *)controller
+{
+	[self setSavedSearchTerm: nil];
+	
+	[self.tableView reloadData];
+}
+
+- (void)handleSearchForTerm:(NSString *)searchTerm
+{	
+	[self setSavedSearchTerm: searchTerm];
+	
+	if ([self searchResults] == nil)
+	{
+        self.searchResults = [[NSMutableArray alloc] init];
+	}
+	
+	[[self searchResults] removeAllObjects];
+	
+	if ([[self savedSearchTerm] length] != 0)
+	{
+		for (NSString* str in self.contentArr)
+		{
+			if ([str rangeOfString:searchTerm options:NSCaseInsensitiveSearch].location != NSNotFound)
+			{
+				[self.searchResults addObject: str];
+			}
+		}
+	}
+}
+
+- (void)dealloc {
+    [searchBar release];
+    [super dealloc];
+}
 @end

@@ -219,7 +219,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
- //   [self saveContext];
+    [self saveContext];
 }
 
 - (void)dealloc
