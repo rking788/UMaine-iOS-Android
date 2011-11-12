@@ -18,13 +18,24 @@ typedef enum TABVIEWTAGS
     kWEEKTAG = 35
 } TABVIEWTAGS;
 
+@protocol ScheduleDisplayDelegate <NSObject>
+
+- (void) activeDayChanged;
+
+@end
+
 @interface ScheduleTabView : UIView
 {
     NSInteger actTag;
+
+    id<ScheduleDisplayDelegate> delegate;
 }
 
 @property (nonatomic, assign) NSInteger actTag;
 
+@property id<ScheduleDisplayDelegate> delegate;
+
 - (void) tabPressed: (id) sender;
+- (NSString*) activeDay;
 
 @end

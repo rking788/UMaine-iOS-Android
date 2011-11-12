@@ -9,6 +9,7 @@
 #import "iUMaineAppDelegate.h"
 #import "ScheduleViewController.h"
 #import "ScheduleTabView.h"
+#import "CourseDetailViewController.h"
 #import "AddCourseViewController.h"
 #import "Schedule.h"
 #import "Course.h"
@@ -31,6 +32,9 @@
 {
     [super viewDidLoad];
 
+    // Add this view controller as the delegate for the tab view
+    self.schedTabView.delegate = self;
+    
     // Not sure why this works ha, found it on StackOverflow
     // hides all separators under empty cells
     [self hideEmptySeparators];
@@ -269,6 +273,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath: indexPath animated: YES];
+ 
+    CourseDetailViewController* cdvc = [[CourseDetailViewController alloc] init];
+    
+    [cdvc setCourse: [self.activeCourses objectAtIndex: indexPath.row]];
+    [self.navigationController pushViewController: cdvc animated:YES];
+    
+    [cdvc release];
 }
 
 - (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -289,7 +300,29 @@
 #pragma mark - Table View Data Source Methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[self activeCourses] count];
+    NSString* dayStr = [self.schedTabView activeDay];
+    NSMutableArray* res = nil;
+    NSInteger num = 0;
+    
+    if([dayStr isEqualToString: @"Week"])
+        res = self.activeCourses;
+    else{
+        res = [NSMutableArray arrayWithArray: self.activeCourses];
+        NSPredicate* pred = [NSPredicate predicateWithFormat: @"(SELF.days contains[c] %@) OR (SELF.days contains[c] %@)", dayStr, @"TBA"];
+        [res filterUsingPredicate: pred];
+    }
+    
+    num = [res count];
+    
+    if(num != 0){
+        [self.contentTable setHidden: NO];
+        [self.view sendSubviewToBack: [self.view viewWithTag: 82]];
+    }
+    else{
+        [self.contentTable setHidden: YES];
+        [self.view bringSubviewToFront: [self.view viewWithTag: 82]];
+    }
+    return num;
 }
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
@@ -309,8 +342,20 @@
         
         cell = self.scheduleCourseCell;
     }
+   
+    NSString* dayStr = [self.schedTabView activeDay];
+    NSMutableArray* res = nil;
     
-    Course* curCourse = [self.activeCourses objectAtIndex: indexPath.row];
+    if([dayStr isEqualToString: @"Week"]){
+        res = self.activeCourses;
+    }
+    else{
+        res = [NSMutableArray arrayWithArray: self.activeCourses];
+        NSPredicate* pred = [NSPredicate predicateWithFormat: @"(SELF.days contains[c] %@) OR (SELF.days contains[c] %@)", dayStr, @"TBA"];
+        [res filterUsingPredicate: pred];
+    }
+    
+    Course* curCourse = [res objectAtIndex: indexPath.row];
     
     UILabel* courseNumLbl = (UILabel*) [cell viewWithTag: 20];
     UILabel* titleLbl = (UILabel*) [cell viewWithTag: 21];
@@ -350,5 +395,12 @@
     
     [self dismissModalViewControllerAnimated: YES];
 }
+
+#pragma mark - ScheduleDisplayDelegate Methods
+- (void) activeDayChanged
+{
+    [self.contentTable reloadData];
+}
+
 
 @end

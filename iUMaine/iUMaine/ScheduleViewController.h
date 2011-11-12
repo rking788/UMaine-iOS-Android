@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AddCourseViewController.h"
+#import "ScheduleTabView.h"
 
 @class ScheduleTabView;
 @class iUMaineAppDelegate;
 @class Course;
 
-@interface ScheduleViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, AddCourseToScheduleDelegate> {
+@interface ScheduleViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, AddCourseToScheduleDelegate, ScheduleDisplayDelegate> {
 
     ScheduleTabView *schedTabView;
     UITableView *contentTable;

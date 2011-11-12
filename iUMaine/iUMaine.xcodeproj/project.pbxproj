@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960B929C146F2FCF0057C22E /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B929A146F2FCF0057C22E /* CourseDetailViewController.m */; };
+		960B929D146F2FCF0057C22E /* CourseDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 960B929B146F2FCF0057C22E /* CourseDetailView.xib */; };
 		961491041437E7EC0010FFE1 /* ScheduleTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 961491031437E7EC0010FFE1 /* ScheduleTabView.m */; };
 		9614910E1437FF7D0010FFE1 /* friTabAct.png in Resources */ = {isa = PBXBuildFile; fileRef = 961491081437FF7D0010FFE1 /* friTabAct.png */; };
 		961491101437FF7D0010FFE1 /* thuTabAct.png in Resources */ = {isa = PBXBuildFile; fileRef = 9614910A1437FF7D0010FFE1 /* thuTabAct.png */; };
@@ -112,6 +114,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		960B9299146F2FCF0057C22E /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailViewController.h; sourceTree = "<group>"; };
+		960B929A146F2FCF0057C22E /* CourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailViewController.m; sourceTree = "<group>"; };
+		960B929B146F2FCF0057C22E /* CourseDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseDetailView.xib; sourceTree = "<group>"; };
 		961491021437E7EC0010FFE1 /* ScheduleTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTabView.h; sourceTree = "<group>"; };
 		961491031437E7EC0010FFE1 /* ScheduleTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTabView.m; sourceTree = "<group>"; };
 		961491081437FF7D0010FFE1 /* friTabAct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friTabAct.png; sourceTree = "<group>"; };
@@ -363,6 +368,8 @@
 				AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */,
 				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
 				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
+				960B9299146F2FCF0057C22E /* CourseDetailViewController.h */,
+				960B929A146F2FCF0057C22E /* CourseDetailViewController.m */,
 				9697EF3D143912F000EC190A /* AddCourseViewController.h */,
 				9697EF3E143912F000EC190A /* AddCourseViewController.m */,
 				963DFC76146B8253007E41D4 /* CourseDetailSelectionViewController.h */,
@@ -387,6 +394,7 @@
 				964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */,
 				AE81583E135BD930008E9B84 /* MainWindow.xib */,
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
+				960B929B146F2FCF0057C22E /* CourseDetailView.xib */,
 				9697EF3F143912F000EC190A /* AddCourseView.xib */,
 				965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */,
 				AE81584A135BD930008E9B84 /* SportsView.xib */,
@@ -577,6 +585,7 @@
 				96FEE89E14660EEC000A0B47 /* iUMaine.sqlite in Resources */,
 				963DFC7C146B8293007E41D4 /* CustomScheduleCell.xib in Resources */,
 				965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */,
+				960B929D146F2FCF0057C22E /* CourseDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +619,7 @@
 				967E8CB51467109000D9EA24 /* Schedule.m in Sources */,
 				967E8CB81467109F00D9EA24 /* Course.m in Sources */,
 				963DFC78146B8253007E41D4 /* CourseDetailSelectionViewController.m in Sources */,
+				960B929C146F2FCF0057C22E /* CourseDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

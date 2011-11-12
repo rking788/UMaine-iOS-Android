@@ -13,6 +13,7 @@
 @implementation ScheduleTabView
 
 @synthesize actTag;
+@synthesize delegate;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -108,6 +109,31 @@
     }
     
     self.actTag = newTag;
+
+    // This needs to be called last, the schedule view depends on self.actTag being set correctly
+    [self.delegate activeDayChanged];
+}
+
+- (NSString*) activeDay
+{
+    switch (self.actTag){
+        case kMONTAG:
+            return @"Mo";
+        case kTUETAG:
+            return @"Tu";
+        case kWEDTAG:
+            return @"We";
+        case kTHUTAG:
+            return @"Th";
+        case kFRITAG:
+            return @"Fr";
+        case kWEEKTAG:
+            return @"Week";
+        default:
+            break;
+    }
+    
+    return nil;
 }
 
 /*
