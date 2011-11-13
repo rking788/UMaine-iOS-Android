@@ -23,8 +23,10 @@
     UITableView *tblView;
     NSMutableArray* listContents;
     NSMutableArray* listSubContents;
+    NSMutableArray* listLocations;
     NSMutableArray* searchListContents;
     NSMutableArray* searchListSubContents;
+    NSMutableArray* searchListLocations;
     NSManagedObjectContext* managedObjectContext;
     BOOL searching;
 }
@@ -33,8 +35,10 @@
 
 @property (nonatomic, retain) NSMutableArray* listContents;
 @property (nonatomic, retain) NSMutableArray* listSubContents;
+@property (nonatomic, retain) NSMutableArray* listLocations;
 @property (nonatomic, retain) NSMutableArray* searchListContents;
 @property (nonatomic, retain) NSMutableArray* searchListSubContents;
+@property (nonatomic, retain) NSMutableArray* searchListLocations;
 @property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;
 
 @property (nonatomic, getter = isSearching) BOOL searching;

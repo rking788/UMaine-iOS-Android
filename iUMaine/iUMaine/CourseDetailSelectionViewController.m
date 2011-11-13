@@ -17,8 +17,6 @@
 @synthesize savedSearchTerm;
 @synthesize searchResults;
 
-#pragma mark - TODO CRITICAL : Finish implementing the search bar, try changing the style of the search results table view
-
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];

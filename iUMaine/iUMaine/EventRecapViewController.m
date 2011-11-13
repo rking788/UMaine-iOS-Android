@@ -42,6 +42,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    [self.navigationItem setTitle: @"Recap"];
+    
     self.webView.scalesPageToFit = YES;
     
     NSURL* url = [NSURL URLWithString: self.recapURLStr];

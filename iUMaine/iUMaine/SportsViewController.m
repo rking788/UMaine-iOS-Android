@@ -26,8 +26,9 @@
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
-
 #pragma mark - TODO: Should probably display loading indicator until the new information is done downloading from the server some communication will be involved between iUMaineAppDelegate and this class
+#pragma mark - TODO CRITICAL: Find images for all the different schools
+#pragma mark - TODO CRITICAL: Filter the sports in the tableview based on the selection in the navigation bar titleView
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -343,6 +344,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         // Current Game cell
         UILabel* sportLbl = (UILabel*)[cell viewWithTag: 39];
         UILabel* teamsLbl = (UILabel*)[cell viewWithTag: 40];
+        //UILabel* locLbl = (UILabel*)[cell viewWithTag: 41];
         UILabel* timeLbl = (UILabel*)[cell viewWithTag: 42];
         UIImageView* teamAImgView = (UIImageView*)[cell viewWithTag: 43];
         UIImageView* teamBImgView = (UIImageView*)[cell viewWithTag: 44];
@@ -361,12 +363,21 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         [teamsLbl setText: teamStr];
         
         // For todays game the time should probably be the result
-        if(SE.resultStr)
+        if(SE.resultStr){
             [timeLbl setText: SE.resultStr];
-        else
-            [timeLbl setText: @""];
+        }
+        else{ 
+            NSDateFormatter *format = [[NSDateFormatter alloc] init];
+            [format setDateFormat:@"MMM d h:mm a"];
+            
+            [timeLbl setText: [format stringFromDate: SE.date]];
+        }
         
-        // TODO: This should not be a constant it should depend on the team they are playing (obviously)
+        // I think this location label was in here because sometimes games were "Home" games but not played
+        // at the teams home campus (like playoff games). should probably be implemented in the future
+        //[locLbl setText: @""];
+        
+        // TODO Critical: This should not be a constant it should depend on the team they are playing (obviously)
         [teamBImgView setImage: [UIImage imageNamed: @"cornell-big-red-logo.gif"]];
         
         if(SE.recapLink && ([SE.recapLink length] != 0)){

@@ -22,7 +22,6 @@
 
 @implementation iUMaineAppDelegate
 
-// TODO: need to explicitly write these accessors
 @synthesize managedObjectModel, managedObjectContext, persistentStoreCoordinator;
 
 @synthesize window=_window;
@@ -31,6 +30,9 @@
 @synthesize defaultPrefs;
 @synthesize lastUpdateStr;
 @synthesize gettingSports;
+
+#pragma mark - TODO CRITICAL: Add support for different campuses, this probably just needs to be seperate DB files.
+#pragma mark - TODO: Maybe try adding some things to string constants or resources including colors too. Not sure how to do that.
 
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME = @"sportsAbbrsDict.txt";

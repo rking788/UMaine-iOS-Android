@@ -22,8 +22,6 @@
 @synthesize sectionArr;
 @synthesize delegate;
 
-#pragma mark - TODO CRITICAL : Change the text in the "save" button to add for adding a course
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

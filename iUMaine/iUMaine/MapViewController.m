@@ -17,19 +17,20 @@
 @synthesize curPermit, prevPermit;
 @synthesize mapView, mapPOIAnnotations, mapSelBuildingAnnotation, managedObjectContext, permitTitles;
 
+#pragma mark - TODO CRITICAL: Add new images for the parking markers
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     
     // Set the center to barrows or something
     MKCoordinateRegion region;
     region.center.latitude = 44.901006;
     region.center.longitude = -68.667536;
-    //0.013
-    region.span.latitudeDelta = 0.006;
-    region.span.longitudeDelta = 0.006;
+
+    region.span.latitudeDelta = 0.008;
+    region.span.longitudeDelta = 0.008;
     [self.mapView setRegion:region animated:false];
     
     // Set up the array of annotations
@@ -38,15 +39,17 @@
     // Initialize the titles for the parking permits
     self.permitTitles = [[NSArray alloc] initWithObjects: @"None", @"Staff / Faculty", @"Resident", @"Commuter", @"Visitor", nil];
     
-    // TODO: Check to see if there is a selected permit already stored in persistent storage
     [self setUDefaults: [NSUserDefaults standardUserDefaults]];
     NSString* startingPermit = [self.uDefaults objectForKey: @"ParkingPermit"];
     if(startingPermit){
         [self addParkingAnnotationsOfType: startingPermit];
+        self.curPermit = startingPermit;
+    }
+    else{
+        self.curPermit = nil;
     }
     
     self.prevPermit = nil;
-    self.curPermit = nil;
 }
 
 
@@ -107,7 +110,6 @@
     [pickView selectRow: nCur inComponent: 0 animated: NO];
     [actSheet addSubview: pickView];
     
-    // TODO: Do not hard code these size values if possible
     UISegmentedControl* closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Done", nil]];
     closeButton.momentary = YES;
     closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
@@ -263,7 +265,6 @@
             //      forControlEvents:UIControlEventTouchUpInside];
             //customPinView.rightCalloutAccessoryView = rightButton;
             
-            // TODO: it would be cool if these custom views animated into the map
            // MKAnnotationView* customPinView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
             
            // [customPinView setCanShowCallout: NO];

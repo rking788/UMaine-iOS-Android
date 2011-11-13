@@ -16,6 +16,8 @@
 @synthesize employee;
 @synthesize empDict;
 
+#pragma mark - TODO CRITICAL: Really need to figure out how to display this contact information
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

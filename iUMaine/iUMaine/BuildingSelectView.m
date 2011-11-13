@@ -7,14 +7,17 @@
 //
 
 #import "BuildingSelectView.h"
+#import "Location.h"
 
 @implementation BuildingSelectView
 @synthesize searchBar;
 @synthesize tblView;
 @synthesize listContents;
 @synthesize listSubContents;
+@synthesize listLocations;
 @synthesize searchListContents;
 @synthesize searchListSubContents;
+@synthesize searchListLocations;
 @synthesize managedObjectContext;
 @synthesize selectDelegate;
 @synthesize searching;
@@ -33,8 +36,10 @@
     [searchBar release];
     [listContents release];
     [listSubContents release];
+    [listLocations release];
     [searchListContents release];
     [searchListSubContents release];
+    [searchListLocations release];
     [selectDelegate release];
     [tblView release];
     [super dealloc];
@@ -109,13 +114,13 @@
 	// [anotherViewController release];
     
     if([self isSearching]){
-        NSArray* temparr = [[self.searchListSubContents objectAtIndex: indexPath.row] componentsSeparatedByString:@","];
+        NSArray* temparr = [[self.searchListLocations objectAtIndex: indexPath.row] componentsSeparatedByString:@","];
         double dLat = ([[temparr objectAtIndex: 0] doubleValue]/1000000);
         double dLong = ([[temparr objectAtIndex: 1] doubleValue]/1000000);
         [self.selectDelegate selectBuildingLocation: [self.searchListContents objectAtIndex:indexPath.row] withLatitude: dLat withLongitude: dLong];
     }
     else{
-        NSArray* temparr = [[self.listSubContents objectAtIndex: indexPath.row] componentsSeparatedByString:@","];
+        NSArray* temparr = [[self.listLocations objectAtIndex: indexPath.row] componentsSeparatedByString:@","];
         double dLat = ([[temparr objectAtIndex: 0] doubleValue]/1000000);
         double dLong = ([[temparr objectAtIndex: 1] doubleValue]/1000000);
         [self.selectDelegate selectBuildingLocation: [self.listContents objectAtIndex:indexPath.row]withLatitude: dLat withLongitude: dLong];        
@@ -123,7 +128,6 @@
 }
 
 - (void) populateListContents{
-    // TODO: This list should be distinct 
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Location" inManagedObjectContext:self.managedObjectContext];
     [fetchrequest setEntity:entity];
@@ -136,16 +140,21 @@
     NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
     
     if (array != nil) {
-        //NSMutableArray* arr = [[NSMutableArray alloc] initWithCapacity: [array count]];
-        //NSMutableArray* subcontentsArr = [[NSMutableArray alloc] initWithCapacity: [array count]];
+
+        for(Location* loc in array){
+            [self.listContents addObject: [loc valueForKey: @"title"]];
         
-        for(NSManagedObject* manObj in array){
-            // TODO: Probably remove this titleString variable and combine it with the next line
-            NSString* titleString = [manObj valueForKey:@"title"];
-            [self.listContents addObject: titleString];
-            [self.listSubContents addObject:[NSString stringWithFormat:@"%@,%@", [manObj valueForKey:@"latitude"], [manObj valueForKey:@"longitude"]]];
+            if([[[loc entity] name] isEqualToString: @"Building"]){
+                [self.listSubContents addObject: @""];
+            }
+            else{
+                NSString* firstCharStr = [[[loc valueForKey: @"permittype"] substringToIndex: 1] capitalizedString];
+                NSString* typeStr = [[loc valueForKey: @"permittype"] stringByReplacingCharactersInRange: NSMakeRange(0, 1) withString: firstCharStr];
+                [self.listSubContents addObject: typeStr];
+            }
+            
+            [self.listLocations addObject:[NSString stringWithFormat:@"%@,%@", [loc valueForKey:@"latitude"], [loc valueForKey:@"longitude"]]];
         }
-        
     }
     else {
         // Deal with error.

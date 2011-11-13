@@ -44,6 +44,7 @@
 		965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */; };
 		967E8CB51467109000D9EA24 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB41467109000D9EA24 /* Schedule.m */; };
 		967E8CB81467109F00D9EA24 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB71467109F00D9EA24 /* Course.m */; };
+		967EE34514704B0100F0A9BB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 967EE34414704B0100F0A9BB /* Location.m */; };
 		96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96950E41141D9D0E0059CFED /* EventRecapViewController.m */; };
 		96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96950E42141D9D0E0059CFED /* EventRecapView.xib */; };
 		9697EF40143912F000EC190A /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3E143912F000EC190A /* AddCourseViewController.m */; };
@@ -157,6 +158,8 @@
 		967E8CB41467109000D9EA24 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		967E8CB61467109F00D9EA24 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		967E8CB71467109F00D9EA24 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		967EE34314704B0100F0A9BB /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		967EE34414704B0100F0A9BB /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		96950E40141D9D0E0059CFED /* EventRecapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRecapViewController.h; sourceTree = "<group>"; };
 		96950E41141D9D0E0059CFED /* EventRecapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRecapViewController.m; sourceTree = "<group>"; };
 		96950E42141D9D0E0059CFED /* EventRecapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventRecapView.xib; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				967E8CB41467109000D9EA24 /* Schedule.m */,
 				967E8CB61467109F00D9EA24 /* Course.h */,
 				967E8CB71467109F00D9EA24 /* Course.m */,
+				967EE34314704B0100F0A9BB /* Location.h */,
+				967EE34414704B0100F0A9BB /* Location.m */,
 			);
 			name = "Managed Object Classes";
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 				967E8CB81467109F00D9EA24 /* Course.m in Sources */,
 				963DFC78146B8253007E41D4 /* CourseDetailSelectionViewController.m in Sources */,
 				960B929C146F2FCF0057C22E /* CourseDetailViewController.m in Sources */,
+				967EE34514704B0100F0A9BB /* Location.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

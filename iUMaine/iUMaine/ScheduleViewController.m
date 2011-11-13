@@ -24,7 +24,7 @@
 @synthesize activeCourses;
 @synthesize schedulesDict;
 
-#pragma mark - TODO CRITICAL Need to filter the courses displayed in the view based on the days that they meet
+#pragma mark - TODO CRITICAL: Make it possible to select a different semester by clicking the navigation bar titleView
 #pragma mark - TODO CRITICAL There are courses in the database with WEIRD "days" property values for example CET in 2012 spring SMS in 2012 spring as well. (go to sqlitemanager and sort by days)
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
