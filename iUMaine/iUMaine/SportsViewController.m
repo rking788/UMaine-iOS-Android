@@ -303,7 +303,6 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     
     self.curSport = [sportList objectAtIndex: [picker selectedRowInComponent:0]];
     
-    // Not sure why this is even here? TODO: look into this.
     if(!self.curSport){
         self.curSport = [sportList objectAtIndex: 0];
     }

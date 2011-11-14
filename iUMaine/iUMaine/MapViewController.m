@@ -239,20 +239,21 @@
     
     // handle our two custom annotations
     //
-    if ([annotation isKindOfClass:[POIAnnotation class]]) // for Golden Gate Bridge
+    if ([annotation isKindOfClass:[POIAnnotation class]])
     {
         // try to dequeue an existing pin view first
         static NSString* POIAnnotationID = @"poiAnnotationIdentifier";
-        MKPinAnnotationView* pinView = (MKPinAnnotationView *)
-        [self.mapView dequeueReusableAnnotationViewWithIdentifier:POIAnnotationID];
+        MKAnnotationView* pinView = [self.mapView dequeueReusableAnnotationViewWithIdentifier: POIAnnotationID];
+//        MKPinAnnotationView* pinView = (MKPinAnnotationView *)
+//        [self.mapView dequeueReusableAnnotationViewWithIdentifier:POIAnnotationID];
         if (!pinView)
         {
             // if an existing pin view was not available, create one
-            MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc]
-                                                   initWithAnnotation:annotation reuseIdentifier:POIAnnotationID] autorelease];
-            customPinView.pinColor = MKPinAnnotationColorPurple;
-            customPinView.animatesDrop = NO;
-            customPinView.canShowCallout = YES;
+//            MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc]
+//                                                   initWithAnnotation:annotation reuseIdentifier:POIAnnotationID] autorelease];
+//            customPinView.pinColor = MKPinAnnotationColorPurple;
+//            customPinView.animatesDrop = NO;
+//            customPinView.canShowCallout = YES;
             
             // add a detail disclosure button to the callout which will open a new view controller page
             //
@@ -265,13 +266,25 @@
             //      forControlEvents:UIControlEventTouchUpInside];
             //customPinView.rightCalloutAccessoryView = rightButton;
             
-           // MKAnnotationView* customPinView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
+            MKAnnotationView* customPinView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
             
-           // [customPinView setCanShowCallout: NO];
-           // [customPinView setDraggable: YES];
-           // NSLog(@"Draggable: %@", ([customPinView isDraggable] ? @"YES" : @"NO"));
+            [customPinView setCanShowCallout: YES];
+            [customPinView setDraggable: YES];
+            NSLog(@"Draggable: %@", ([customPinView isDraggable] ? @"YES" : @"NO"));
             
-           // [customPinView setImage: [UIImage imageNamed:@"bear-paw-r_24.png"]];
+            if([self.curPermit isEqualToString: @"Resident"]){
+                [customPinView setImage: [UIImage imageNamed: @"resident_marker.png"]];
+            }
+            else if([self.curPermit isEqualToString: @"Staff / Faculty"]){
+                [customPinView setImage: [UIImage imageNamed: @"faculty_marker.png"]];
+            }
+            else if([self.curPermit isEqualToString: @"Commuter"]){
+                [customPinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
+            }
+            else if([self.curPermit isEqualToString: @"Visitor"]){
+                // TODO CRITICAL: Need a new image for the visitor parking permit
+                [customPinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
+            }
             
             return customPinView;
         }
@@ -279,6 +292,21 @@
         {
             pinView.annotation = annotation;
         }
+        
+        if([self.curPermit isEqualToString: @"Resident"]){
+            [pinView setImage: [UIImage imageNamed: @"resident_marker.png"]];
+        }
+        else if([self.curPermit isEqualToString: @"Staff / Faculty"]){
+            [pinView setImage: [UIImage imageNamed: @"faculty_marker.png"]];
+        }
+        else if([self.curPermit isEqualToString: @"Commuter"]){
+            [pinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
+        }
+        else if([self.curPermit isEqualToString: @"Visitor"]){
+            // TODO CRITICAL: Need a new image for the visitor parking permit
+            [pinView setImage: [UIImage imageNamed: @"resident_marker.png"]];
+        }
+        
         return pinView;
     }
     

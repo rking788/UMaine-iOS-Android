@@ -26,7 +26,6 @@
 @synthesize allAvailableSemesters;
 @synthesize actSheet;
 
-#pragma mark - TODO CRITICAL: Make it possible to select a different semester by clicking the navigation bar leftbarbuttonitem
 #pragma mark - TODO CRITICAL There are courses in the database with WEIRD "days" property values for example CET in 2012 spring SMS in 2012 spring as well. (go to sqlitemanager and sort by days)
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -347,7 +346,6 @@
         self.semStr = [self.allAvailableSemesters objectAtIndex: 0];
     }
     
-    // TODO: Do what should be done
     [self switchToSemester: self.semStr];
     [self.contentTable reloadData];
 }
