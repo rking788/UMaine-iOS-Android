@@ -33,6 +33,7 @@
 
 #pragma mark - TODO CRITICAL: Add support for different campuses, this probably just needs to be seperate DB files.
 #pragma mark - TODO: Maybe try adding some things to string constants or resources including colors too. Not sure how to do that.
+#pragma mark - TODO CRITICAL: SOME LONG RUNNING TASK IS NOT BEING PERFORMED IN THE BACKGROUND FIND OUT WHAT IT IS. (SCREEN FREEZES ON LAUNCH AFTER FRESH INSTALL ) SOME SERVER COMMUNICATION OR SOMETHING PROBABLY
 
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME = @"sportsAbbrsDict.txt";

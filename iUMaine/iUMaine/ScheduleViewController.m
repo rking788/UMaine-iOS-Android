@@ -23,8 +23,10 @@
 @synthesize semStr;
 @synthesize activeCourses;
 @synthesize schedulesDict;
+@synthesize allAvailableSemesters;
+@synthesize actSheet;
 
-#pragma mark - TODO CRITICAL: Make it possible to select a different semester by clicking the navigation bar titleView
+#pragma mark - TODO CRITICAL: Make it possible to select a different semester by clicking the navigation bar leftbarbuttonitem
 #pragma mark - TODO CRITICAL There are courses in the database with WEIRD "days" property values for example CET in 2012 spring SMS in 2012 spring as well. (go to sqlitemanager and sort by days)
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -42,16 +44,17 @@
     // Set the title to the current semester being viewed 
     // This should check to see if there was a semester previously open or open a default one
     self.userDefs = [NSUserDefaults standardUserDefaults];
+    self.appDel = (iUMaineAppDelegate*) [[UIApplication sharedApplication] delegate];
+    self.allAvailableSemesters = [self.appDel getLocalSemesters];
     NSString* lastSem = [self.userDefs objectForKey: @"LastViewedSemester"];
+    
     if(lastSem){
         self.semStr = lastSem;
         self.navigationItem.title = lastSem;
     }
     else{
-        self.appDel = (iUMaineAppDelegate*) [[UIApplication sharedApplication] delegate];
-        NSArray* sems = [self.appDel getLocalSemesters];
         // Finds the current semester based on today's date or just the first one in the list
-        NSString* title = [ScheduleViewController scheduleTitleFromSemesters: sems];
+        NSString* title = [ScheduleViewController scheduleTitleFromSemesters: self.allAvailableSemesters];
         if(title){
             NSArray* semesterParts = [title componentsSeparatedByString: @" "];
             self.semStr = [NSString stringWithFormat: @"%@%@", [semesterParts objectAtIndex: 1], [[semesterParts objectAtIndex: 0] lowercaseString]];
@@ -62,16 +65,12 @@
     // Load all of the schedules currently stored on the phone
     self.schedulesDict = [[NSMutableDictionary alloc] init];
    	[self loadSchedulesIntoDict: self.schedulesDict];
-    if([self.schedulesDict objectForKey: self.semStr]){
-        self.activeCourses = [ScheduleViewController sortCourses: [[self.schedulesDict objectForKey: self.semStr] courses]];
-    }   
-    else{
-        Schedule* newSched = [NSEntityDescription insertNewObjectForEntityForName: @"Schedule" inManagedObjectContext: self.appDel.managedObjectContext];
-        newSched.semester = self.semStr;
-        [self.schedulesDict setObject: newSched forKey: semStr];
-        self.activeCourses = [ScheduleViewController sortCourses: [[self.schedulesDict objectForKey: self.semStr] courses]];
-        [self.appDel saveContext];
-    }
+ 
+    [self switchToSemester: self.semStr];
+    
+    // Set the left button to display a pickerview to allow selection of the semesters
+    UIBarButtonItem* semesterSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Semesters" style: UIBarButtonItemStyleBordered target:self action: @selector(showPickerview)];
+    self.navigationItem.leftBarButtonItem = semesterSelectBtn;
     
     // Setup the nav bar right button to the add symbol to add a course
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] 
@@ -104,6 +103,7 @@
     [self setAppDel: nil];
     [self setActiveCourses: nil];
     [self setSchedulesDict: nil];
+    [self setAllAvailableSemesters: nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
@@ -120,6 +120,7 @@
     [appDel release];
     [activeCourses release];
     [schedulesDict release];
+    [allAvailableSemesters release];
     [super dealloc];
 }
 
@@ -225,6 +226,33 @@
     return ret;
 }
 
+- (void) switchToSemester: (NSString*) semesterStr
+{
+    if([self.schedulesDict objectForKey: semesterStr]){
+        self.activeCourses = [ScheduleViewController sortCourses: [[self.schedulesDict objectForKey: semesterStr] courses]];
+    }   
+    else{
+        Schedule* newSched = [NSEntityDescription insertNewObjectForEntityForName: @"Schedule" inManagedObjectContext: self.appDel.managedObjectContext];
+        newSched.semester = semesterStr;
+        [self.schedulesDict setObject: newSched forKey: semesterStr];
+        self.activeCourses = [ScheduleViewController sortCourses: [[self.schedulesDict objectForKey: semesterStr] courses]];
+        [self.appDel saveContext];
+    }
+    
+    self.navigationItem.title = [ScheduleViewController semesterStrToReadable: semesterStr];
+}
+
++ (NSString*) semesterStrToReadable: (NSString*) semesterStr
+{
+    NSString* yearStr = [semesterStr substringToIndex: 4];
+    semesterStr = [semesterStr stringByReplacingCharactersInRange: NSMakeRange(0, 4) withString: @""];
+    
+    NSString* firstChar = [[semesterStr substringToIndex: 1] capitalizedString];
+    NSString* seasonStr = [semesterStr stringByReplacingCharactersInRange: NSMakeRange(0, 1) withString: firstChar];
+    
+    return [NSString stringWithFormat: @"%@ %@", seasonStr, yearStr];
+}
+
 - (void) loadSchedulesIntoDict:(NSMutableDictionary *)schedules
 {
     NSManagedObjectContext* MOC = self.appDel.managedObjectContext;
@@ -267,6 +295,78 @@
     v.backgroundColor = [UIColor clearColor];
     [self.contentTable setTableFooterView:v];
     [v release];
+}
+
+- (void) showPickerview{
+    self.actSheet = [[UIActionSheet alloc] initWithTitle: @"Select a semester" delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil]; 
+
+    NSInteger nCur = [self.allAvailableSemesters indexOfObject: self.semStr];
+    if(nCur == NSNotFound)
+        nCur = 0;
+    
+    [self.actSheet setActionSheetStyle: UIActionSheetStyleBlackTranslucent];
+    
+    CGRect pickerFrame = CGRectMake(0, 40, 0, 0);
+    
+    UIPickerView* pickView = [[UIPickerView alloc] initWithFrame: pickerFrame];
+    pickView.showsSelectionIndicator = YES;
+    pickView.dataSource = self;
+    pickView.delegate = self;
+    pickView.tag = 150;
+    [pickView selectRow: nCur inComponent: 0 animated: NO];
+    [actSheet addSubview: pickView];
+    
+    UISegmentedControl* closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Done", nil]];
+    closeButton.momentary = YES;
+    closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+    closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
+    closeButton.tintColor = [UIColor blackColor];
+    [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
+    [self.actSheet addSubview:closeButton];
+    [closeButton release];
+    
+    [self.actSheet showInView: self.view.window];
+    
+    [self.actSheet setBounds:CGRectMake(0, 0, 320, 485)];
+    [self.actSheet autorelease];
+    
+}
+
+- (void) dismissActionSheet{
+    [self.actSheet dismissWithClickedButtonIndex:0 animated:YES];
+    UIPickerView* picker = (UIPickerView*) [self.actSheet viewWithTag:150];
+    [self setActSheet:nil];
+    
+    // If they didn't actually switch to a new semester then just return
+    if([[self.allAvailableSemesters objectAtIndex: [picker selectedRowInComponent: 0]] isEqualToString: self.semStr])
+        return;
+    
+    self.semStr = [self.allAvailableSemesters objectAtIndex: [picker selectedRowInComponent:0]];
+    
+    if(!self.semStr){
+        self.semStr = [self.allAvailableSemesters objectAtIndex: 0];
+    }
+    
+    // TODO: Do what should be done
+    [self switchToSemester: self.semStr];
+    [self.contentTable reloadData];
+}
+
+#pragma mark - UIPickerView delegate and datasource methods
+- (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+
+- (NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return [self.allAvailableSemesters count];
+}
+
+- (NSString*) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    NSString* readableSem = [ScheduleViewController semesterStrToReadable: [self.allAvailableSemesters objectAtIndex: row]];
+    return readableSem;
+}
+
+- (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
 }
 
 #pragma mark - Table View Delegate Methods

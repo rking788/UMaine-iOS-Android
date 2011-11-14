@@ -51,6 +51,7 @@
 		9697EF41143912F000EC190A /* AddCourseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9697EF3F143912F000EC190A /* AddCourseView.xib */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
 		96CD3516140DE79300C8C45C /* SportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD3515140DE79300C8C45C /* SportEvent.m */; };
+		96DD5E8B1470842900FA4350 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96DD5E8A1470842900FA4350 /* iUMaine.sqlite */; };
 		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
 		96E9244213F61BF800A48C68 /* blackbearsports-clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9244013F61BF800A48C68 /* blackbearsports-clear.png */; };
 		96E9244313F61BF800A48C68 /* blackbearsports.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E9244113F61BF800A48C68 /* blackbearsports.png */; };
@@ -62,7 +63,6 @@
 		96FB509B13F788860069836C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509813F788860069836C /* NSDataAdditions.m */; };
 		96FB509C13F788860069836C /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509A13F788860069836C /* TBXML.m */; };
 		96FB509E13F788F70069836C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FB509D13F788F70069836C /* libz.dylib */; };
-		96FEE89E14660EEC000A0B47 /* iUMaine.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96FEE89D14660EEC000A0B47 /* iUMaine.sqlite */; };
 		AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582C135BD930008E9B84 /* UIKit.framework */; };
 		AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE81582E135BD930008E9B84 /* Foundation.framework */; };
 		AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE815830135BD930008E9B84 /* CoreGraphics.framework */; };
@@ -170,6 +170,7 @@
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		96CD3514140DE79300C8C45C /* SportEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportEvent.h; sourceTree = "<group>"; };
 		96CD3515140DE79300C8C45C /* SportEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportEvent.m; sourceTree = "<group>"; };
+		96DD5E8A1470842900FA4350 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventCellView.xib; sourceTree = "<group>"; };
 		96E9244013F61BF800A48C68 /* blackbearsports-clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackbearsports-clear.png"; sourceTree = "<group>"; };
 		96E9244113F61BF800A48C68 /* blackbearsports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackbearsports.png; sourceTree = "<group>"; };
@@ -184,7 +185,6 @@
 		96FB509913F788860069836C /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
 		96FB509A13F788860069836C /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
 		96FB509D13F788F70069836C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		96FEE89D14660EEC000A0B47 /* iUMaine.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iUMaine.sqlite; sourceTree = "<group>"; };
 		AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dbInitializer.h; sourceTree = "<group>"; };
 		AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dbInitializer.m; sourceTree = "<group>"; };
 		AE815828135BD930008E9B84 /* iUMaine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iUMaine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -423,7 +423,7 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96FEE89D14660EEC000A0B47 /* iUMaine.sqlite */,
+				96DD5E8A1470842900FA4350 /* iUMaine.sqlite */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
@@ -587,10 +587,10 @@
 				961491451438142F0010FFE1 /* weekTabAct@2x.png in Resources */,
 				961491461438142F0010FFE1 /* weekTabInact@2x.png in Resources */,
 				9697EF41143912F000EC190A /* AddCourseView.xib in Resources */,
-				96FEE89E14660EEC000A0B47 /* iUMaine.sqlite in Resources */,
 				963DFC7C146B8293007E41D4 /* CustomScheduleCell.xib in Resources */,
 				965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */,
 				960B929D146F2FCF0057C22E /* CourseDetailView.xib in Resources */,
+				96DD5E8B1470842900FA4350 /* iUMaine.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

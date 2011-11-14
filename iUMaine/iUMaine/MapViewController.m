@@ -302,7 +302,7 @@
     }
 }
 
-// UIPickerView delegate and datasource methods
+#pragma mark - UIPickerView delegate and datasource methods
 - (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView{
     return 1;
 }

@@ -21,14 +21,17 @@
 @synthesize appDel;
 @synthesize sportsAbbrDict;
 @synthesize eventsDict;
+@synthesize eventsSubSetDict;
 @synthesize firstView;
+@synthesize curSport;
+@synthesize actSheet;
 
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
 #pragma mark - TODO: Should probably display loading indicator until the new information is done downloading from the server some communication will be involved between iUMaineAppDelegate and this class
 #pragma mark - TODO CRITICAL: Find images for all the different schools
-#pragma mark - TODO CRITICAL: Filter the sports in the tableview based on the selection in the navigation bar titleView
+#pragma mark - TODO CRITICAL: Allow filtering of the events by year range or current year or something
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -44,13 +47,11 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     
     self.firstView = YES;
 
-    UIButton* newbtn = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    newbtn.frame = CGRectMake(0, 0, 100, 40);
-    newbtn.backgroundColor = [UIColor clearColor];
+    [self.navigationItem setTitle: @"All Sports"];
     
-    [newbtn setTitle: @"New Title2" forState: UIControlStateNormal];
-    self.navigationItem.titleView = newbtn;
-
+    UIBarButtonItem* sportSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Sports" style: UIBarButtonItemStyleBordered target:self action: @selector(selectSportBtnClicked)];
+    self.navigationItem.leftBarButtonItem = sportSelectBtn;
+    
     [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (3.0/255.0) 
                                                                     green: (32.0/255.0) 
                                                                     blue: (62.0/255.0) 
@@ -58,6 +59,12 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     
     // Load Sports Events
     [self loadSportsEvents];
+
+    // This should probably be loaded from user defaults (the last viewed sport)
+    [self setCurSport: @"All"];
+    
+    // Fill in the subset dictionary
+    [self showEventsForSport: self.curSport];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -69,19 +76,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
   //      [self showLoadingView];
   //  }
 
-    // Scroll to today's games (if any)
-    if([self isFirstView]){
-        if([[self.eventsDict objectForKey: CUR_KEY] count] > 0){
-            NSIndexPath* indPath = [NSIndexPath indexPathForRow: 0 inSection: 1];
-            [self.tableV scrollToRowAtIndexPath: indPath atScrollPosition: UITableViewScrollPositionTop animated: NO];
-        }
-        else if([[self.eventsDict objectForKey: FUT_KEY] count] > 0){
-            NSIndexPath* indPath = [NSIndexPath indexPathForRow: 0 inSection: 2];
-            [self.tableV scrollToRowAtIndexPath: indPath atScrollPosition: UITableViewScrollPositionTop animated: NO];
-        }
-        
-        self.firstView = NO;
-    }
+    [self scrollToCurrentOrFutureEvents: NO];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -112,6 +107,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [self setAppDel: nil];
     [self setSportsAbbrDict: nil];
     [self setEventsDict: nil];
+    [self setEventsSubSetDict: nil];
 }
 
 
@@ -120,6 +116,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [appDel release];
     [sportsAbbrDict release];
     [eventsDict release];
+    [eventsSubSetDict release];
     [currentEventCell release];
     [otherEventCell release];
     [tableV release];
@@ -254,17 +251,148 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     return ret;
 }
 
+- (void) selectSportBtnClicked
+{
+    NSMutableArray* sportList = [NSMutableArray arrayWithArray: [self.sportsAbbrDict allValues]];
+    [sportList insertObject: @"All" atIndex: 0];
+    
+    self.actSheet = [[UIActionSheet alloc] initWithTitle:@"Select a sport" delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil]; 
+    
+    NSInteger nCur = [sportList indexOfObject: [self curSport]];
+    if(nCur == NSNotFound)
+        nCur = 0;
+    
+    [self.actSheet setActionSheetStyle:UIActionSheetStyleBlackTranslucent];
+    
+    CGRect pickerFrame = CGRectMake(0, 40, 0, 0);
+    
+    UIPickerView* pickView = [[UIPickerView alloc] initWithFrame: pickerFrame];
+    pickView.showsSelectionIndicator = YES;
+    pickView.dataSource = self;
+    pickView.delegate = self;
+    pickView.tag = 150;
+    [pickView selectRow: nCur inComponent: 0 animated: NO];
+    [actSheet addSubview: pickView];
+    
+    UISegmentedControl* closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Done", nil]];
+    closeButton.momentary = YES;
+    closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
+    closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
+    closeButton.tintColor = [UIColor blackColor];
+    [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
+    [self.actSheet addSubview: closeButton];
+    [closeButton release];
+    
+    [self.actSheet showInView: self.view.window];
+    
+    [self.actSheet setBounds:CGRectMake(0, 0, 320, 485)];
+    [self.actSheet autorelease];
+}
+
+- (void) dismissActionSheet 
+{
+    NSMutableArray* sportList = [NSMutableArray arrayWithArray: [self.sportsAbbrDict allValues]];
+    [sportList insertObject: @"All" atIndex: 0];
+    
+    [self.actSheet dismissWithClickedButtonIndex:0 animated:YES];
+    UIPickerView* picker = (UIPickerView*) [self.actSheet viewWithTag:150];
+    [self setActSheet:nil];
+    
+    if([self.curSport isEqualToString: [sportList objectAtIndex: [picker selectedRowInComponent: 0]]])
+        return;
+    
+    self.curSport = [sportList objectAtIndex: [picker selectedRowInComponent:0]];
+    
+    // Not sure why this is even here? TODO: look into this.
+    if(!self.curSport){
+        self.curSport = [sportList objectAtIndex: 0];
+    }
+    
+    // Draw the correct permit overlays
+    [self showEventsForSport: self.curSport];
+}
+
+#pragma mark - UIPickerViewDelegate and datasource methods
+- (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger) pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    NSMutableArray* sportList = [NSMutableArray arrayWithArray: [self.sportsAbbrDict allValues]];
+    [sportList insertObject: @"All" atIndex: 0];
+
+    return [sportList count];
+}
+
+- (NSString*) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    NSMutableArray* sportList = [NSMutableArray arrayWithArray: [self.sportsAbbrDict allValues]];
+    [sportList insertObject: @"All" atIndex: 0];
+    
+    return [sportList objectAtIndex:row];
+}
+
+- (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+}
+
+- (void) showEventsForSport:(NSString *)sport
+{
+    [self.navigationItem setTitle: sport];
+    
+    // If we want all courses then don't do any filtering just assign the complete
+    // dictionary to the subset dictionary
+    if([sport isEqualToString: @"All"]){
+        self.eventsSubSetDict = [NSDictionary dictionaryWithDictionary: self.eventsDict];
+        return;
+    }
+    
+    NSString* shortSport = [[self.sportsAbbrDict allKeysForObject: sport] objectAtIndex: 0];
+    NSMutableArray* prevEvents = [NSMutableArray arrayWithArray: [self.eventsDict objectForKey: PREV_KEY]];
+    NSMutableArray* curEvents = [NSMutableArray arrayWithArray: [self.eventsDict objectForKey: CUR_KEY]];
+    NSMutableArray* futEvents = [NSMutableArray arrayWithArray: [self.eventsDict objectForKey: FUT_KEY]];
+    
+    NSPredicate* pred = [NSPredicate predicateWithFormat: @"(SELF.sport contains[c] %@)", shortSport];
+    [prevEvents filterUsingPredicate: pred];
+    [curEvents filterUsingPredicate: pred];
+    [futEvents filterUsingPredicate: pred];
+    
+    self.eventsSubSetDict = [NSMutableDictionary dictionaryWithObjectsAndKeys: prevEvents, PREV_KEY, curEvents, CUR_KEY, futEvents, FUT_KEY, nil];
+    
+    [self.tableV reloadData];
+    [self scrollToCurrentOrFutureEvents: YES];
+}
+
+- (void) scrollToCurrentOrFutureEvents: (BOOL) force
+{
+    // Scroll to today's games (if any), force is used when we are refreshing the list of events
+    if([self isFirstView] || force){
+        if([[self.eventsSubSetDict objectForKey: CUR_KEY] count] > 0){
+            NSIndexPath* indPath = [NSIndexPath indexPathForRow: 0 inSection: 1];
+            [self.tableV scrollToRowAtIndexPath: indPath atScrollPosition: UITableViewScrollPositionTop animated: NO];
+        }
+        else if([[self.eventsSubSetDict objectForKey: FUT_KEY] count] > 0){
+            NSIndexPath* indPath = [NSIndexPath indexPathForRow: 0 inSection: 2];
+            [self.tableV scrollToRowAtIndexPath: indPath atScrollPosition: UITableViewScrollPositionTop animated: NO];
+        }
+        
+        self.firstView = NO;
+    }
+}
+
 #pragma mark - UITablewViewDataSource methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSInteger num = 0;
     
     if(section == 0)
-        num = [[self.eventsDict objectForKey: PREV_KEY] count];
+        num = [[self.eventsSubSetDict objectForKey: PREV_KEY] count];
     else if(section == 1)
-        num = [[self.eventsDict objectForKey: CUR_KEY] count];
+        num = [[self.eventsSubSetDict objectForKey: CUR_KEY] count];
     else
-        num = [[self.eventsDict objectForKey: FUT_KEY] count];
+        num = [[self.eventsSubSetDict objectForKey: FUT_KEY] count];
     
     return num;
 }
@@ -314,7 +442,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         UILabel* teamsLbl = (UILabel*)[cell viewWithTag: 40];
         UILabel* timeLbl = (UILabel*)[cell viewWithTag: 42];
         
-        SportEvent* SE = [[self.eventsDict objectForKey: PREV_KEY] objectAtIndex: indexPath.row];
+        SportEvent* SE = [[self.eventsSubSetDict objectForKey: PREV_KEY] objectAtIndex: indexPath.row];
         [sportLbl setText: [self.sportsAbbrDict objectForKey: SE.sport]];
         
         NSString* teamStr;
@@ -349,7 +477,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         UIImageView* teamAImgView = (UIImageView*)[cell viewWithTag: 43];
         UIImageView* teamBImgView = (UIImageView*)[cell viewWithTag: 44];
         
-        SportEvent* SE = [[self.eventsDict objectForKey: CUR_KEY] objectAtIndex: indexPath.row];
+        SportEvent* SE = [[self.eventsSubSetDict objectForKey: CUR_KEY] objectAtIndex: indexPath.row];
         [sportLbl setText: [self.sportsAbbrDict objectForKey: SE.sport]];
         
         NSString* teamStr;
@@ -393,7 +521,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         UILabel* teamsLbl = (UILabel*)[cell viewWithTag: 40];
         UILabel* timeLbl = (UILabel*)[cell viewWithTag: 42];
         
-        SportEvent* SE = [[self.eventsDict objectForKey: FUT_KEY] objectAtIndex: indexPath.row];
+        SportEvent* SE = [[self.eventsSubSetDict objectForKey: FUT_KEY] objectAtIndex: indexPath.row];
         [sportLbl setText: [self.sportsAbbrDict objectForKey: SE.sport]];
         
         NSString* teamStr;
@@ -484,13 +612,13 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     
     NSString* recapStr;
     if(indexPath.section == 0){
-       recapStr = [(SportEvent*) [[self.eventsDict objectForKey: PREV_KEY] objectAtIndex: indexPath.row] recapLink];
+       recapStr = [(SportEvent*) [[self.eventsSubSetDict objectForKey: PREV_KEY] objectAtIndex: indexPath.row] recapLink];
     }
     else if(indexPath.section == 1){
-        recapStr = [(SportEvent*) [[self.eventsDict objectForKey: CUR_KEY] objectAtIndex: indexPath.row] recapLink];
+        recapStr = [(SportEvent*) [[self.eventsSubSetDict objectForKey: CUR_KEY] objectAtIndex: indexPath.row] recapLink];
     }
     else{
-        recapStr = [(SportEvent*) [[self.eventsDict objectForKey: FUT_KEY] objectAtIndex: indexPath.row] recapLink];
+        recapStr = [(SportEvent*) [[self.eventsSubSetDict objectForKey: FUT_KEY] objectAtIndex: indexPath.row] recapLink];
     }
     
     if (!recapStr || [recapStr isEqualToString: @""]) {
