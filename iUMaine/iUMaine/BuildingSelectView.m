@@ -173,6 +173,7 @@
     
     [self.searchListContents removeAllObjects];
     [self.searchListSubContents removeAllObjects];
+    [self.searchListLocations removeAllObjects];
     
     if([searchText length] > 0){
         [self setSearching: YES];
@@ -198,6 +199,7 @@
         if(range.length > 0){
             [self.searchListContents addObject:[self.listContents objectAtIndex: i]];
             [self.searchListSubContents addObject:[self.listSubContents objectAtIndex: i]];
+            [self.searchListLocations addObject: [self.listLocations objectAtIndex: i]];
         }
 
         i++;
@@ -213,8 +215,10 @@
     // Do any additional setup after loading the view from its nib.
     [self setListSubContents: [[NSMutableArray alloc] init]];
     [self setListContents: [[NSMutableArray alloc] init]];
+    [self setListLocations: [[NSMutableArray alloc] init]];
     [self setSearchListContents: [[NSMutableArray alloc] init]];
     [self setSearchListSubContents: [[NSMutableArray alloc] init]];
+    [self setSearchListLocations: [[NSMutableArray alloc] init]];
     
     [self populateListContents];
     

@@ -17,8 +17,6 @@
 @synthesize curPermit, prevPermit;
 @synthesize mapView, mapPOIAnnotations, mapSelBuildingAnnotation, managedObjectContext, permitTitles;
 
-#pragma mark - TODO CRITICAL: Add new images for the parking markers
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
@@ -237,40 +235,39 @@
     if ([annotation isKindOfClass:[MKUserLocation class]])
         return nil;
     
-    // handle our two custom annotations
-    //
-    if ([annotation isKindOfClass:[POIAnnotation class]])
-    {
-        // try to dequeue an existing pin view first
+    if([annotation isKindOfClass: [POIAnnotation class]] && (annotation == self.mapSelBuildingAnnotation)){
         static NSString* POIAnnotationID = @"poiAnnotationIdentifier";
         MKAnnotationView* pinView = [self.mapView dequeueReusableAnnotationViewWithIdentifier: POIAnnotationID];
-//        MKPinAnnotationView* pinView = (MKPinAnnotationView *)
-//        [self.mapView dequeueReusableAnnotationViewWithIdentifier:POIAnnotationID];
-        if (!pinView)
-        {
-            // if an existing pin view was not available, create one
-//            MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc]
-//                                                   initWithAnnotation:annotation reuseIdentifier:POIAnnotationID] autorelease];
-//            customPinView.pinColor = MKPinAnnotationColorPurple;
-//            customPinView.animatesDrop = NO;
-//            customPinView.canShowCallout = YES;
+        
+        if (!pinView){
             
-            // add a detail disclosure button to the callout which will open a new view controller page
-            //
-            // note: you can assign a specific call out accessory view, or as MKMapViewDelegate you can implement:
-            //  - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control;
-            //
-            //UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-            //[rightButton addTarget:self
-            //                action:@selector(showDetails:)
-            //      forControlEvents:UIControlEventTouchUpInside];
-            //customPinView.rightCalloutAccessoryView = rightButton;
+            MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
+            
+            [customPinView setPinColor: MKPinAnnotationColorPurple];
+            [customPinView setCanShowCallout: YES];
+            [customPinView setDraggable: NO];
+            
+            return customPinView;
+        }
+        else{
+            pinView.annotation = annotation;
+        }
+        
+        return pinView;
+
+    }
+    else if ([annotation isKindOfClass:[POIAnnotation class]]){
+        
+        // try to dequeue an existing pin view first
+        static NSString* POIAnnotationID = @"permitAnnotationIdentifier";
+        MKAnnotationView* pinView = [self.mapView dequeueReusableAnnotationViewWithIdentifier: POIAnnotationID];
+
+        if (!pinView){
             
             MKAnnotationView* customPinView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
             
             [customPinView setCanShowCallout: YES];
-            [customPinView setDraggable: YES];
-            NSLog(@"Draggable: %@", ([customPinView isDraggable] ? @"YES" : @"NO"));
+            [customPinView setDraggable: NO];
             
             if([self.curPermit isEqualToString: @"Resident"]){
                 [customPinView setImage: [UIImage imageNamed: @"resident_marker.png"]];
@@ -282,14 +279,12 @@
                 [customPinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
             }
             else if([self.curPermit isEqualToString: @"Visitor"]){
-                // TODO CRITICAL: Need a new image for the visitor parking permit
                 [customPinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
             }
             
             return customPinView;
         }
-        else
-        {
+        else{
             pinView.annotation = annotation;
         }
         
@@ -303,7 +298,6 @@
             [pinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
         }
         else if([self.curPermit isEqualToString: @"Visitor"]){
-            // TODO CRITICAL: Need a new image for the visitor parking permit
             [pinView setImage: [UIImage imageNamed: @"resident_marker.png"]];
         }
         
