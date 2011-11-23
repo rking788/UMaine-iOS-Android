@@ -30,8 +30,7 @@
 NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
 #pragma mark - TODO: Should probably display loading indicator until the new information is done downloading from the server some communication will be involved between iUMaineAppDelegate and this class
-#pragma mark - TODO CRITICAL: Find images for all the different schools
-#pragma mark - TODO CRITICAL: Allow filtering of the events by year range or current year or something
+#pragma mark - TODO: Allow filtering of the events by year range or current year or something
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -505,7 +504,17 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         //[locLbl setText: @""];
         
         // TODO Critical: This should not be a constant it should depend on the team they are playing (obviously)
-        [teamBImgView setImage: [UIImage imageNamed: @"cornell-big-red-logo.gif"]];
+        UIImage* teamAImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamA]];
+        if(!teamAImg)
+            teamAImg = [UIImage imageNamed: @"teamPlaceholder.png"];
+        [teamBImgView setImage: teamAImg];
+        
+        // TODO Critical: This should not be a constant it should depend on the team they are playing (obviously)
+        UIImage* teamBImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamB]];
+        if(!teamBImg)
+            teamBImg = [UIImage imageNamed: @"teamPlaceholder.png"];
+        [teamBImgView setImage: teamBImg];
+        
         
         if(SE.recapLink && ([SE.recapLink length] != 0)){
             [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];

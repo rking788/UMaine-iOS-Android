@@ -70,7 +70,7 @@
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<object class="NSCustomResource" key="IBUIImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">blackbearsports-clear.png</string>
+									<string key="NSResourceName">Maine.png</string>
 								</object>
 							</object>
 							<object class="IBUILabel" id="1002561025">
@@ -114,7 +114,7 @@
 								<string key="NSFrame">{{83, 54}, {154, 21}}</string>
 								<reference key="NSSuperview" ref="718633179"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
+								<reference key="NSNextKeyView" ref="340037744"/>
 								<string key="NSReuseIdentifierKey">_NS:311</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -521,7 +521,7 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">blackbearsports-clear.png</string>
+			<string key="NS.key.0">Maine.png</string>
 			<string key="NS.object.0">{288, 220}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">933</string>

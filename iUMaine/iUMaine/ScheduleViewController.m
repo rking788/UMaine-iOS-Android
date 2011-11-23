@@ -26,7 +26,6 @@
 @synthesize allAvailableSemesters;
 @synthesize actSheet;
 
-#pragma mark - TODO CRITICAL There are courses in the database with WEIRD "days" property values for example CET in 2012 spring SMS in 2012 spring as well. (go to sqlitemanager and sort by days)
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -40,6 +39,9 @@
     // hides all separators under empty cells
     [self hideEmptySeparators];
 
+    //TODO CRITICAL:  If no semesters are available then just wait here until
+    // the app delegate is done updating
+    
     // Set the title to the current semester being viewed 
     // This should check to see if there was a semester previously open or open a default one
     self.userDefs = [NSUserDefaults standardUserDefaults];
@@ -65,7 +67,7 @@
     self.schedulesDict = [[NSMutableDictionary alloc] init];
    	[self loadSchedulesIntoDict: self.schedulesDict];
  
-    [self switchToSemester: self.semStr];
+  //  [self switchToSemester: self.semStr];
     
     // Set the left button to display a pickerview to allow selection of the semesters
     UIBarButtonItem* semesterSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Semesters" style: UIBarButtonItemStyleBordered target:self action: @selector(showPickerview)];
@@ -201,6 +203,12 @@
         return ret;
     
     NSCharacterSet* charSet = [NSCharacterSet characterSetWithCharactersInString: @"APM"];
+    
+    NSArray* times = [c.times componentsSeparatedByString: @" - "];
+    
+    // Must be in the wrong format so return before crashing
+    if([times count] < 2)
+        return ret;
     
     NSString* startTime = [[c.times componentsSeparatedByString: @" - "] objectAtIndex: 0]; 
     NSInteger hours = [[[startTime componentsSeparatedByString: @":"] objectAtIndex: 0] integerValue];

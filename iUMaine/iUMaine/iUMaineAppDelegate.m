@@ -45,7 +45,7 @@ NSString* const SCHEDURLFORMAT = @"http://www.goblackbears.com/sports/%@/%@/sche
 NSString* const RSSSUFFIX = @"?print=rss";
 
 // Constant for the database file name
-NSString* const DBFILENAME = @"iUMaine.sqlite"; 
+NSString* const DBFILENAME = @"UMO.sqlite"; 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -155,7 +155,7 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
         return persistentStoreCoordinator;
     }
     
-    NSURL* storeURL = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent:@"iUMaine.sqlite"]];
+    NSURL* storeURL = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent: DBFILENAME]];
     NSError *error = nil;
     
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
@@ -263,18 +263,22 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
 - (void) checkSportsUpdates
 {
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+    
     NSDate* lastScanDate = [self.defaultPrefs objectForKey: @"LastSportsUpdate"];
     NSDateFormatter* dateformatter = [[NSDateFormatter alloc] init];
     [dateformatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
 
     [self setLastUpdateStr: [dateformatter stringFromDate: lastScanDate]];
+    if(!self.lastUpdateStr)
+        self.lastUpdateStr = @"2011-11-22 00:00:00";
     
     NSURLResponse* resp = nil;
     NSError* err = nil;
     
     // Add the event information into the POST request content
     NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchSportsUpdates.php"];
-    NSString* content = [NSString stringWithFormat: @"date=%@", self.lastUpdateStr];
+   // NSString* content = [NSString stringWithFormat: @"date=%@", self.lastUpdateStr];
+    NSString* content = [NSString stringWithFormat: @"date=%@", nil];
     
     NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
     
@@ -519,8 +523,12 @@ NSString* const DBFILENAME = @"iUMaine.sqlite";
             /* Create the relationship between the newly created availablecourses and this new course object */
             tempC.semesteravailable = ac;
             
+            NSRange textRange = [line rangeOfString:@"&amp;"];
+            if(textRange.location != NSNotFound)
+                line = [line stringByReplacingOccurrencesOfString: @"&amp;" withString: @"&"];
+            
             NSArray* elements = [line componentsSeparatedByString: @";"];
-
+            
             /* Semester (not sure we need this since we have the above relationship "semesteravailable") */
             tempC.semester = semStr;
             /* Department */

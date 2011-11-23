@@ -10,7 +10,8 @@
 
 @class Employee;
 
-@interface DirectoryDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
+@interface DirectoryDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,
+                UIActionSheetDelegate>{
     UILabel *nameLbl;
     UILabel *titleLbl;
     UITableView *infoTableView;
