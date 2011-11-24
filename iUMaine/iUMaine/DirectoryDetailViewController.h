@@ -19,12 +19,12 @@
     Employee* employee;
 }
 
-@property (retain, nonatomic) IBOutlet UILabel *nameLbl;
-@property (retain, nonatomic) IBOutlet UILabel *titleLbl;
-@property (retain, nonatomic) IBOutlet UITableView *infoTableView;
+@property (strong, nonatomic) IBOutlet UILabel *nameLbl;
+@property (strong, nonatomic) IBOutlet UILabel *titleLbl;
+@property (strong, nonatomic) IBOutlet UITableView *infoTableView;
 
-@property (retain, nonatomic) Employee* employee;
-@property (retain, nonatomic) NSMutableDictionary* empDict;
+@property (strong, nonatomic) Employee* employee;
+@property (strong, nonatomic) NSMutableDictionary* empDict;
 
 - (void) fillEmployeeDict: (Employee*) emp;
 

@@ -76,13 +76,4 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [deptNumLbl release];
-    [titleLbl release];
-    [daysTimesLbl release];
-    [instructorLbl release];
-    [locationLbl release];
-    [course release];
-    [super dealloc];
-}
 @end

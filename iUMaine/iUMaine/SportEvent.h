@@ -13,13 +13,13 @@
 @interface SportEvent : NSManagedObject {
 @private
 }
-@property (nonatomic, retain) NSString * resultStr;
-@property (nonatomic, retain) NSString * teamB;
-@property (nonatomic, retain) NSString * recapLink;
-@property (nonatomic, retain) NSString * sport;
-@property (nonatomic, retain) NSNumber * home;
-@property (nonatomic, retain) NSString * teamA;
-@property (nonatomic, retain) NSDate * date;
-@property (nonatomic, retain) NSString * yearRange;
+@property (nonatomic, strong) NSString * resultStr;
+@property (nonatomic, strong) NSString * teamB;
+@property (nonatomic, strong) NSString * recapLink;
+@property (nonatomic, strong) NSString * sport;
+@property (nonatomic, strong) NSNumber * home;
+@property (nonatomic, strong) NSString * teamA;
+@property (nonatomic, strong) NSDate * date;
+@property (nonatomic, strong) NSString * yearRange;
 
 @end

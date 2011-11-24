@@ -26,6 +26,8 @@
 @synthesize allAvailableSemesters;
 @synthesize actSheet;
 
+#pragma mark - TODO CRITICAL: Should reload the available semesters once the app delegate is done downloading the courses
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -53,7 +55,7 @@
         self.semStr = lastSem;
         self.navigationItem.title = lastSem;
     }
-    else{
+    else if([self.allAvailableSemesters count] != 0){
         // Finds the current semester based on today's date or just the first one in the list
         NSString* title = [ScheduleViewController scheduleTitleFromSemesters: self.allAvailableSemesters];
         if(title){
@@ -61,6 +63,9 @@
             self.semStr = [NSString stringWithFormat: @"%@%@", [semesterParts objectAtIndex: 1], [[semesterParts objectAtIndex: 0] lowercaseString]];
             self.navigationItem.title = title;
         }
+    }
+    else{
+        self.navigationItem.title = @"Schedule";
     }
     
     // Load all of the schedules currently stored on the phone
@@ -112,18 +117,6 @@
 }
 
 
-- (void)dealloc
-{
-    [schedTabView release];
-    [contentTable release];
-    [scheduleCourseCell release];
-    [semStr release];
-    [appDel release];
-    [activeCourses release];
-    [schedulesDict release];
-    [allAvailableSemesters release];
-    [super dealloc];
-}
 
 
 + (NSString*) scheduleTitleFromSemesters: (NSArray*) sems
@@ -158,7 +151,8 @@
 {
     NSMutableArray* retArr = [NSMutableArray arrayWithCapacity: [unsortedCourses count]];
     
-    NSEntityDescription* desc = [NSEntityDescription entityForName: @"Course" inManagedObjectContext: [[(iUMaineAppDelegate*)[UIApplication sharedApplication] delegate] managedObjectContext]];
+    iUMaineAppDelegate* appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
+    NSEntityDescription* desc = [NSEntityDescription entityForName: @"Course" inManagedObjectContext: [appDel managedObjectContext]];
     
     for(Course* _c in [unsortedCourses allObjects]){
         [ScheduleViewController insertCourse: _c IntoArray: retArr];
@@ -281,11 +275,17 @@
         NSLog(@"Error fetching schedule object in ScheduleViewController");
     }
     
-    [fetchRequest release];
 }
 
 - (void) addBtnClicked
 {
+    
+    UIActionSheet* asheet = [[UIActionSheet alloc] initWithTitle: @"A Title" delegate: nil cancelButtonTitle: nil destructiveButtonTitle: nil otherButtonTitles: nil];
+
+    asheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+    [asheet showFromTabBar: self.tabBarController.tabBar];
+
+#if 0
     AddCourseViewController* acvc = [[AddCourseViewController alloc] initWithNibName: @"AddCourseView" bundle: nil];
     
     [acvc setSemStr: self.semStr];
@@ -294,6 +294,7 @@
     [acvc setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     [self presentModalViewController: acvc animated: YES];
     [acvc release];
+#endif
 }
 
 - (void)hideEmptySeparators
@@ -301,7 +302,6 @@
     UIView *v = [[UIView alloc] initWithFrame:CGRectZero];
     v.backgroundColor = [UIColor clearColor];
     [self.contentTable setTableFooterView:v];
-    [v release];
 }
 
 - (void) showPickerview{
@@ -330,12 +330,10 @@
     closeButton.tintColor = [UIColor blackColor];
     [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
     [self.actSheet addSubview:closeButton];
-    [closeButton release];
     
     [self.actSheet showInView: self.view.window];
     
     [self.actSheet setBounds:CGRectMake(0, 0, 320, 485)];
-    [self.actSheet autorelease];
     
 }
 
@@ -343,6 +341,9 @@
     [self.actSheet dismissWithClickedButtonIndex:0 animated:YES];
     UIPickerView* picker = (UIPickerView*) [self.actSheet viewWithTag:150];
     [self setActSheet:nil];
+    
+    if([self.allAvailableSemesters count] == 0)
+        return;
     
     // If they didn't actually switch to a new semester then just return
     if([[self.allAvailableSemesters objectAtIndex: [picker selectedRowInComponent: 0]] isEqualToString: self.semStr])
@@ -385,7 +386,6 @@
     [cdvc setCourse: [self.activeCourses objectAtIndex: indexPath.row]];
     [self.navigationController pushViewController: cdvc animated:YES];
     
-    [cdvc release];
 }
 
 - (void) tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -472,7 +472,6 @@
     [timeLbl setText: [[curCourse.times componentsSeparatedByString: @" - "] objectAtIndex: 0]];
     
     [cell setSelectionStyle: UITableViewCellSelectionStyleGray];
-    
     // Configure the cell...
     //  UILabel* lbl = [cell textLabel];
     //  UILabel* lbl2 = [cell detailTextLabel];

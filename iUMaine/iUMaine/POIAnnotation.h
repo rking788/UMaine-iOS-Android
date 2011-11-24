@@ -17,12 +17,12 @@
     NSNumber* longitude;
 }
 
-@property (retain, nonatomic) NSString* title;
-@property (retain, nonatomic) NSString* subtitle;
+@property (strong, nonatomic) NSString* title;
+@property (strong, nonatomic) NSString* subtitle;
 
-@property (nonatomic, retain) UIImage *image;
-@property (nonatomic, retain) NSNumber *latitude;
-@property (nonatomic, retain) NSNumber *longitude;
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) NSNumber *latitude;
+@property (nonatomic, strong) NSNumber *longitude;
 
 -(id) initWithLat:(double) initLat withLong:(double) initLongitude;
 

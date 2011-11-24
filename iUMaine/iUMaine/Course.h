@@ -13,20 +13,20 @@
 
 @interface Course : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * section;
-@property (nonatomic, retain) NSString * semester;
-@property (nonatomic, retain) NSString * instructor;
-@property (nonatomic, retain) NSDate * endDate;
-@property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSString * location;
-@property (nonatomic, retain) NSNumber * number;
-@property (nonatomic, retain) NSString * days;
-@property (nonatomic, retain) NSString * times;
-@property (nonatomic, retain) NSDate * startDate;
-@property (nonatomic, retain) NSNumber * idNum;
-@property (nonatomic, retain) NSString * depart;
-@property (nonatomic, retain) AvailableCourses *semesteravailable;
-@property (nonatomic, retain) Schedule *schedule;
+@property (nonatomic, strong) NSNumber * section;
+@property (nonatomic, strong) NSString * semester;
+@property (nonatomic, strong) NSString * instructor;
+@property (nonatomic, strong) NSDate * endDate;
+@property (nonatomic, strong) NSString * title;
+@property (nonatomic, strong) NSString * type;
+@property (nonatomic, strong) NSString * location;
+@property (nonatomic, strong) NSNumber * number;
+@property (nonatomic, strong) NSString * days;
+@property (nonatomic, strong) NSString * times;
+@property (nonatomic, strong) NSDate * startDate;
+@property (nonatomic, strong) NSNumber * idNum;
+@property (nonatomic, strong) NSString * depart;
+@property (nonatomic, strong) AvailableCourses *semesteravailable;
+@property (nonatomic, strong) Schedule *schedule;
 
 @end

@@ -35,18 +35,18 @@
     NSString* prevPermit;
 }
 
-@property (nonatomic, retain) IBOutlet MKMapView *mapView;
-@property (nonatomic, retain) IBOutlet UINavigationBar *navBar;
-@property (nonatomic, retain) UIActionSheet* actSheet;
-@property (nonatomic, retain) NSArray* permitTitles;
-@property (nonatomic, retain) NSUserDefaults* uDefaults;
-@property (nonatomic, retain) NSString* curPermit;
-@property (nonatomic, retain) NSString* prevPermit;
+@property (nonatomic, strong) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) IBOutlet UINavigationBar *navBar;
+@property (nonatomic, strong) UIActionSheet* actSheet;
+@property (nonatomic, strong) NSArray* permitTitles;
+@property (nonatomic, strong) NSUserDefaults* uDefaults;
+@property (nonatomic, strong) NSString* curPermit;
+@property (nonatomic, strong) NSString* prevPermit;
 
-@property (nonatomic, retain) POIAnnotation* mapSelBuildingAnnotation;
-@property (nonatomic, retain) NSMutableArray* mapPOIAnnotations;
+@property (nonatomic, strong) POIAnnotation* mapSelBuildingAnnotation;
+@property (nonatomic, strong) NSMutableArray* mapPOIAnnotations;
 
-@property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 
 - (IBAction)valchange:(id)sender;
 

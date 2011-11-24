@@ -13,8 +13,8 @@
 
 @interface Schedule : NSManagedObject
 
-@property (nonatomic, retain) NSString * semester;
-@property (nonatomic, retain) NSSet *courses;
+@property (nonatomic, strong) NSString * semester;
+@property (nonatomic, strong) NSSet *courses;
 @end
 
 @interface Schedule (CoreDataGeneratedAccessors)

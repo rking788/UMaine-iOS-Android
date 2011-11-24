@@ -47,8 +47,8 @@
     // Do any additional setup after loading the view from its nib.
     
     // Add save and cancel buttons to the navigation bar
-    [self.navBar.topItem setLeftBarButtonItem: [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target: self action: @selector(cancel)] autorelease]];
-    [self.navBar.topItem setRightBarButtonItem: [[[UIBarButtonItem alloc] initWithTitle: @"Add" style: UIBarButtonItemStyleDone target:self action: @selector(addCourse)] autorelease]];
+    [self.navBar.topItem setLeftBarButtonItem: [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target: self action: @selector(cancel)]];
+    [self.navBar.topItem setRightBarButtonItem: [[UIBarButtonItem alloc] initWithTitle: @"Add" style: UIBarButtonItemStyleDone target:self action: @selector(addCourse)]];
     
     // Set the labels to be displayed in the rows of the table view
     self.lblStrs = [NSArray arrayWithObjects: @"Department", @"Course Number", @"Section", nil];
@@ -84,18 +84,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [navBar release];
-    [tableV release];
-    [lblStrs release];
-    [detLblStrs release];
-    [departArr release];
-    [courseNumArr release];
-    [sectionArr release];
-    [semStr release];
-    [delegate release];
-    [super dealloc];
-}
 
 - (void) cancel
 {
@@ -160,8 +148,6 @@
         NSLog(@"Error fetching a course matching the given details");
     }
     
-    [formatter release];
-    [fetchrequest release];
 }
 
 - (void) checkLastViewedDepart
@@ -215,12 +201,9 @@
         NSLog(@"Error fetching departments");
     }
     
-    [self.departArr release]; self.departArr = nil;
+    self.departArr; self.departArr = nil;
     self.departArr = [[departSet allObjects] sortedArrayUsingSelector: @selector( localizedCaseInsensitiveCompare:)];
     
-    [sortDescript release];
-    [sortDescripts release];
-    [fetchrequest release];
 
 }
 
@@ -261,9 +244,6 @@
     
     self.courseNumArr = [[numberSet allObjects] sortedArrayUsingSelector: @selector( localizedCaseInsensitiveCompare:)];
     
-    [sortDescript release];
-    [sortDescripts release];
-    [fetchrequest release];
 
 }
 
@@ -309,10 +289,6 @@
     
     self.sectionArr = [[sectSet allObjects] sortedArrayUsingSelector: @selector( localizedCaseInsensitiveCompare:)];
     
-    [formatter release];
-    [sortDescript release];
-    [sortDescripts release];
-    [fetchrequest release];
 }
 
 #pragma mark - Table View Delegate Methods
@@ -362,8 +338,6 @@
     [navigationController.navigationBar.topItem setTitle: @"Selection"];
     [self presentModalViewController:navigationController animated:YES];
     
-    [cdsvc release];
-    [navigationController release];
 }
 
 #pragma mark - Table View Data Source Methods
@@ -378,7 +352,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell...

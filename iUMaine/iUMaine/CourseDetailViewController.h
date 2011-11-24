@@ -15,12 +15,12 @@
     Course* course;
 }
 
-@property (retain, nonatomic) IBOutlet UILabel *deptNumLbl;
-@property (retain, nonatomic) IBOutlet UILabel *titleLbl;
-@property (retain, nonatomic) IBOutlet UILabel *daysTimesLbl;
-@property (retain, nonatomic) IBOutlet UILabel *instructorLbl;
-@property (retain, nonatomic) IBOutlet UILabel *locationLbl;
+@property (strong, nonatomic) IBOutlet UILabel *deptNumLbl;
+@property (strong, nonatomic) IBOutlet UILabel *titleLbl;
+@property (strong, nonatomic) IBOutlet UILabel *daysTimesLbl;
+@property (strong, nonatomic) IBOutlet UILabel *instructorLbl;
+@property (strong, nonatomic) IBOutlet UILabel *locationLbl;
 
-@property (nonatomic, retain) Course* course;
+@property (nonatomic, strong) Course* course;
 
 @end

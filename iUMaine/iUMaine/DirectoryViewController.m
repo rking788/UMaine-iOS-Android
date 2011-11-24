@@ -14,10 +14,9 @@
 - (void)dealloc
 {	
 	//[mainTableView release], mainTableView = nil;
-	[employeeArr release], employeeArr = nil;
-	[searchResults release], searchResults = nil;
-    [savedSearchTerm release], savedSearchTerm = nil;
-    [super dealloc];
+	employeeArr = nil;
+	searchResults = nil;
+    savedSearchTerm = nil;
 }
 
 - (void)viewDidUnload
@@ -131,10 +130,6 @@
         NSLog(@"Error fetching the list of employees");
     }
     
-    [propArr release];
-    [sortDescript release];
-    [sdArr release];
-    [fetchrequest release];
 }
 
 #pragma mark -
@@ -177,7 +172,7 @@
 	
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil){
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
 		// Do anything that should be the same on EACH cell here.  Fonts, colors, etc.
 	}
 	
@@ -208,7 +203,6 @@
         [ddvc setEmployee: [self.employeeArr objectAtIndex: indexPath.row]];
     }
     [self.navigationController pushViewController:ddvc animated:YES];
-    [ddvc release];
 }
 
 #pragma mark -

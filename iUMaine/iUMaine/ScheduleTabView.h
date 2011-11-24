@@ -28,12 +28,12 @@ typedef enum TABVIEWTAGS
 {
     NSInteger actTag;
 
-    id<ScheduleDisplayDelegate> delegate;
+    id<ScheduleDisplayDelegate> __unsafe_unretained delegate;
 }
 
 @property (nonatomic, assign) NSInteger actTag;
 
-@property id<ScheduleDisplayDelegate> delegate;
+@property (unsafe_unretained) id<ScheduleDisplayDelegate> delegate;
 
 - (void) tabPressed: (id) sender;
 - (NSString*) activeDay;

@@ -31,19 +31,6 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [searchBar release];
-    [listContents release];
-    [listSubContents release];
-    [listLocations release];
-    [searchListContents release];
-    [searchListSubContents release];
-    [searchListLocations release];
-    [selectDelegate release];
-    [tblView release];
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -84,7 +71,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         //cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     // Set up the cell...
@@ -161,9 +148,6 @@
         NSLog(@"Error fetching lots");
     }
     
-    [sortDescript release];
-    [sortDescripts release];
-    [fetchrequest release];
 }
 
 
@@ -223,9 +207,9 @@
     [self populateListContents];
     
     self.navigationItem.title = @"Search";
-    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
                                                initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
-                                               target:self action:@selector(cancelClicked:)] autorelease];
+                                               target:self action:@selector(cancelClicked:)];
     [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (3.0/255.0) 
                                                                            green: (32.0/255.0) 
                                                                             blue: (62.0/255.0) 

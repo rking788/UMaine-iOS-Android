@@ -110,22 +110,11 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 }
 
 
-- (void)dealloc
-{
-    [appDel release];
-    [sportsAbbrDict release];
-    [eventsDict release];
-    [eventsSubSetDict release];
-    [currentEventCell release];
-    [otherEventCell release];
-    [tableV release];
-    [super dealloc];
-}
 
 - (void) showLoadingView
 {
     CGRect rootRect = self.tableV.frame;
-    UIView* rootView = [[[UIView alloc] initWithFrame: rootRect] autorelease];
+    UIView* rootView = [[UIView alloc] initWithFrame: rootRect];
     
     UIColor* darkBlue = [UIColor colorWithRed: 0.0 green: (33.0/255) blue: (68.0 / 255) alpha: 1.0];
     
@@ -134,7 +123,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     UIFont* loadingFont = [UIFont boldSystemFontOfSize: 17.0];
     CGSize loadingSize = [@"Loading..." sizeWithFont: loadingFont];
     
-    UIActivityIndicatorView* actInd = [[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite] autorelease];
+    UIActivityIndicatorView* actInd = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite];
     
     // Find the height and width needed for the inner view
     CGFloat totW = loadingSize.width + 5.0 + actInd.bounds.size.width;
@@ -145,7 +134,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     loadingLbl.textColor = [UIColor whiteColor];
     loadingLbl.backgroundColor = darkBlue;
     
-    UIView* innerView = [[[UIView alloc] initWithFrame: CGRectMake(0, 0, totW, totH)] autorelease];
+    UIView* innerView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, totW, totH)];
     [innerView addSubview: loadingLbl];
     [innerView addSubview: actInd];
     
@@ -205,8 +194,6 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     // Assign the temporary mutable dictionary to the instance immutable dictionary
     self.eventsDict = [NSDictionary dictionaryWithDictionary: (NSDictionary*) tempEventDict];
     
-    [tempEventDict release];
-    [fetchrequest release];
 }
 
 - (NSInteger) pastPresentFutureDate:(NSDate *)date
@@ -280,12 +267,10 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     closeButton.tintColor = [UIColor blackColor];
     [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
     [self.actSheet addSubview: closeButton];
-    [closeButton release];
     
     [self.actSheet showInView: self.view.window];
     
     [self.actSheet setBounds:CGRectMake(0, 0, 320, 485)];
-    [self.actSheet autorelease];
 }
 
 - (void) dismissActionSheet 
@@ -481,9 +466,29 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         NSString* teamStr;
         if([SE.home boolValue]){
             teamStr = [NSString stringWithFormat: @"%@ %@ %@", SE.teamB, @"vs.", SE.teamA];
+            
+            UIImage* teamAImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamB]];
+            if(!teamAImg)
+                teamAImg = [UIImage imageNamed: @"teamPlaceholder.png"];
+            [teamAImgView setImage: teamAImg];
+            
+            UIImage* teamBImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamA]];
+            if(!teamBImg)
+                teamBImg = [UIImage imageNamed: @"teamPlaceholder.png"];
+            [teamBImgView setImage: teamBImg];
         }
         else{
             teamStr = [NSString stringWithFormat: @"%@ %@ %@", SE.teamA, @"at", SE.teamB];
+            
+            UIImage* teamAImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamA]];
+            if(!teamAImg)
+                teamAImg = [UIImage imageNamed: @"teamPlaceholder.png"];
+            [teamAImgView setImage: teamAImg];
+            
+            UIImage* teamBImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamB]];
+            if(!teamBImg)
+                teamBImg = [UIImage imageNamed: @"teamPlaceholder.png"];
+            [teamBImgView setImage: teamBImg];
         }
         
         [teamsLbl setText: teamStr];
@@ -503,25 +508,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         // at the teams home campus (like playoff games). should probably be implemented in the future
         //[locLbl setText: @""];
         
-        // TODO Critical: This should not be a constant it should depend on the team they are playing (obviously)
-        UIImage* teamAImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamA]];
-        if(!teamAImg)
-            teamAImg = [UIImage imageNamed: @"teamPlaceholder.png"];
-        [teamBImgView setImage: teamAImg];
-        
-        // TODO Critical: This should not be a constant it should depend on the team they are playing (obviously)
-        UIImage* teamBImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamB]];
-        if(!teamBImg)
-            teamBImg = [UIImage imageNamed: @"teamPlaceholder.png"];
-        [teamBImgView setImage: teamBImg];
-        
-        
-        if(SE.recapLink && ([SE.recapLink length] != 0)){
-            [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
-        }
-        else{
-            [cell setAccessoryType: UITableViewCellAccessoryNone];
-        }
+        [cell setAccessoryType: UITableViewCellAccessoryNone];
     }
     else{
         // Other game cell
@@ -593,13 +580,13 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     }
 
     // create the parent view that will hold header Label
-    CustomSectionHeader* customView = [[[CustomSectionHeader alloc] initWithFrame:CGRectMake(0.0, 0.0, 360.0, 25.0)] autorelease];
+    CustomSectionHeader* customView = [[CustomSectionHeader alloc] initWithFrame:CGRectMake(0.0, 0.0, 360.0, 25.0)];
     [customView setTopColor: [UIColor colorWithRed: (3.0/255.0) green: (32.0/255.0) blue: (62.0/255.0) alpha:1.0]];
     [customView setBottomColor: [UIColor colorWithRed: (52.0/255.0) green: (160.0/255.0) blue: (206.0/255.0) alpha:1.0]];
     [customView setLineColor: [UIColor blueColor]];
     
     // Create label with section title
-    UILabel *label = [[[UILabel alloc] init] autorelease];
+    UILabel *label = [[UILabel alloc] init];
     label.frame = CGRectMake(10, 0, 300, 25);
     label.backgroundColor = [UIColor clearColor];
     label.textColor = [UIColor whiteColor];
@@ -638,7 +625,6 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [ervc setRecapURLStr: recapStr];
     
     [self.navigationController pushViewController: ervc animated: YES];
-    [ervc release];
 }
 
 @end

@@ -24,12 +24,12 @@
     id<CourseDetailSelectionDelegate> delegate;
 }
 
-@property (retain, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, retain) NSArray* contentArr;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) NSArray* contentArr;
 @property (nonatomic, assign) NSUInteger row;
-@property (nonatomic, retain) NSString* savedSearchTerm;
-@property (nonatomic, retain) NSMutableArray* searchResults;
-@property (nonatomic, retain) id<CourseDetailSelectionDelegate> delegate;
+@property (nonatomic, strong) NSString* savedSearchTerm;
+@property (nonatomic, strong) NSMutableArray* searchResults;
+@property (nonatomic, strong) id<CourseDetailSelectionDelegate> delegate;
 
 - (void) cancel;
 - (void) handleSearchForTerm: (NSString*) term;

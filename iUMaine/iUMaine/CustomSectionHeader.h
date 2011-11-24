@@ -13,5 +13,5 @@
     UIColor *bottomColor;
     UIColor *lineColor;
 }
-@property(nonatomic, retain) UIColor *topColor, *bottomColor, *lineColor;
+@property(nonatomic, strong) UIColor *topColor, *bottomColor, *lineColor;
 @end

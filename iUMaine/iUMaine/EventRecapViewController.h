@@ -16,10 +16,10 @@
     UIActivityIndicatorView *actIndicator;
     UILabel *loadingErrLbl;
 }
-@property (nonatomic, retain) IBOutlet UIWebView *webView;
-@property (nonatomic, retain) IBOutlet UIView *loadingView;
-@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *actIndicator;
-@property (nonatomic, retain) IBOutlet UILabel *loadingErrLbl;
-@property (nonatomic, retain) NSString* recapURLStr;
+@property (nonatomic, strong) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) IBOutlet UIView *loadingView;
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView *actIndicator;
+@property (nonatomic, strong) IBOutlet UILabel *loadingErrLbl;
+@property (nonatomic, strong) NSString* recapURLStr;
 
 @end

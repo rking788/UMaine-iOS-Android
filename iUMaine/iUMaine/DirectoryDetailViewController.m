@@ -72,14 +72,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [nameLbl release];
-    [titleLbl release];
-    [infoTableView release];
-    [employee release];
-    [empDict release];
-    [super dealloc];
-}
 
 - (void) fillEmployeeDict:(Employee *)emp
 {
@@ -127,7 +119,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         //cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:CellIdentifier] autorelease];
     }
     
@@ -233,7 +225,6 @@
     UIActionSheet* actSheet = [[UIActionSheet alloc] initWithTitle: titleStr delegate: self cancelButtonTitle: @"Cancel" destructiveButtonTitle: nil otherButtonTitles: actSheetBtnTitle, nil];
     actSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
     [actSheet showFromTabBar: self.tabBarController.tabBar];
-    [actSheet release];
 
 }
 

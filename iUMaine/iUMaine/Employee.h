@@ -12,10 +12,10 @@
 
 @interface Employee : NSManagedObject
 
-@property (nonatomic, retain) NSString * deptURL;
-@property (nonatomic, retain) NSString * personalURL;
-@property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSString * department;
-@property (nonatomic, retain) NSString * office;
+@property (nonatomic, strong) NSString * deptURL;
+@property (nonatomic, strong) NSString * personalURL;
+@property (nonatomic, strong) NSString * title;
+@property (nonatomic, strong) NSString * department;
+@property (nonatomic, strong) NSString * office;
 
 @end

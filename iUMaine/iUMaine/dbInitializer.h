@@ -15,7 +15,7 @@
     NSManagedObjectContext* managedObjectContext;
 }
 
-@property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 
 - (void) initDatabase;
 - (void) initLotsOfType:(NSString*) permitType withFile:(NSString*) filePath;

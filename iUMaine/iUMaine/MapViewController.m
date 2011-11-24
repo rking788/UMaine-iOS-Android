@@ -84,7 +84,6 @@
                                                         initWithRootViewController:bsView];
         [navigationController.navigationBar setBarStyle: UIBarStyleBlack];
         [self presentModalViewController:navigationController animated:YES];
-        [bsView release];
     }
 
 }
@@ -115,12 +114,10 @@
     closeButton.tintColor = [UIColor blackColor];
     [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
     [self.actSheet addSubview:closeButton];
-    [closeButton release];
     
     [self.actSheet showInView: self.view.window];
     
     [self.actSheet setBounds:CGRectMake(0, 0, 320, 485)];
-    [self.actSheet autorelease];
     
 }
 
@@ -198,7 +195,6 @@
             [poiAnnot setSubtitle: [NSString stringWithFormat: @"%@ Lot", permitType]];
             
             [self.mapPOIAnnotations insertObject:poiAnnot atIndex: 0];
-            [poiAnnot release];
         }
         
     }
@@ -210,7 +206,6 @@
     
     // Add the annotation to the mapview
     [self.mapView addAnnotations:self.mapPOIAnnotations];
-    [fetchrequest release];
 }
 
 // MapView animation method
@@ -241,7 +236,7 @@
         
         if (!pinView){
             
-            MKPinAnnotationView* customPinView = [[[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
+            MKPinAnnotationView* customPinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID];
             
             [customPinView setPinColor: MKPinAnnotationColorPurple];
             [customPinView setCanShowCallout: YES];
@@ -264,7 +259,7 @@
 
         if (!pinView){
             
-            MKAnnotationView* customPinView = [[[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID] autorelease];
+            MKAnnotationView* customPinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID];
             
             [customPinView setCanShowCallout: YES];
             [customPinView setDraggable: NO];
@@ -351,7 +346,6 @@
     
     if (mapSelBuildingAnnotation) {
         [self.mapView removeAnnotation: mapSelBuildingAnnotation];
-        [mapSelBuildingAnnotation release];
         [self setMapSelBuildingAnnotation: nil];
     }
     
@@ -386,18 +380,6 @@
 }
 
 
-- (void)dealloc
-{
-    [mapView release];
-    [mapPOIAnnotations release];
-    [managedObjectContext release];
-    [mapView release];
-    [navBar release];
-    [permitTitles release];
-    [mapSelBuildingAnnotation release];
-    [uDefaults release];
-    [super dealloc];
-}
 
 
 @end

@@ -11,10 +11,10 @@
 	NSString        *savedSearchTerm;
 }
 
-@property (nonatomic, retain) IBOutlet UITableView *mainTableView;
-@property (nonatomic, retain) NSMutableArray *employeeArr;
-@property (nonatomic, retain) NSMutableArray *searchResults;
-@property (nonatomic, retain)   NSString *savedSearchTerm;
+@property (nonatomic, strong) IBOutlet UITableView *mainTableView;
+@property (nonatomic, strong) NSMutableArray *employeeArr;
+@property (nonatomic, strong) NSMutableArray *searchResults;
+@property (nonatomic, strong)   NSString *savedSearchTerm;
 
 - (void)handleSearchForTerm:(NSString *)searchTerm;
 

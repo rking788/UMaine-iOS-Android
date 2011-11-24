@@ -30,21 +30,21 @@
     NSManagedObjectContext* managedObjectContext;
     BOOL searching;
 }
-@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
-@property (nonatomic, retain) IBOutlet UITableView *tblView;
+@property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) IBOutlet UITableView *tblView;
 
-@property (nonatomic, retain) NSMutableArray* listContents;
-@property (nonatomic, retain) NSMutableArray* listSubContents;
-@property (nonatomic, retain) NSMutableArray* listLocations;
-@property (nonatomic, retain) NSMutableArray* searchListContents;
-@property (nonatomic, retain) NSMutableArray* searchListSubContents;
-@property (nonatomic, retain) NSMutableArray* searchListLocations;
-@property (nonatomic, retain) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, strong) NSMutableArray* listContents;
+@property (nonatomic, strong) NSMutableArray* listSubContents;
+@property (nonatomic, strong) NSMutableArray* listLocations;
+@property (nonatomic, strong) NSMutableArray* searchListContents;
+@property (nonatomic, strong) NSMutableArray* searchListSubContents;
+@property (nonatomic, strong) NSMutableArray* searchListLocations;
+@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 
 @property (nonatomic, getter = isSearching) BOOL searching;
 
 // Delegate used when an item is selected from the table view 
-@property (nonatomic, retain) id<BuildingSelectDelegate> selectDelegate;
+@property (nonatomic, strong) id<BuildingSelectDelegate> selectDelegate;
 
 - (void) populateListContents;
 - (void) cancelClicked: (id) sender;

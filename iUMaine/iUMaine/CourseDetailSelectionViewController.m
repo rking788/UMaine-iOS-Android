@@ -47,7 +47,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     // Add save and cancel buttons to the navigation bar
-    [self.navigationItem setLeftBarButtonItem: [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target: self action: @selector(cancel)] autorelease]];
+    [self.navigationItem setLeftBarButtonItem: [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target: self action: @selector(cancel)]];
     [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (66.0/255.0) green: (41.0/255.0) blue: (3.0/255.0) alpha: 1.0]];
 
     [self.searchBar setAutocapitalizationType: UITextAutocapitalizationTypeNone];
@@ -125,7 +125,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell...
@@ -246,8 +246,4 @@ shouldReloadTableForSearchString:(NSString *)searchString
 	}
 }
 
-- (void)dealloc {
-    [searchBar release];
-    [super dealloc];
-}
 @end

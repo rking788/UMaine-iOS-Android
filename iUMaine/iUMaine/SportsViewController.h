@@ -20,8 +20,8 @@
     NSDictionary* sportsAbbrDict;
     NSDictionary* eventsDict;
     NSDictionary* eventsSubSetDict;
-    UITableViewCell *currentEventCell;
-    UITableViewCell *otherEventCell;
+    UITableViewCell *__unsafe_unretained currentEventCell;
+    UITableViewCell *__unsafe_unretained otherEventCell;
     UITableView *tableV;
 
     BOOL firstView;
@@ -29,19 +29,19 @@
     NSString* curSport;
     UIActionSheet* actSheet;
 }
-@property (nonatomic, retain) IBOutlet UITableView *tableV;
-@property (nonatomic, assign) IBOutlet UITableViewCell *currentEventCell;
-@property (nonatomic, assign) IBOutlet UITableViewCell *otherEventCell;
+@property (nonatomic, strong) IBOutlet UITableView *tableV;
+@property (nonatomic, unsafe_unretained) IBOutlet UITableViewCell *currentEventCell;
+@property (nonatomic, unsafe_unretained) IBOutlet UITableViewCell *otherEventCell;
 
-@property (nonatomic, retain) iUMaineAppDelegate* appDel;
-@property (nonatomic, retain) NSDictionary* sportsAbbrDict;
-@property (nonatomic, retain) NSDictionary* eventsDict;
-@property (nonatomic, retain) NSDictionary* eventsSubSetDict;
+@property (nonatomic, strong) iUMaineAppDelegate* appDel;
+@property (nonatomic, strong) NSDictionary* sportsAbbrDict;
+@property (nonatomic, strong) NSDictionary* eventsDict;
+@property (nonatomic, strong) NSDictionary* eventsSubSetDict;
 
 @property (nonatomic, assign, getter = isFirstView) BOOL firstView;
 
-@property (nonatomic, retain) NSString* curSport;
-@property (nonatomic, retain) UIActionSheet* actSheet;
+@property (nonatomic, strong) NSString* curSport;
+@property (nonatomic, strong) UIActionSheet* actSheet;
 
 - (void) showLoadingView;
 - (void) loadSportsEvents;

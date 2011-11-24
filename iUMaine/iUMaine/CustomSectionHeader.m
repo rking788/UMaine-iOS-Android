@@ -31,7 +31,7 @@
     //[super drawRect:rect];
     
     //add a gradient:
-    CAGradientLayer *gradientLayer = [[[CAGradientLayer alloc] init] autorelease];
+    CAGradientLayer *gradientLayer = [[CAGradientLayer alloc] init];
     [gradientLayer setBounds:[self bounds]];
     CGRect newRect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height -1);
     [gradientLayer setFrame:newRect];
@@ -50,9 +50,5 @@
     CGContextStrokePath(ctx);
 }
 
-- (void)dealloc
-{
-    [super dealloc];
-}
 
 @end

@@ -23,17 +23,20 @@
     BOOL gettingSports;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, strong) IBOutlet UITabBarController *tabBarController;
+@property (strong, nonatomic) IBOutlet UIView *progressView;
+@property (strong, nonatomic) IBOutlet UIProgressView *progressBar;
+@property (strong, nonatomic) IBOutlet UILabel *progressText;
 
 // Core Data related properties
-@property (nonatomic, retain, readonly) NSManagedObjectContext* managedObjectContext;
-@property (nonatomic, retain, readonly) NSManagedObjectModel* managedObjectModel;
-@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator* persistentStoreCoordinator;
+@property (nonatomic, strong, readonly) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, strong, readonly) NSManagedObjectModel* managedObjectModel;
+@property (nonatomic, strong, readonly) NSPersistentStoreCoordinator* persistentStoreCoordinator;
 
-@property (nonatomic, retain) NSUserDefaults* defaultPrefs;
-@property (nonatomic, retain) NSString* lastUpdateStr;
+@property (nonatomic, strong) NSUserDefaults* defaultPrefs;
+@property (nonatomic, strong) NSString* lastUpdateStr;
 @property (nonatomic, assign, getter = isGettingSports) BOOL gettingSports;
 
 
@@ -51,5 +54,10 @@
 - (void) checkForNewSemesters;
 - (NSArray*) getLocalSemesters;
 - (void) fetchSemesterCourses: (NSString*) semStr;
+
+- (void) addProgressBarView;
+- (void) animateProgressViewIn: (NSNumber*) show;
+- (void) updateProgressBar: (NSNumber*) percent;
+- (void) updateProgressTitle: (NSString*) text;
 
 @end

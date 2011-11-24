@@ -74,14 +74,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [webView release];
-    [recapURLStr release];
-    [loadingView release];
-    [actIndicator release];
-    [loadingErrLbl release];
-    [super dealloc];
-}
 
 #pragma mark - WebView Delegate methods
 - (void) webViewDidFinishLoad:(UIWebView *)webView

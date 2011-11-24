@@ -12,8 +12,8 @@
 
 @interface AvailableCourses : NSManagedObject
 
-@property (nonatomic, retain) NSString * semesterStr;
-@property (nonatomic, retain) NSSet *courses;
+@property (nonatomic, strong) NSString * semesterStr;
+@property (nonatomic, strong) NSSet *courses;
 @end
 
 @interface AvailableCourses (CoreDataGeneratedAccessors)

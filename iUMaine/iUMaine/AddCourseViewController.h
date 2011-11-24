@@ -33,19 +33,19 @@
     id<AddCourseToScheduleDelegate> delegate;
 }
 
-@property (nonatomic, retain) IBOutlet UINavigationBar *navBar;
-@property (nonatomic, retain) IBOutlet UITableView *tableV;
+@property (nonatomic, strong) IBOutlet UINavigationBar *navBar;
+@property (nonatomic, strong) IBOutlet UITableView *tableV;
 
-@property (nonatomic, retain) NSString* semStr;
+@property (nonatomic, strong) NSString* semStr;
 
-@property (nonatomic, retain) NSArray* lblStrs;
-@property (nonatomic, retain) NSMutableArray* detLblStrs;
+@property (nonatomic, strong) NSArray* lblStrs;
+@property (nonatomic, strong) NSMutableArray* detLblStrs;
 
-@property (nonatomic, retain) NSArray* departArr;
-@property (nonatomic, retain) NSArray* courseNumArr;
-@property (nonatomic, retain) NSArray* sectionArr;
+@property (nonatomic, strong) NSArray* departArr;
+@property (nonatomic, strong) NSArray* courseNumArr;
+@property (nonatomic, strong) NSArray* sectionArr;
 
-@property (nonatomic, retain) id<AddCourseToScheduleDelegate> delegate;
+@property (nonatomic, strong) id<AddCourseToScheduleDelegate> delegate;
 
 - (void) cancel;
 - (void) addCourse;

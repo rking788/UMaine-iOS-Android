@@ -36,19 +36,19 @@
     NSArray* allAvailableSemesters;
     UIActionSheet* actSheet;
 }
-@property (nonatomic, retain) IBOutlet ScheduleTabView *schedTabView;
-@property (nonatomic, retain) IBOutlet UITableView *contentTable;
-@property (nonatomic, retain) IBOutlet UITableViewCell *scheduleCourseCell;
+@property (nonatomic, strong) IBOutlet ScheduleTabView *schedTabView;
+@property (nonatomic, strong) IBOutlet UITableView *contentTable;
+@property (nonatomic, strong) IBOutlet UITableViewCell *scheduleCourseCell;
 
-@property (nonatomic, retain) iUMaineAppDelegate* appDel;
+@property (nonatomic, strong) iUMaineAppDelegate* appDel;
 
-@property (nonatomic, retain) NSUserDefaults* userDefs;
-@property (nonatomic, retain) NSString* semStr;
-@property (nonatomic, retain) NSMutableArray* activeCourses;
-@property (nonatomic, retain) NSMutableDictionary* schedulesDict;
+@property (nonatomic, strong) NSUserDefaults* userDefs;
+@property (nonatomic, strong) NSString* semStr;
+@property (nonatomic, strong) NSMutableArray* activeCourses;
+@property (nonatomic, strong) NSMutableDictionary* schedulesDict;
 
-@property (nonatomic, retain) NSArray* allAvailableSemesters;
-@property (nonatomic, retain) UIActionSheet* actSheet;
+@property (nonatomic, strong) NSArray* allAvailableSemesters;
+@property (nonatomic, strong) UIActionSheet* actSheet;
 
 - (void) addBtnClicked;
 - (void) hideEmptySeparators;

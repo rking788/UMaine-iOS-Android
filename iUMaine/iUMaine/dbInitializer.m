@@ -58,11 +58,10 @@
             lineFields = [cur componentsSeparatedByString: @","];
             lotObj = [NSEntityDescription insertNewObjectForEntityForName: @"ParkingLot" inManagedObjectContext: self.managedObjectContext];
             
-            [lotObj setTitle:[[lineFields objectAtIndex:0] stringByReplacingOccurrencesOfString: @"\"" withString: @""]];
-            [lotObj setPermittype: permitType];
-            [lotObj setLatitude:[NSNumber numberWithInt:[[lineFields objectAtIndex: 1] integerValue]]];
-            [lotObj setLongitude:[NSNumber numberWithInt:[[lineFields objectAtIndex: 2] integerValue]]];
-            
+            [lotObj setValue: [[lineFields objectAtIndex:0] stringByReplacingOccurrencesOfString: @"\"" withString: @""] forKey: @"title"];
+            [lotObj setValue: permitType forKey: @"permitType"];
+            [lotObj setValue: [NSNumber numberWithInt:[[lineFields objectAtIndex: 1] integerValue]] forKey: @"latitude"];
+            [lotObj setValue: [NSNumber numberWithInt:[[lineFields objectAtIndex: 2] integerValue]] forKey: @"longitude"];
         }
         
         cur = (NSString*)[enumer nextObject];
@@ -73,7 +72,6 @@
         NSLog(@"Failed to save the lot objects to managedObjectContext");
     }
     
-    [fileContents release];
     
 }
 
@@ -93,14 +91,13 @@
             lineFields = [cur componentsSeparatedByString: @","];
             buildingObj = [NSEntityDescription insertNewObjectForEntityForName: @"Building" inManagedObjectContext: managedObjectContext];
             
-            [buildingObj setTitle:[[lineFields objectAtIndex:0] stringByReplacingOccurrencesOfString: @"\"" withString: @""]];
+            [buildingObj setValue: [[lineFields objectAtIndex:0] stringByReplacingOccurrencesOfString: @"\"" withString: @""] forKey: @"title"];
             float latfloat = [[lineFields objectAtIndex: 1] floatValue];
             float longfloat = [[lineFields objectAtIndex: 2] floatValue];
             NSInteger latInt = (NSInteger) ([[lineFields objectAtIndex: 1] floatValue] * 1000000.0);
             NSInteger longInt = (NSInteger) ([[lineFields objectAtIndex: 2] floatValue] * 1000000.0);
-            [buildingObj setLatitude:[NSNumber numberWithInt: latInt]];
-            [buildingObj setLongitude:[NSNumber numberWithInt: longInt]];
-            
+            [buildingObj setValue: [NSNumber numberWithInt: latInt] forKey: @"latitude"];
+            [buildingObj setValue: [NSNumber numberWithInt: longInt] forKey: @"longitude"];
         }
         
         cur = (NSString*)[enumer nextObject];
@@ -111,7 +108,6 @@
         NSLog(@"Failed to save the building objects to managedObjectContext");
     }
     
-    [fileContents release];
 }
 
 - (void) initEmployeesWithFile: (NSString*) filePath
@@ -176,7 +172,6 @@
         NSLog(@"Failed to save the employee objects to managedObjectContext");
     }
     
-    [fileContents release];
 }
 
 - (void) initCoursesForSeason: (NSString*) season andYear: (NSString*) year
@@ -271,8 +266,6 @@
         NSLog(@"Failed to save the course objects to managedObjectContext during initialization");
     }
     
-    [fileContents release];
-    [df release];
 }
 
 @end

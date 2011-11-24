@@ -27,6 +27,9 @@
 @synthesize window=_window;
 
 @synthesize tabBarController=_tabBarController;
+@synthesize progressView;
+@synthesize progressBar;
+@synthesize progressText;
 @synthesize defaultPrefs;
 @synthesize lastUpdateStr;
 @synthesize gettingSports;
@@ -71,6 +74,8 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     [dbIniter initDatabase];
     [dbIniter release];
 #endif
+    
+    [self addProgressBarView];
     
     self.defaultPrefs = [NSUserDefaults standardUserDefaults];
     
@@ -140,7 +145,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     if (managedObjectModel != nil) {
         return managedObjectModel;
     }
-    managedObjectModel = [[NSManagedObjectModel mergedModelFromBundles:nil] retain];    
+    managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];    
  
     return managedObjectModel;
 }
@@ -225,14 +230,6 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     [self saveContext];
 }
 
-- (void)dealloc
-{
-    [_window release];
-    [_tabBarController release];
-    [defaultPrefs release];
-    [lastUpdateStr release];
-    [super dealloc];
-}
 
 
 /*
@@ -262,95 +259,111 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 #pragma mark - Sports related methods
 - (void) checkSportsUpdates
 {
-    NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+    @autoreleasepool {
     
-    NSDate* lastScanDate = [self.defaultPrefs objectForKey: @"LastSportsUpdate"];
-    NSDateFormatter* dateformatter = [[NSDateFormatter alloc] init];
-    [dateformatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
+        NSDate* lastScanDate = [self.defaultPrefs objectForKey: @"LastSportsUpdate"];
+        NSDateFormatter* dateformatter = [[NSDateFormatter alloc] init];
+        [dateformatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
 
-    [self setLastUpdateStr: [dateformatter stringFromDate: lastScanDate]];
-    if(!self.lastUpdateStr)
-        self.lastUpdateStr = @"2011-11-22 00:00:00";
-    
-    NSURLResponse* resp = nil;
-    NSError* err = nil;
-    
-    // Add the event information into the POST request content
-    NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchSportsUpdates.php"];
-   // NSString* content = [NSString stringWithFormat: @"date=%@", self.lastUpdateStr];
-    NSString* content = [NSString stringWithFormat: @"date=%@", nil];
-    
-    NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
-    
-    [request setHTTPMethod:@"POST"];
-    [request setHTTPBody: [content dataUsingEncoding: NSUTF8StringEncoding]];
-    
-    NSData* ret = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
-    NSString* retStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
-    
-    // Check if there were any new events or not
-    if(![retStr isEqualToString: @""]){
-        // Get an array of the new events
-        NSArray* eventsArr = [retStr componentsSeparatedByString: @"\n"];
+        [self setLastUpdateStr: [dateformatter stringFromDate: lastScanDate]];
+        if(!self.lastUpdateStr)
+            self.lastUpdateStr = @"2011-11-22 00:00:00";
         
-        // The event lines are in the form
-        // date;home;recapLink;result;sport;teamA;teamB;year;\n
-        for(NSString* eventLine in eventsArr){
-            NSArray* eComps = [eventLine componentsSeparatedByString: @";"];
+        NSURLResponse* resp = nil;
+        NSError* err = nil;
+        
+        // Add the event information into the POST request content
+        NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchSportsUpdates.php"];
+   // NSString* content = [NSString stringWithFormat: @"date=%@", self.lastUpdateStr];
+        NSString* content = [NSString stringWithFormat: @"date=%@", nil];
+        
+        NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
+        
+        [request setHTTPMethod:@"POST"];
+        [request setHTTPBody: [content dataUsingEncoding: NSUTF8StringEncoding]];
+        
+        NSData* ret = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
+        NSString* retStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
+        
+        // Check if there were any new events or not
+        if(![retStr isEqualToString: @""]){
+            // Get an array of the new events
+            NSArray* eventsArr = [retStr componentsSeparatedByString: @"\n"];
             
-            if ([eComps count] == 1) {
-                continue;
+            [self performSelectorOnMainThread: @selector(updateProgressTitle:) 
+                                   withObject: @"Downloading Sports Events" waitUntilDone: YES];
+            [self performSelectorOnMainThread: @selector(updateProgressBar:) 
+                                   withObject: [NSNumber numberWithFloat: 0.0] 
+                                waitUntilDone: YES];
+            [self performSelectorOnMainThread: @selector(animateProgressViewIn:) 
+                                   withObject: [NSNumber numberWithBool: YES] waitUntilDone: YES];
+            
+            float totalEvents = [eventsArr count];
+            float currentEvent = 0.0;
+            // The event lines are in the form
+            // date;home;recapLink;result;sport;teamA;teamB;year;\n
+            for(NSString* eventLine in eventsArr){
+                
+                NSArray* eComps = [eventLine componentsSeparatedByString: @";"];
+                
+                if ([eComps count] == 1) {
+                    continue;
+                }
+                
+                SportEvent* tempEvent = [[SportEvent alloc] initWithEntity: [NSEntityDescription entityForName:@"SportEvent" inManagedObjectContext: self.managedObjectContext] insertIntoManagedObjectContext: nil];
+
+                // Date
+                [tempEvent setDate: [dateformatter dateFromString: [eComps objectAtIndex: 0]]];
+                
+                // Home
+                [tempEvent setHome: [NSNumber numberWithInteger: [[eComps objectAtIndex: 1] integerValue]]];
+                
+                // Recap Link
+                NSString* recapStr = [eComps objectAtIndex: 2];
+                if([recapStr isEqualToString: @""])
+                    [tempEvent setRecapLink: nil];
+                else
+                    [tempEvent setRecapLink: recapStr];
+                
+                // Result
+                NSString* resultStr = [eComps objectAtIndex: 3];
+                if([resultStr isEqualToString: @""])
+                    [tempEvent setResultStr: nil];
+                else
+                    [tempEvent setResultStr: resultStr];
+                
+                // Sport
+                [tempEvent setSport: [eComps objectAtIndex: 4]];
+                
+                // Team A
+                [tempEvent setTeamA: [eComps objectAtIndex: 5]];
+                
+                // Team B
+                [tempEvent setTeamB: [eComps objectAtIndex: 6]];
+                
+                // Year
+                [tempEvent setYearRange: [eComps objectAtIndex: 7]];
+                
+                [self updateOrAddEvent: tempEvent];
+                
+                
+                ++currentEvent;
+                
+                [self performSelectorOnMainThread: @selector(updateProgressBar:) 
+                                       withObject: [NSNumber numberWithFloat: (currentEvent/totalEvents)] 
+                                    waitUntilDone: YES];
             }
             
-            SportEvent* tempEvent = [[SportEvent alloc] initWithEntity: [NSEntityDescription entityForName:@"SportEvent" inManagedObjectContext: self.managedObjectContext] insertIntoManagedObjectContext: nil];
-
-            // Date
-            [tempEvent setDate: [dateformatter dateFromString: [eComps objectAtIndex: 0]]];
+            [self performSelectorOnMainThread: @selector(animateProgressViewIn:) 
+                                   withObject: [NSNumber numberWithBool: NO] waitUntilDone: YES];
             
-            // Home
-            [tempEvent setHome: [NSNumber numberWithInteger: [[eComps objectAtIndex: 1] integerValue]]];
-            
-            // Recap Link
-            NSString* recapStr = [eComps objectAtIndex: 2];
-            if([recapStr isEqualToString: @""])
-                [tempEvent setRecapLink: nil];
-            else
-                [tempEvent setRecapLink: recapStr];
-            
-            // Result
-            NSString* resultStr = [eComps objectAtIndex: 3];
-            if([resultStr isEqualToString: @""])
-                [tempEvent setResultStr: nil];
-            else
-                [tempEvent setResultStr: resultStr];
-            
-            // Sport
-            [tempEvent setSport: [eComps objectAtIndex: 4]];
-            
-            // Team A
-            [tempEvent setTeamA: [eComps objectAtIndex: 5]];
-            
-            // Team B
-            [tempEvent setTeamB: [eComps objectAtIndex: 6]];
-            
-            // Year
-            [tempEvent setYearRange: [eComps objectAtIndex: 7]];
-            
-            [self updateOrAddEvent: tempEvent];
-            
-            [tempEvent release];
+            // Just updated the events so set the last event update as today's date
+            NSDate* lastUpdate = [NSDate date];
+            [self.defaultPrefs setObject: lastUpdate forKey: @"LastSportsUpdate"];
+            [self setLastUpdateStr: [dateformatter stringFromDate: [NSDate date]]];
         }
         
-        // Just updated the events so set the last event update as today's date
-        NSDate* lastUpdate = [NSDate date];
-        [self.defaultPrefs setObject: lastUpdate forKey: @"LastSportsUpdate"];
-        [self setLastUpdateStr: [dateformatter stringFromDate: [NSDate date]]];
     }
-    
-    [retStr release];
-    [request release];
-    [dateformatter release];
-    [pool release];
     
     [self checkForNewSemesters];
 }
@@ -409,50 +422,45 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         NSLog(@"Failed to save the managedObjectContext");
     }
     
-    [fetchrequest release];
 }
 
 - (void) checkForNewSemesters
 {
-    NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+    @autoreleasepool {
     
-    NSArray* localSemesters = [[self getLocalSemesters] retain];
-    NSMutableArray* newSemesters = [[NSMutableArray alloc] init];
-    
-    NSURLResponse* resp = nil;
-    NSError* err = nil;
-    
-    // Add the event information into the POST request content
-    NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
-    NSString* content = [NSString stringWithFormat: @"op=%@", @"getsemesters"];
-    
-    NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
-    
-    [request setHTTPMethod:@"POST"];
-    [request setHTTPBody: [content dataUsingEncoding: NSUTF8StringEncoding]];
-    
-    NSData* ret = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
-    NSString* tempRetStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
-    
-    NSCharacterSet* charSet = [NSCharacterSet characterSetWithCharactersInString:@"\n"];
-    NSString* retStr = [tempRetStr stringByTrimmingCharactersInSet: charSet];
-    [tempRetStr release];
-    
-    if(![retStr isEqualToString: @""]){
-        // Get an array of the semesters stored on the server
-        NSArray* semArr = [retStr componentsSeparatedByString: @"\n"];
+        NSArray* localSemesters = [self getLocalSemesters];
+        NSMutableArray* newSemesters = [[NSMutableArray alloc] init];
         
-        for(NSString* sem in semArr){
-            if(![localSemesters containsObject: sem]){
-                [self fetchSemesterCourses: sem];
+        NSURLResponse* resp = nil;
+        NSError* err = nil;
+        
+        // Add the event information into the POST request content
+        NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
+        NSString* content = [NSString stringWithFormat: @"op=%@", @"getsemesters"];
+        
+        NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
+        
+        [request setHTTPMethod:@"POST"];
+        [request setHTTPBody: [content dataUsingEncoding: NSUTF8StringEncoding]];
+        
+        NSData* ret = [NSURLConnection sendSynchronousRequest: request returningResponse: &resp error: &err];
+        NSString* tempRetStr = [[NSString alloc] initWithData: ret encoding: NSUTF8StringEncoding];
+        
+        NSCharacterSet* charSet = [NSCharacterSet characterSetWithCharactersInString:@"\n"];
+        NSString* retStr = [tempRetStr stringByTrimmingCharactersInSet: charSet];
+        
+        if(![retStr isEqualToString: @""]){
+            // Get an array of the semesters stored on the server
+            NSArray* semArr = [retStr componentsSeparatedByString: @"\n"];
+            
+            for(NSString* sem in semArr){
+                if(![localSemesters containsObject: sem]){
+                    [self fetchSemesterCourses: sem];
+                }
             }
         }
+        
     }
-    
-    [request release];
-    [newSemesters release];
-    [localSemesters release];
-    [pool release];
 }
 
 - (NSArray*) getLocalSemesters
@@ -478,8 +486,6 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         NSLog(@"Error fetching the list of local semesters");
     }
 
-    [propArr release];
-    [fetchrequest release];
     
     return [array valueForKey: @"semesterStr"];
 }
@@ -514,7 +520,17 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         // Get an array of the new events
         NSArray* courseLines = [retStr componentsSeparatedByString: @"\n"];
         
-        for(NSString* line in courseLines){
+        [self performSelectorOnMainThread: @selector(updateProgressTitle:) 
+                               withObject: [NSString stringWithFormat: @"Downloading Courses for %@", semStr] waitUntilDone: YES];
+        [self performSelectorOnMainThread: @selector(updateProgressBar:) 
+                               withObject: [NSNumber numberWithFloat: 0.0] 
+                            waitUntilDone: YES];
+        [self performSelectorOnMainThread: @selector(animateProgressViewIn:) 
+                               withObject: [NSNumber numberWithBool: YES] waitUntilDone: YES];
+                
+        float totalCourseNum = [courseLines count];
+        float currentCourseNum = 0.0;
+        for(__strong NSString* line in courseLines){
             if([line isEqualToString: @""])
                 continue;
             
@@ -560,11 +576,17 @@ NSString* const DBFILENAME = @"UMO.sqlite";
             tempC.startDate = [dateFormatter dateFromString: [elements objectAtIndex: 10]];
             /* End Date */
             tempC.endDate = [dateFormatter dateFromString: [elements objectAtIndex: 11]];
+        
+            ++currentCourseNum;
+            [self performSelectorOnMainThread: @selector(updateProgressBar:) 
+                                   withObject: [NSNumber numberWithFloat: (currentCourseNum/totalCourseNum)] 
+                                waitUntilDone: YES];
         }
+        
+        [self performSelectorOnMainThread: @selector(animateProgressViewIn:) 
+                               withObject: [NSNumber numberWithBool: NO] waitUntilDone: YES];
     }
     
-    [retStr release];
-    [request release];
     
     /* This should be changed so that it inserts new courses from the server,
      not gets it from the persistent store, it should also create a new 
@@ -595,9 +617,51 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 #endif    
     /* END THE SECTION THAT NEEDS TO BE CHANGED */
     
-    
-    
     [self saveContext];
+}
+
+- (void) addProgressBarView
+{
+    UITabBar* tBar = self.tabBarController.tabBar;
+    CGRect tbFrame = CGRectMake(0, tBar.frame.origin.y,  self.progressView.frame.size.width, progressView.frame.size.height);
+    [progressView setFrame: tbFrame];
+
+    [self.tabBarController.view addSubview: progressView];
+    NSInteger tabBarIndex = [self.tabBarController.view.subviews indexOfObject: self.tabBarController.tabBar];
+    NSInteger progressIndex = [self.tabBarController.view.subviews indexOfObject: self.progressView];
+    [self.tabBarController.view exchangeSubviewAtIndex: tabBarIndex withSubviewAtIndex: progressIndex];
+}
+
+- (void) animateProgressViewIn: (NSNumber*) show
+{
+    [UIView beginAnimations:@"fixupViews" context:nil];
+    
+    if ([show boolValue]) {
+        // Display the progress view
+        CGRect progressViewFrame = [self.progressView frame];
+        progressViewFrame.origin.x = 0;
+        progressViewFrame.origin.y = (self.tabBarController.tabBar.frame.origin.y - self.progressView.frame.size.height);
+        [self.progressView setFrame: progressViewFrame];
+    } else {
+        // Hide the progress view
+        CGRect progressViewFrame = [self.progressView frame];
+        progressViewFrame.origin.x = 0;
+        progressViewFrame.origin.y = self.tabBarController.tabBar.frame.origin.y;
+        [self.progressView setFrame: progressViewFrame];         
+    }
+    
+    [UIView commitAnimations];
+}
+
+
+- (void) updateProgressBar: (NSNumber*) percent
+{
+    [self.progressBar setProgress: [percent floatValue]];
+}
+
+- (void) updateProgressTitle: (NSString*) text
+{
+    [self.progressText setText: text];
 }
 
 @end
