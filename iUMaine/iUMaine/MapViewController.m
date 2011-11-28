@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 #import "BuildingSelectView.h"
+#import "iUMaineAppDelegate.h"
 
 @implementation MapViewController
 
@@ -21,6 +22,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    iUMaineAppDelegate* appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
+    self.managedObjectContext = [appDel managedObjectContext];
     
     // Set the center to barrows or something
     MKCoordinateRegion region;

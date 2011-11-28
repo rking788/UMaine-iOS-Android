@@ -59,7 +59,7 @@
             lotObj = [NSEntityDescription insertNewObjectForEntityForName: @"ParkingLot" inManagedObjectContext: self.managedObjectContext];
             
             [lotObj setValue: [[lineFields objectAtIndex:0] stringByReplacingOccurrencesOfString: @"\"" withString: @""] forKey: @"title"];
-            [lotObj setValue: permitType forKey: @"permitType"];
+            [lotObj setValue: permitType forKey: @"permittype"];
             [lotObj setValue: [NSNumber numberWithInt:[[lineFields objectAtIndex: 1] integerValue]] forKey: @"latitude"];
             [lotObj setValue: [NSNumber numberWithInt:[[lineFields objectAtIndex: 2] integerValue]] forKey: @"longitude"];
         }

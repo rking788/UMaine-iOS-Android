@@ -16,8 +16,6 @@
 @synthesize employee;
 @synthesize empDict;
 
-#pragma mark - TODO CRITICAL: Really need to figure out how to display this contact information
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -76,9 +74,6 @@
 - (void) fillEmployeeDict:(Employee *)emp
 {
     self.empDict = [[NSMutableDictionary alloc] init];
-    
-    // TODO: STill need to figure out how to set the order of these sections in the table view, 
-    // Also need to change the section titles most are too long
     
     // Department
     if([self.employee department])

@@ -150,7 +150,6 @@
 		9662B954147D68E5008F6AA4 /* Yale.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B8EB147D68E5008F6AA4 /* Yale.png */; };
 		9662B956147D6A96008F6AA4 /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B955147D6A96008F6AA4 /* UMaine_57.png */; };
 		9662B958147D6A9E008F6AA4 /* UMaine_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B957147D6A9E008F6AA4 /* UMaine_114.png */; };
-		966E61EE147C866B00C4EB7E /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 966E61ED147C866B00C4EB7E /* UMO.sqlite */; };
 		967E8CB51467109000D9EA24 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB41467109000D9EA24 /* Schedule.m */; };
 		967E8CB81467109F00D9EA24 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB71467109F00D9EA24 /* Course.m */; };
 		967EE34514704B0100F0A9BB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 967EE34414704B0100F0A9BB /* Location.m */; };
@@ -371,7 +370,6 @@
 		9662B8EB147D68E5008F6AA4 /* Yale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yale.png; sourceTree = "<group>"; };
 		9662B955147D6A96008F6AA4 /* UMaine_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UMaine_57.png; path = ../UMaine_57.png; sourceTree = "<group>"; };
 		9662B957147D6A9E008F6AA4 /* UMaine_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UMaine_114.png; path = ../UMaine_114.png; sourceTree = "<group>"; };
-		966E61ED147C866B00C4EB7E /* UMO.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMO.sqlite; sourceTree = "<group>"; };
 		967E8CB31467109000D9EA24 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
 		967E8CB41467109000D9EA24 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		967E8CB61467109F00D9EA24 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
@@ -758,7 +756,6 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				966E61ED147C866B00C4EB7E /* UMO.sqlite */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
@@ -926,7 +923,6 @@
 				96B3084E1470D1F5008C95DD /* resident_marker.png in Resources */,
 				96B308501470D2D0008C95DD /* faculty_marker.png in Resources */,
 				96B308521470D3B3008C95DD /* commuter_marker.png in Resources */,
-				966E61EE147C866B00C4EB7E /* UMO.sqlite in Resources */,
 				964AFFEC147CA25800061CDE /* Default.png in Resources */,
 				964AFFEE147CA26400061CDE /* Default@2x.png in Resources */,
 				9662B8EC147D68E5008F6AA4 /* Acadia.png in Resources */,

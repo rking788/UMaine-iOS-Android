@@ -7,7 +7,7 @@
 //
 
 #import "iUMaineAppDelegate.h"
-#import "MapViewController.h"
+#import "ScheduleViewController.h"
 #import "SportEvent.h"
 #import "Course.h"
 #import "AvailableCourses.h"
@@ -26,6 +26,7 @@
 
 @synthesize window=_window;
 
+@synthesize svcInst;
 @synthesize tabBarController=_tabBarController;
 @synthesize progressView;
 @synthesize progressBar;
@@ -35,7 +36,6 @@
 @synthesize gettingSports;
 
 #pragma mark - TODO CRITICAL: Add support for different campuses, this probably just needs to be seperate DB files.
-#pragma mark - TODO: Maybe try adding some things to string constants or resources including colors too. Not sure how to do that.
 #pragma mark - TODO CRITICAL: SOME LONG RUNNING TASK IS NOT BEING PERFORMED IN THE BACKGROUND FIND OUT WHAT IT IS. (SCREEN FREEZES ON LAUNCH AFTER FRESH INSTALL ) SOME SERVER COMMUNICATION OR SOMETHING PROBABLY
 
 // Constant for the abbreviations dictionary name
@@ -52,7 +52,6 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
@@ -60,19 +59,11 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     // Migrate the default DB if necessary
     [self loadDefaultDB];
     
-    // Assign the managedObjectContext to the MapViewController
-    NSManagedObjectContext* context = [self managedObjectContext];
-    
-    // May be dangerous to assume the mapviewcontroler is at index 1
-    MapViewController* mapViewController = [self.tabBarController.viewControllers objectAtIndex:1];
-    mapViewController.managedObjectContext = context;
-    
     // Initialize the database file (should be removed after .sqlite file is setup
 #if INIT_DB
     DBInitializer* dbIniter = [[DBInitializer alloc] init];
     dbIniter.managedObjectContext = self.managedObjectContext;
     [dbIniter initDatabase];
-    [dbIniter release];
 #endif
     
     [self addProgressBarView];
@@ -260,7 +251,13 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 - (void) checkSportsUpdates
 {
     @autoreleasepool {
-    
+        // Set up a new managed object context for the background thread operations
+        NSManagedObjectContext* backgroundMOC = nil; 
+        iUMaineAppDelegate* appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
+        backgroundMOC = [[NSManagedObjectContext alloc] init];
+        [backgroundMOC setUndoManager: nil];
+        [backgroundMOC setPersistentStoreCoordinator: appDel.persistentStoreCoordinator];
+        
         NSDate* lastScanDate = [self.defaultPrefs objectForKey: @"LastSportsUpdate"];
         NSDateFormatter* dateformatter = [[NSDateFormatter alloc] init];
         [dateformatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
@@ -310,7 +307,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
                     continue;
                 }
                 
-                SportEvent* tempEvent = [[SportEvent alloc] initWithEntity: [NSEntityDescription entityForName:@"SportEvent" inManagedObjectContext: self.managedObjectContext] insertIntoManagedObjectContext: nil];
+                SportEvent* tempEvent = [[SportEvent alloc] initWithEntity: [NSEntityDescription entityForName:@"SportEvent" inManagedObjectContext: backgroundMOC] insertIntoManagedObjectContext: nil];
 
                 // Date
                 [tempEvent setDate: [dateformatter dateFromString: [eComps objectAtIndex: 0]]];
@@ -344,7 +341,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
                 // Year
                 [tempEvent setYearRange: [eComps objectAtIndex: 7]];
                 
-                [self updateOrAddEvent: tempEvent];
+                [self updateOrAddEvent: tempEvent WithMOC: backgroundMOC];
                 
                 
                 ++currentEvent;
@@ -362,17 +359,21 @@ NSString* const DBFILENAME = @"UMO.sqlite";
             [self.defaultPrefs setObject: lastUpdate forKey: @"LastSportsUpdate"];
             [self setLastUpdateStr: [dateformatter stringFromDate: [NSDate date]]];
         }
-        
+    
+        [backgroundMOC save: &err];
     }
+    
+    // TODO: Change this to use the background context
+    //[self saveContext];
     
     [self checkForNewSemesters];
 }
 
-- (void) updateOrAddEvent:(SportEvent *)newE
+- (void) updateOrAddEvent:(SportEvent *)newE WithMOC:(NSManagedObjectContext *)moc
 {
     // See if event is already on the phone
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"SportEvent" inManagedObjectContext: self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"SportEvent" inManagedObjectContext: moc];
     [fetchrequest setEntity:entity];
     
     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"(date == %@) AND (sport == %@) AND (teamA == %@) AND (teamB == %@)",
@@ -387,7 +388,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     
     NSError *error = nil;
     SportEvent* event = nil;
-    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
+    NSArray *array = [moc executeFetchRequest:fetchrequest error:&error];
     
     if (array != nil) {
         if([array count] > 0){
@@ -401,7 +402,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     
     if(!event){
         // Add the new event into the persistent store
-        event = [NSEntityDescription insertNewObjectForEntityForName: @"SportEvent" inManagedObjectContext: self.managedObjectContext];
+        event = [NSEntityDescription insertNewObjectForEntityForName: @"SportEvent" inManagedObjectContext: moc];
         
         [event setDate: newE.date];
         [event setHome: newE.home];
@@ -417,7 +418,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     // Save the context
     NSError* err = nil;
 
-    if(![self.managedObjectContext save:&err]){
+    if(![moc save:&err]){
         // Handle the error here
         NSLog(@"Failed to save the managedObjectContext");
     }
@@ -427,8 +428,13 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 - (void) checkForNewSemesters
 {
     @autoreleasepool {
-    
-        NSArray* localSemesters = [self getLocalSemesters];
+        NSManagedObjectContext* backgroundMOC2 = nil;
+        iUMaineAppDelegate* appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
+        backgroundMOC2 = [[NSManagedObjectContext alloc] init];
+        [backgroundMOC2 setUndoManager: nil];
+        [backgroundMOC2 setPersistentStoreCoordinator: appDel.persistentStoreCoordinator];
+        
+        NSArray* localSemesters = [self getLocalSemestersWithMOC: backgroundMOC2];
         NSMutableArray* newSemesters = [[NSMutableArray alloc] init];
         
         NSURLResponse* resp = nil;
@@ -455,18 +461,20 @@ NSString* const DBFILENAME = @"UMO.sqlite";
             
             for(NSString* sem in semArr){
                 if(![localSemesters containsObject: sem]){
-                    [self fetchSemesterCourses: sem];
+                    [self fetchSemesterCourses: sem WithMOC: backgroundMOC2];
                 }
             }
+        
+            [self performSelectorOnMainThread: @selector(reloadSVCSemesters) withObject: nil waitUntilDone: NO];
         }
         
     }
 }
 
-- (NSArray*) getLocalSemesters
+- (NSArray*) getLocalSemestersWithMOC:(NSManagedObjectContext *)moc
 {
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"AvailableCourses" inManagedObjectContext: self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"AvailableCourses" inManagedObjectContext: moc];
     [fetchrequest setEntity:entity];
     
     NSDictionary* entityProps = [entity propertiesByName];
@@ -474,7 +482,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     [fetchrequest setPropertiesToFetch: propArr];
     
     NSError *error = nil;
-    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
+    NSArray *array = [moc executeFetchRequest:fetchrequest error:&error];
     if (array != nil) {
         
         for(NSManagedObject* obj in array){
@@ -490,11 +498,10 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     return [array valueForKey: @"semesterStr"];
 }
 
-- (void) fetchSemesterCourses:(NSString *)semStr
+- (void) fetchSemesterCourses:(NSString *)semStr WithMOC:(NSManagedObjectContext *)moc
 {
-    
     AvailableCourses* ac = [NSEntityDescription insertNewObjectForEntityForName: @"AvailableCourses" 
-                                                inManagedObjectContext: self.managedObjectContext];
+                                                inManagedObjectContext: moc];
     
     [ac setSemesterStr: semStr];
     
@@ -521,7 +528,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         NSArray* courseLines = [retStr componentsSeparatedByString: @"\n"];
         
         [self performSelectorOnMainThread: @selector(updateProgressTitle:) 
-                               withObject: [NSString stringWithFormat: @"Downloading Courses for %@", semStr] waitUntilDone: YES];
+                               withObject: [NSString stringWithFormat: @"Downloading Courses for %@", [iUMaineAppDelegate semesterStrToReadable: semStr]] waitUntilDone: YES];
         [self performSelectorOnMainThread: @selector(updateProgressBar:) 
                                withObject: [NSNumber numberWithFloat: 0.0] 
                             waitUntilDone: YES];
@@ -534,7 +541,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
             if([line isEqualToString: @""])
                 continue;
             
-            Course* tempC = [NSEntityDescription insertNewObjectForEntityForName: @"Course" inManagedObjectContext: self.managedObjectContext];
+            Course* tempC = [NSEntityDescription insertNewObjectForEntityForName: @"Course" inManagedObjectContext: moc];
             
             /* Create the relationship between the newly created availablecourses and this new course object */
             tempC.semesteravailable = ac;
@@ -593,7 +600,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
      available semester and assign that to its semester available property */
 #if 0    
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext: self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext: moc];
     [fetchrequest setEntity:entity];
     
     NSPredicate* predicate = [NSPredicate predicateWithFormat:@"(semester == %@)",
@@ -617,7 +624,17 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 #endif    
     /* END THE SECTION THAT NEEDS TO BE CHANGED */
     
-    [self saveContext];
+    // Change this save context to use the background context
+    //[self saveContext];
+    [moc save: &err];
+}
+
+- (void) reloadSVCSemesters
+{
+    if(!svcInst)
+        return;
+    
+    [self.svcInst setAllAvailableSemesters: [self getLocalSemestersWithMOC: self.managedObjectContext]];
 }
 
 - (void) addProgressBarView
@@ -663,5 +680,17 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 {
     [self.progressText setText: text];
 }
+
++ (NSString*) semesterStrToReadable: (NSString*) semesterStr
+{
+    NSString* yearStr = [semesterStr substringToIndex: 4];
+    semesterStr = [semesterStr stringByReplacingCharactersInRange: NSMakeRange(0, 4) withString: @""];
+    
+    NSString* firstChar = [[semesterStr substringToIndex: 1] capitalizedString];
+    NSString* seasonStr = [semesterStr stringByReplacingCharactersInRange: NSMakeRange(0, 1) withString: firstChar];
+    
+    return [NSString stringWithFormat: @"%@ %@", seasonStr, yearStr];
+}
+
 
 @end

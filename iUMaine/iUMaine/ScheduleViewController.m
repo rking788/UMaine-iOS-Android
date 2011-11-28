@@ -26,13 +26,15 @@
 @synthesize allAvailableSemesters;
 @synthesize actSheet;
 
-#pragma mark - TODO CRITICAL: Should reload the available semesters once the app delegate is done downloading the courses
-
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.appDel = (iUMaineAppDelegate*) [[UIApplication sharedApplication] delegate];
+
+    [self.appDel setSvcInst: self];
 
     // Add this view controller as the delegate for the tab view
     self.schedTabView.delegate = self;
@@ -40,15 +42,11 @@
     // Not sure why this works ha, found it on StackOverflow
     // hides all separators under empty cells
     [self hideEmptySeparators];
-
-    //TODO CRITICAL:  If no semesters are available then just wait here until
-    // the app delegate is done updating
     
     // Set the title to the current semester being viewed 
     // This should check to see if there was a semester previously open or open a default one
     self.userDefs = [NSUserDefaults standardUserDefaults];
-    self.appDel = (iUMaineAppDelegate*) [[UIApplication sharedApplication] delegate];
-    self.allAvailableSemesters = [self.appDel getLocalSemesters];
+    self.allAvailableSemesters = [self.appDel getLocalSemestersWithMOC: self.appDel.managedObjectContext];
     NSString* lastSem = [self.userDefs objectForKey: @"LastViewedSemester"];
     
     if(lastSem){
@@ -279,13 +277,6 @@
 
 - (void) addBtnClicked
 {
-    
-    UIActionSheet* asheet = [[UIActionSheet alloc] initWithTitle: @"A Title" delegate: nil cancelButtonTitle: nil destructiveButtonTitle: nil otherButtonTitles: nil];
-
-    asheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-    [asheet showFromTabBar: self.tabBarController.tabBar];
-
-#if 0
     AddCourseViewController* acvc = [[AddCourseViewController alloc] initWithNibName: @"AddCourseView" bundle: nil];
     
     [acvc setSemStr: self.semStr];
@@ -293,8 +284,6 @@
     
     [acvc setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     [self presentModalViewController: acvc animated: YES];
-    [acvc release];
-#endif
 }
 
 - (void)hideEmptySeparators
@@ -506,6 +495,5 @@
 {
     [self.contentTable reloadData];
 }
-
 
 @end

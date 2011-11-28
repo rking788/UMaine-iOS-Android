@@ -47,7 +47,7 @@
 @property (nonatomic, strong) NSMutableArray* activeCourses;
 @property (nonatomic, strong) NSMutableDictionary* schedulesDict;
 
-@property (nonatomic, strong) NSArray* allAvailableSemesters;
+@property (atomic, strong) NSArray* allAvailableSemesters;
 @property (nonatomic, strong) UIActionSheet* actSheet;
 
 - (void) addBtnClicked;
