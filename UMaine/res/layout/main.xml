@@ -113,7 +113,7 @@
 			<!-- 	android:src="@drawable/sports_button" android:visibility="visible" -->
 		</TableRow>	
 	</TableLayout>
-	<TextView android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:id="@+id/textView1" android:text="Contact Electrical and Computer Engineering for questions" android:layout_height="wrap_content"></TextView>
+	<TextView android:gravity="bottom|center_horizontal" android:layout_width="match_parent" android:id="@+id/textView1" android:text="Developed by the Department of Electrical and Computer Engineering" android:layout_height="wrap_content"></TextView>
 	
 
 

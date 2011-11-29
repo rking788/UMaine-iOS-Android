@@ -16,14 +16,16 @@ Soup = BeautifulSoup.BeautifulSoup
 
 url = 'https://mainestreet.maine.edu/'
 
+debug = 0
 
-filename = "departments.txt"
+
+filename = "departments_USM.txt"
 fread = open(filename, 'r')
 fcontents = fread.read()
 departments = fcontents.split('\n')
 
 
-print("department,courseNum,courseTitle,sectionNum,courseType,callNum,meetingTime,meetingLocation,instructor,startEndDate")
+print("department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate")
 #ANT,245,"Sex and Gender in Cross",0001,LEC,7261,TuTh 11:00AM - 12:15PM,Murray Hall 106,Lisa K Neuman,8/29/2011 - 12/9/2011
 
 br = mechanize.Browser()
@@ -57,9 +59,15 @@ br.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.
 r = br.open(url)
 html = r.read()
 
+if debug: 
+	print("Got the initial response\n")
+
 r = br.follow_link(text = 'Class Search', nr=0)
 html = r.read();
 #print html
+
+if debug: 
+	print("Followed the Class Search link\n")
 
 soup = Soup(html)
 frame =  soup.find('frame', attrs={'name': "TargetContent"})
@@ -72,9 +80,19 @@ html = r.read();
 
 # Select the Institution
 br.select_form(name="win1")
-br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$51$").value = ["UMS05"]
+# UMPI : UMS07
+# UMO : UMS05
+# UMF : UMS02
+#UMFK : UMS03
+# UMA : UMS01
+# UMM : UMS04
+# USM : UMS06
+br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$51$").value = ["UMS06"]
 br.submit()
 html = br.response().read()
+
+if debug: 
+	print("After filling in the institute\n")
 
 br.select_form(name="win1")
 # 1120: Spring 2011 
@@ -84,12 +102,20 @@ br.select_form(name="win1")
 br.find_control(id="CLASS_SRCH_WRK2_STRM$54$").value = ["1220"]
 br.submit()
 html = br.response().read()
-html = br.response().read()
 
+if debug: 
+	print("After filling in the term\n")
 
-Careers = ["UGRD", "GRAD"];
+#html = br.response().read()
+
+Careers = ["UGRD", "GRAD"]
+
 for dept in departments:
 	for career in Careers:
+		if (dept == ""):
+			continue;
+		if (career == ""):
+			continue;
 
 		br.select_form(name="win1")
 		#br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$60$").selected = False
@@ -102,6 +128,7 @@ for dept in departments:
 		#html = br.response().read()
 
 		post_url, post_data, headers =  br.form.click_request_data()
+
 
 		#print post_url
 
@@ -116,7 +143,10 @@ for dept in departments:
 		br.find_control("CLASS_SRCH_WRK2_SUBJECT$72$").value = dept
 		br.find_control("CLASS_SRCH_WRK2_ACAD_CAREER").value = [career]
 		# UGRD or GRAD
-		#NOTE: MaineStree requires at least two search constraints 
+		#NOTE: MaineStreet requires at least two search constraints 
+
+		if debug: 
+			print("After fill in the depart and career \n")
 
         	#br.find_control("CLASS_SRCH_WRK2_SSR_OPEN_ONLY").value =["N"]
 		post_url, post_data, headers =  br.form.click_request_data()
@@ -124,15 +154,26 @@ for dept in departments:
 		#print post_data
 
 		post_data = post_data.replace("ICYPos=0", "ICYPos=342")
-		post_data = post_data.replace("ICAction=None", "ICAction=CLASS_SRCH_WRK2_SSR_PB_CLASS_SRCH%24113%24")
-		post_data = post_data.replace("CLASS_SRCH_WRK2_SSR_OPEN_ONLY%24chk=Y", "CLASS_SRCH_WRK2_SSR_OPEN_ONLY%24chk=N");
+		post_data = post_data.replace("ICAction=None", "ICAction=CLASS_SRCH_WRK2_SSR_PB_CLASS_SRCH")
+		post_data = post_data.replace("CLASS_SRCH_WRK2_SSR_OPEN_ONLY%24chk=Y", "CLASS_SRCH_WRK2_SSR_OPEN_ONLY%24chk=N")
+		post_data = post_data.replace("CLASS_SRCH_WRK2_SSR_OPEN_ONLY=Y", "CLASS_SRCH_WRK2_SSR_OPEN_ONLY=N")
+
+		#print post_data
 
 		r = br.open(post_url, post_data, timeout=100000)
 		html = r.read()
 		assert br.viewing_html()
 		#print html
 
+		if html.find('The search returns no results that match the criteria specified.') >= 0:
+			if debug: 
+				print("Found no results\n")
+			continue
+
 		if html.find('Your search will return over 50 classes') >= 0 :
+			if debug: 
+				print("Got a warning of over 50 classes\n")
+
 			br.select_form(name="win1")
 			post_url, post_data, headers =  br.form.click_request_data()
 			post_data = post_data.replace('ICAction=None', 'ICAction=%23ICSave')
@@ -142,27 +183,38 @@ for dept in departments:
 			html = r.read()
 			larger_50 = 1
 		else:
+			if debug: 
+				print("Got NO warning of over 50 classes\n")
 			larger_50  = 0 
 
 		html = html.replace('&#039;', '\'')
 
+		#print html
+
 		soup = Soup(html)
-		t1 = soup.find('table', attrs={'id':"$ICField59$scroll$0", 'class':"PABACKGROUNDINVISIBLEWBO"})
+		t1 = soup.find('table', attrs={'id':"$ICField101$scroll$0", 'class':"PABACKGROUNDINVISIBLEWBO"})
 		#t2 = t1.find('table', attrs={'class': "PABACKGROUNDINVISIBLE", 'style': "border-style: none;"})
 		if not t1:
+			if debug: 
+				print("t1 is empty.\n")
 			post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=4&ICAction=CLASS_SRCH_WRK2_SSR_PB_CLOSE&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
 			r = br.open(post_url, post_data, timeout=100000)
 			html = r.read()
+			if debug: 
+				print("No data found! Continue.\n")
 			continue
 
 		t2 = t1.find('table', attrs={'class': "PABACKGROUNDINVISIBLE"})
+		#print t2
+		if not t2:
+			if debug: 
+				print("t2 is empty!\n")
 
 		courseTitle = "";
 
 		for row in t2.findAll(lambda tag: tag.name == "tr" and tag.findParent('table') == t2):
 			str = '';
 			title = row.find('span', attrs={'class': "SSSHYPERLINKBOLD"})
-			#print title
 
 			if not title:
 				continue
@@ -171,20 +223,21 @@ for dept in departments:
 				titleShort = titleShort.replace("&nbsp;", ",")
 				titleShort = titleShort.replace("-", ",")       # ARH, 498 , Directed Study in Art History
 				titles = titleShort.split(',', 3)
-				courseTitle = titles[0].strip() + "," + titles[1].strip() + ',"' + titles[2].strip() + '",';
+				courseTitle = titles[0].strip() + ";" + titles[1].strip() + ';"' + titles[2].strip() + '";';
 				#for s in titles:
 				#	courseTitle += '"' + s.strip() + '",'
-				# print courseTitle
+				#print courseTitle
 
-			t3 = row.find('table', attrs = {'class':"PSLEVEL3GRID"})
+			t3 = row.find('table', attrs = {'class':"PSLEVEL1SCROLLAREABODY"})
+
 			sections = t3.findAll(lambda tag: tag.name == "table" and tag.findParent('table') == t3)
 			for s in sections:
 				str = '';
 				section = s.find('a', id=re.compile("^DERIVED_CLSRCH_SSR_CLASSNAME_LONG"))
 				if section:
 					sec = section.string.strip() 		# 0001-IND(1143)
-					sec = sec.replace("-", ",");
-					sec = sec.replace("(", ",")
+					sec = sec.replace("-", ";");
+					sec = sec.replace("(", ";")
 					sec = sec.replace(")", "")
 					str = sec  				# 0002,IND,3992
 
@@ -194,9 +247,9 @@ for dept in departments:
 					#print it
 					try:
 						#it = it.replace('<br>', "")
-						str = str + "," + it.string.strip()
+						str = str + ";" + it.string.strip()
 					except:
-						str = str + ","
+						str = str + ";"
 
 				print(courseTitle + str)
 
@@ -204,9 +257,8 @@ for dept in departments:
 		#print html
 		br.select_form(name="win1")
 		post_url, post_data, headers = br.form.click_request_data()
-		post_data = post_data.replace('ICAction=None', 'ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2455%24')
+		post_data = post_data.replace('ICAction=None', 'ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2482%24')
 		#print post_data	
-
 		#if larger_50 == 0:
 		#	post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=4&ICAction=CLASS_SRCH_WRK2_SSR_PB_CLOSE&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
 			#post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=13&ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH&ICXPos=11&ICYPos=174&ICFocus=&ICChanged=-1&ICResubmit=0'
