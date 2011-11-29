@@ -18,6 +18,8 @@
 @synthesize tableV;
 @synthesize currentEventCell;
 @synthesize otherEventCell;
+@synthesize loadingView;
+@synthesize actIndicator;
 @synthesize appDel;
 @synthesize sportsAbbrDict;
 @synthesize eventsDict;
@@ -29,7 +31,6 @@
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
-#pragma mark - TODO: Should probably display loading indicator until the new information is done downloading from the server some communication will be involved between iUMaineAppDelegate and this class
 #pragma mark - TODO: Allow filtering of the events by year range or current year or something
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -39,7 +40,8 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     
     // Get an instance of the application delegate
     self.appDel = [iUMaineAppDelegate sharedAppDelegate];
-
+    [self.appDel setSpvcInst: self];
+    
     // Initialize the sports abbreviations dictionary
     NSString* abbrsPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: ABBRSDICTNAME2];
     self.sportsAbbrDict = [[NSDictionary alloc] initWithContentsOfFile: abbrsPath];
@@ -56,14 +58,16 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
                                                                     blue: (62.0/255.0) 
                                                                     alpha:1.0]];
     
-    // Load Sports Events
-    [self loadSportsEvents];
-
     // This should probably be loaded from user defaults (the last viewed sport)
     [self setCurSport: @"All"];
     
-    // Fill in the subset dictionary
-    [self showEventsForSport: self.curSport];
+    if([self.appDel isGettingSports]){
+        [self displayLoadingView];
+    }
+    else{
+        [self hideLoadingView];
+        [self displayEvents];
+    }
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -99,6 +103,8 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [self setCurrentEventCell:nil];
     [self setOtherEventCell:nil];
     [self setTableV:nil];
+    [self setLoadingView:nil];
+    [self setActIndicator:nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
@@ -110,7 +116,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 }
 
 
-
+#if 0
 - (void) showLoadingView
 {
     CGRect rootRect = self.tableV.frame;
@@ -151,6 +157,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     
     [self.view addSubview: rootView];
 }
+#endif
 
 - (void) loadSportsEvents
 {
@@ -625,6 +632,33 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [ervc setRecapURLStr: recapStr];
     
     [self.navigationController pushViewController: ervc animated: YES];
+}
+
+- (void) displayLoadingView
+{
+    [self.loadingView setHidden: NO];
+    [self.actIndicator startAnimating];
+}
+
+- (void) hideLoadingView
+{
+    if([self.loadingView isHidden])
+        return;
+    
+    [self.actIndicator stopAnimating];
+    [self.loadingView setHidden: YES];
+}
+
+- (void) displayEvents
+{
+    // Load Sports Events
+    [self loadSportsEvents];
+    
+    // Fill in the subset dictionary
+    [self showEventsForSport: self.curSport];   
+
+    [self.tableV reloadData];
+    [self scrollToCurrentOrFutureEvents: YES];
 }
 
 @end

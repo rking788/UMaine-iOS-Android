@@ -32,6 +32,8 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableV;
 @property (nonatomic, unsafe_unretained) IBOutlet UITableViewCell *currentEventCell;
 @property (nonatomic, unsafe_unretained) IBOutlet UITableViewCell *otherEventCell;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *loadingView;
+@property (unsafe_unretained, nonatomic) IBOutlet UIActivityIndicatorView *actIndicator;
 
 @property (nonatomic, strong) iUMaineAppDelegate* appDel;
 @property (nonatomic, strong) NSDictionary* sportsAbbrDict;
@@ -50,5 +52,8 @@
 - (void) dismissActionSheet;
 - (void) showEventsForSport: (NSString*) sport;
 - (void) scrollToCurrentOrFutureEvents: (BOOL) force;
+- (void) displayLoadingView;
+- (void) hideLoadingView;
+- (void) displayEvents;
 
 @end

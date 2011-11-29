@@ -8,6 +8,7 @@
 
 #import "iUMaineAppDelegate.h"
 #import "ScheduleViewController.h"
+#import "SportsViewController.h"
 #import "SportEvent.h"
 #import "Course.h"
 #import "AvailableCourses.h"
@@ -27,6 +28,7 @@
 @synthesize window=_window;
 
 @synthesize svcInst;
+@synthesize spvcInst;
 @synthesize tabBarController=_tabBarController;
 @synthesize progressView;
 @synthesize progressBar;
@@ -56,6 +58,8 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
     
+    self.gettingSports = NO;
+    
     // Migrate the default DB if necessary
     [self loadDefaultDB];
     
@@ -71,6 +75,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     self.defaultPrefs = [NSUserDefaults standardUserDefaults];
     
     // Start a new thread to check the server for new sports information
+    self.gettingSports = YES;
     [NSThread detachNewThreadSelector: @selector(checkSportsUpdates) 
                              toTarget: self withObject: nil];
     
@@ -361,10 +366,9 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         }
     
         [backgroundMOC save: &err];
-    }
     
-    // TODO: Change this to use the background context
-    //[self saveContext];
+        [self performSelectorOnMainThread: @selector( doneLoadingSports) withObject: nil waitUntilDone: NO];
+    }
     
     [self checkForNewSemesters];
 }
@@ -423,6 +427,14 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         NSLog(@"Failed to save the managedObjectContext");
     }
     
+}
+
+- (void) doneLoadingSports
+{
+    self.gettingSports = NO;
+    
+    [self.spvcInst displayEvents];
+    [self.spvcInst hideLoadingView];
 }
 
 - (void) checkForNewSemesters

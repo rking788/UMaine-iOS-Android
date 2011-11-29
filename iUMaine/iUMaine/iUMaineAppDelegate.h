@@ -11,6 +11,7 @@
 
 @class SportEvent;
 @class ScheduleViewController;
+@class SportsViewController;
 
 @interface iUMaineAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
 
@@ -22,6 +23,7 @@
     NSString* lastUpdateStr;
     
     ScheduleViewController* svcInst;
+    SportsViewController* spvcInst;
 
     BOOL gettingSports;
 }
@@ -34,6 +36,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *progressText;
 
 @property (strong, atomic) ScheduleViewController* svcInst;
+@property (strong, atomic) SportsViewController* spvcInst;
 
 // Core Data related properties
 @property (nonatomic, strong, readonly) NSManagedObjectContext* managedObjectContext;
@@ -42,7 +45,7 @@
 
 @property (nonatomic, strong) NSUserDefaults* defaultPrefs;
 @property (nonatomic, strong) NSString* lastUpdateStr;
-@property (nonatomic, assign, getter = isGettingSports) BOOL gettingSports;
+@property (atomic, assign, getter = isGettingSports) BOOL gettingSports;
 
 - (NSString *)applicationDocumentsDirectory;
 //- (void)saveContext;
@@ -54,6 +57,7 @@
 
 - (void) checkSportsUpdates;
 - (void) updateOrAddEvent:(SportEvent *)newE WithMOC: (NSManagedObjectContext*) moc;
+- (void) doneLoadingSports;
 
 - (void) checkForNewSemesters;
 - (NSArray*) getLocalSemestersWithMOC:(NSManagedObjectContext*) moc;

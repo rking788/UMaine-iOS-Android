@@ -70,7 +70,8 @@
     self.schedulesDict = [[NSMutableDictionary alloc] init];
    	[self loadSchedulesIntoDict: self.schedulesDict];
  
-  //  [self switchToSemester: self.semStr];
+    if(self.semStr)
+        [self switchToSemester: self.semStr];
     
     // Set the left button to display a pickerview to allow selection of the semesters
     UIBarButtonItem* semesterSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Semesters" style: UIBarButtonItemStyleBordered target:self action: @selector(showPickerview)];
@@ -370,9 +371,21 @@
 {
     [tableView deselectRowAtIndexPath: indexPath animated: YES];
  
+    NSString* dayStr = [self.schedTabView activeDay];
+    NSMutableArray* res = nil;
+    
+    if([dayStr isEqualToString: @"Week"]){
+        res = self.activeCourses;
+    }
+    else{
+        res = [NSMutableArray arrayWithArray: self.activeCourses];
+        NSPredicate* pred = [NSPredicate predicateWithFormat: @"(SELF.days contains[c] %@) OR (SELF.days contains[c] %@)", dayStr, @"TBA"];
+        [res filterUsingPredicate: pred];
+    }
+    
     CourseDetailViewController* cdvc = [[CourseDetailViewController alloc] init];
     
-    [cdvc setCourse: [self.activeCourses objectAtIndex: indexPath.row]];
+    [cdvc setCourse: [res objectAtIndex: indexPath.row]];
     [self.navigationController pushViewController: cdvc animated:YES];
     
 }

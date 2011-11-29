@@ -146,8 +146,14 @@
         }
     }
     
-    if([sectionHeader isEqualToString: @"Phone"] || [sectionHeader isEqualToString: @"EMail"] || [sectionHeader isEqualToString: @"Department Website"])
+    if([sectionHeader isEqualToString: @"Phone"] || [sectionHeader isEqualToString: @"EMail"] || [sectionHeader isEqualToString: @"Department Website"]){
         [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
+        [cell setSelectionStyle: UITableViewCellSelectionStyleBlue];
+    }
+    else{
+        [cell setAccessoryType: UITableViewCellAccessoryNone];
+        [cell setSelectionStyle: UITableViewCellSelectionStyleNone];
+    }
     
     [lbl setText: contentStr];
 
