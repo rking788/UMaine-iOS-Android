@@ -9,13 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "AddCourseViewController.h"
 #import "ScheduleTabView.h"
+#import "CampusSelectionViewController.h"
 
 @class ScheduleTabView;
 @class iUMaineAppDelegate;
 @class Course;
 
 @interface ScheduleViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,
-            AddCourseToScheduleDelegate, ScheduleDisplayDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
+            AddCourseToScheduleDelegate, ScheduleDisplayDelegate, SelectCampusDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
 
     ScheduleTabView *schedTabView;
     UITableView *contentTable;
@@ -50,6 +51,7 @@
 @property (atomic, strong) NSArray* allAvailableSemesters;
 @property (nonatomic, strong) UIActionSheet* actSheet;
 
+- (void) initializeSchedule;
 - (void) addBtnClicked;
 - (void) hideEmptySeparators;
 - (void) loadSchedulesIntoDict: (NSMutableDictionary*) schedules;
@@ -61,5 +63,6 @@
 + (NSString*) semesterStrToReadable: (NSString*) semStr;
 - (void) showPickerview;
 - (void) dismissActionSheet;
+- (void) campusSelected: (NSString*) campusStr;
 
 @end

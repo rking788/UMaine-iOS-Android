@@ -24,6 +24,8 @@
     
     ScheduleViewController* svcInst;
     SportsViewController* spvcInst;
+    
+    NSString* selCampus;
 
     BOOL gettingSports;
 }
@@ -37,6 +39,8 @@
 
 @property (strong, atomic) ScheduleViewController* svcInst;
 @property (strong, atomic) SportsViewController* spvcInst;
+
+@property (strong, nonatomic) NSString* selCampus;
 
 // Core Data related properties
 @property (nonatomic, strong, readonly) NSManagedObjectContext* managedObjectContext;
@@ -55,6 +59,9 @@
 
 - (void) saveContext;
 
+- (void) campusSelected: (NSString*) campusStr;
+
+- (void) checkServer;
 - (void) checkSportsUpdates;
 - (void) updateOrAddEvent:(SportEvent *)newE WithMOC: (NSManagedObjectContext*) moc;
 - (void) doneLoadingSports;

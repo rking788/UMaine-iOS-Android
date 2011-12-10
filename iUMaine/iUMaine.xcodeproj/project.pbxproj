@@ -43,6 +43,7 @@
 		964AFFEC147CA25800061CDE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 964AFFEB147CA25800061CDE /* Default.png */; };
 		964AFFEE147CA26400061CDE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 964AFFED147CA26300061CDE /* Default@2x.png */; };
 		965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */; };
+		96625C601491CDD800A461E3 /* availableCampuses_TENTATIVE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */; };
 		9662B8EC147D68E5008F6AA4 /* Acadia.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B883147D68E5008F6AA4 /* Acadia.png */; };
 		9662B8ED147D68E5008F6AA4 /* Ala.-Huntsville.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B884147D68E5008F6AA4 /* Ala.-Huntsville.png */; };
 		9662B8EE147D68E5008F6AA4 /* Albany.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B885147D68E5008F6AA4 /* Albany.png */; };
@@ -153,6 +154,15 @@
 		967E8CB51467109000D9EA24 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB41467109000D9EA24 /* Schedule.m */; };
 		967E8CB81467109F00D9EA24 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB71467109F00D9EA24 /* Course.m */; };
 		967EE34514704B0100F0A9BB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 967EE34414704B0100F0A9BB /* Location.m */; };
+		968D4F721491BD06007D248D /* directory_UMA.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6B1491BD06007D248D /* directory_UMA.csv */; };
+		968D4F731491BD06007D248D /* directory_UMF.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6C1491BD06007D248D /* directory_UMF.csv */; };
+		968D4F741491BD06007D248D /* directory_UMFK.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6D1491BD06007D248D /* directory_UMFK.csv */; };
+		968D4F751491BD06007D248D /* directory_UMM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6E1491BD06007D248D /* directory_UMM.csv */; };
+		968D4F761491BD06007D248D /* directory_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6F1491BD06007D248D /* directory_UMO.csv */; };
+		968D4F771491BD06007D248D /* directory_UMPI.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F701491BD06007D248D /* directory_UMPI.csv */; };
+		968D4F781491BD06007D248D /* directory_USM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F711491BD06007D248D /* directory_USM.csv */; };
+		968D4F7D1491C62A007D248D /* CampusSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */; };
+		968D4F7E1491C62A007D248D /* CampusSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F7C1491C62A007D248D /* CampusSelectionView.xib */; };
 		96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96950E41141D9D0E0059CFED /* EventRecapViewController.m */; };
 		96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96950E42141D9D0E0059CFED /* EventRecapView.xib */; };
 		9697EF40143912F000EC190A /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3E143912F000EC190A /* AddCourseViewController.m */; };
@@ -160,6 +170,12 @@
 		96B3084E1470D1F5008C95DD /* resident_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B3084D1470D1F5008C95DD /* resident_marker.png */; };
 		96B308501470D2D0008C95DD /* faculty_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B3084F1470D2D0008C95DD /* faculty_marker.png */; };
 		96B308521470D3B3008C95DD /* commuter_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B308511470D3B3008C95DD /* commuter_marker.png */; };
+		96C7092A1493274E005479FB /* faculty_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96C709251493274E005479FB /* faculty_UMO.csv */; };
+		96C7092B1493274E005479FB /* resident_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96C709261493274E005479FB /* resident_UMO.csv */; };
+		96C7092C1493274E005479FB /* visitor_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96C709271493274E005479FB /* visitor_UMO.csv */; };
+		96C7092D1493274E005479FB /* commuter_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96C709281493274E005479FB /* commuter_UMO.csv */; };
+		96C7092E1493274E005479FB /* building_coords_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96C709291493274E005479FB /* building_coords_UMO.csv */; };
+		96C7093014932900005479FB /* availableCampuses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96C7092F14932900005479FB /* availableCampuses.txt */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
 		96CD3516140DE79300C8C45C /* SportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD3515140DE79300C8C45C /* SportEvent.m */; };
 		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
@@ -263,6 +279,7 @@
 		964AFFEB147CA25800061CDE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		964AFFED147CA26300061CDE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseDetailSelectionView.xib; sourceTree = "<group>"; };
+		96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = availableCampuses_TENTATIVE.txt; sourceTree = "<group>"; };
 		9662B883147D68E5008F6AA4 /* Acadia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Acadia.png; sourceTree = "<group>"; };
 		9662B884147D68E5008F6AA4 /* Ala.-Huntsville.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ala.-Huntsville.png"; sourceTree = "<group>"; };
 		9662B885147D68E5008F6AA4 /* Albany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Albany.png; sourceTree = "<group>"; };
@@ -376,6 +393,17 @@
 		967E8CB71467109F00D9EA24 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		967EE34314704B0100F0A9BB /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		967EE34414704B0100F0A9BB /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		968D4F6B1491BD06007D248D /* directory_UMA.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMA.csv; sourceTree = "<group>"; };
+		968D4F6C1491BD06007D248D /* directory_UMF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMF.csv; sourceTree = "<group>"; };
+		968D4F6D1491BD06007D248D /* directory_UMFK.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMFK.csv; sourceTree = "<group>"; };
+		968D4F6E1491BD06007D248D /* directory_UMM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMM.csv; sourceTree = "<group>"; };
+		968D4F6F1491BD06007D248D /* directory_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMO.csv; sourceTree = "<group>"; };
+		968D4F701491BD06007D248D /* directory_UMPI.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMPI.csv; sourceTree = "<group>"; };
+		968D4F711491BD06007D248D /* directory_USM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_USM.csv; sourceTree = "<group>"; };
+		968D4F791491C149007D248D /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		968D4F7A1491C62A007D248D /* CampusSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusSelectionViewController.h; sourceTree = "<group>"; };
+		968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusSelectionViewController.m; sourceTree = "<group>"; };
+		968D4F7C1491C62A007D248D /* CampusSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CampusSelectionView.xib; sourceTree = "<group>"; };
 		96950E40141D9D0E0059CFED /* EventRecapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventRecapViewController.h; sourceTree = "<group>"; };
 		96950E41141D9D0E0059CFED /* EventRecapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventRecapViewController.m; sourceTree = "<group>"; };
 		96950E42141D9D0E0059CFED /* EventRecapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventRecapView.xib; sourceTree = "<group>"; };
@@ -385,6 +413,12 @@
 		96B3084D1470D1F5008C95DD /* resident_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resident_marker.png; sourceTree = "<group>"; };
 		96B3084F1470D2D0008C95DD /* faculty_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faculty_marker.png; sourceTree = "<group>"; };
 		96B308511470D3B3008C95DD /* commuter_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commuter_marker.png; sourceTree = "<group>"; };
+		96C709251493274E005479FB /* faculty_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = faculty_UMO.csv; sourceTree = "<group>"; };
+		96C709261493274E005479FB /* resident_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = resident_UMO.csv; sourceTree = "<group>"; };
+		96C709271493274E005479FB /* visitor_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = visitor_UMO.csv; sourceTree = "<group>"; };
+		96C709281493274E005479FB /* commuter_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = commuter_UMO.csv; sourceTree = "<group>"; };
+		96C709291493274E005479FB /* building_coords_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = building_coords_UMO.csv; sourceTree = "<group>"; };
+		96C7092F14932900005479FB /* availableCampuses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = availableCampuses.txt; sourceTree = "<group>"; };
 		96C8AB9D13E1E98400656998 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		96CD3514140DE79300C8C45C /* SportEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportEvent.h; sourceTree = "<group>"; };
@@ -535,6 +569,20 @@
 			name = "Managed Object Classes";
 			sourceTree = "<group>";
 		};
+		968D4F691491BCC1007D248D /* UMaine Directory Files */ = {
+			isa = PBXGroup;
+			children = (
+				968D4F6B1491BD06007D248D /* directory_UMA.csv */,
+				968D4F6C1491BD06007D248D /* directory_UMF.csv */,
+				968D4F6D1491BD06007D248D /* directory_UMFK.csv */,
+				968D4F6E1491BD06007D248D /* directory_UMM.csv */,
+				968D4F6F1491BD06007D248D /* directory_UMO.csv */,
+				968D4F701491BD06007D248D /* directory_UMPI.csv */,
+				968D4F711491BD06007D248D /* directory_USM.csv */,
+			);
+			name = "UMaine Directory Files";
+			sourceTree = "<group>";
+		};
 		968EA90C147B4DC600FEE786 /* Sport Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,6 +695,18 @@
 			name = "Sport Images";
 			sourceTree = "<group>";
 		};
+		96C709231493272B005479FB /* Coordinate Files */ = {
+			isa = PBXGroup;
+			children = (
+				96C709251493274E005479FB /* faculty_UMO.csv */,
+				96C709261493274E005479FB /* resident_UMO.csv */,
+				96C709271493274E005479FB /* visitor_UMO.csv */,
+				96C709281493274E005479FB /* commuter_UMO.csv */,
+				96C709291493274E005479FB /* building_coords_UMO.csv */,
+			);
+			name = "Coordinate Files";
+			sourceTree = "<group>";
+		};
 		96FB509613F788500069836C /* TBXML */ = {
 			isa = PBXGroup;
 			children = (
@@ -701,6 +761,8 @@
 				AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */,
 				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
 				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
+				968D4F7A1491C62A007D248D /* CampusSelectionViewController.h */,
+				968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */,
 				961491021437E7EC0010FFE1 /* ScheduleTabView.h */,
 				961491031437E7EC0010FFE1 /* ScheduleTabView.m */,
 				960B9299146F2FCF0057C22E /* CourseDetailViewController.h */,
@@ -727,6 +789,7 @@
 				964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */,
 				AE81583E135BD930008E9B84 /* MainWindow.xib */,
 				AE815847135BD930008E9B84 /* ScheduleView.xib */,
+				968D4F7C1491C62A007D248D /* CampusSelectionView.xib */,
 				960B929B146F2FCF0057C22E /* CourseDetailView.xib */,
 				9697EF3F143912F000EC190A /* AddCourseView.xib */,
 				965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */,
@@ -756,12 +819,17 @@
 		AE815833135BD930008E9B84 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96C709231493272B005479FB /* Coordinate Files */,
+				968D4F691491BCC1007D248D /* UMaine Directory Files */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
+				96C7092F14932900005479FB /* availableCampuses.txt */,
+				96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
 				AE815835135BD930008E9B84 /* InfoPlist.strings */,
 				AE815838135BD930008E9B84 /* iUMaine-Prefix.pch */,
 				AE815839135BD930008E9B84 /* main.m */,
+				968D4F791491C149007D248D /* constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1032,6 +1100,21 @@
 				9662B954147D68E5008F6AA4 /* Yale.png in Resources */,
 				9662B956147D6A96008F6AA4 /* UMaine_57.png in Resources */,
 				9662B958147D6A9E008F6AA4 /* UMaine_114.png in Resources */,
+				968D4F721491BD06007D248D /* directory_UMA.csv in Resources */,
+				968D4F731491BD06007D248D /* directory_UMF.csv in Resources */,
+				968D4F741491BD06007D248D /* directory_UMFK.csv in Resources */,
+				968D4F751491BD06007D248D /* directory_UMM.csv in Resources */,
+				968D4F761491BD06007D248D /* directory_UMO.csv in Resources */,
+				968D4F771491BD06007D248D /* directory_UMPI.csv in Resources */,
+				968D4F781491BD06007D248D /* directory_USM.csv in Resources */,
+				968D4F7E1491C62A007D248D /* CampusSelectionView.xib in Resources */,
+				96625C601491CDD800A461E3 /* availableCampuses_TENTATIVE.txt in Resources */,
+				96C7092A1493274E005479FB /* faculty_UMO.csv in Resources */,
+				96C7092B1493274E005479FB /* resident_UMO.csv in Resources */,
+				96C7092C1493274E005479FB /* visitor_UMO.csv in Resources */,
+				96C7092D1493274E005479FB /* commuter_UMO.csv in Resources */,
+				96C7092E1493274E005479FB /* building_coords_UMO.csv in Resources */,
+				96C7093014932900005479FB /* availableCampuses.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1067,6 +1150,7 @@
 				963DFC78146B8253007E41D4 /* CourseDetailSelectionViewController.m in Sources */,
 				960B929C146F2FCF0057C22E /* CourseDetailViewController.m in Sources */,
 				967EE34514704B0100F0A9BB /* Location.m in Sources */,
+				968D4F7D1491C62A007D248D /* CampusSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

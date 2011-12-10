@@ -13,6 +13,7 @@
 #import "Course.h"
 #import "AvailableCourses.h"
 #import "TBXML.h"
+#import "constants.h"
 
 #define INIT_DB 0
 
@@ -36,18 +37,10 @@
 @synthesize defaultPrefs;
 @synthesize lastUpdateStr;
 @synthesize gettingSports;
+@synthesize selCampus;
 
 #pragma mark - TODO CRITICAL: Add support for different campuses, this probably just needs to be seperate DB files.
 #pragma mark - TODO CRITICAL: SOME LONG RUNNING TASK IS NOT BEING PERFORMED IN THE BACKGROUND FIND OUT WHAT IT IS. (SCREEN FREEZES ON LAUNCH AFTER FRESH INSTALL ) SOME SERVER COMMUNICATION OR SOMETHING PROBABLY
-
-// Constant for the abbreviations dictionary name
-NSString* const ABBRSDICTNAME = @"sportsAbbrsDict.txt";
-
-// Constant for the UMaine sports site URL format
-// First %@ is for the sport abbreviation
-// Second %@ is for the year
-NSString* const SCHEDURLFORMAT = @"http://www.goblackbears.com/sports/%@/%@/schedule%@";
-NSString* const RSSSUFFIX = @"?print=rss";
 
 // Constant for the database file name
 NSString* const DBFILENAME = @"UMO.sqlite"; 
@@ -60,9 +53,6 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     
     self.gettingSports = NO;
     
-    // Migrate the default DB if necessary
-    [self loadDefaultDB];
-    
     // Initialize the database file (should be removed after .sqlite file is setup
 #if INIT_DB
     DBInitializer* dbIniter = [[DBInitializer alloc] init];
@@ -74,10 +64,14 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     
     self.defaultPrefs = [NSUserDefaults standardUserDefaults];
     
-    // Start a new thread to check the server for new sports information
-    self.gettingSports = YES;
-    [NSThread detachNewThreadSelector: @selector(checkSportsUpdates) 
-                             toTarget: self withObject: nil];
+    self.selCampus = [self.defaultPrefs objectForKey: DEFS_SELCAMPUSKEY];
+    
+    if(self.selCampus){
+        [self checkServer];
+        
+        // Migrate the default DB if necessary
+        [self loadDefaultDB];
+    }
     
     [self.window makeKeyAndVisible];
     return YES;
@@ -156,7 +150,10 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         return persistentStoreCoordinator;
     }
     
-    NSURL* storeURL = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent: DBFILENAME]];
+    NSString* dbFileName = [NSString stringWithFormat: @"%@.sqlite", self.selCampus];
+    
+    NSLog(@"Using DB with filename: %@ (persistentstorecoordinator)", [NSString stringWithFormat: @"%@.sqlite",  self.selCampus]);
+    NSURL* storeURL = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent: dbFileName]];
     NSError *error = nil;
     
     persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
@@ -183,7 +180,10 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     BOOL success;
     NSError* err;
     NSFileManager* fm = [NSFileManager defaultManager];
-    NSString* dbPath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent:DBFILENAME];
+    NSString* dbFileName = [NSString stringWithFormat: @"%@.sqlite", self.selCampus];
+    
+    NSLog(@"Using DB with filename: %@ first time (loaddefaultDB)", [NSString stringWithFormat: @"%@.sqlite",  self.selCampus]);
+    NSString* dbPath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent: dbFileName];
     
     success = [fm fileExistsAtPath:dbPath];
     
@@ -192,8 +192,9 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         NSLog(@"DB File exists");
         return;
     }
-
-    NSString* defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:DBFILENAME];
+    
+    NSLog(@"Using DB with filename: %@ second time (loaddefaultDB)", [NSString stringWithFormat: @"%@.sqlite",  self.selCampus]);
+    NSString* defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: dbFileName];
     
     // If there is a default database file copy it, if not then fail
     //if([fm fileExistsAtPath:defaultDBPath]){
@@ -252,6 +253,28 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     }   
 }
 
+- (void) campusSelected:(NSString *)campusStr
+{
+    self.selCampus = campusStr;
+    
+    // TODO CRITICAL: Uncomment this when done testing. I just dont want it to remember it until i am done
+    // Set the selected campus in the user defaults
+    //[self.defaultPrefs setObject: self.selCampus forKey: DEFS_SELCAMPUSKEY];
+    
+    // Now that we know which DB file to use we can check for sports and course updates
+    [self checkServer];
+
+}
+
+- (void) checkServer
+{
+    // Start a new thread to check the server for new sports information
+    
+    self.gettingSports = YES;
+    [NSThread detachNewThreadSelector: @selector(checkSportsUpdates) 
+                             toTarget: self withObject: nil];
+}
+
 #pragma mark - Sports related methods
 - (void) checkSportsUpdates
 {
@@ -263,7 +286,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         [backgroundMOC setUndoManager: nil];
         [backgroundMOC setPersistentStoreCoordinator: appDel.persistentStoreCoordinator];
         
-        NSDate* lastScanDate = [self.defaultPrefs objectForKey: @"LastSportsUpdate"];
+        NSDate* lastScanDate = [self.defaultPrefs objectForKey: DEFS_LASTSPORTSUPDATE];
         NSDateFormatter* dateformatter = [[NSDateFormatter alloc] init];
         [dateformatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
 
@@ -275,9 +298,9 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         NSError* err = nil;
         
         // Add the event information into the POST request content
-        NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchSportsUpdates.php"];
-   // NSString* content = [NSString stringWithFormat: @"date=%@", self.lastUpdateStr];
-        NSString* content = [NSString stringWithFormat: @"date=%@", nil];
+        NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/sports/FetchSportsUpdates.php"];
+        // NSString* content = [NSString stringWithFormat: @"date=%@", self.lastUpdateStr];
+        NSString* content = [NSString stringWithFormat: @"date=%@&campus=%@", self.lastUpdateStr, self.selCampus];
         
         NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
         
@@ -361,7 +384,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
             
             // Just updated the events so set the last event update as today's date
             NSDate* lastUpdate = [NSDate date];
-            [self.defaultPrefs setObject: lastUpdate forKey: @"LastSportsUpdate"];
+            [self.defaultPrefs setObject: lastUpdate forKey: DEFS_LASTSPORTSUPDATE];
             [self setLastUpdateStr: [dateformatter stringFromDate: [NSDate date]]];
         }
     
@@ -454,7 +477,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         
         // Add the event information into the POST request content
         NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
-        NSString* content = [NSString stringWithFormat: @"op=%@", @"getsemesters"];
+        NSString* content = [NSString stringWithFormat: @"op=%@&campus=%@", @"getsemesters", self.selCampus ];
         
         NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
         
@@ -521,8 +544,10 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     NSError* err = nil;
     
     // Add the event information into the POST request content
+    // TODO CRITICAL : This should not be a constant string it should depend on the selected campus
+    NSString* campusName = self.selCampus;
     NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
-    NSString* content = [NSString stringWithFormat: @"op=%@&sem=%@", @"getallforsemester", semStr];
+    NSString* content = [NSString stringWithFormat: @"op=%@&sem=%@&campus=%@", @"getallforsemester", semStr, campusName];
     
     NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
     

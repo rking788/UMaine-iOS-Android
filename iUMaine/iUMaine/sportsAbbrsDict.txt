@@ -20,5 +20,21 @@
 	<string>Women's Soccer</string>
 	<key>w-softbl</key>
 	<string>Softball</string>
+    <key>mxc</key>
+    <string>Men's Cross Country</string>
+    <key>golf</key>
+    <string>Men's Golf</string>
+    <key>mlax</key>
+    <string>Men's Lacrosse</string>
+    <key>skiing</key>
+    <string>Ski and Snowboarding</string>
+    <key>msoc</key>
+    <string>Men's Soccer</string>
+    <key>wxc</key>
+    <string>Women's Cross Country</string>
+    <key>wlax</key>
+    <string>Women's Lacrosse</string>
+    <key>wvball</key>
+    <string>Women's Volleyball</string>
 </dict>
 </plist>

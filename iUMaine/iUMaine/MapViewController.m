@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "BuildingSelectView.h"
 #import "iUMaineAppDelegate.h"
+#import "constants.h"
 
 @implementation MapViewController
 
@@ -42,7 +43,7 @@
     self.permitTitles = [[NSArray alloc] initWithObjects: @"None", @"Staff / Faculty", @"Resident", @"Commuter", @"Visitor", nil];
     
     [self setUDefaults: [NSUserDefaults standardUserDefaults]];
-    NSString* startingPermit = [self.uDefaults objectForKey: @"ParkingPermit"];
+    NSString* startingPermit = [self.uDefaults objectForKey: DEFS_PARKINGPERMIT];
     if(startingPermit){
         [self addParkingAnnotationsOfType: startingPermit];
         self.curPermit = startingPermit;
@@ -153,7 +154,7 @@
     // Set the last used parking permit in the user defaults
     // For right now set the default parking permit as the last permit displayed (this might not be right)
     // Maybe have the default permit be set in a settings tab or something 
-    [self.uDefaults setObject: permitType forKey: @"ParkingPermit"];
+    [self.uDefaults setObject: permitType forKey: DEFS_PARKINGPERMIT];
     
     //If there are already annotations on the map then remove them 
     if([self.mapPOIAnnotations count] != 1){

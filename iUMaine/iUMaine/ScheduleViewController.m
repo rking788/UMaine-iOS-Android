@@ -13,6 +13,7 @@
 #import "AddCourseViewController.h"
 #import "Schedule.h"
 #import "Course.h"
+#import "constants.h"
 
 @implementation ScheduleViewController
 @synthesize schedTabView;
@@ -43,35 +44,22 @@
     // hides all separators under empty cells
     [self hideEmptySeparators];
     
-    // Set the title to the current semester being viewed 
-    // This should check to see if there was a semester previously open or open a default one
+    // Load the user defaults used to find the selected semester
     self.userDefs = [NSUserDefaults standardUserDefaults];
-    self.allAvailableSemesters = [self.appDel getLocalSemestersWithMOC: self.appDel.managedObjectContext];
-    NSString* lastSem = [self.userDefs objectForKey: @"LastViewedSemester"];
     
-    if(lastSem){
-        self.semStr = lastSem;
-        self.navigationItem.title = lastSem;
-    }
-    else if([self.allAvailableSemesters count] != 0){
-        // Finds the current semester based on today's date or just the first one in the list
-        NSString* title = [ScheduleViewController scheduleTitleFromSemesters: self.allAvailableSemesters];
-        if(title){
-            NSArray* semesterParts = [title componentsSeparatedByString: @" "];
-            self.semStr = [NSString stringWithFormat: @"%@%@", [semesterParts objectAtIndex: 1], [[semesterParts objectAtIndex: 0] lowercaseString]];
-            self.navigationItem.title = title;
-        }
+    if(!self.appDel.selCampus){
+        CampusSelectionViewController* csvc = [[CampusSelectionViewController alloc] init];
+        UINavigationController *navigationController = [[UINavigationController alloc]
+                                                        initWithRootViewController: csvc];
+
+        [csvc setScD: self];
+        [navigationController.navigationBar.topItem setTitle: @"Available Campuses"];
+
+        [self presentModalViewController: navigationController animated: YES];
     }
     else{
-        self.navigationItem.title = @"Schedule";
+        [self initializeSchedule];
     }
-    
-    // Load all of the schedules currently stored on the phone
-    self.schedulesDict = [[NSMutableDictionary alloc] init];
-   	[self loadSchedulesIntoDict: self.schedulesDict];
- 
-    if(self.semStr)
-        [self switchToSemester: self.semStr];
     
     // Set the left button to display a pickerview to allow selection of the semesters
     UIBarButtonItem* semesterSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Semesters" style: UIBarButtonItemStyleBordered target:self action: @selector(showPickerview)];
@@ -115,12 +103,50 @@
     // e.g. self.myOutlet = nil;
 }
 
-
+- (void) initializeSchedule
+{
+    // This code used to be in viewDidLoad, but now we have to make
+    // sure that a campus has been selected first. That way we know
+    // which DB file name to use for the persistent store.
+    
+    // Set the title to the current semester being viewed 
+    // This should check to see if there was a semester previously open or open a default one
+    self.allAvailableSemesters = [self.appDel getLocalSemestersWithMOC: self.appDel.managedObjectContext];
+    NSString* lastSem = [self.userDefs objectForKey: DEFS_LASTVIEWEDSEM];
+    
+    if(lastSem){
+        self.semStr = lastSem;
+        self.navigationItem.title = lastSem;
+    }
+    else if([self.allAvailableSemesters count] != 0){
+        // Finds the current semester based on today's date or just the first one in the list
+        NSString* title = [ScheduleViewController scheduleTitleFromSemesters: self.allAvailableSemesters];
+        if(title){
+            NSArray* semesterParts = [title componentsSeparatedByString: @" "];
+            self.semStr = [NSString stringWithFormat: @"%@%@", [semesterParts objectAtIndex: 1], [[semesterParts objectAtIndex: 0] lowercaseString]];
+            self.navigationItem.title = title;
+        }
+        else{
+            title = [ScheduleViewController semesterStrToReadable: [self.allAvailableSemesters objectAtIndex: 0]];
+            self.navigationItem.title = title;
+        }
+    }
+    else{
+        self.navigationItem.title = @"Schedule";
+    }
+    
+    // Load all of the schedules currently stored on the phone
+    self.schedulesDict = [[NSMutableDictionary alloc] init];
+   	[self loadSchedulesIntoDict: self.schedulesDict];
+    
+    if(self.semStr)
+        [self switchToSemester: self.semStr];
+}
 
 
 + (NSString*) scheduleTitleFromSemesters: (NSArray*) sems
 {
-    NSString* ret = @"";
+    NSString* ret = nil;
     NSDateComponents* components = [[NSCalendar currentCalendar] components: NSMonthCalendarUnit | NSYearCalendarUnit fromDate: [NSDate date]];
     NSInteger month = [components month];
     NSInteger year = [components year];
@@ -508,5 +534,14 @@
 {
     [self.contentTable reloadData];
 }
+
+#pragma mark - SelectCampusDelegate Methods
+- (void) campusSelected:(NSString *)campusStr
+{
+    [self dismissModalViewControllerAnimated: YES];
+    
+    [self initializeSchedule];
+    
+    [self.appDel campusSelected: campusStr];}
 
 @end

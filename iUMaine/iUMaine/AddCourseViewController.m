@@ -10,6 +10,7 @@
 #import "AddCourseViewController.h"
 #import "iUMaineAppDelegate.h"
 #import "Course.h"
+#import "constants.h"
 
 @implementation AddCourseViewController
 @synthesize navBar;
@@ -154,8 +155,8 @@
 {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     
-    if ([defaults objectForKey: @"LastViewedDepart"])
-        [self.detLblStrs replaceObjectAtIndex: 0  withObject: [defaults objectForKey: @"LastViewedDepart"]];
+    if ([defaults objectForKey: DEFS_LASTVIEWEDDEPART])
+        [self.detLblStrs replaceObjectAtIndex: 0  withObject: [defaults objectForKey: DEFS_LASTVIEWEDDEPART]];
 }
 
 - (void) setLastViewedDepart: (NSString*) departStr
@@ -163,7 +164,7 @@
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     
     if (![[self.detLblStrs objectAtIndex: 0] isEqualToString: @""])
-        [defaults setObject: departStr forKey: @"LastViewedDepart"]; 
+        [defaults setObject: departStr forKey: DEFS_LASTVIEWEDDEPART]; 
 }
 
 - (void) loadDeparts
