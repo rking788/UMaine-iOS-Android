@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/ADBannerView.h>
 
 @class iUMaineAppDelegate;
 
@@ -14,7 +15,7 @@
 #define CUR_KEY     @"current"
 #define FUT_KEY     @"future"
 
-@interface SportsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource> {
+@interface SportsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource, ADBannerViewDelegate> {
     iUMaineAppDelegate* appDel;
     
     NSDictionary* sportsAbbrDict;
@@ -23,13 +24,20 @@
     UITableViewCell *__unsafe_unretained currentEventCell;
     UITableViewCell *__unsafe_unretained otherEventCell;
     UITableView *tableV;
-
+    
     BOOL firstView;
     
     NSString* curSport;
     UIActionSheet* actSheet;
+    
+    id _adBannerView;
+    BOOL _adBannerViewIsVisible;
+    
 }
 @property (nonatomic, strong) IBOutlet UITableView *tableV;
+@property (unsafe_unretained, nonatomic) IBOutlet UIView *_contentView;
+@property (strong, nonatomic) id adBannerView;
+@property (assign, nonatomic) BOOL _adBannerViewIsVisible;
 @property (nonatomic, unsafe_unretained) IBOutlet UITableViewCell *currentEventCell;
 @property (nonatomic, unsafe_unretained) IBOutlet UITableViewCell *otherEventCell;
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *loadingView;
@@ -55,5 +63,9 @@
 - (void) displayLoadingView;
 - (void) hideLoadingView;
 - (void) displayEvents;
+
+
+- (void)createAdBannerView;
+- (void)fixupAdView:(UIInterfaceOrientation)toInterfaceOrientation;
 
 @end

@@ -39,8 +39,10 @@
 @synthesize gettingSports;
 @synthesize selCampus;
 
-#pragma mark - TODO CRITICAL: Add support for different campuses, this probably just needs to be seperate DB files.
+#pragma mark - TODO CRITICAL: Change the application color scheme based on the selected campus
+#pragma mark - TODO CRITICAL: Add a way to switch campuses after a selection has been made (accidents happen)
 #pragma mark - TODO CRITICAL: SOME LONG RUNNING TASK IS NOT BEING PERFORMED IN THE BACKGROUND FIND OUT WHAT IT IS. (SCREEN FREEZES ON LAUNCH AFTER FRESH INSTALL ) SOME SERVER COMMUNICATION OR SOMETHING PROBABLY
+#pragma mark - TODO: Need better icons for the tab bar icons
 
 // Constant for the database file name
 NSString* const DBFILENAME = @"UMO.sqlite"; 
@@ -52,12 +54,12 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     self.window.rootViewController = self.tabBarController;
     
     self.gettingSports = NO;
-    
+        
     // Initialize the database file (should be removed after .sqlite file is setup
 #if INIT_DB
     DBInitializer* dbIniter = [[DBInitializer alloc] init];
     dbIniter.managedObjectContext = self.managedObjectContext;
-    [dbIniter initDatabase];
+    [dbIniter initDatabaseWithCampus: self.selCampus];
 #endif
     
     [self addProgressBarView];
@@ -259,7 +261,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     
     // TODO CRITICAL: Uncomment this when done testing. I just dont want it to remember it until i am done
     // Set the selected campus in the user defaults
-    //[self.defaultPrefs setObject: self.selCampus forKey: DEFS_SELCAMPUSKEY];
+    [self.defaultPrefs setObject: self.selCampus forKey: DEFS_SELCAMPUSKEY];
     
     // Now that we know which DB file to use we can check for sports and course updates
     [self checkServer];

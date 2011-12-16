@@ -16,6 +16,7 @@
 @implementation SportsViewController
 
 @synthesize tableV;
+@synthesize _contentView;
 @synthesize currentEventCell;
 @synthesize otherEventCell;
 @synthesize loadingView;
@@ -27,10 +28,13 @@
 @synthesize firstView;
 @synthesize curSport;
 @synthesize actSheet;
+@synthesize adBannerView = _adBannerView;
+@synthesize _adBannerViewIsVisible;
 
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
+#pragma mark - TODO: Show only the sports available at the selected campus, not all of the sports in the abbreviation dictionary
 #pragma mark - TODO: Allow filtering of the events by year range or current year or something
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -68,6 +72,9 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         [self hideLoadingView];
         [self displayEvents];
     }
+    
+    // Create the iAd banner
+    [self createAdBannerView];
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -79,13 +86,18 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
   //      [self showLoadingView];
   //  }
 
+    [self fixupAdView:[UIDevice currentDevice].orientation];
+    
     [self scrollToCurrentOrFutureEvents: NO];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+    [self fixupAdView: interfaceOrientation];
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+//    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return ((interfaceOrientation == UIInterfaceOrientationPortrait) ||
+            (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown));
 }
 
 
@@ -105,6 +117,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [self setTableV:nil];
     [self setLoadingView:nil];
     [self setActIndicator:nil];
+    [self set_contentView:nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.
@@ -659,6 +672,96 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
     [self.tableV reloadData];
     [self scrollToCurrentOrFutureEvents: YES];
+}
+
+# pragma mark - iAd related Functions
+- (int)getBannerHeight:(UIDeviceOrientation)orientation {
+    if (UIInterfaceOrientationIsLandscape(orientation)) {
+        return 32;
+    } else {
+        return 50;
+    }
+}
+
+- (int)getBannerHeight {
+    return [self getBannerHeight:[UIDevice currentDevice].orientation];
+}
+
+- (void)createAdBannerView {
+    Class classAdBannerView = NSClassFromString(@"ADBannerView");
+    if (classAdBannerView != nil) {
+        self.adBannerView = [[classAdBannerView alloc] 
+                              initWithFrame:CGRectZero];
+        [_adBannerView setRequiredContentSizeIdentifiers:[NSSet setWithObjects: 
+                                                          ADBannerContentSizeIdentifier320x50, 
+                                                          ADBannerContentSizeIdentifier480x32, nil]];
+        if (UIInterfaceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
+            [_adBannerView setCurrentContentSizeIdentifier:
+             ADBannerContentSizeIdentifier480x32];
+        } else {
+            [_adBannerView setCurrentContentSizeIdentifier:
+             ADBannerContentSizeIdentifier320x50];            
+        }
+        [_adBannerView setFrame:CGRectOffset([_adBannerView frame], 0, 
+                                             -[self getBannerHeight])];
+        [_adBannerView setDelegate:self];
+        
+        [self.view addSubview:_adBannerView];        
+    }
+}
+
+- (void)fixupAdView:(UIInterfaceOrientation)toInterfaceOrientation {
+    if (_adBannerView != nil) {        
+        if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+            [_adBannerView setCurrentContentSizeIdentifier:
+             ADBannerContentSizeIdentifier480x32];
+        } else {
+            [_adBannerView setCurrentContentSizeIdentifier:
+             ADBannerContentSizeIdentifier320x50];
+        }          
+        [UIView beginAnimations:@"fixupViews" context:nil];
+        if (_adBannerViewIsVisible) {
+            CGRect adBannerViewFrame = [_adBannerView frame];
+            adBannerViewFrame.origin.x = 0;
+            adBannerViewFrame.origin.y = 0;
+            [_adBannerView setFrame:adBannerViewFrame];
+            CGRect contentViewFrame = _contentView.frame;
+            contentViewFrame.origin.y = 
+            [self getBannerHeight:toInterfaceOrientation];
+            contentViewFrame.size.height = self.view.frame.size.height - 
+            [self getBannerHeight:toInterfaceOrientation];
+            _contentView.frame = contentViewFrame;
+        } else {
+            CGRect adBannerViewFrame = [_adBannerView frame];
+            adBannerViewFrame.origin.x = 0;
+            adBannerViewFrame.origin.y = 
+            -[self getBannerHeight:toInterfaceOrientation];
+            [_adBannerView setFrame:adBannerViewFrame];
+            CGRect contentViewFrame = _contentView.frame;
+            contentViewFrame.origin.y = 0;
+            contentViewFrame.size.height = self.view.frame.size.height;
+            _contentView.frame = contentViewFrame;            
+        }
+        [UIView commitAnimations];
+    }   
+}
+
+#pragma mark ADBannerViewDelegate
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    if (!_adBannerViewIsVisible) {                
+        _adBannerViewIsVisible = YES;
+        [self fixupAdView: self.interfaceOrientation];
+    }
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    if (_adBannerViewIsVisible)
+    {        
+        _adBannerViewIsVisible = NO;
+        [self fixupAdView: self.interfaceOrientation];
+    }
 }
 
 @end

@@ -67,7 +67,8 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return ((interfaceOrientation == UIInterfaceOrientationPortrait) ||
+            (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown));
 }
 
 
@@ -94,7 +95,7 @@
     
     // Email
     if(![[self.employee valueForKey: @"email"] isEqualToString: @"NULL"])
-        [self.empDict setObject: [self.employee valueForKey: @"email"] forKey: @"EMail"];
+        [self.empDict setObject: [self.employee valueForKey: @"email"] forKey: @"Email"];
 }
 
 #pragma mark - Table view data source delegate methods
@@ -146,7 +147,7 @@
         }
     }
     
-    if([sectionHeader isEqualToString: @"Phone"] || [sectionHeader isEqualToString: @"EMail"] || [sectionHeader isEqualToString: @"Department Website"]){
+    if([sectionHeader isEqualToString: @"Phone"] || [sectionHeader isEqualToString: @"Email"] || [sectionHeader isEqualToString: @"Department Website"]){
         [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
         [cell setSelectionStyle: UITableViewCellSelectionStyleBlue];
     }
@@ -171,10 +172,10 @@
         case 1:
             retStr = @"Phone";
             if(![self.empDict objectForKey: @"Phone"])
-                retStr = @"EMail";
+                retStr = @"Email";
             break;
         case 2:
-            retStr = @"EMail";
+            retStr = @"Email";
             if(![self.empDict objectForKey: @"Phone"])
                 retStr = @"Department";
             break;
@@ -200,7 +201,7 @@
     
     NSString* sectHeader = [self tableView: self.infoTableView titleForHeaderInSection: indexPath.section];
     
-    if((![sectHeader isEqualToString: @"Phone"]) && (![sectHeader isEqualToString: @"EMail"]) && (![sectHeader isEqualToString: @"Department Website"]))
+    if((![sectHeader isEqualToString: @"Phone"]) && (![sectHeader isEqualToString: @"Email"]) && (![sectHeader isEqualToString: @"Department Website"]))
         return;
     
     NSString* actSheetBtnTitle = nil;
@@ -209,9 +210,9 @@
         // Display the address in maps best we can
         actSheetBtnTitle = @"Call";
     }
-    else if([sectHeader isEqualToString: @"EMail"]){
+    else if([sectHeader isEqualToString: @"Email"]){
         // Display call in actionsheet
-        actSheetBtnTitle = @"EMail";
+        actSheetBtnTitle = @"Email";
     }
     else if([sectHeader isEqualToString: @"Department Website"]){
         // Open the browser
@@ -238,7 +239,7 @@
     if([btnTitle isEqualToString: @"Call"]){
         urlStr = [NSString stringWithFormat: @"tel:%@", actionSheet.title];
     }
-    else if([btnTitle isEqualToString: @"EMail"]){
+    else if([btnTitle isEqualToString: @"Email"]){
         urlStr = [NSString stringWithFormat: @"mailto:%@", actionSheet.title];
     }
     else if([btnTitle isEqualToString: @"Open in Safari"]){

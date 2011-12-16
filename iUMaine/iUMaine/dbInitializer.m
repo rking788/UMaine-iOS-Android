@@ -13,30 +13,38 @@
 
 @synthesize managedObjectContext;
 
-- (void) initDatabase{
+- (void) initDatabaseWithCampus: (NSString*) _campus{
     
     // Make sure the context is initialized
     if(managedObjectContext == nil){
         NSLog(@"Cannot initialize the database, the managedobjectcontext is not initialized");
     }
     
+    NSString* bundlePath = [[NSBundle mainBundle] resourcePath];
+    
     // Init Commuter Lots
-    [self initLotsOfType: @"commuter" withFile: @"/Users/rking/Desktop/commuter.csv"];
+    NSString* tempStr = [NSString stringWithFormat: @"commuter_%@.csv", _campus];
+    [self initLotsOfType: @"commuter" withFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
     // Init Faculty/Staff Lots
-    [self initLotsOfType: @"faculty" withFile: @"/Users/rking/Desktop/faculty.csv"];
+    tempStr = [NSString stringWithFormat: @"faculty_%@.csv", _campus];
+    [self initLotsOfType: @"faculty" withFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
     // Init Resident Lots
-    [self initLotsOfType: @"resident" withFile: @"/Users/rking/Desktop/resident.csv"];
+    tempStr = [NSString stringWithFormat: @"resident_%@.csv", _campus];
+    [self initLotsOfType: @"resident" withFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
     // Init Visitor Lots
-    [self initLotsOfType: @"visitor" withFile: @"/Users/rking/Desktop/visitor.csv"];
+    tempStr = [NSString stringWithFormat: @"visitor_%@.csv", _campus];
+    [self initLotsOfType: @"visitor" withFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
     // Init Buildings
-    [self initBuildingsWithFile: @"/Users/rking/Desktop/building_coords.csv"];
+    tempStr = [NSString stringWithFormat: @"building_coords_%@.csv", _campus];
+    [self initBuildingsWithFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
     // Init Employees
-    [self initEmployeesWithFile: @"/Users/rking/Desktop/staff.csv"];
+    tempStr = [NSString stringWithFormat: @"directory_%@.csv", _campus];
+    [self initEmployeesWithFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
     // Init Fall 2011 courses
    // [self initCoursesForSeason: @"fall" andYear: @"2011"];
@@ -44,7 +52,8 @@
 }
 
 - (void) initLotsOfType:(NSString*) permitType withFile:(NSString*) filePath{
-    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    //NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
     
     NSError* err = nil;
     NSArray* lines = [fileContents componentsSeparatedByString:@"\n"];
@@ -77,7 +86,8 @@
 
 - (void) initBuildingsWithFile: (NSString*) filePath
 {
-    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    //NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
     
     NSError* err = nil;
     NSArray* lines = [fileContents componentsSeparatedByString:@"\n"];
@@ -92,8 +102,7 @@
             buildingObj = [NSEntityDescription insertNewObjectForEntityForName: @"Building" inManagedObjectContext: managedObjectContext];
             
             [buildingObj setValue: [[lineFields objectAtIndex:0] stringByReplacingOccurrencesOfString: @"\"" withString: @""] forKey: @"title"];
-            float latfloat = [[lineFields objectAtIndex: 1] floatValue];
-            float longfloat = [[lineFields objectAtIndex: 2] floatValue];
+            
             NSInteger latInt = (NSInteger) ([[lineFields objectAtIndex: 1] floatValue] * 1000000.0);
             NSInteger longInt = (NSInteger) ([[lineFields objectAtIndex: 2] floatValue] * 1000000.0);
             [buildingObj setValue: [NSNumber numberWithInt: latInt] forKey: @"latitude"];
@@ -148,8 +157,10 @@
             phone = [[lineFields objectAtIndex: 6] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
             email = [[lineFields objectAtIndex: 7] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
             office = [[lineFields objectAtIndex: 8] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
-            deptURL = [[lineFields objectAtIndex: 9] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
-            personalURL = [[lineFields objectAtIndex: 10] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+            deptURL = nil;
+            personalURL = nil;
+            //deptURL = [[lineFields objectAtIndex: 9] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
+            //personalURL = [[lineFields objectAtIndex: 10] stringByReplacingOccurrencesOfString: @"\"" withString: @""];
             
             [employeeObj setValue: idint forKey: @"id"];
             [employeeObj setValue: fname forKey: @"fname"];
@@ -177,8 +188,11 @@
 - (void) initCoursesForSeason: (NSString*) season andYear: (NSString*) year
 {
     NSString* semester = [NSString stringWithFormat: @"%@%@", year, season];
-    NSString* filePath = [NSString stringWithFormat: @"/Users/rking/Desktop/%@.csv", semester];
-    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    NSString* bundlePath = [[NSBundle mainBundle] resourcePath];
+    NSString* fileName = [NSString stringWithFormat: @"%@.csv", semester];
+    NSString* filePath = [NSString stringWithFormat: [bundlePath stringByAppendingPathComponent: fileName]];
+//    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
     
     NSLog(@"Loading courses from file: %@", filePath);
     

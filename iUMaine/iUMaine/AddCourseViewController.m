@@ -82,7 +82,8 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return ((interfaceOrientation == UIInterfaceOrientationPortrait) ||
+            (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown));
 }
 
 
@@ -149,6 +150,7 @@
         NSLog(@"Error fetching a course matching the given details");
     }
     
+    [self setLastViewedDepart: departStr];
 }
 
 - (void) checkLastViewedDepart
@@ -387,6 +389,8 @@
          return;
     }
     
+    [self.detLblStrs replaceObjectAtIndex: rowSelected withObject: selectionStr];
+    
     if(rowSelected == 0){
         [self setLastViewedDepart: selectionStr];
         [self loadCourseNumsWithDepart: selectionStr];
@@ -395,8 +399,6 @@
         [self loadSectionsWithDepart: [self.detLblStrs objectAtIndex: 0]  WithCourseNum: selectionStr];
     }
     
-    
-    [self.detLblStrs replaceObjectAtIndex: rowSelected withObject: selectionStr];
     [self.tableV reloadData];
     
     [self dismissModalViewControllerAnimated: YES];

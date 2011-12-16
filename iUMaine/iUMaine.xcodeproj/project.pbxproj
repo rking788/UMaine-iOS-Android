@@ -154,13 +154,6 @@
 		967E8CB51467109000D9EA24 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB41467109000D9EA24 /* Schedule.m */; };
 		967E8CB81467109F00D9EA24 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB71467109F00D9EA24 /* Course.m */; };
 		967EE34514704B0100F0A9BB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 967EE34414704B0100F0A9BB /* Location.m */; };
-		968D4F721491BD06007D248D /* directory_UMA.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6B1491BD06007D248D /* directory_UMA.csv */; };
-		968D4F731491BD06007D248D /* directory_UMF.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6C1491BD06007D248D /* directory_UMF.csv */; };
-		968D4F741491BD06007D248D /* directory_UMFK.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6D1491BD06007D248D /* directory_UMFK.csv */; };
-		968D4F751491BD06007D248D /* directory_UMM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6E1491BD06007D248D /* directory_UMM.csv */; };
-		968D4F761491BD06007D248D /* directory_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F6F1491BD06007D248D /* directory_UMO.csv */; };
-		968D4F771491BD06007D248D /* directory_UMPI.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F701491BD06007D248D /* directory_UMPI.csv */; };
-		968D4F781491BD06007D248D /* directory_USM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F711491BD06007D248D /* directory_USM.csv */; };
 		968D4F7D1491C62A007D248D /* CampusSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */; };
 		968D4F7E1491C62A007D248D /* CampusSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 968D4F7C1491C62A007D248D /* CampusSelectionView.xib */; };
 		96950E43141D9D0E0059CFED /* EventRecapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96950E41141D9D0E0059CFED /* EventRecapViewController.m */; };
@@ -178,6 +171,15 @@
 		96C7093014932900005479FB /* availableCampuses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96C7092F14932900005479FB /* availableCampuses.txt */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
 		96CD3516140DE79300C8C45C /* SportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD3515140DE79300C8C45C /* SportEvent.m */; };
+		96D901BF149A760A002D3058 /* directory_UMA.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901B8149A760A002D3058 /* directory_UMA.csv */; };
+		96D901C0149A760A002D3058 /* directory_UMF.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901B9149A760A002D3058 /* directory_UMF.csv */; };
+		96D901C1149A760A002D3058 /* directory_UMFK.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BA149A760A002D3058 /* directory_UMFK.csv */; };
+		96D901C2149A760A002D3058 /* directory_UMM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BB149A760A002D3058 /* directory_UMM.csv */; };
+		96D901C3149A760A002D3058 /* directory_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BC149A760A002D3058 /* directory_UMO.csv */; };
+		96D901C4149A760A002D3058 /* directory_UMPI.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BD149A760A002D3058 /* directory_UMPI.csv */; };
+		96D901C5149A760A002D3058 /* directory_USM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BE149A760A002D3058 /* directory_USM.csv */; };
+		96D901C7149A78B7002D3058 /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96D901C6149A78B7002D3058 /* UMO.sqlite */; };
+		96D901D3149A8D81002D3058 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D901D1149A8D5C002D3058 /* iAd.framework */; };
 		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
 		96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */; };
 		96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */; };
@@ -393,13 +395,6 @@
 		967E8CB71467109F00D9EA24 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		967EE34314704B0100F0A9BB /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		967EE34414704B0100F0A9BB /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
-		968D4F6B1491BD06007D248D /* directory_UMA.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMA.csv; sourceTree = "<group>"; };
-		968D4F6C1491BD06007D248D /* directory_UMF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMF.csv; sourceTree = "<group>"; };
-		968D4F6D1491BD06007D248D /* directory_UMFK.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMFK.csv; sourceTree = "<group>"; };
-		968D4F6E1491BD06007D248D /* directory_UMM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMM.csv; sourceTree = "<group>"; };
-		968D4F6F1491BD06007D248D /* directory_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMO.csv; sourceTree = "<group>"; };
-		968D4F701491BD06007D248D /* directory_UMPI.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMPI.csv; sourceTree = "<group>"; };
-		968D4F711491BD06007D248D /* directory_USM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_USM.csv; sourceTree = "<group>"; };
 		968D4F791491C149007D248D /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		968D4F7A1491C62A007D248D /* CampusSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusSelectionViewController.h; sourceTree = "<group>"; };
 		968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusSelectionViewController.m; sourceTree = "<group>"; };
@@ -423,6 +418,15 @@
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		96CD3514140DE79300C8C45C /* SportEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportEvent.h; sourceTree = "<group>"; };
 		96CD3515140DE79300C8C45C /* SportEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportEvent.m; sourceTree = "<group>"; };
+		96D901B8149A760A002D3058 /* directory_UMA.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMA.csv; sourceTree = "<group>"; };
+		96D901B9149A760A002D3058 /* directory_UMF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMF.csv; sourceTree = "<group>"; };
+		96D901BA149A760A002D3058 /* directory_UMFK.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMFK.csv; sourceTree = "<group>"; };
+		96D901BB149A760A002D3058 /* directory_UMM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMM.csv; sourceTree = "<group>"; };
+		96D901BC149A760A002D3058 /* directory_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMO.csv; sourceTree = "<group>"; };
+		96D901BD149A760A002D3058 /* directory_UMPI.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMPI.csv; sourceTree = "<group>"; };
+		96D901BE149A760A002D3058 /* directory_USM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_USM.csv; sourceTree = "<group>"; };
+		96D901C6149A78B7002D3058 /* UMO.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMO.sqlite; sourceTree = "<group>"; };
+		96D901D1149A8D5C002D3058 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventCellView.xib; sourceTree = "<group>"; };
 		96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryDetailViewController.h; sourceTree = "<group>"; };
 		96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryDetailViewController.m; sourceTree = "<group>"; };
@@ -510,6 +514,7 @@
 				AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */,
 				AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */,
 				AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */,
+				96D901D3149A8D81002D3058 /* iAd.framework in Frameworks */,
 				96FB509E13F788F70069836C /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,13 +577,13 @@
 		968D4F691491BCC1007D248D /* UMaine Directory Files */ = {
 			isa = PBXGroup;
 			children = (
-				968D4F6B1491BD06007D248D /* directory_UMA.csv */,
-				968D4F6C1491BD06007D248D /* directory_UMF.csv */,
-				968D4F6D1491BD06007D248D /* directory_UMFK.csv */,
-				968D4F6E1491BD06007D248D /* directory_UMM.csv */,
-				968D4F6F1491BD06007D248D /* directory_UMO.csv */,
-				968D4F701491BD06007D248D /* directory_UMPI.csv */,
-				968D4F711491BD06007D248D /* directory_USM.csv */,
+				96D901B8149A760A002D3058 /* directory_UMA.csv */,
+				96D901B9149A760A002D3058 /* directory_UMF.csv */,
+				96D901BA149A760A002D3058 /* directory_UMFK.csv */,
+				96D901BB149A760A002D3058 /* directory_UMM.csv */,
+				96D901BC149A760A002D3058 /* directory_UMO.csv */,
+				96D901BD149A760A002D3058 /* directory_UMPI.csv */,
+				96D901BE149A760A002D3058 /* directory_USM.csv */,
 			);
 			name = "UMaine Directory Files";
 			sourceTree = "<group>";
@@ -740,6 +745,7 @@
 		AE81582B135BD930008E9B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96D901D1149A8D5C002D3058 /* iAd.framework */,
 				964A2B401433E4CB00F53F8A /* QuartzCore.framework */,
 				96FB509D13F788F70069836C /* libz.dylib */,
 				AE81C78D135D0E6900E2F80F /* CoreData.framework */,
@@ -808,6 +814,7 @@
 				964AFFED147CA26300061CDE /* Default@2x.png */,
 				9662B957147D6A9E008F6AA4 /* UMaine_114.png */,
 				9662B955147D6A96008F6AA4 /* UMaine_57.png */,
+				96D901C6149A78B7002D3058 /* UMO.sqlite */,
 				968EA90C147B4DC600FEE786 /* Sport Images */,
 				961EE1D41438FE5C00644449 /* Managed Object Classes */,
 				9614911C14380A590010FFE1 /* Schedule Tab Images */,
@@ -895,7 +902,7 @@
 		AE81581F135BD930008E9B84 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = AE815822135BD930008E9B84 /* Build configuration list for PBXProject "iUMaine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1100,13 +1107,6 @@
 				9662B954147D68E5008F6AA4 /* Yale.png in Resources */,
 				9662B956147D6A96008F6AA4 /* UMaine_57.png in Resources */,
 				9662B958147D6A9E008F6AA4 /* UMaine_114.png in Resources */,
-				968D4F721491BD06007D248D /* directory_UMA.csv in Resources */,
-				968D4F731491BD06007D248D /* directory_UMF.csv in Resources */,
-				968D4F741491BD06007D248D /* directory_UMFK.csv in Resources */,
-				968D4F751491BD06007D248D /* directory_UMM.csv in Resources */,
-				968D4F761491BD06007D248D /* directory_UMO.csv in Resources */,
-				968D4F771491BD06007D248D /* directory_UMPI.csv in Resources */,
-				968D4F781491BD06007D248D /* directory_USM.csv in Resources */,
 				968D4F7E1491C62A007D248D /* CampusSelectionView.xib in Resources */,
 				96625C601491CDD800A461E3 /* availableCampuses_TENTATIVE.txt in Resources */,
 				96C7092A1493274E005479FB /* faculty_UMO.csv in Resources */,
@@ -1115,6 +1115,14 @@
 				96C7092D1493274E005479FB /* commuter_UMO.csv in Resources */,
 				96C7092E1493274E005479FB /* building_coords_UMO.csv in Resources */,
 				96C7093014932900005479FB /* availableCampuses.txt in Resources */,
+				96D901BF149A760A002D3058 /* directory_UMA.csv in Resources */,
+				96D901C0149A760A002D3058 /* directory_UMF.csv in Resources */,
+				96D901C1149A760A002D3058 /* directory_UMFK.csv in Resources */,
+				96D901C2149A760A002D3058 /* directory_UMM.csv in Resources */,
+				96D901C3149A760A002D3058 /* directory_UMO.csv in Resources */,
+				96D901C4149A760A002D3058 /* directory_UMPI.csv in Resources */,
+				96D901C5149A760A002D3058 /* directory_USM.csv in Resources */,
+				96D901C7149A78B7002D3058 /* UMO.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,17 +1253,18 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Robert KIng (PLJWL35TX2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert KIng (PLJWL35TX2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "47A28AA6-E676-49C0-9AA4-508A7C26C34D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "47A28AA6-E676-49C0-9AA4-508A7C26C34D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1264,17 +1273,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert KIng";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Robert KIng";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "75FC3A98-541C-4BDD-BEDA-77E48EB1D04F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75FC3A98-541C-4BDD-BEDA-77E48EB1D04F";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
