@@ -9,6 +9,7 @@
 #import "iUMaineAppDelegate.h"
 #import "ScheduleViewController.h"
 #import "SportsViewController.h"
+#import "MapViewController.h"
 #import "SportEvent.h"
 #import "Course.h"
 #import "AvailableCourses.h"
@@ -30,6 +31,7 @@
 
 @synthesize svcInst;
 @synthesize spvcInst;
+@synthesize mvcInst;
 @synthesize tabBarController=_tabBarController;
 @synthesize progressView;
 @synthesize progressBar;
@@ -693,17 +695,29 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     [UIView beginAnimations:@"fixupViews" context:nil];
     
     if ([show boolValue]) {
+        // Animate the map view up so the Google logo isn't hidden
+        if(self.mvcInst && self.mvcInst.isViewLoaded && self.mvcInst.view.window){
+            [self.mvcInst shrinkMapView];
+        }
+        
         // Display the progress view
         CGRect progressViewFrame = [self.progressView frame];
         progressViewFrame.origin.x = 0;
         progressViewFrame.origin.y = (self.tabBarController.tabBar.frame.origin.y - self.progressView.frame.size.height);
         [self.progressView setFrame: progressViewFrame];
     } else {
+        // Animate the map view back down
+        if(self.mvcInst && self.mvcInst.isViewLoaded && self.mvcInst.view.window){
+            [self.mvcInst growMapView];
+        }
+        
         // Hide the progress view
+
         CGRect progressViewFrame = [self.progressView frame];
         progressViewFrame.origin.x = 0;
         progressViewFrame.origin.y = self.tabBarController.tabBar.frame.origin.y;
         [self.progressView setFrame: progressViewFrame];         
+
     }
     
     [UIView commitAnimations];

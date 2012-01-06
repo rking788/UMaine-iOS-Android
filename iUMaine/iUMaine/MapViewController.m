@@ -13,19 +13,26 @@
 
 @implementation MapViewController
 
+@synthesize appDel;
 @synthesize navBar;
 @synthesize actSheet;
 @synthesize uDefaults;
 @synthesize curPermit, prevPermit;
 @synthesize mapView, mapPOIAnnotations, mapSelBuildingAnnotation, managedObjectContext, permitTitles;
+@synthesize smaller;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    iUMaineAppDelegate* appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
+    self.appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
+    [self.appDel setMvcInst: self];
     self.managedObjectContext = [appDel managedObjectContext];
+    
+    if(self.appDel.gettingSports){
+        [self shrinkMapView];
+    }
     
     // Set the center to barrows or something
     MKCoordinateRegion region;
@@ -53,6 +60,18 @@
     }
     
     self.prevPermit = nil;
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    if(self.appDel.gettingSports){
+        [self shrinkMapView];
+    }
+}
+
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [self.appDel setMvcInst: nil];    
 }
 
 
@@ -373,6 +392,7 @@
 
 - (void)viewDidUnload
 {
+    [self.appDel setMvcInst: nil];
     [self setMapView:nil];
     [self setMapPOIAnnotations:nil];
     [self setMapView:nil];
@@ -385,7 +405,26 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void) shrinkMapView
+{
+    if(!self.isSmaller){
+        self.smaller = YES;
+        
+        CGRect newFrame = self.mapView.frame;
+        newFrame.size.height = newFrame.size.height - self.appDel.progressView.frame.size.height;
+        [self.mapView setFrame: newFrame];
+    }
+}
 
-
+- (void) growMapView
+{
+    if(self.isSmaller){
+        self.smaller = NO;
+        
+        CGRect newFrame = self.mapView.frame;
+        newFrame.size.height = newFrame.size.height + self.appDel.progressView.frame.size.height;
+        [self.mapView setFrame: newFrame];
+    }
+}
 
 @end

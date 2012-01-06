@@ -237,7 +237,7 @@
     NSString* btnTitle = [actionSheet buttonTitleAtIndex: buttonIndex];
     
     if([btnTitle isEqualToString: @"Call"]){
-        urlStr = [NSString stringWithFormat: @"tel:%@", actionSheet.title];
+        urlStr = [NSString stringWithFormat: @"tel:%@", [self.employee valueForKey: @"phone"]];
     }
     else if([btnTitle isEqualToString: @"Email"]){
         urlStr = [NSString stringWithFormat: @"mailto:%@", actionSheet.title];

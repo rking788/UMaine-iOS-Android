@@ -178,12 +178,12 @@
 		96D901C3149A760A002D3058 /* directory_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BC149A760A002D3058 /* directory_UMO.csv */; };
 		96D901C4149A760A002D3058 /* directory_UMPI.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BD149A760A002D3058 /* directory_UMPI.csv */; };
 		96D901C5149A760A002D3058 /* directory_USM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BE149A760A002D3058 /* directory_USM.csv */; };
-		96D901C7149A78B7002D3058 /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96D901C6149A78B7002D3058 /* UMO.sqlite */; };
 		96D901D3149A8D81002D3058 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D901D1149A8D5C002D3058 /* iAd.framework */; };
 		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
 		96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */; };
 		96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */; };
 		96F2B46F146388820035832B /* AvailableCourses.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B46E146388820035832B /* AvailableCourses.m */; };
+		96F6509D14A255DB0025E278 /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96F6509C14A255DB0025E278 /* UMO.sqlite */; };
 		96F6907F143D3F8000A4E5AB /* dbInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */; };
 		96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96FB508D13F786020069836C /* sportsAbbrsDict.txt */; };
 		96FB509B13F788860069836C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509813F788860069836C /* NSDataAdditions.m */; };
@@ -425,7 +425,6 @@
 		96D901BC149A760A002D3058 /* directory_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMO.csv; sourceTree = "<group>"; };
 		96D901BD149A760A002D3058 /* directory_UMPI.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMPI.csv; sourceTree = "<group>"; };
 		96D901BE149A760A002D3058 /* directory_USM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_USM.csv; sourceTree = "<group>"; };
-		96D901C6149A78B7002D3058 /* UMO.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMO.sqlite; sourceTree = "<group>"; };
 		96D901D1149A8D5C002D3058 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventCellView.xib; sourceTree = "<group>"; };
 		96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryDetailViewController.h; sourceTree = "<group>"; };
@@ -433,6 +432,7 @@
 		96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryDetailView.xib; sourceTree = "<group>"; };
 		96F2B46D146388820035832B /* AvailableCourses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableCourses.h; sourceTree = "<group>"; };
 		96F2B46E146388820035832B /* AvailableCourses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableCourses.m; sourceTree = "<group>"; };
+		96F6509C14A255DB0025E278 /* UMO.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMO.sqlite; sourceTree = "<group>"; };
 		96FB508D13F786020069836C /* sportsAbbrsDict.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sportsAbbrsDict.txt; sourceTree = "<group>"; };
 		96FB509713F788860069836C /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		96FB509813F788860069836C /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
@@ -814,7 +814,7 @@
 				964AFFED147CA26300061CDE /* Default@2x.png */,
 				9662B957147D6A9E008F6AA4 /* UMaine_114.png */,
 				9662B955147D6A96008F6AA4 /* UMaine_57.png */,
-				96D901C6149A78B7002D3058 /* UMO.sqlite */,
+				96F6509C14A255DB0025E278 /* UMO.sqlite */,
 				968EA90C147B4DC600FEE786 /* Sport Images */,
 				961EE1D41438FE5C00644449 /* Managed Object Classes */,
 				9614911C14380A590010FFE1 /* Schedule Tab Images */,
@@ -1122,7 +1122,7 @@
 				96D901C3149A760A002D3058 /* directory_UMO.csv in Resources */,
 				96D901C4149A760A002D3058 /* directory_UMPI.csv in Resources */,
 				96D901C5149A760A002D3058 /* directory_USM.csv in Resources */,
-				96D901C7149A78B7002D3058 /* UMO.sqlite in Resources */,
+				96F6509D14A255DB0025E278 /* UMO.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

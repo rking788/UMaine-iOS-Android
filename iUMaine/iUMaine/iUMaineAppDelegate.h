@@ -12,6 +12,7 @@
 @class SportEvent;
 @class ScheduleViewController;
 @class SportsViewController;
+@class MapViewController;
 
 @interface iUMaineAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
 
@@ -24,6 +25,7 @@
     
     ScheduleViewController* svcInst;
     SportsViewController* spvcInst;
+    MapViewController* mvcInst;
     
     NSString* selCampus;
 
@@ -39,6 +41,7 @@
 
 @property (strong, atomic) ScheduleViewController* svcInst;
 @property (strong, atomic) SportsViewController* spvcInst;
+@property (strong, atomic) MapViewController* mvcInst;
 
 @property (strong, nonatomic) NSString* selCampus;
 

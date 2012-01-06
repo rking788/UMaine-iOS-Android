@@ -12,9 +12,13 @@
 #import "POIAnnotation.h"
 #import "BuildingSelectView.h"
 
+@class iUMaineAppDelegate;
+
 
 @interface MapViewController : UIViewController <MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, BuildingSelectDelegate>{
 
+    iUMaineAppDelegate* appDel;
+    
     MKMapView *mapView;
     POIAnnotation* mapSelBuildingAnnotation;
     NSMutableArray* mapPOIAnnotations;
@@ -33,10 +37,13 @@
     
     NSString* curPermit;
     NSString* prevPermit;
+
+    BOOL smaller;
 }
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) IBOutlet UINavigationBar *navBar;
+@property (nonatomic, strong) iUMaineAppDelegate* appDel;
 @property (nonatomic, strong) UIActionSheet* actSheet;
 @property (nonatomic, strong) NSArray* permitTitles;
 @property (nonatomic, strong) NSUserDefaults* uDefaults;
@@ -48,10 +55,14 @@
 
 @property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 
+@property (atomic, assign, getter = isSmaller) BOOL smaller; 
+
 - (IBAction)valchange:(id)sender;
 
 - (void) showPickerview;
 - (void) addParkingAnnotationsOfType:(NSString*) permitType;
 - (void) dismissActionSheet;
+- (void) shrinkMapView;
+- (void) growMapView;
 
 @end
