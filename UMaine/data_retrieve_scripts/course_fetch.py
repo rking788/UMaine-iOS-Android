@@ -12,6 +12,7 @@ import time
 import mechanize
 import cookielib
 import BeautifulSoup
+
 Soup = BeautifulSoup.BeautifulSoup
 
 url = 'https://mainestreet.maine.edu/'
@@ -19,7 +20,7 @@ url = 'https://mainestreet.maine.edu/'
 debug = 0
 
 
-filename = "departments_USM.txt"
+filename = "departments.txt"
 fread = open(filename, 'r')
 fcontents = fread.read()
 departments = fcontents.split('\n')
@@ -87,7 +88,7 @@ br.select_form(name="win1")
 # UMA : UMS01
 # UMM : UMS04
 # USM : UMS06
-br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$51$").value = ["UMS06"]
+br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$51$").value = ["UMS05"]
 br.submit()
 html = br.response().read()
 
@@ -117,6 +118,9 @@ for dept in departments:
 		if (career == ""):
 			continue;
 
+		#print "Department: " + dept;
+		#print "Career: " + career;
+
 		br.select_form(name="win1")
 		#br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$60$").selected = False
 		#br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$59$").selected = True
@@ -141,7 +145,14 @@ for dept in departments:
 		assert br.viewing_html()
 		br.select_form(name="win1")
 		br.find_control("CLASS_SRCH_WRK2_SUBJECT$72$").value = dept
-		br.find_control("CLASS_SRCH_WRK2_ACAD_CAREER").value = [career]
+		controls = br.find_control("CLASS_SRCH_WRK2_ACAD_CAREER")
+		
+		#Started running into a lot of problems when campuses didn't have GRAD courses
+		# this fixes it
+		try:
+			br.find_control("CLASS_SRCH_WRK2_ACAD_CAREER").value = [career]
+		except mechanize._form.ItemNotFoundError:
+			continue
 		# UGRD or GRAD
 		#NOTE: MaineStreet requires at least two search constraints 
 
