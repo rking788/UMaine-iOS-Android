@@ -12,6 +12,7 @@
 #import "SportEvent.h"
 #import "TBXML.h"
 #import "CustomSectionHeader.h"
+#import "CampusSpecifics.h"
 
 @implementation SportsViewController
 
@@ -47,9 +48,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [self.appDel setSpvcInst: self];
     
     // Initialize the sports abbreviations dictionary
-    NSString* abbrsPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: ABBRSDICTNAME2];
-    self.sportsAbbrDict = [[NSDictionary alloc] initWithContentsOfFile: abbrsPath];
-    
+    self.sportsAbbrDict = [CampusSpecifics getSportsDict];
     self.firstView = YES;
 
     [self.navigationItem setTitle: @"All Sports"];
@@ -57,10 +56,9 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     UIBarButtonItem* sportSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Sports" style: UIBarButtonItemStyleBordered target:self action: @selector(selectSportBtnClicked)];
     self.navigationItem.leftBarButtonItem = sportSelectBtn;
     
-    [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (3.0/255.0) 
-                                                                    green: (32.0/255.0) 
-                                                                    blue: (62.0/255.0) 
-                                                                    alpha:1.0]];
+    [self.navigationController.navigationBar setTintColor: [CampusSpecifics getNavBarColor]];
+    
+    [self.loadingView setBackgroundColor: [CampusSpecifics getSportsLoadingBackgroundColor]];
     
     // This should probably be loaded from user defaults (the last viewed sport)
     [self setCurSport: @"All"];
@@ -127,50 +125,6 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     [self setEventsDict: nil];
     [self setEventsSubSetDict: nil];
 }
-
-
-#if 0
-- (void) showLoadingView
-{
-    CGRect rootRect = self.tableV.frame;
-    UIView* rootView = [[UIView alloc] initWithFrame: rootRect];
-    
-    UIColor* darkBlue = [UIColor colorWithRed: 0.0 green: (33.0/255) blue: (68.0 / 255) alpha: 1.0];
-    
-    rootView.backgroundColor = darkBlue;
-    
-    UIFont* loadingFont = [UIFont boldSystemFontOfSize: 17.0];
-    CGSize loadingSize = [@"Loading..." sizeWithFont: loadingFont];
-    
-    UIActivityIndicatorView* actInd = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle: UIActivityIndicatorViewStyleWhite];
-    
-    // Find the height and width needed for the inner view
-    CGFloat totW = loadingSize.width + 5.0 + actInd.bounds.size.width;
-    CGFloat totH = (loadingSize.height > actInd.bounds.size.height) ? loadingSize.height : actInd.bounds.size.height;
-    
-    UILabel* loadingLbl = [[UILabel alloc] initWithFrame: CGRectMake( 0, 0, loadingSize.width, loadingSize.height)];
-    [loadingLbl setText: @"Loading..."];
-    loadingLbl.textColor = [UIColor whiteColor];
-    loadingLbl.backgroundColor = darkBlue;
-    
-    UIView* innerView = [[UIView alloc] initWithFrame: CGRectMake(0, 0, totW, totH)];
-    [innerView addSubview: loadingLbl];
-    [innerView addSubview: actInd];
-    
-    [rootView addSubview: innerView];
-    
-    innerView.center = rootView.center;
-    
-    CGPoint loadingCenter = CGPointMake( loadingLbl.center.x, innerView.bounds.size.height/2);
-    loadingLbl.center = loadingCenter;
-    
-    CGRect actIndFrame = CGRectMake(loadingLbl.bounds.size.width + 5.0, 0, actInd.frame.size.width, actInd.frame.size.height);
-    actInd.frame = actIndFrame;
-    [actInd startAnimating];
-    
-    [self.view addSubview: rootView];
-}
-#endif
 
 - (void) loadSportsEvents
 {
@@ -470,6 +424,8 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         else{
             [cell setAccessoryType: UITableViewCellAccessoryNone];
         }
+        
+        [cell setSelectionStyle: UITableViewCellSelectionStyleBlue];
     }
     else if(indexPath.section == 1){
         // Current Game cell
@@ -529,6 +485,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         //[locLbl setText: @""];
         
         [cell setAccessoryType: UITableViewCellAccessoryNone];
+        [cell setSelectionStyle: UITableViewCellSelectionStyleBlue];
     }
     else{
         // Other game cell
@@ -556,6 +513,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         
         // Need to do this because arrows will show up if the cell is reused
         [cell setAccessoryType: UITableViewCellAccessoryNone];
+        [cell setSelectionStyle: UITableViewCellSelectionStyleNone];
     }
     
     return cell;
@@ -601,9 +559,9 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
     // create the parent view that will hold header Label
     CustomSectionHeader* customView = [[CustomSectionHeader alloc] initWithFrame:CGRectMake(0.0, 0.0, 360.0, 25.0)];
-    [customView setTopColor: [UIColor colorWithRed: (3.0/255.0) green: (32.0/255.0) blue: (62.0/255.0) alpha:1.0]];
-    [customView setBottomColor: [UIColor colorWithRed: (52.0/255.0) green: (160.0/255.0) blue: (206.0/255.0) alpha:1.0]];
-    [customView setLineColor: [UIColor blueColor]];
+    [customView setTopColor: [CampusSpecifics getSportsGradTopColor]];
+    [customView setBottomColor: [CampusSpecifics getSportsGradBottomColor]];
+    [customView setLineColor: [CampusSpecifics getSportsLineColor]];
     
     // Create label with section title
     UILabel *label = [[UILabel alloc] init];

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NavBarColor</key>
+	<dict>
+		<key>alpha</key>
+		<integer>1</integer>
+		<key>blue</key>
+		<integer>49</integer>
+		<key>green</key>
+		<integer>63</integer>
+		<key>red</key>
+		<integer>18</integer>
+	</dict>
+	<key>Sports</key>
+	<dict>
+		<key>wsoc</key>
+		<string>Women&apos;s Soccer</string>
+		<key>wbkb</key>
+		<string>Women&apos;s Basketball</string>
+		<key>msoc</key>
+		<string>Men&apos;s Soccer</string>
+		<key>mbkb</key>
+		<string>Men&apos;s Basketball</string>
+		<key>wvball</key>
+		<string>Women&apos;s Volleyball</string>
+	</dict>
+	<key>DirectoryNameTextColor</key>
+	<dict>
+		<key>alpha</key>
+		<integer>1</integer>
+		<key>blue</key>
+		<integer>40</integer>
+		<key>green</key>
+		<integer>89</integer>
+		<key>red</key>
+		<integer>2</integer>
+	</dict>
+	<key>SportsGradTopColor</key>
+	<dict>
+		<key>alpha</key>
+		<integer>1</integer>
+		<key>blue</key>
+		<integer>49</integer>
+		<key>green</key>
+		<integer>63</integer>
+		<key>red</key>
+		<integer>18</integer>
+	</dict>
+	<key>SportsGradBottomColor</key>
+	<dict>
+		<key>alpha</key>
+		<real>1</real>
+		<key>blue</key>
+		<integer>100</integer>
+		<key>green</key>
+		<integer>153</integer>
+		<key>red</key>
+		<integer>37</integer>
+	</dict>
+	<key>SportsLineColor</key>
+	<dict>
+		<key>alpha</key>
+		<integer>1</integer>
+		<key>blue</key>
+		<integer>77</integer>
+		<key>green</key>
+		<integer>178</integer>
+		<key>red</key>
+		<integer>232</integer>
+	</dict>
+	<key>SegmentControlColor</key>
+	<dict>
+		<key>alpha</key>
+		<string>1</string>
+		<key>blue</key>
+		<string>40</string>
+		<key>green</key>
+		<string>89</string>
+		<key>red</key>
+		<string>2</string>
+	</dict>
+</dict>
+</plist>

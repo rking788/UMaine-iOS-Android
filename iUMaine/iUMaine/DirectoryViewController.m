@@ -3,6 +3,7 @@
 #import "iUMaineAppDelegate.h"
 #import "DirectoryDetailViewController.h"
 #import "Employee.h"
+#import "CampusSpecifics.h"
 
 @implementation DirectoryViewController
 
@@ -40,14 +41,12 @@
     [self fillEmployees];
     
 	// Restore search term
-	if ([self savedSearchTerm]){
+ 	if ([self savedSearchTerm]){
         [[[self searchDisplayController] searchBar] setText:[self savedSearchTerm]];
     }
     
-    [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (3.0/255.0) 
-                                                                           green: (32.0/255.0) 
-                                                                            blue: (62.0/255.0) 
-                                                                           alpha:1.0]];
+    [self.navigationController.navigationBar setTintColor: [CampusSpecifics getNavBarColor]];
+    [self.searchDisplayController.searchBar setTintColor: [CampusSpecifics getNavBarColor]];
 }
 
 - (void)viewWillAppear:(BOOL)animated

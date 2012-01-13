@@ -362,12 +362,6 @@
     UILabel* lbl = [cell textLabel];
     UILabel* lbl2 = [cell detailTextLabel];
     
-    // [lbl setText: @"Course Name"];
-    // [lbl setTextColor: [UIColor colorWithRed:(66.0/255.0) green:(41.0/255.0) blue:(3.0/255) alpha:1.0]];
-    // UIFont* textFont = [UIFont fontWithName: @"Baskerville" size: 17.0];
-    // [lbl setFont: textFont];
-    // [lbl2 setText: @"12:00 PM"];
-    
     [lbl setText: [self.lblStrs objectAtIndex: indexPath.row]];
     NSString* detText = [self.detLblStrs objectAtIndex: indexPath.row];
     

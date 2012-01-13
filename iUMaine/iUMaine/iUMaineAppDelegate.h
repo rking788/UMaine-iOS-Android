@@ -13,6 +13,7 @@
 @class ScheduleViewController;
 @class SportsViewController;
 @class MapViewController;
+@class CampusSpecifics;
 
 @interface iUMaineAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
 
@@ -21,14 +22,13 @@
     NSPersistentStoreCoordinator* persistentStoreCoordinator;
     
     NSUserDefaults* defaultPrefs;
+    CampusSpecifics* campusSpecifics;
     NSString* lastUpdateStr;
     
     ScheduleViewController* svcInst;
     SportsViewController* spvcInst;
     MapViewController* mvcInst;
     
-    NSString* selCampus;
-
     BOOL gettingSports;
 }
 
@@ -43,7 +43,7 @@
 @property (strong, atomic) SportsViewController* spvcInst;
 @property (strong, atomic) MapViewController* mvcInst;
 
-@property (strong, nonatomic) NSString* selCampus;
+//@property (strong, nonatomic) NSString* selCampus;
 
 // Core Data related properties
 @property (nonatomic, strong, readonly) NSManagedObjectContext* managedObjectContext;
@@ -51,6 +51,7 @@
 @property (nonatomic, strong, readonly) NSPersistentStoreCoordinator* persistentStoreCoordinator;
 
 @property (nonatomic, strong) NSUserDefaults* defaultPrefs;
+@property (nonatomic, strong) CampusSpecifics* campusSpecifics;
 @property (nonatomic, strong) NSString* lastUpdateStr;
 @property (atomic, assign, getter = isGettingSports) BOOL gettingSports;
 
@@ -59,6 +60,8 @@
 
 - (void)loadDefaultDB;
 + (iUMaineAppDelegate*) sharedAppDelegate;
++ (NSString*) getSelCampus;
++ (void) setSelCampus: (NSString*) campus;
 
 - (void) saveContext;
 

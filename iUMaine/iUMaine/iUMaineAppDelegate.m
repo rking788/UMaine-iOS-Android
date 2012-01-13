@@ -15,6 +15,7 @@
 #import "AvailableCourses.h"
 #import "TBXML.h"
 #import "constants.h"
+#import "CampusSpecifics.h"
 
 #define INIT_DB 0
 
@@ -37,9 +38,9 @@
 @synthesize progressBar;
 @synthesize progressText;
 @synthesize defaultPrefs;
+@synthesize campusSpecifics;
 @synthesize lastUpdateStr;
 @synthesize gettingSports;
-@synthesize selCampus;
 
 #pragma mark - TODO CRITICAL: Change the application color scheme based on the selected campus
 #pragma mark - TODO CRITICAL: Add a way to switch campuses after a selection has been made (accidents happen)
@@ -48,6 +49,9 @@
 
 // Constant for the database file name
 NSString* const DBFILENAME = @"UMO.sqlite"; 
+
+// Static value for the selected campus, use accessor
+static NSString* selCampus;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -68,10 +72,15 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     
     self.defaultPrefs = [NSUserDefaults standardUserDefaults];
     
-    self.selCampus = [self.defaultPrefs objectForKey: DEFS_SELCAMPUSKEY];
+    selCampus = [self.defaultPrefs objectForKey: DEFS_SELCAMPUSKEY];
     
-    if(self.selCampus){
+    if(selCampus){
         [self checkServer];
+        
+        //[self setCampusSpecifics: [[CampusSpecifics alloc] initWithCampusName: selCampus]];
+        
+        // TODO: Remove this, it is just for testing new colors
+        [self setCampusSpecifics: [[CampusSpecifics alloc] initWithCampusName:@"UMPI"]];
         
         // Migrate the default DB if necessary
         [self loadDefaultDB];
@@ -154,9 +163,9 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         return persistentStoreCoordinator;
     }
     
-    NSString* dbFileName = [NSString stringWithFormat: @"%@.sqlite", self.selCampus];
+    NSString* dbFileName = [NSString stringWithFormat: @"%@.sqlite", [iUMaineAppDelegate getSelCampus]];
     
-    NSLog(@"Using DB with filename: %@ (persistentstorecoordinator)", [NSString stringWithFormat: @"%@.sqlite",  self.selCampus]);
+    NSLog(@"Using DB with filename: %@ (persistentstorecoordinator)", [NSString stringWithFormat: @"%@.sqlite",  [iUMaineAppDelegate getSelCampus]]);
     NSURL* storeURL = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent: dbFileName]];
     NSError *error = nil;
     
@@ -184,9 +193,9 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     BOOL success;
     NSError* err;
     NSFileManager* fm = [NSFileManager defaultManager];
-    NSString* dbFileName = [NSString stringWithFormat: @"%@.sqlite", self.selCampus];
+    NSString* dbFileName = [NSString stringWithFormat: @"%@.sqlite",  [iUMaineAppDelegate getSelCampus]];
     
-    NSLog(@"Using DB with filename: %@ first time (loaddefaultDB)", [NSString stringWithFormat: @"%@.sqlite",  self.selCampus]);
+    NSLog(@"Using DB with filename: %@ first time (loaddefaultDB)", [NSString stringWithFormat: @"%@.sqlite",  [iUMaineAppDelegate getSelCampus]]);
     NSString* dbPath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent: dbFileName];
     
     success = [fm fileExistsAtPath:dbPath];
@@ -197,7 +206,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         return;
     }
     
-    NSLog(@"Using DB with filename: %@ second time (loaddefaultDB)", [NSString stringWithFormat: @"%@.sqlite",  self.selCampus]);
+    NSLog(@"Using DB with filename: %@ second time (loaddefaultDB)", [NSString stringWithFormat: @"%@.sqlite",   [iUMaineAppDelegate getSelCampus]]);
     NSString* defaultDBPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: dbFileName];
     
     // If there is a default database file copy it, if not then fail
@@ -219,6 +228,16 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 + (iUMaineAppDelegate*) sharedAppDelegate
 {
     return (iUMaineAppDelegate*) [[UIApplication sharedApplication] delegate];
+}
+
++ (NSString*) getSelCampus
+{
+    return selCampus;
+}
+
++ (void) setSelCampus:(NSString *)campus
+{
+    selCampus = campus;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -259,11 +278,12 @@ NSString* const DBFILENAME = @"UMO.sqlite";
 
 - (void) campusSelected:(NSString *)campusStr
 {
-    self.selCampus = campusStr;
+    [iUMaineAppDelegate setSelCampus: campusStr];
     
-    // TODO CRITICAL: Uncomment this when done testing. I just dont want it to remember it until i am done
+    [self setCampusSpecifics: [[CampusSpecifics alloc] initWithCampusName: selCampus]];
+    
     // Set the selected campus in the user defaults
-    [self.defaultPrefs setObject: self.selCampus forKey: DEFS_SELCAMPUSKEY];
+    [self.defaultPrefs setObject:  [iUMaineAppDelegate getSelCampus] forKey: DEFS_SELCAMPUSKEY];
     
     // Now that we know which DB file to use we can check for sports and course updates
     [self checkServer];
@@ -304,7 +324,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         // Add the event information into the POST request content
         NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/sports/FetchSportsUpdates.php"];
         // NSString* content = [NSString stringWithFormat: @"date=%@", self.lastUpdateStr];
-        NSString* content = [NSString stringWithFormat: @"date=%@&campus=%@", self.lastUpdateStr, self.selCampus];
+        NSString* content = [NSString stringWithFormat: @"date=%@&campus=%@", self.lastUpdateStr,  [iUMaineAppDelegate getSelCampus]];
         
         NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
         
@@ -481,7 +501,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
         
         // Add the event information into the POST request content
         NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
-        NSString* content = [NSString stringWithFormat: @"op=%@&campus=%@", @"getsemesters", self.selCampus ];
+        NSString* content = [NSString stringWithFormat: @"op=%@&campus=%@", @"getsemesters",  [iUMaineAppDelegate getSelCampus]];
         
         NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];
         
@@ -549,7 +569,7 @@ NSString* const DBFILENAME = @"UMO.sqlite";
     
     // Add the event information into the POST request content
     // TODO CRITICAL : This should not be a constant string it should depend on the selected campus
-    NSString* campusName = self.selCampus;
+    NSString* campusName =  [iUMaineAppDelegate getSelCampus];
     NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
     NSString* content = [NSString stringWithFormat: @"op=%@&sem=%@&campus=%@", @"getallforsemester", semStr, campusName];
     

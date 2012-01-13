@@ -8,6 +8,7 @@
 
 #import "DirectoryDetailViewController.h"
 #import "Employee.h"
+#import "CampusSpecifics.h"
 
 @implementation DirectoryDetailViewController
 @synthesize nameLbl;
@@ -45,6 +46,7 @@
                          [self.employee valueForKey: @"fname"],
                          [self.employee valueForKey: @"mname"]];
     [self.nameLbl setText: nameStr];
+    [self.nameLbl setTextColor: [CampusSpecifics getDDNameTextColor]];
     [self.titleLbl setText: [self.employee title]];
 
     // Fill employee information dictionary (should do it this way instead of just accessing

@@ -7,6 +7,7 @@
 //
 
 #import "EventRecapViewController.h"
+#import "CampusSpecifics.h"
 
 
 @implementation EventRecapViewController
@@ -45,6 +46,8 @@
     [self.navigationItem setTitle: @"Recap"];
     
     self.webView.scalesPageToFit = YES;
+    
+    [self.loadingView setBackgroundColor: [CampusSpecifics getSportsLoadingBackgroundColor]];
     
     NSURL* url = [NSURL URLWithString: self.recapURLStr];
     NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL: url];

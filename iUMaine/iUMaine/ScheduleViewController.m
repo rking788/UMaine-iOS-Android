@@ -47,7 +47,7 @@
     // Load the user defaults used to find the selected semester
     self.userDefs = [NSUserDefaults standardUserDefaults];
     
-    if(!self.appDel.selCampus){
+    if(![iUMaineAppDelegate getSelCampus]){
         CampusSelectionViewController* csvc = [[CampusSelectionViewController alloc] init];
         UINavigationController *navigationController = [[UINavigationController alloc]
                                                         initWithRootViewController: csvc];
@@ -501,15 +501,6 @@
     [timeLbl setText: [[curCourse.times componentsSeparatedByString: @" - "] objectAtIndex: 0]];
     
     [cell setSelectionStyle: UITableViewCellSelectionStyleGray];
-    // Configure the cell...
-    //  UILabel* lbl = [cell textLabel];
-    //  UILabel* lbl2 = [cell detailTextLabel];
-    
-    // [lbl setText: @"Course Name"];
-    // [lbl setTextColor: [UIColor colorWithRed:(66.0/255.0) green:(41.0/255.0) blue:(3.0/255) alpha:1.0]];
-    // UIFont* textFont = [UIFont fontWithName: @"Baskerville" size: 17.0];
-    // [lbl setFont: textFont];
-    // [lbl2 setText: @"12:00 PM"];
     
     return cell;
 }
@@ -543,6 +534,7 @@
     
     [self initializeSchedule];
     
-    [self.appDel campusSelected: campusStr];}
+    [self.appDel campusSelected: campusStr];
+}
 
 @end

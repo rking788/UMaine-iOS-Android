@@ -9,12 +9,14 @@
 #import "MapViewController.h"
 #import "BuildingSelectView.h"
 #import "iUMaineAppDelegate.h"
+#import "CampusSpecifics.h"
 #import "constants.h"
 
 @implementation MapViewController
 
 @synthesize appDel;
 @synthesize navBar;
+@synthesize segmentControl;
 @synthesize actSheet;
 @synthesize uDefaults;
 @synthesize curPermit, prevPermit;
@@ -60,6 +62,9 @@
     }
     
     self.prevPermit = nil;
+
+    [self.navBar setTintColor: [CampusSpecifics getNavBarColor]];
+    [self.segmentControl setTintColor: [CampusSpecifics getSegmentControlColor]];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -399,6 +404,7 @@
     [self setNavBar:nil];
     [self setMapSelBuildingAnnotation: nil];
     [self setUDefaults: nil];
+    [self setSegmentControl:nil];
     [super viewDidUnload];
 
     // Release any retained subviews of the main view.

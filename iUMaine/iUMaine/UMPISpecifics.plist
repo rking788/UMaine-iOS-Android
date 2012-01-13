@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NavBarColor</key>
+	<dict>
+		<key>alpha</key>
+		<integer>1</integer>
+		<key>blue</key>
+		<integer>115</integer>
+		<key>green</key>
+		<integer>62</integer>
+		<key>red</key>
+		<integer>2</integer>
+	</dict>
+	<key>Sports</key>
+	<dict>
+		<key>wvball</key>
+		<string>Women&apos;s Volleyball</string>
+		<key>sball</key>
+		<string>Softball</string>
+		<key>wsoc</key>
+		<string>Women&apos;s Soccer</string>
+		<key>wskiing</key>
+		<string>Women&apos;s Nordic Skiing</string>
+		<key>wxc</key>
+		<string>Women&apos;s Cross Country</string>
+		<key>wbkb</key>
+		<string>Women&apos;s Basketball</string>
+		<key>msoc</key>
+		<string>Men&apos;s Soccer</string>
+		<key>mskiing</key>
+		<string>Men&apos;s Nordic Skiing</string>
+		<key>mgolf</key>
+		<string>Men&apos;s Golf</string>
+		<key>mxc</key>
+		<string>Men&apos;s Cross Country</string>
+		<key>mbkb</key>
+		<string>Men&apos;s Basketball</string>
+		<key>bsb</key>
+		<string>Baseball</string>
+	</dict>
+	<key>DirectoryNameTextColor</key>
+	<dict>
+		<key>alpha</key>
+		<integer>1</integer>
+		<key>blue</key>
+		<integer>115</integer>
+		<key>green</key>
+		<integer>62</integer>
+		<key>red</key>
+		<integer>2</integer>
+	</dict>
+	<key>SportsGradTopColor</key>
+	<dict>
+		<key>alpha</key>
+		<integer>1</integer>
+		<key>blue</key>
+		<integer>115</integer>
+		<key>green</key>
+		<integer>62</integer>
+		<key>red</key>
+		<integer>2</integer>
+	</dict>
+	<key>SportsGradBottomColor</key>
+	<dict>
+		<key>alpha</key>
+		<real>1</real>
+		<key>blue</key>
+		<integer>186</integer>
+		<key>green</key>
+		<integer>117</integer>
+		<key>red</key>
+		<integer>63</integer>
+	</dict>
+	<key>SportsLineColor</key>
+	<dict>
+		<key>alpha</key>
+		<integer>1</integer>
+		<key>blue</key>
+		<integer>43</integer>
+		<key>green</key>
+		<integer>2</integer>
+		<key>red</key>
+		<integer>89</integer>
+	</dict>
+	<key>SegmentControlColor</key>
+	<dict>
+		<key>alpha</key>
+		<string>1</string>
+		<key>blue</key>
+		<string>186</string>
+		<key>green</key>
+		<string>83</string>
+		<key>red</key>
+		<string>4</string>
+	</dict>
+</dict>
+</plist>

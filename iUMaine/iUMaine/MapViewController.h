@@ -43,6 +43,7 @@
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) IBOutlet UINavigationBar *navBar;
+@property (unsafe_unretained, nonatomic) IBOutlet UISegmentedControl *segmentControl;
 @property (nonatomic, strong) iUMaineAppDelegate* appDel;
 @property (nonatomic, strong) UIActionSheet* actSheet;
 @property (nonatomic, strong) NSArray* permitTitles;

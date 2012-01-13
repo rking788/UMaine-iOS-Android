@@ -192,7 +192,7 @@
  
     // This variable needs to be set IMMEDIATELY so that the right .sqlite file will be used
     iUMaineAppDelegate* appD = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
-    appD.selCampus = campShortName;
+    [iUMaineAppDelegate setSelCampus: campShortName];
     [appD loadDefaultDB];
     
     [self.scD campusSelected: campShortName];

@@ -7,6 +7,7 @@
 //
 
 #import "BuildingSelectView.h"
+#import "CampusSpecifics.h"
 #import "Location.h"
 
 @implementation BuildingSelectView
@@ -210,10 +211,8 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
                                                initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
                                                target:self action:@selector(cancelClicked:)];
-    [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (3.0/255.0) 
-                                                                           green: (32.0/255.0) 
-                                                                            blue: (62.0/255.0) 
-                                                                           alpha:1.0]];
+    [self.navigationController.navigationBar setTintColor: [CampusSpecifics getNavBarColor]];
+    [self.searchBar setTintColor: [CampusSpecifics getNavBarColor]];
    
     searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
     [self setSearching: NO];
