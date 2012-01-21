@@ -23,7 +23,7 @@
     POIAnnotation* mapSelBuildingAnnotation;
     NSMutableArray* mapPOIAnnotations;
     
-    NSManagedObjectContext *managedObjectContext;
+//    NSManagedObjectContext *managedObjectContext;
     UINavigationBar *navBar;
     UIPickerView *pickerView;
     UINavigationItem *titleView;
@@ -31,7 +31,8 @@
     UIActionSheet* actSheet;
     
     // Titles for picker view
-    NSArray* permitTitles;
+    NSDictionary* permitTitles;
+    NSArray* sortedPermitTitles;
     
     NSUserDefaults* uDefaults;
     
@@ -46,7 +47,8 @@
 @property (unsafe_unretained, nonatomic) IBOutlet UISegmentedControl *segmentControl;
 @property (nonatomic, strong) iUMaineAppDelegate* appDel;
 @property (nonatomic, strong) UIActionSheet* actSheet;
-@property (nonatomic, strong) NSArray* permitTitles;
+@property (nonatomic, strong) NSDictionary* permitTitles;
+@property (strong, nonatomic) NSArray* sortedPermitTitles;
 @property (nonatomic, strong) NSUserDefaults* uDefaults;
 @property (nonatomic, strong) NSString* curPermit;
 @property (nonatomic, strong) NSString* prevPermit;
@@ -54,13 +56,14 @@
 @property (nonatomic, strong) POIAnnotation* mapSelBuildingAnnotation;
 @property (nonatomic, strong) NSMutableArray* mapPOIAnnotations;
 
-@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
+//@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 
 @property (atomic, assign, getter = isSmaller) BOOL smaller; 
 
 - (IBAction)valchange:(id)sender;
 
 - (void) showPickerview;
+- (NSArray*) findCenterOfCampus; 
 - (void) addParkingAnnotationsOfType:(NSString*) permitType;
 - (void) dismissActionSheet;
 - (void) shrinkMapView;

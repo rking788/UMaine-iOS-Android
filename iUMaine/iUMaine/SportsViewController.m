@@ -35,7 +35,6 @@
 // Constant for the abbreviations dictionary name
 NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
-#pragma mark - TODO: Show only the sports available at the selected campus, not all of the sports in the abbreviation dictionary
 #pragma mark - TODO: Allow filtering of the events by year range or current year or something
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -47,8 +46,6 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     self.appDel = [iUMaineAppDelegate sharedAppDelegate];
     [self.appDel setSpvcInst: self];
     
-    // Initialize the sports abbreviations dictionary
-    self.sportsAbbrDict = [CampusSpecifics getSportsDict];
     self.firstView = YES;
 
     [self.navigationItem setTitle: @"All Sports"];
@@ -56,9 +53,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     UIBarButtonItem* sportSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Sports" style: UIBarButtonItemStyleBordered target:self action: @selector(selectSportBtnClicked)];
     self.navigationItem.leftBarButtonItem = sportSelectBtn;
     
-    [self.navigationController.navigationBar setTintColor: [CampusSpecifics getNavBarColor]];
-    
-    [self.loadingView setBackgroundColor: [CampusSpecifics getSportsLoadingBackgroundColor]];
+
     
     // This should probably be loaded from user defaults (the last viewed sport)
     [self setCurSport: @"All"];
@@ -84,9 +79,16 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
   //      [self showLoadingView];
   //  }
 
+    // Initialize the sports abbreviations dictionary
+    self.sportsAbbrDict = [CampusSpecifics getSportsDict];
+    
+    [self.navigationController.navigationBar setTintColor: [CampusSpecifics getNavBarColor]];
+    [self.loadingView setBackgroundColor: [CampusSpecifics getSportsLoadingBackgroundColor]];
+    
     [self fixupAdView:[UIDevice currentDevice].orientation];
     
     [self scrollToCurrentOrFutureEvents: NO];
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -303,6 +305,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     // dictionary to the subset dictionary
     if([sport isEqualToString: @"All"]){
         self.eventsSubSetDict = [NSDictionary dictionaryWithDictionary: self.eventsDict];
+        [self.tableV reloadData];
         return;
     }
     
@@ -420,12 +423,12 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         
         if(SE.recapLink && ([SE.recapLink length] != 0)){
             [cell setAccessoryType: UITableViewCellAccessoryDisclosureIndicator];
+            [cell setSelectionStyle: UITableViewCellSelectionStyleBlue];
         }
         else{
             [cell setAccessoryType: UITableViewCellAccessoryNone];
+            [cell setSelectionStyle: UITableViewCellSelectionStyleNone];
         }
-        
-        [cell setSelectionStyle: UITableViewCellSelectionStyleBlue];
     }
     else if(indexPath.section == 1){
         // Current Game cell
@@ -440,15 +443,32 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         [sportLbl setText: [self.sportsAbbrDict objectForKey: SE.sport]];
         
         NSString* teamStr;
+        NSString* teamAFileName;
+        NSString* teamBFileName;
+        
+        if([SE.teamA isEqualToString: @"Maine"]){
+            teamAFileName = [NSString stringWithFormat: @"%@_%@.png", SE.teamA, [iUMaineAppDelegate getSelCampus]];
+        }
+        else{
+            teamAFileName = [NSString stringWithFormat: @"%@.png", SE.teamA];
+        }
+        
+        if([SE.teamB isEqualToString: @"Maine"]){
+            teamBFileName = [NSString stringWithFormat: @"%@_%@.png", SE.teamB, [iUMaineAppDelegate getSelCampus]];
+        }
+        else{
+            teamBFileName = [NSString stringWithFormat: @"%@.png", SE.teamB];
+        }
+        
         if([SE.home boolValue]){
             teamStr = [NSString stringWithFormat: @"%@ %@ %@", SE.teamB, @"vs.", SE.teamA];
             
-            UIImage* teamAImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamB]];
+            UIImage* teamAImg = [UIImage imageNamed: teamBFileName];
             if(!teamAImg)
                 teamAImg = [UIImage imageNamed: @"teamPlaceholder.png"];
             [teamAImgView setImage: teamAImg];
             
-            UIImage* teamBImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamA]];
+            UIImage* teamBImg = [UIImage imageNamed: teamAFileName];
             if(!teamBImg)
                 teamBImg = [UIImage imageNamed: @"teamPlaceholder.png"];
             [teamBImgView setImage: teamBImg];
@@ -456,12 +476,12 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
         else{
             teamStr = [NSString stringWithFormat: @"%@ %@ %@", SE.teamA, @"at", SE.teamB];
             
-            UIImage* teamAImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamA]];
+            UIImage* teamAImg = [UIImage imageNamed: teamAFileName];
             if(!teamAImg)
                 teamAImg = [UIImage imageNamed: @"teamPlaceholder.png"];
             [teamAImgView setImage: teamAImg];
             
-            UIImage* teamBImg = [UIImage imageNamed: [NSString stringWithFormat: @"%@.png", SE.teamB]];
+            UIImage* teamBImg = [UIImage imageNamed: teamBFileName];
             if(!teamBImg)
                 teamBImg = [UIImage imageNamed: @"teamPlaceholder.png"];
             [teamBImgView setImage: teamBImg];

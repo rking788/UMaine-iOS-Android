@@ -18,14 +18,19 @@
     NSDictionary* campusSelDict;
     NSUInteger selIndex;
     
+    NSString* currentCampus;
+    
     id<SelectCampusDelegate> scD;
 }
 
 @property (strong, nonatomic) NSDictionary* campusSelDict;
 @property (nonatomic) NSUInteger selIndex;
 
+@property (strong, nonatomic) NSString* currentCampus;
+
 @property (strong, nonatomic) id<SelectCampusDelegate> scD;
 
+- (void) cancel;
 - (void) save;
 
 @end

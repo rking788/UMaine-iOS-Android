@@ -55,6 +55,17 @@
 		<key>red</key>
 		<integer>3</integer>
 	</dict>
+	<key>PermitTitles</key>
+	<dict>
+		<key>visitor</key>
+		<string>Visitor</string>
+		<key>resident</key>
+		<string>Resident</string>
+		<key>meters</key>
+		<string>Parking Meters</string>
+		<key>employee</key>
+		<string>Employee</string>
+	</dict>
 	<key>SportsGradTopColor</key>
 	<dict>
 		<key>alpha</key>

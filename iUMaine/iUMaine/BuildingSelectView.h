@@ -27,7 +27,6 @@
     NSMutableArray* searchListContents;
     NSMutableArray* searchListSubContents;
     NSMutableArray* searchListLocations;
-    NSManagedObjectContext* managedObjectContext;
     BOOL searching;
 }
 @property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
@@ -39,7 +38,6 @@
 @property (nonatomic, strong) NSMutableArray* searchListContents;
 @property (nonatomic, strong) NSMutableArray* searchListSubContents;
 @property (nonatomic, strong) NSMutableArray* searchListLocations;
-@property (nonatomic, strong) NSManagedObjectContext* managedObjectContext;
 
 @property (nonatomic, getter = isSearching) BOOL searching;
 

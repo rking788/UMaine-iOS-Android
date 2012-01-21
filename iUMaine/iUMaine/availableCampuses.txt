@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    <key>UMA</key>
+    <string>Augusta</string>
+    <key>UMF</key>
+    <string>Farmington</string>
+    <key>UMM</key>
+    <string>Machias</string>
 	<key>UMO</key>
 	<string>Orono</string>
 </dict>

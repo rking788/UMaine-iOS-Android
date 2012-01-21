@@ -24,9 +24,14 @@
 #import "dbInitializer.h"
 #endif
 
+#pragma mark - TODO CRITICAL: SOME LONG RUNNING TASK IS NOT BEING PERFORMED IN THE BACKGROUND FIND OUT WHAT IT IS. (SCREEN FREEZES ON LAUNCH AFTER FRESH INSTALL ) SOME SERVER COMMUNICATION OR SOMETHING PROBABLY
+#pragma mark - TODO: Need better icons for the tab bar icons
+
 @implementation iUMaineAppDelegate
 
-@synthesize managedObjectModel, managedObjectContext, persistentStoreCoordinator;
+@synthesize managedObjectModel = _managedObjectModel;
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 @synthesize window=_window;
 
@@ -42,14 +47,6 @@
 @synthesize lastUpdateStr;
 @synthesize gettingSports;
 
-#pragma mark - TODO CRITICAL: Change the application color scheme based on the selected campus
-#pragma mark - TODO CRITICAL: Add a way to switch campuses after a selection has been made (accidents happen)
-#pragma mark - TODO CRITICAL: SOME LONG RUNNING TASK IS NOT BEING PERFORMED IN THE BACKGROUND FIND OUT WHAT IT IS. (SCREEN FREEZES ON LAUNCH AFTER FRESH INSTALL ) SOME SERVER COMMUNICATION OR SOMETHING PROBABLY
-#pragma mark - TODO: Need better icons for the tab bar icons
-
-// Constant for the database file name
-NSString* const DBFILENAME = @"UMO.sqlite"; 
-
 // Static value for the selected campus, use accessor
 static NSString* selCampus;
 
@@ -60,13 +57,6 @@ static NSString* selCampus;
     self.window.rootViewController = self.tabBarController;
     
     self.gettingSports = NO;
-        
-    // Initialize the database file (should be removed after .sqlite file is setup
-#if INIT_DB
-    DBInitializer* dbIniter = [[DBInitializer alloc] init];
-    dbIniter.managedObjectContext = self.managedObjectContext;
-    [dbIniter initDatabaseWithCampus: self.selCampus];
-#endif
     
     [self addProgressBarView];
     
@@ -74,14 +64,19 @@ static NSString* selCampus;
     
     selCampus = [self.defaultPrefs objectForKey: DEFS_SELCAMPUSKEY];
     
+    // Initialize the database file (should be removed after .sqlite file is setup
+#if INIT_DB
+    selCampus = @"UMF";
+    DBInitializer* dbIniter = [[DBInitializer alloc] init];
+    dbIniter.managedObjectContext = self.managedObjectContext;
+    [dbIniter initDatabaseWithCampus: selCampus];
+#endif
+
     if(selCampus){
         [self checkServer];
         
-        //[self setCampusSpecifics: [[CampusSpecifics alloc] initWithCampusName: selCampus]];
-        
-        // TODO: Remove this, it is just for testing new colors
-        [self setCampusSpecifics: [[CampusSpecifics alloc] initWithCampusName:@"UMPI"]];
-        
+        [self setCampusSpecifics: [[CampusSpecifics alloc] initWithCampusName: selCampus]];
+
         // Migrate the default DB if necessary
         [self loadDefaultDB];
     }
@@ -126,17 +121,17 @@ static NSString* selCampus;
 */
 - (NSManagedObjectContext *) managedObjectContext {
 
-    if (managedObjectContext != nil) {
-        return managedObjectContext;
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
     }
 
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
-        managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [managedObjectContext setPersistentStoreCoordinator: coordinator];
+        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+        [_managedObjectContext setPersistentStoreCoordinator: coordinator];
     }
     
-    return managedObjectContext;
+    return _managedObjectContext;
 }
 
 /**
@@ -145,12 +140,12 @@ static NSString* selCampus;
  */
 - (NSManagedObjectModel *)managedObjectModel {
     
-    if (managedObjectModel != nil) {
-        return managedObjectModel;
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
     }
-    managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];    
+    _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];    
  
-    return managedObjectModel;
+    return _managedObjectModel;
 }
 
 /**
@@ -159,8 +154,8 @@ static NSString* selCampus;
  */
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     
-    if (persistentStoreCoordinator != nil) {
-        return persistentStoreCoordinator;
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
     }
     
     NSString* dbFileName = [NSString stringWithFormat: @"%@.sqlite", [iUMaineAppDelegate getSelCampus]];
@@ -169,13 +164,13 @@ static NSString* selCampus;
     NSURL* storeURL = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent: dbFileName]];
     NSError *error = nil;
     
-    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
-    if (![persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
         // Handle the error.
         NSLog(@"Failed to create the persistent store in iUMaineAppDelegate with error: %@", [error localizedDescription]);
     }    
     
-    return persistentStoreCoordinator;
+    return _persistentStoreCoordinator;
 }
 
 /**
@@ -266,11 +261,18 @@ static NSString* selCampus;
 }
 */
 
+- (void) resetContext
+{
+    _managedObjectContext = nil;
+    _managedObjectModel = nil;
+    _persistentStoreCoordinator = nil;
+}
+
 - (void) saveContext
 {
     NSError* err;
-    if(managedObjectContext != nil){
-        if([managedObjectContext hasChanges] && ![managedObjectContext save:&err]){
+    if(self.managedObjectContext != nil){
+        if([self.managedObjectContext hasChanges] && ![self.managedObjectContext save:&err]){
             // Handle the error in here 
         }
     }   
@@ -278,6 +280,12 @@ static NSString* selCampus;
 
 - (void) campusSelected:(NSString *)campusStr
 {
+    // If a new campus was selected we want to set the managed object context to nil
+    // so that if a DB file was previously loaded, the new one will be loaded for the new campus
+//    _managedObjectModel = nil;
+//    _managedObjectContext = nil;
+//    _persistentStoreCoordinator = nil;
+    
     [iUMaineAppDelegate setSelCampus: campusStr];
     
     [self setCampusSpecifics: [[CampusSpecifics alloc] initWithCampusName: selCampus]];
@@ -287,7 +295,8 @@ static NSString* selCampus;
     
     // Now that we know which DB file to use we can check for sports and course updates
     [self checkServer];
-
+    
+    
 }
 
 - (void) checkServer
@@ -568,7 +577,6 @@ static NSString* selCampus;
     NSError* err = nil;
     
     // Add the event information into the POST request content
-    // TODO CRITICAL : This should not be a constant string it should depend on the selected campus
     NSString* campusName =  [iUMaineAppDelegate getSelCampus];
     NSURL* url = [NSURL URLWithString:@"http://mainelyapps.com/umaine/FetchAvailableCourses.php"];
     NSString* content = [NSString stringWithFormat: @"op=%@&sem=%@&campus=%@", @"getallforsemester", semStr, campusName];

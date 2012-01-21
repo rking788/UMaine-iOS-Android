@@ -13,6 +13,7 @@
 @implementation CampusSelectionViewController
 
 @synthesize campusSelDict;
+@synthesize currentCampus;
 @synthesize selIndex;
 @synthesize scD;
 
@@ -39,22 +40,26 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self.navigationController.navigationBar setTintColor: [UIColor colorWithRed: (66.0/255.0) green: (41.0/255.0) blue: (3.0/255.0) alpha: 1.0]];
-    [self.navigationItem setRightBarButtonItem: [[UIBarButtonItem alloc] initWithTitle: @"Save" style: UIBarButtonItemStyleDone target:self action: @selector(save)]];
     [self.tableView setBackgroundColor: [UIColor colorWithRed:(238.0/255.0) green:(230.0/255.0) blue:(192.0/255) alpha:1.0]];
+    
+    [self.navigationItem setRightBarButtonItem: [[UIBarButtonItem alloc] initWithTitle: @"Save" style: UIBarButtonItemStyleDone target:self action: @selector(save)]];
 
+    [self.navigationItem setLeftBarButtonItem: [[UIBarButtonItem alloc] initWithTitle: @"Cancel" style: UIBarButtonItemStyleBordered target:self action: @selector(cancel)]];
+    
     // Read in the dictionary of available campuses from the text file in the main bundle
     NSString* campusPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: CAMPUSDICTNAME];
     self.campusSelDict = [[NSDictionary alloc] initWithContentsOfFile: campusPath];
     
     NSArray* arr = [[self.campusSelDict allValues] sortedArrayUsingSelector: @selector( localizedCaseInsensitiveCompare:)];
-    self.selIndex = [arr indexOfObject: @"Orono"];
-
+   
+    if(self.currentCampus){
+        NSString* longName = [self.campusSelDict objectForKey: self.currentCampus];
+        self.selIndex = [arr indexOfObject: longName];
+    }
+    else{
+        self.selIndex = 0;
+    }
 }
 
 - (void)viewDidUnload
@@ -183,13 +188,23 @@
     [[tableView cellForRowAtIndexPath: indexPath] setAccessoryType: UITableViewCellAccessoryCheckmark];
 }
 
+- (void) cancel
+{
+    [self dismissModalViewControllerAnimated: YES];
+}
+
 - (void) save
 {
-    
     NSString* campLongName = [[[self.tableView cellForRowAtIndexPath: [NSIndexPath indexPathForRow: self.selIndex inSection:0]] textLabel] text];
  
     NSString* campShortName = [[self.campusSelDict allKeysForObject: campLongName] objectAtIndex: 0];
  
+    // Check if the new campus is the same as the current campus if it is then don't do anything
+    if((self.currentCampus != nil) && ([self.currentCampus isEqualToString: campShortName])){
+        [self dismissModalViewControllerAnimated: YES];
+        return ;
+    }
+    
     // This variable needs to be set IMMEDIATELY so that the right .sqlite file will be used
     iUMaineAppDelegate* appD = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
     [iUMaineAppDelegate setSelCampus: campShortName];

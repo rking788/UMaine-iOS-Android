@@ -17,9 +17,9 @@
 
 @interface iUMaineAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
 
-    NSManagedObjectContext *managedObjectContext;
-    NSManagedObjectModel* managedObjectModel;
-    NSPersistentStoreCoordinator* persistentStoreCoordinator;
+    NSManagedObjectContext *_managedObjectContext;
+    NSManagedObjectModel* _managedObjectModel;
+    NSPersistentStoreCoordinator* _persistentStoreCoordinator;
     
     NSUserDefaults* defaultPrefs;
     CampusSpecifics* campusSpecifics;
@@ -63,6 +63,7 @@
 + (NSString*) getSelCampus;
 + (void) setSelCampus: (NSString*) campus;
 
+- (void) resetContext;
 - (void) saveContext;
 
 - (void) campusSelected: (NSString*) campusStr;

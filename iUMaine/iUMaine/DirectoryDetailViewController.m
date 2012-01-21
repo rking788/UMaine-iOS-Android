@@ -16,6 +16,7 @@
 @synthesize infoTableView;
 @synthesize employee;
 @synthesize empDict;
+@synthesize sectionHeaders;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,6 +46,7 @@
     NSString* nameStr = [NSString stringWithFormat: @"%@, %@ %@", [self.employee valueForKey: @"lname"], 
                          [self.employee valueForKey: @"fname"],
                          [self.employee valueForKey: @"mname"]];
+    
     [self.nameLbl setText: nameStr];
     [self.nameLbl setTextColor: [CampusSpecifics getDDNameTextColor]];
     [self.titleLbl setText: [self.employee title]];
@@ -61,6 +63,7 @@
     [self setInfoTableView:nil];
     [self setEmployee: nil];
     [self setEmpDict: nil];
+    [self setSectionHeaders: nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -76,28 +79,79 @@
 
 - (void) fillEmployeeDict:(Employee *)emp
 {
+    BOOL hasDept = NO;
+    BOOL hasDeptURL = NO;
+    BOOL hasOffice = NO;
+    BOOL hasPhone = NO;
+    BOOL hasEmail = NO;
+    
     self.empDict = [[NSMutableDictionary alloc] init];
+    if(!self.sectionHeaders){
+        self.sectionHeaders = [[NSMutableDictionary alloc] init];
+    }
+    else{
+        [self.sectionHeaders removeAllObjects];
+    }
     
     // Department
-    if([self.employee department])
+    if([self.employee department]){
         [self.empDict setObject: [self.employee department] forKey: @"Department"];
-    
+        hasDept = YES;
+    }
+        
     // Department URL
-    if([self.employee deptURL])
+    if([self.employee deptURL]){
         [self.empDict setObject: [self.employee deptURL] forKey: @"Department Website"];
-    
+        hasDeptURL = YES;
+    }
+        
     // Office
-    if([self.employee office])
+    if(([self.employee office]) && (self.employee.office.length != 0)){
         [self.empDict setObject: [self.employee office] forKey: @"Office"];
-
+        hasOffice = YES;
+    }
+    
     // Phone
-    if(![[self.employee valueForKey: @"phone"] isEqualToString: @"NULL"])
-        if([self.employee valueForKey: @"phone"])
+    NSString* phoneN = [self.employee valueForKey: @"phone"];
+    if(phoneN){
+        if(([phoneN length] != 0) && (![phoneN isEqualToString: @"NULL"])){
             [self.empDict setObject: [self.employee valueForKey: @"phone"] forKey: @"Phone"];
+            hasPhone = YES;
+        }
+    }
     
     // Email
-    if(![[self.employee valueForKey: @"email"] isEqualToString: @"NULL"])
+    if(![[self.employee valueForKey: @"email"] isEqualToString: @"NULL"]){
         [self.empDict setObject: [self.employee valueForKey: @"email"] forKey: @"Email"];
+        hasEmail = YES;
+    }
+    
+    // Set the section headers depending on what data is actually available and what is missing
+    NSInteger curSect = 0;
+    if(hasOffice){
+        [self.sectionHeaders setObject: @"Office" forKey: [NSNumber numberWithInteger: curSect]];
+        ++curSect;
+    }
+    
+    if(hasPhone){
+        [self.sectionHeaders setObject: @"Phone" forKey: [NSNumber numberWithInteger: curSect]];
+        ++curSect;
+    }
+    
+    if(hasEmail){
+        [self.sectionHeaders setObject: @"Email" forKey: [NSNumber numberWithInteger: curSect]];
+        ++curSect;
+    }
+    
+    if(hasDept){
+        [self.sectionHeaders setObject: @"Department" forKey: [NSNumber numberWithInteger: curSect]];
+        ++curSect;
+    }
+    
+    if(hasDeptURL){
+        [self.sectionHeaders setObject: @"Department Website" forKey: [NSNumber numberWithInteger: curSect]];
+        ++curSect;
+    }
 }
 
 #pragma mark - Table view data source delegate methods
@@ -167,31 +221,8 @@
 {
     NSString* retStr = @"";
     
-    switch (section) {
-        case 0:
-            retStr = @"Office";
-            break;
-        case 1:
-            retStr = @"Phone";
-            if(![self.empDict objectForKey: @"Phone"])
-                retStr = @"Email";
-            break;
-        case 2:
-            retStr = @"Email";
-            if(![self.empDict objectForKey: @"Phone"])
-                retStr = @"Department";
-            break;
-        case 3:
-            retStr = @"Department";
-            if(![self.empDict objectForKey: @"Phone"])
-                retStr = @"Department Website";
-            break;
-        case 4:
-            retStr = @"Department Website";
-            break;
-        default:
-            break;
-    }
+    NSNumber* sectionNum = [NSNumber numberWithInteger: section];
+    retStr = [self.sectionHeaders objectForKey: sectionNum];
     
     return retStr;
 }

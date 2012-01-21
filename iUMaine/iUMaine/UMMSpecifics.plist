@@ -26,6 +26,11 @@
 		<key>wvball</key>
 		<string>Women&apos;s Volleyball</string>
 	</dict>
+	<key>PermitTitles</key>
+	<dict>
+		<key>general</key>
+		<string>General</string>
+	</dict>
 	<key>DirectoryNameTextColor</key>
 	<dict>
 		<key>alpha</key>

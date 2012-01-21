@@ -8,6 +8,7 @@
 
 #import "BuildingSelectView.h"
 #import "CampusSpecifics.h"
+#import "iUMaineAppDelegate.h"
 #import "Location.h"
 
 @implementation BuildingSelectView
@@ -19,7 +20,6 @@
 @synthesize searchListContents;
 @synthesize searchListSubContents;
 @synthesize searchListLocations;
-@synthesize managedObjectContext;
 @synthesize selectDelegate;
 @synthesize searching;
 
@@ -116,8 +116,11 @@
 }
 
 - (void) populateListContents{
+    NSManagedObjectContext* moc = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
+    
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Location" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName: @"Location" inManagedObjectContext: moc];
+    NSEntityDescription* parkingEntity = [NSEntityDescription entityForName: @"ParkingLot" inManagedObjectContext: moc];
     [fetchrequest setEntity:entity];
     
     NSSortDescriptor* sortDescript = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES];
@@ -125,11 +128,18 @@
     [fetchrequest setSortDescriptors: sortDescripts];
     
     NSError *error = nil;
-    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
+    NSArray *array = [moc executeFetchRequest:fetchrequest error:&error];
     
     if (array != nil) {
 
         for(Location* loc in array){
+            
+            // The cetner of campus permit type marks the coordinates for the center of the map
+            // So we do not want to add it into this list
+            if(([loc entity] == parkingEntity) && [[loc valueForKey: @"permittype"] isEqualToString: @"centerofcampus"]){
+                continue;
+            }
+            
             [self.listContents addObject: [loc valueForKey: @"title"]];
         
             if([[[loc entity] name] isEqualToString: @"Building"]){

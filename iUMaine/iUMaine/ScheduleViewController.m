@@ -15,6 +15,8 @@
 #import "Course.h"
 #import "constants.h"
 
+#pragma mark - TODO CRITICAL: Should check if there is a selected semester before letting them pick course info. Display an alert view if there is no currently active semester (how else would we know which courses to display)
+
 @implementation ScheduleViewController
 @synthesize schedTabView;
 @synthesize contentTable;
@@ -48,14 +50,7 @@
     self.userDefs = [NSUserDefaults standardUserDefaults];
     
     if(![iUMaineAppDelegate getSelCampus]){
-        CampusSelectionViewController* csvc = [[CampusSelectionViewController alloc] init];
-        UINavigationController *navigationController = [[UINavigationController alloc]
-                                                        initWithRootViewController: csvc];
-
-        [csvc setScD: self];
-        [navigationController.navigationBar.topItem setTitle: @"Available Campuses"];
-
-        [self presentModalViewController: navigationController animated: YES];
+        [self showCampusSelectVC];
     }
     else{
         [self initializeSchedule];
@@ -67,8 +62,8 @@
     
     // Setup the nav bar right button to the add symbol to add a course
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] 
-                                              initWithBarButtonSystemItem: UIBarButtonSystemItemAdd 
-                                              target: self action: @selector(addBtnClicked)];
+                                              initWithBarButtonSystemItem: UIBarButtonSystemItemAction
+                                              target: self action: @selector(displayActionSheet)];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -176,9 +171,6 @@
 + (NSArray*) sortCourses:(NSSet *)unsortedCourses
 {
     NSMutableArray* retArr = [NSMutableArray arrayWithCapacity: [unsortedCourses count]];
-    
-    iUMaineAppDelegate* appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
-    NSEntityDescription* desc = [NSEntityDescription entityForName: @"Course" inManagedObjectContext: [appDel managedObjectContext]];
     
     for(Course* _c in [unsortedCourses allObjects]){
         [ScheduleViewController insertCourse: _c IntoArray: retArr];
@@ -305,6 +297,18 @@
 
 - (void) addBtnClicked
 {
+    
+    if((!self.semStr) || ([self.semStr length] == 0)){
+        UIAlertView* av = [[UIAlertView alloc] initWithTitle: nil 
+                                                    message: @"Please select a semester before adding a course"
+                                                    delegate:self
+                                                    cancelButtonTitle:nil
+                                                    otherButtonTitles: @"Dismiss", nil];
+        
+        [av show];
+        return;
+    }
+    
     AddCourseViewController* acvc = [[AddCourseViewController alloc] initWithNibName: @"AddCourseView" bundle: nil];
     
     [acvc setSemStr: self.semStr];
@@ -505,6 +509,46 @@
     return cell;
 }
 
+- (void) showCampusSelectVC
+{
+    CampusSelectionViewController* csvc = [[CampusSelectionViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc]
+                                                    initWithRootViewController: csvc];
+    
+    [csvc setScD: self];
+    [csvc setCurrentCampus: [iUMaineAppDelegate getSelCampus]];
+    
+    [navigationController.navigationBar.topItem setTitle: @"Campuses"];
+    
+    [self presentModalViewController: navigationController animated: YES];   
+}
+
+# pragma mark - Actionsheet delegate methods
+- (void) displayActionSheet
+{
+    UIActionSheet* actSheet2 = [[UIActionSheet alloc] initWithTitle: nil delegate: self cancelButtonTitle: @"Cancel" destructiveButtonTitle:nil otherButtonTitles: ADDCOURSE_ASBTN, CHANGECAMPUS_ASBTN, nil];
+    actSheet2.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+    [actSheet2 showFromTabBar: self.tabBarController.tabBar];
+}
+
+#pragma mark - UIActionSheetDelegate Method
+- (void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString* urlStr = nil;
+    NSString* btnTitle = [actionSheet buttonTitleAtIndex: buttonIndex];
+    
+    if([btnTitle isEqualToString: ADDCOURSE_ASBTN]){
+        [self addBtnClicked];
+    }
+    else if([btnTitle isEqualToString: CHANGECAMPUS_ASBTN]){
+        [self showCampusSelectVC];
+    }
+    
+    NSURL* url = [NSURL URLWithString: urlStr];
+    [[UIApplication sharedApplication] openURL: url];
+}
+
+
 #pragma mark - AddCourseToScheduleDelegate Methods
 
 - (void) addCourse:(Course *) _c
@@ -532,9 +576,13 @@
 {
     [self dismissModalViewControllerAnimated: YES];
     
+    [self.appDel resetContext];
+    
     [self initializeSchedule];
     
     [self.appDel campusSelected: campusStr];
+    
+    [self.contentTable reloadData];
 }
 
 @end

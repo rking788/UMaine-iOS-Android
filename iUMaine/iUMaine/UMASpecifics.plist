@@ -13,8 +13,22 @@
 		<key>red</key>
 		<integer>72</integer>
 	</dict>
+	<key>PermitTitles</key>
+	<dict>
+		<key>general</key>
+		<string>General</string>
+	</dict>
 	<key>Sports</key>
-	<dict/>
+	<dict>
+		<key>msoccer</key>
+		<string>Men&apos;s Soccer</string>
+		<key>womensoccer</key>
+		<string>Women&apos;s Soccer</string>
+		<key>menbasketball</key>
+		<string>Men&apos;s Basketball</string>
+		<key>womenbasketball</key>
+		<string>Women&apos;s Basketball</string>
+	</dict>
 	<key>DirectoryNameTextColor</key>
 	<dict>
 		<key>alpha</key>

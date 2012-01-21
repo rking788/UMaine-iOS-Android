@@ -36,6 +36,15 @@
 		<key>wvball</key>
 		<string>Women&apos;s Volleyball</string>
 	</dict>
+	<key>PermitTitles</key>
+	<dict>
+		<key>commuter</key>
+		<string>Commuter</string>
+		<key>first year</key>
+		<string>First Year</string>
+		<key>resident</key>
+		<string>Resident</string>
+	</dict>
 	<key>DirectoryNameTextColor</key>
 	<dict>
 		<key>alpha</key>

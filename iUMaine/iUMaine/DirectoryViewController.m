@@ -11,6 +11,7 @@
 @synthesize employeeArr;
 @synthesize searchResults;
 @synthesize savedSearchTerm;
+@synthesize campusEmployees;
 
 - (void)dealloc
 {	
@@ -28,6 +29,7 @@
 	[self setSavedSearchTerm:[[[self searchDisplayController] searchBar] text]];
 	
 	//[self setSearchResults:nil];
+    self.employeeArr = nil;
 }
 
 - (void)viewDidLoad
@@ -36,26 +38,25 @@
 	
     // Allocate the array of employee objects
     self.employeeArr = [[NSMutableArray alloc] init];
-	
-    // Fill the array of employees
-    [self fillEmployees];
     
 	// Restore search term
  	if ([self savedSearchTerm]){
         [[[self searchDisplayController] searchBar] setText:[self savedSearchTerm]];
     }
-    
-    [self.navigationController.navigationBar setTintColor: [CampusSpecifics getNavBarColor]];
-    [self.searchDisplayController.searchBar setTintColor: [CampusSpecifics getNavBarColor]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {	
     [super viewWillAppear:animated];
 	
+    [self.navigationController.navigationBar setTintColor: [CampusSpecifics getNavBarColor]];
+    [self.searchDisplayController.searchBar setTintColor: [CampusSpecifics getNavBarColor]];
+    
+    // Fill the array of employees
+    [self fillEmployees];
+    
 	[self.mainTableView reloadData];
 }
-
 
  // Override to allow orientations other than the default portrait orientation.
  - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -97,11 +98,21 @@
 			}
 		}
 	}
-    NSLog(@"Finished Searching");
 }
 
 - (void) fillEmployees
 {
+    if(self.campusEmployees && ([self.campusEmployees isEqualToString: [iUMaineAppDelegate getSelCampus]])){
+        NSLog(@"Not loading employees they are already loaded");
+        return;
+    }
+    
+    self.campusEmployees = [iUMaineAppDelegate getSelCampus];
+    
+    // Empty the employee array if it has contents (we are reloading for a new campus here )
+    if([self.employeeArr count] > 0)
+        [self.employeeArr removeAllObjects];
+    
     NSManagedObjectContext* manObjCon = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
     
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
@@ -130,6 +141,7 @@
         NSLog(@"Error fetching the list of employees");
     }
     
+    NSLog(@"Got this many employees: %d", [self.employeeArr count]);
 }
 
 #pragma mark -

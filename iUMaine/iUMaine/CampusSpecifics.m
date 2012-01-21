@@ -15,6 +15,7 @@
 @synthesize campusShortName;
 
 static NSDictionary* sportsDict;
+static NSDictionary* permitTitles;
 static NSDictionary* navbarColor;
 static NSDictionary* segmentControlColor;
 static NSDictionary* directorynameTextColor;
@@ -40,9 +41,8 @@ static NSDictionary* sportsLineColor;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:specFileName ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile: filePath];   
 
-    NSLog(@"Specifics file contents %@", dict);
-
     sportsDict = [dict objectForKey: @"Sports"];
+    permitTitles = [dict objectForKey: @"PermitTitles"];
     navbarColor = [dict valueForKey: @"NavBarColor"];
     segmentControlColor = [dict valueForKey: @"SegmentControlColor"];
     directorynameTextColor = [dict valueForKey: @"DirectoryNameTextColor"];
@@ -55,6 +55,11 @@ static NSDictionary* sportsLineColor;
 + (NSDictionary*) getSportsDict
 {
     return sportsDict;
+}
+
++ (NSDictionary*) getPermitTitles
+{
+    return permitTitles;
 }
 
 + (UIColor*) getNavBarColor

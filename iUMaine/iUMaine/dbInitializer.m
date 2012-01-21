@@ -21,11 +21,16 @@
     }
     
     NSString* bundlePath = [[NSBundle mainBundle] resourcePath];
+
+    // Init Commuter Lots
+    NSString* tempStr = [NSString stringWithFormat: @"lots_%@.csv", _campus];
+    [self initLotsWithFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
+#if 0 
     // Init Commuter Lots
     NSString* tempStr = [NSString stringWithFormat: @"commuter_%@.csv", _campus];
     [self initLotsOfType: @"commuter" withFile: [bundlePath stringByAppendingPathComponent: tempStr]];
-    
+
     // Init Faculty/Staff Lots
     tempStr = [NSString stringWithFormat: @"faculty_%@.csv", _campus];
     [self initLotsOfType: @"faculty" withFile: [bundlePath stringByAppendingPathComponent: tempStr]];
@@ -37,9 +42,9 @@
     // Init Visitor Lots
     tempStr = [NSString stringWithFormat: @"visitor_%@.csv", _campus];
     [self initLotsOfType: @"visitor" withFile: [bundlePath stringByAppendingPathComponent: tempStr]];
-    
+#endif
     // Init Buildings
-    tempStr = [NSString stringWithFormat: @"building_coords_%@.csv", _campus];
+    tempStr = [NSString stringWithFormat: @"buildings_%@.csv", _campus];
     [self initBuildingsWithFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
     // Init Employees
@@ -84,6 +89,39 @@
     
 }
 
+- (void) initLotsWithFile:(NSString*) filePath{
+    //NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
+    
+    NSError* err = nil;
+    NSArray* lines = [fileContents componentsSeparatedByString:@"\n"];
+    NSArray* lineFields = nil;
+    NSEnumerator* enumer = [lines objectEnumerator];
+    NSString* cur = [enumer nextObject];
+    NSManagedObject* lotObj = nil; 
+    
+    while(cur){
+        if([cur length] != 0){
+            lineFields = [cur componentsSeparatedByString: @";"];
+            lotObj = [NSEntityDescription insertNewObjectForEntityForName: @"ParkingLot" inManagedObjectContext: self.managedObjectContext];
+            
+            [lotObj setValue: [[lineFields objectAtIndex: 0] stringByReplacingOccurrencesOfString: @"\"" withString: @""] forKey: @"title"];
+            [lotObj setValue: [NSNumber numberWithInt: [[[lineFields objectAtIndex: 1] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue]] forKey: @"latitude"];
+            [lotObj setValue: [NSNumber numberWithInt:[[[lineFields objectAtIndex: 2] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue]] forKey: @"longitude"];
+            [lotObj setValue: [[lineFields objectAtIndex: 3] stringByReplacingOccurrencesOfString: @"\"" withString: @""]  forKey: @"permittype"];
+        }
+        
+        cur = (NSString*)[enumer nextObject];
+    }
+    
+    if(![self.managedObjectContext save:&err]){
+        // Handle the error here
+        NSLog(@"Failed to save the lot objects to managedObjectContext");
+    }
+    
+    
+}
+
 - (void) initBuildingsWithFile: (NSString*) filePath
 {
     //NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
@@ -98,13 +136,15 @@
     
     while(cur){
         if([cur length] != 0){
-            lineFields = [cur componentsSeparatedByString: @","];
+            lineFields = [cur componentsSeparatedByString: @";"];
             buildingObj = [NSEntityDescription insertNewObjectForEntityForName: @"Building" inManagedObjectContext: managedObjectContext];
             
             [buildingObj setValue: [[lineFields objectAtIndex:0] stringByReplacingOccurrencesOfString: @"\"" withString: @""] forKey: @"title"];
             
-            NSInteger latInt = (NSInteger) ([[lineFields objectAtIndex: 1] floatValue] * 1000000.0);
-            NSInteger longInt = (NSInteger) ([[lineFields objectAtIndex: 2] floatValue] * 1000000.0);
+            //NSInteger latInt = (NSInteger) ([[[lineFields objectAtIndex: 1] stringByReplacingOccurrencesOfString: @"\"" withString: @""] floatValue] * 1000000.0);
+            //NSInteger longInt = (NSInteger) ([[[lineFields objectAtIndex: 2] stringByReplacingOccurrencesOfString: @"\"" withString: @""] floatValue] * 1000000.0);
+            NSInteger latInt = (NSInteger) [[[lineFields objectAtIndex: 1] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue];
+            NSInteger longInt = (NSInteger)[[[lineFields objectAtIndex: 2] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue];
             [buildingObj setValue: [NSNumber numberWithInt: latInt] forKey: @"latitude"];
             [buildingObj setValue: [NSNumber numberWithInt: longInt] forKey: @"longitude"];
         }

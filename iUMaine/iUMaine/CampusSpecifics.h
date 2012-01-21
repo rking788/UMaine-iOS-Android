@@ -18,6 +18,7 @@
 - (void) fillSpecifics;
 
 + (NSDictionary*) getSportsDict;
++ (NSDictionary*) getPermitTitles;
 + (UIColor*) getNavBarColor;
 + (UIColor*) getSegmentControlColor;
 + (UIColor*) getDDNameTextColor;

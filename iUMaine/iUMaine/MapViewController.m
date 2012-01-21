@@ -20,7 +20,8 @@
 @synthesize actSheet;
 @synthesize uDefaults;
 @synthesize curPermit, prevPermit;
-@synthesize mapView, mapPOIAnnotations, mapSelBuildingAnnotation, managedObjectContext, permitTitles;
+@synthesize mapView, mapPOIAnnotations, mapSelBuildingAnnotation, permitTitles;
+@synthesize sortedPermitTitles;
 @synthesize smaller;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -30,26 +31,13 @@
     
     self.appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
     [self.appDel setMvcInst: self];
-    self.managedObjectContext = [appDel managedObjectContext];
     
     if(self.appDel.gettingSports){
         [self shrinkMapView];
     }
     
-    // Set the center to barrows or something
-    MKCoordinateRegion region;
-    region.center.latitude = 44.901006;
-    region.center.longitude = -68.667536;
-
-    region.span.latitudeDelta = 0.008;
-    region.span.longitudeDelta = 0.008;
-    [self.mapView setRegion:region animated:false];
-    
     // Set up the array of annotations
-    self.mapPOIAnnotations = [[NSMutableArray alloc] initWithCapacity:1];
-    
-    // Initialize the titles for the parking permits
-    self.permitTitles = [[NSArray alloc] initWithObjects: @"None", @"Staff / Faculty", @"Resident", @"Commuter", @"Visitor", nil];
+    self.mapPOIAnnotations = [[NSMutableArray alloc] initWithCapacity: 1];
     
     [self setUDefaults: [NSUserDefaults standardUserDefaults]];
     NSString* startingPermit = [self.uDefaults objectForKey: DEFS_PARKINGPERMIT];
@@ -62,9 +50,6 @@
     }
     
     self.prevPermit = nil;
-
-    [self.navBar setTintColor: [CampusSpecifics getNavBarColor]];
-    [self.segmentControl setTintColor: [CampusSpecifics getSegmentControlColor]];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -72,11 +57,30 @@
     if(self.appDel.gettingSports){
         [self shrinkMapView];
     }
+    
+    [self.navBar setTintColor: [CampusSpecifics getNavBarColor]];
+    [self.segmentControl setTintColor: [CampusSpecifics getSegmentControlColor]];
+    
+    // Initialize the titles for the parking permits
+    self.permitTitles = [CampusSpecifics getPermitTitles];
+    self.sortedPermitTitles = [[self.permitTitles allValues]
+                               sortedArrayUsingSelector: @selector(localizedCaseInsensitiveCompare:)];
+    
+    // Set the center of campus
+    MKCoordinateRegion region;
+    
+    NSArray* centerCoords = [self findCenterOfCampus];
+    region.center.latitude = [[centerCoords objectAtIndex: 0] doubleValue];
+    region.center.longitude = [[centerCoords objectAtIndex: 1] doubleValue];
+    
+    region.span.latitudeDelta = 0.008;
+    region.span.longitudeDelta = 0.008;
+    [self.mapView setRegion:region animated:false];
 }
 
 - (void) viewWillDisappear:(BOOL)animated
 {
-    [self.appDel setMvcInst: nil];    
+    [self.appDel setMvcInst: nil]; 
 }
 
 
@@ -108,7 +112,6 @@
         BuildingSelectView* bsView = [[BuildingSelectView alloc] initWithNibName:@"BuildingSelectView" bundle:nil];
         
         bsView.selectDelegate = self;
-        [bsView setManagedObjectContext:self.managedObjectContext];
         
         UINavigationController *navigationController = [[UINavigationController alloc]
                                                         initWithRootViewController:bsView];
@@ -121,7 +124,8 @@
 - (void) showPickerview{
     self.actSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil]; 
 
-    NSInteger nCur = [self.permitTitles indexOfObject:[self curPermit]];
+    
+    NSInteger nCur = [self.sortedPermitTitles indexOfObject: [self.permitTitles objectForKey: self.curPermit]];
     if(nCur == NSNotFound)
         nCur = 0;
     
@@ -159,16 +163,52 @@
     if(curPermit != nil)
         self.prevPermit = self.curPermit;
     
-    self.curPermit = [self.permitTitles objectAtIndex:[picker selectedRowInComponent:0]];
+    NSString* readablePermitTitle = [self.sortedPermitTitles objectAtIndex: [picker selectedRowInComponent: 0]];
+    self.curPermit = [[self.permitTitles allKeysForObject: readablePermitTitle] objectAtIndex: 0];
     
     if(!self.curPermit){
-        self.curPermit = [self.permitTitles objectAtIndex: 0];
+        self.curPermit = [[self.permitTitles allKeysForObject: [self.sortedPermitTitles objectAtIndex: 0]]
+                          objectAtIndex: 0];
     }
     
     // Draw the correct permit overlays
     if((!self.prevPermit) || (![self.prevPermit isEqualToString: self.curPermit])){
         [self addParkingAnnotationsOfType: self.curPermit]; 
     }
+}
+
+- (NSArray*) findCenterOfCampus
+{
+    NSManagedObjectContext* moc = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
+    NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName: @"ParkingLot" inManagedObjectContext: moc];
+    [fetchrequest setEntity:entity];
+    
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"permittype == %@", @"centerofcampus"];
+    [fetchrequest setPredicate:predicate];
+    
+    NSError *error = nil;
+    NSArray *array = [moc executeFetchRequest: fetchrequest error: &error];
+    double latitude = 0.0;
+    double longitude = 0.0;
+    if (array != nil) {
+        
+        for(NSManagedObject* manObj in array){
+            
+            latitude = [[manObj valueForKey:@"latitude"] doubleValue]/1000000.0;
+            longitude = [[manObj valueForKey:@"longitude"] doubleValue]/1000000.0;
+        }
+        
+    }
+    else {
+        // Deal with error.
+        NSLog(@"Error fetching lots");
+    }
+
+    NSNumber* latNum = [NSNumber numberWithDouble: latitude];
+    NSNumber* longNum = [NSNumber numberWithDouble: longitude];
+    
+    return [NSArray arrayWithObjects: latNum, longNum, nil];
 }
 
 - (void) addParkingAnnotationsOfType:(NSString*) permitType{
@@ -202,15 +242,16 @@
         searchString = [permitType lowercaseString];
     }
     
+    NSManagedObjectContext* moc = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ParkingLot" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"ParkingLot" inManagedObjectContext: moc];
     [fetchrequest setEntity:entity];
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"permittype == %@", searchString];
     [fetchrequest setPredicate:predicate];
     
     NSError *error = nil;
-    NSArray *array = [self.managedObjectContext executeFetchRequest:fetchrequest error:&error];
+    NSArray *array = [moc executeFetchRequest:fetchrequest error:&error];
     if (array != nil) {
         double latitude = 0.0;
         double longitude = 0.0;
@@ -288,43 +329,19 @@
         MKAnnotationView* pinView = [self.mapView dequeueReusableAnnotationViewWithIdentifier: POIAnnotationID];
 
         if (!pinView){
+
+            pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID];
             
-            MKAnnotationView* customPinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier: POIAnnotationID];
-            
-            [customPinView setCanShowCallout: YES];
-            [customPinView setDraggable: NO];
-            
-            if([self.curPermit isEqualToString: @"Resident"]){
-                [customPinView setImage: [UIImage imageNamed: @"resident_marker.png"]];
-            }
-            else if([self.curPermit isEqualToString: @"Staff / Faculty"]){
-                [customPinView setImage: [UIImage imageNamed: @"faculty_marker.png"]];
-            }
-            else if([self.curPermit isEqualToString: @"Commuter"]){
-                [customPinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
-            }
-            else if([self.curPermit isEqualToString: @"Visitor"]){
-                [customPinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
-            }
-            
-            return customPinView;
+            [pinView setCanShowCallout: YES];
+            [pinView setDraggable: NO];
         }
         else{
             pinView.annotation = annotation;
         }
-        
-        if([self.curPermit isEqualToString: @"Resident"]){
-            [pinView setImage: [UIImage imageNamed: @"resident_marker.png"]];
-        }
-        else if([self.curPermit isEqualToString: @"Staff / Faculty"]){
-            [pinView setImage: [UIImage imageNamed: @"faculty_marker.png"]];
-        }
-        else if([self.curPermit isEqualToString: @"Commuter"]){
-            [pinView setImage: [UIImage imageNamed: @"commuter_marker.png"]];
-        }
-        else if([self.curPermit isEqualToString: @"Visitor"]){
-            [pinView setImage: [UIImage imageNamed: @"resident_marker.png"]];
-        }
+
+        NSString* markerType = [self.curPermit stringByReplacingOccurrencesOfString: @" " withString: @""];
+        NSString* imgFileName = [NSString stringWithFormat: @"%@_marker_%@.png", markerType, [iUMaineAppDelegate getSelCampus]];
+        [pinView setImage: [UIImage imageNamed: imgFileName]];
         
         return pinView;
     }
@@ -359,7 +376,7 @@
 }
 
 - (NSString*) pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [self.permitTitles objectAtIndex:row];
+    return [self.sortedPermitTitles objectAtIndex: row];
 }
 
 - (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{

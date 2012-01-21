@@ -16,7 +16,7 @@
 @class Course;
 
 @interface ScheduleViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,
-            AddCourseToScheduleDelegate, ScheduleDisplayDelegate, SelectCampusDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
+            AddCourseToScheduleDelegate, ScheduleDisplayDelegate, SelectCampusDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UIActionSheetDelegate> {
 
     ScheduleTabView *schedTabView;
     UITableView *contentTable;
@@ -64,5 +64,7 @@
 - (void) showPickerview;
 - (void) dismissActionSheet;
 - (void) campusSelected: (NSString*) campusStr;
+- (void) showCampusSelectVC;
+- (void) displayActionSheet;
 
 @end

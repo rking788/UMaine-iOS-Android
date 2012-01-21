@@ -89,5 +89,16 @@
 		<key>red</key>
 		<integer>0</integer>
 	</dict>
+	<key>PermitTitles</key>
+	<dict>
+		<key>visitor</key>
+		<string>Visitor</string>
+		<key>commuter</key>
+		<string>Commuter</string>
+		<key>resident</key>
+		<string>Resident</string>
+		<key>faculty</key>
+		<string>Staff / Faculty</string>
+	</dict>
 </dict>
 </plist>

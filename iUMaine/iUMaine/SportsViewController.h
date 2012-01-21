@@ -53,7 +53,6 @@
 @property (nonatomic, strong) NSString* curSport;
 @property (nonatomic, strong) UIActionSheet* actSheet;
 
-- (void) showLoadingView;
 - (void) loadSportsEvents;
 - (NSInteger) pastPresentFutureDate: (NSDate*) date;
 - (void) selectSportBtnClicked;

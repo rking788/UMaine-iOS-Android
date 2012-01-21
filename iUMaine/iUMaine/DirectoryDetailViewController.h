@@ -25,6 +25,7 @@
 
 @property (strong, nonatomic) Employee* employee;
 @property (strong, nonatomic) NSMutableDictionary* empDict;
+@property (strong, nonatomic) NSMutableDictionary* sectionHeaders;
 
 - (void) fillEmployeeDict: (Employee*) emp;
 

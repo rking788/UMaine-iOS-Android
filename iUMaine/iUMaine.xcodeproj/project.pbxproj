@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F07D9FC14C1207C00A91282 /* lots_USM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F07D9FB14C1207C00A91282 /* lots_USM.csv */; };
 		0F2CF80814BBD65500879C9F /* UMOSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2CF80714BBD65500879C9F /* UMOSpecifics.plist */; };
+		0F6A734A14C34E9C00F94C82 /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A734914C34E9C00F94C82 /* UMO.sqlite */; };
+		0F6A735014C3C03B00F94C82 /* general_marker_UMA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A734F14C3C03B00F94C82 /* general_marker_UMA.png */; };
+		0F6A735214C3C26200F94C82 /* firstyear_marker_UMF.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A735114C3C26200F94C82 /* firstyear_marker_UMF.png */; };
+		0F6A735414C3C35B00F94C82 /* commuter_marker_UMF.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A735314C3C35B00F94C82 /* commuter_marker_UMF.png */; };
+		0F6A735614C3C3D600F94C82 /* visitor_marker_UMO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A735514C3C3D500F94C82 /* visitor_marker_UMO.png */; };
+		0F6A735814C3C47200F94C82 /* resident_marker_UMF.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A735714C3C47200F94C82 /* resident_marker_UMF.png */; };
 		0F8670E214BBDF8600A583A7 /* CampusSpecifics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8670E114BBDF8600A583A7 /* CampusSpecifics.m */; };
 		0F8670E514BBEF2400A583A7 /* UMFSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F8670E414BBEF2400A583A7 /* UMFSpecifics.plist */; };
 		0F8F230714BFC1E400692F94 /* UMASpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F230614BFC1E400692F94 /* UMASpecifics.plist */; };
@@ -17,9 +24,56 @@
 		0F8F231714BFD6EF00692F94 /* buildings_UMA.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F231414BFD6EF00692F94 /* buildings_UMA.csv */; };
 		0F8F231814BFD6EF00692F94 /* buildings_UMF.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F231514BFD6EF00692F94 /* buildings_UMF.csv */; };
 		0F8F231914BFD6EF00692F94 /* buildings_USM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F231614BFD6EF00692F94 /* buildings_USM.csv */; };
-		0F8F231B14BFD78500692F94 /* lots_USM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F231A14BFD78500692F94 /* lots_USM.csv */; };
 		0F8F231E14BFD89F00692F94 /* lots_UMA.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F231C14BFD89F00692F94 /* lots_UMA.csv */; };
 		0F8F231F14BFD89F00692F94 /* lots_UMF.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0F8F231D14BFD89F00692F94 /* lots_UMF.csv */; };
+		0FC83E2D14C909F2003D2427 /* Amherst.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E2C14C909F2003D2427 /* Amherst.png */; };
+		0FC83E3014C909F7003D2427 /* Babson.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E2F14C909F7003D2427 /* Babson.png */; };
+		0FC83E3214C909FC003D2427 /* Greensboro.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E3114C909FC003D2427 /* Greensboro.png */; };
+		0FC83E3414C90A00003D2427 /* Maine_UMF.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E3314C90A00003D2427 /* Maine_UMF.png */; };
+		0FC83E3614C90A05003D2427 /* Me.-Fort Kent.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E3514C90A05003D2427 /* Me.-Fort Kent.png */; };
+		0FC83E3814C90A0A003D2427 /* Mercy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E3714C90A0A003D2427 /* Mercy.png */; };
+		0FC83E3A14C90A0F003D2427 /* Mt. St. Vincent.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E3914C90A0F003D2427 /* Mt. St. Vincent.png */; };
+		0FC83E3C14C90A15003D2427 /* New England Col..png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E3B14C90A15003D2427 /* New England Col..png */; };
+		0FC83E3E14C90A19003D2427 /* Plymouth St..png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E3D14C90A19003D2427 /* Plymouth St..png */; };
+		0FC83E4014C90A1F003D2427 /* Rivier.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E3F14C90A1F003D2427 /* Rivier.png */; };
+		0FC83E4214C90A23003D2427 /* Simmons.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E4114C90A23003D2427 /* Simmons.png */; };
+		0FC83E4414C90A28003D2427 /* Wheelock.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E4314C90A28003D2427 /* Wheelock.png */; };
+		0FC83E4614C90A2D003D2427 /* Wilkes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E4514C90A2D003D2427 /* Wilkes.png */; };
+		0FC83E6314C9167D003D2427 /* Maine_UMO.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E6214C9167D003D2427 /* Maine_UMO.png */; };
+		0FC83E6614C918A4003D2427 /* Colby Sawyer.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E6514C918A4003D2427 /* Colby Sawyer.png */; };
+		0FC83E6814C918AB003D2427 /* Daemen College.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E6714C918AB003D2427 /* Daemen College.png */; };
+		0FC83E6A14C918B1003D2427 /* Husson University.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E6914C918B1003D2427 /* Husson University.png */; };
+		0FC83E6C14C918B7003D2427 /* Lyndon State.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E6B14C918B7003D2427 /* Lyndon State.png */; };
+		0FC83E6E14C918C0003D2427 /* Maine_UMM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E6D14C918C0003D2427 /* Maine_UMM.png */; };
+		0FC83E7014C918DA003D2427 /* Me.-Presque Isle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E6F14C918DA003D2427 /* Me.-Presque Isle.png */; };
+		0FC83E7214C918E1003D2427 /* NHTI.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E7114C918E1003D2427 /* NHTI.png */; };
+		0FC83E7414C918E9003D2427 /* St. Joseph's (VT).png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E7314C918E9003D2427 /* St. Joseph's (VT).png */; };
+		0FC83E7614C918F2003D2427 /* St. Thomas University.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E7514C918F2003D2427 /* St. Thomas University.png */; };
+		0FC83E7814C918FA003D2427 /* U-Mass Amherst.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E7714C918FA003D2427 /* U-Mass Amherst.png */; };
+		0FC83E7A14C91903003D2427 /* University of Maine.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E7914C91902003D2427 /* University of Maine.png */; };
+		0FC83E7C14C9190F003D2427 /* University of Southern Maine.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E7B14C9190F003D2427 /* University of Southern Maine.png */; };
+		0FC83E7E14C91919003D2427 /* Vermont Tech.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E7D14C91919003D2427 /* Vermont Tech.png */; };
+		0FC83E8114C93636003D2427 /* buildings_UMM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E7F14C93636003D2427 /* buildings_UMM.csv */; };
+		0FC83E8214C93636003D2427 /* lots_UMM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E8014C93636003D2427 /* lots_UMM.csv */; };
+		0FC83E8414C93834003D2427 /* general_marker_UMM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FC83E8314C93834003D2427 /* general_marker_UMM.png */; };
+		0FD73DEC14C9CCBD00508F26 /* UMA.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FD73DE914C9CCBD00508F26 /* UMA.sqlite */; };
+		0FD73DED14C9CCBD00508F26 /* UMF.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */; };
+		0FD73DEE14C9CCBD00508F26 /* UMM.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */; };
+		0FD903BC14C8F35A0033B85A /* Berkeley College (NY)at New Hampshire Technical Institute Tournament.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903AD14C8F35A0033B85A /* Berkeley College (NY)at New Hampshire Technical Institute Tournament.png */; };
+		0FD903BD14C8F35A0033B85A /* Central Maine Community College.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903AE14C8F35A0033B85A /* Central Maine Community College.png */; };
+		0FD903BE14C8F35A0033B85A /* College of St. Joseph's.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903AF14C8F35A0033B85A /* College of St. Joseph's.png */; };
+		0FD903BF14C8F35A0033B85A /* Endicott College.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B014C8F35A0033B85A /* Endicott College.png */; };
+		0FD903C014C8F35A0033B85A /* Maine_UMA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B114C8F35A0033B85A /* Maine_UMA.png */; };
+		0FD903C114C8F35A0033B85A /* Northern Maine Community College copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B214C8F35A0033B85A /* Northern Maine Community College copy.png */; };
+		0FD903C214C8F35A0033B85A /* Southern Maine Community College.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B314C8F35A0033B85A /* Southern Maine Community College.png */; };
+		0FD903C314C8F35A0033B85A /* St. Joseph's of Vermont.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B414C8F35A0033B85A /* St. Joseph's of Vermont.png */; };
+		0FD903C414C8F35A0033B85A /* Suffolk University.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B514C8F35A0033B85A /* Suffolk University.png */; };
+		0FD903C514C8F35A0033B85A /* SUNY Canton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B614C8F35A0033B85A /* SUNY Canton.png */; };
+		0FD903C614C8F35A0033B85A /* Thomas College.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B714C8F35A0033B85A /* Thomas College.png */; };
+		0FD903C714C8F35A0033B85A /* University of Maine at Augusta.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B814C8F35A0033B85A /* University of Maine at Augusta.png */; };
+		0FD903C814C8F35A0033B85A /* University of Maine at Fort Kent.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903B914C8F35A0033B85A /* University of Maine at Fort Kent.png */; };
+		0FD903C914C8F35A0033B85A /* University of Maine at Machias.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903BA14C8F35A0033B85A /* University of Maine at Machias.png */; };
+		0FD903CA14C8F35A0033B85A /* Vermont Technical College.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD903BB14C8F35A0033B85A /* Vermont Technical College.png */; };
 		0FDFEAF814BD3A0500E24A52 /* UMMSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FDFEAF714BD3A0500E24A52 /* UMMSpecifics.plist */; };
 		0FDFEAFD14BD423A00E24A52 /* USMSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FDFEAFC14BD423A00E24A52 /* USMSpecifics.plist */; };
 		960B929C146F2FCF0057C22E /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B929A146F2FCF0057C22E /* CourseDetailViewController.m */; };
@@ -104,7 +158,6 @@
 		9662B916147D68E5008F6AA4 /* Kansas.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B8AD147D68E5008F6AA4 /* Kansas.png */; };
 		9662B917147D68E5008F6AA4 /* La.-Lafayette.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B8AE147D68E5008F6AA4 /* La.-Lafayette.png */; };
 		9662B918147D68E5008F6AA4 /* Lehigh.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B8AF147D68E5008F6AA4 /* Lehigh.png */; };
-		9662B919147D68E5008F6AA4 /* Maine.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B8B0147D68E5008F6AA4 /* Maine.png */; };
 		9662B91A147D68E5008F6AA4 /* Maryland.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B8B1147D68E5008F6AA4 /* Maryland.png */; };
 		9662B91B147D68E5008F6AA4 /* Mass.-Lowell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B8B2147D68E5008F6AA4 /* Mass.-Lowell.png */; };
 		9662B91C147D68E5008F6AA4 /* Massachusetts.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B8B3147D68E5008F6AA4 /* Massachusetts.png */; };
@@ -175,10 +228,10 @@
 		96950E44141D9D0E0059CFED /* EventRecapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96950E42141D9D0E0059CFED /* EventRecapView.xib */; };
 		9697EF40143912F000EC190A /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697EF3E143912F000EC190A /* AddCourseViewController.m */; };
 		9697EF41143912F000EC190A /* AddCourseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9697EF3F143912F000EC190A /* AddCourseView.xib */; };
-		96B3084E1470D1F5008C95DD /* resident_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B3084D1470D1F5008C95DD /* resident_marker.png */; };
-		96B308501470D2D0008C95DD /* faculty_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B3084F1470D2D0008C95DD /* faculty_marker.png */; };
-		96B308521470D3B3008C95DD /* commuter_marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B308511470D3B3008C95DD /* commuter_marker.png */; };
-		96C7092E1493274E005479FB /* building_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96C709291493274E005479FB /* building_UMO.csv */; };
+		96B3084E1470D1F5008C95DD /* resident_marker_UMO.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B3084D1470D1F5008C95DD /* resident_marker_UMO.png */; };
+		96B308501470D2D0008C95DD /* faculty_marker_UMO.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B3084F1470D2D0008C95DD /* faculty_marker_UMO.png */; };
+		96B308521470D3B3008C95DD /* commuter_marker_UMO.png in Resources */ = {isa = PBXBuildFile; fileRef = 96B308511470D3B3008C95DD /* commuter_marker_UMO.png */; };
+		96C7092E1493274E005479FB /* buildings_UMO.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96C709291493274E005479FB /* buildings_UMO.csv */; };
 		96C7093014932900005479FB /* availableCampuses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96C7092F14932900005479FB /* availableCampuses.txt */; };
 		96C8AB9F13E1E98400656998 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C8AB9E13E1E98400656998 /* Employee.m */; };
 		96CD3516140DE79300C8C45C /* SportEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CD3515140DE79300C8C45C /* SportEvent.m */; };
@@ -194,7 +247,6 @@
 		96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */; };
 		96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */; };
 		96F2B46F146388820035832B /* AvailableCourses.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B46E146388820035832B /* AvailableCourses.m */; };
-		96F6509D14A255DB0025E278 /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 96F6509C14A255DB0025E278 /* UMO.sqlite */; };
 		96F6907F143D3F8000A4E5AB /* dbInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */; };
 		96FB508E13F786020069836C /* sportsAbbrsDict.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96FB508D13F786020069836C /* sportsAbbrsDict.txt */; };
 		96FB509B13F788860069836C /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FB509813F788860069836C /* NSDataAdditions.m */; };
@@ -252,7 +304,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F07D9FB14C1207C00A91282 /* lots_USM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lots_USM.csv; sourceTree = "<group>"; };
 		0F2CF80714BBD65500879C9F /* UMOSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMOSpecifics.plist; sourceTree = "<group>"; };
+		0F6A734914C34E9C00F94C82 /* UMO.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMO.sqlite; sourceTree = "<group>"; };
+		0F6A734F14C3C03B00F94C82 /* general_marker_UMA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general_marker_UMA.png; sourceTree = "<group>"; };
+		0F6A735114C3C26200F94C82 /* firstyear_marker_UMF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstyear_marker_UMF.png; sourceTree = "<group>"; };
+		0F6A735314C3C35B00F94C82 /* commuter_marker_UMF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commuter_marker_UMF.png; sourceTree = "<group>"; };
+		0F6A735514C3C3D500F94C82 /* visitor_marker_UMO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visitor_marker_UMO.png; sourceTree = "<group>"; };
+		0F6A735714C3C47200F94C82 /* resident_marker_UMF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resident_marker_UMF.png; sourceTree = "<group>"; };
 		0F8670E014BBDF8600A583A7 /* CampusSpecifics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CampusSpecifics.h; sourceTree = "<group>"; };
 		0F8670E114BBDF8600A583A7 /* CampusSpecifics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CampusSpecifics.m; sourceTree = "<group>"; };
 		0F8670E414BBEF2400A583A7 /* UMFSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMFSpecifics.plist; sourceTree = "<group>"; };
@@ -263,9 +322,56 @@
 		0F8F231414BFD6EF00692F94 /* buildings_UMA.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = buildings_UMA.csv; sourceTree = "<group>"; };
 		0F8F231514BFD6EF00692F94 /* buildings_UMF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = buildings_UMF.csv; sourceTree = "<group>"; };
 		0F8F231614BFD6EF00692F94 /* buildings_USM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = buildings_USM.csv; sourceTree = "<group>"; };
-		0F8F231A14BFD78500692F94 /* lots_USM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lots_USM.csv; sourceTree = "<group>"; };
 		0F8F231C14BFD89F00692F94 /* lots_UMA.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lots_UMA.csv; sourceTree = "<group>"; };
 		0F8F231D14BFD89F00692F94 /* lots_UMF.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lots_UMF.csv; sourceTree = "<group>"; };
+		0FC83E2C14C909F2003D2427 /* Amherst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amherst.png; sourceTree = "<group>"; };
+		0FC83E2F14C909F7003D2427 /* Babson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Babson.png; sourceTree = "<group>"; };
+		0FC83E3114C909FC003D2427 /* Greensboro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Greensboro.png; sourceTree = "<group>"; };
+		0FC83E3314C90A00003D2427 /* Maine_UMF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maine_UMF.png; sourceTree = "<group>"; };
+		0FC83E3514C90A05003D2427 /* Me.-Fort Kent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Me.-Fort Kent.png"; sourceTree = "<group>"; };
+		0FC83E3714C90A0A003D2427 /* Mercy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mercy.png; sourceTree = "<group>"; };
+		0FC83E3914C90A0F003D2427 /* Mt. St. Vincent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mt. St. Vincent.png"; sourceTree = "<group>"; };
+		0FC83E3B14C90A15003D2427 /* New England Col..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "New England Col..png"; sourceTree = "<group>"; };
+		0FC83E3D14C90A19003D2427 /* Plymouth St..png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plymouth St..png"; sourceTree = "<group>"; };
+		0FC83E3F14C90A1F003D2427 /* Rivier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rivier.png; sourceTree = "<group>"; };
+		0FC83E4114C90A23003D2427 /* Simmons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Simmons.png; sourceTree = "<group>"; };
+		0FC83E4314C90A28003D2427 /* Wheelock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wheelock.png; sourceTree = "<group>"; };
+		0FC83E4514C90A2D003D2427 /* Wilkes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wilkes.png; sourceTree = "<group>"; };
+		0FC83E6214C9167D003D2427 /* Maine_UMO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maine_UMO.png; sourceTree = "<group>"; };
+		0FC83E6514C918A4003D2427 /* Colby Sawyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Colby Sawyer.png"; sourceTree = "<group>"; };
+		0FC83E6714C918AB003D2427 /* Daemen College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Daemen College.png"; sourceTree = "<group>"; };
+		0FC83E6914C918B1003D2427 /* Husson University.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Husson University.png"; sourceTree = "<group>"; };
+		0FC83E6B14C918B7003D2427 /* Lyndon State.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lyndon State.png"; sourceTree = "<group>"; };
+		0FC83E6D14C918C0003D2427 /* Maine_UMM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maine_UMM.png; sourceTree = "<group>"; };
+		0FC83E6F14C918DA003D2427 /* Me.-Presque Isle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Me.-Presque Isle.png"; sourceTree = "<group>"; };
+		0FC83E7114C918E1003D2427 /* NHTI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NHTI.png; sourceTree = "<group>"; };
+		0FC83E7314C918E9003D2427 /* St. Joseph's (VT).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "St. Joseph's (VT).png"; sourceTree = "<group>"; };
+		0FC83E7514C918F2003D2427 /* St. Thomas University.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "St. Thomas University.png"; sourceTree = "<group>"; };
+		0FC83E7714C918FA003D2427 /* U-Mass Amherst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "U-Mass Amherst.png"; sourceTree = "<group>"; };
+		0FC83E7914C91902003D2427 /* University of Maine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "University of Maine.png"; sourceTree = "<group>"; };
+		0FC83E7B14C9190F003D2427 /* University of Southern Maine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "University of Southern Maine.png"; sourceTree = "<group>"; };
+		0FC83E7D14C91919003D2427 /* Vermont Tech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vermont Tech.png"; sourceTree = "<group>"; };
+		0FC83E7F14C93636003D2427 /* buildings_UMM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = buildings_UMM.csv; sourceTree = "<group>"; };
+		0FC83E8014C93636003D2427 /* lots_UMM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lots_UMM.csv; sourceTree = "<group>"; };
+		0FC83E8314C93834003D2427 /* general_marker_UMM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general_marker_UMM.png; sourceTree = "<group>"; };
+		0FD73DE914C9CCBD00508F26 /* UMA.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMA.sqlite; sourceTree = "<group>"; };
+		0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMF.sqlite; sourceTree = "<group>"; };
+		0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMM.sqlite; sourceTree = "<group>"; };
+		0FD903AD14C8F35A0033B85A /* Berkeley College (NY)at New Hampshire Technical Institute Tournament.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Berkeley College (NY)at New Hampshire Technical Institute Tournament.png"; sourceTree = "<group>"; };
+		0FD903AE14C8F35A0033B85A /* Central Maine Community College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Central Maine Community College.png"; sourceTree = "<group>"; };
+		0FD903AF14C8F35A0033B85A /* College of St. Joseph's.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "College of St. Joseph's.png"; sourceTree = "<group>"; };
+		0FD903B014C8F35A0033B85A /* Endicott College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Endicott College.png"; sourceTree = "<group>"; };
+		0FD903B114C8F35A0033B85A /* Maine_UMA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maine_UMA.png; sourceTree = "<group>"; };
+		0FD903B214C8F35A0033B85A /* Northern Maine Community College copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Northern Maine Community College copy.png"; sourceTree = "<group>"; };
+		0FD903B314C8F35A0033B85A /* Southern Maine Community College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Southern Maine Community College.png"; sourceTree = "<group>"; };
+		0FD903B414C8F35A0033B85A /* St. Joseph's of Vermont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "St. Joseph's of Vermont.png"; sourceTree = "<group>"; };
+		0FD903B514C8F35A0033B85A /* Suffolk University.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Suffolk University.png"; sourceTree = "<group>"; };
+		0FD903B614C8F35A0033B85A /* SUNY Canton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SUNY Canton.png"; sourceTree = "<group>"; };
+		0FD903B714C8F35A0033B85A /* Thomas College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thomas College.png"; sourceTree = "<group>"; };
+		0FD903B814C8F35A0033B85A /* University of Maine at Augusta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "University of Maine at Augusta.png"; sourceTree = "<group>"; };
+		0FD903B914C8F35A0033B85A /* University of Maine at Fort Kent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "University of Maine at Fort Kent.png"; sourceTree = "<group>"; };
+		0FD903BA14C8F35A0033B85A /* University of Maine at Machias.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "University of Maine at Machias.png"; sourceTree = "<group>"; };
+		0FD903BB14C8F35A0033B85A /* Vermont Technical College.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vermont Technical College.png"; sourceTree = "<group>"; };
 		0FDFEAF714BD3A0500E24A52 /* UMMSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMMSpecifics.plist; sourceTree = "<group>"; };
 		0FDFEAFC14BD423A00E24A52 /* USMSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USMSpecifics.plist; sourceTree = "<group>"; };
 		960B9299146F2FCF0057C22E /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailViewController.h; sourceTree = "<group>"; };
@@ -354,7 +460,6 @@
 		9662B8AD147D68E5008F6AA4 /* Kansas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kansas.png; sourceTree = "<group>"; };
 		9662B8AE147D68E5008F6AA4 /* La.-Lafayette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "La.-Lafayette.png"; sourceTree = "<group>"; };
 		9662B8AF147D68E5008F6AA4 /* Lehigh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lehigh.png; sourceTree = "<group>"; };
-		9662B8B0147D68E5008F6AA4 /* Maine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maine.png; sourceTree = "<group>"; };
 		9662B8B1147D68E5008F6AA4 /* Maryland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maryland.png; sourceTree = "<group>"; };
 		9662B8B2147D68E5008F6AA4 /* Mass.-Lowell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mass.-Lowell.png"; sourceTree = "<group>"; };
 		9662B8B3147D68E5008F6AA4 /* Massachusetts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Massachusetts.png; sourceTree = "<group>"; };
@@ -432,10 +537,10 @@
 		9697EF3D143912F000EC190A /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
 		9697EF3E143912F000EC190A /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
 		9697EF3F143912F000EC190A /* AddCourseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCourseView.xib; sourceTree = "<group>"; };
-		96B3084D1470D1F5008C95DD /* resident_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resident_marker.png; sourceTree = "<group>"; };
-		96B3084F1470D2D0008C95DD /* faculty_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faculty_marker.png; sourceTree = "<group>"; };
-		96B308511470D3B3008C95DD /* commuter_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commuter_marker.png; sourceTree = "<group>"; };
-		96C709291493274E005479FB /* building_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = building_UMO.csv; sourceTree = "<group>"; };
+		96B3084D1470D1F5008C95DD /* resident_marker_UMO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resident_marker_UMO.png; sourceTree = "<group>"; };
+		96B3084F1470D2D0008C95DD /* faculty_marker_UMO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faculty_marker_UMO.png; sourceTree = "<group>"; };
+		96B308511470D3B3008C95DD /* commuter_marker_UMO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commuter_marker_UMO.png; sourceTree = "<group>"; };
+		96C709291493274E005479FB /* buildings_UMO.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = buildings_UMO.csv; sourceTree = "<group>"; };
 		96C7092F14932900005479FB /* availableCampuses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = availableCampuses.txt; sourceTree = "<group>"; };
 		96C8AB9D13E1E98400656998 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		96C8AB9E13E1E98400656998 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
@@ -455,7 +560,6 @@
 		96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DirectoryDetailView.xib; sourceTree = "<group>"; };
 		96F2B46D146388820035832B /* AvailableCourses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableCourses.h; sourceTree = "<group>"; };
 		96F2B46E146388820035832B /* AvailableCourses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableCourses.m; sourceTree = "<group>"; };
-		96F6509C14A255DB0025E278 /* UMO.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMO.sqlite; sourceTree = "<group>"; };
 		96FB508D13F786020069836C /* sportsAbbrsDict.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sportsAbbrsDict.txt; sourceTree = "<group>"; };
 		96FB509713F788860069836C /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		96FB509813F788860069836C /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
@@ -545,6 +649,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F07D9FA14C11D2F00A91282 /* Permit Images */ = {
+			isa = PBXGroup;
+			children = (
+				0FC83E8314C93834003D2427 /* general_marker_UMM.png */,
+				0F6A735714C3C47200F94C82 /* resident_marker_UMF.png */,
+				0F6A735314C3C35B00F94C82 /* commuter_marker_UMF.png */,
+				0F6A735114C3C26200F94C82 /* firstyear_marker_UMF.png */,
+				0F6A734F14C3C03B00F94C82 /* general_marker_UMA.png */,
+				96B308511470D3B3008C95DD /* commuter_marker_UMO.png */,
+				96B3084F1470D2D0008C95DD /* faculty_marker_UMO.png */,
+				96B3084D1470D1F5008C95DD /* resident_marker_UMO.png */,
+				0F6A735514C3C3D500F94C82 /* visitor_marker_UMO.png */,
+			);
+			name = "Permit Images";
+			sourceTree = "<group>";
+		};
 		0F2CF80914BBD66400879C9F /* Campus Specifics */ = {
 			isa = PBXGroup;
 			children = (
@@ -557,6 +677,180 @@
 				0F2CF80714BBD65500879C9F /* UMOSpecifics.plist */,
 			);
 			name = "Campus Specifics";
+			sourceTree = "<group>";
+		};
+		0F4C616014C90641006DA862 /* SportsImages_UMF */ = {
+			isa = PBXGroup;
+			children = (
+				0FC83E4514C90A2D003D2427 /* Wilkes.png */,
+				0FC83E4314C90A28003D2427 /* Wheelock.png */,
+				0FC83E4114C90A23003D2427 /* Simmons.png */,
+				0FC83E3F14C90A1F003D2427 /* Rivier.png */,
+				0FC83E3D14C90A19003D2427 /* Plymouth St..png */,
+				0FC83E3B14C90A15003D2427 /* New England Col..png */,
+				0FC83E3914C90A0F003D2427 /* Mt. St. Vincent.png */,
+				0FC83E3714C90A0A003D2427 /* Mercy.png */,
+				0FC83E3514C90A05003D2427 /* Me.-Fort Kent.png */,
+				0FC83E3314C90A00003D2427 /* Maine_UMF.png */,
+				0FC83E3114C909FC003D2427 /* Greensboro.png */,
+				0FC83E2F14C909F7003D2427 /* Babson.png */,
+				0FC83E2C14C909F2003D2427 /* Amherst.png */,
+			);
+			name = SportsImages_UMF;
+			sourceTree = "<group>";
+		};
+		0FC83E6414C91875003D2427 /* SportsImages_UMM */ = {
+			isa = PBXGroup;
+			children = (
+				0FC83E7D14C91919003D2427 /* Vermont Tech.png */,
+				0FC83E7B14C9190F003D2427 /* University of Southern Maine.png */,
+				0FC83E7914C91902003D2427 /* University of Maine.png */,
+				0FC83E7714C918FA003D2427 /* U-Mass Amherst.png */,
+				0FC83E7514C918F2003D2427 /* St. Thomas University.png */,
+				0FC83E7314C918E9003D2427 /* St. Joseph's (VT).png */,
+				0FC83E7114C918E1003D2427 /* NHTI.png */,
+				0FC83E6F14C918DA003D2427 /* Me.-Presque Isle.png */,
+				0FC83E6D14C918C0003D2427 /* Maine_UMM.png */,
+				0FC83E6B14C918B7003D2427 /* Lyndon State.png */,
+				0FC83E6914C918B1003D2427 /* Husson University.png */,
+				0FC83E6714C918AB003D2427 /* Daemen College.png */,
+				0FC83E6514C918A4003D2427 /* Colby Sawyer.png */,
+			);
+			name = SportsImages_UMM;
+			sourceTree = "<group>";
+		};
+		0FD903AA14C8E3030033B85A /* SportsImages_UMO */ = {
+			isa = PBXGroup;
+			children = (
+				0FC83E6214C9167D003D2427 /* Maine_UMO.png */,
+				9662B883147D68E5008F6AA4 /* Acadia.png */,
+				9662B884147D68E5008F6AA4 /* Ala.-Huntsville.png */,
+				9662B885147D68E5008F6AA4 /* Albany.png */,
+				9662B886147D68E5008F6AA4 /* Bates.png */,
+				9662B887147D68E5008F6AA4 /* Bemidji St..png */,
+				9662B888147D68E5008F6AA4 /* Binghamton.png */,
+				9662B889147D68E5008F6AA4 /* Boston College.png */,
+				9662B88A147D68E5008F6AA4 /* Brown.png */,
+				9662B88B147D68E5008F6AA4 /* Bryant.png */,
+				9662B88C147D68E5008F6AA4 /* Cape Breton.png */,
+				9662B88D147D68E5008F6AA4 /* Central Conn. St..png */,
+				9662B88E147D68E5008F6AA4 /* Central Mich..png */,
+				9662B88F147D68E5008F6AA4 /* Charleston So..png */,
+				9662B890147D68E5008F6AA4 /* Clarkson.png */,
+				9662B891147D68E5008F6AA4 /* Clemson.png */,
+				9662B892147D68E5008F6AA4 /* Col. of Charleston.png */,
+				9662B893147D68E5008F6AA4 /* Colby.png */,
+				9662B894147D68E5008F6AA4 /* Colgate.png */,
+				9662B895147D68E5008F6AA4 /* Columbia.png */,
+				9662B896147D68E5008F6AA4 /* Connecticut.png */,
+				9662B897147D68E5008F6AA4 /* Cornell.png */,
+				9662B898147D68E5008F6AA4 /* Dartmouth.png */,
+				9662B899147D68E5008F6AA4 /* Davidson.png */,
+				9662B89A147D68E5008F6AA4 /* Delaware St..png */,
+				9662B89B147D68E5008F6AA4 /* Delaware.png */,
+				9662B89C147D68E5008F6AA4 /* Duquesne.png */,
+				9662B89D147D68E5008F6AA4 /* East Caro..png */,
+				9662B89E147D68E5008F6AA4 /* EasternIllinoisPanthers.png */,
+				9662B89F147D68E5008F6AA4 /* Fairleigh Dickinson.png */,
+				9662B8A0147D68E5008F6AA4 /* Fla. Gulf Coast.png */,
+				9662B8A1147D68E5008F6AA4 /* Florida A&M.png */,
+				9662B8A2147D68E5008F6AA4 /* Florida Int'l.png */,
+				9662B8A3147D68E5008F6AA4 /* Florida St..png */,
+				9662B8A4147D68E5008F6AA4 /* Fordham.png */,
+				9662B8A5147D68E5008F6AA4 /* George Washington.png */,
+				9662B8A6147D68E5008F6AA4 /* Georgetown.png */,
+				9662B8A7147D68E5008F6AA4 /* Harvard.png */,
+				9662B8A8147D68E5008F6AA4 /* Holy Cross.png */,
+				9662B8A9147D68E5008F6AA4 /* Husson.png */,
+				9662B8AA147D68E5008F6AA4 /* Iona.png */,
+				9662B8AB147D68E5008F6AA4 /* Jacksonville.png */,
+				9662B8AC147D68E5008F6AA4 /* James Madison.png */,
+				9662B8AD147D68E5008F6AA4 /* Kansas.png */,
+				9662B8AE147D68E5008F6AA4 /* La.-Lafayette.png */,
+				9662B8AF147D68E5008F6AA4 /* Lehigh.png */,
+				9662B8B1147D68E5008F6AA4 /* Maryland.png */,
+				9662B8B2147D68E5008F6AA4 /* Mass.-Lowell.png */,
+				9662B8B3147D68E5008F6AA4 /* Massachusetts.png */,
+				9662B8B4147D68E5008F6AA4 /* Me.-Farmington.png */,
+				9662B8B5147D68E5008F6AA4 /* Me.-Machias.png */,
+				9662B8B6147D68E5008F6AA4 /* Merrimack.png */,
+				9662B8B7147D68E5008F6AA4 /* Miami (Ohio).png */,
+				9662B8B8147D68E5008F6AA4 /* Michigan St..png */,
+				9662B8B9147D68E5008F6AA4 /* Michigan.png */,
+				9662B8BA147D68E5008F6AA4 /* Missouri-Kansas City.png */,
+				9662B8BB147D68E5008F6AA4 /* Monmouth.png */,
+				9662B8BC147D68E5008F6AA4 /* New Brunswick.png */,
+				9662B8BD147D68E5008F6AA4 /* New Hampshire.png */,
+				9662B8BE147D68E5008F6AA4 /* Niagara.png */,
+				9662B8BF147D68E5008F6AA4 /* NJIT.png */,
+				9662B8C0147D68E5008F6AA4 /* North Carolina St..png */,
+				9662B8C1147D68E5008F6AA4 /* North Carolina.png */,
+				9662B8C2147D68E5008F6AA4 /* North Dakota.png */,
+				9662B8C3147D68E5008F6AA4 /* Northeastern.png */,
+				9662B8C4147D68E5008F6AA4 /* Notre Dame.png */,
+				9662B8C5147D68E5008F6AA4 /* Pacific.png */,
+				9662B8C6147D68E5008F6AA4 /* Penn St..png */,
+				9662B8C7147D68E5008F6AA4 /* Penn.png */,
+				9662B8C8147D68E5008F6AA4 /* Pittsburgh.png */,
+				9662B8C9147D68E5008F6AA4 /* Providence.png */,
+				9662B8CA147D68E5008F6AA4 /* Quinnipiac.png */,
+				9662B8CB147D68E5008F6AA4 /* Rhode Island.png */,
+				9662B8CC147D68E5008F6AA4 /* Richmond.png */,
+				9662B8CD147D68E5008F6AA4 /* Rider.png */,
+				9662B8CE147D68E5008F6AA4 /* Robert Morris.png */,
+				9662B8CF147D68E5008F6AA4 /* Rollins.png */,
+				9662B8D0147D68E5008F6AA4 /* Rutgers.png */,
+				9662B8D1147D68E5008F6AA4 /* Seton Hall.png */,
+				9662B8D2147D68E5008F6AA4 /* Siena.png */,
+				9662B8D3147D68E5008F6AA4 /* South Ala..png */,
+				9662B8D4147D68E5008F6AA4 /* South Fla..png */,
+				9662B8D5147D68E5008F6AA4 /* St. Francis (Pa.).png */,
+				9662B8D6147D68E5008F6AA4 /* St. Louis.png */,
+				9662B8D7147D68E5008F6AA4 /* St. Peter's.png */,
+				9662B8D8147D68E5008F6AA4 /* Stephen F. Austin.png */,
+				9662B8D9147D68E5008F6AA4 /* Stetson.png */,
+				9662B8DA147D68E5008F6AA4 /* Stony Brook.png */,
+				9662B8DB147D68E5008F6AA4 /* Syracuse.png */,
+				9662B8DC147D68E5008F6AA4 /* Temple.png */,
+				9662B8DD147D68E5008F6AA4 /* Tennessee St..png */,
+				9662B8DE147D68E5008F6AA4 /* The Citadel.png */,
+				9662B8DF147D68E5008F6AA4 /* Toledo.png */,
+				9662B8E0147D68E5008F6AA4 /* Towson.png */,
+				9662B8E1147D68E5008F6AA4 /* Troy.png */,
+				9662B8E2147D68E5008F6AA4 /* UCF.png */,
+				9662B8E3147D68E5008F6AA4 /* UMBC.png */,
+				9662B8E4147D68E5008F6AA4 /* Union.png */,
+				9662B8E5147D68E5008F6AA4 /* UNLV.png */,
+				9662B8E6147D68E5008F6AA4 /* Vermont.png */,
+				9662B8E7147D68E5008F6AA4 /* Villanova.png */,
+				9662B8E8147D68E5008F6AA4 /* Western Mich..png */,
+				9662B8E9147D68E5008F6AA4 /* William & Mary.png */,
+				9662B8EA147D68E5008F6AA4 /* Winthrop.png */,
+				9662B8EB147D68E5008F6AA4 /* Yale.png */,
+			);
+			name = SportsImages_UMO;
+			sourceTree = "<group>";
+		};
+		0FD903AC14C8F32A0033B85A /* SportsImages_UMA */ = {
+			isa = PBXGroup;
+			children = (
+				0FD903AD14C8F35A0033B85A /* Berkeley College (NY)at New Hampshire Technical Institute Tournament.png */,
+				0FD903AE14C8F35A0033B85A /* Central Maine Community College.png */,
+				0FD903AF14C8F35A0033B85A /* College of St. Joseph's.png */,
+				0FD903B014C8F35A0033B85A /* Endicott College.png */,
+				0FD903B114C8F35A0033B85A /* Maine_UMA.png */,
+				0FD903B214C8F35A0033B85A /* Northern Maine Community College copy.png */,
+				0FD903B314C8F35A0033B85A /* Southern Maine Community College.png */,
+				0FD903B414C8F35A0033B85A /* St. Joseph's of Vermont.png */,
+				0FD903B514C8F35A0033B85A /* Suffolk University.png */,
+				0FD903B614C8F35A0033B85A /* SUNY Canton.png */,
+				0FD903B714C8F35A0033B85A /* Thomas College.png */,
+				0FD903B814C8F35A0033B85A /* University of Maine at Augusta.png */,
+				0FD903B914C8F35A0033B85A /* University of Maine at Fort Kent.png */,
+				0FD903BA14C8F35A0033B85A /* University of Maine at Machias.png */,
+				0FD903BB14C8F35A0033B85A /* Vermont Technical College.png */,
+			);
+			name = SportsImages_UMA;
 			sourceTree = "<group>";
 		};
 		9614911C14380A590010FFE1 /* Schedule Tab Images */ = {
@@ -628,111 +922,10 @@
 		968EA90C147B4DC600FEE786 /* Sport Images */ = {
 			isa = PBXGroup;
 			children = (
-				9662B883147D68E5008F6AA4 /* Acadia.png */,
-				9662B884147D68E5008F6AA4 /* Ala.-Huntsville.png */,
-				9662B885147D68E5008F6AA4 /* Albany.png */,
-				9662B886147D68E5008F6AA4 /* Bates.png */,
-				9662B887147D68E5008F6AA4 /* Bemidji St..png */,
-				9662B888147D68E5008F6AA4 /* Binghamton.png */,
-				9662B889147D68E5008F6AA4 /* Boston College.png */,
-				9662B88A147D68E5008F6AA4 /* Brown.png */,
-				9662B88B147D68E5008F6AA4 /* Bryant.png */,
-				9662B88C147D68E5008F6AA4 /* Cape Breton.png */,
-				9662B88D147D68E5008F6AA4 /* Central Conn. St..png */,
-				9662B88E147D68E5008F6AA4 /* Central Mich..png */,
-				9662B88F147D68E5008F6AA4 /* Charleston So..png */,
-				9662B890147D68E5008F6AA4 /* Clarkson.png */,
-				9662B891147D68E5008F6AA4 /* Clemson.png */,
-				9662B892147D68E5008F6AA4 /* Col. of Charleston.png */,
-				9662B893147D68E5008F6AA4 /* Colby.png */,
-				9662B894147D68E5008F6AA4 /* Colgate.png */,
-				9662B895147D68E5008F6AA4 /* Columbia.png */,
-				9662B896147D68E5008F6AA4 /* Connecticut.png */,
-				9662B897147D68E5008F6AA4 /* Cornell.png */,
-				9662B898147D68E5008F6AA4 /* Dartmouth.png */,
-				9662B899147D68E5008F6AA4 /* Davidson.png */,
-				9662B89A147D68E5008F6AA4 /* Delaware St..png */,
-				9662B89B147D68E5008F6AA4 /* Delaware.png */,
-				9662B89C147D68E5008F6AA4 /* Duquesne.png */,
-				9662B89D147D68E5008F6AA4 /* East Caro..png */,
-				9662B89E147D68E5008F6AA4 /* EasternIllinoisPanthers.png */,
-				9662B89F147D68E5008F6AA4 /* Fairleigh Dickinson.png */,
-				9662B8A0147D68E5008F6AA4 /* Fla. Gulf Coast.png */,
-				9662B8A1147D68E5008F6AA4 /* Florida A&M.png */,
-				9662B8A2147D68E5008F6AA4 /* Florida Int'l.png */,
-				9662B8A3147D68E5008F6AA4 /* Florida St..png */,
-				9662B8A4147D68E5008F6AA4 /* Fordham.png */,
-				9662B8A5147D68E5008F6AA4 /* George Washington.png */,
-				9662B8A6147D68E5008F6AA4 /* Georgetown.png */,
-				9662B8A7147D68E5008F6AA4 /* Harvard.png */,
-				9662B8A8147D68E5008F6AA4 /* Holy Cross.png */,
-				9662B8A9147D68E5008F6AA4 /* Husson.png */,
-				9662B8AA147D68E5008F6AA4 /* Iona.png */,
-				9662B8AB147D68E5008F6AA4 /* Jacksonville.png */,
-				9662B8AC147D68E5008F6AA4 /* James Madison.png */,
-				9662B8AD147D68E5008F6AA4 /* Kansas.png */,
-				9662B8AE147D68E5008F6AA4 /* La.-Lafayette.png */,
-				9662B8AF147D68E5008F6AA4 /* Lehigh.png */,
-				9662B8B0147D68E5008F6AA4 /* Maine.png */,
-				9662B8B1147D68E5008F6AA4 /* Maryland.png */,
-				9662B8B2147D68E5008F6AA4 /* Mass.-Lowell.png */,
-				9662B8B3147D68E5008F6AA4 /* Massachusetts.png */,
-				9662B8B4147D68E5008F6AA4 /* Me.-Farmington.png */,
-				9662B8B5147D68E5008F6AA4 /* Me.-Machias.png */,
-				9662B8B6147D68E5008F6AA4 /* Merrimack.png */,
-				9662B8B7147D68E5008F6AA4 /* Miami (Ohio).png */,
-				9662B8B8147D68E5008F6AA4 /* Michigan St..png */,
-				9662B8B9147D68E5008F6AA4 /* Michigan.png */,
-				9662B8BA147D68E5008F6AA4 /* Missouri-Kansas City.png */,
-				9662B8BB147D68E5008F6AA4 /* Monmouth.png */,
-				9662B8BC147D68E5008F6AA4 /* New Brunswick.png */,
-				9662B8BD147D68E5008F6AA4 /* New Hampshire.png */,
-				9662B8BE147D68E5008F6AA4 /* Niagara.png */,
-				9662B8BF147D68E5008F6AA4 /* NJIT.png */,
-				9662B8C0147D68E5008F6AA4 /* North Carolina St..png */,
-				9662B8C1147D68E5008F6AA4 /* North Carolina.png */,
-				9662B8C2147D68E5008F6AA4 /* North Dakota.png */,
-				9662B8C3147D68E5008F6AA4 /* Northeastern.png */,
-				9662B8C4147D68E5008F6AA4 /* Notre Dame.png */,
-				9662B8C5147D68E5008F6AA4 /* Pacific.png */,
-				9662B8C6147D68E5008F6AA4 /* Penn St..png */,
-				9662B8C7147D68E5008F6AA4 /* Penn.png */,
-				9662B8C8147D68E5008F6AA4 /* Pittsburgh.png */,
-				9662B8C9147D68E5008F6AA4 /* Providence.png */,
-				9662B8CA147D68E5008F6AA4 /* Quinnipiac.png */,
-				9662B8CB147D68E5008F6AA4 /* Rhode Island.png */,
-				9662B8CC147D68E5008F6AA4 /* Richmond.png */,
-				9662B8CD147D68E5008F6AA4 /* Rider.png */,
-				9662B8CE147D68E5008F6AA4 /* Robert Morris.png */,
-				9662B8CF147D68E5008F6AA4 /* Rollins.png */,
-				9662B8D0147D68E5008F6AA4 /* Rutgers.png */,
-				9662B8D1147D68E5008F6AA4 /* Seton Hall.png */,
-				9662B8D2147D68E5008F6AA4 /* Siena.png */,
-				9662B8D3147D68E5008F6AA4 /* South Ala..png */,
-				9662B8D4147D68E5008F6AA4 /* South Fla..png */,
-				9662B8D5147D68E5008F6AA4 /* St. Francis (Pa.).png */,
-				9662B8D6147D68E5008F6AA4 /* St. Louis.png */,
-				9662B8D7147D68E5008F6AA4 /* St. Peter's.png */,
-				9662B8D8147D68E5008F6AA4 /* Stephen F. Austin.png */,
-				9662B8D9147D68E5008F6AA4 /* Stetson.png */,
-				9662B8DA147D68E5008F6AA4 /* Stony Brook.png */,
-				9662B8DB147D68E5008F6AA4 /* Syracuse.png */,
-				9662B8DC147D68E5008F6AA4 /* Temple.png */,
-				9662B8DD147D68E5008F6AA4 /* Tennessee St..png */,
-				9662B8DE147D68E5008F6AA4 /* The Citadel.png */,
-				9662B8DF147D68E5008F6AA4 /* Toledo.png */,
-				9662B8E0147D68E5008F6AA4 /* Towson.png */,
-				9662B8E1147D68E5008F6AA4 /* Troy.png */,
-				9662B8E2147D68E5008F6AA4 /* UCF.png */,
-				9662B8E3147D68E5008F6AA4 /* UMBC.png */,
-				9662B8E4147D68E5008F6AA4 /* Union.png */,
-				9662B8E5147D68E5008F6AA4 /* UNLV.png */,
-				9662B8E6147D68E5008F6AA4 /* Vermont.png */,
-				9662B8E7147D68E5008F6AA4 /* Villanova.png */,
-				9662B8E8147D68E5008F6AA4 /* Western Mich..png */,
-				9662B8E9147D68E5008F6AA4 /* William & Mary.png */,
-				9662B8EA147D68E5008F6AA4 /* Winthrop.png */,
-				9662B8EB147D68E5008F6AA4 /* Yale.png */,
+				0FC83E6414C91875003D2427 /* SportsImages_UMM */,
+				0F4C616014C90641006DA862 /* SportsImages_UMF */,
+				0FD903AC14C8F32A0033B85A /* SportsImages_UMA */,
+				0FD903AA14C8E3030033B85A /* SportsImages_UMO */,
 			);
 			name = "Sport Images";
 			sourceTree = "<group>";
@@ -742,11 +935,13 @@
 			children = (
 				0F8F231C14BFD89F00692F94 /* lots_UMA.csv */,
 				0F8F231D14BFD89F00692F94 /* lots_UMF.csv */,
+				0FC83E8014C93636003D2427 /* lots_UMM.csv */,
 				0F8F230E14BFD6E400692F94 /* lots_UMO.csv */,
-				0F8F231A14BFD78500692F94 /* lots_USM.csv */,
+				0F07D9FB14C1207C00A91282 /* lots_USM.csv */,
 				0F8F231414BFD6EF00692F94 /* buildings_UMA.csv */,
 				0F8F231514BFD6EF00692F94 /* buildings_UMF.csv */,
-				96C709291493274E005479FB /* building_UMO.csv */,
+				0FC83E7F14C93636003D2427 /* buildings_UMM.csv */,
+				96C709291493274E005479FB /* buildings_UMO.csv */,
 				0F8F231614BFD6EF00692F94 /* buildings_USM.csv */,
 			);
 			name = "Coordinate Files";
@@ -847,15 +1042,16 @@
 				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
 				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
 				96950E42141D9D0E0059CFED /* EventRecapView.xib */,
-				96B308511470D3B3008C95DD /* commuter_marker.png */,
-				96B3084F1470D2D0008C95DD /* faculty_marker.png */,
-				96B3084D1470D1F5008C95DD /* resident_marker.png */,
 				964AFFEB147CA25800061CDE /* Default.png */,
 				964AFFED147CA26300061CDE /* Default@2x.png */,
 				9662B957147D6A9E008F6AA4 /* UMaine_114.png */,
 				9662B955147D6A96008F6AA4 /* UMaine_57.png */,
-				96F6509C14A255DB0025E278 /* UMO.sqlite */,
+				0FD73DE914C9CCBD00508F26 /* UMA.sqlite */,
+				0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */,
+				0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */,
+				0F6A734914C34E9C00F94C82 /* UMO.sqlite */,
 				968EA90C147B4DC600FEE786 /* Sport Images */,
+				0F07D9FA14C11D2F00A91282 /* Permit Images */,
 				961EE1D41438FE5C00644449 /* Managed Object Classes */,
 				9614911C14380A590010FFE1 /* Schedule Tab Images */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
@@ -1038,9 +1234,9 @@
 				963DFC7C146B8293007E41D4 /* CustomScheduleCell.xib in Resources */,
 				965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */,
 				960B929D146F2FCF0057C22E /* CourseDetailView.xib in Resources */,
-				96B3084E1470D1F5008C95DD /* resident_marker.png in Resources */,
-				96B308501470D2D0008C95DD /* faculty_marker.png in Resources */,
-				96B308521470D3B3008C95DD /* commuter_marker.png in Resources */,
+				96B3084E1470D1F5008C95DD /* resident_marker_UMO.png in Resources */,
+				96B308501470D2D0008C95DD /* faculty_marker_UMO.png in Resources */,
+				96B308521470D3B3008C95DD /* commuter_marker_UMO.png in Resources */,
 				964AFFEC147CA25800061CDE /* Default.png in Resources */,
 				964AFFEE147CA26400061CDE /* Default@2x.png in Resources */,
 				9662B8EC147D68E5008F6AA4 /* Acadia.png in Resources */,
@@ -1088,7 +1284,6 @@
 				9662B916147D68E5008F6AA4 /* Kansas.png in Resources */,
 				9662B917147D68E5008F6AA4 /* La.-Lafayette.png in Resources */,
 				9662B918147D68E5008F6AA4 /* Lehigh.png in Resources */,
-				9662B919147D68E5008F6AA4 /* Maine.png in Resources */,
 				9662B91A147D68E5008F6AA4 /* Maryland.png in Resources */,
 				9662B91B147D68E5008F6AA4 /* Mass.-Lowell.png in Resources */,
 				9662B91C147D68E5008F6AA4 /* Massachusetts.png in Resources */,
@@ -1152,7 +1347,7 @@
 				9662B958147D6A9E008F6AA4 /* UMaine_114.png in Resources */,
 				968D4F7E1491C62A007D248D /* CampusSelectionView.xib in Resources */,
 				96625C601491CDD800A461E3 /* availableCampuses_TENTATIVE.txt in Resources */,
-				96C7092E1493274E005479FB /* building_UMO.csv in Resources */,
+				96C7092E1493274E005479FB /* buildings_UMO.csv in Resources */,
 				96C7093014932900005479FB /* availableCampuses.txt in Resources */,
 				96D901BF149A760A002D3058 /* directory_UMA.csv in Resources */,
 				96D901C0149A760A002D3058 /* directory_UMF.csv in Resources */,
@@ -1161,7 +1356,6 @@
 				96D901C3149A760A002D3058 /* directory_UMO.csv in Resources */,
 				96D901C4149A760A002D3058 /* directory_UMPI.csv in Resources */,
 				96D901C5149A760A002D3058 /* directory_USM.csv in Resources */,
-				96F6509D14A255DB0025E278 /* UMO.sqlite in Resources */,
 				0F2CF80814BBD65500879C9F /* UMOSpecifics.plist in Resources */,
 				0F8670E514BBEF2400A583A7 /* UMFSpecifics.plist in Resources */,
 				0FDFEAF814BD3A0500E24A52 /* UMMSpecifics.plist in Resources */,
@@ -1173,9 +1367,63 @@
 				0F8F231714BFD6EF00692F94 /* buildings_UMA.csv in Resources */,
 				0F8F231814BFD6EF00692F94 /* buildings_UMF.csv in Resources */,
 				0F8F231914BFD6EF00692F94 /* buildings_USM.csv in Resources */,
-				0F8F231B14BFD78500692F94 /* lots_USM.csv in Resources */,
 				0F8F231E14BFD89F00692F94 /* lots_UMA.csv in Resources */,
 				0F8F231F14BFD89F00692F94 /* lots_UMF.csv in Resources */,
+				0F07D9FC14C1207C00A91282 /* lots_USM.csv in Resources */,
+				0F6A734A14C34E9C00F94C82 /* UMO.sqlite in Resources */,
+				0F6A735014C3C03B00F94C82 /* general_marker_UMA.png in Resources */,
+				0F6A735214C3C26200F94C82 /* firstyear_marker_UMF.png in Resources */,
+				0F6A735414C3C35B00F94C82 /* commuter_marker_UMF.png in Resources */,
+				0F6A735614C3C3D600F94C82 /* visitor_marker_UMO.png in Resources */,
+				0F6A735814C3C47200F94C82 /* resident_marker_UMF.png in Resources */,
+				0FD903BC14C8F35A0033B85A /* Berkeley College (NY)at New Hampshire Technical Institute Tournament.png in Resources */,
+				0FD903BD14C8F35A0033B85A /* Central Maine Community College.png in Resources */,
+				0FD903BE14C8F35A0033B85A /* College of St. Joseph's.png in Resources */,
+				0FD903BF14C8F35A0033B85A /* Endicott College.png in Resources */,
+				0FD903C014C8F35A0033B85A /* Maine_UMA.png in Resources */,
+				0FD903C114C8F35A0033B85A /* Northern Maine Community College copy.png in Resources */,
+				0FD903C214C8F35A0033B85A /* Southern Maine Community College.png in Resources */,
+				0FD903C314C8F35A0033B85A /* St. Joseph's of Vermont.png in Resources */,
+				0FD903C414C8F35A0033B85A /* Suffolk University.png in Resources */,
+				0FD903C514C8F35A0033B85A /* SUNY Canton.png in Resources */,
+				0FD903C614C8F35A0033B85A /* Thomas College.png in Resources */,
+				0FD903C714C8F35A0033B85A /* University of Maine at Augusta.png in Resources */,
+				0FD903C814C8F35A0033B85A /* University of Maine at Fort Kent.png in Resources */,
+				0FD903C914C8F35A0033B85A /* University of Maine at Machias.png in Resources */,
+				0FD903CA14C8F35A0033B85A /* Vermont Technical College.png in Resources */,
+				0FC83E2D14C909F2003D2427 /* Amherst.png in Resources */,
+				0FC83E3014C909F7003D2427 /* Babson.png in Resources */,
+				0FC83E3214C909FC003D2427 /* Greensboro.png in Resources */,
+				0FC83E3414C90A00003D2427 /* Maine_UMF.png in Resources */,
+				0FC83E3614C90A05003D2427 /* Me.-Fort Kent.png in Resources */,
+				0FC83E3814C90A0A003D2427 /* Mercy.png in Resources */,
+				0FC83E3A14C90A0F003D2427 /* Mt. St. Vincent.png in Resources */,
+				0FC83E3C14C90A15003D2427 /* New England Col..png in Resources */,
+				0FC83E3E14C90A19003D2427 /* Plymouth St..png in Resources */,
+				0FC83E4014C90A1F003D2427 /* Rivier.png in Resources */,
+				0FC83E4214C90A23003D2427 /* Simmons.png in Resources */,
+				0FC83E4414C90A28003D2427 /* Wheelock.png in Resources */,
+				0FC83E4614C90A2D003D2427 /* Wilkes.png in Resources */,
+				0FC83E6314C9167D003D2427 /* Maine_UMO.png in Resources */,
+				0FC83E6614C918A4003D2427 /* Colby Sawyer.png in Resources */,
+				0FC83E6814C918AB003D2427 /* Daemen College.png in Resources */,
+				0FC83E6A14C918B1003D2427 /* Husson University.png in Resources */,
+				0FC83E6C14C918B7003D2427 /* Lyndon State.png in Resources */,
+				0FC83E6E14C918C0003D2427 /* Maine_UMM.png in Resources */,
+				0FC83E7014C918DA003D2427 /* Me.-Presque Isle.png in Resources */,
+				0FC83E7214C918E1003D2427 /* NHTI.png in Resources */,
+				0FC83E7414C918E9003D2427 /* St. Joseph's (VT).png in Resources */,
+				0FC83E7614C918F2003D2427 /* St. Thomas University.png in Resources */,
+				0FC83E7814C918FA003D2427 /* U-Mass Amherst.png in Resources */,
+				0FC83E7A14C91903003D2427 /* University of Maine.png in Resources */,
+				0FC83E7C14C9190F003D2427 /* University of Southern Maine.png in Resources */,
+				0FC83E7E14C91919003D2427 /* Vermont Tech.png in Resources */,
+				0FC83E8114C93636003D2427 /* buildings_UMM.csv in Resources */,
+				0FC83E8214C93636003D2427 /* lots_UMM.csv in Resources */,
+				0FC83E8414C93834003D2427 /* general_marker_UMM.png in Resources */,
+				0FD73DEC14C9CCBD00508F26 /* UMA.sqlite in Resources */,
+				0FD73DED14C9CCBD00508F26 /* UMF.sqlite in Resources */,
+				0FD73DEE14C9CCBD00508F26 /* UMM.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

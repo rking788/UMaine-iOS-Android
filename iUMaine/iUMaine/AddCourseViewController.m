@@ -116,7 +116,7 @@
         return;
     }
     
-    NSManagedObjectContext* MOC = [(iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    NSManagedObjectContext* MOC = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext: MOC];
     [fetchrequest setEntity:entity];
@@ -173,7 +173,7 @@
 {
     NSMutableSet* departSet = [NSMutableSet set];
     
-    NSManagedObjectContext* MOC = [(iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    NSManagedObjectContext* MOC = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext: MOC];
     [fetchrequest setEntity:entity];
@@ -204,7 +204,7 @@
         NSLog(@"Error fetching departments");
     }
     
-    self.departArr; self.departArr = nil;
+    self.departArr = nil;
     self.departArr = [[departSet allObjects] sortedArrayUsingSelector: @selector( localizedCaseInsensitiveCompare:)];
     
 
@@ -214,7 +214,7 @@
 {
     NSMutableSet* numberSet = [NSMutableSet set];
     
-    NSManagedObjectContext* MOC = [(iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    NSManagedObjectContext* MOC = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext: MOC];
     [fetchrequest setEntity:entity];
@@ -254,7 +254,7 @@
 {
     NSMutableSet* sectSet = [NSMutableSet set];
     
-    NSManagedObjectContext* MOC = [(iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    NSManagedObjectContext* MOC = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
     NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Course" inManagedObjectContext: MOC];
     [fetchrequest setEntity:entity];
