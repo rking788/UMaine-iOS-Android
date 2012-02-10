@@ -66,7 +66,7 @@ static NSString* selCampus;
     
     // Initialize the database file (should be removed after .sqlite file is setup
 #if INIT_DB
-    selCampus = @"UMF";
+    selCampus = @"UMFK";
     DBInitializer* dbIniter = [[DBInitializer alloc] init];
     dbIniter.managedObjectContext = self.managedObjectContext;
     [dbIniter initDatabaseWithCampus: selCampus];
@@ -160,12 +160,17 @@ static NSString* selCampus;
     
     NSString* dbFileName = [NSString stringWithFormat: @"%@.sqlite", [iUMaineAppDelegate getSelCampus]];
     
-    NSLog(@"Using DB with filename: %@ (persistentstorecoordinator)", [NSString stringWithFormat: @"%@.sqlite",  [iUMaineAppDelegate getSelCampus]]);
     NSURL* storeURL = [NSURL fileURLWithPath:[[self applicationDocumentsDirectory] stringByAppendingPathComponent: dbFileName]];
     NSError *error = nil;
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+
+    // These options are needed to map between the old model and the new model
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+                             [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
+                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption, nil];
+
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options: options error: &error]) {
         // Handle the error.
         NSLog(@"Failed to create the persistent store in iUMaineAppDelegate with error: %@", [error localizedDescription]);
     }    
@@ -403,7 +408,6 @@ static NSString* selCampus;
                 [tempEvent setYearRange: [eComps objectAtIndex: 7]];
                 
                 [self updateOrAddEvent: tempEvent WithMOC: backgroundMOC];
-                
                 
                 ++currentEvent;
                 

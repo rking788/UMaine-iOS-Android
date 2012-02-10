@@ -15,16 +15,21 @@
 	</dict>
 	<key>Sports</key>
 	<dict>
-		<key>9</key>
+		<key>w-volleyball</key>
 		<string>Women&apos;s Volleyball</string>
-		<key>8</key>
+		<key>w-soccer</key>
 		<string>Women&apos;s Soccer</string>
-		<key>7</key>
+		<key>w-basketball</key>
 		<string>Women&apos;s Basketball</string>
-		<key>2</key>
+		<key>m-soccer</key>
 		<string>Men&apos;s Soccer</string>
-		<key>1</key>
+		<key>m-basketball</key>
 		<string>Men&apos;s Basketball</string>
+	</dict>
+	<key>PermitTitles</key>
+	<dict>
+		<key>general</key>
+		<string>General</string>
 	</dict>
 	<key>DirectoryNameTextColor</key>
 	<dict>

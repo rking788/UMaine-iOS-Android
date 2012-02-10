@@ -95,5 +95,14 @@
 		<key>red</key>
 		<string>4</string>
 	</dict>
+	<key>PermitTitles</key>
+	<dict>
+		<key>faculty</key>
+		<string>Faculty / Staff</string>
+		<key>visitor</key>
+		<string>Visitor</string>
+		<key>student</key>
+		<string>Student</string>
+	</dict>
 </dict>
 </plist>

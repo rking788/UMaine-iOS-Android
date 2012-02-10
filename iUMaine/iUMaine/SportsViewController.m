@@ -48,12 +48,13 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     
     self.firstView = YES;
 
+    // Initialize the sports abbreviations dictionary
+    self.sportsAbbrDict = [CampusSpecifics getSportsDict];
+    
     [self.navigationItem setTitle: @"All Sports"];
     
     UIBarButtonItem* sportSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Sports" style: UIBarButtonItemStyleBordered target:self action: @selector(selectSportBtnClicked)];
     self.navigationItem.leftBarButtonItem = sportSelectBtn;
-    
-
     
     // This should probably be loaded from user defaults (the last viewed sport)
     [self setCurSport: @"All"];
@@ -364,11 +365,11 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat height = 65;
+    CGFloat height = 85;
     
     // The rows for the current games are taller than the others
     if(indexPath.section == 1)
-        height = 90;
+        height = 100;
     
     return height;
 }

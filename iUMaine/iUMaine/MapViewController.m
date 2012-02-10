@@ -57,6 +57,9 @@
     if(self.appDel.gettingSports){
         [self shrinkMapView];
     }
+    else if(self.isSmaller){
+        [self growMapView];
+    }
     
     [self.navBar setTintColor: [CampusSpecifics getNavBarColor]];
     [self.segmentControl setTintColor: [CampusSpecifics getSegmentControlColor]];
@@ -179,32 +182,32 @@
 
 - (NSArray*) findCenterOfCampus
 {
-    NSManagedObjectContext* moc = [[iUMaineAppDelegate sharedAppDelegate] managedObjectContext];
-    NSFetchRequest* fetchrequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName: @"ParkingLot" inManagedObjectContext: moc];
-    [fetchrequest setEntity:entity];
+    NSString* selCampus = [iUMaineAppDelegate getSelCampus];
+    double latitude = UMO_CENTER_LAT;
+    double longitude = UMO_CENTER_LONG;
     
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"permittype == %@", @"centerofcampus"];
-    [fetchrequest setPredicate:predicate];
+    // The default center is for UMO if this is another campus it needs to be changed
+    if([selCampus isEqualToString: @"UMF"]){
+        latitude = UMF_CENTER_LAT;
+        longitude = UMF_CENTER_LONG;
+    }
+    else if([selCampus isEqualToString: @"UMA"]){
+        latitude = UMA_CENTER_LAT;
+        longitude = UMA_CENTER_LONG;
+    }
+    else if([selCampus isEqualToString: @"UMM"]){
+        latitude = UMM_CENTER_LAT;
+        longitude = UMM_CENTER_LONG;
+    }
+    else if([selCampus isEqualToString: @"UMPI"]){
+        latitude = UMPI_CENTER_LAT;
+        longitude = UMPI_CENTER_LONG;
+    }
+    else if([selCampus isEqualToString: @"UMFK"]){
+        latitude = UMFK_CENTER_LAT;
+        longitude = UMFK_CENTER_LONG;
+    }
     
-    NSError *error = nil;
-    NSArray *array = [moc executeFetchRequest: fetchrequest error: &error];
-    double latitude = 0.0;
-    double longitude = 0.0;
-    if (array != nil) {
-        
-        for(NSManagedObject* manObj in array){
-            
-            latitude = [[manObj valueForKey:@"latitude"] doubleValue]/1000000.0;
-            longitude = [[manObj valueForKey:@"longitude"] doubleValue]/1000000.0;
-        }
-        
-    }
-    else {
-        // Deal with error.
-        NSLog(@"Error fetching lots");
-    }
-
     NSNumber* latNum = [NSNumber numberWithDouble: latitude];
     NSNumber* longNum = [NSNumber numberWithDouble: longitude];
     

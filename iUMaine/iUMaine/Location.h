@@ -15,5 +15,6 @@
 @property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSNumber * longitude;
 @property (nonatomic, strong) NSNumber * latitude;
+@property (nonatomic, strong) NSNumber* campusNum;
 
 @end

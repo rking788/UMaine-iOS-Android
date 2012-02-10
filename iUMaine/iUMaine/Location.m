@@ -14,6 +14,7 @@
 @dynamic title;
 @dynamic longitude;
 @dynamic latitude;
+@dynamic campusNum;
 
 - (id)valueForUndefinedKey:(NSString *)key
 {
