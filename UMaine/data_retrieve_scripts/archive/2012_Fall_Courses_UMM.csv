@@ -1,0 +1,431 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+ACC;201;"Financial Accounting";0001;LEC;7675;MoWeFr 9:00AM - 9:50AM;Torrey 104;Bernice M Murphy;09/05/2012 - 12/15/2012
+ACC;201;"Financial Accounting";0002;LEC;7676;TBA;Web;Rhonda H French;09/05/2012 - 12/15/2012
+ACC;202;"Managerial Accounting";0001;LEC;7677;TBA;Web;Patrick J McCarthy;09/05/2012 - 12/15/2012
+ACC;301;"Intermediate Accounting I";0001;LEC;7678;TBA;Web;Patrick J McCarthy;09/05/2012 - 12/15/2012
+AME;330;"Topics in American Studies";0001;LEC;11657;TuTh 11:00AM - 12:20PM;Torrey 232;Kay S Kimball;09/05/2012 - 12/15/2012
+ANT;101;"Cultural Anthropology";0001;LEC;7700;MoWe 5:30PM - 6:50PM;Torrey 232;James H Moreira;09/05/2012 - 12/15/2012
+ANT;101;"Cultural Anthropology";0003;LEC;14938;TBA;Web;Daniel Qualls;12/31/2012 - 01/18/2013
+ANT;313;"Political Ecology";0001;LEC;8392;MoFr 9:30AM - 10:50AM;Torrey 226;Tora Johnson;09/05/2012 - 12/15/2012
+ART;101;"2";0001;STU;7703;TuTh 9:30AM - 10:50AM;Powers&nbsp; 208;Leslie D Bowman;09/05/2012 - 12/15/2012
+ART;101;"2";0002;STU;7707;Tu 5:30PM - 8:20PM;Powers&nbsp; 208;Judith R Valentine;09/05/2012 - 12/15/2012
+ART;102;"Art Fundamentals:";0001;STU;7714;MoFr 12:30PM - 1:50PM;Torrey&nbsp; B1;William C Schaefer;09/05/2012 - 12/15/2012
+ART;210;"Drawing I";0001;STU;8620;TuTh 11:00AM - 12:20PM;Powers&nbsp; 209;Bernie Vinzani;09/05/2012 - 12/15/2012
+ART;216;"Book Arts I";0001;STU;8623;Mo 3:30PM - 6:20PM;Dorward 3;Bernie Vinzani;09/05/2012 - 12/15/2012
+ART;219;"Photography";0001;STU;8627;MoWe 2:00PM - 3:20PM;Powers&nbsp; 208;Christian G Sunde;09/05/2012 - 12/15/2012
+ART;310;"Drawing II";0001;STU;8621;TuTh 11:00AM - 12:20PM;Powers&nbsp; 209;Bernie Vinzani;09/05/2012 - 12/15/2012
+ART;313;"Photography II";0001;STU;8628;MoWe 2:00PM - 3:20PM;Powers&nbsp; 208;Christian G Sunde;09/05/2012 - 12/15/2012
+ART;326;"Book Arts II";0001;STU;8625;Mo 3:30PM - 6:20PM;Dorward 3;Bernie Vinzani;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0001;LEC;8629;Tu 4:00PM - 6:50PM;Torrey 104;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0002;LEC;8716;Fr 4:00PM - 6:45PM;Torrey 103;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0003;LEC;13397;Fr 4:00PM - 6:50PM;Bangor Hall 0100 - UCB;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0004;LEC;13398;Fr 4:00PM - 6:50PM;Bath/Brunswick Center;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0005;LEC;13399;Fr 4:00PM - 6:50PM;Ellsworth Center;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0006;LEC;13400;Fr 4:00PM - 6:50PM;East Millinocket Center;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0007;LEC;13401;Fr 4:00PM - 6:50PM;Houlton Center;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0008;LEC;13402;Fr 4:00PM - 6:50PM;Augusta - UMA Campus;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0009;LEC;13403;Fr 4:00PM - 6:50PM;Fort Kent Campus;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0010;LEC;13404;Fr 4:00PM - 6:50PM;Dover-Foxcroft;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0011;LEC;13405;Fr 4:00PM - 6:50PM;Presque Isle Campus;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0012;LEC;13406;Fr 4:00PM - 6:50PM;Rockland Center;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0013;LEC;13407;Fr 4:00PM - 6:50PM;Rumford/Mexico Center;Barbara K Koch;09/05/2012 - 12/15/2012
+ASL;101;"Intro to Sign Language";0014;LEC;13408;Fr 4:00PM - 6:50PM;Saco Center;Barbara K Koch;09/05/2012 - 12/15/2012
+BIO;100;"Explorations in Biology";0001;LEC;8393;MoWe 3:00PM - 4:50PM;Science&nbsp; 120;Gerard P Zegers;09/05/2012 - 12/15/2012
+BIO;110;"Human Anatomy &amp; Physiology I";0010;LEC;8394;MoFr 3:30PM - 4:50PM;Science&nbsp; 115;Sherrie A Sprangers;09/05/2012 - 12/15/2012
+BIO;110;"Human Anatomy &amp; Physiology I";0011;LAB;8395;Th 3:00PM - 4:50PM;Science&nbsp; 114;Sherrie A Sprangers;09/05/2012 - 12/15/2012
+BIO;111;"General Zoology";0010;LEC;8396;MoWeFr 10:00AM - 10:50AM;Science&nbsp; 115;Sherrie A Sprangers;09/05/2012 - 12/15/2012
+BIO;111;"General Zoology";0011;LAB;8397;Tu 10:00AM - 11:50AM;Science&nbsp; 114;Sherrie A Sprangers;09/05/2012 - 12/15/2012
+BIO;111;"General Zoology";0020;LEC;8398;MoWeFr 9:00AM - 9:50AM;Science&nbsp; 115;Ellen E Hostert;09/05/2012 - 12/15/2012
+BIO;111;"General Zoology";0022;LAB;8399;Tu 8:00AM - 9:50AM;Science&nbsp; 114;Ellen E Hostert;09/05/2012 - 12/15/2012
+BIO;111;"General Zoology";0030;LEC;8400;MoWeFr 1:00PM - 1:50PM;Science&nbsp; 102;Ellen E Hostert;09/05/2012 - 12/15/2012
+BIO;111;"General Zoology";0033;LAB;8401;Tu 1:00PM - 2:50PM;Science&nbsp; 114;Ellen E Hostert;09/05/2012 - 12/15/2012
+BIO;112;"General Botany";0010;LEC;8403;MoWeFr 10:00AM - 10:50AM;Science&nbsp; 207;Eric Jones;09/05/2012 - 12/15/2012
+BIO;112;"General Botany";0011;LAB;8404;Tu 10:00AM - 11:50AM;Science&nbsp; 120;Eric Jones;09/05/2012 - 12/15/2012
+BIO;112;"General Botany";0020;LEC;14810;MoWeFr 9:00AM - 9:50AM;Science&nbsp; 102;Eric Jones;09/05/2012 - 12/15/2012
+BIO;112;"General Botany";0022;LAB;14811;Tu 1:00PM - 2:50PM;TBA;Eric Jones;09/05/2012 - 12/15/2012
+BIO;115;"Marine Fauna &amp; Macroalgae of Downeast Maine";0001;LEC;13863;Th 9:00AM - 12:50PM;DEI Education Center;Brian F Beal;09/05/2012 - 12/15/2012
+BIO;206;"Intro to Marine Biology";0010;LEC;8405;MoFr 11:00AM - 11:50AM;Science&nbsp; 13;Gayle Kraus;09/05/2012 - 12/15/2012
+BIO;206;"Intro to Marine Biology";0011;LAB;8406;Tu 1:00PM - 4:50PM;Science&nbsp; 13;Gayle Kraus;09/05/2012 - 12/15/2012
+BIO;211;"Field and Laboratory Techniques in Biology";0001;RSG;8407;TBA;TBA;Staff;TBA
+BIO;223;"Marine Mammals &amp; Pelagic Birds";0010;LEC;8410;MoFr 4:00PM - 4:50PM;Science&nbsp; 13;Gayle Kraus;09/05/2012 - 12/15/2012
+BIO;223;"Marine Mammals &amp; Pelagic Birds";0011;LAB;8411;Sa 9:00AM - 12:50PM;Science&nbsp; 13;Gayle Kraus;09/05/2012 - 12/15/2012
+BIO;224;"General Entomology";0010;LEC;8412;MoFr 12:00PM - 12:50PM;Science&nbsp; 109;Gerard P Zegers;09/05/2012 - 12/15/2012
+BIO;224;"General Entomology";0011;LAB;8413;Th 9:00AM - 10:50AM;Science&nbsp; 120;Gerard P Zegers;09/05/2012 - 12/15/2012
+BIO;245;"General Ecology";0010;LEC;8414;MoFr 12:00PM - 12:50PM;Science&nbsp; 115;Gayle Kraus;09/05/2012 - 12/15/2012
+BIO;245;"General Ecology";0011;LAB;8415;Th 1:00PM - 4:50PM;Science&nbsp; 120;Gayle Kraus;09/05/2012 - 12/15/2012
+BIO;265;"Genetics";0010;LEC;8416;MoWeFr 10:00AM - 10:50AM;Science&nbsp; 109;Ellen E Hostert;09/05/2012 - 12/15/2012
+BIO;265;"Genetics";0011;LAB;8417;Th 1:00PM - 3:50PM;Science&nbsp; 208;Ellen E Hostert;09/05/2012 - 12/15/2012
+BIO;305;"Research Seminar";0001;SEM;8418;TBA;TBA;Staff;TBA
+BIO;310;"Special Topics in Mariculture";0001;LEC;8419;TBA;TBA;Staff;TBA
+BIO;333;"Plant Ecology";0010;LEC;8420;MoFr 11:00AM - 11:50AM;Science&nbsp; 115;Eric Jones;09/05/2012 - 12/15/2012
+BIO;333;"Plant Ecology";0011;LAB;8421;Tu 1:00PM - 4:50PM;Science&nbsp; 120;Staff;09/05/2012 - 12/15/2012
+BIO;360;"Marine Ecology";0010;LEC;8422;MoWe 7:30AM - 8:50AM;Science&nbsp; 13;Brian F Beal;09/05/2012 - 12/15/2012
+BIO;360;"Marine Ecology";0011;LAB;8423;Tu 7:30AM - 10:20AM;Torrey 106;Brian F Beal;09/05/2012 - 12/15/2012
+BIO;401;"Senior Thesis in Biology";0001;THS;8424;TBA;TBA;Staff;TBA
+BIO;402;"Senior Thesis in Biology";0001;THS;8425;TBA;TBA;Staff;TBA
+BIO;403;"Senior Thesis in Biology";0001;THS;8426;TBA;TBA;Staff;TBA
+BIO;404;"Senior Thesis in Biological Research";0001;THS;8427;TBA;TBA;Staff;TBA
+BIO;405;"Senior Thesis in Biological Research";0001;THS;8429;TBA;TBA;Staff;TBA
+BIO;406;"Senior Thesis in Biological Research";0001;THS;8430;TBA;TBA;Staff;TBA
+BUS;111;"Introduction to Business &amp; Entrepreneurship";0001;LEC;7679;TuTh 2:00PM - 3:20PM;Torrey 232;Patrick J McCarthy;09/05/2012 - 12/15/2012
+BUS;111;"Introduction to Business &amp; Entrepreneurship";0002;LEC;7680;TBA;Web;Patrick J McCarthy;09/05/2012 - 12/15/2012
+BUS;221;"Business Law I";0001;LEC;8577;We 2:30PM - 3:45PM;Torrey 102;Ronald A Mosley;09/05/2012 - 12/15/2012
+BUS;221;"Business Law I";0002;LEC;13450;We 2:30PM - 3:45PM;Bangor Hall - UCB;Ronald A Mosley;09/05/2012 - 12/15/2012
+BUS;221;"Business Law I";0003;LEC;13451;We 2:30PM - 3:45PM;Bath-Brunswick Center;Ronald A Mosley;09/05/2012 - 12/15/2012
+BUS;221;"Business Law I";0004;LEC;13452;We 2:30PM - 3:45PM;Bucksport;Ronald A Mosley;09/05/2012 - 12/15/2012
+BUS;221;"Business Law I";0005;LEC;13453;We 2:30PM - 3:45PM;Caribou;Ronald A Mosley;09/05/2012 - 12/15/2012
+BUS;221;"Business Law I";0006;LEC;13454;We 2:30PM - 3:45PM;Deer Isle-Stonington;Ronald A Mosley;09/05/2012 - 12/15/2012
+BUS;325;"Business Ethics &amp; Social Responsbilty";0001;WEB;7681;TBA;Web;Robert D Tropea;09/05/2012 - 12/15/2012
+CHY;101;"General Chemistry I";0010;LEC;8432;MoWeFr 1:00PM - 1:50PM;Science&nbsp; 207;William H Otto;09/05/2012 - 12/15/2012
+CHY;101;"General Chemistry I";0011;LAB;8433;Th 9:00AM - 11:50AM;Science&nbsp; 208;William H Otto;09/05/2012 - 12/15/2012
+CHY;101;"General Chemistry I";0020;LEC;14286;MoWeFr 8:00AM - 8:50AM;Science&nbsp; 207;William H Otto;09/05/2012 - 12/15/2012
+CHY;101;"General Chemistry I";0022;LAB;14287;Tu 1:00PM - 3:50PM;Science&nbsp; 208;William H Otto;09/05/2012 - 12/15/2012
+CHY;113;"Intro to Forensic Science";0001;LEC;8434;TBA;Web;Shallee T Page;09/05/2012 - 12/15/2012
+CHY;221;"Organic Chemistry I";0010;LEC;8435;MoWeFr 9:00AM - 9:50AM;Science&nbsp; 207;Shallee T Page;09/05/2012 - 12/15/2012
+CHY;221;"Organic Chemistry I";0011;LAB;8436;Tu 1:00PM - 4:50PM;Science&nbsp; 216;Shallee T Page;09/05/2012 - 12/15/2012
+CHY;226;"Undergraduate Research in Chemistry";0001;RSG;8439;TBA;TBA;Shallee T Page;09/05/2012 - 12/15/2012
+CHY;326;"Undergraduate Research in Chemistry";0001;RSG;8440;TBA;TBA;Staff;TBA
+CMY;101;"Introduction to Community Studies";0001;LEC;8630;TuTh 12:30PM - 1:50PM;Torrey 104;James H Moreira;09/05/2012 - 12/15/2012
+CMY;110;"Downeast Documentary";0001;LEC;8635;TuTh 9:30AM - 10:50AM;Torrey 226;Lisa J Athearn;09/05/2012 - 12/15/2012
+CMY;220;"Soliya:";0001;FEX;8631;MoWe 2:00PM - 3:20PM;Torrey 221;James H Moreira;09/05/2012 - 12/15/2012
+CMY;312;"Soliya:";0001;FEX;8632;MoWe 2:00PM - 3:20PM;Torrey 221;James H Moreira;09/05/2012 - 12/15/2012
+COE;201;"Cooperative Education I";0001;FEX;7682;TBA;TBA;Brenda L Frey;09/05/2012 - 12/15/2012
+COE;301;"Cooperative Education II";0001;FEX;7683;TBA;TBA;Brenda L Frey;09/05/2012 - 12/15/2012
+COE;305;"Internship in Science";0001;FEX;8431;TBA;TBA;Staff;TBA
+COE;313;"Community Experience";0001;FEX;7715;Mo 5:30PM - 8:20PM;Torrey 221;Meghan W Duff;09/05/2012 - 12/15/2012
+COE;313;"Community Experience";0002;FEX;8584;TBA;Web;Meghan W Duff;09/05/2012 - 12/15/2012
+CSE;106;"Technology Literacy";0001;LAB;8390;Th 5:00PM - 7:50PM;Torrey 113;Michael P Matis;09/05/2012 - 12/15/2012
+CSE;305;"Computer Applications for the Professional";0001;LEC;13988;TBA;Web;Harold Bettle;09/05/2012 - 12/15/2012
+DAN;106;"Beginning Belly Dance";0001;STU;7716;Tu 6:00PM - 7:50PM;FRC Lower Gym;Lois-Ann Kuntz;09/05/2012 - 12/15/2012
+ECO;112;"Community Economics";0001;LEC;8484;Fr 1:00PM - 3:50PM;Torrey 232;Kevin R Athearn;09/05/2012 - 12/15/2012
+ECO;201;"Macroeconomics";0001;LEC;7684;MoTh 7:30AM - 8:45AM;Torrey 102;Jon Reisman;09/05/2012 - 12/15/2012
+ECO;201;"Macroeconomics";0002;LEC;14224;MoTh 7:30AM - 8:45AM;Bangor Hall - UCB;Jon Reisman;09/05/2012 - 12/15/2012
+ECO;201;"Macroeconomics";0003;LEC;14225;MoTh 7:30AM - 8:45AM;Bath-Brunswick Center;Jon Reisman;09/05/2012 - 12/15/2012
+ECO;201;"Macroeconomics";0004;LEC;14226;MoTh 7:30AM - 8:45AM;Bucksport;Jon Reisman;09/05/2012 - 12/15/2012
+ECO;201;"Macroeconomics";0005;LEC;14227;MoTh 7:30AM - 8:45AM;Deer Isle-Stonington;Jon Reisman;09/05/2012 - 12/15/2012
+ECO;201;"Macroeconomics";0006;LEC;14228;MoTh 7:30AM - 8:45AM;Ellsworth Center;Jon Reisman;09/05/2012 - 12/15/2012
+ECO;223;"Environmental Economics";0001;LEC;7685;MoWe 2:00PM - 3:20PM;Science&nbsp; 109;Kevin R Athearn;09/05/2012 - 12/15/2012
+EDU;103;"Preparing for Praxis I Reading";0001;LEC;8571;Tu 9:00AM - 10:15AM;Torrey 103;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;103;"Preparing for Praxis I Reading";0002;LEC;13358;Tu 9:00AM - 10:15AM;Bangor Hall 0100 - UCB;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;103;"Preparing for Praxis I Reading";0003;LEC;13359;Tu 9:00AM - 10:15AM;Bath/Brunswick Center;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;103;"Preparing for Praxis I Reading";0004;LEC;13360;Tu 9:00AM - 10:15AM;Ellsworth Center;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;103;"Preparing for Praxis I Reading";0006;LEC;13362;Tu 9:00AM - 10:15AM;Fort Kent Campus;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;103;"Preparing for Praxis I Reading";0007;LEC;13363;Tu 9:00AM - 10:15AM;Presque Isle Campus;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;104;"Preparing for Praxis I Writing";0001;LEC;8572;Tu 10:30AM - 11:45AM;Torrey 103;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;104;"Preparing for Praxis I Writing";0002;LEC;13380;Tu 10:30AM - 11:45AM;Bangor Hall 0100 - UCB;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;104;"Preparing for Praxis I Writing";0003;LEC;13381;Tu 10:30AM - 11:45AM;Bath/Brunswick Center;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;104;"Preparing for Praxis I Writing";0004;LEC;13382;Tu 10:30AM - 11:45AM;Ellsworth Center;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;104;"Preparing for Praxis I Writing";0006;LEC;13384;Tu 10:30AM - 11:45AM;Fort Kent Campus;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;104;"Preparing for Praxis I Writing";0007;LEC;13385;Tu 10:30AM - 11:45AM;Presque Isle Campus;Heather Leigh Ball;09/11/2012 - 10/23/2012
+EDU;107;"Preparing for Praxis I Math";0001;LEC;8573;Th 4:00PM - 5:15PM;Torrey 103;Michael Fish;09/11/2012 - 10/23/2012
+EDU;107;"Preparing for Praxis I Math";0002;LEC;13389;Th 4:00PM - 5:15PM;Bangor Hall 0100 - UCB;Michael Fish;09/11/2012 - 10/23/2012
+EDU;107;"Preparing for Praxis I Math";0003;LEC;13390;Th 4:00PM - 5:15PM;Bath/Brunswick Center;Michael Fish;09/11/2012 - 10/23/2012
+EDU;107;"Preparing for Praxis I Math";0004;LEC;13391;Th 4:00PM - 5:15PM;Ellsworth Center;Michael Fish;09/11/2012 - 10/23/2012
+EDU;107;"Preparing for Praxis I Math";0005;LEC;13392;Th 4:00PM - 5:15PM;Augusta - UMA Campus;Michael Fish;09/11/2012 - 10/23/2012
+EDU;107;"Preparing for Praxis I Math";0006;LEC;13393;Th 4:00PM - 5:15PM;Fort Kent Campus;Michael Fish;09/11/2012 - 10/23/2012
+EDU;112;"School and Community";0001;LEC;7686;TuTh 9:30AM - 10:50AM;Science&nbsp; 109;Daniel Qualls;09/05/2012 - 12/15/2012
+EDU;210;"Educational Psychology";0001;LEC;7687;TuTh 11:00AM - 12:20PM;Torrey 226;Gael E Romei;09/05/2012 - 12/15/2012
+EDU;321;"Secondary Methods of Teaching I";0001;LEC;9935;Fr 4:00PM - 6:45PM;Torrey 102;Daniel Qualls;09/05/2012 - 12/15/2012
+EDU;321;"Secondary Methods of Teaching I";0002;LEC;13533;Fr 4:00PM - 6:45PM;Bangor Hall - UCB;Daniel Qualls;09/05/2012 - 12/15/2012
+EDU;321;"Secondary Methods of Teaching I";0003;LEC;13534;Fr 4:00PM - 6:45PM;Bath-Brunswick Center;Daniel Qualls;09/05/2012 - 12/15/2012
+EDU;321;"Secondary Methods of Teaching I";0004;LEC;13535;Fr 4:00PM - 6:45PM;Bucksport;Daniel Qualls;09/05/2012 - 12/15/2012
+EDU;321;"Secondary Methods of Teaching I";0005;LEC;13536;Fr 4:00PM - 6:45PM;Calais Center;Daniel Qualls;09/05/2012 - 12/15/2012
+EDU;321;"Secondary Methods of Teaching I";0006;LEC;13537;Fr 4:00PM - 6:45PM;Deer Isle-Stonington;Daniel Qualls;09/05/2012 - 12/15/2012
+EDU;332;"Elementary Science Education Methods";0001;LEC;7689;Th 4:00PM - 6:50PM;Science&nbsp; 115;Donald R Sprangers;09/05/2012 - 12/15/2012
+EDU;334;"Integrated Reading &amp; Language Arts Methods I";0001;LEC;7690;Tu 4:00PM - 6:50PM;Torrey 226;Gael E Romei;09/05/2012 - 12/15/2012
+EDU;337;"Classroom Management";0001;FEX;7691;Tu 2:00PM - 3:50PM;Science&nbsp; 115;Daniel Qualls;09/05/2012 - 12/15/2012
+EDU;490;"Student Teaching";0001;FEX;7692;TBA;TBA;;09/05/2012 - 12/15/2012
+EDU;490;"Student Teaching";0002;FEX;14956;TBA;TBA;Margaret K Evans;09/05/2012 - 12/15/2012
+ELA;101;"Recreation &amp; Wellness Seminar";0001;FEX;8488;MoTuWeThFr 9:00AM - 4:50PM;Science&nbsp; 113;Andrea J Ednie;08/24/2012 - 08/31/2012
+ELA;101;"Recreation &amp; Wellness Seminar";0002;FEX;8489;Th 1:00PM - 3:50PM;FRC 14;Karen Beeftink;09/05/2012 - 12/15/2012
+ELA;112;"Community &amp; Place";0001;LEC;8485;Fr 1:00PM - 3:50PM;Torrey 232;Kevin R Athearn;09/05/2012 - 12/15/2012
+ELA;112;"Community &amp; Place";0002;LEC;8692;MoWe 3:30PM - 4:50PM;Science&nbsp; 109;James H Moreira;09/05/2012 - 12/15/2012
+ELA;221;"Humans &amp; Nature";0001;LEC;11702;TuTh 2:00PM - 3:20PM;Torrey 226;Randall Kindleberger;09/05/2012 - 12/15/2012
+ELA;221;"Humans &amp; Nature";0002;LEC;11855;MoFr 3:30PM - 4:50PM;Torrey 234;Tora Johnson;09/05/2012 - 12/15/2012
+ENG;;"";0001;LEC;14644;TuTh 3:30PM - 4:20PM;Torrey 232;Susan J Willey;09/05/2012 - 12/15/2012
+ENG;;"12";0001;LEC;8515;MoWe 2:00PM - 3:20PM;Torrey 226;Carol Jean Wolf;09/05/2012 - 12/15/2012
+ENG;;"12";0002;LEC;8520;TuTh 11:00AM - 12:20PM;Torrey 234;Carol Jean Wolf;09/05/2012 - 12/15/2012
+ENG;101;"Composition";0001;LEC;8522;MoWeFr 9:00AM - 9:50AM;Torrey 234;Gerard P NeCastro;09/05/2012 - 12/15/2012
+ENG;101;"Composition";0002;LEC;8524;TuTh 9:30AM - 10:50AM;Torrey 232;Richard Andrew Lamasney;09/05/2012 - 12/15/2012
+ENG;101;"Composition";0003;LEC;8527;TuTh 12:30PM - 1:50PM;Torrey 221;Richard Andrew Lamasney;09/05/2012 - 12/15/2012
+ENG;101;"Composition";0004;LEC;8528;Th 5:30PM - 8:20PM;Torrey 234;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;101;"Composition";0005;LEC;8585;TBA;Web;Gerard P NeCastro;09/05/2012 - 12/15/2012
+ENG;102;"Introduction to Literature";0001;LEC;8701;TBA;Web;Gerard P NeCastro;09/05/2012 - 12/15/2012
+ENG;113;"Introduction to Humanities";0001;LEC;8704;TBA;Web;Gerard P NeCastro;09/05/2012 - 12/15/2012
+ENG;114;"Topics in World Literature";0002;LEC;8587;TBA;Web;Sheila N Johnson;09/05/2012 - 12/15/2012
+ENG;117;"Intro to Literary &amp; Cultural Studies";0001;LEC;8588;TBA;Web;Marcus Anthony LiBrizzi;12/31/2012 - 01/18/2013
+ENG;210;"Beginning Creative Writing";0001;LEC;8529;TuTh 2:00PM - 3:20PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;227;"Young Adult Literature";0001;WEB;8589;TBA;Web;Heather Lynne Hepler;09/05/2012 - 12/15/2012
+ENG;325;"Masterpieces of British Literature";0001;LEC;8534;TuTh 3:30PM - 4:50PM;Torrey 234;Gerard P NeCastro;09/05/2012 - 12/15/2012
+ENG;325;"Masterpieces of British Literature";0002;LEC;11658;TBA;Web;Gerard P NeCastro;09/05/2012 - 12/15/2012
+ENG;371;"Intermediate Creative Writing Workshop";0001;LEC;8663;Tu 6:00PM - 8:50PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;371;"Intermediate Creative Writing Workshop";0002;LEC;8664;Tu 6:00PM - 8:50PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;371;"Intermediate Creative Writing Workshop";0003;LEC;8665;Tu 6:00PM - 8:50PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;371;"Intermediate Creative Writing Workshop";0004;LEC;8666;Tu 6:00PM - 8:50PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;471;"Advanced Creative Writing Workshop";0001;LEC;8668;Tu 6:00PM - 8:50PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;471;"Advanced Creative Writing Workshop";0002;LEC;8670;Tu 6:00PM - 8:50PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;471;"Advanced Creative Writing Workshop";0003;LEC;8674;Tu 6:00PM - 8:50PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENG;471;"Advanced Creative Writing Workshop";0004;LEC;8675;Tu 6:00PM - 8:50PM;Torrey 228;Robert A Froese;09/05/2012 - 12/15/2012
+ENV;102S;"Atlantic Salmon Conservation Projects";0001;SEM;8441;Tu 1:00PM - 4:50PM;Science&nbsp; 207;Sherrie A Sprangers;09/05/2012 - 12/15/2012
+ENV;103;"Oceanography";0010;LEC;8442;TuTh 8:30AM - 9:50AM;Science&nbsp; 115;Doug C McNaught;09/05/2012 - 12/15/2012
+ENV;103;"Oceanography";0011;LAB;8443;We 1:30PM - 4:20PM;Science&nbsp; 13;Doug C McNaught;09/05/2012 - 12/15/2012
+ENV;103;"Oceanography";0020;LEC;8444;TuTh 10:00AM - 11:20AM;Science&nbsp; 115;Doug C McNaught;09/05/2012 - 12/15/2012
+ENV;103;"Oceanography";0022;LAB;8445;Th 2:00PM - 4:50PM;Science&nbsp; 13;Doug C McNaught;09/05/2012 - 12/15/2012
+ENV;114;"Environmental Studies:";0001;FEX;8448;Mo 11:00AM - 11:50AM;Science&nbsp; 207;William H Otto;09/05/2012 - 10/29/2012
+ENV;214;"Environmental Studies:";0001;FEX;8449;Mo 11:00AM - 11:50AM;Science&nbsp; 207;William H Otto;09/05/2012 - 10/29/2012
+ENV;224;"Scientific Writing &amp; Presentation";0010;LEC;11859;Mo 12:00PM - 12:50PM;Torrey 228;Sherrie A Sprangers;09/05/2012 - 12/15/2012
+ENV;224;"Scientific Writing &amp; Presentation";0011;LAB;11860;Fr 11:00AM - 12:50PM;Torrey 228;Sherrie A Sprangers;09/05/2012 - 12/15/2012
+ENV;226;"Undergraduate Research in Environmental Studies";0001;RSG;8450;TBA;TBA;Staff;TBA
+ENV;301;"Special Topics in Environmental Studies";0001;LEC;8451;TBA;Web;Louis K McNally;09/05/2012 - 12/15/2012
+ENV;314;"Environmental Studies:";0001;FEX;8452;Mo 11:00AM - 11:50AM;Science&nbsp; 207;William H Otto;09/05/2012 - 10/29/2012
+ENV;326;"Undergraduate Research in Environmental Studies";0001;RSG;8454;TBA;TBA;Staff;TBA
+ENV;414;"Environmental Studies:";0001;FEX;8453;Mo 11:00AM - 11:50AM;Science&nbsp; 207;William H Otto;09/05/2012 - 10/29/2012
+FIA;103;"First";0001;SEM;8536;TuTh 2:00PM - 3:20PM;Dorward 3;Bernie Vinzani;09/05/2012 - 12/15/2012
+FIA;219;"Special Topics in Interdisciplinary Fine Arts";0001;LEC;8636;TuTh 9:30AM - 10:50AM;Torrey 226;Lisa J Athearn;09/05/2012 - 12/15/2012
+FIA;219;"Special Topics in Interdisciplinary Fine Arts";0002;LEC;11659;Mo 2:00PM - 4:50PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+FIA;400;"Senior Seminar";0001;SEM;8537;MoFr 12:30PM - 1:50PM;Powers&nbsp; 208;Bernie Vinzani;09/05/2012 - 12/15/2012
+FYS;101;"First";0001;LEC;7701;TuTh 12:30PM - 1:50PM;Torrey 232;Daniel Qualls;09/06/2012 - 10/04/2012
+FYS;101;"First";0002;LEC;8455;MoFr 2:00PM - 3:20PM;Torrey 223;Tora Johnson;09/05/2012 - 10/05/2012
+FYS;101;"First";0003;LEC;8686;Tu 12:30PM - 2:20PM;Torrey 234;Leslie D Bowman;09/05/2012 - 12/15/2012
+FYS;101;"First";0004;LEC;11773;Fr 3:00PM - 4:50PM;Science&nbsp; 109;Garret M Lee;09/05/2012 - 12/15/2012
+FYS;101;"First";0005;LEC;13772;Tu 12:30PM - 1:50PM;FRC 14;Karen Beeftink;09/05/2012 - 12/15/2012
+FYS;101;"First";0006;LEC;13989;Th 1:00PM - 1:50PM;TBA;Garret M Lee;09/05/2012 - 12/15/2012
+GEO;101;"Intro to Geography";0001;LEC;10335;TuTh 11:00AM - 12:20PM;Torrey 230;Daniel Qualls;09/05/2012 - 12/15/2012
+GIS;230;"Geographic Information Systems (GIS) Applications I";0010;LEC;8466;MoFr 12:30PM - 1:50PM;Torrey 223;Tora Johnson;09/05/2012 - 12/15/2012
+GIS;230;"Geographic Information Systems (GIS) Applications I";0011;LAB;8467;TBA;TBA;Tora Johnson;09/05/2012 - 12/15/2012
+GIS;230;"Geographic Information Systems (GIS) Applications I";0012;LAB;8468;We 1:00PM - 2:50PM;Torrey 223;Tora Johnson;09/05/2012 - 12/15/2012
+GIS;230;"Geographic Information Systems (GIS) Applications I";0020;LEC;8469;TBA;Web;Tora Johnson;09/05/2012 - 12/15/2012
+GIS;230;"Geographic Information Systems (GIS) Applications I";0022;LAB;8470;Sa 8:00AM - 4:50PM;Torrey 223;Tora Johnson;09/05/2012 - 12/15/2012
+HON;220;"Soliya:";0001;LEC;8633;MoWe 2:00PM - 3:20PM;Torrey 221;James H Moreira;09/05/2012 - 12/15/2012
+HON;312;"Soliya Advanced Projects";0001;LEC;8634;MoWe 2:00PM - 3:20PM;Torrey 221;James H Moreira;09/05/2012 - 12/15/2012
+HTY;103;"American History to 1865";0001;LEC;8582;MoWe 2:00PM - 3:20PM;Science&nbsp; 113;Kay S Kimball;09/05/2012 - 12/15/2012
+HTY;115;"World History to 1500";0001;LEC;8538;MoFr 11:00AM - 12:20PM;Torrey 230;Randall Kindleberger;09/05/2012 - 12/15/2012
+HTY;115;"World History to 1500";0002;LEC;8539;TuTh 12:30PM - 1:50PM;Torrey 230;Kay S Kimball;09/05/2012 - 12/15/2012
+HTY;115;"World History to 1500";0003;LEC;8590;TBA;Web;Randall Kindleberger;09/05/2012 - 12/15/2012
+HTY;116;"World History since 1500";0001;LEC;8540;TuTh 2:00PM - 3:20PM;Torrey 230;Lori E Cole;09/05/2012 - 12/15/2012
+HTY;316;"The Age of the French Revolution";0001;LEC;8541;MoFr 2:00PM - 3:20PM;Torrey 230;Randall Kindleberger;09/05/2012 - 12/15/2012
+HTY;320;"Topics in History";0001;LEC;8542;TuTh 11:00AM - 12:20PM;Torrey 232;Kay S Kimball;09/05/2012 - 12/15/2012
+HUM;113;"Introduction to Humanities";0001;LEC;8706;TBA;Web;Gerard P NeCastro;09/05/2012 - 12/15/2012
+INV;180;"Create:";0001;LEC;14466;Tu 5:30PM - 8:20PM;Torrey 232;Chad Benjamin Everett;09/05/2012 - 12/15/2012
+MAN;301;"Management";0001;WEB;8575;Th 6:00PM - 8:50PM;Torrey 226;Robert D Tropea;09/05/2012 - 12/15/2012
+MAN;302;"Small Bus Management &amp;Entrpreneurship";0001;LEC;7702;TuTh 9:30AM - 10:50AM;Torrey 104;Bernice M Murphy;09/05/2012 - 12/15/2012
+MAN;303;"Project Management";0001;LEC;13903;TBA;Web;Robert D Tropea;09/05/2012 - 12/15/2012
+MAN;315;"Essentials of Negotiation";0001;LEC;7704;TBA;Web;Robert D Tropea;09/05/2012 - 12/15/2012
+MAN;321;"Operations Management";0001;LEC;7705;TBA;Web;Robert D Tropea;09/05/2012 - 12/15/2012
+MAN;332;"Human Resource Management";0001;LEC;7706;MoFr 11:00AM - 12:20PM;Torrey 104;Bernice M Murphy;09/05/2012 - 12/15/2012
+MAR;101;"Marketing &amp; Entrepreneurship";0001;LEC;7708;TuTh 2:00PM - 3:20PM;Torrey 104;Bernice M Murphy;09/05/2012 - 12/15/2012
+MAR;101;"Marketing &amp; Entrepreneurship";0002;LEC;7709;Tu 6:00PM - 8:20PM;Torrey 234;Scott Sawyer;09/05/2012 - 12/15/2012
+MAR;101;"Marketing &amp; Entrepreneurship";0003;LEC;7710;TBA;Web;Robert D Tropea;09/05/2012 - 12/15/2012
+MAR;215;"Marketing Channels";0001;LEC;7711;TBA;Web;Robert D Tropea;12/17/2012 - 01/15/2013
+MAR;218;"Advertising";0001;LEC;7712;TBA;Web;Robert D Tropea;12/17/2012 - 01/15/2013
+MAR;306;"Marketing Management for Entrepreneurs";0001;WEB;8391;TBA;Web;Robert D Tropea;09/05/2012 - 12/15/2012
+MAT;;"";0001;LEC;8471;MoWeFr 9:00AM - 9:50AM;Torrey 230;Melanie Laurel Tardiff;09/05/2012 - 12/15/2012
+MAT;;"";0002;LEC;8472;MoWeFr 10:00AM - 10:50AM;Torrey 230;Melanie Laurel Tardiff;09/05/2012 - 12/15/2012
+MAT;;"12";0001;LEC;8473;TuTh 3:30PM - 4:50PM;Torrey 230;Michael Fish;09/05/2012 - 12/15/2012
+MAT;102;"Intermediate Algebra";0001;LEC;8474;MoWeFr 9:00AM - 9:50AM;Science&nbsp; 109;Noah Dean;09/05/2012 - 12/15/2012
+MAT;102;"Intermediate Algebra";0002;LEC;8475;TuTh 6:00PM - 7:20PM;Torrey 230;Michael Fish;09/05/2012 - 12/15/2012
+MAT;107;"Structure of Arithmetic I";0001;LEC;14283;We 1:00PM - 3:50PM;Torrey 230;Michael Fish;09/05/2012 - 12/15/2012
+MAT;113;"Introduction to Statistics";0001;LEC;8476;TuTh 12:30PM - 1:50PM;Torrey 113;Noah Dean;09/05/2012 - 12/15/2012
+MAT;113;"Introduction to Statistics";0002;LEC;8477;TBA;Web;Cynthia Roberts;09/05/2012 - 12/15/2012
+MAT;126;"Calculus I";0001;LEC;8478;MoWeFr 3:00PM - 3:50PM;Science&nbsp; 207;Noah Dean;09/05/2012 - 12/15/2012;Th 4:00PM - 4:50PM;Science&nbsp; 207;Noah Dean;09/05/2012 - 12/15/2012
+MAT;215;"Applied Statistics";0010;LEC;8479;MoWe 9:00AM - 10:20AM;Torrey 106;Brian F Beal;09/05/2012 - 12/15/2012
+MAT;215;"Applied Statistics";0011;LAB;8480;Tu 11:00AM - 12:50PM;Torrey 106;Brian F Beal;09/05/2012 - 12/15/2012
+MTR;101;"Meteorology";0001;WEB;8481;TBA;Web;Louis K McNally;09/05/2012 - 12/15/2012
+MUS;101;"UMM Chorale";0001;MUS;8654;Tu 6:00PM - 8:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;103;"Applied Music: Private Lessons";0001;MUS;8543;TBA;TBA;Vicki R NeCastro;09/05/2012 - 12/15/2012
+MUS;103;"Applied Music: Private Lessons";0002;MUS;8544;TBA;TBA;Alan G Cook;09/05/2012 - 12/15/2012
+MUS;103;"Applied Music: Private Lessons";0003;MUS;8545;TBA;TBA;Patricia Caya;09/05/2012 - 12/15/2012
+MUS;103;"Applied Music: Private Lessons";0004;MUS;8546;TBA;TBA;Duane M Ingalls;09/05/2012 - 12/15/2012
+MUS;103;"Applied Music: Private Lessons";0005;MUS;8547;TBA;TBA;Barbara E Lapham;09/05/2012 - 12/15/2012
+MUS;103;"Applied Music: Private Lessons";0006;MUS;8548;TBA;TBA;Barbara E Lapham;09/05/2012 - 12/15/2012
+MUS;107;"Applied Music: Performing Groups";0001;MUS;8638;Mo 6:00PM - 8:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;107;"Applied Music: Performing Groups";0002;MUS;8642;Tu 6:30PM - 8:30PM;POW 3 - Johnny Johnson Suite;Duane M Ingalls;09/05/2012 - 12/15/2012
+MUS;107;"Applied Music: Performing Groups";0003;MUS;8646;We 6:00PM - 9:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;107;"Applied Music: Performing Groups";0004;MUS;8650;Fr 3:30PM - 5:30PM;Powers&nbsp; 201;Alan G Cook;09/05/2012 - 12/15/2012
+MUS;119;"Fundamentals of Music: Literacy";0001;LEC;8578;TuTh 11:00AM - 12:20PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;207;"Applied Music: Performing Groups";0001;MUS;8639;Mo 6:00PM - 8:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;207;"Applied Music: Performing Groups";0002;MUS;8643;Tu 6:30PM - 8:30PM;POW 3 - Johnny Johnson Suite;Duane M Ingalls;09/05/2012 - 12/15/2012
+MUS;207;"Applied Music: Performing Groups";0003;MUS;8647;We 6:00PM - 9:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;207;"Applied Music: Performing Groups";0004;MUS;8651;Fr 3:30PM - 5:30PM;Powers&nbsp; 201;Alan G Cook;09/05/2012 - 12/15/2012
+MUS;301;"UMM Chorale";0001;MUS;8655;Tu 6:00PM - 8:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;307;"Applied Music: Performing Group";0001;MUS;8640;Mo 6:00PM - 8:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;307;"Applied Music: Performing Group";0002;MUS;8644;Tu 6:30PM - 8:30PM;POW 3 - Johnny Johnson Suite;Duane M Ingalls;09/05/2012 - 12/15/2012
+MUS;307;"Applied Music: Performing Group";0003;MUS;8648;We 6:00PM - 9:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;307;"Applied Music: Performing Group";0004;MUS;8652;Fr 3:30PM - 5:30PM;Powers&nbsp; 201;Alan G Cook;09/05/2012 - 12/15/2012
+MUS;407;"Applied Music: Performing Groups";0001;MUS;8641;Mo 6:00PM - 8:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;407;"Applied Music: Performing Groups";0002;MUS;8645;Tu 6:30PM - 8:30PM;POW 3 - Johnny Johnson Suite;Duane M Ingalls;09/05/2012 - 12/15/2012
+MUS;407;"Applied Music: Performing Groups";0003;MUS;8649;We 6:00PM - 9:00PM;Powers&nbsp; 201;Gene C Nichols;09/05/2012 - 12/15/2012
+MUS;407;"Applied Music: Performing Groups";0004;MUS;8653;Fr 3:30PM - 5:30PM;Powers&nbsp; 201;Alan G Cook;09/05/2012 - 12/15/2012
+PHE;101;"Physical Education Activity";0001;PHE;8385;TuTh 4:00PM - 4:50PM;FRC 15;Constance E Harter-Bagley;09/05/2012 - 12/15/2012
+PHE;101;"Physical Education Activity";0003;PHE;8387;TuTh 8:00AM - 9:00AM;CLL Pool;Julia A Millay;09/05/2012 - 12/15/2012
+PHE;101;"Physical Education Activity";0004;PHE;8388;TuTh 10:00AM - 10:50AM;FRC Racquetball Courts;Gene C Nichols;09/05/2012 - 12/15/2012
+PHE;101;"Physical Education Activity";0005;PHE;14968;Mo 6:00PM - 7:00PM;FRC Lower Gym;Amanda Cornett;09/05/2012 - 12/15/2012
+PHE;101;"Physical Education Activity";0006;PHE;14969;We 6:00PM - 7:00PM;CLL Pool;Amanda Cornett;09/05/2012 - 12/15/2012
+PHE;101A;"Physical Education Activity";0001;PHE;8493;TBA;TBA;Amy R Fritz;09/05/2012 - 10/24/2012
+PHE;101A;"Physical Education Activity";0002;PHE;8494;TBA;TBA;Anthony J Turini;09/05/2012 - 10/24/2012
+PHE;101A;"Physical Education Activity";0003;PHE;8495;TBA;TBA;Anthony J Turini;09/05/2012 - 10/24/2012
+PHE;101A;"Physical Education Activity";0004;PHE;8496;TBA;TBA;Nathaniel A Case;09/05/2012 - 10/24/2012
+PHE;101A;"Physical Education Activity";0005;PHE;8497;TBA;TBA;Howard Mills;09/05/2012 - 10/24/2012
+PHE;103;"Open Water I SCUBA";0010;LEC;8501;Fr 5:00PM - 6:50PM;FRC 14;John A Daley;09/05/2012 - 10/24/2012
+PHE;103;"Open Water I SCUBA";0011;LAB;8502;Fr 7:30PM - 9:50PM;CLL Pool;John A Daley;09/05/2012 - 10/24/2012
+PHE;105;"Personal Wellness";0001;PHE;8389;TBA;Web;Peter J Knowles;09/05/2012 - 12/15/2012
+PHE;201;"Physical Education Activity";0001;PHE;14645;TuTh 5:00PM - 5:50PM;FRC 15;Constance E Harter-Bagley;09/05/2012 - 12/15/2012
+PHE;201A;"Physical Education Activity";0001;PHE;8530;TBA;TBA;Brac Brady;10/25/2012 - 12/14/2012
+PHE;201A;"Physical Education Activity";0002;PHE;8531;TBA;TBA;Ordman Alley;10/25/2012 - 12/14/2012
+PHE;210;"Advanced Open Water SCUBA";0010;LEC;8532;Fr 5:00PM - 6:50PM;FRC Lower Gym;John A Daley;10/25/2012 - 12/14/2012
+PHE;210;"Advanced Open Water SCUBA";0011;LAB;8533;Fr 7:30PM - 9:50PM;CLL Pool;John A Daley;10/25/2012 - 12/14/2012
+PHI;101;"Awakening Through Nature:";0001;LEC;8725;We 7:00PM - 9:45PM;Torrey 102;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0002;LEC;13409;We 7:00PM - 9:45PM;Bangor Hall - UCB;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0003;LEC;13410;We 7:00PM - 9:45PM;Bath-Brunswick Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0004;LEC;13411;We 7:00PM - 9:45PM;Bucksport;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0005;LEC;13412;We 7:00PM - 9:45PM;Calais Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0006;LEC;13413;We 7:00PM - 9:45PM;Deer Isle-Stonington;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0007;LEC;13414;We 7:00PM - 9:45PM;Ellsworth Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0008;LEC;13415;We 7:00PM - 9:45PM;East Millinocket Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0009;LEC;13416;We 7:00PM - 9:45PM;East Sullivan;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0010;LEC;13417;We 7:00PM - 9:45PM;Belfast;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0011;LEC;13418;We 7:00PM - 9:45PM;Greenville;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0012;LEC;13419;We 7:00PM - 9:45PM;Houlton Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0013;LEC;13420;We 7:00PM - 9:45PM;Jackman;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0014;LEC;13421;We 7:00PM - 9:45PM;Stacyville;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0015;LEC;13422;We 7:00PM - 9:45PM;Augusta campus;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0016;LEC;13423;We 7:00PM - 9:45PM;Kingfield;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0017;LEC;13424;We 7:00PM - 9:45PM;Lewiston-Auburn College;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0018;LEC;13425;We 7:00PM - 9:45PM;Fairfield;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0019;LEC;13426;We 7:00PM - 9:45PM;South Berwick;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0020;LEC;13427;We 7:00PM - 9:45PM;Lincoln;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0021;LEC;13428;We 7:00PM - 9:45PM;Mount Desert;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0022;LEC;13429;We 7:00PM - 9:45PM;Farmington - Mount Blue HS;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0023;LEC;13430;We 7:00PM - 9:45PM;Thorndike;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0024;LEC;13431;We 7:00PM - 9:45PM;North Haven;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0025;LEC;13432;We 7:00PM - 9:45PM;Newport;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0026;LEC;13433;We 7:00PM - 9:45PM;Fort Kent Campus;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0027;LEC;13434;We 7:00PM - 9:45PM;Dover-Foxcroft;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0028;LEC;13435;We 7:00PM - 9:45PM;Presque Isle Campus;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0029;LEC;13436;We 7:00PM - 9:45PM;Rangeley;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0030;LEC;13437;We 7:00PM - 9:45PM;Rockland Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0031;LEC;13438;We 7:00PM - 9:45PM;Rumford/Mexico Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0032;LEC;13439;We 7:00PM - 9:45PM;Saco/Biddeford Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0033;LEC;13440;We 7:00PM - 9:45PM;Island Falls;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0034;LEC;13441;We 7:00PM - 9:45PM;Sanford Center;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0035;LEC;13442;We 7:00PM - 9:45PM;Skowhegan;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0036;LEC;13443;We 7:00PM - 9:45PM;Spruce Mountain Adult Ed;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0037;LEC;13444;We 7:00PM - 9:45PM;Bethel;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0038;LEC;13445;We 7:00PM - 9:45PM;VanBuren High School;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0039;LEC;13446;We 7:00PM - 9:45PM;Vinalhaven;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0040;LEC;13447;We 7:00PM - 9:45PM;Winthrop;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0041;LEC;13448;We 7:00PM - 9:45PM;Wiscasset;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHI;101;"Awakening Through Nature:";0042;LEC;13449;We 7:00PM - 9:45PM;South Paris;Thomas R Halkett;09/05/2012 - 12/15/2012
+PHY;111;"Physics I";0010;LEC;8482;MoWeFr 1:00PM - 1:50PM;Science&nbsp; 109;Noah Dean;09/05/2012 - 12/15/2012
+PHY;111;"Physics I";0011;LAB;8483;Th 10:00AM - 11:50AM;Science&nbsp; 207;Noah Dean;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0001;LEC;8576;We 1:00PM - 2:15PM;Torrey 102;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0002;LEC;13492;We 1:00PM - 2:15PM;Bangor Hall - UCB;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0003;LEC;13493;We 1:00PM - 2:15PM;Bath-Brunswick Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0004;LEC;13494;We 1:00PM - 2:15PM;Bucksport;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0005;LEC;13495;We 1:00PM - 2:15PM;Caribou;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0006;LEC;13496;We 1:00PM - 2:15PM;Deer Isle-Stonington;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0007;LEC;13497;We 1:00PM - 2:15PM;Ellsworth Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0008;LEC;13498;We 1:00PM - 2:15PM;East Millinocket Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0009;LEC;13499;We 1:00PM - 2:15PM;East Sullivan;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0010;LEC;13500;We 1:00PM - 2:15PM;Belfast;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0011;LEC;13501;We 1:00PM - 2:15PM;Greenville;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0012;LEC;13502;We 1:00PM - 2:15PM;Houlton Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0013;LEC;13503;We 1:00PM - 2:15PM;Jackman;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0014;LEC;13504;We 1:00PM - 2:15PM;Stacyville;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0015;LEC;13505;We 1:00PM - 2:15PM;Augusta campus;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0016;LEC;13506;We 1:00PM - 2:15PM;Kingfield;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0017;LEC;13507;We 1:00PM - 2:15PM;Lewiston-Auburn College;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0018;LEC;13508;We 1:00PM - 2:15PM;Lisbon Falls;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0019;LEC;13509;We 1:00PM - 2:15PM;South Berwick;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0020;LEC;13510;We 1:00PM - 2:15PM;Lincoln;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0021;LEC;13511;We 1:00PM - 2:15PM;Mount Desert;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0022;LEC;13512;We 1:00PM - 2:15PM;Farmington - Mount Blue HS;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0023;LEC;13513;We 1:00PM - 2:15PM;Thorndike;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0024;LEC;13514;We 1:00PM - 2:15PM;North Haven;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0025;LEC;13515;We 1:00PM - 2:15PM;Newport;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0026;LEC;13516;We 1:00PM - 2:15PM;Fort Kent Campus;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0028;LEC;13518;We 1:00PM - 2:15PM;Presque Isle Campus;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0029;LEC;13519;We 1:00PM - 2:15PM;Rangeley;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0030;LEC;13520;We 1:00PM - 2:15PM;Rockland Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0031;LEC;13521;We 1:00PM - 2:15PM;Rumford/Mexico Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0032;LEC;13522;We 1:00PM - 2:15PM;Saco/Biddeford Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0033;LEC;13523;We 1:00PM - 2:15PM;Island Falls;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0034;LEC;13524;We 1:00PM - 2:15PM;Sanford Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0035;LEC;13525;We 1:00PM - 2:15PM;Skowhegan;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0036;LEC;13526;We 1:00PM - 2:15PM;Spruce Mountain Adult Ed;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0037;LEC;13527;We 1:00PM - 2:15PM;Bethel;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0038;LEC;13528;We 1:00PM - 2:15PM;VanBuren High School;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0039;LEC;13529;We 1:00PM - 2:15PM;Vinalhaven;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0040;LEC;13530;We 1:00PM - 2:15PM;Wiscasset;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0041;LEC;13531;We 1:00PM - 2:15PM;South Paris;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0042;LEC;13729;We 1:00PM - 2:15PM;Calais Center;Jon Reisman;09/05/2012 - 12/15/2012
+POS;215;"American National Government";0043;LEC;13532;TBA;Web;Jon Reisman;09/05/2012 - 12/15/2012
+PSY;100;"Animal Behavior and Selection of Service Dogs";0010;LEC;11771;Mo 1:00PM - 3:45PM;Torrey 102;Katherine C Hecht;09/05/2012 - 12/15/2012
+PSY;101;"Animal Behavior &amp; Selection of Service Dogs Lab";0011;LAB;11772;Mo 5:00PM - 6:50PM;Science&nbsp; 109;Katherine C Hecht;09/05/2012 - 12/15/2012
+PSY;102;"Personal Growth";0001;LEC;8580;MoWe 2:00PM - 3:20PM;Torrey 228;Lois-Ann Kuntz;09/05/2012 - 12/15/2012
+PSY;102;"Personal Growth";0002;LEC;8581;MoWe 3:30PM - 4:50PM;Torrey 228;Lois-Ann Kuntz;09/05/2012 - 12/15/2012
+PSY;102;"Personal Growth";0003;LEC;8591;TBA;Web;Matthew David Day;09/05/2012 - 12/15/2012
+PSY;110;"Intro to Psychology";0001;LEC;8553;MoWe 2:00PM - 3:20PM;Torrey 104;Heather Leigh Ball;09/05/2012 - 12/15/2012
+PSY;110;"Intro to Psychology";0002;LEC;8592;TBA;Web;Uriah Anderson;09/05/2012 - 12/15/2012
+PSY;201;"Developmental Psychology";0001;WEB;8593;TBA;Web;Jordan A Litman;09/05/2012 - 12/15/2012
+PSY;211;"Introduction to Behavioral &amp; Community Health Systems";0001;LEC;8554;Th 5:30PM - 8:20PM;Torrey 232;Meghan W Duff;09/05/2012 - 12/15/2012
+PSY;213;"Psychosocial Rehabilitation Practices";0001;LEC;8594;TBA;Web;Frank J Lane;09/05/2012 - 12/15/2012
+PSY;215;"Psychology of Gender";0001;LEC;11770;TBA;Web;Jordan A Litman;12/31/2012 - 01/18/2013
+PSY;222;"Psychology Professions &amp; Ethics";0001;LEC;8556;Mo 5:30PM - 8:20PM;Torrey 228;Charles C Crittenden;09/05/2012 - 12/15/2012
+PSY;311;"Social Psychology";0001;LEC;8558;MoWe 2:00PM - 3:20PM;Torrey 232;Uriah Anderson;09/05/2012 - 12/15/2012
+PSY;311;"Social Psychology";0002;LEC;8595;TBA;Web;Uriah Anderson;09/05/2012 - 12/15/2012
+PSY;318;"Psychology of Curiosity";0001;LEC;8596;TBA;Web;Jordan A Litman;09/05/2012 - 12/15/2012
+PSY;332;"Crisis Identification &amp; Resolution";0001;LEC;8560;We 5:30PM - 8:20PM;Torrey 221;Corey K Schwinn;09/05/2012 - 12/15/2012
+REM;110;"Intro to Environmental Recreation &amp; Tourism Managment";0001;LEC;8372;MoWeFr 10:00AM - 10:50AM;Torrey 221;Karen Beeftink;09/05/2012 - 12/15/2012
+REM;121;"Outdoor Recreation I";0010;LEC;8373;MoWeFr 9:00AM - 9:50AM;FRC 14;Richard L Scribner;09/05/2012 - 12/15/2012
+REM;121;"Outdoor Recreation I";0011;LAB;8374;Mo 1:00PM - 4:50PM;FRC Lower Gym;Richard L Scribner;09/05/2012 - 12/15/2012
+REM;124;"Recreation Safety and First Aid";0001;LEC;8375;TuTh 5:30PM - 7:20PM;FRC 14;Jo-Ellen M Harvey;09/05/2012 - 12/15/2012
+REM;202;"Recreational Sports Methods";0001;LEC;8376;TuTh 11:00AM - 12:20PM;FRC 14;Andrea J Ednie;09/05/2012 - 12/15/2012
+REM;210;"Nature";0001;FEX;13292;Mo 5:30PM - 6:20PM;Science&nbsp; 113;Karen Beeftink;10/15/2012 - 01/19/2013;TBA;TBA;Karen Beeftink;01/03/2013 - 01/19/2013
+REM;227;"Backcountry Expedition Skills";0001;FEX;13619;MoFr 11:00AM - 11:50AM;FRC 14;Richard L Scribner;09/05/2012 - 12/15/2012
+REM;230;"Outdoor Leadership";0001;LEC;8377;We 1:00PM - 1:50PM;FRC 14;Andrea J Ednie;09/05/2012 - 12/15/2012;Fr 1:00PM - 3:50PM;FRC 14;Andrea J Ednie;09/05/2012 - 12/15/2012
+REM;301;"Park and Recreation Facilities Operations";0001;LEC;8378;MoWeFr 10:00AM - 10:50AM;FRC 14;Richard L Scribner;09/05/2012 - 12/15/2012
+REM;305;"Computer Applications in Parks and Recreation";0001;LEC;8379;TuTh 9:30AM - 10:50AM;Torrey 113;Karen Beeftink;09/05/2012 - 12/15/2012
+REM;321;"Recreation Administration and Supervision";0001;LEC;8381;TuTh 8:00AM - 9:20AM;Torrey 232;Andrea J Ednie;09/05/2012 - 12/15/2012
+REM;327;"Recreation Behavior &amp; the Environment";0001;LEC;8382;Tu 12:30PM - 1:50PM;Science&nbsp; 115;Andrea J Ednie;09/05/2012 - 12/15/2012;Th 12:30PM - 3:20PM;Science&nbsp; 115;Andrea J Ednie;09/05/2012 - 12/15/2012
+REM;443;"Recreation Leadrship Practicum";0001;LEC;8383;TBA;TBA;Andrea J Ednie;09/05/2012 - 12/15/2012
+SED;100;"Animal Behavior &amp; Selection of Service Dogs";0010;LEC;11768;Mo 1:00PM - 3:45PM;Torrey 102;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;100;"Animal Behavior &amp; Selection of Service Dogs";0011;LEC;13576;Mo 1:00PM - 3:45PM;Bangor Hall - UCB;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;100;"Animal Behavior &amp; Selection of Service Dogs";0012;LEC;13577;Mo 1:00PM - 3:45PM;Bath-Brunswick Center;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;100;"Animal Behavior &amp; Selection of Service Dogs";0013;LEC;13578;Mo 1:00PM - 3:45PM;Bucksport;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;100;"Animal Behavior &amp; Selection of Service Dogs";0014;LEC;13579;Mo 1:00PM - 3:45PM;Caribou;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;100;"Animal Behavior &amp; Selection of Service Dogs";0015;LEC;13580;Mo 1:00PM - 3:45PM;Deer Isle-Stonington;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;101;"Animal Behavior &amp; Selection of Service Dogs Lab";0011;LAB;11769;Mo 5:00PM - 6:50PM;Science&nbsp; 109;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;101;"Animal Behavior &amp; Selection of Service Dogs Lab";0012;LAB;13617;Fr 4:00PM - 6:50PM;TBA;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;101;"Animal Behavior &amp; Selection of Service Dogs Lab";0013;LAB;13618;Mo 4:00PM - 6:50PM;TBA;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;101;"Animal Behavior &amp; Selection of Service Dogs Lab";0014;LAB;14818;Fr 4:00PM - 6:50PM;TBA;Katherine C Hecht;09/05/2012 - 12/15/2012
+SED;310;"Dimensions of Exceptionality in the Classroom";0001;LEC;7695;Mo 9:00AM - 11:45AM;Torrey 103;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;310;"Dimensions of Exceptionality in the Classroom";0003;LEC;13332;Mo 9:00AM - 11:45AM;Ellsworth Center;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;310;"Dimensions of Exceptionality in the Classroom";0004;LEC;13333;Mo 9:00AM - 11:45AM;East Millinocket Center;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;310;"Dimensions of Exceptionality in the Classroom";0005;LEC;13334;Mo 9:00AM - 11:45AM;Houlton Center;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;310;"Dimensions of Exceptionality in the Classroom";0006;LEC;13336;Mo 9:00AM - 11:45AM;Augusta - UMA Campus;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;310;"Dimensions of Exceptionality in the Classroom";0007;LEC;13337;Mo 9:00AM - 11:45AM;Lewiston-Auburn College;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;320;"Special Education Law";0001;WEB;7697;TBA;Web;Joseph L Cassidy;09/05/2012 - 12/15/2012
+SED;321;"Data &amp; Standards";0001;LEC;14503;TBA;Web;Christi McCurry;09/05/2012 - 12/15/2012
+SED;325;"Assessment in Special Education";0001;LEC;7699;Mo 4:00PM - 6:45PM;Torrey 103;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;325;"Assessment in Special Education";0002;LEC;13345;Mo 4:00PM - 6:45PM;Bath/Brunswick Center;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;325;"Assessment in Special Education";0003;LEC;13346;Mo 4:00PM - 6:45PM;Ellsworth Center;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;325;"Assessment in Special Education";0004;LEC;13347;Mo 4:00PM - 6:45PM;East Millinocket Center;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;325;"Assessment in Special Education";0005;LEC;13348;Mo 4:00PM - 6:45PM;Houlton Center;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;325;"Assessment in Special Education";0006;LEC;13349;Mo 4:00PM - 6:45PM;Augusta - UMA Campus;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;330;"Math in Special Education";0001;WEB;7696;TBA;Web;Michael Fish;09/05/2012 - 12/15/2012
+SED;362;"Typical &amp; Atypical Expressive &amp; Receptive Language";0001;WEB;7698;TBA;Web;Kenny P Bourgoin;09/05/2012 - 12/15/2012
+SED;401;"Working with Students with Vision Impairments";0001;LEC;14514;TBA;Web;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SED;490;"Student Teaching in Special Education";0001;FEX;7694;TBA;TBA;Heather Leigh Ball;09/05/2012 - 12/15/2012
+SOC;114;"Intro to Sociology";0001;LEC;8561;TuTh 9:30AM - 10:50AM;Torrey 228;Jody Grimes;09/05/2012 - 12/15/2012
+SOC;114;"Intro to Sociology";0002;LEC;8598;TBA;Web;Pamela Feeney;09/05/2012 - 12/15/2012
+SOC;214;"Crime &amp; Society";0001;LEC;8712;TBA;Web;Robert C Hauhart;09/05/2012 - 12/15/2012
+SPE;104;"Public Speaking";0001;LEC;8562;MoWeFr 10:00AM - 10:50AM;Torrey 234;Lisa J Athearn;09/05/2012 - 12/15/2012
+SPE;104;"Public Speaking";0002;LEC;8563;TuTh 11:00AM - 12:20PM;Science&nbsp; 109;Arthur E Hill;09/05/2012 - 12/15/2012
+SPE;104;"Public Speaking";0003;LEC;8564;TuTh 12:30PM - 1:50PM;Science&nbsp; 109;Arthur E Hill;09/05/2012 - 12/15/2012
+SPE;104;"Public Speaking";0004;LEC;8565;We 5:30PM - 8:20PM;Torrey 234;Lisa J Athearn;09/05/2012 - 12/15/2012
+SSC;320;"Research Methods &amp; Design";0001;LEC;8566;TuTh 2:00PM - 4:50PM;Torrey 221;Lois-Ann Kuntz;09/05/2012 - 12/15/2012
+THE;101;"Intro to Theatre";0001;LEC;8567;TuTh 3:30PM - 4:50PM;Science&nbsp; 109;Arthur E Hill;09/05/2012 - 12/15/2012
+THE;116;"Play Production I";0001;STU;14451;Sa 1:00PM - 4:50PM;Performing Arts Ctr;Gene C Nichols;09/05/2012 - 12/15/2012
+VID;101;"Digital Video Production";0001;LEC;8637;TuTh 9:30AM - 10:50AM;Torrey 226;Lisa J Athearn;09/05/2012 - 12/15/2012
+WST;110;"Intro to Women's Studies";0001;LEC;8600;TBA;Web;Charles C Crittenden;09/05/2012 - 12/15/2012

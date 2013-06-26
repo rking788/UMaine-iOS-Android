@@ -1,0 +1,265 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+ANT;100;"Introduction to Anthropology";0001;LEC;13024;MoTh 9:30AM - 10:50AM;Old Model School 103;Mariella R Squire;09/04/2012 - 12/21/2012
+ANT;100;"Introduction to Anthropology";2001;LEC;13025;TBA;Online;Mariella R Squire;09/04/2012 - 12/21/2012
+ANT;297;"Preceptorship in Human Science";0051;LEC;13033;Mo 6:30PM - 9:20PM;Cyr Hall 200;Staff;09/04/2012 - 12/21/2012
+ANT;310;"Comparative World Religions";2001;LEC;13027;TBA;Online;Mariella R Squire;09/04/2012 - 12/21/2012
+ART;100;"History of Art: Prehistoric to Renaissance";2001;LEC;11913;TBA;Online;Therese L Provenzano;09/04/2012 - 12/21/2012
+ART;200;"Fundamentals of Art";0001;LEC;11863;We 8:20AM - 11:00AM;Cyr Hall 204, Art Room;Therese L Provenzano;09/04/2012 - 12/21/2012
+ASP;;"50";0001;LEC;13738;MoTh 2:00PM - 3:20PM;Gymnasium 120;Aaron Tolbert;09/04/2012 - 12/21/2012
+ASP;;"50";0002;LEC;13739;TuFr 2:00PM - 3:20PM;Cyr Hall 203;Aaron Tolbert;09/04/2012 - 12/21/2012
+ASP;;"50";2001;LEC;13768;TBA;Online;Aaron Tolbert;09/04/2012 - 12/21/2012
+ASP;;"60";0002;LEC;13740;TuFr 9:30AM - 10:50AM;Gymnasium 118;Aaron Tolbert;09/04/2012 - 12/21/2012
+ASP;;"60";2001;LEC;13769;TBA;Online;Aaron Tolbert;09/04/2012 - 12/21/2012
+ASP;;"70";0001;LEC;13742;MoWe 3:30PM - 4:50PM;Cyr Hall 201;Patricia L Richard;09/04/2012 - 12/21/2012
+ASP;110;"Mathematics Applications";0001;LEC;13741;MoTh 1:00PM - 1:50PM;Cyr Hall 207;Angela T Theriault;09/04/2012 - 12/21/2012;We 1:00PM - 1:50PM;TBA;Angela T Theriault;09/04/2012 - 12/21/2012
+ASP;110;"Mathematics Applications";0002;LEC;13743;MoTh 11:00AM - 11:50AM;Cyr Hall 203;Angela T Theriault;09/04/2012 - 12/21/2012;We 11:00AM - 11:50AM;Cyr Hall 207;Angela T Theriault;09/04/2012 - 12/21/2012
+ASP;110;"Mathematics Applications";2001;LEC;13770;TBA;Online;Angela T Theriault;09/04/2012 - 12/21/2012
+BIO;100;"General Biology";0001;LEC;13293;MoTh 9:30AM - 10:50AM;Cyr Hall 203;Kimberly M Borges-Therien;09/04/2012 - 12/21/2012
+BIO;100L;"General Biology Lab";0001;LAB;13294;We 9:00AM - 11:40AM;Cyr Hall 209, Biology lab;Kimberly M Borges-Therien;09/04/2012 - 12/21/2012
+BIO;130;"Introduction to Biotechnology";0001;LEC;13295;MoTh 12:30PM - 1:50PM;Cyr Hall 203;Kimberly M Borges-Therien;09/04/2012 - 12/21/2012
+BIO;130L;"Intro to Biotechnology Lab";0001;LAB;14268;We 12:00PM - 1:50PM;Cyr Hall 206, Biology Lab;Kimberly M Borges-Therien;09/04/2012 - 12/21/2012
+BIO;220;"Anatomy &amp; Physiology I";0001;LEC;13071;MoWeTh 11:00AM - 11:50AM;Cyr Hall 205;Deborah J Pringnitz;09/04/2012 - 12/21/2012
+BIO;220;"Anatomy &amp; Physiology I";0002;LEC;13072;MoWeTh 1:00PM - 1:50PM;Cyr Hall 205;Deborah J Pringnitz;09/04/2012 - 12/21/2012
+BIO;220L;"Anatomy";0001;LAB;13094;Tu 1:00PM - 2:50PM;Cyr Hall 206, Biology Lab;Stephen E Hansen;09/04/2012 - 12/21/2012
+BIO;220L;"Anatomy";0002;LAB;13095;Tu 3:00PM - 4:50PM;Cyr Hall 206, Biology Lab;Stephen E Hansen;09/04/2012 - 12/21/2012
+BIO;220L;"Anatomy";0003;LAB;13096;We 3:00PM - 4:50PM;Cyr Hall 206, Biology Lab;Stephen E Hansen;09/04/2012 - 12/21/2012
+BIO;309;"Dendrology";0001;LEC;13065;MoTh 2:00PM - 4:50PM;Cyr Hall 209, Biology lab;Steven B Selva;09/04/2012 - 12/21/2012
+BIO;310;"Taxonomy of Vascular Plants";0001;LEC;13062;TuFr 2:00PM - 4:50PM;Cyr Hall 209, Biology lab;Steven B Selva;09/04/2012 - 12/21/2012
+BIO;363;"Human Nutrition";0001;LEC;13074;TuFr 11:00AM - 12:20PM;Old Model School 103;Deborah J Pringnitz;09/04/2012 - 12/21/2012
+BIO;401;"Pathophysiology";0001;LEC;13077;MoTh 9:30AM - 10:50AM;Cyr Hall 205;Deborah J Pringnitz;09/04/2012 - 12/21/2012
+BIO;401;"Pathophysiology";0002;LEC;13078;Mo 9:30AM - 10:50AM;Cyr Hall 205;Deborah J Pringnitz;09/04/2012 - 12/21/2012;Fr 8:00AM - 9:30AM;Old Model School 103;Deborah J Pringnitz;09/04/2012 - 12/21/2012
+BIO;452;"Field Ecology";0001;LEC;13087;Fr 8:00AM - 11:50AM;Cyr Hall 206, Biology Lab;Stephen E Hansen;09/04/2012 - 12/21/2012
+BIO;498;"Senior Project";0001;LEC;13296;We 12:00PM - 12:50PM;Cyr Hall 209, Biology lab;Kimberly M Borges-Therien;09/04/2012 - 12/21/2012
+BUS;100;"Accounting Principles I";0001;LEC;12939;MoWeTh 11:00AM - 11:50AM;Old Model School 101;Bradley G Ritz;09/04/2012 - 12/21/2012
+BUS;101;"Accounting Principles II";2001;LEC;12941;TBA;Online;Bradley G Ritz;09/04/2012 - 12/21/2012
+BUS;118;"Innovation Engineering";0001;LEC;12948;Tu 6:00PM - 8:50PM;Cyr Hall 201;Leo L Trudel;09/04/2012 - 12/21/2012
+BUS;211;"Principles of Business Management";0051;LEC;12955;MoTh 12:30PM - 1:50PM;Gymnasium 118;John B Pelletier;09/04/2012 - 12/21/2012
+BUS;211;"Principles of Business Management";2051;LEC;14002;TBA;Online;John B Pelletier;09/04/2012 - 12/21/2012
+BUS;219;"Business and Professional Speaking";2081;LEC;14216;TBA;Online;Joseph B Zubrick;10/29/2012 - 12/21/2012
+BUS;234;"Financial Analysis &amp; Planning";0051;LEC;12957;MoTh 9:30AM - 10:50AM;Old Model School 11, ITV Broad;Roger A Roy;09/04/2012 - 12/21/2012
+BUS;234;"Financial Analysis &amp; Planning";2051;LEC;14003;TBA;Online;Roger A Roy;09/04/2012 - 12/21/2012
+BUS;260;"Business Ethics";0051;LEC;12945;TuFr 9:30AM - 10:50AM;Cyr Hall 202;Leo L Trudel;09/04/2012 - 12/21/2012
+BUS;260;"Business Ethics";2051;LEC;13834;TBA;Online;Leo L Trudel;09/04/2012 - 12/21/2012
+BUS;300;"Principles of Corporate Finance I";0051;LEC;12946;TuFr 2:00PM - 3:20PM;Cyr Hall 202;Leo L Trudel;09/04/2012 - 12/21/2012
+BUS;300;"Principles of Corporate Finance I";2051;LEC;13835;TBA;Online;Leo L Trudel;09/04/2012 - 12/21/2012
+BUS;302;"Intermediate Accounting I";2001;LEC;12952;TBA;Online;Sherry Parshley;09/04/2012 - 12/21/2012
+BUS;304;"Federal Taxation I";0001;LEC;12951;TuFr 8:00AM - 9:20AM;Cyr Hall 202;Lee R Theriault;09/04/2012 - 12/21/2012
+BUS;313;"Governmental and Non";0001;LEC;13007;TuFr 2:00PM - 3:20PM;Cyr Hall 200;Thomas A Enerva;09/04/2012 - 12/21/2012
+BUS;332;"Small Business Management";0051;LEC;12947;TuFr 12:30PM - 1:50PM;Cyr Hall 202;Leo L Trudel;09/04/2012 - 12/21/2012
+BUS;332;"Small Business Management";2051;LEC;13837;TBA;Online;Leo L Trudel;09/04/2012 - 12/21/2012
+BUS;336;"Business Law I";2001;LEC;12950;TBA;Online;Thomas A Enerva;09/04/2012 - 12/21/2012
+BUS;341;"Business Negotiations";0001;LEC;12956;We 8:00AM - 10:40AM;Old Model School 101;Roger A Roy;09/04/2012 - 12/21/2012
+CHY;100;"Chemistry I";0001;LEC;13238;MoTh 9:30AM - 10:50AM;Cyr Hall 202;Rameen Aryana;09/04/2012 - 12/21/2012
+CHY;100L;"Chemistry I Lab";0001;LAB;13239;Mo 2:00PM - 4:50PM;Cyr Hall 213, Chemistry Lab;Rameen Aryana;09/04/2012 - 12/21/2012
+CHY;100L;"Chemistry I Lab";0002;LAB;13240;Tu 2:00PM - 4:50PM;Cyr Hall 213, Chemistry Lab;Rameen Aryana;09/04/2012 - 12/21/2012
+CHY;100L;"Chemistry I Lab";0003;LAB;13241;We 2:00PM - 4:50PM;Cyr Hall 213, Chemistry Lab;Rameen Aryana;09/04/2012 - 12/21/2012
+COM;200;"Speech";0001;LEC;12268;TuFr 2:00PM - 3:20PM;Old Model School 103;Joseph B Zubrick;09/04/2012 - 12/21/2012
+COM;200;"Speech";2001;LEC;11914;TBA;Online;Joseph B Zubrick;09/04/2012 - 12/21/2012
+COS;103;"Introduction to Information Technology";0002;LEC;12972;TuFr 8:30AM - 10:50AM;Old Model School 100;Dawn Danielle Susee;09/04/2012 - 12/21/2012
+COS;103;"Introduction to Information Technology";0003;LEC;12975;TuFr 3:30PM - 5:50PM;Nadeau Hall 109, Computer Lab;Mitchell L Daigle;09/04/2012 - 12/21/2012
+COS;103;"Introduction to Information Technology";0004;LEC;12977;MoTh 5:00PM - 7:20PM;Nadeau Hall 109, Computer Lab;Staff;09/04/2012 - 12/21/2012
+COS;103;"Introduction to Information Technology";2081;LEC;14217;TBA;Online;Lena M Michaud;10/29/2012 - 12/21/2012
+COS;206;"Introduction to Information Security";0051;LEC;12988;MoTh 12:30PM - 1:50PM;Cyr Hall 111, GIS Lab;Raymond T Albert;09/04/2012 - 12/21/2012
+COS;206;"Introduction to Information Security";2051;LEC;14006;TBA;Online;Raymond T Albert;09/04/2012 - 12/21/2012
+COS;260;"Intro to Programming";0001;LEC;12989;MoTh 9:30AM - 11:50AM;Old Model School 100;Raymond T Albert;09/04/2012 - 12/21/2012
+COS;340;"Computer Ethics";2001;WEB;14017;TBA;Online;Mark H. Rosenbaum;09/04/2012 - 12/21/2012
+COS;354;"Network Security";2001;LEC;12990;TBA;Online;Raymond T Albert;09/04/2012 - 12/21/2012
+COS;374;"Operating Systems Security";2001;LEC;12991;TBA;Online;Mark H. Rosenbaum;09/04/2012 - 12/21/2012
+CRJ;101;"Intro to Criminal Law";0001;LEC;12992;Th 6:30PM - 9:20PM;Cyr Hall 201;Robert J Plourde;09/04/2012 - 12/21/2012
+CRJ;105;"Intro to Criminal Justice";0001;LEC;12993;MoTh 2:00PM - 3:20PM;Cyr Hall 202;J Darrell Ouellette;09/04/2012 - 12/21/2012
+CRJ;108;"Constitutional Law";0001;LEC;12994;MoTh 12:30PM - 1:50PM;Cyr Hall 202;Thomas A Enerva;09/04/2012 - 12/21/2012
+CRJ;215;"Principles of Investigation I";2001;LEC;12995;TBA;Online;J Darrell Ouellette;09/04/2012 - 12/21/2012
+CRJ;220;"Forensics of Death Investigation";2001;LEC;12996;TBA;Online;J Darrell Ouellette;09/04/2012 - 12/21/2012
+CRJ;326;"Introduction to Forensic Science";2001;LEC;12997;TBA;Online;Krissy Ann Morgan;09/04/2012 - 12/21/2012
+CRJ;340;"Criminal Justice Elective";0001;LEC;14292;Mo 6:30PM - 9:20PM;Gymnasium 118;John Dumond;10/20/2012 - 10/21/2012
+CRJ;340;"Criminal Justice Elective";0081;LEC;14294;Sa 8:00AM - 11:40AM;Gymnasium 118;John Dumond;10/29/2012 - 12/21/2012
+CRJ;341;"Restorative Justice";2851;LEC;12999;TBA;Online;Michael R Bresett;10/29/2012 - 12/21/2012
+ECO;100;"Macro Economics";0001;LEC;12943;TuFr 12:30PM - 1:50PM;Cyr Hall 200;Bradley G Ritz;09/04/2012 - 12/21/2012
+ECO;318;"Managerial Economics";0001;LEC;12944;TuFr 9:30AM - 10:50AM;Cyr Hall 201;Bradley G Ritz;09/04/2012 - 12/21/2012
+EDU;100;"Educational Foundations";0001;LEC;13910;TuFr 8:00AM - 9:20AM;Cyr Hall 203;Doris Marie Metz;09/04/2012 - 12/21/2012
+EDU;217;"Introduction to Early Childhood Education";2001;LEC;13751;TBA;Online;Jessica E Gebhardt;09/04/2012 - 12/21/2012
+EDU;228;"Curriculum and Methods in Early Childhood Education";2001;LEC;13752;TBA;Online;Jessica E Gebhardt;09/04/2012 - 12/21/2012
+EDU;228;"Curriculum and Methods in Early Childhood Education";2001;LEC;14214;TBA;Online;Jessica E Gebhardt;10/29/2012 - 12/21/2012
+EDU;253;"Literature of Childhood and Adolescence";0051;LEC;13780;MoTh 11:00AM - 12:20PM;Cyr Hall 200;Terry L Murphy;09/04/2012 - 12/21/2012
+EDU;299;"Intro Bil/Multicultural Ed";0001;LEC;13758;TuFr 12:30PM - 1:50PM;Cyr Hall 207;Bruno G Hicks;09/04/2012 - 12/21/2012
+EDU;303;"Educating Exceptional Child";0001;LEC;13755;TuFr 12:30PM - 1:50PM;Cyr Hall 205;Roland K Caron;09/04/2012 - 12/21/2012
+EDU;303L;"Exceptional Child Lab";0001;LAB;13756;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+EDU;327;"Curriculum &amp; Instruct I";0001;LEC;13889;MoTh 2:00PM - 3:20PM;Powell Hall 123;Doris Marie Metz;09/04/2012 - 12/21/2012
+EDU;335;"Computers in the Class";0001;LEC;14205;Tu 2:00PM - 4:50PM;Nadeau Hall 105, Computer Lab;John Metz;09/04/2012 - 12/21/2012
+EDU;335L;"School Technology Lab";0001;LAB;14206;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+EDU;350;"Directed Study in Education";6001;IND;14288;TBA;TBA;Doris Marie Metz;09/04/2012 - 12/21/2012
+EDU;358;"Secondary Methods I";0001;LEC;13761;TuFr 8:00AM - 9:20AM;Powell Hall 123;Bruno G Hicks;09/04/2012 - 12/21/2012
+EDU;358L;"Secondary Methods I Lab";0001;LAB;13783;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+EDU;401;"Educational Psychology";0001;LEC;13759;Mo 6:30PM - 9:20PM;Powell Hall 123;Bruno G Hicks;09/04/2012 - 12/21/2012
+EDU;401L;"Classroom Management Lab";0001;LAB;13785;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+EDU;403;"Intervention Strategies for Inclusion of Students with Disabilities";0001;LEC;13757;TuFr 2:00PM - 3:20PM;Cyr Hall 205;Roland K Caron;09/04/2012 - 12/21/2012
+EDU;403L;"Intervention Strategies Lab";0001;LAB;13789;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+EDU;406;"Student Teaching";0001;FEX;14137;TBA;TBA;Paul Grant;09/04/2012 - 12/21/2012
+EDU;415;"Teaching of Science";0001;LEC;13760;TuFr 9:30AM - 10:50AM;Cyr Hall 205;Bruno G Hicks;09/04/2012 - 12/21/2012
+EDU;415L;"Science Education Lab";0001;LAB;13816;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+EDU;451;"Reading for Elem Teachers";0001;LEC;13766;MoTh 8:00AM - 9:20AM;Cyr Hall 200;Terry L Murphy;09/04/2012 - 12/21/2012
+EDU;451L;"Reading Strategies Lab";0001;LAB;13815;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+EDU;454;"Read &amp; Write Across Sec Curr";0001;LEC;13754;MoTh 9:30AM - 10:50AM;Powell Hall 123;Doris Marie Metz;09/04/2012 - 12/21/2012
+EDU;454L;"Content Literacy Lab";0001;LAB;13817;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+EDU;477;"Multicultural Curriculum Design";0001;LEC;13762;Tu 6:30PM - 9:20PM;Powell Hall 123;Paul Franklin Buck;09/04/2012 - 12/21/2012
+EDU;477L;"Diversity Lab";0001;LAB;13818;TBA;TBA;Staff;09/04/2012 - 12/21/2012
+ENG;100;"English Composition I";0002;LEC;11776;MoTh 9:30AM - 10:50AM;Cyr Hall 207;Geraldine C Becker;09/04/2012 - 12/21/2012
+ENG;100;"English Composition I";0008;LEC;12157;TuFr 2:00PM - 3:20PM;Cyr Hall 207;Staff;09/04/2012 - 12/21/2012
+ENG;100;"English Composition I";0009;LEC;12160;MoTh 5:00PM - 6:20PM;Cyr Hall 200;Aaron Tolbert;09/04/2012 - 12/21/2012
+ENG;100;"English Composition I";2001;LEC;14374;TBA;Online;Patrick C Stamp;09/04/2012 - 12/21/2012
+ENG;100;"English Composition I";EC10;LEC;14929;TBA;TBA;Sylvia I Dow-Harvey;09/04/2012 - 12/21/2012
+ENG;100;"English Comp I";0001;LEC;13732;TuFr 9:30AM - 10:50AM;TBA;Joseph E Becker;09/04/2012 - 12/21/2012
+ENG;101;"English Composition II";0001;LEC;11854;TuFr 8:00AM - 9:20AM;Cyr Hall 200;Terry L Murphy;09/04/2012 - 12/21/2012
+ENG;101;"English Composition II";0002;LEC;11858;MoTh 9:30AM - 10:50AM;Cyr Hall 200;Terry L Murphy;09/04/2012 - 12/21/2012
+ENG;111L;"English Writing Lab";0001;LAB;13842;TBA;TBA;Aaron Tolbert;09/04/2012 - 12/21/2012
+ENG;241;"Twilight Folklore";0001;LEC;13838;We 2:00PM - 4:40PM;Cyr Hall 202;Geraldine C Becker;09/04/2012 - 12/21/2012
+ENG;253;"Literature of Childhood and Adolescence";0051;LEC;14143;MoTh 11:00AM - 12:20PM;Cyr Hall 200;Terry L Murphy;09/04/2012 - 12/21/2012
+ENG;364;"Poetry Writing I";2001;LEC;11908;TBA;Online;Geraldine C Becker;09/04/2012 - 12/21/2012
+ENV;240;"Environmental Studies";0001;LEC;13378;We 2:00PM - 4:40PM;Cyr Hall 207;Julie-Ann Trudel;09/04/2012 - 12/21/2012
+ENV;300;"Field Experience";0001;RSG;14534;TBA;TBA;David L Hobbins;09/04/2012 - 12/21/2012
+ENV;302;"Wildlife Conserv &amp; Mangt";0001;LEC;13086;MoWeTh 8:00AM - 9:20AM;Cyr Hall 202;Stephen E Hansen;09/04/2012 - 12/21/2012
+ENV;401;"Senior Projects II";0001;LEC;14312;We 12:00PM - 2:40PM;Cyr Hall 209, Biology lab;Kimberly M Borges-Therien;09/04/2012 - 12/21/2012
+FOR;100;"Introduction to Forestry";0001;LEC;13011;Fr 8:00AM - 12:00PM;Cyr Hall 113, Forestry Lab;Jeffrey J Dubis;09/04/2012 - 12/21/2012
+FOR;203;"Surveying for Foresters";0001;LEC;13019;We 8:00AM - 12:00PM;Cyr Hall 113, Forestry Lab;David L Hobbins;09/04/2012 - 12/21/2012
+FOR;214;"Wildland Firefighter Skills";0001;LEC;13014;Tu 8:00AM - 4:00PM;Cyr Hall 113, Forestry Lab;Jeffrey J Dubis;09/04/2012 - 12/21/2012
+FOR;221;"Wildland Fire Origin and Cause Determination";0001;LEC;13020;We 6:30PM - 9:20PM;Cyr Hall 113, Forestry Lab;Staff;09/04/2012 - 12/21/2012
+FOR;226;"Forest Operations";0001;LEC;13012;Tu 8:00AM - 4:00PM;Cyr Hall 111, GIS Lab;Jeffrey J Dubis;09/04/2012 - 12/21/2012
+FOR;291;"Forest Measurement Lab";0001;LAB;13022;MoTh 8:00AM - 11:59AM;Cyr Hall 111, GIS Lab;David L Hobbins;09/04/2012 - 10/26/2012
+FOR;332;"Forest Inventory and Analysis";0001;LEC;13023;MoTh 8:00AM - 11:59AM;Cyr Hall 113, Forestry Lab;David L Hobbins;10/29/2012 - 12/21/2012
+FOR;350;"Forest Management Practicum";0001;REC;13015;MoTh 2:00PM - 3:20PM;Cyr Hall 113, Forestry Lab;Jeffrey J Dubis;09/04/2012 - 12/21/2012
+FOR;361;"Silvics/Silviculture Lab";0001;LAB;13016;We 1:00PM - 5:00PM;Cyr Hall 111, GIS Lab;Jeffrey J Dubis;09/04/2012 - 12/21/2012
+FRE;100;"Elementary French I";0001;LEC;11857;TuFr 8:00AM - 9:20AM;Cyr Hall 205;Nicole Boudreau;09/04/2012 - 12/21/2012
+FRE;100;"Elementary French I";2001;LEC;11916;TBA;Online;Nicole Boudreau;09/04/2012 - 12/21/2012
+FRE;200;"Advanced Composition I";2001;LEC;14211;TBA;Online;Nicole Boudreau;09/04/2012 - 12/21/2012
+FRE;312;"French Cinema";0001;LEC;11852;Mo 5:00PM - 7:40PM;Cyr Hall 205;Nicole Boudreau;09/04/2012 - 12/21/2012
+GEO;203;"World Geography";2001;LEC;13021;TBA;Online;David L Hobbins;09/04/2012 - 12/21/2012
+GOV;200;"American Government";3001;LEC;13298;TuTh 1:00PM - 2:20PM;Old Model School 11, ITV Broad;John L Martin;09/04/2012 - 12/21/2012
+GOV;200;"American Government";3002;LEC;14036;TuTh 1:00PM - 2:20PM;Bangor Hall - UCB;John L Martin;09/04/2012 - 12/21/2012
+GOV;200;"American Government";3003;LEC;14045;TuTh 1:00PM - 2:20PM;Bath Brunswick;John L Martin;09/04/2012 - 12/21/2012
+GOV;200;"American Government";3005;LEC;14047;TuTh 1:00PM - 2:20PM;Bucksport HS;John L Martin;09/04/2012 - 12/21/2012
+GOV;200;"American Government";3006;LEC;14048;TuTh 1:00PM - 2:20PM;Caribou;John L Martin;09/04/2012 - 12/21/2012
+GOV;200;"American Government";3007;LEC;14049;TuTh 1:00PM - 2:20PM;Deer Isle;John L Martin;09/04/2012 - 12/21/2012
+GOV;304;"American Political Thought";3001;LEC;13299;Tu 7:00PM - 9:50PM;Old Model School 11, ITV Broad;John L Martin;09/04/2012 - 12/21/2012
+GOV;304;"American Political Thought";3002;LEC;14085;Tu 7:00PM - 9:50PM;Bangor Hall - UCB;John L Martin;09/04/2012 - 12/21/2012
+GOV;304;"American Political Thought";3003;LEC;14086;Tu 7:00PM - 9:50PM;TBA;Staff;09/04/2012 - 12/21/2012
+GOV;304;"American Political Thought";3004;LEC;14087;Tu 7:00PM - 9:50PM;Bucksport HS;John L Martin;09/04/2012 - 12/21/2012
+GOV;304;"American Political Thought";3005;LEC;14088;Tu 7:00PM - 9:50PM;Caribou;John L Martin;09/04/2012 - 12/21/2012
+GOV;304;"American Political Thought";3006;LEC;14089;Tu 7:00PM - 9:50PM;Deer Isle;John L Martin;09/04/2012 - 12/21/2012
+HCA;321;"Health Care Finance";2001;LEC;12953;TBA;Online;John B Pelletier;09/04/2012 - 12/21/2012
+HCA;386;"Nursing and Health Policy";2051;LEC;13848;TBA;Online;Tanya Lynn Sleeper;09/04/2012 - 12/21/2012
+HCA;401;"Health Related Research";2051;LEC;13849;TBA;Online;Jenny Radsma;09/04/2012 - 12/21/2012
+HTY;100;"World Civilizations I";0001;LEC;11808;MoTh 12:30PM - 1:50PM;Cyr Hall 201;Erica Nadelhaft;09/04/2012 - 12/21/2012
+HTY;100;"World Civilizations I";0002;LEC;14199;TuFr 2:00PM - 3:20PM;Powell Hall 123;Wilson Hess;09/04/2012 - 12/21/2012
+HTY;102;"U.S. History I";0001;LEC;11777;MoTh 9:30AM - 10:50AM;Cyr Hall 201;Paul Franklin Buck;09/04/2012 - 12/21/2012
+HUM;102;"First Year Experience";0001;LEC;13892;MoTh 9:30AM - 10:50AM;Gymnasium 120;Stephen E Hansen;09/04/2012 - 12/21/2012
+HUM;102;"First Year Experience";0002;LEC;13894;TuFr 9:30AM - 10:50AM;Gymnasium 120;Raymond R Phinney;09/04/2012 - 12/21/2012
+HUM;102;"First Year Experience";0003;LEC;13895;TuFr 12:30PM - 1:50PM;Gymnasium 120;Cherise Brown Varela;09/04/2012 - 12/21/2012
+HUM;102;"First Year Experience";0004;LEC;13896;TuFr 8:00AM - 9:20AM;Gymnasium 120;Leo L Trudel;09/04/2012 - 12/21/2012
+HUM;102;"First Year Experience";0005;LEC;13897;TuFr 2:00PM - 3:20PM;Gymnasium 120;Kimberly M Borges-Therien;09/04/2012 - 12/21/2012
+HUM;102;"First Year Experience";0006;LEC;13898;TuFr 12:30PM - 1:50PM;Gymnasium 118;Doris Marie Metz;09/04/2012 - 12/21/2012
+HUM;102;"First Year Experience";0007;LEC;13899;MoTh 12:30PM - 1:50PM;Gymnasium 120;Eleanor B Hess;09/04/2012 - 12/21/2012
+HUM;102;"First Year Experience";0008;LEC;13900;MoTh 11:00AM - 12:20PM;Gymnasium 120;Ellia Sablan-Zebedy;09/04/2012 - 12/21/2012
+MAT;128;"College Algebra";0001;LEC;12962;TuFr 12:30PM - 1:50PM;Old Model School 101;Staff;09/04/2012 - 12/21/2012
+MAT;128;"College Algebra";2001;LEC;12963;TBA;Online;Thomas J Goetz;09/04/2012 - 12/21/2012
+MAT;165;"Pre";2001;LEC;12964;TBA;Online;Staff;09/04/2012 - 12/21/2012
+MAT;180;"Finite Math I: Logic";0001;LEC;12959;MoTh 8:00AM - 9:20AM;Cyr Hall 201;Roger A Roy;09/04/2012 - 12/21/2012
+MAT;200;"Structure of Mathematics I";0001;LEC;13890;MoTh 12:30PM - 1:50PM;Powell Hall 123;John C Elliott;09/04/2012 - 12/21/2012
+MAT;255;"Calculus I";0001;LEC;12965;MoTuWeTh 2:00PM - 2:50PM;Gymnasium 118;Staff;09/04/2012 - 12/21/2012
+MAT;351;"Statistics I";0051;LEC;12961;MoTh 12:30PM - 1:50PM;Old Model School 101;Staff;09/04/2012 - 12/21/2012
+MAT;351;"Statistics I";2051;LEC;13826;TBA;Online;Roger A Roy;09/04/2012 - 12/21/2012
+MUS;100;"History of Music";0001;LEC;11798;MoTh 12:30PM - 1:50PM;Old Model School 102 Music Lab;Scott T Brickman;09/04/2012 - 12/21/2012
+MUS;100;"History of Music";2081;LEC;11910;TBA;Online;Scott T Brickman;10/29/2012 - 12/21/2012
+MUS;156;"Class Piano Practicum";0001;FEX;11831;MoTh 9:30AM - 10:50AM;Old Model School 102 Music Lab;Scott T Brickman;09/04/2012 - 12/21/2012
+MUS;200;"Fundamentals of Music";0001;LEC;11862;MoTh 11:00AM - 12:20PM;Old Model School 102 Music Lab;Scott T Brickman;09/04/2012 - 12/21/2012
+NUR;200;"Introduction to Professional Nursing";0001;LEC;12820;Mo 4:00PM - 6:00PM;Old Model School 101;Cheryl Roberts;09/04/2012 - 12/21/2012
+NUR;200;"Introduction to Professional Nursing";0002;LEC;12823;Mo 1:00PM - 3:00PM;Old Model School 103;Cheryl Roberts;09/04/2012 - 12/21/2012
+NUR;200L;"Fundamentals of Nursing I Lab";0001;LAB;13666;Tu 8:00AM - 10:50AM;Nadeau Hall 104 Nursing Lab;Denise Monique Potvin;09/04/2012 - 12/21/2012
+NUR;200L;"Fundamentals of Nursing I Lab";0002;LAB;13667;Tu 11:30AM - 2:20PM;Nadeau Hall 104 Nursing Lab;Denise Monique Potvin;09/04/2012 - 12/21/2012
+NUR;200L;"Fundamentals of Nursing I Lab";0004;LAB;13725;We 2:30PM - 5:10PM;Nadeau Hall 104 Nursing Lab;Randi Jean Annie St Peter;09/04/2012 - 12/21/2012
+NUR;200L;"Fundamentals of Nursing I Lab";0005;LAB;13986;We 8:00AM - 10:40AM;Nadeau Hall 104 Nursing Lab;Randi Jean Annie St Peter;09/04/2012 - 12/21/2012
+NUR;230;"Promoting Personal Health";0001;LEC;12938;We 5:00PM - 7:50PM;Cyr Hall 200;Jenny Radsma;09/04/2012 - 12/21/2012
+NUR;230;"Promoting Personal Health";0002;LEC;12942;Th 1:00PM - 3:50PM;Cyr Hall 200;Jenny Radsma;09/04/2012 - 12/21/2012
+NUR;230L;"Promoting Health Lab";0001;LAB;13668;Tu 2:30PM - 5:20PM;Nadeau Hall 104 Nursing Lab;Denise Monique Potvin;09/04/2012 - 12/21/2012
+NUR;301;"Promoting Health Communities";2001;LEC;12693;TBA;Online;Jenny Radsma;09/04/2012 - 12/21/2012
+NUR;302;"Pharmacology";000;LEC;12976;Fr 11:00AM - 1:50PM;Cyr Hall 203;Tanya Lynn Sleeper;09/04/2012 - 12/21/2012
+NUR;309;"Total Health Assessment";0001;LEC;12806;Mo 12:00PM - 2:50PM;Powell Hall 123;Diane M Griffin;09/04/2012 - 12/21/2012
+NUR;309;"Total Health Assessment";2081;LEC;14310;TBA;Online;Diane M Griffin;10/29/2012 - 12/21/2012
+NUR;309L;"Health Assessment Lab";0001;LAB;13726;Th 9:30AM - 12:20PM;Nadeau Hall 104 Nursing Lab;Larry Andrew Nadeau;09/04/2012 - 12/21/2012
+NUR;309L;"Health Assessment Lab";0002;LAB;13727;Fr 8:00AM - 10:50AM;Nadeau Hall 104 Nursing Lab;Denise Monique Potvin;09/04/2012 - 12/21/2012
+NUR;309L;"Health Assessment Lab";0003;LAB;13734;Fr 11:30AM - 2:20PM;Nadeau Hall 104 Nursing Lab;Denise Monique Potvin;09/04/2012 - 12/21/2012
+NUR;309L;"Health Assessment Lab";0004;LAB;13728;Fr 2:30PM - 5:20PM;Nadeau Hall 104 Nursing Lab;Diane M Griffin;09/04/2012 - 12/21/2012
+NUR;309L;"Health Assessment Lab";2081;LAB;14311;TBA;Online;Diane M Griffin;10/29/2012 - 12/21/2012
+NUR;312;"Issues in Profess Nursing";2001;LEC;12702;TBA;Online;Cheryl Roberts;09/04/2012 - 12/21/2012
+NUR;330;"Adult Health I";0001;LEC;12949;Th 12:00PM - 1:50PM;Old Model School 103;Tanya Lynn Sleeper;09/04/2012 - 12/21/2012
+NUR;330;"Adult Health I";0002;LEC;12954;Th 2:00PM - 3:50PM;Old Model School 103;Tanya Lynn Sleeper;09/04/2012 - 12/21/2012
+NUR;330C;"Adult Health I Clinical";0001;LAB;12958;TuWe 7:00AM - 3:00PM;TBA;Tanya Lynn Sleeper;09/04/2012 - 11/02/2012
+NUR;330C;"Adult Health I Clinical";0002;LAB;12960;TuWe 7:00AM - 3:00PM;TBA;Tanya Lynn Sleeper;09/04/2012 - 11/02/2012
+NUR;330C;"Adult Health I Clinical";0003;LAB;13621;TuWe 7:00AM - 3:00PM;TBA;Larry Andrew Nadeau;09/04/2012 - 11/02/2012
+NUR;330C;"Adult Health I Clinical";0004;LAB;13622;TuWe 7:00AM - 3:00PM;TBA;Larry Andrew Nadeau;09/04/2012 - 11/02/2012
+NUR;330C;"Adult Health I Clinical";0005;LAB;13720;TuWe 7:00AM - 3:00PM;TBA;Staff;09/04/2012 - 11/02/2012
+NUR;330C;"Adult Health I Clinical";0006;LAB;13721;TuWe 7:00AM - 3:00PM;TBA;Staff;09/04/2012 - 11/02/2012
+NUR;330L;"Adult Health I Lab";0001;LAB;13623;Mo 11:00AM - 1:50PM;Nadeau Hall 126, Nursing lab;Larry Andrew Nadeau;09/04/2012 - 12/21/2012
+NUR;330L;"Adult Health I Lab";0002;LAB;13631;Mo 2:00PM - 4:50PM;Nadeau Hall 126, Nursing lab;Larry Andrew Nadeau;09/04/2012 - 12/21/2012
+NUR;330L;"Adult Health I Lab";0003;LAB;13650;We 4:00PM - 6:40PM;Nadeau Hall 126, Nursing lab;Larry Andrew Nadeau;09/04/2012 - 12/21/2012
+NUR;330L;"Adult Health I Lab";0004;LAB;13665;Th 4:00PM - 6:50PM;Nadeau Hall 126, Nursing lab;Larry Andrew Nadeau;09/04/2012 - 12/21/2012
+NUR;330L;"Adult Health I Lab";0005;LAB;14529;MoTh 8:00AM - 9:20AM;TBA;Larry Andrew Nadeau;09/04/2012 - 12/21/2012
+NUR;335;"Family Health I";0001;LEC;12750;Th 11:00AM - 12:50PM;Nadeau Hall 126, Nursing lab;Jacqueline Devoe;09/04/2012 - 12/21/2012
+NUR;335C;"Family Health I Clinical";0001;LAB;13713;TuWe 7:00AM - 3:00PM;TBA;Staff;11/05/2012 - 12/21/2012
+NUR;335C;"Family Health I Clinical";0002;LAB;13714;TuWe 7:00AM - 3:00PM;TBA;Staff;11/05/2012 - 12/21/2012
+NUR;335C;"Family Health I Clinical";0003;LAB;13715;TuWe 7:00AM - 3:00PM;TBA;Staff;11/05/2012 - 12/21/2012
+NUR;335C;"Family Health I Clinical";0004;LAB;13716;TuWe 7:00AM - 3:00PM;TBA;Staff;11/05/2012 - 12/21/2012
+NUR;335C;"Family Health I Clinical";0005;LAB;14948;TBA;TBA;Staff;TBA
+NUR;335L;"Family Health I Lab";0001;LAB;12752;Sa 8:00AM - 10:50AM;Nadeau Hall 126, Nursing lab;Jacqueline Devoe;09/04/2012 - 12/21/2012
+NUR;335L;"Family Health I Lab";0002;LAB;12753;Sa 11:00AM - 1:50PM;Nadeau Hall 126, Nursing lab;Jacqueline Devoe;09/04/2012 - 12/21/2012
+NUR;335L;"Family Health I Lab";0003;LAB;12754;Sa 2:00PM - 4:50PM;Nadeau Hall 126, Nursing lab;Jacqueline Devoe;09/04/2012 - 12/21/2012
+NUR;365;"Family Health II";0001;LEC;12775;Th 2:00PM - 3:50PM;Nadeau Hall 126, Nursing lab;Jacqueline Devoe;09/04/2012 - 12/21/2012
+NUR;365C;"Family Health II Clinical";0001;LAB;12795;TuWe 7:00AM - 3:00PM;TBA;Jacqueline Devoe;11/05/2012 - 12/21/2012
+NUR;365C;"Family Health II Clinical";0002;LAB;12796;TuWe 7:00AM - 3:00PM;TBA;Jacqueline Devoe;11/05/2012 - 12/21/2012
+NUR;365C;"Family Health II Clinical";0003;LAB;12798;TuWe 7:00AM - 3:00PM;TBA;Jacqueline Devoe;11/05/2012 - 12/21/2012
+NUR;386;"Nursing and Health Policy";2051;LEC;12716;TBA;Online;Tanya Lynn Sleeper;09/04/2012 - 12/21/2012
+NUR;401;"Health Related Research";2051;LEC;12698;TBA;Online;Jenny Radsma;09/04/2012 - 12/21/2012
+NUR;413;"Healthcare Ethics";2001;LEC;12704;TBA;Online;Erin C Soucy;09/04/2012 - 12/21/2012
+NUR;413;"Healthcare Ethics";2002;LEC;14911;TBA;Online;Erin C Soucy;08/01/2012 - 08/31/2012
+NUR;425;"Adult Health III";0001;LEC;12826;Th 9:00AM - 12:00PM;Nadeau Hall 126, Nursing lab;Cheryl Roberts;09/04/2012 - 12/21/2012
+NUR;425C;"Adult Health III Clinical";0001;LAB;13708;TuWe 7:00AM - 3:00PM;TBA;Staff;09/04/2012 - 11/02/2012
+NUR;425C;"Adult Health III Clinical";0002;LAB;13711;TuWe 7:00AM - 3:00PM;TBA;Staff;09/04/2012 - 11/02/2012
+NUR;425C;"Adult Health III Clinical";0003;LAB;13712;TuWe 7:00AM - 3:00PM;TBA;Staff;09/04/2012 - 11/02/2012
+NUR;425L;"Adult Health III Lab";0001;LAB;13709;Fr 8:00AM - 10:50AM;Nadeau Hall 126, Nursing lab;Staff;09/04/2012 - 12/21/2012
+NUR;425L;"Adult Health III Lab";0002;LAB;13710;Fr 11:00AM - 1:50PM;Nadeau Hall 126, Nursing lab;Staff;09/04/2012 - 12/21/2012
+NUR;452;"Mental Health Nursing";0001;LEC;12810;Th 2:00PM - 4:50PM;Cyr Hall 205;Diane M Griffin;09/04/2012 - 12/21/2012
+NUR;452C;"Mental Health Clincial";0001;LAB;13669;TuWe 7:00AM - 3:00PM;TBA;Staff;11/05/2012 - 12/21/2012
+NUR;452C;"Mental Health Clincial";0002;LAB;13682;TuWe 7:00AM - 3:00PM;TBA;Staff;11/05/2012 - 12/21/2012
+NUR;452C;"Mental Health Clincial";0003;LAB;13693;TuWe 7:00AM - 3:00PM;TBA;Staff;11/05/2012 - 12/21/2012
+NUR;497C;"Senior Preceptorship";0001;LAB;12937;TuWe 7:00AM - 3:00PM;TBA;Cheryl Roberts;09/04/2012 - 12/21/2012
+PHE;163;"Principles of Coaching";0081;LEC;12967;We 8:00AM - 10:40AM;Gymnasium 118;William E Ashby;10/29/2012 - 12/21/2012
+PHE;166;"Coaching Soccer";0001;LEC;12970;We 2:00PM - 2:50PM;Gymnasium 120;William E Ashby;09/04/2012 - 12/21/2012
+PHE;210;"Yoga for Human Excellence";0001;LEC;12968;MoTh 9:30AM - 10:50AM;Gymnasium 118;Sylvia Martin;09/04/2012 - 12/21/2012
+PHI;100;"Intro to Philosophy";0001;LEC;11851;MoTh 3:30PM - 4:50PM;Cyr Hall 207;Joseph E Becker;09/04/2012 - 12/21/2012
+PHS;100;"Physical Science I";0001;LEC;13242;MoTh 11:00AM - 12:20PM;Cyr Hall 201;Rameen Aryana;09/04/2012 - 12/21/2012
+PHS;100L;"Physical Science I Lab";0001;LAB;14373;Th 2:00PM - 4:50PM;Cyr Hall 213, Chemistry Lab;Staff;09/04/2012 - 12/21/2012
+POS;100;"Intro to Political Science";0001;LEC;13787;Mo 7:00PM - 9:50PM;Cyr Hall 201;John L Martin;09/04/2012 - 12/21/2012
+PSA;100;"Intro to Public Safety Admin";0001;LEC;13001;TuFr 12:30PM - 1:50PM;Cyr Hall 201;Thomas A Enerva;09/04/2012 - 12/21/2012
+PSA;122;"GIS &amp; GPS for Public Safety Professionals";2001;LEC;13002;TBA;Online;David L Hobbins;09/04/2012 - 12/21/2012
+PSA;122L;"GIS";0001;LAB;13004;Th 2:00PM - 4:00PM;Cyr Hall 111, GIS Lab;David L Hobbins;09/04/2012 - 12/21/2012
+PSA;300;"Public Finance";0001;LEC;13006;TuFr 2:00PM - 3:20PM;Cyr Hall 201;Thomas A Enerva;09/04/2012 - 12/21/2012
+PSA;316;"Public Administration &amp; Emergency Management";2001;LEC;13010;TBA;Online;Thomas A Enerva;09/04/2012 - 12/21/2012
+PSA;326;"Introduction to Forensic Science";2001;LEC;12998;TBA;Online;Krissy Ann Morgan;09/04/2012 - 12/21/2012
+PSA;341;"Restorative Justice";2851;LEC;13000;TBA;Online;Michael R Bresett;10/29/2012 - 12/21/2012
+PSY;100;"Intro to Psychology";0001;LEC;13041;TuFr 9:30AM - 10:50AM;Cyr Hall 203;Sara Kay Michaud;09/04/2012 - 12/21/2012
+PSY;100;"Intro to Psychology";0002;LEC;13911;MoTh 2:00PM - 3:20PM;Cyr Hall 203;Georgette Fehrenbach;09/04/2012 - 12/21/2012
+PSY;100;"Intro to Psychology";2001;LEC;13042;TBA;Online;Robert Hansen;09/04/2012 - 12/21/2012
+PSY;297;"Preceptorship in Human Sciences";0051;LEC;13035;Mo 6:30PM - 9:20PM;Cyr Hall 203;Staff;09/04/2012 - 12/21/2012
+PSY;330;"Interviewing &amp; Counseling";0001;LEC;13052;Tu 6:30PM - 9:20PM;Cyr Hall 203;Georgette Fehrenbach;09/04/2012 - 12/21/2012
+PSY;340;"Research Methods";0001;LEC;13046;MoTh 3:30PM - 4:50PM;Cyr Hall 202;Kurt G Holzhausen;09/04/2012 - 12/21/2012
+PSY;412;"Adulthood And Aging";2001;LEC;13048;TBA;Online;Robert Hansen;09/04/2012 - 12/21/2012
+SED;335;"Program Planning &amp; Adapt";2081;LEC;14212;TBA;Online;Barbara Lee Robinson;10/29/2012 - 12/21/2012
+SED;345;"Behavior Strategies for";2001;LEC;13747;TBA;Online;Roland K Caron;09/04/2012 - 12/21/2012
+SED;365;"Instructional Methods";2001;LEC;13748;TBA;Online;Diane M Castonguay;09/04/2012 - 12/21/2012
+SED;370;"Teaching Reading and Writing to Exceptional Students";2001;LEC;13749;TBA;Online;Dale A Bailey;09/04/2012 - 12/21/2012
+SED;405;"Response to Intervention and Learning Disabilities";2001;LEC;13750;TBA;Online;Diane M Castonguay;09/04/2012 - 12/21/2012
+SOC;100;"Sociology";2001;LEC;13032;TBA;Online;Joseph Bjerklie;09/04/2012 - 12/21/2012
+SOC;110;"Intro to Human Services";0001;LEC;13056;Fr 11:00AM - 12:20PM;Cyr Hall 201;Laura A Thomas;09/04/2012 - 12/21/2012
+SOC;297;"Preceptorship in Human Sciences";0051;LEC;13036;Mo 6:30PM - 9:20PM;Cyr Hall 203;Staff;09/04/2012 - 12/21/2012
+SOC;370;"American Racial and Ethnic Relations";2001;LEC;14198;TBA;Online;Mariella R Squire;09/04/2012 - 12/21/2012
+SPA;101;"Elementary Spanish II";0001;LEC;11849;MoTh 2:00PM - 3:20PM;Cyr Hall 201;Paul Franklin Buck;09/04/2012 - 12/21/2012
+SPA;101;"Elementary Spanish II";2001;LEC;11911;TBA;Online;Paul Franklin Buck;09/04/2012 - 12/21/2012

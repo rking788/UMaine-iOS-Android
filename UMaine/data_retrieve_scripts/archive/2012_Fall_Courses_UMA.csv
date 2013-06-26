@@ -1,0 +1,959 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+AME;302;"Social Movements";9000;LEC;13918;TBA;Web/On-line;Stephen Corral;09/04/2012 - 12/22/2012
+AME;306;"American Fitness: Culture";0100;LEC;13735;We 4:00PM - 6:45PM;Jewett Hall 0291;Sarah Hentges;09/04/2012 - 12/22/2012
+AME;306;"American Fitness: Culture";0200;LEC;12827;We 4:00PM - 6:45PM;Eastport Hall 0138;Sarah Hentges;09/04/2012 - 12/22/2012
+ANT;102;"Cultural Anthropology";1000;LEC;9515;Th 1:00PM - 3:45PM;Bennett D. Katz Library 0016;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+ANT;102;"Cultural Anthropology";1001;LEC;9516;Th 1:00PM - 3:45PM;Bangor Hall ITV1;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+ANT;102;"Cultural Anthropology";1002;LEC;9517;Th 1:00PM - 3:45PM;Bath Brunswick;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+ANT;102;"Cultural Anthropology";1003;LEC;9688;Th 1:00PM - 3:45PM;Bucksport HS;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+ANT;102;"Cultural Anthropology";1004;LEC;9689;Th 1:00PM - 3:45PM;Caribou;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+ANT;102;"Cultural Anthropology";1005;LEC;9690;Th 1:00PM - 3:45PM;Deer Isle;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+ANT;170;"Introduction to Archaeology";0100;LEC;12797;Mo 9:00AM - 11:45AM;Jewett Hall 0185;Lucas Kellett;09/04/2012 - 12/22/2012
+ANT;289;"Topics in Anthropology";6000;LEC;10139;Mo 7:00PM - 9:45PM;Bennett D. Katz Library 0007;Keith Ludden;09/04/2012 - 12/22/2012
+ANT;289;"Topics in Anthropology";6001;LEC;10384;Mo 7:00PM - 9:45PM;Rockland Video Conferencing;Keith Ludden;09/04/2012 - 12/22/2012
+ANT;289;"Topics in Anthropology";6002;LEC;12094;Mo 7:00PM - 9:45PM;BBC Video Conferencing;Keith Ludden;09/04/2012 - 12/22/2012
+ANT;289;"Topics in Anthropology";6003;LEC;12095;Mo 7:00PM - 9:45PM;Ellsworth Video Conferencing;Keith Ludden;09/04/2012 - 12/22/2012
+ANT;289;"Topics in Anthropology";6004;LEC;12096;Mo 7:00PM - 9:45PM;Western ME Comm Coll -VC;Keith Ludden;09/04/2012 - 12/22/2012
+ARC;101;"Introduction to Architectural Graphics and Design Communication";0100;LEC;12137;MoTh 1:00PM - 4:00PM;Gannett Building;Amy Hinkley;09/04/2012 - 12/22/2012
+ARC;101;"Introduction to Architectural Graphics and Design Communication";0101;LEC;12138;MoTh 1:00PM - 4:00PM;Gannett Building;Rosemary Ann Needham-Curtis;09/04/2012 - 12/22/2012
+ARC;101;"Introduction to Architectural Graphics and Design Communication";0102;LEC;12139;MoTh 4:00PM - 7:00PM;Gannett Building;Staff;09/04/2012 - 12/22/2012
+ARC;111;"History of Art And Architecture I";0100;LEC;13377;Fr 9:00AM - 11:45AM;Jewett Hall 0180;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARC;111;"History of Art And Architecture I";0300;LEC;13323;Tu 4:00PM - 6:45PM;Bath Brunswick;Susan B Stoddard;09/04/2012 - 12/22/2012
+ARC;111;"History of Art And Architecture I";0301;LEC;13330;We 9:00AM - 11:45AM;Rockland;John D Farmer;09/04/2012 - 12/22/2012
+ARC;111;"History of Art And Architecture I";1000;LEC;9521;Th 1:00PM - 3:45PM;Bennett D. Katz Library 0015;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARC;111;"History of Art And Architecture I";1001;LEC;9522;Th 1:00PM - 3:45PM;Bangor Hall ITV3;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARC;111;"History of Art And Architecture I";1002;LEC;9523;Th 1:00PM - 3:45PM;Bath Brunswick;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARC;203;"Architectural Design II";0100;LEC;12141;MoTh 9:00AM - 12:00PM;Gannett Building;Daelynn Elizabeth;09/04/2012 - 12/22/2012
+ARC;203;"Architectural Design II";0101;LEC;12143;MoTh 9:00AM - 12:00PM;Gannett Building;Rosemary Ann Needham-Curtis;09/04/2012 - 12/22/2012
+ARC;261;"Computer Aided Design (CAD)";0100;LEC;12148;Tu 1:00PM - 3:45PM;Randall Student Center 255;Daniel C Moreno;09/04/2012 - 12/22/2012
+ARC;305;"Architectural Design IV";0100;LEC;12145;MoTh 9:00AM - 12:00PM;Gannett Building;Eric Stark;09/04/2012 - 12/22/2012
+ARC;322;"Structures II";0100;LEC;12150;We 1:00PM - 3:45PM;Gannett Building;Robert J Sherman;09/04/2012 - 12/22/2012
+ARC;332;"Construction Techniques";0100;LEC;12149;Tu 9:00AM - 11:45AM;Gannett Building;Morris Hancock;09/04/2012 - 12/22/2012
+ARC;350;"Mechanical Systems in Architecture";0100;LEC;12151;We 9:00AM - 12:00PM;Gannett Building;Robert J Sherman;09/04/2012 - 12/22/2012
+ARC;406;"Architecture Apprenticeship";0100;RSG;14290;TBA;TBA;Eric Stark;09/04/2012 - 12/22/2012
+ARC;420;"Architectural Design VI";0100;LEC;12147;MoTh 9:00AM - 12:00PM;Gannett Building;Amy Hinkley;09/04/2012 - 12/22/2012
+ARH;105;"History of Art and Architecture I";0100;LEC;12152;Fr 9:00AM - 11:45AM;Jewett Hall 0180;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARH;105;"History of Art and Architecture I";0300;LEC;12153;We 9:00AM - 11:45AM;Rockland;John D Farmer;09/04/2012 - 12/22/2012
+ARH;105;"History of Art and Architecture I";0301;LEC;12154;Tu 4:00PM - 6:45PM;Bath Brunswick;Susan B Stoddard;09/04/2012 - 12/22/2012
+ARH;105;"History of Art and Architecture I";1000;LEC;9518;Th 1:00PM - 3:45PM;Bennett D. Katz Library 0015;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARH;105;"History of Art and Architecture I";1001;LEC;9519;Th 1:00PM - 3:45PM;Bangor Hall ITV3;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARH;105;"History of Art and Architecture I";1002;LEC;9520;Th 1:00PM - 3:45PM;Bath Brunswick;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARH;205;"History of Photography I (1830 to 1930)";0100;LEC;12155;We 1:00PM - 3:45PM;Jewett Hall 0293;Susan B Stoddard;09/04/2012 - 12/22/2012
+ARH;274;"Modern Art I";0100;LEC;12156;We 1:00PM - 3:45PM;Jewett Hall 0185;Brooks W Stoddard;09/04/2012 - 12/22/2012
+ARH;494;"Independent Study in Art History";5000;IND;15002;TBA;TBA;Virginia C Goodlett;09/04/2012 - 12/22/2012
+ART;100;"Introduction to Studio Art";0200;STU;12829;MoWe 1:00PM - 3:30PM;Eastport Hall 0139;Esther G Taylor;09/04/2012 - 12/22/2012
+ART;100;"Introduction to Studio Art";0201;STU;12830;MoWe 4:00PM - 6:30PM;Eastport Hall 0139;Esther G Taylor;09/04/2012 - 12/22/2012
+ART;100;"Introduction to Studio Art";0300;STU;12158;MoWe 4:00PM - 6:30PM;Rockland;Seth Lester;09/04/2012 - 12/22/2012
+ART;100;"Introduction to Studio Art";0301;STU;12159;Fr 8:30AM - 12:00PM;Ellsworth;Cynthia June Kellogg;09/04/2012 - 12/22/2012;Fr 1:00PM - 2:30PM;Ellsworth;Cynthia June Kellogg;09/04/2012 - 12/22/2012
+ART;100;"Introduction to Studio Art";9000;STU;14762;TBA;Web/On-line;Andrea M Martens;09/04/2012 - 12/22/2012
+ART;109;"Photographic Vision and Digital Discovery";0100;STU;13357;MoWe 4:00PM - 6:30PM;Campus Center - Photo Studio;Robert P Darby;09/04/2012 - 12/22/2012
+ART;109;"Photographic Vision and Digital Discovery";0300;STU;12894;MoWe 1:00PM - 3:30PM;Bath Brunswick;Dee Peppe;09/04/2012 - 12/22/2012
+ART;109;"Photographic Vision and Digital Discovery";0301;STU;12936;TuTh 9:00AM - 11:30AM;Rockland;Dee Peppe;09/04/2012 - 12/22/2012
+ART;112;"2";0101;STU;12165;Mo 1:00PM - 3:30PM;Randall Student Center 137;Susan C Bickford;09/04/2012 - 12/22/2012;We 1:00PM - 3:30PM;Gannett Building;Susan C Bickford;09/04/2012 - 12/22/2012
+ART;112;"2";0102;STU;12166;Tu 4:00PM - 6:30PM;Randall Student Center 137;Susan C Bickford;09/04/2012 - 12/22/2012;Th 4:00PM - 6:30PM;Gannett Building;Susan C Bickford;09/04/2012 - 12/22/2012
+ART;113;"3";0100;STU;12167;MoWe 9:00AM - 11:30AM;Fine Arts Building 0121;Robert I Katz;09/04/2012 - 12/22/2012
+ART;115;"Drawing I";0100;STU;12206;MoWe 1:00PM - 3:30PM;Art &amp; Arch Building 0106;Peter R Precourt;09/04/2012 - 12/22/2012
+ART;115;"Drawing I";0101;STU;12207;MoWe 6:45PM - 9:15PM;Art &amp; Arch Building 0106;Karen Adrienne;09/04/2012 - 12/22/2012
+ART;115;"Drawing I";0102;STU;12208;TuTh 9:00AM - 11:30AM;Art &amp; Arch Building 0106;Robert I Katz;09/04/2012 - 12/22/2012
+ART;140;"Intro to Digital Imaging";0100;STU;12209;MoWe 1:00PM - 3:30PM;Campus Center - Photo Studio;Luc A Demers;09/04/2012 - 12/22/2012
+ART;143;"Color Photography I";100;STU;12210;MoWe 9:00AM - 11:30AM;Campus Center - Photo Studio;Luc A Demers;09/04/2012 - 12/22/2012
+ART;202;"Electronic Arts I";0100;LEC;12211;TuTh 9:00AM - 11:30AM;Randall Student Center 137;Robert Rainey;09/04/2012 - 12/22/2012
+ART;210;"Intaglio Printmaking";0100;STU;12212;MoWe 9:00AM - 11:30AM;Gannett Building;Karen Adrienne;09/04/2012 - 12/22/2012
+ART;215;"Drawing II";0100;STU;12213;TuTh 1:00PM - 3:30PM;Art &amp; Arch Building 0106;Robert I Katz;09/04/2012 - 12/22/2012
+ART;215;"Drawing II";0301;STU;13368;Th 9:00AM - 12:00PM;Rumford-Mexico Center;Staff;09/04/2012 - 12/22/2012;Th 1:00PM - 3:00PM;Rumford-Mexico Center;Patricia E Chandler;09/04/2012 - 12/22/2012
+ART;232;"Photoshop I";0100;STU;12214;TuTh 4:00PM - 6:30PM;Campus Center - Photo Studio;Robert Rainey;09/04/2012 - 12/22/2012
+ART;235;"Black &amp; White Photography I";0100;STU;12215;TuTh 1:00PM - 3:30PM;Campus Center - Photo Studio;Jere C Dewaters;09/04/2012 - 12/22/2012
+ART;251;"Ceramics I: Introductory Hand";0100;STU;12216;TuTh 4:00PM - 6:30PM;Craft Shop;Brandon Lutterman;09/04/2012 - 12/22/2012
+ART;289;"Topics in Art";0300;LEC;12218;Th 8:30AM - 12:00PM;Ellsworth;Cynthia June Kellogg;09/04/2012 - 12/22/2012;Th 1:00PM - 2:30PM;Ellsworth;Cynthia June Kellogg;09/04/2012 - 12/22/2012
+ART;315;"Drawing III";0100;STU;12220;MoWe 4:00PM - 6:30PM;Art &amp; Arch Building 0106;Karen Adrienne;09/04/2012 - 12/22/2012
+ART;319;"Sculpture II";0100;STU;12221;MoWe 6:45PM - 9:15PM;Fine Arts Building 0121;Robert I Katz;09/04/2012 - 12/22/2012
+ART;320;"Contemporary Studio Practice and Theory";0100;LEC;12222;TuTh 1:00PM - 3:30PM;Randall Student Center 137;Robert Rainey;09/04/2012 - 12/22/2012
+ART;321;"Painting II";0100;STU;12223;TuTh 9:00AM - 11:30AM;Gannett Building;Peter R Precourt;09/04/2012 - 12/22/2012
+ART;333;"Photoshop II";0100;STU;12224;TuTh 4:00PM - 6:30PM;Campus Center - Photo Studio;Robert Rainey;09/04/2012 - 12/22/2012
+ART;340;"Documentary Photography";0100;STU;12225;TuTh 9:00AM - 11:30AM;Campus Center - Photo Studio;Jere C Dewaters;09/04/2012 - 12/22/2012
+ART;419;"Sculpture III";0100;STU;12226;MoWe 6:45PM - 9:15PM;Fine Arts Building 0121;Robert I Katz;09/04/2012 - 12/22/2012
+ART;420;"Senior Seminar";0100;LEC;12227;Tu 4:00PM - 6:45PM;Art &amp; Arch Building 0106;Jere C Dewaters;09/04/2012 - 12/22/2012
+ART;421;"Painting III";0100;STU;12228;TuTh 9:00AM - 11:30AM;Gannett Building;Peter R Precourt;09/04/2012 - 12/22/2012
+ASL;101;"Introduction to American Sign Language I";0100;LEC;12236;We 1:30PM - 5:15PM;Jewett Hall 0289;Richard Terry;09/04/2012 - 12/22/2012
+ASL;101;"Introduction to American Sign Language I";0101;LEC;12237;We 5:30PM - 9:15PM;Jewett Hall 0289;Lenore Boerner;09/04/2012 - 12/22/2012
+ASL;101;"Introduction to American Sign Language I";0300;LEC;13366;Tu 6:00PM - 9:45PM;Rockland;Lenore Boerner;09/04/2012 - 12/22/2012
+ASL;101;"Introduction to American Sign Language I";200;LEC;12832;Mo 5:00PM - 8:45PM;Eastport Hall 0100;Marlene R Carras;09/04/2012 - 12/22/2012
+AUD;219;"Audio Recording";0100;LEC;12460;MoWe 7:00PM - 10:00PM;Bennett D. Katz Library 0040;William O Moseley;09/04/2012 - 12/22/2012
+BIO;100;"Human Biology";0100;LEC;12661;We 9:00AM - 11:45AM;Jewett Hall 0295;Donna L Gronros;09/04/2012 - 12/22/2012
+BIO;100;"Human Biology";0101;LAB;12662;We 1:00PM - 3:00PM;Jewett Hall 0299;Donna L Gronros;09/04/2012 - 12/22/2012
+BIO;100;"Human Biology";0200;LEC;12869;MoWe 4:00PM - 5:20PM;Eastport Hall 0136;Constance C Holden;09/04/2012 - 12/22/2012
+BIO;100;"Human Biology";0201;LAB;12870;Fr 9:30AM - 11:30AM;Camden Hall 0101;E Donald Naber;09/04/2012 - 12/22/2012
+BIO;100;"Human Biology";0202;LEC;12871;MoWe 9:00AM - 10:20AM;Eastport Hall 0138;Natalia Abramova;09/04/2012 - 12/22/2012
+BIO;100;"Human Biology";0203;LAB;12872;Th 9:30AM - 11:30AM;Camden Hall 0101;Natalia Abramova;09/04/2012 - 12/22/2012
+BIO;104;"Introduction to Human Nutrition";9000;LEC;9352;TBA;Web/On-line;Sandra S Haggard;09/04/2012 - 12/22/2012
+BIO;104;"Introduction to Human Nutrition";9001;LEC;9353;TBA;Web/On-line;Sandra S Haggard;09/04/2012 - 12/22/2012
+BIO;104;"Introduction to Human Nutrition";9002;LEC;9354;TBA;Web/On-line;Tricia L VanKirk;09/04/2012 - 12/22/2012
+BIO;104;"Introduction to Human Nutrition";9003;LEC;9355;TBA;Web/On-line;Judith A Hilton;09/04/2012 - 12/22/2012
+BIO;110;"Introduction to Biology";0100;LEC;12663;Th 1:00PM - 3:45PM;Jewett Hall 0180;Christopher R Lage;09/04/2012 - 12/22/2012
+BIO;110;"Introduction to Biology";0101;LEC;12664;Tu 1:00PM - 3:45PM;Jewett Hall 0180;Susan O Baker;09/04/2012 - 12/22/2012
+BIO;110;"Introduction to Biology";0102;LAB;12665;Tu 1:00PM - 3:00PM;Jewett Hall 0299;Christopher R Lage;09/04/2012 - 12/22/2012
+BIO;110;"Introduction to Biology";0103;LAB;12666;Tu 10:00AM - 12:00PM;Jewett Hall 0299;Christopher R Lage;09/04/2012 - 12/22/2012
+BIO;110;"Introduction to Biology";0104;LAB;12667;Tu 4:00PM - 6:00PM;Jewett Hall 0299;Christopher R Lage;09/04/2012 - 12/22/2012
+BIO;110;"Introduction to Biology";0200;LEC;12873;MoWe 9:00AM - 10:20AM;Camden Hall 0304;Robert T Klose;09/04/2012 - 12/22/2012
+BIO;114E;"Principles of Evolution";9000;LEC;13290;TBA;Web/On-line;Anne F Hayes-Grillo;09/04/2012 - 12/22/2012
+BIO;115;"Mammalian Anatomy &amp; Physiology I";0200;LEC;12876;MoWe 10:30AM - 11:50AM;Camden Hall 0304;Anne F Hayes-Grillo;09/04/2012 - 12/22/2012
+BIO;115;"Mammalian Anatomy &amp; Physiology I";0201;LAB;12877;We 1:00PM - 3:00PM;Camden Hall 0101;Anne F Hayes-Grillo;09/04/2012 - 12/22/2012
+BIO;115;"Mammalian Anatomy &amp; Physiology I";0202;LAB;12878;We 3:45PM - 5:45PM;Camden Hall 0101;Anne F Hayes-Grillo;09/04/2012 - 12/22/2012
+BIO;210;"Anatomy and Physiology";0100;LEC;12668;Mo 1:00PM - 3:45PM;Jewett Hall 0180;Theodore Lane;09/04/2012 - 12/22/2012
+BIO;210;"Anatomy and Physiology";0101;LAB;12669;Mo 10:00AM - 12:00PM;Jewett Hall 0299;Theodore Lane;09/04/2012 - 12/22/2012
+BIO;210;"Anatomy and Physiology";0102;LAB;12670;Mo 4:00PM - 6:00PM;Jewett Hall 0299;Theodore Lane;09/04/2012 - 12/22/2012
+BIO;210;"Anatomy and Physiology";0200;LEC;12879;TuTh 10:30AM - 11:50AM;Camden Hall 0304;Anne F Hayes-Grillo;09/04/2012 - 12/22/2012
+BIO;210;"Anatomy and Physiology";0201;LAB;12880;Tu 1:30PM - 3:30PM;Camden Hall 0101;Anne F Hayes-Grillo;09/04/2012 - 12/22/2012
+BIO;210;"Anatomy and Physiology";0202;LAB;12881;Th 1:00PM - 3:00PM;Camden Hall 0101;Anne F Hayes-Grillo;09/04/2012 - 12/22/2012
+BIO;215;"Introduction to Human Genetics";9000;LEC;9356;TBA;Web/On-line;Natalia Abramova;09/04/2012 - 12/22/2012
+BIO;220;"Marine Biology";0200;LEC;12882;TuTh 9:00AM - 10:20AM;Camden Hall 0304;Robert T Klose;09/04/2012 - 12/22/2012
+BIO;265;"Veterinary Microbiology";0200;LEC;12883;TuTh 9:00AM - 10:20AM;Camden Hall 0304;E Donald Naber;09/04/2012 - 12/22/2012
+BIO;265;"Veterinary Microbiology";0201;LAB;12884;TuTh 10:30AM - 12:00PM;Camden Hall 0105;E Donald Naber;09/04/2012 - 12/22/2012
+BIO;265;"Veterinary Microbiology";0202;LAB;12885;TuTh 1:00PM - 2:30PM;Camden Hall 0105;E Donald Naber;09/04/2012 - 12/22/2012
+BIO;320;"Principles of Genetics";0100;LEC;12675;Th 4:00PM - 6:45PM;Jewett Hall 0190;Christopher R Lage;09/04/2012 - 12/22/2012
+BIO;321;"Microbiology";0100;LEC;12671;Fr 9:00AM - 11:45AM;Randall Student Center 138;Peter W Milligan;09/04/2012 - 12/22/2012
+BIO;321;"Microbiology";0101;LAB;12672;We 9:00AM - 12:00PM;Jewett Hall 0297;Peter W Milligan;09/04/2012 - 12/22/2012
+BIO;321;"Microbiology";0102;LAB;12673;We 1:00PM - 4:00PM;Jewett Hall 0297;Peter W Milligan;09/04/2012 - 12/22/2012
+BIO;321;"Microbiology";0103;LAB;12674;We 4:30PM - 7:30PM;Jewett Hall 0297;Keely Heidtman;09/04/2012 - 12/22/2012
+BIO;321;"Microbiology";0300;LEC;13098;Mo 6:00PM - 8:45PM;Ellsworth;Jason Allen Bubier;09/04/2012 - 12/22/2012
+BIO;321;"Microbiology";0301;LAB;13099;We 6:00PM - 9:00PM;Ellsworth;Jason Allen Bubier;09/04/2012 - 12/22/2012
+BIO;324;"Cell Biology";0100;LEC;12676;We 1:00PM - 3:45PM;Jewett Hall 0190;Sheila K Bennett;09/04/2012 - 12/22/2012
+BUA;100;"Introduction to Business";1000;LEC;9524;We 4:00PM - 6:45PM;Bennett D. Katz Library 0016;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;100;"Introduction to Business";1001;LEC;9525;We 4:00PM - 6:45PM;Bangor Hall ITV2;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;100;"Introduction to Business";1002;LEC;9526;We 4:00PM - 6:45PM;Bath Brunswick;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;100;"Introduction to Business";1003;LEC;9818;We 4:00PM - 6:45PM;Bucksport HS;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;100;"Introduction to Business";1004;LEC;9819;We 4:00PM - 6:45PM;Calais Center;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;100;"Introduction to Business";1005;LEC;9820;We 4:00PM - 6:45PM;Caribou;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;101;"Financial Accounting for Management Decision Making";0100;LEC;10187;Tu 1:00PM - 3:45PM;Jewett Hall 0189;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;101;"Financial Accounting for Management Decision Making";1000;LEC;9606;We 7:30AM - 8:45AM;Bennett D. Katz Library 0015;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;101;"Financial Accounting for Management Decision Making";1001;LEC;9607;We 7:30AM - 8:45AM;Bangor Hall ITV2;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;101;"Financial Accounting for Management Decision Making";1002;LEC;9608;We 7:30AM - 8:45AM;Bath Brunswick;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;101;"Financial Accounting for Management Decision Making";1003;LEC;10100;We 7:30AM - 8:45AM;Bucksport HS;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;101;"Financial Accounting for Management Decision Making";1004;LEC;10101;We 7:30AM - 8:45AM;Deer Isle;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;151;"Personal Financial Planning";1000;LEC;9527;Tu 9:00AM - 11:45AM;Bennett D. Katz Library 0015;Frank Bean;09/04/2012 - 12/22/2012
+BUA;151;"Personal Financial Planning";1001;LEC;9528;Tu 9:00AM - 11:45AM;Bangor Hall ITV2;Frank Bean;09/04/2012 - 12/22/2012
+BUA;151;"Personal Financial Planning";1002;LEC;9529;Tu 9:00AM - 11:45AM;Bath Brunswick;Frank Bean;09/04/2012 - 12/22/2012
+BUA;151;"Personal Financial Planning";1003;LEC;9975;Tu 9:00AM - 11:45AM;Bucksport HS;Frank Bean;09/04/2012 - 12/22/2012
+BUA;151;"Personal Financial Planning";1004;LEC;9976;Tu 9:00AM - 11:45AM;Caribou;Frank Bean;09/04/2012 - 12/22/2012
+BUA;151;"Personal Financial Planning";1005;LEC;9977;Tu 9:00AM - 11:45AM;Deer Isle;Frank Bean;09/04/2012 - 12/22/2012
+BUA;201;"Intermediate Financial Reporting I";1000;LEC;9609;Th 7:30AM - 8:45AM;Bennett D. Katz Library 0015;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;201;"Intermediate Financial Reporting I";1001;LEC;9610;Th 7:30AM - 8:45AM;Bangor Hall ITV2;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;201;"Intermediate Financial Reporting I";1002;LEC;9611;Th 7:30AM - 8:45AM;Bath Brunswick;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;201;"Intermediate Financial Reporting I";1003;LEC;10152;Th 7:30AM - 8:45AM;Bucksport HS;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;201;"Intermediate Financial Reporting I";1004;LEC;10153;Th 7:30AM - 8:45AM;Deer Isle;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;201;"Intermediate Financial Reporting I";1005;LEC;10154;Th 7:30AM - 8:45AM;Ellsworth;Barbara Vlaisavljevic;09/04/2012 - 12/22/2012
+BUA;211;"Accounting for Management Decisions";1000;LEC;9530;Fr 9:00AM - 11:45AM;Bennett D. Katz Library 0014;Frank Bean;09/04/2012 - 12/22/2012
+BUA;211;"Accounting for Management Decisions";1001;LEC;9531;Fr 9:00AM - 11:45AM;Bangor Hall ITV2;Frank Bean;09/04/2012 - 12/22/2012
+BUA;211;"Accounting for Management Decisions";1002;LEC;9532;Fr 9:00AM - 11:45AM;Bath Brunswick;Frank Bean;09/04/2012 - 12/22/2012
+BUA;211;"Accounting for Management Decisions";1003;LEC;10273;Fr 9:00AM - 11:45AM;Bucksport HS;Frank Bean;09/04/2012 - 12/22/2012
+BUA;211;"Accounting for Management Decisions";1004;LEC;10274;Fr 9:00AM - 11:45AM;Caribou;Frank Bean;09/04/2012 - 12/22/2012
+BUA;211;"Accounting for Management Decisions";1005;LEC;10275;Fr 9:00AM - 11:45AM;Deer Isle;Frank Bean;09/04/2012 - 12/22/2012
+BUA;216;"Consumer Lending";5000;LEC;15008;TBA;TBA;David M Leach;09/04/2012 - 12/22/2012
+BUA;223;"Principles of Management";0100;LEC;9958;Tu 4:00PM - 6:45PM;Randall Student Center 248;Frank Bean;09/04/2012 - 12/22/2012
+BUA;223;"Principles of Management";0200;LEC;9964;Tu 4:00PM - 6:45PM;Eastport Hall 0138;James C Belanger;09/04/2012 - 12/22/2012
+BUA;223;"Principles of Management";0300;LEC;10363;Mo 9:00AM - 11:45AM;TBA;John P Murray;09/04/2012 - 12/22/2012
+BUA;223;"Principles of Management";1000;LEC;9533;Th 9:00AM - 11:45AM;Bennett D. Katz Library 0015;Frank Bean;09/04/2012 - 12/22/2012
+BUA;223;"Principles of Management";1001;LEC;9534;Th 9:00AM - 11:45AM;Bangor Hall ITV2;Frank Bean;09/04/2012 - 12/22/2012
+BUA;223;"Principles of Management";1002;LEC;9535;Th 9:00AM - 11:45AM;Bath Brunswick;Frank Bean;09/04/2012 - 12/22/2012
+BUA;230;"Business Law";1000;LEC;9549;Fr 4:00PM - 6:45PM;Bennett D. Katz Library 0014;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;230;"Business Law";1001;LEC;9551;Fr 4:00PM - 6:45PM;Bangor Hall ITV1;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;230;"Business Law";1002;LEC;9552;Fr 4:00PM - 6:45PM;Bath Brunswick;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;230;"Business Law";1003;LEC;10389;Fr 4:00PM - 6:45PM;Bucksport HS;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;230;"Business Law";1004;LEC;10390;Fr 4:00PM - 6:45PM;Calais Center;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;230;"Business Law";1005;LEC;10391;Fr 4:00PM - 6:45PM;Deer Isle;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;241;"Marketing for Small Business";5000;LEC;15017;TBA;TBA;Frank Bean;09/04/2012 - 12/22/2012
+BUA;276;"Taxation";1000;LEC;9612;We 7:00PM - 9:45PM;Bennett D. Katz Library 0016;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;276;"Taxation";1001;LEC;9613;We 7:00PM - 9:45PM;Bangor Hall ITV2;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;276;"Taxation";1002;LEC;9614;We 7:00PM - 9:45PM;Bath Brunswick;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;276;"Taxation";1003;LEC;13624;We 7:00PM - 9:45PM;Bucksport HS;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;276;"Taxation";1004;LEC;13625;We 7:00PM - 9:45PM;Calais Center;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;276;"Taxation";1005;LEC;13626;We 7:00PM - 9:45PM;Deer Isle;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;303;"Management Information System";1000;LEC;10378;Th 7:00PM - 9:45PM;Bennett D. Katz Library 0015;Jody L Breton;09/04/2012 - 12/22/2012
+BUA;303;"Management Information System";1001;LEC;10379;Th 7:00PM - 9:45PM;Bangor Hall ITV3;Jody L Breton;09/04/2012 - 12/22/2012
+BUA;303;"Management Information System";1002;LEC;10380;Th 7:00PM - 9:45PM;Bath Brunswick;Jody L Breton;09/04/2012 - 12/22/2012
+BUA;303;"Management Information System";1003;LEC;10604;Th 7:00PM - 9:45PM;Bucksport HS;Jody L Breton;09/04/2012 - 12/22/2012
+BUA;303;"Management Information System";1004;LEC;10605;Th 7:00PM - 9:45PM;Calais Center;Jody L Breton;09/04/2012 - 12/22/2012
+BUA;303;"Management Information System";1005;LEC;10606;Th 7:00PM - 9:45PM;Deer Isle;Jody L Breton;09/04/2012 - 12/22/2012
+BUA;343;"Advanced Accounting I";1000;LEC;9615;Fr 1:00PM - 3:45PM;Bennett D. Katz Library 0014;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;343;"Advanced Accounting I";1001;LEC;9616;Fr 1:00PM - 3:45PM;Bangor Hall ITV1;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;343;"Advanced Accounting I";1002;LEC;9617;Fr 1:00PM - 3:45PM;Bath Brunswick;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;343;"Advanced Accounting I";1003;LEC;10682;Fr 1:00PM - 3:45PM;Bucksport HS;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;343;"Advanced Accounting I";1004;LEC;10683;Fr 1:00PM - 3:45PM;Caribou;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;343;"Advanced Accounting I";1005;LEC;10684;Fr 1:00PM - 3:45PM;Deer Isle;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;355;"Introduction to Operations Research";0200;LEC;9973;We 9:00AM - 11:45AM;Bangor Hall 0101;Robert Keyes Roper;09/04/2012 - 12/22/2012
+BUA;357;"Business Finance";0100;LEC;14194;Th 4:00PM - 6:45PM;Randall Student Center 246;Frank Bean;09/04/2012 - 12/22/2012
+BUA;360;"Operations Management";1000;LEC;9558;We 4:00PM - 6:45PM;Bennett D. Katz Library 0015;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;360;"Operations Management";1001;LEC;9559;We 4:00PM - 6:45PM;Bangor Hall ITV1;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;360;"Operations Management";1002;LEC;9561;We 4:00PM - 6:45PM;Bath Brunswick;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;360;"Operations Management";1003;LEC;10720;We 4:00PM - 6:45PM;Bucksport HS;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;360;"Operations Management";1004;LEC;10721;We 4:00PM - 6:45PM;Calais Center;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;360;"Operations Management";1005;LEC;10722;We 4:00PM - 6:45PM;Caribou;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;361;"Human Resource Management";1000;LEC;9566;Fr 4:00PM - 6:45PM;Bennett D. Katz Library 0015;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;361;"Human Resource Management";1001;LEC;9567;Fr 4:00PM - 6:45PM;Bangor Hall ITV2;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;361;"Human Resource Management";1002;LEC;9568;Fr 4:00PM - 6:45PM;Bath Brunswick;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;361;"Human Resource Management";1003;LEC;10802;Fr 4:00PM - 6:45PM;Bucksport HS;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;361;"Human Resource Management";1004;LEC;10803;Fr 4:00PM - 6:45PM;Calais Center;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;361;"Human Resource Management";1005;LEC;10804;Fr 4:00PM - 6:45PM;Deer Isle;Daylin J Butler;09/04/2012 - 12/22/2012
+BUA;362;"Labor";1000;LEC;9619;Th 4:00PM - 6:45PM;Bennett D. Katz Library 0015;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;362;"Labor";1001;LEC;9620;Th 4:00PM - 6:45PM;Bangor Hall ITV1;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;362;"Labor";1002;LEC;9621;Th 4:00PM - 6:45PM;Bath Brunswick;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;362;"Labor";1003;LEC;10955;Th 4:00PM - 6:45PM;Bucksport HS;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;362;"Labor";1004;LEC;10956;Th 4:00PM - 6:45PM;Calais Center;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;362;"Labor";1005;LEC;10957;Th 4:00PM - 6:45PM;Deer Isle;J Powers McGuire;09/04/2012 - 12/22/2012
+BUA;365;"Organizational Behavior";1000;LEC;9627;We 7:00PM - 9:45PM;Bennett D. Katz Library 0014;Brenda O McAleer;09/04/2012 - 12/22/2012
+BUA;365;"Organizational Behavior";1001;LEC;14801;We 7:00PM - 9:45PM;Bennett D. Katz Library 0005;Brenda O McAleer;09/04/2012 - 12/22/2012
+BUA;365;"Organizational Behavior";1001;LEC;9628;We 7:00PM - 9:45PM;Bangor Hall ITV1;Brenda O McAleer;09/04/2012 - 12/22/2012
+BUA;365;"Organizational Behavior";1002;LEC;9629;We 7:00PM - 9:45PM;Bath Brunswick;Brenda O McAleer;09/04/2012 - 12/22/2012
+BUA;365;"Organizational Behavior";1003;LEC;11160;We 7:00PM - 9:45PM;Bucksport HS;Brenda O McAleer;09/04/2012 - 12/22/2012
+BUA;365;"Organizational Behavior";1004;LEC;11161;We 7:00PM - 9:45PM;Calais Center;Brenda O McAleer;09/04/2012 - 12/22/2012
+BUA;369;"Marketing";1000;LEC;14148;Mo 7:00PM - 9:45PM;Bennett D. Katz Library 0015;David M Leach;09/04/2012 - 12/22/2012
+BUA;369;"Marketing";1001;LEC;14149;Mo 7:00PM - 9:45PM;Bangor Hall ITV3;David M Leach;09/04/2012 - 12/22/2012
+BUA;369;"Marketing";1002;LEC;14150;Mo 7:00PM - 9:45PM;Bath Brunswick;David M Leach;09/04/2012 - 12/22/2012
+BUA;369;"Marketing";1003;LEC;14151;Mo 7:00PM - 9:45PM;Bucksport HS;David M Leach;09/04/2012 - 12/22/2012
+BUA;369;"Marketing";1004;LEC;14152;Mo 7:00PM - 9:45PM;Calais Center;David M Leach;09/04/2012 - 12/22/2012
+BUA;369;"Marketing";1005;LEC;14153;Mo 7:00PM - 9:45PM;Caribou;David M Leach;09/04/2012 - 12/22/2012
+BUA;458;"Accounting Seminar";1000;LEC;10386;Tu 7:30AM - 8:45AM;Bennett D. Katz Library 0014;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;458;"Accounting Seminar";1001;LEC;13616;Tu 7:30AM - 8:45AM;Bangor Hall ITV1;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;458;"Accounting Seminar";1002;LEC;10387;Tu 7:30AM - 8:45AM;Rockland;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;458;"Accounting Seminar";1003;LEC;12112;Tu 7:30AM - 8:45AM;Ellsworth;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;458;"Accounting Seminar";1004;LEC;12113;Tu 7:30AM - 8:45AM;Western ME Comm Coll;Thomas J Giordano;09/04/2012 - 12/22/2012
+BUA;458;"Accounting Seminar";1005;LEC;13670;Tu 7:30AM - 8:45AM;Bath Brunswick;Thomas J Giordano;09/04/2012 - 12/22/2012
+CHY;105;"Fundamentals of Chemistry";0100;LEC;12678;Th 9:00AM - 11:45AM;Jewett Hall 0293;Gretchen D Noyes-Hull;09/04/2012 - 12/22/2012
+CHY;105;"Fundamentals of Chemistry";0200;LEC;12886;TuTh 4:00PM - 5:20PM;Camden Hall 0304;Tricia L VanKirk;09/04/2012 - 12/22/2012
+CHY;105;"Fundamentals of Chemistry";0300;LEC;13371;We 4:00PM - 6:45PM;Rumford-Mexico Center;Thomas R Wylie;09/04/2012 - 12/22/2012
+CHY;106;"Fundamentals of Chemistry Laboratory";0100;LAB;12679;Th 1:00PM - 3:00PM;Jewett Hall 0294;Gretchen D Noyes-Hull;09/04/2012 - 12/22/2012
+CHY;106;"Fundamentals of Chemistry Laboratory";0200;LAB;12887;Tu 5:30PM - 7:30PM;Camden Hall 0105;Tricia L VanKirk;09/04/2012 - 12/22/2012
+CHY;106;"Fundamentals of Chemistry Laboratory";0201;LAB;12888;Th 5:30PM - 7:30PM;Camden Hall 0105;Tricia L VanKirk;09/04/2012 - 12/22/2012
+CHY;106;"Fundamentals of Chemistry Laboratory";0301;LAB;13372;We 7:00PM - 9:00PM;Rumford-Mexico Center;Thomas R Wylie;09/04/2012 - 12/22/2012
+CHY;108;"Allied Health Chemistry";0200;LEC;12889;MoWe 9:00AM - 10:20AM;Eastport Hall 0105;Judith A Hilton;09/04/2012 - 12/22/2012
+CHY;108;"Allied Health Chemistry";0201;LAB;12890;Tu 1:00PM - 4:00PM;Camden Hall 0105;Judith A Hilton;09/04/2012 - 12/22/2012
+CHY;108;"Allied Health Chemistry";0202;LEC;12891;TuFr 9:00AM - 10:20AM;Eastport Hall 0138;Judith A Hilton;09/04/2012 - 12/22/2012
+CHY;108;"Allied Health Chemistry";0203;LAB;12892;Th 1:00PM - 4:00PM;Camden Hall 0105;Roberta Trefts;09/04/2012 - 12/22/2012
+CHY;108;"Allied Health Chemistry";0204;LAB;12893;Fr 10:30AM - 1:30PM;Camden Hall 0105;Roberta Trefts;09/04/2012 - 12/22/2012
+CHY;115;"General Chemistry I";0100;LEC;12680;We 9:00AM - 11:45AM;Jewett Hall 0180;Susan O Baker;09/04/2012 - 12/22/2012
+CHY;115;"General Chemistry I";0101;LAB;12682;We 1:00PM - 4:00PM;Jewett Hall 0294;Susan O Baker;09/04/2012 - 12/22/2012
+CHY;115;"General Chemistry I";0102;LAB;12683;Th 9:00AM - 12:00PM;Jewett Hall 0294;Susan O Baker;09/04/2012 - 12/22/2012
+CHY;117;"Introduction to Organic and Biochemistry";0100;LEC;14477;Mo 1:00PM - 3:45PM;Jewett Hall 0295;Susan O Baker;09/04/2012 - 12/22/2012
+CHY;117;"Introduction to Organic and Biochemistry";0101;LAB;14478;Mo 4:15PM - 6:15PM;Jewett Hall 0294;;09/04/2012 - 12/22/2012
+CIS;100;"Introduction to Computing";0100;LEC;9996;Fr 9:00AM - 11:45AM;Randall Student Center 255;Lynne S Sanford;09/04/2012 - 12/22/2012
+CIS;100;"Introduction to Computing";0101;LEC;10005;Mo 4:00PM - 6:45PM;Randall Student Center 255;Henry Felch;09/04/2012 - 12/22/2012
+CIS;100;"Introduction to Computing";0200;LEC;10017;Tu 1:00PM - 3:45PM;Eastport Hall 0102;Diana Anderson Kokoska;09/04/2012 - 12/22/2012
+CIS;100;"Introduction to Computing";0201;LEC;10021;We 9:00AM - 11:45AM;Eastport Hall 0102;Diana Anderson Kokoska;09/04/2012 - 12/22/2012
+CIS;100;"Introduction to Computing";0202;LEC;10022;Th 9:00AM - 11:45AM;Eastport Hall 0102;Robert Keyes Roper;09/04/2012 - 12/22/2012
+CIS;100;"Introduction to Computing";0300;LEC;10359;We 4:00PM - 6:45PM;Bath Brunswick;Lynne S Sanford;09/04/2012 - 12/22/2012
+CIS;101;"Introduction to Computer Science";1000;LEC;9636;We 1:00PM - 3:45PM;Bennett D. Katz Library 0015;Henry Felch;09/04/2012 - 12/22/2012
+CIS;101;"Introduction to Computer Science";1001;LEC;9637;We 1:00PM - 3:45PM;Bangor Hall ITV2;Henry Felch;09/04/2012 - 12/22/2012
+CIS;101;"Introduction to Computer Science";1002;LEC;9638;We 1:00PM - 3:45PM;Bath Brunswick;Henry Felch;09/04/2012 - 12/22/2012
+CIS;101;"Introduction to Computer Science";1003;LEC;11703;We 1:00PM - 3:45PM;Bucksport HS;Henry Felch;09/04/2012 - 12/22/2012
+CIS;101;"Introduction to Computer Science";1004;LEC;11704;We 1:00PM - 3:45PM;Caribou;Henry Felch;09/04/2012 - 12/22/2012
+CIS;101;"Introduction to Computer Science";1005;LEC;11705;We 1:00PM - 3:45PM;Deer Isle;Henry Felch;09/04/2012 - 12/22/2012
+CIS;131;"Web Applications and Development";9000;LEC;9360;TBA;Web/On-line;Carol A Churchill;09/04/2012 - 12/22/2012
+CIS;131;"Web Applications and Development";9001;LEC;14724;TBA;Web/On-line;Carol A Churchill;09/04/2012 - 12/22/2012
+CIS;135;"Introduction to Information Systems and Applications Development";0100;LEC;10023;Mo 4:00PM - 6:45PM;Randall Student Center 253;Robert Keyes Roper;09/04/2012 - 12/22/2012
+CIS;135;"Introduction to Information Systems and Applications Development";0300;LEC;10360;Tu 4:00PM - 6:45PM;TBA;Lynne S Sanford;09/04/2012 - 12/22/2012
+CIS;135;"Introduction to Information Systems and Applications Development";9000;LEC;9361;TBA;Web/On-line;Diana Anderson Kokoska;09/04/2012 - 12/22/2012
+CIS;135;"Introduction to Information Systems and Applications Development";9001;LEC;14804;TBA;Web/On-line;Diana Anderson Kokoska;09/04/2012 - 12/22/2012
+CIS;212;"Programming Concepts: Visual Basic I";0100;LEC;10025;Th 4:00PM - 6:45PM;Randall Student Center 255;J Gregory Jolda;09/04/2012 - 12/22/2012
+CIS;212;"Programming Concepts: Visual Basic I";9999;LEC;11912;TBA;Web/On-line;J Gregory Jolda;09/04/2012 - 12/22/2012
+CIS;214;"Applications Programming: Java";9000;LEC;9362;TBA;Web/On-line;Mark Richard Goodridge;09/04/2012 - 12/22/2012
+CIS;220;"Information Technology: Hardware and Systems Software";0300;LEC;10367;Th 4:00PM - 6:45PM;TBA;Mark Richard Goodridge;09/04/2012 - 12/22/2012
+CIS;220;"Information Technology: Hardware and Systems Software";9000;LEC;9363;TBA;Web/On-line;Mark Richard Goodridge;09/04/2012 - 12/22/2012
+CIS;225;"Introduction to Health Informatics";9100;LEC;14579;TBA;Web/On-line;Megan Keir Alexander;10/10/2012 - 11/30/2012
+CIS;240;"Networking Concepts";9000;LEC;9364;TBA;Web/On-line;Henry Felch;09/04/2012 - 12/22/2012
+CIS;243;"Web Applications Programming: XML";5000;LEC;15003;TBA;TBA;Diana Anderson Kokoska;09/04/2012 - 12/22/2012
+CIS;303;"Management Information Systems";1000;LEC;10381;Th 7:00PM - 9:45PM;Bennett D. Katz Library 0015;Jody L Breton;09/04/2012 - 12/22/2012
+CIS;303;"Management Information Systems";1001;LEC;10382;Th 7:00PM - 9:45PM;Bangor Hall ITV4;Jody L Breton;09/04/2012 - 12/22/2012
+CIS;303;"Management Information Systems";1002;LEC;10383;Th 7:00PM - 9:45PM;Bath Brunswick;Jody L Breton;09/04/2012 - 12/22/2012
+CIS;303;"Management Information Systems";1003;LEC;10643;Th 7:00PM - 9:45PM;Bucksport HS;Jody L Breton;09/04/2012 - 12/22/2012
+CIS;303;"Management Information Systems";1004;LEC;10644;Th 7:00PM - 9:45PM;Calais Center;Jody L Breton;09/04/2012 - 12/22/2012
+CIS;303;"Management Information Systems";1005;LEC;10645;Th 7:00PM - 9:45PM;Deer Isle;Jody L Breton;09/04/2012 - 12/22/2012
+CIS;330;"Systems Analysis";0100;LEC;10027;We 4:00PM - 6:45PM;Randall Student Center 255;Henry Felch;09/04/2012 - 12/22/2012
+CIS;330;"Systems Analysis";9999;LEC;12802;TBA;Web/On-line;Henry Felch;09/04/2012 - 12/22/2012
+CIS;333;"Web Programming: PHP";9000;LEC;9365;TBA;Web/On-line;Diana Anderson Kokoska;09/04/2012 - 12/22/2012
+CIS;350;"Database Design and Management";0100;LEC;10028;Tu 4:00PM - 6:45PM;Randall Student Center 255;Henry Felch;09/04/2012 - 12/22/2012
+CIS;350;"Database Design and Management";9999;LEC;12769;TBA;Web/On-line;Henry Felch;09/04/2012 - 12/22/2012
+CIS;360;"Geographical Information Systems";0100;LEC;10029;Th 4:00PM - 6:45PM;Randall Student Center 253;Robert S Bistrais;09/04/2012 - 12/22/2012
+COL;100;"Introduction to the College Experience";0200;LEC;12799;TuTh 9:00AM - 10:20AM;Eastport Hall 0105;Warren K Newton;09/04/2012 - 12/22/2012
+COL;100;"Introduction to the College Experience";1000;LEC;9639;We 9:00AM - 11:45AM;Bennett D. Katz Library 0014;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+COL;100;"Introduction to the College Experience";1001;LEC;9640;We 9:00AM - 11:45AM;Bangor Hall ITV1;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+COL;100;"Introduction to the College Experience";1002;LEC;9641;We 9:00AM - 11:45AM;Bath Brunswick;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+COL;100;"Introduction to the College Experience";1003;LEC;11780;We 9:00AM - 11:45AM;Bucksport HS;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+COL;100;"Introduction to the College Experience";1004;LEC;11781;We 9:00AM - 11:45AM;Deer Isle;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+COL;214;"Professionalism in the Workplace";9000;LEC;9366;TBA;Web/On-line;Rebecca L Crooker;09/04/2012 - 12/22/2012
+COM;101;"Public Speaking";0100;LEC;12803;Tu 1:00PM - 3:45PM;Jewett Hall 0190;Charles G Waugh;09/04/2012 - 12/22/2012
+COM;101;"Public Speaking";0101;LEC;12804;We 9:00AM - 11:45AM;Randall Student Center 248;Roland M Roy;09/04/2012 - 12/22/2012
+COM;101;"Public Speaking";0102;LEC;12805;Th 4:00PM - 6:45PM;Jewett Hall 0291;Linda S Buckmaster;09/04/2012 - 12/22/2012
+COM;101;"Public Speaking";0200;LEC;12833;TuTh 2:30PM - 3:50PM;Eastport Hall 0105;Harry E Batty;09/04/2012 - 12/22/2012
+COM;101;"Public Speaking";0201;LEC;12834;MoWe 10:30AM - 11:50AM;Eastport Hall 0138;Harry E Batty;09/04/2012 - 12/22/2012
+COM;101;"Public Speaking";0300;LEC;12925;Mo 9:00AM - 11:45AM;Saco Center;Amy E Peterson Cyr;09/04/2012 - 12/22/2012
+COM;102;"Interpersonal Communications";0200;LEC;12835;TuTh 7:00PM - 8:20PM;Eastport Hall 0138;Nicole E Cloud;09/04/2012 - 12/22/2012
+COM;102;"Interpersonal Communications";0201;LEC;12836;MoWe 1:00PM - 2:20PM;Eastport Hall 0138;Nancy M Hunter;09/04/2012 - 12/22/2012
+COM;102;"Interpersonal Communications";0202;LEC;12837;Th 1:00PM - 3:45PM;Eastport Hall 0136;Carol G Trimble;09/04/2012 - 12/22/2012
+COM;102;"Interpersonal Communications";0203;LEC;12838;Tu 9:00AM - 11:45AM;Belfast Hall 0307;Carol G Trimble;09/04/2012 - 12/22/2012
+COM;102;"Interpersonal Communications";0204;LEC;12839;MoWe 7:30AM - 8:50AM;Eastport Hall 0136;Wesley Kyle Colbath;09/04/2012 - 12/22/2012
+COM;102;"Interpersonal Communications";0300;LEC;12899;Tu 9:00AM - 11:45AM;Bath Brunswick;Katharine W Slack;09/04/2012 - 12/22/2012
+COM;104;"Communication in Groups and Organizations";0100;LEC;12807;Mo 9:00AM - 11:45AM;Randall Student Center 248;Roland M Roy;09/04/2012 - 12/22/2012
+COM;104;"Communication in Groups and Organizations";9000;LEC;9368;TBA;Web/On-line;Rita Jeanne Pare-Peters;09/04/2012 - 12/22/2012
+COM;106;"Oral Communication of Literature";0100;LEC;12342;Mo 9:00AM - 11:45AM;Jewett Hall 0190;Jeri Pitcher;09/04/2012 - 12/22/2012
+COM;305;"Argumentation and Debate";0300;LEC;13040;We 4:00PM - 6:45PM;Rockland;Stephen M Moro;09/04/2012 - 12/22/2012
+COM;317;"Mass Media";9000;LEC;9369;TBA;Web/On-line;Charles G Waugh;09/04/2012 - 12/22/2012
+COM;375;"Social Networks";9000;LEC;9370;TBA;Web/On-line;James Cook;09/04/2012 - 12/22/2012
+DEA;101;"Chairside Dental Assisting I";6000;LEC;13958;Tu 9:00AM - 10:45AM;College Center 0136;Laurie Ann Willis;09/04/2012 - 12/22/2012
+DEA;101;"Chairside Dental Assisting I";6001;LEC;14445;Tu 9:00AM - 10:45AM;Bennett D. Katz Library 0005;Laurie Ann Willis;09/04/2012 - 12/22/2012
+DEA;101;"Chairside Dental Assisting I";6002;LEC;14447;Tu 9:00AM - 10:45AM;TBA;Laurie Ann Willis;09/04/2012 - 12/22/2012
+DEA;101;"Chairside Dental Assisting I";6100;LAB;14444;Fr 8:00AM - 10:00AM;College Center CLIN;Laurie Ann Willis;09/04/2012 - 12/22/2012
+DEA;101;"Chairside Dental Assisting I";6101;LAB;14446;Fr 8:00AM - 10:00AM;College Center CLIN;Laurie Ann Willis;09/04/2012 - 12/22/2012
+DEA;101;"Chairside Dental Assisting I";6102;LAB;14448;Fr 8:00AM - 10:00AM;College Center CLIN;Laurie Ann Willis;09/04/2012 - 12/22/2012
+DEA;102;"Biodental Sciences I";9000;LEC;10239;TBA;Web/On-line;Laurie Ann Willis;09/04/2012 - 12/22/2012
+DEH;200;"Preclinical Dental Hygiene";0200;LEC;9101;TuTh 7:45AM - 12:00PM;College Center CLIN;Ann E Curtis;09/04/2012 - 12/22/2012
+DEH;201;"Preclinical Dental Hygiene Theory";0200;LEC;9102;TuTh 1:00PM - 4:00PM;College Center 0135;Ann E Curtis;09/04/2012 - 12/22/2012
+DEH;202;"Head &amp; Neck Anatomy";0200;LEC;10334;We 8:00AM - 12:00PM;College Center 0135;Joleen Lee;09/04/2012 - 12/22/2012
+DEH;202;"Head &amp; Neck Anatomy";0201;LAB;10336;Mo 1:00PM - 3:00PM;College Center 0142;Joleen Lee;09/04/2012 - 12/22/2012
+DEH;202;"Head &amp; Neck Anatomy";0202;LAB;10337;Mo 10:00AM - 12:00PM;College Center 0142;Joleen Lee;09/04/2012 - 12/22/2012
+DEH;203;"Dental Radiology";6000;LEC;14416;We 1:00PM - 3:00PM;Bennett D. Katz Library 0040;Dawn M Bearor;09/04/2012 - 12/22/2012
+DEH;203;"Dental Radiology";6000;LEC;13959;We 1:00PM - 3:00PM;College Center 0136;Dawn M Bearor;09/04/2012 - 12/22/2012
+DEH;204;"Dental Radiology Laboratory";0100;LAB;9077;Mo 5:00PM - 9:00PM;TBA;Candace Sue Kunn;09/04/2012 - 12/22/2012
+DEH;204;"Dental Radiology Laboratory";0200;LAB;10318;Mo 1:00PM - 5:00PM;College Center RAD;Dawn M Bearor;09/04/2012 - 12/22/2012
+DEH;204;"Dental Radiology Laboratory";0201;LAB;10319;Th 1:00PM - 5:00PM;College Center RAD;Dawn M Bearor;09/04/2012 - 12/22/2012
+DEH;204;"Dental Radiology Laboratory";0202;LAB;10320;Mo 8:00AM - 12:00PM;College Center RAD;Tricia Ann Spearin;09/04/2012 - 12/22/2012
+DEH;204;"Dental Radiology Laboratory";0203;LAB;10321;We 8:00AM - 12:00PM;College Center RAD;Tricia Ann Spearin;09/04/2012 - 12/22/2012
+DEH;204;"Dental Radiology Laboratory";0204;LAB;10322;Fr 8:00AM - 12:00PM;College Center RAD;Carrie J Hall-Harvey;09/04/2012 - 12/22/2012
+DEH;213;"Dental Materials";9000;LEC;10240;TBA;Web/On-line;Danielle Furgeson;09/04/2012 - 12/22/2012
+DEH;217;"Dental Materials Lab";0200;LAB;10324;Fr 12:30PM - 3:00PM;College Center 0142;;09/04/2012 - 12/22/2012;Fr 10:15AM - 11:45AM;College Center 0142;;09/04/2012 - 12/22/2012
+DEH;300;"Clinical Dental Hygiene II";0200;LEC;10325;MoWe 8:00AM - 5:00PM;College Center 0142;Diane E Blanchette;09/04/2012 - 12/22/2012;Th 1:00PM - 5:00PM;College Center 0142;Diane E Blanchette;09/04/2012 - 12/22/2012
+DEH;301;"Clinical Dental Hygiene Theory II";0200;LEC;10326;Tu 10:00AM - 12:00PM;College Center 0135;Joleen Lee;09/04/2012 - 12/22/2012
+DEH;301;"Clinical Dental Hygiene Theory II";0201;LAB;10327;Tu 1:00PM - 3:00PM;College Center CLIN;Joleen Lee;09/04/2012 - 12/22/2012
+DEH;301;"Clinical Dental Hygiene Theory II";0202;LAB;10328;Tu 3:00PM - 5:00PM;College Center CLIN;Joleen Lee;09/04/2012 - 12/22/2012
+DEH;303;"Periodontology";0200;LEC;10329;Tu 8:00AM - 10:00AM;College Center 0135;Nancy Lynn Foster;09/04/2012 - 12/22/2012
+DEH;304;"Dental Anxiety &amp; Pain Management";0200;LEC;10330;Fr 8:00AM - 12:00PM;College Center 0135;John Hauge;09/04/2012 - 12/22/2012
+DEH;305;"Community Dentistry I";0200;LEC;10331;Th 10:00AM - 12:00PM;College Center 0135;Nancy Lynn Foster;09/04/2012 - 12/22/2012
+DEH;380;"Preclinical Expanded Functions";0200;LEC;10332;We 5:00PM - 9:00PM;College Center 0136;Rebekah Kaufman Blanchette;09/04/2012 - 12/22/2012
+DEH;380;"Preclinical Expanded Functions";0201;LAB;10333;Fr 12:30PM - 4:30PM;College Center CLIN;Rebekah Kaufman Blanchette;09/04/2012 - 12/22/2012
+DRA;101;"Introduction to Theatre";0100;LEC;12415;Mo 1:00PM - 3:45PM;Jewett Hall 0185;David Greenham;09/04/2012 - 12/22/2012
+DRA;101;"Introduction to Theatre";0200;LEC;12840;TuTh 9:00AM - 10:20AM;Bangor Hall 0101;Harry E Batty;09/04/2012 - 12/22/2012
+DRA;101;"Introduction to Theatre";9000;LEC;9372;TBA;Web/On-line;Christopher D Bates;09/04/2012 - 12/22/2012
+DRA;106;"Oral Communication of Literature";0100;LEC;12333;Mo 9:00AM - 11:45AM;Jewett Hall 0190;Jeri Pitcher;09/04/2012 - 12/22/2012
+DRA;151;"Play Production";0200;LEC;12841;MoWe 9:00AM - 10:20AM;Eastport Hall 0104;Christopher D Bates;09/04/2012 - 12/22/2012
+DRA;265;"The American Movie";0300;LEC;12900;Th 1:00PM - 3:45PM;Bath Brunswick;James Seymour;09/04/2012 - 12/22/2012
+DRA;265;"The American Movie";0302;LEC;13043;Tu 1:00PM - 3:45PM;Rockland;James Seymour;09/04/2012 - 12/22/2012
+DRA;265;"The American Movie";301;LEC;12927;Tu 4:00PM - 6:45PM;Rumford-Mexico Center;William St John;09/04/2012 - 12/22/2012
+DRA;280;"Introduction to Films";0100;LEC;12427;Tu 7:00PM - 9:45PM;Jewett Hall 0180;Kenneth Eisen;09/04/2012 - 12/22/2012
+DRA;280;"Introduction to Films";0200;LEC;12842;Tu 1:00PM - 3:45PM;Eastport Hall 0104;Christopher D Bates;09/04/2012 - 12/22/2012
+DRA;280;"Introduction to Films";0201;LEC;12843;We 4:00PM - 6:45PM;Eastport Hall 0104;Christopher D Bates;09/04/2012 - 12/22/2012
+DRA;333;"Gender";0100;LEC;12423;Tu 4:00PM - 6:45PM;Jewett Hall 0180;Kenneth Eisen;09/04/2012 - 12/22/2012
+ECO;100;"Introduction to Economics";0100;LEC;10030;Tu 1:00PM - 3:45PM;Randall Student Center 250;Ronald N Norton;09/04/2012 - 12/22/2012
+ECO;100;"Introduction to Economics";9000;LEC;9373;TBA;Web/On-line;Ronald N Norton;09/04/2012 - 12/22/2012
+ECO;201;"Macroeconomics";001;LEC;9646;Mo 1:00PM - 3:45PM;Bangor Hall ITV2;Ronald N Norton;09/04/2012 - 12/22/2012
+ECO;201;"Macroeconomics";1000;LEC;9645;Mo 1:00PM - 3:45PM;Bennett D. Katz Library 0015;Ronald N Norton;09/04/2012 - 12/22/2012
+ECO;201;"Macroeconomics";1002;LEC;9647;Mo 1:00PM - 3:45PM;Bath Brunswick;Ronald N Norton;09/04/2012 - 12/22/2012
+ECO;201;"Macroeconomics";1003;LEC;11865;Mo 1:00PM - 3:45PM;Bucksport HS;Ronald N Norton;09/04/2012 - 12/22/2012
+ECO;201;"Macroeconomics";1004;LEC;11866;Mo 1:00PM - 3:45PM;Caribou;Ronald N Norton;09/04/2012 - 12/22/2012
+ECO;201;"Macroeconomics";1005;LEC;11867;Mo 1:00PM - 3:45PM;Deer Isle;Ronald N Norton;09/04/2012 - 12/22/2012
+ECO;202;"Microeconomics";0200;LEC;10219;Mo 9:00AM - 11:45AM;Eastport Hall 0101;Robert Keyes Roper;09/04/2012 - 12/22/2012
+ECO;202;"Microeconomics";9000;LEC;9375;TBA;Web/On-line;Ronald N Norton;09/04/2012 - 12/22/2012
+EDU;250E;"Foundations of Education";6000;LEC;10218;We 4:00PM - 6:45PM;Bennett D. Katz Library 0005;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;250E;"Foundations of Education";6001;LEC;10388;We 4:00PM - 6:45PM;Rockland Video Conferencing;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;250E;"Foundations of Education";6002;LEC;12117;We 4:00PM - 6:45PM;BBC Video Conferencing;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;250E;"Foundations of Education";6003;LEC;12119;We 4:00PM - 6:45PM;Ellsworth Video Conferencing;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;250E;"Foundations of Education";6004;LEC;12120;We 4:00PM - 6:45PM;Western ME Comm Coll -VC;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;250E;"Foundations of Education";6005;LEC;14331;We 4:00PM - 6:45PM;Bangor Hall 0139;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;390;"Secondary Methods of Teaching";6000;LEC;13005;Tu 4:00PM - 6:45PM;Bennett D. Katz Library 0005;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;390;"Secondary Methods of Teaching";6001;LEC;13013;Tu 4:00PM - 6:45PM;Rockland Video Conferencing;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;390;"Secondary Methods of Teaching";6002;LEC;13017;Tu 4:00PM - 6:45PM;BBC Video Conferencing;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;390;"Secondary Methods of Teaching";6003;LEC;13018;Tu 4:00PM - 6:45PM;Ellsworth Video Conferencing;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+EDU;390;"Secondary Methods of Teaching";6004;LEC;14723;Tu 4:00PM - 6:45PM;Rumford Video Conferencing;Cynthia Diane Dean;09/04/2012 - 12/22/2012
+ENG;;"";0100;LEC;12428;Tu 4:00PM - 6:45PM;Randall Student Center 246;Julie Hendrickson;09/04/2012 - 12/22/2012
+ENG;;"";0101;LEC;12429;Th 9:00AM - 11:45AM;Randall Student Center 246;Mark Defazio;09/04/2012 - 12/22/2012
+ENG;;"";0102;LEC;12430;Mo 1:00PM - 3:45PM;Randall Student Center 246;Rachel Ingrid Robbins;09/04/2012 - 12/22/2012
+ENG;;"";0200;LEC;12844;TuTh 10:30AM - 11:50AM;Eastport Hall 0100;Margaret Jennifer McCarthy;09/04/2012 - 12/22/2012
+ENG;;"";0300;LEC;12901;Tu 1:00PM - 3:45PM;Bath Brunswick;Sheryl Hanson Ritchie;09/04/2012 - 12/22/2012
+ENG;;"";0301;LEC;12910;We 9:00AM - 11:45AM;Ellsworth;Carolyn Coe;09/04/2012 - 12/22/2012
+ENG;;"10";0201;LEC;12846;TuTh 9:00AM - 10:20AM;Eastport Hall 0100;Jane L Ellingwood;09/04/2012 - 12/22/2012
+ENG;101;"College Writing";0100;LEC;12431;We 9:00AM - 11:45AM;Jewett Hall 0293;Robert M Kellerman;09/04/2012 - 12/22/2012
+ENG;101;"College Writing";0101;LEC;12432;Mo 1:00PM - 3:45PM;Randall Student Center 250;Deborah J Edwards;09/04/2012 - 12/22/2012
+ENG;101;"College Writing";0102;LEC;12433;Tu 1:00PM - 3:45PM;Jewett Hall 0185;Robert M Kellerman;09/04/2012 - 12/22/2012
+ENG;101;"College Writing";0103;LEC;12434;Mo 7:00PM - 9:45PM;Randall Student Center 250;Elizabeth A Adams;09/04/2012 - 12/22/2012
+ENG;101;"College Writing";0104;LEC;12435;We 4:00PM - 6:45PM;Randall Student Center 246;Jesse Evan Miller;09/04/2012 - 12/22/2012
+ENG;101;"College Writing";0105;LEC;12436;Fr 9:00AM - 11:45AM;Randall Student Center 250;Michelle B Lisi;09/04/2012 - 12/22/2012
+ENG;102W;"Introduction to Literature";0100;LEC;12440;Fr 9:00AM - 11:45AM;Randall Student Center 246;Laurence A Lapointe;09/04/2012 - 12/22/2012
+ENG;102W;"Introduction to Literature";0101;LEC;12441;Th 1:00PM - 3:45PM;Randall Student Center 246;Jill Rubinson;09/04/2012 - 12/22/2012
+ENG;102W;"Introduction to Literature";0103;LEC;12442;Tu 1:00PM - 3:45PM;Randall Student Center 248;Kevin T Curtin;09/04/2012 - 12/22/2012
+ENG;102W;"Introduction to Literature";0104;LEC;12443;Th 9:00AM - 11:45AM;Randall Student Center 250;Laurence A Lapointe;09/04/2012 - 12/22/2012
+ENG;102W;"Introduction to Literature";0105;LEC;12444;Tu 4:00PM - 6:45PM;Jewett Hall 0293;Strohn Woodard;09/04/2012 - 12/22/2012
+ENG;102W;"Introduction to Literature";0200;LEC;12853;MoWe 1:00PM - 2:20PM;Eastport Hall 0100;Harry E Batty;09/04/2012 - 12/22/2012
+ENG;111W;"Journalism";9000;LEC;9378;TBA;Web/On-line;Elizabeth A Adams;09/04/2012 - 12/22/2012
+ENG;202W;"Survey of British Literature I:Beowolf to the Romantics";9000;LEC;9379;TBA;Web/On-line;Robert M Kellerman;09/04/2012 - 12/22/2012
+ENG;300W;"Introduction to Literary Criticism";6000;LEC;10234;Fr 1:00PM - 3:45PM;Lewiston Hall 0110;Jeffrey Sychterz;09/04/2012 - 12/22/2012
+ENG;300W;"Introduction to Literary Criticism";6001;LEC;10235;Fr 1:00PM - 3:45PM;Bennett D. Katz Library 36;Jeffrey Sychterz;09/04/2012 - 12/22/2012
+ENG;317W;"Professional Writing";0200;LEC;12857;We 4:00PM - 6:45PM;Eastport Hall 0101;Kay L Retzlaff;09/04/2012 - 12/22/2012
+ENG;317W;"Professional Writing";0201;LEC;12858;MoWe 9:00AM - 10:20AM;Eastport Hall 0100;Barbara E Kagen Pincus;09/04/2012 - 12/22/2012
+ENG;317W;"Professional Writing";0301;LEC;12914;Tu 6:00PM - 8:45PM;Ellsworth;Susan Patricia Bailey;09/04/2012 - 12/22/2012
+ENG;317W;"Professional Writing";0302;LEC;13054;We 9:00AM - 11:45AM;Rockland;Garrett W Vail;09/04/2012 - 12/22/2012
+ENG;317W;"Professional Writing";1000;LEC;9663;Tu 1:00PM - 3:45PM;Bennett D. Katz Library 0014;Nancy Schneider;09/04/2012 - 12/22/2012
+ENG;317W;"Professional Writing";1001;LEC;9664;Tu 1:00PM - 3:45PM;Bangor Hall ITV2;Nancy Schneider;09/04/2012 - 12/22/2012
+ENG;347W;"The American Short Story: Sources";6000;LEC;10236;Mo 1:00PM - 3:45PM;Ellsworth Video Conferencing;Sanford E Phippen;09/04/2012 - 12/22/2012
+ENG;347W;"The American Short Story: Sources";6001;LEC;10237;Mo 1:00PM - 3:45PM;Rockland Video Conferencing;Sanford E Phippen;09/04/2012 - 12/22/2012
+ENG;347W;"The American Short Story: Sources";6002;LEC;10238;Mo 1:00PM - 3:45PM;BBC Video Conferencing;Sanford E Phippen;09/04/2012 - 12/22/2012
+ENG;347W;"The American Short Story: Sources";6003;LEC;10241;Mo 1:00PM - 3:45PM;Houlton CTR Video Conferencing;Sanford E Phippen;09/04/2012 - 12/22/2012
+ENG;347W;"The American Short Story: Sources";6004;LEC;10242;Mo 1:00PM - 3:45PM;Rumford Video Conferencing;Sanford E Phippen;09/04/2012 - 12/22/2012
+ENG;347W;"The American Short Story: Sources";6005;LEC;12297;Mo 1:00PM - 3:45PM;Western ME Comm Coll -VC;Sanford E Phippen;09/04/2012 - 12/22/2012
+ENG;350W;"Women Writers";6000;LEC;10247;Th 1:00PM - 3:45PM;Lewiston Hall 0110;Kay L Retzlaff;09/04/2012 - 12/22/2012
+ENG;350W;"Women Writers";6001;LEC;10427;Th 1:00PM - 3:45PM;Bennett D. Katz Library 0040;Kay L Retzlaff;09/04/2012 - 12/22/2012
+ENG;350W;"Women Writers";6002;LEC;12522;Th 1:00PM - 3:45PM;Rockland Video Conferencing;Kay L Retzlaff;09/04/2012 - 12/22/2012
+ENG;350W;"Women Writers";6004;LEC;12568;Th 1:00PM - 3:45PM;Western ME Comm Coll -VC;Kay L Retzlaff;09/04/2012 - 12/22/2012
+ENG;351W;"Creative Writing";0100;LEC;12445;Mo 1:00PM - 3:45PM;Randall Student Center 248;Ellen Maureen Taylor;09/04/2012 - 12/22/2012
+ENG;351W;"Creative Writing";0300;LEC;13055;Th 7:00PM - 9:45PM;Rockland;Jonathan Potter;09/04/2012 - 12/22/2012
+ENG;351W;"Creative Writing";0301;LEC;14576;Tu 8:00AM - 10:45AM;Warren -ME State Prison-Max;Jonathan Potter;09/04/2012 - 12/22/2012
+ENG;352;"Studies in Mythology and Fantasy";0300;LEC;13057;We 7:00PM - 9:45PM;Rockland;William Halpin;09/04/2012 - 12/22/2012
+ENG;460;"Selected Authors";0100;LEC;12446;We 9:00AM - 11:45AM;Randall Student Center 246;Jill Rubinson;09/04/2012 - 12/22/2012
+ENG;489;"Topics in Literature";6000;LEC;13717;We 1:00PM - 3:45PM;Bennett D. Katz Library 0007;Sarah Hentges;09/04/2012 - 12/22/2012
+ENG;489;"Topics in Literature";6001;LEC;13718;We 1:00PM - 3:45PM;Bangor Hall 0100 - UCB;Sarah Hentges;09/04/2012 - 12/22/2012
+ENG;489;"Topics in Literature";9999;LEC;14550;TBA;Web/On-line;Sarah Hentges;09/04/2012 - 12/22/2012
+FRE;101;"Elementary French I";0100;LEC;12449;MoWe 9:00AM - 11:00AM;Jewett Hall 0189;Chelsea Ray;09/04/2012 - 12/22/2012
+FRE;103;"Conversational French for Everyone";0100;LEC;12448;We 12:00PM - 1:00PM;Jewett Hall 0189;Chelsea Ray;09/04/2012 - 12/22/2012
+FRE;203;"Intermediate French I";0100;LEC;12450;MoWe 1:00PM - 3:00PM;Jewett Hall 0189;Chelsea Ray;09/04/2012 - 12/22/2012
+FRE;305;"Language and Culture of the Francophone World I";0100;LEC;12451;MoWe 1:30PM - 3:30PM;Jewett Hall 0291;Chelsea Ray;09/04/2012 - 12/22/2012
+GEO;101;"Introduction to Geography";0300;LEC;13058;Mo 1:00PM - 3:45PM;Rockland;James M Violette;09/04/2012 - 12/22/2012
+GEY;103;"Environmental Geology";0300;LEC;13324;Th 4:00PM - 6:45PM;Bath Brunswick;Peter C Naiden;09/04/2012 - 12/22/2012
+GEY;103;"Environmental Geology";0301;LAB;13326;Th 7:00PM - 9:00PM;Bath Brunswick;Peter C Naiden;09/04/2012 - 12/22/2012
+HGH;367;"Genocide in Our Time";6000;LEC;10250;Th 1:00PM - 3:45PM;Jewett Hall 124;Robert B Bernheim;09/04/2012 - 12/22/2012
+HGH;367;"Genocide in Our Time";6001;LEC;10253;Th 1:00PM - 3:45PM;Bangor Hall 0100 - UCB;Robert B Bernheim;09/04/2012 - 12/22/2012
+HGH;367;"Genocide in Our Time";6002;LEC;12677;Th 1:00PM - 3:45PM;BBC Video Conferencing;Robert B Bernheim;09/04/2012 - 12/22/2012
+HGH;367;"Genocide in Our Time";6003;LEC;12681;Th 1:00PM - 3:45PM;Rockland Video Conferencing;Robert B Bernheim;09/04/2012 - 12/22/2012
+HON;401;"Leadership Seminar";6000;LEC;11947;Th 7:00PM - 9:45PM;BBC Video Conferencing;Nora Bowne;09/04/2012 - 12/22/2012
+HON;401;"Leadership Seminar";6001;LEC;11948;Th 7:00PM - 9:45PM;Rockland Video Conferencing;Nora Bowne;09/04/2012 - 12/22/2012
+HON;401;"Leadership Seminar";6002;LEC;13091;Th 7:00PM - 9:45PM;Ellsworth Video Conferencing;Nora Bowne;09/04/2012 - 12/22/2012
+HON;401;"Leadership Seminar";6003;LEC;13092;Th 7:00PM - 9:45PM;Rumford Video Conferencing;Nora Bowne;09/04/2012 - 12/22/2012
+HON;401;"Leadership Seminar";6004;LEC;13093;Th 7:00PM - 9:45PM;Western ME Comm Coll -VC;Nora Bowne;09/04/2012 - 12/22/2012
+HTY;103;"United States History I";0100;LEC;12452;Mo 4:00PM - 6:45PM;Jewett Hall 0180;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;103;"United States History I";0200;LEC;12859;MoWe 2:30PM - 3:50PM;Eastport Hall 0105;Marie C Grady;09/04/2012 - 12/22/2012
+HTY;103;"United States History I";0201;LEC;12860;TuTh 9:00AM - 10:20AM;Lewiston Hall 0110;Peter Michael Lodge;09/04/2012 - 12/22/2012
+HTY;103;"United States History I";0300;LEC;12915;We 9:00AM - 11:45AM;Ellsworth;Lori E Cole;09/04/2012 - 12/22/2012
+HTY;103;"United States History I";1000;LEC;9666;Tu 7:00PM - 9:45PM;Bennett D. Katz Library 0014;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;103;"United States History I";1001;LEC;9667;Tu 7:00PM - 9:45PM;Bangor Hall ITV1;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;104;"United States History II";0200;LEC;12861;TuTh 1:00PM - 2:20PM;Eastport Hall 0138;Peter Michael Lodge;09/04/2012 - 12/22/2012
+HTY;104;"United States History II";0300;LEC;12931;Tu 1:00PM - 3:45PM;Rumford-Mexico Center;Rodney R Abbott;09/04/2012 - 12/22/2012
+HTY;104;"United States History II";0301;LEC;14315;Th 7:00PM - 9:45PM;Saco Center;Christopher M Beam;09/04/2012 - 12/22/2012
+HTY;104;"United States History II";9000;LEC;9382;TBA;Web/On-line;Thomas R McCord;09/04/2012 - 12/22/2012
+HTY;105;"World Civilizations I";1000;LEC;9669;Mo 1:00PM - 3:45PM;Bennett D. Katz Library 0014;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;105;"World Civilizations I";1001;LEC;9670;Mo 1:00PM - 3:45PM;Bangor Hall ITV1;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;105;"World Civilizations I";1002;LEC;9671;Mo 1:00PM - 3:45PM;Bath Brunswick;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;105;"World Civilizations I";1003;LEC;12269;Mo 1:00PM - 3:45PM;Bucksport HS;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;105;"World Civilizations I";1004;LEC;12270;Mo 1:00PM - 3:45PM;Caribou;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;105;"World Civilizations I";1005;LEC;12271;Mo 1:00PM - 3:45PM;Deer Isle;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;204;"American Foreign Policy";6000;LEC;10258;Mo 4:00PM - 6:45PM;Lewiston Hall 0110;Peter Michael Lodge;09/04/2012 - 12/22/2012
+HTY;204;"American Foreign Policy";6001;LEC;10510;Mo 4:00PM - 6:45PM;Rockland Video Conferencing;Peter Michael Lodge;09/04/2012 - 12/22/2012
+HTY;204;"American Foreign Policy";6002;LEC;12688;Mo 4:00PM - 6:45PM;Western ME Comm Coll -VC;Peter Michael Lodge;09/04/2012 - 12/22/2012
+HTY;254;"Contemporary America";9000;LEC;9383;TBA;Web/On-line;Thomas R McCord;09/04/2012 - 12/22/2012
+HTY;341;"History of American Slavery";6000;LEC;10511;Mo 9:00AM - 11:45AM;Bennett D. Katz Library 0007;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;341;"History of American Slavery";6001;LEC;10512;Mo 9:00AM - 11:45AM;Bangor Hall 0139;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;341;"History of American Slavery";6002;LEC;12696;Mo 9:00AM - 11:45AM;BBC Video Conferencing;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;341;"History of American Slavery";6003;LEC;12700;Mo 9:00AM - 11:45AM;Rockland Video Conferencing;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;341;"History of American Slavery";6004;LEC;12701;Mo 9:00AM - 11:45AM;Western ME Comm Coll -VC;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;341;"History of American Slavery";6005;LEC;12703;Mo 9:00AM - 11:45AM;Ellsworth Video Conferencing;Seth M Wigderson;09/04/2012 - 12/22/2012
+HTY;360;"The History of International Relations Since 1945";6000;LEC;10263;Th 4:00PM - 6:45PM;Jewett Hall 124;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;360;"The History of International Relations Since 1945";6001;LEC;10267;Th 4:00PM - 6:45PM;Bangor Hall 0139;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;360;"The History of International Relations Since 1945";6002;LEC;12713;Th 4:00PM - 6:45PM;BBC Video Conferencing;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;360;"The History of International Relations Since 1945";6003;LEC;12736;Th 4:00PM - 6:45PM;Western ME Comm Coll -VC;Elizabeth W Hazard;09/04/2012 - 12/22/2012
+HTY;389;"Topics in History";9000;LEC;9384;TBA;Web/On-line;Erica Nadelhaft;09/04/2012 - 12/22/2012
+HUM;121;"Native American Cultures I";9000;LEC;9385;TBA;Web/On-line;Kristy Feldhousen-Giles;09/04/2012 - 12/22/2012
+HUM;350W;"Franco";0100;LEC;12453;Tu 1:00PM - 3:45PM;Jewett Hall 0289;Chelsea Ray;09/04/2012 - 12/22/2012
+HUM;389;"Topics in Humanities";6000;LEC;10513;We 1:00PM - 3:45PM;BBC Video Conferencing;Michelle B Lisi;09/04/2012 - 12/22/2012
+HUM;389;"Topics in Humanities";6001;LEC;13028;We 1:00PM - 3:45PM;Ellsworth Video Conferencing;Michelle B Lisi;09/04/2012 - 12/22/2012
+HUM;389;"Topics in Humanities";6002;LEC;13029;We 1:00PM - 3:45PM;Rockland Video Conferencing;Michelle B Lisi;09/04/2012 - 12/22/2012
+HUM;389;"Topics in Humanities";6003;LEC;13030;We 1:00PM - 3:45PM;Rumford Video Conferencing;Michelle B Lisi;09/04/2012 - 12/22/2012
+HUM;389;"Topics in Humanities";6004;LEC;13031;We 1:00PM - 3:45PM;Western ME Comm Coll -VC;Michelle B Lisi;09/04/2012 - 12/22/2012
+HUS;101;"Introduction to Human Services";0100;LEC;9078;Mo 4:00PM - 6:45PM;Jewett Hall 0189;Grace Gloria Giroux;09/04/2012 - 12/22/2012
+HUS;101;"Introduction to Human Services";0200;LEC;10220;Mo 9:00AM - 11:45AM;Eastport Hall 0103;Tamara J Hunt;09/04/2012 - 12/22/2012
+HUS;101;"Introduction to Human Services";0201;LEC;10221;We 1:00PM - 3:45PM;Eastport Hall 0103;Kim Marie Lane;09/04/2012 - 12/22/2012
+HUS;101;"Introduction to Human Services";0300;LEC;10371;We 1:00PM - 3:45PM;Ellsworth;Hector Sapien;09/04/2012 - 12/22/2012
+HUS;101;"Introduction to Human Services";0301;LEC;12118;Mo 7:00PM - 9:45PM;Rockland;John P McEwan;09/04/2012 - 12/22/2012
+HUS;101;"Introduction to Human Services";0302;LEC;12129;Tu 1:00PM - 3:45PM;Saco Center;Sabra C Burdick;09/04/2012 - 12/22/2012
+HUS;125;"Chemical Dependency";0100;LEC;9079;We 9:00AM - 11:45AM;Jewett Hall 0190;Terry Adams;09/04/2012 - 12/22/2012
+HUS;125;"Chemical Dependency";1000;LEC;9675;Fr 4:00PM - 6:45PM;Bennett D. Katz Library 0016;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;125;"Chemical Dependency";1001;LEC;9676;Fr 4:00PM - 6:45PM;Bangor Hall ITV3;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;125;"Chemical Dependency";1002;LEC;9677;Fr 4:00PM - 6:45PM;Bath Brunswick;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;125;"Chemical Dependency";1003;LEC;12349;Fr 4:00PM - 6:45PM;Bucksport HS;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;125;"Chemical Dependency";1004;LEC;12350;Fr 4:00PM - 6:45PM;Calais Center;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;130;"Developmental Disabilities";0200;LEC;10222;We 9:00AM - 11:45AM;Eastport Hall 0103;Tamara J Hunt;09/04/2012 - 12/22/2012
+HUS;130;"Developmental Disabilities";9000;LEC;12969;TBA;Web/On-line;Patricia Morris Clark;09/04/2012 - 12/22/2012
+HUS;134;"Cultural Competence in the Helping Professions";9000;LEC;13961;TBA;Web/On-line;Diane Y Lemay;09/04/2012 - 12/22/2012
+HUS;160;"Perspectives on Infants";9000;LEC;14284;TBA;Web/On-line;Charles Michael Sandberg;09/04/2012 - 12/22/2012
+HUS;204;"Practicum";0200;RSG;10223;Mo 10:30AM - 11:50AM;Lewiston Hall 0214;David J Samuelian;09/04/2012 - 12/22/2012
+HUS;204;"Practicum";9000;RSG;12973;TBA;Web/On-line;Thomas E Abbott;09/04/2012 - 12/22/2012
+HUS;212;"Case Management";0200;LEC;10224;Mo 4:00PM - 6:45PM;Eastport Hall 0103;Kim Marie Lane;09/04/2012 - 12/22/2012
+HUS;212;"Case Management";0300;LEC;12121;Mo 9:00AM - 11:45AM;Rockland;Jeffrey Carty;09/04/2012 - 12/22/2012
+HUS;212;"Case Management";9000;LEC;9386;TBA;Web/On-line;Mary Jo Jakab;09/04/2012 - 12/22/2012
+HUS;214;"Human Services Management";9000;LEC;12979;TBA;Web/On-line;Kim Marie Lane;09/04/2012 - 12/22/2012
+HUS;215;"Introduction to Therapeutic Activities";0100;LEC;10031;Tu 9:00AM - 11:45AM;Jewett Hall 0189;Helen Wing;09/04/2012 - 12/22/2012
+HUS;218;"Community Mental Health Care";1000;LEC;9678;Th 1:00PM - 3:45PM;Bennett D. Katz Library 0014;Grace M Leonard;09/04/2012 - 12/22/2012
+HUS;218;"Community Mental Health Care";1001;LEC;9679;Th 1:00PM - 3:45PM;Bangor Hall ITV2;Grace M Leonard;09/04/2012 - 12/22/2012
+HUS;218;"Community Mental Health Care";1002;LEC;9680;Th 1:00PM - 3:45PM;Bath Brunswick;Grace M Leonard;09/04/2012 - 12/22/2012
+HUS;218;"Community Mental Health Care";1003;LEC;12387;Th 1:00PM - 3:45PM;Bucksport HS;Grace M Leonard;09/04/2012 - 12/22/2012
+HUS;218;"Community Mental Health Care";1004;LEC;12388;Th 1:00PM - 3:45PM;Caribou;Grace M Leonard;09/04/2012 - 12/22/2012
+HUS;218;"Community Mental Health Care";1005;LEC;12389;Th 1:00PM - 3:45PM;Deer Isle;Grace M Leonard;09/04/2012 - 12/22/2012
+HUS;220;"Child Mental Health";0200;LEC;10225;Tu 1:00PM - 3:45PM;Eastport Hall 0103;Tamara J Hunt;09/04/2012 - 12/22/2012
+HUS;221;"Adolescent Mental Health";1000;LEC;9681;Tu 9:00AM - 11:45AM;Bennett D. Katz Library 0014;William Frank Ellis;09/04/2012 - 12/22/2012
+HUS;221;"Adolescent Mental Health";1001;LEC;9682;Tu 9:00AM - 11:45AM;Bangor Hall ITV3;William Frank Ellis;09/04/2012 - 12/22/2012
+HUS;221;"Adolescent Mental Health";1002;LEC;9684;Tu 9:00AM - 11:45AM;Bath Brunswick;William Frank Ellis;09/04/2012 - 12/22/2012
+HUS;221;"Adolescent Mental Health";1003;LEC;12513;Tu 9:00AM - 11:45AM;Bucksport HS;William Frank Ellis;09/04/2012 - 12/22/2012
+HUS;221;"Adolescent Mental Health";1004;LEC;12515;Tu 9:00AM - 11:45AM;Caribou;William Frank Ellis;09/04/2012 - 12/22/2012
+HUS;221;"Adolescent Mental Health";1005;LEC;12516;Tu 9:00AM - 11:45AM;Deer Isle;William Frank Ellis;09/04/2012 - 12/22/2012
+HUS;222;"Psychosocial Rehabilitation";0200;LEC;10226;Fr 1:00PM - 3:45PM;Eastport Hall 0103;Jill M Long;09/04/2012 - 12/22/2012
+HUS;222;"Psychosocial Rehabilitation";0300;LEC;12124;Fr 9:00AM - 11:45AM;Rockland;John G Shattuck;09/04/2012 - 12/22/2012
+HUS;222;"Psychosocial Rehabilitation";1000;LEC;9685;Mo 4:00PM - 6:45PM;Bennett D. Katz Library 0016;Robert J Harper;09/04/2012 - 12/22/2012
+HUS;222;"Psychosocial Rehabilitation";1001;LEC;9686;Mo 4:00PM - 6:45PM;Bangor Hall ITV3;Robert J Harper;09/04/2012 - 12/22/2012
+HUS;222;"Psychosocial Rehabilitation";1002;LEC;9687;Mo 4:00PM - 6:45PM;Bath Brunswick;Robert J Harper;09/04/2012 - 12/22/2012
+HUS;222;"Psychosocial Rehabilitation";1003;LEC;12589;Mo 4:00PM - 6:45PM;Bucksport HS;Robert J Harper;09/04/2012 - 12/22/2012
+HUS;224;"Fundamentals of Community Practice &amp; Involvement";9000;LEC;14297;TBA;Web/On-line;Sabra C Burdick;09/04/2012 - 12/22/2012
+HUS;232;"Crisis Counseling";9000;LEC;13962;TBA;Web/On-line;Diane Y Lemay;09/04/2012 - 12/22/2012
+HUS;233;"Sexual Abuse and Trauma";0200;LEC;10227;Tu 9:00AM - 11:45AM;Eastport Hall 0103;Tamara J Hunt;09/04/2012 - 12/22/2012
+HUS;233;"Sexual Abuse and Trauma";0300;LEC;12125;Mo 1:00PM - 3:45PM;Rockland;Kathleen A Fox;09/04/2012 - 12/22/2012
+HUS;233;"Sexual Abuse and Trauma";9000;LEC;9388;TBA;Web/On-line;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;236;"Foundations of Vocational Rehabilitation";9000;LEC;9389;TBA;Web/On-line;Mary Jo Jakab;09/04/2012 - 12/22/2012
+HUS;240;"Social Services for the Elderly";1000;LEC;14332;Tu 7:30AM - 8:45AM;Bennett D. Katz Library 0015;Patricia Lacey;09/04/2012 - 12/22/2012
+HUS;240;"Social Services for the Elderly";1001;LEC;14333;Tu 7:30AM - 8:45AM;Bangor Hall ITV2;Patricia Lacey;09/04/2012 - 12/22/2012
+HUS;240;"Social Services for the Elderly";1002;LEC;14334;Tu 7:30AM - 8:45AM;Bath Brunswick;Patricia Lacey;09/04/2012 - 12/22/2012
+HUS;240;"Social Services for the Elderly";1003;LEC;14335;Tu 7:30AM - 8:45AM;Bucksport HS;Patricia Lacey;09/04/2012 - 12/22/2012
+HUS;240;"Social Services for the Elderly";1004;LEC;14336;Tu 7:30AM - 8:45AM;Deer Isle;Patricia Lacey;09/04/2012 - 12/22/2012
+HUS;240;"Social Services for the Elderly";1005;LEC;14337;Tu 7:30AM - 8:45AM;Ellsworth;Patricia Lacey;09/04/2012 - 12/22/2012
+HUS;261;"Early Childhood Curriculum";0300;LEC;13243;Th 4:00PM - 6:45PM;Bath Brunswick;Patricia Morris Clark;09/04/2012 - 12/22/2012
+HUS;263;"Family Interactions";9000;LEC;9390;TBA;Web/On-line;Elizabeth McCue-Herlihy;09/04/2012 - 12/22/2012
+HUS;305;"Group Process";0200;LEC;10228;Th 9:00AM - 11:45AM;Eastport Hall 0103;Kim Marie Lane;09/04/2012 - 12/22/2012
+HUS;305;"Group Process";0300;LEC;10372;Th 9:00AM - 11:45AM;TBA;Hector Sapien;09/04/2012 - 12/22/2012
+HUS;305;"Group Process";0301;LEC;12115;We 9:00AM - 11:45AM;Bath Brunswick;Michael J Desisto;09/04/2012 - 12/22/2012
+HUS;305;"Group Process";1000;LEC;10189;We 4:00PM - 6:45PM;Bennett D. Katz Library 0014;Terry Adams;09/04/2012 - 12/22/2012
+HUS;305;"Group Process";1001;LEC;10190;We 4:00PM - 6:45PM;Bangor Hall ITV3;Terry Adams;09/04/2012 - 12/22/2012
+HUS;305;"Group Process";1002;LEC;10191;We 4:00PM - 6:45PM;Bath Brunswick;Terry Adams;09/04/2012 - 12/22/2012
+HUS;308;"Assessment and Planning";1000;LEC;10192;We 9:00AM - 11:45AM;Bennett D. Katz Library 0015;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;308;"Assessment and Planning";1001;LEC;10194;We 9:00AM - 11:45AM;Bangor Hall ITV2;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;308;"Assessment and Planning";1002;LEC;10195;We 9:00AM - 11:45AM;Bath Brunswick;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;308;"Assessment and Planning";1003;LEC;12755;We 9:00AM - 11:45AM;Bucksport HS;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;308;"Assessment and Planning";1004;LEC;12756;We 9:00AM - 11:45AM;Caribou;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;308;"Assessment and Planning";1005;LEC;12757;We 9:00AM - 11:45AM;Deer Isle;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;318;"Adolescence";1000;LEC;10197;Mo 7:30AM - 8:45AM;Bennett D. Katz Library 0015;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;318;"Adolescence";1001;LEC;10198;Mo 7:30AM - 8:45AM;Bangor Hall ITV2;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;318;"Adolescence";1002;LEC;10199;Mo 7:30AM - 8:45AM;Bath Brunswick;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;318;"Adolescence";1003;LEC;13100;Mo 7:30AM - 8:45AM;Bucksport HS;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;318;"Adolescence";1004;LEC;13101;Mo 7:30AM - 8:45AM;Deer Isle;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;318;"Adolescence";1005;LEC;13102;Mo 7:30AM - 8:45AM;Ellsworth;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;323;"Infant Mental Health";9000;LEC;14295;TBA;Web/On-line;Charles Michael Sandberg;09/04/2012 - 12/22/2012
+HUS;326;"Chemical Dependency Counseling";0200;LEC;10229;Mo 9:00AM - 11:45AM;Eastport Hall 0135;Kim Marie Lane;09/04/2012 - 12/22/2012
+HUS;326;"Chemical Dependency Counseling";9000;LEC;9392;TBA;Web/On-line;Philip A Watkins;09/04/2012 - 12/22/2012
+HUS;327E;"Mathematics and the Young Child";9000;LEC;12983;TBA;Web/On-line;Patricia Morris Clark;09/04/2012 - 12/22/2012
+HUS;330;"Interviewing and Counseling";0100;LEC;9080;Mo 9:00AM - 11:45AM;Jewett Hall 0293;Grace Gloria Giroux;09/04/2012 - 12/22/2012
+HUS;330;"Interviewing and Counseling";0200;LEC;10230;Th 1:00PM - 3:45PM;Eastport Hall 0103;Nancy M Hunter;09/04/2012 - 12/22/2012
+HUS;330;"Interviewing and Counseling";0300;LEC;12128;We 9:00AM - 11:45AM;Rumford-Mexico Center;Elaine K Dunton;09/04/2012 - 12/22/2012
+HUS;330;"Interviewing and Counseling";0301;LEC;14140;Mo 4:00PM - 6:45PM;Houlton Higher Ed Center;Jill C Willett;09/04/2012 - 12/22/2012
+HUS;330;"Interviewing and Counseling";1000;LEC;10207;Tu 7:00PM - 9:45PM;Bennett D. Katz Library 0016;Elizabeth McCue-Herlihy;09/04/2012 - 12/22/2012
+HUS;330;"Interviewing and Counseling";1001;LEC;10208;Tu 7:00PM - 9:45PM;Bangor Hall 0101;Elizabeth McCue-Herlihy;09/04/2012 - 12/22/2012
+HUS;331;"Substance Abuse Counseling for Special Populations";9000;LEC;14368;TBA;Web/On-line;Terry Adams;09/04/2012 - 12/22/2012
+HUS;342;"Trauma and Addiction";1000;LEC;10214;Fr 1:00PM - 3:45PM;Bennett D. Katz Library 0016;John M O'Brien;09/04/2012 - 12/22/2012
+HUS;342;"Trauma and Addiction";1001;LEC;10216;Fr 1:00PM - 3:45PM;Bangor Hall ITV3;John M O'Brien;09/04/2012 - 12/22/2012
+HUS;342;"Trauma and Addiction";1002;LEC;10217;Fr 1:00PM - 3:45PM;Bath Brunswick;John M O'Brien;09/04/2012 - 12/22/2012
+HUS;342;"Trauma and Addiction";1003;LEC;10840;Fr 1:00PM - 3:45PM;Bucksport HS;John M O'Brien;09/04/2012 - 12/22/2012
+HUS;342;"Trauma and Addiction";1004;LEC;10841;Fr 1:00PM - 3:45PM;Caribou;John M O'Brien;09/04/2012 - 12/22/2012
+HUS;342;"Trauma and Addiction";1005;LEC;10842;Fr 1:00PM - 3:45PM;Deer Isle;John M O'Brien;09/04/2012 - 12/22/2012
+HUS;349;"Supervision in Human Services";0200;LEC;10231;Tu 1:00PM - 3:45PM;Eastport Hall 0136;Jill M Long;09/04/2012 - 12/22/2012
+HUS;349;"Supervision in Human Services";1000;LEC;9901;Fr 1:00PM - 3:45PM;Bennett D. Katz Library 0015;Sabra C Burdick;09/04/2012 - 12/22/2012
+HUS;349;"Supervision in Human Services";1001;LEC;9902;Fr 1:00PM - 3:45PM;Bangor Hall ITV2;Sabra C Burdick;09/04/2012 - 12/22/2012
+HUS;349;"Supervision in Human Services";1002;LEC;9903;Fr 1:00PM - 3:45PM;Bath Brunswick;Sabra C Burdick;09/04/2012 - 12/22/2012
+HUS;349;"Supervision in Human Services";1003;LEC;10898;Fr 1:00PM - 3:45PM;Bucksport HS;Sabra C Burdick;09/04/2012 - 12/22/2012
+HUS;349;"Supervision in Human Services";1004;LEC;10900;Fr 1:00PM - 3:45PM;Caribou;Sabra C Burdick;09/04/2012 - 12/22/2012
+HUS;350;"Mental Health &amp; Aging";0300;LEC;12116;Tu 9:00AM - 11:45AM;Bath Brunswick;Michael J Desisto;09/04/2012 - 12/22/2012
+HUS;350;"Mental Health &amp; Aging";1000;LEC;9904;Fr 9:00AM - 11:45AM;Bennett D. Katz Library 0016;Mary Jo Jakab;09/04/2012 - 12/22/2012
+HUS;350;"Mental Health &amp; Aging";1001;LEC;9905;Fr 9:00AM - 11:45AM;Bangor Hall ITV1;Mary Jo Jakab;09/04/2012 - 12/22/2012
+HUS;350;"Mental Health &amp; Aging";1002;LEC;9906;Fr 9:00AM - 11:45AM;Bath Brunswick;Mary Jo Jakab;09/04/2012 - 12/22/2012
+HUS;350;"Mental Health &amp; Aging";1003;LEC;10959;Fr 9:00AM - 11:45AM;Bucksport HS;Mary Jo Jakab;09/04/2012 - 12/22/2012
+HUS;350;"Mental Health &amp; Aging";1004;LEC;10961;Fr 9:00AM - 11:45AM;Caribou;Mary Jo Jakab;09/04/2012 - 12/22/2012
+HUS;352;"Interventions for Families with Children";0200;LEC;10232;Mo 1:00PM - 3:45PM;Eastport Hall 0103;Tamara J Hunt;09/04/2012 - 12/22/2012
+HUS;352;"Interventions for Families with Children";1000;LEC;9907;Mo 7:00PM - 9:45PM;Bennett D. Katz Library 0014;Patricia Morris Clark;09/04/2012 - 12/22/2012
+HUS;352;"Interventions for Families with Children";1001;LEC;9951;Mo 7:00PM - 9:45PM;Bangor Hall ITV1;Patricia Morris Clark;09/04/2012 - 12/22/2012
+HUS;352;"Interventions for Families with Children";1002;LEC;9952;Mo 7:00PM - 9:45PM;Bath Brunswick;Patricia Morris Clark;09/04/2012 - 12/22/2012
+HUS;352;"Interventions for Families with Children";1003;LEC;11046;Mo 7:00PM - 9:45PM;Bucksport HS;Patricia Morris Clark;09/04/2012 - 12/22/2012
+HUS;352;"Interventions for Families with Children";1004;LEC;11047;Mo 7:00PM - 9:45PM;Calais Center;Patricia Morris Clark;09/04/2012 - 12/22/2012
+HUS;354;"Behavioral Health Professional (BHP)";6000;LEC;14821;We 7:00PM - 9:45PM;BBC Video Conferencing;David Kinsella;09/04/2012 - 12/22/2012
+HUS;354;"Behavioral Health Professional (BHP)";6001;LEC;14820;We 7:00PM - 9:45PM;Bennett D. Katz Library 0007;David Kinsella;09/04/2012 - 12/22/2012
+HUS;354;"Behavioral Health Professional (BHP)";6002;LEC;14826;We 7:00PM - 9:45PM;Rockland Video Conferencing;David Kinsella;09/04/2012 - 12/22/2012
+HUS;354;"Behavioral Health Professional (BHP)";6003;LEC;14827;We 7:00PM - 9:45PM;Ellsworth Video Conferencing;David Kinsella;09/04/2012 - 12/22/2012
+HUS;354;"Behavioral Health Professional (BHP)";6004;LEC;14828;We 7:00PM - 9:45PM;Rumford Video Conferencing;David Kinsella;09/04/2012 - 12/22/2012
+HUS;356;"Women's Mental Health";9000;LEC;9393;TBA;Web/On-line;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;366;"Grief Counseling";9000;LEC;9394;TBA;Web/On-line;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;416;"Applied Professional Ethics for Human Services";9000;LEC;9395;TBA;Web/On-line;David J Samuelian;09/04/2012 - 12/22/2012
+HUS;434E;"Disaster Mental Health";9000;LEC;12986;TBA;Web/On-line;Magdalena Linhardt;09/04/2012 - 12/22/2012
+HUS;436;"Counseling for Co";9000;LEC;9396;TBA;Web/On-line;Terry Adams;09/04/2012 - 12/22/2012
+HUS;460;"Internship Seminar";0200;LEC;10233;We 1:00PM - 3:45PM;Lewiston Hall 0214;David J Samuelian;09/04/2012 - 12/22/2012
+HUS;460;"Internship Seminar";1000;LEC;9954;Tu 4:00PM - 6:45PM;Bennett D. Katz Library 0014;Diane Y Lemay;09/04/2012 - 12/22/2012
+HUS;460;"Internship Seminar";1001;LEC;9955;Tu 4:00PM - 6:45PM;Bangor Hall ITV1;Diane Y Lemay;09/04/2012 - 12/22/2012
+HUS;460;"Internship Seminar";1002;LEC;9957;Tu 4:00PM - 6:45PM;Bath Brunswick;Diane Y Lemay;09/04/2012 - 12/22/2012
+HUS;460;"Internship Seminar";1003;LEC;11116;Tu 4:00PM - 6:45PM;Bucksport HS;Diane Y Lemay;09/04/2012 - 12/22/2012
+HUS;460;"Internship Seminar";1004;LEC;11117;Tu 4:00PM - 6:45PM;Calais Center;Diane Y Lemay;09/04/2012 - 12/22/2012
+HUS;461;"Internship in Mental Health &amp; Human Services";9000;LEC;9397;TBA;Web/On-line;Kim Marie Lane;09/04/2012 - 12/22/2012
+HUS;462;"Internship in Mental Health/Human Services";9000;FEX;9398;TBA;Web/On-line;David J Samuelian;09/04/2012 - 12/22/2012
+HUS;463;"Internship in Mental Health &amp; Human Services";9000;RSG;9399;TBA;Web/On-line;Diane Y Lemay;09/04/2012 - 12/22/2012
+HUS;489;"Topics in Human Services";0100;LEC;12083;Tu 1:00PM - 3:45PM;Jewett Hall 0293;Patricia Lacey;09/04/2012 - 12/22/2012
+HUS;489;"Topics in Human Services";0101;LEC;14574;Th 9:00AM - 11:45AM;Jewett Hall 0289;Suzanne C Laberge;09/04/2012 - 12/22/2012
+ILS;100;"Introduction to Libraries and Library Careers";9000;LEC;9403;TBA;Web/On-line;David W Anderson;09/04/2012 - 12/22/2012
+ILS;101;"Foundations of Information and Library Science";9000;LEC;9404;TBA;Web/On-line;Jodi C Williams;09/04/2012 - 12/22/2012
+ILS;109;"Information Literacy";9000;LEC;9480;TBA;Web/On-line;Melissa M Orth;09/10/2012 - 10/05/2012
+ILS;109;"Information Literacy";9001;LEC;9483;TBA;Web/On-line;Anastasia Spyridon Weigle;10/15/2012 - 11/09/2012
+ILS;150;"Introduction to Reference Services &amp; Materials";9000;LEC;9406;TBA;Web/On-line;Vincent Livoti;09/04/2012 - 12/22/2012
+ILS;175;"Cataloging and Technical Processes";9000;LEC;9407;TBA;Web/On-line;Denise Goetting;09/04/2012 - 12/22/2012
+ILS;201;"Library Services to Teens";9000;LEC;9408;TBA;Web/On-line;Melissa M Orth;09/04/2012 - 12/22/2012
+ILS;202;"Library Materials and Services for Children";9000;LEC;9409;TBA;Web/On-line;Vincent Livoti;09/04/2012 - 12/22/2012
+ILS;204;"Survey of Business Resources";9000;LEC;13964;TBA;Web/On-line;Betsey M Noble;09/04/2012 - 12/22/2012
+ILS;205;"Readers' Advisory";9000;LEC;9410;TBA;Web/On-line;Dina Jones McKelvy;09/04/2012 - 12/22/2012
+ILS;225;"Introduction to Library Information Technology";9000;LEC;9411;TBA;Web/On-line;Tamara E Blesh;09/04/2012 - 12/22/2012
+ILS;250;"Collection Development";9000;LEC;9412;TBA;Web/On-line;Vincent Livoti;09/04/2012 - 12/22/2012
+ILS;299;"Library Assistant Practicum &amp; Capstone";9000;LEC;9417;TBA;Web/On-line;Jodi C Williams;09/04/2012 - 12/22/2012
+ILS;350;"Advanced Reference Services and Materials";9000;LEC;9413;TBA;Web/On-line;Vincent Livoti;09/04/2012 - 12/22/2012
+ILS;365;"Web Page Design";9000;LEC;9414;TBA;Web/On-line;Anastasia Spyridon Weigle;09/04/2012 - 12/22/2012
+ILS;385;"Media and Local Production";9000;LEC;9484;TBA;Web/On-line;Kirk T Rau;09/04/2012 - 12/22/2012
+ILS;442;"Library Management";9000;LEC;9416;TBA;Web/On-line;Donna A Bancroft;09/04/2012 - 12/22/2012
+ILS;499;"Senior Capstone Internship or Advanced Research";9000;LEC;9418;TBA;Web/On-line;Jodi C Williams;09/04/2012 - 12/22/2012
+IND;494;"Independent Study";5000;IND;14795;TBA;TBA;Danielle Furgeson;09/04/2012 - 12/22/2012
+IND;494;"Independent Study";5001;IND;14812;TBA;TBA;Danielle Furgeson;09/04/2012 - 12/22/2012
+INV;180E;"Create: Innovation Engineering";0100;LEC;14209;Tu 4:00PM - 6:45PM;Jewett Hall 0185;;09/04/2012 - 12/22/2012
+JUS;103;"Foundations of Criminal Justice";0100;LEC;10043;We 9:00AM - 11:45AM;Jewett Hall 0289;George R Tomberlin;09/04/2012 - 12/22/2012
+JUS;103;"Foundations of Criminal Justice";0101;LEC;10052;Th 4:00PM - 6:45PM;Jewett Hall 0289;George R Tomberlin;09/04/2012 - 12/22/2012
+JUS;103;"Foundations of Criminal Justice";9000;LEC;9420;TBA;Web/On-line;Mary Louis Davitt;09/04/2012 - 12/22/2012
+JUS;121;"Criminal Law";0100;LEC;10061;Tu 4:00PM - 6:45PM;Jewett Hall 0295;Janet Mills;09/04/2012 - 12/22/2012
+JUS;121;"Criminal Law";6000;LEC;10514;We 4:00PM - 6:45PM;Ellsworth Video Conferencing;Michael Povich;09/04/2012 - 12/22/2012
+JUS;121;"Criminal Law";6001;LEC;10515;We 4:00PM - 6:45PM;Bangor Hall 0100 - UCB;Michael Povich;09/04/2012 - 12/22/2012
+JUS;121;"Criminal Law";6002;LEC;10516;We 4:00PM - 6:45PM;Rockland Video Conferencing;Michael Povich;09/04/2012 - 12/22/2012
+JUS;121;"Criminal Law";6003;LEC;10517;We 4:00PM - 6:45PM;BBC Video Conferencing;Michael Povich;09/04/2012 - 12/22/2012
+JUS;121;"Criminal Law";9000;LEC;9421;TBA;Web/On-line;James E Davitt;09/04/2012 - 12/22/2012
+JUS;200;"Principles of Investigation";0100;LEC;10070;Th 9:00AM - 11:45AM;Jewett Hall 0295;George R Tomberlin;09/04/2012 - 12/22/2012
+JUS;200;"Principles of Investigation";0200;LEC;10249;Mo 4:00PM - 6:45PM;Eastport Hall 0104;Brian Paul Strout;09/04/2012 - 12/22/2012
+JUS;212;"Real Estate Transfer Procedures";9000;LEC;9422;TBA;Web/On-line;Mary Louis Davitt;09/04/2012 - 12/22/2012
+JUS;216;"Principles of Litigation";9000;LEC;9423;TBA;Web/On-line;James E Davitt;09/04/2012 - 12/22/2012
+JUS;223;"Principles of Management";0100;LEC;9963;Tu 4:00PM - 6:45PM;Randall Student Center 248;Frank Bean;09/04/2012 - 12/22/2012
+JUS;223;"Principles of Management";0200;LEC;9968;Tu 4:00PM - 6:45PM;Eastport Hall 0138;James C Belanger;09/04/2012 - 12/22/2012
+JUS;223;"Principles of Management";0300;LEC;10365;Mo 9:00AM - 11:45AM;TBA;John P Murray;09/04/2012 - 12/22/2012
+JUS;223;"Principles of Management";1000;LEC;9536;Th 9:00AM - 11:45AM;Bennett D. Katz Library 0015;Frank Bean;09/04/2012 - 12/22/2012
+JUS;223;"Principles of Management";1001;LEC;9537;Th 9:00AM - 11:45AM;Bangor Hall ITV2;Frank Bean;09/04/2012 - 12/22/2012
+JUS;223;"Principles of Management";1002;LEC;9538;Th 9:00AM - 11:45AM;Bath Brunswick;Frank Bean;09/04/2012 - 12/22/2012
+JUS;307;"Violence in the Family";1000;LEC;9959;Th 7:00PM - 9:45PM;Bennett D. Katz Library 0014;Pamela Jean Boivin;09/04/2012 - 12/22/2012
+JUS;307;"Violence in the Family";1001;LEC;9960;Th 7:00PM - 9:45PM;Bangor Hall ITV2;Pamela Jean Boivin;09/04/2012 - 12/22/2012
+JUS;307;"Violence in the Family";1002;LEC;9962;Th 7:00PM - 9:45PM;Bath Brunswick;Pamela Jean Boivin;09/04/2012 - 12/22/2012
+JUS;307;"Violence in the Family";1003;LEC;11235;Th 7:00PM - 9:45PM;Bucksport HS;Pamela Jean Boivin;09/04/2012 - 12/22/2012
+JUS;307;"Violence in the Family";1004;LEC;11237;Th 7:00PM - 9:45PM;Calais Center;Pamela Jean Boivin;09/04/2012 - 12/22/2012
+JUS;307;"Violence in the Family";1005;LEC;11238;Th 7:00PM - 9:45PM;Deer Isle;Pamela Jean Boivin;09/04/2012 - 12/22/2012
+JUS;316;"Criminology";9000;LEC;14414;TBA;Web/On-line;Richard Lumb;09/04/2012 - 12/22/2012
+JUS;362;"Community Policing Practicum";1000;RSG;9965;Mo 1:00PM - 3:45PM;Bennett D. Katz Library 0016;Richard Lumb;09/04/2012 - 12/22/2012
+JUS;362;"Community Policing Practicum";1001;RSG;9967;Mo 1:00PM - 3:45PM;Bangor Hall ITV3;Richard Lumb;09/04/2012 - 12/22/2012
+JUS;362;"Community Policing Practicum";1002;RSG;9969;Mo 1:00PM - 3:45PM;Bath Brunswick;Richard Lumb;09/04/2012 - 12/22/2012
+JUS;362;"Community Policing Practicum";1003;RSG;11286;Mo 1:00PM - 3:45PM;Bucksport HS;Richard Lumb;09/04/2012 - 12/22/2012
+JUS;362;"Community Policing Practicum";1004;RSG;11287;Mo 1:00PM - 3:45PM;Caribou;Richard Lumb;09/04/2012 - 12/22/2012
+JUS;362;"Community Policing Practicum";1005;RSG;11288;Mo 1:00PM - 3:45PM;Deer Isle;Richard Lumb;09/04/2012 - 12/22/2012
+JUS;363;"Comparative International Justice Issues";0100;LEC;14504;We 4:00PM - 6:45PM;Jewett Hall 0189;George R Tomberlin;09/04/2012 - 12/22/2012
+JUS;390;"Advocacy &amp; Public Policy";0300;LEC;10368;Tu 9:00AM - 11:45AM;TBA;Staff;09/04/2012 - 12/22/2012
+JUS;392;"Hate Crimes";9000;LEC;9424;TBA;Web/On-line;Richard Lumb;09/04/2012 - 12/22/2012
+JUS;450;"Conflict Resolution";0300;LEC;13367;We 4:00PM - 6:45PM;Rockland;William M Galloway;09/04/2012 - 12/22/2012
+JUS;471;"Judicial Processes";6000;LEC;10518;Tu 1:00PM - 3:45PM;Bangor Hall 0100 - UCB;Jessie Gunther;09/04/2012 - 12/22/2012
+JUS;471;"Judicial Processes";6001;LEC;10519;Tu 1:00PM - 3:45PM;Rockland Video Conferencing;Jessie Gunther;09/04/2012 - 12/22/2012
+JUS;471;"Judicial Processes";6002;LEC;10520;Tu 1:00PM - 3:45PM;BBC Video Conferencing;Jessie Gunther;09/04/2012 - 12/22/2012
+JUS;471;"Judicial Processes";6003;LEC;10521;Tu 1:00PM - 3:45PM;Ellsworth Video Conferencing;Jessie Gunther;09/04/2012 - 12/22/2012
+JUS;471;"Judicial Processes";6004;LEC;13034;Tu 1:00PM - 3:45PM;Western ME Comm Coll -VC;Jessie Gunther;09/04/2012 - 12/22/2012
+JUS;488;"Senior Seminar and Capstone Experience";9000;LEC;9425;TBA;Web/On-line;Mary Louis Davitt;09/04/2012 - 12/22/2012
+MAT;;"";0100;LEC;9082;Th 9:00AM - 11:45AM;Jewett Hall 0189;Staff;09/04/2012 - 12/22/2012
+MAT;;"";0101;LEC;9083;Tu 1:00PM - 3:45PM;Randall Student Center 253;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;;"";0102;LEC;9085;We 1:00PM - 3:45PM;Randall Student Center 253;Rita M Lachance;09/04/2012 - 12/22/2012
+MAT;;"";0200;LEC;10251;TuTh 1:00PM - 2:20PM;Eastport Hall 0105;Roger Cyr;09/04/2012 - 12/22/2012
+MAT;;"";0201;LEC;10252;Mo 9:00AM - 10:20AM;Eastport Hall 0102;Constance C Holden;09/04/2012 - 12/22/2012;We 9:00AM - 10:20AM;Eastport Hall 0101;Constance C Holden;09/04/2012 - 12/22/2012
+MAT;;"";0202;LEC;10254;Mo 10:30AM - 11:50AM;Eastport Hall 0102;Constance C Holden;09/04/2012 - 12/22/2012;We 10:30AM - 11:50AM;Eastport Hall 0101;Constance C Holden;09/04/2012 - 12/22/2012
+MAT;;"20";0200;LEC;10256;TuTh 9:00AM - 10:20AM;Belfast Hall 0323;Freda E Sanborn;09/04/2012 - 12/22/2012
+MAT;;"20";0201;LEC;10257;MoWe 2:30PM - 3:50PM;Eastport Hall 0101;Stephen R Vose;09/04/2012 - 12/22/2012
+MAT;;"20";0201;LEC;12114;MoWe 1:00PM - 3:45PM;Belfast Hall 003D;Staff;10/10/2012 - 11/30/2012
+MAT;;"21";0200;LEC;10259;MoWe 10:30AM - 11:50AM;Belfast Hall 003D;Freda E Sanborn;09/04/2012 - 12/22/2012
+MAT;;"30";0100;LEC;9086;Tu 1:00PM - 3:45PM;Randall Student Center 253;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;;"30";0101;LEC;9087;We 1:00PM - 3:45PM;Randall Student Center 255;Lynn Twitchell;09/04/2012 - 12/22/2012
+MAT;;"30";0200;LEC;10260;MoWe 9:00AM - 10:20AM;Belfast Hall 0323;Anne M Weldon Blanke;09/04/2012 - 12/22/2012
+MAT;;"30";0201;LEC;10261;TuTh 2:30PM - 3:50PM;Eastport Hall 0100;Roger Cyr;09/04/2012 - 12/22/2012
+MAT;;"30";0202;LEC;9088;Th 4:00PM - 6:45PM;Jewett Hall 0189;Sebouh Der Simonian;09/04/2012 - 12/22/2012
+MAT;;"30";0300;LEC;10370;We 4:00PM - 6:45PM;TBA;Christine L Legore;09/04/2012 - 12/22/2012
+MAT;100;"Mathematics and Its Applications";0100;LEC;9089;Th 4:00PM - 6:45PM;Randall Student Center 248;Rochid J Elias;09/04/2012 - 12/22/2012
+MAT;100;"Mathematics and Its Applications";0102;LEC;9090;Th 9:00AM - 11:45AM;Randall Student Center 248;Rochid J Elias;09/04/2012 - 12/22/2012
+MAT;100;"Mathematics and Its Applications";0200;LEC;10262;MoWe 9:00AM - 10:20AM;Eastport Hall 0136;James J Labossiere;09/04/2012 - 12/22/2012
+MAT;100;"Mathematics and Its Applications";0201;LEC;10264;MoWe 4:00PM - 5:20PM;Eastport Hall 0105;Stephen R Vose;09/04/2012 - 12/22/2012
+MAT;100;"Mathematics and Its Applications";0301;LEC;10373;MoTh 9:00AM - 10:50AM;TBA;Mark F Waltz;09/04/2012 - 12/22/2012
+MAT;100;"Mathematics and Its Applications";0302;LEC;12099;Th 6:00PM - 8:45PM;Ellsworth;Adam Barker-Hoyt;09/04/2012 - 12/22/2012
+MAT;111;"Algebra II";0100;LEC;9091;We 9:00AM - 11:45AM;Jewett Hall 0291;Rita M Lachance;09/04/2012 - 12/22/2012
+MAT;111;"Algebra II";0101;LEC;9093;Mo 4:00PM - 6:45PM;Randall Student Center 248;Sebouh Der Simonian;09/04/2012 - 12/22/2012
+MAT;111;"Algebra II";0102;LEC;14485;Fr 1:00PM - 3:45PM;Randall Student Center 248;Lester A French;09/04/2012 - 12/22/2012
+MAT;111;"Algebra II";0200;LEC;10265;MoWe 9:00AM - 10:20AM;Belfast Hall 003D;Freda E Sanborn;09/04/2012 - 12/22/2012
+MAT;111;"Algebra II";0201;LEC;10266;TuTh 10:30AM - 11:50AM;Belfast Hall 0323;Freda E Sanborn;09/04/2012 - 12/22/2012
+MAT;111;"Algebra II";0300;LEC;10374;Mo 7:00PM - 9:45PM;TBA;Neil P Payson;09/04/2012 - 12/22/2012
+MAT;112;"College Algebra";1000;LEC;10083;Mo 4:00PM - 6:45PM;Bennett D. Katz Library 0014;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;112;"College Algebra";1001;LEC;10085;Mo 4:00PM - 6:45PM;Bangor Hall ITV2;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;112;"College Algebra";1002;LEC;10087;Mo 4:00PM - 6:45PM;Bath Brunswick;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;112;"College Algebra";1003;LEC;11402;Mo 4:00PM - 6:45PM;Bucksport HS;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;112;"College Algebra";1004;LEC;11403;Mo 4:00PM - 6:45PM;Calais Center;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;112;"College Algebra";1005;LEC;11404;Mo 4:00PM - 6:45PM;Caribou;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;113;"Mathematics for Business And Economics I";0100;LEC;9094;Tu 9:00AM - 11:45AM;Randall Student Center 248;Rochid J Elias;09/04/2012 - 12/22/2012
+MAT;113;"Mathematics for Business And Economics I";9000;LEC;9427;TBA;Web/On-line;Margaret R Patterson;09/04/2012 - 12/22/2012
+MAT;114;"Mathematics for Business and Economics II";0100;LEC;9095;Tu 4:00PM - 6:45PM;Randall Student Center 250;Rochid J Elias;09/04/2012 - 12/22/2012
+MAT;114;"Mathematics for Business and Economics II";0200;LEC;10268;MoWe 1:00PM - 2:20PM;Eastport Hall 0105;Freda E Sanborn;09/04/2012 - 12/22/2012
+MAT;115;"Elementary Statistics I";0100;LEC;9096;Tu 9:00AM - 11:45AM;Jewett Hall 0180;Lynn Twitchell;09/04/2012 - 12/22/2012
+MAT;115;"Elementary Statistics I";0101;LEC;9097;We 4:00PM - 6:45PM;Jewett Hall 0180;David G Stetson;09/04/2012 - 12/22/2012
+MAT;115;"Elementary Statistics I";0200;LEC;10269;TuTh 9:00AM - 10:20AM;Eastport Hall 0136;Anne M Weldon Blanke;09/04/2012 - 12/22/2012
+MAT;115;"Elementary Statistics I";0201;LEC;10270;MoWe 10:30AM - 11:50AM;Eastport Hall 0136;James J Labossiere;09/04/2012 - 12/22/2012
+MAT;115;"Elementary Statistics I";0300;LEC;10375;Mo 7:00PM - 9:45PM;Rockland;John S Fitzgerald;09/04/2012 - 12/22/2012
+MAT;115;"Elementary Statistics I";1000;LEC;10089;Tu 4:00PM - 6:45PM;Bennett D. Katz Library 0015;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;280;"Discrete Mathematical Structures";6000;LEC;10982;Mo 9:00AM - 11:45AM;Jewett Hall 124;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;280;"Discrete Mathematical Structures";6001;LEC;11014;Mo 9:00AM - 11:45AM;Bangor Hall 0100 - UCB;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;280;"Discrete Mathematical Structures";6002;LEC;11034;Mo 9:00AM - 11:45AM;BBC Video Conferencing;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;280;"Discrete Mathematical Structures";6003;LEC;11065;Mo 9:00AM - 11:45AM;Rockland Video Conferencing;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;280;"Discrete Mathematical Structures";6004;LEC;11096;Mo 9:00AM - 11:45AM;Ellsworth Video Conferencing;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;280;"Discrete Mathematical Structures";6005;LEC;11115;Mo 9:00AM - 11:45AM;Rumford Video Conferencing;Norma Bisulca;09/04/2012 - 12/22/2012
+MAT;355;"Operations Research";0200;LEC;9978;We 9:00AM - 11:45AM;Bangor Hall 0101;Robert Keyes Roper;09/04/2012 - 12/22/2012
+MAT;360;"Operations Management";1000;LEC;9562;We 4:00PM - 6:45PM;Bennett D. Katz Library 0015;Daylin J Butler;09/04/2012 - 12/22/2012
+MAT;360;"Operations Management";1001;LEC;9563;We 4:00PM - 6:45PM;Bangor Hall ITV1;Daylin J Butler;09/04/2012 - 12/22/2012
+MAT;360;"Operations Management";1002;LEC;9564;We 4:00PM - 6:45PM;Bath Brunswick;Daylin J Butler;09/04/2012 - 12/22/2012
+MAT;360;"Operations Management";1003;LEC;10761;We 4:00PM - 6:45PM;Bucksport HS;Daylin J Butler;09/04/2012 - 12/22/2012
+MAT;360;"Operations Management";1004;LEC;10762;We 4:00PM - 6:45PM;Calais Center;Daylin J Butler;09/04/2012 - 12/22/2012
+MAT;360;"Operations Management";1005;LEC;10763;We 4:00PM - 6:45PM;Caribou;Daylin J Butler;09/04/2012 - 12/22/2012
+MLT;204;"Clinical Microbiology";6000;LEC;11158;TuTh 8:00AM - 9:30AM;Bennett D. Katz Library 0007;Kimberly Loeschner;09/04/2012 - 12/22/2012
+MLT;204;"Clinical Microbiology";6001;LEC;11172;TuTh 8:00AM - 9:30AM;Bangor Hall 0100 - UCB;Kimberly Loeschner;09/04/2012 - 12/22/2012
+MLT;204;"Clinical Microbiology";6002;LEC;11225;TuTh 8:00AM - 9:30AM;Pullen Hall Video Conferencing;Kimberly Loeschner;09/04/2012 - 12/22/2012
+MLT;204;"Clinical Microbiology";6003;LEC;11250;TuTh 8:00AM - 9:30AM;BBC Video Conferencing;Kimberly Loeschner;09/04/2012 - 12/22/2012
+MLT;204;"Clinical Microbiology";6004;LEC;11282;TuTh 8:00AM - 9:30AM;Houlton CTR Video Conferencing;Kimberly Loeschner;09/04/2012 - 12/22/2012
+MLT;204;"Clinical Microbiology";6005;LEC;11283;TuTh 8:00AM - 9:30AM;Lewiston Auburn College 156;Kimberly Loeschner;09/04/2012 - 12/22/2012
+MLT;206;"Hematology/Coagulation";6000;LEC;11484;TuTh 2:15PM - 3:45PM;Bennett D. Katz Library 0007;Margaret Naas;09/04/2012 - 12/22/2012
+MLT;206;"Hematology/Coagulation";6001;LEC;11485;TuTh 2:15PM - 3:45PM;Bangor Hall 0139;Margaret Naas;09/04/2012 - 12/22/2012
+MLT;206;"Hematology/Coagulation";6002;LEC;11486;TuTh 2:15PM - 3:45PM;Pullen Hall Video Conferencing;Margaret Naas;09/04/2012 - 12/22/2012
+MLT;206;"Hematology/Coagulation";6003;LEC;11487;TuTh 2:15PM - 3:45PM;BBC Video Conferencing;Margaret Naas;09/04/2012 - 12/22/2012
+MLT;206;"Hematology/Coagulation";6004;LEC;11488;TuTh 2:15PM - 3:45PM;Houlton CTR Video Conferencing;Margaret Naas;09/04/2012 - 12/22/2012
+MLT;206;"Hematology/Coagulation";6005;LEC;11495;TuTh 2:15PM - 3:45PM;Lewiston Auburn College 156;Margaret Naas;09/04/2012 - 12/22/2012
+MUS;100;"Recital Lab";0100;MUS;12463;Tu 12:00PM - 1:00PM;Jewett Hall 0156;Timothy Weir;09/04/2012 - 12/22/2012
+MUS;101;"Basic Music Theory I";0100;LEC;12464;MoWe 10:00AM - 11:20AM;Fine Arts Building 0115;Timothy Weir;09/04/2012 - 12/22/2012
+MUS;101;"Basic Music Theory I";101;LEC;14982;MoWe 10:00AM - 11:20AM;TBA;Stephen Grover;09/04/2012 - 12/22/2012
+MUS;110;"Popular Music";0200;LEC;12862;We 4:00PM - 6:45PM;Eastport Hall 0100;Richard Kenefic;09/04/2012 - 12/22/2012
+MUS;111;"Basic Music Theory Lab I";0100;LEC;12465;We 9:00AM - 9:50AM;Fine Arts Building 0115;Timothy Weir;09/04/2012 - 12/22/2012
+MUS;111;"Basic Music Theory Lab I";0101;LEC;14983;We 9:00AM - 9:50AM;TBA;Stephen Grover;09/04/2012 - 12/22/2012
+MUS;115A;"Basic Applied Music: Sec";0100;MUS;12580;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;115A;"Basic Applied Music: Sec";0101;MUS;12581;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;115A;"Basic Applied Music: Sec";0200;MUS;12863;TBA;TBA;Richard Kenefic;09/04/2012 - 12/22/2012
+MUS;115B;"Applied Music: Secondary";0100;MUS;12582;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;115B;"Applied Music: Secondary";0101;MUS;12584;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;115B;"Applied Music: Secondary";0200;MUS;12864;TBA;TBA;Richard Kenefic;09/04/2012 - 12/22/2012
+MUS;116A;"Applied Classical Music";0100;MUS;12585;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;116B;"Applied Classical Music";0100;MUS;12587;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;122;"Fundamentals of Music";9700;LEC;12142;TBA;Web/On-line;Timothy Weir;10/10/2012 - 11/30/2012
+MUS;123;"Understanding Music";0200;LEC;12865;TuTh 1:00PM - 2:20PM;Eastport Hall 0100;Richard Kenefic;09/04/2012 - 12/22/2012
+MUS;123;"Understanding Music";1000;LEC;10092;Fr 9:00AM - 11:45AM;Bennett D. Katz Library 0015;Anita-Ann Jerosch;09/04/2012 - 12/22/2012
+MUS;123;"Understanding Music";1001;LEC;10093;Fr 9:00AM - 11:45AM;Bangor Hall ITV3;Anita-Ann Jerosch;09/04/2012 - 12/22/2012
+MUS;123;"Understanding Music";1002;LEC;10094;Fr 9:00AM - 11:45AM;Bath Brunswick;Anita-Ann Jerosch;09/04/2012 - 12/22/2012
+MUS;123;"Understanding Music";1003;LEC;11489;Fr 9:00AM - 11:45AM;Bucksport HS;Anita-Ann Jerosch;09/04/2012 - 12/22/2012
+MUS;123;"Understanding Music";1004;LEC;11490;Fr 9:00AM - 11:45AM;Caribou;Anita-Ann Jerosch;09/04/2012 - 12/22/2012
+MUS;124;"Music of the Twentieth Century";9000;LEC;9429;TBA;Web/On-line;Richard Nelson;09/04/2012 - 12/22/2012
+MUS;131;"Survey of Jazz and Contemporary Music";0100;LEC;12467;MoWe 12:00PM - 12:50PM;Fine Arts Building 0124;Stephen Grover;09/04/2012 - 12/22/2012
+MUS;141;"Applied Music: Major Instrument";0100;MUS;12588;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;142;"Applied Music: Major Instrument";0100;MUS;12596;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;151;"First Year/Sophomore Ensemble Sequence";0100;MUS;12622;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;151N;"Freshman Ensemble I for Non";0100;MUS;12644;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;152;"First Year/Sophomore Ensemble Sequence";0100;MUS;12628;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;152N;"Freshman Ensemble II";0100;MUS;12645;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;160;"World Music";9000;LEC;9430;TBA;Web/On-line;Pamela L Jenkins;09/04/2012 - 12/22/2012
+MUS;181;"Piano Lab I";0100;LEC;12469;Tu 10:00AM - 10:50AM;Music Mod I;Marcia J Gallagher;09/04/2012 - 12/22/2012
+MUS;181;"Piano Lab I";0101;LEC;12470;Tu 11:00AM - 11:50AM;Music Mod I;Marcia J Gallagher;09/04/2012 - 12/22/2012
+MUS;181;"Piano Lab I";0102;LEC;14984;Tu 9:00AM - 9:50AM;Music Mod I;Marcia J Gallagher;09/04/2012 - 12/22/2012
+MUS;203;"Intermediate Music Theory I";0100;LEC;12471;TuTh 10:30AM - 11:50AM;Fine Arts Building 0115;Richard Nelson;09/04/2012 - 12/22/2012
+MUS;213;"Intermediate Music Theory Lab I";0100;LEC;12484;Th 12:00PM - 12:50PM;Fine Arts Building 0115;Richard Nelson;09/04/2012 - 12/22/2012
+MUS;221;"Arranging I";0100;LEC;12496;TuTh 9:00AM - 10:20AM;Fine Arts Building 0115;Stephen Grover;09/04/2012 - 12/22/2012
+MUS;223;"Music of the United States";9000;LEC;9431;TBA;Web/On-line;Anita-Ann Jerosch;09/04/2012 - 12/22/2012
+MUS;225;"The Mysterious Power of Music";0100;LEC;12511;We 9:00AM - 11:45AM;Fine Arts Building 0124;Staff;09/04/2012 - 12/22/2012
+MUS;227;"Classic";9000;LEC;14852;TBA;Web/On-line;Henry Wyatt;09/04/2012 - 12/22/2012
+MUS;243;"Applied Music: Major Instrument";0100;MUS;12608;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;244;"Applied Music: Major Instrument";0100;MUS;12616;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;253;"First Year/Sophomore Ensemble Sequence";0100;MUS;12639;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;253N;"Sophomore Ensemble Sequence for Non";100;MUS;12646;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;254;"Sophomore Ensemble Sequence";100;MUS;12643;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;254N;"Sophomore Ensemble Sequence for Non";0100;MUS;12647;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;262;"Woodwind Techniques";0100;MUS;12648;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;263;"Brass Techniques";0100;MUS;12649;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;264;"String Techniques";0100;MUS;12650;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;265;"Percussion Techniques";0100;MUS;12651;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;266;"Vocal Techniques";0100;MUS;12652;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;271;"Sonic Arts I: Digital Music Systems";0100;LEC;12512;MoWe 9:00AM - 10:20AM;Randall Student Center 249;Frank Xavier Mauceri;09/04/2012 - 12/22/2012
+MUS;333;"History and Literature of Music I";0100;LEC;12514;MoWe 11:30AM - 12:50PM;Fine Arts Building 0122;William O Moseley;09/04/2012 - 12/22/2012
+MUS;337;"Tradition &amp; Innovation:";9000;LEC;9432;TBA;Web/On-line;Pamela L Jenkins;09/04/2012 - 12/22/2012
+MUS;345;"Applied Music: Major Instrument";0100;MUS;12653;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;346;"Applied Music: Major Instrument";0100;MUS;12654;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;355;"Junior";0101;MUS;12657;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;356;"Junior Ensemble Sequence II";0100;MUS;12658;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;361;"Music Pedagogy";0100;LEC;12527;We 5:00PM - 6:30PM;Fine Arts Building 0115;Pamela L Jenkins;09/04/2012 - 12/22/2012
+MUS;447;"Applied Music: Major Instrument";0100;MUS;12655;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;448;"Senior Concert";0100;MUS;12656;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;457;"Senior Ensemble Sequence I";0100;MUS;12659;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;458;"Junior Ensemble Sequence II";0100;MUS;12660;TBA;TBA;Staff;09/04/2012 - 12/22/2012
+MUS;471;"Music Business";0100;LEC;12538;TuTh 9:00AM - 10:20AM;Fine Arts Building 0122;Robert E Thompson;09/04/2012 - 12/22/2012
+NUR;101;"Fundamentals of Nursing";0100;LEC;10079;MoTh 9:00AM - 11:30AM;Augusta Civic Center 0252;Jacqueline Ballback;09/04/2012 - 12/22/2012
+NUR;201W;"Nursing Care of the Family";6000;LEC;13070;MoTh 9:00AM - 11:30AM;Bennett D. Katz Library 0005;Victoria S Evans;09/04/2012 - 12/22/2012
+NUR;201W;"Nursing Care of the Family";6001;LEC;13073;MoTh 9:00AM - 11:30AM;BBC Video Conferencing;Victoria S Evans;09/04/2012 - 12/22/2012
+NUR;201W;"Nursing Care of the Family";6002;LEC;13076;MoTh 9:00AM - 11:30AM;Ellsworth Video Conferencing;Victoria S Evans;09/04/2012 - 12/22/2012
+NUR;201W;"Nursing Care of the Family";6003;LEC;13079;MoTh 9:00AM - 11:30AM;FHC Video Conferencing;Victoria S Evans;09/04/2012 - 12/22/2012
+NUR;201W;"Nursing Care of the Family";6004;LEC;13080;MoTh 9:00AM - 11:30AM;Rockland Video Conferencing;Victoria S Evans;09/04/2012 - 12/22/2012
+NUR;201W;"Nursing Care of the Family";6005;LEC;13081;MoTh 9:00AM - 11:30AM;Torrey Hall Video Conferencing;Victoria S Evans;09/04/2012 - 12/22/2012
+NUR;204;"Nursing Care of the Adult Client II";0100;LEC;10080;Mo 9:00AM - 11:30AM;Augusta Civic Center 0253;Joanne Lafear;09/04/2012 - 12/22/2012
+NUR;205;"Nursing Care of the Adult Client III";0100;LEC;10081;Th 9:00AM - 11:30AM;Augusta Civic Center 0253;Tara Oxley;09/04/2012 - 12/22/2012
+NUR;301;"Health Assessment Throughout the Lifespan";0100;LEC;10084;Mo 2:00PM - 6:00PM;Augusta Civic Center 0252;Carey Clark;09/04/2012 - 12/22/2012
+NUR;302;"Pharmacology for Nurses";9000;LEC;13003;TBA;Web/On-line;Carey Clark;09/04/2012 - 12/22/2012
+NUR;304;"Concepts of Professional Nursing Practice";0100;LEC;10088;Mo 3:00PM - 5:45PM;Augusta Civic Center 0253;Lynne F King;09/04/2012 - 12/22/2012
+NUR;389;"Topics Nursing";0100;LEC;14591;Mo 6:00PM - 8:00PM;Michael Klahr Center 0103;Carey Clark;10/10/2012 - 11/26/2012
+NUR;410;"Leadership and Management in Nursing";0100;LEC;10196;Mo 3:00PM - 5:45PM;Augusta Civic Center 0252;Carey Clark;09/04/2012 - 12/22/2012
+NUR;420;"The American Health Care System";9000;LEC;11864;TBA;Web/On-line;Carey Clark;09/04/2012 - 12/22/2012
+PHI;250;"Ethics";0300;LEC;12904;Th 4:00PM - 6:45PM;Bath Brunswick;Lawrence E Merckens;09/04/2012 - 12/22/2012
+PHI;250;"Ethics";0301;LEC;12932;We 4:00PM - 6:45PM;Rumford-Mexico Center;Lawrence E Merckens;09/04/2012 - 12/22/2012
+PHI;250;"Ethics";0302;LEC;13075;Tu 4:00PM - 6:45PM;Saco Center;Mark Johnson;09/04/2012 - 12/22/2012
+PHI;250;"Ethics";0303;LEC;13328;We 6:00PM - 8:45PM;Ellsworth;Henry Davis;09/04/2012 - 12/22/2012
+PHI;250;"Ethics";9000;LEC;9433;TBA;Web/On-line;Christos J Gianopoulos;09/04/2012 - 12/22/2012
+PHI;370;"East Asian Philosophy";6000;LEC;11569;We 9:00AM - 11:45AM;Bennett D. Katz Library 0007;William Halpin;09/04/2012 - 12/22/2012
+PHI;370;"East Asian Philosophy";6001;LEC;11596;We 9:00AM - 11:45AM;Bangor Hall 0100 - UCB;William Halpin;09/04/2012 - 12/22/2012
+PHI;370;"East Asian Philosophy";6002;LEC;11609;We 9:00AM - 11:45AM;Rockland Video Conferencing;William Halpin;09/04/2012 - 12/22/2012
+PHI;370;"East Asian Philosophy";6003;LEC;11610;We 9:00AM - 11:45AM;Rumford Video Conferencing;William Halpin;09/04/2012 - 12/22/2012
+PHO;101;"Black and White Photography I";0100;STU;12229;TuTh 1:00PM - 3:30PM;Campus Center - Photo Studio;Jere C Dewaters;09/04/2012 - 12/22/2012
+PHO;140;"Intro to Digital Imaging";0100;STU;12230;MoWe 1:00PM - 3:45PM;Campus Center - Photo Studio;Luc A Demers;09/04/2012 - 12/22/2012
+PHO;143;"Color Photography I";0100;STU;12231;MoWe 9:00AM - 11:30AM;Campus Center - Photo Studio;Luc A Demers;09/04/2012 - 12/22/2012
+PHO;232;"Photoshop I";0100;STU;12232;TuTh 4:00PM - 6:30PM;Campus Center - Photo Studio;Robert Rainey;09/04/2012 - 12/22/2012
+PHO;296;"Photography Internship";0100;RSG;12233;TBA;Campus Center - Photo Studio;Robert Rainey;09/04/2012 - 12/22/2012
+PHO;333;"Photoshop II";0100;STU;12234;TuTh 4:00PM - 6:30PM;Campus Center - Photo Studio;Robert Rainey;09/04/2012 - 12/22/2012
+PHO;340;"Documentary Photography";0100;STU;12235;TuTh 9:00AM - 11:30AM;Campus Center - Photo Studio;Jere C Dewaters;09/04/2012 - 12/22/2012
+PHY;115;"General Physics I";0100;LEC;12686;Tu 4:00PM - 6:45PM;Jewett Hall 0190;James F Guillemette;09/04/2012 - 12/22/2012
+PHY;115;"General Physics I";0101;LAB;12687;Tu 7:00PM - 10:00PM;Jewett Hall 0284;James F Guillemette;09/04/2012 - 12/22/2012
+PHY;115;"General Physics I";0102;LAB;12689;Th 7:00PM - 10:00PM;Jewett Hall 0284;James F Guillemette;09/04/2012 - 12/22/2012
+POS;101;"American Government";0200;LEC;10271;MoWe 10:00AM - 11:20AM;Lewiston Hall 0110;Kathleen J Surpless;09/04/2012 - 12/22/2012
+POS;101;"American Government";0201;LEC;10272;Tu 4:00PM - 6:45PM;Eastport Hall 0136;Kathleen J Surpless;09/04/2012 - 12/22/2012
+POS;101;"American Government";1000;LEC;10128;Tu 1:00PM - 3:45PM;Bennett D. Katz Library 0015;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;101;"American Government";1001;LEC;10134;Tu 1:00PM - 3:45PM;Bangor Hall ITV1;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;101;"American Government";1002;LEC;10135;Tu 1:00PM - 3:45PM;Bath Brunswick;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;101;"American Government";1003;LEC;11531;Tu 1:00PM - 3:45PM;Bucksport HS;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;102;"Introduction to Politics and Government";9000;LEC;14516;TBA;Web/On-line;Mark R Hibben;09/04/2012 - 12/22/2012
+POS;107;"Introduction to International Relations";0300;LEC;14142;Th 1:00PM - 3:45PM;Rockland;Suzanne Neil;09/04/2012 - 12/22/2012
+POS;107;"Introduction to International Relations";9000;LEC;9434;TBA;Web/On-line;Mark R Hibben;09/04/2012 - 12/22/2012
+POS;223;"Principles of Management";0100;LEC;9961;Tu 4:00PM - 6:45PM;Randall Student Center 248;Frank Bean;09/04/2012 - 12/22/2012
+POS;223;"Principles of Management";0200;LEC;9966;Tu 4:00PM - 6:45PM;Eastport Hall 0138;James C Belanger;09/04/2012 - 12/22/2012
+POS;223;"Principles of Management";0300;LEC;10364;Mo 9:00AM - 11:45AM;TBA;John P Murray;09/04/2012 - 12/22/2012
+POS;223;"Principles of Management";1000;LEC;9539;Th 9:00AM - 11:45AM;Bennett D. Katz Library 0015;Frank Bean;09/04/2012 - 12/22/2012
+POS;223;"Principles of Management";1001;LEC;9542;Th 9:00AM - 11:45AM;Bangor Hall ITV2;Frank Bean;09/04/2012 - 12/22/2012
+POS;223;"Principles of Management";1002;LEC;9546;Th 9:00AM - 11:45AM;Bath Brunswick;Frank Bean;09/04/2012 - 12/22/2012
+POS;354;"Public Budgeting and Financial Administration";0100;LEC;10201;Th 4:00PM - 6:45PM;Jewett Hall 0185;Richard Michaud;09/04/2012 - 12/22/2012
+POS;354;"Public Budgeting and Financial Administration";9999;LEC;14320;TBA;Web/On-line;Staff;09/04/2012 - 12/22/2012
+POS;361;"Human Resource Management";1000;LEC;9569;Fr 4:00PM - 6:45PM;Bennett D. Katz Library 0015;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;361;"Human Resource Management";1001;LEC;9570;Fr 4:00PM - 6:45PM;Bangor Hall ITV2;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;361;"Human Resource Management";1002;LEC;9571;Fr 4:00PM - 6:45PM;Bath Brunswick;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;361;"Human Resource Management";1003;LEC;10878;Fr 4:00PM - 6:45PM;Bucksport HS;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;361;"Human Resource Management";1004;LEC;10879;Fr 4:00PM - 6:45PM;Calais Center;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;361;"Human Resource Management";1005;LEC;10880;Fr 4:00PM - 6:45PM;Deer Isle;Daylin J Butler;09/04/2012 - 12/22/2012
+POS;362;"Labor";1000;LEC;9622;Th 4:00PM - 6:45PM;Bennett D. Katz Library 0015;J Powers McGuire;09/04/2012 - 12/22/2012
+POS;362;"Labor";1001;LEC;9623;Th 4:00PM - 6:45PM;Bangor Hall ITV1;J Powers McGuire;09/04/2012 - 12/22/2012
+POS;362;"Labor";1002;LEC;9624;Th 4:00PM - 6:45PM;Bath Brunswick;J Powers McGuire;09/04/2012 - 12/22/2012
+POS;362;"Labor";1003;LEC;11035;Th 4:00PM - 6:45PM;Bucksport HS;J Powers McGuire;09/04/2012 - 12/22/2012
+POS;362;"Labor";1004;LEC;11036;Th 4:00PM - 6:45PM;Calais Center;J Powers McGuire;09/04/2012 - 12/22/2012
+POS;362;"Labor";1005;LEC;11037;Th 4:00PM - 6:45PM;Deer Isle;J Powers McGuire;09/04/2012 - 12/22/2012
+POS;365;"Organizational Behavior";1000;LEC;9630;We 7:00PM - 9:45PM;Bennett D. Katz Library 0014;Brenda O McAleer;09/04/2012 - 12/22/2012
+POS;365;"Organizational Behavior";1001;LEC;14802;We 7:00PM - 9:45PM;Bennett D. Katz Library 0005;Brenda O McAleer;09/04/2012 - 12/22/2012
+POS;365;"Organizational Behavior";1001;LEC;9631;We 7:00PM - 9:45PM;Bangor Hall ITV1;Brenda O McAleer;09/04/2012 - 12/22/2012
+POS;365;"Organizational Behavior";1002;LEC;9632;We 7:00PM - 9:45PM;Bath Brunswick;Brenda O McAleer;09/04/2012 - 12/22/2012
+POS;365;"Organizational Behavior";1003;LEC;11201;We 7:00PM - 9:45PM;Bucksport HS;Brenda O McAleer;09/04/2012 - 12/22/2012
+POS;365;"Organizational Behavior";1004;LEC;11202;We 7:00PM - 9:45PM;Calais Center;Brenda O McAleer;09/04/2012 - 12/22/2012
+POS;370;"Municipal Administration";0100;LEC;10215;We 4:00PM - 6:45PM;Jewett Hall 0185;William R Bridgeo;09/04/2012 - 12/22/2012
+POS;370;"Municipal Administration";9999;LEC;14321;TBA;Web/On-line;William R Bridgeo;09/04/2012 - 12/22/2012
+POS;405;"Administrative Law";0100;LEC;9100;Mo 4:00PM - 6:45PM;Randall Student Center 246;Dawn Dosedlo Gallagher;09/04/2012 - 12/22/2012
+POS;405;"Administrative Law";9999;LEC;14324;TBA;Web/On-line;Dawn Dosedlo Gallagher;09/04/2012 - 12/22/2012
+POS;420;"The American Health Care System";9000;LEC;11872;TBA;Web/On-line;Carey Clark;09/04/2012 - 12/22/2012
+PSY;100;"Introduction to Psychology";0100;LEC;12808;We 1:00PM - 3:45PM;Jewett Hall 0180;Charles G Waugh;09/04/2012 - 12/22/2012
+PSY;100;"Introduction to Psychology";0101;LEC;12809;Th 4:00PM - 6:45PM;Jewett Hall 0180;Charles G Waugh;09/04/2012 - 12/22/2012
+PSY;100;"Introduction to Psychology";0200;LEC;12811;Mo 1:00PM - 3:45PM;Eastport Hall 0135;Richard A Pare;09/04/2012 - 12/22/2012
+PSY;100;"Introduction to Psychology";0201;LEC;12812;We 9:00AM - 11:45AM;Eastport Hall 0135;Richard A Pare;09/04/2012 - 12/22/2012
+PSY;100;"Introduction to Psychology";0300;LEC;12916;Mo 1:00PM - 3:45PM;Ellsworth;Jeanne Edwards;09/04/2012 - 12/22/2012
+PSY;100;"Introduction to Psychology";0302;LEC;12905;Th 9:00AM - 11:45AM;Bath Brunswick;Michael J Desisto;09/04/2012 - 12/22/2012
+PSY;306;"Behavior Modification";9000;LEC;9435;TBA;Web/On-line;William Frank Ellis;09/04/2012 - 12/22/2012
+PSY;308;"Human Development";0200;LEC;12813;Tu 9:00AM - 11:45AM;Eastport Hall 0135;Richard A Pare;09/04/2012 - 12/22/2012
+PSY;308;"Human Development";0201;LEC;12814;Th 1:00PM - 3:45PM;Eastport Hall 0135;Richard A Pare;09/04/2012 - 12/22/2012
+PSY;308;"Human Development";0300;LEC;12906;Mo 4:00PM - 6:45PM;Bath Brunswick;Teresa M Mayo;09/04/2012 - 12/22/2012
+PSY;308;"Human Development";0301;LEC;12917;We 6:00PM - 8:45PM;Ellsworth;Jeanne Edwards;09/04/2012 - 12/22/2012
+PSY;308;"Human Development";0302;LEC;12934;Tu 9:00AM - 11:45AM;Rumford-Mexico Center;Elaine K Dunton;09/04/2012 - 12/22/2012
+PSY;308;"Human Development";0303;LEC;13061;We 1:00PM - 3:45PM;Rockland;Mary Ann T Curran;09/04/2012 - 12/22/2012
+PSY;312;"Psychology of Human Adjustment";9000;LEC;9437;TBA;Web/On-line;Kenneth Elliott;09/04/2012 - 12/22/2012
+PSY;345;"Problems and Interventions in Childhood";6000;LEC;11637;Th 1:00PM - 3:45PM;Ellsworth Video Conferencing;Hector Sapien;09/04/2012 - 12/22/2012
+PSY;345;"Problems and Interventions in Childhood";6002;LEC;11647;Th 1:00PM - 3:45PM;BBC Video Conferencing;Hector Sapien;09/04/2012 - 12/22/2012
+PSY;345;"Problems and Interventions in Childhood";6003;LEC;11653;Th 1:00PM - 3:45PM;Rumford Video Conferencing;Hector Sapien;09/04/2012 - 12/22/2012
+PSY;345;"Problems and Interventions in Childhood";6004;LEC;11654;Th 1:00PM - 3:45PM;Saco Video Conferencing;Hector Sapien;09/04/2012 - 12/22/2012
+PSY;345;"Problems and Interventions in Childhood";6005;LEC;11655;Th 1:00PM - 3:45PM;Houlton CTR Video Conferencing;Hector Sapien;09/04/2012 - 12/22/2012
+PSY;345;"Problems and Interventions in Childhood";6006;LEC;11656;Th 1:00PM - 3:45PM;Western ME Comm Coll -VC;Hector Sapien;09/04/2012 - 12/22/2012
+PSY;360;"Social Psychology";9000;LEC;9439;TBA;Web/On-line;Lorien Lake-Corral;09/04/2012 - 12/22/2012
+PSY;400;"Abnormal Psychology";9000;LEC;9441;TBA;Web/On-line;Charles S Grunder;09/04/2012 - 12/22/2012
+REA;;"";0100;LEC;12454;Mo 4:00PM - 6:45PM;Randall Student Center 250;Kristin L Rieff;09/04/2012 - 12/22/2012
+REA;;"";0101;LEC;12455;Mo 1:00PM - 3:45PM;Jewett Hall 0289;Kristin L Rieff;09/04/2012 - 12/22/2012
+REA;;"";0200;LEC;12867;TuTh 2:30PM - 3:50PM;Eastport Hall 0101;Margaret Jennifer McCarthy;09/04/2012 - 12/22/2012
+SCI;110;"Environmental Science";0300;LEC;13066;Fr 9:00AM - 11:45AM;Rockland;Gretchen D Noyes-Hull;09/04/2012 - 12/22/2012
+SCI;110;"Environmental Science";0301;LAB;13067;Fr 12:30PM - 2:30PM;Rockland;Gretchen D Noyes-Hull;09/04/2012 - 12/22/2012
+SCI;150;"Human Ecology and the Future";9000;LEC;9442;TBA;Web/On-line;Sandra S Haggard;09/04/2012 - 12/22/2012
+SOC;101;"Introduction to Sociology";0100;LEC;12815;Tu 4:00PM - 6:45PM;Randall Student Center 138;Kristin L McLaren;09/04/2012 - 12/22/2012
+SOC;101;"Introduction to Sociology";0101;LEC;12816;We 9:00AM - 11:45AM;Randall Student Center 138;Catherine Turcotte Seabury;09/04/2012 - 12/22/2012
+SOC;101;"Introduction to Sociology";0200;LEC;12817;Tu 1:00PM - 3:45PM;Eastport Hall 0135;James Cook;09/04/2012 - 12/22/2012
+SOC;101;"Introduction to Sociology";0300;LEC;12818;Mo 4:00PM - 6:45PM;Rockland;James Cook;09/04/2012 - 12/22/2012
+SOC;101;"Introduction to Sociology";0302;LEC;13286;We 4:00PM - 6:45PM;Saco Center;Grace Gloria Giroux;09/04/2012 - 12/22/2012
+SOC;101;"Introduction to Sociology";1000;LEC;10148;We 1:00PM - 3:45PM;Bennett D. Katz Library 0014;Jon Arlin Schlenker;09/04/2012 - 12/22/2012
+SOC;201;"Social Problems";0100;LEC;12819;Th 9:00AM - 11:45AM;Jewett Hall 0185;Lorien Lake-Corral;09/04/2012 - 12/22/2012
+SOC;201;"Social Problems";0101;LEC;12821;Tu 4:00PM - 6:45PM;Jewett Hall 0291;Catherine Turcotte Seabury;09/04/2012 - 12/22/2012
+SOC;201;"Social Problems";0200;LEC;12822;We 4:00PM - 6:45PM;Eastport Hall 0103;Catherine Turcotte Seabury;09/04/2012 - 12/22/2012
+SOC;201;"Social Problems";0301;LEC;12907;Mo 9:00AM - 11:45AM;Bath Brunswick;Lorien Lake-Corral;09/04/2012 - 12/22/2012
+SOC;302;"Social Movements";9000;LEC;14127;TBA;Web/On-line;Stephen Corral;09/04/2012 - 12/22/2012
+SOC;315;"Sociology of Deviance";0100;LEC;12824;We 9:00AM - 11:45AM;Jewett Hall 0185;Lorien Lake-Corral;09/04/2012 - 12/22/2012
+SOC;316;"Criminology";9000;LEC;14415;TBA;Web/On-line;Richard Lumb;09/04/2012 - 12/22/2012
+SOC;319;"Social Gerontology";9700;LEC;12146;TBA;Web/On-line;Jon Arlin Schlenker;10/10/2012 - 11/30/2012
+SOC;350;"Sociology of Gender";9000;LEC;9446;TBA;Web/On-line;Catherine Turcotte Seabury;09/04/2012 - 12/22/2012
+SOC;375;"Social Networks";9000;LEC;9371;TBA;Web/On-line;James Cook;09/04/2012 - 12/22/2012
+SPA;101;"Elementary Spanish I";0100;LEC;12456;Th 4:00PM - 7:45PM;Jewett Hall 0293;Silvia Moreno;09/04/2012 - 12/22/2012
+SPA;101;"Elementary Spanish I";0300;LEC;13064;We 9:00AM - 11:45AM;Rockland;Yarissa Ortiz-Vidal;09/04/2012 - 12/22/2012
+SPA;203;"Intermediate Spanish I";0300;LEC;12919;Tu 1:00PM - 3:45PM;Warren -ME State Prison-Max;Yarissa Ortiz-Vidal;09/04/2012 - 12/22/2012
+SPA;203;"Intermediate Spanish I";5000;LEC;14816;TBA;TBA;Yarissa Ortiz-Vidal;09/04/2012 - 12/22/2012
+SSC;100;"Introduction to Social Science";9000;LEC;9447;TBA;Web/On-line;Kenneth Elliott;09/04/2012 - 12/22/2012
+SSC;110;"Introduction to Human Sexuality";0300;LEC;13068;Tu 1:00PM - 3:45PM;Rockland;Mary Ann T Curran;09/04/2012 - 12/22/2012
+SSC;110;"Introduction to Human Sexuality";9000;LEC;9448;TBA;Web/On-line;Elizabeth McCue-Herlihy;09/04/2012 - 12/22/2012
+SSC;317;"Leadership Seminar";6000;LEC;11918;Th 7:00PM - 9:45PM;BBC Video Conferencing;Nora Bowne;09/04/2012 - 12/22/2012
+SSC;317;"Leadership Seminar";6001;LEC;11919;Th 7:00PM - 9:45PM;Rockland Video Conferencing;Nora Bowne;09/04/2012 - 12/22/2012
+SSC;317;"Leadership Seminar";6002;LEC;13088;Th 7:00PM - 9:45PM;Ellsworth Video Conferencing;Nora Bowne;09/04/2012 - 12/22/2012
+SSC;317;"Leadership Seminar";6003;LEC;13089;Th 7:00PM - 9:45PM;Rumford Video Conferencing;Nora Bowne;09/04/2012 - 12/22/2012
+SSC;317;"Leadership Seminar";6004;LEC;13090;Th 7:00PM - 9:45PM;Western ME Comm Coll -VC;Nora Bowne;09/04/2012 - 12/22/2012
+SSC;318;"Adolescence";1000;LEC;10202;Mo 7:30AM - 8:45AM;Bennett D. Katz Library 0015;Philip A Watkins;09/04/2012 - 12/22/2012
+SSC;318;"Adolescence";1001;LEC;10204;Mo 7:30AM - 8:45AM;Bangor Hall ITV2;Philip A Watkins;09/04/2012 - 12/22/2012
+SSC;318;"Adolescence";1002;LEC;10206;Mo 7:30AM - 8:45AM;Bath Brunswick;Philip A Watkins;09/04/2012 - 12/22/2012
+SSC;318;"Adolescence";1003;LEC;13133;Mo 7:30AM - 8:45AM;Bucksport HS;Philip A Watkins;09/04/2012 - 12/22/2012
+SSC;318;"Adolescence";1004;LEC;13134;Mo 7:30AM - 8:45AM;Deer Isle;Philip A Watkins;09/04/2012 - 12/22/2012
+SSC;318;"Adolescence";1005;LEC;13135;Mo 7:30AM - 8:45AM;Ellsworth;Philip A Watkins;09/04/2012 - 12/22/2012
+SSC;320;"Research Methods in Social Sciences";0100;LEC;12825;Mo 9:00AM - 11:45AM;Randall Student Center 255;Terry Adams;09/04/2012 - 12/22/2012
+SSC;320;"Research Methods in Social Sciences";0301;LEC;14577;Mo 8:00AM - 10:45AM;Warren -ME State Prison-Max;Kathleen A Fox;09/04/2012 - 12/22/2012
+SSC;320;"Research Methods in Social Sciences";9000;LEC;9450;TBA;Web/On-line;Kenneth Elliott;09/04/2012 - 12/22/2012
+SSC;362;"Death &amp; Dying";0300;LEC;12908;Mo 1:00PM - 3:45PM;Bath Brunswick;Amy Line;09/04/2012 - 12/22/2012
+SSC;450;"Conflict Resolution";0300;LEC;13069;We 4:00PM - 6:45PM;Rockland;William M Galloway;09/04/2012 - 12/22/2012
+VTE;100;"Introduction to Veterinary Technology";0200;LEC;10338;We 2:30PM - 5:20PM;Camden Hall 0304;Thomas Diffell;09/04/2012 - 12/22/2012
+VTE;113;"Small Animal Care and Handling";0200;LEC;10339;Mo 9:00AM - 10:30AM;Belfast Hall 003C;Leah Postman;09/04/2012 - 12/22/2012;We 1:00PM - 2:30PM;Belfast Hall 003C;Leah Postman;09/04/2012 - 12/22/2012
+VTE;113L;"Small Animal Care and Handling Lab";0200;LAB;10340;Tu 1:00PM - 4:00PM;Camden Hall 0124;Leah Postman;09/04/2012 - 12/22/2012
+VTE;113L;"Small Animal Care and Handling Lab";0201;LAB;10341;We 9:00AM - 12:00PM;Camden Hall 0124;Leah Postman;09/04/2012 - 12/22/2012
+VTE;115;"Veterinary Technical Student Internship";9000;LEC;13966;TBA;Web/On-line;;09/04/2012 - 12/22/2012
+VTE;116;"Dentistry for Veterinary Technicians";0200;LEC;10342;Fr 8:00AM - 9:00AM;Camden Hall 0304;Gary Wheeler;09/04/2012 - 12/22/2012
+VTE;116L;"Dentistry for Veterinary Technicians Lav";0200;LAB;14195;Fr 9:00AM - 12:00PM;Camden Hall 0124;Gary Wheeler;09/04/2012 - 12/22/2012
+VTE;116L;"Dentistry for Veterinary Technicians Lav";0201;LAB;14196;Fr 12:00PM - 3:00PM;Camden Hall 0124;Gary Wheeler;09/04/2012 - 12/22/2012
+VTE;214;"Large Animal Care and Handling";0200;LEC;10345;We 8:30AM - 11:00AM;Belfast Hall 003C;Ronald Clifton Miles;09/04/2012 - 12/22/2012
+VTE;214L;"Large Animal Care and Handling Lab";0200;LAB;10346;We 12:00PM - 3:00PM;Camden Hall 0124;Ronald Clifton Miles;09/04/2012 - 12/22/2012
+VTE;216;"Animal Nutrition";0200;LEC;10347;Mo 1:00PM - 2:30PM;Camden Hall 0304;Linda J Kling;09/04/2012 - 12/22/2012;Th 2:30PM - 4:00PM;Camden Hall 0304;Linda J Kling;09/04/2012 - 12/22/2012
+VTE;219;"Animal Disease";0200;LEC;10348;Tu 9:00AM - 12:00PM;Camden Hall 0124;Jennifer M Bricker Gallant;09/04/2012 - 12/22/2012
+VTE;225;"Surgical Nursing and Anesthesiology";0200;LEC;10349;Tu 1:00PM - 2:30PM;Lewiston Hall 0110;Laura A Buckley;09/04/2012 - 12/22/2012;Th 3:00PM - 4:30PM;Camden Hall 0124;Laura A Buckley;09/04/2012 - 12/22/2012
+VTE;225L;"Surgical Nursing and Anesthesiology Lab";0200;LAB;10350;Th 9:00AM - 12:00PM;Camden Hall 0124;;09/04/2012 - 12/22/2012
+VTE;225L;"Surgical Nursing and Anesthesiology Lab";0201;LAB;10351;Th 12:00PM - 3:00PM;Camden Hall 0124;;09/04/2012 - 12/22/2012
+WST;101W;"Introduction to Women's Studies";0100;LEC;12457;Tu 4:00PM - 6:45PM;Jewett Hall 0189;Lisa M Botshon;09/04/2012 - 12/22/2012
+WST;101W;"Introduction to Women's Studies";0101;LEC;12458;Th 1:00PM - 3:45PM;Randall Student Center 248;Ellen Maureen Taylor;09/04/2012 - 12/22/2012
+WST;101W;"Introduction to Women's Studies";0200;LEC;12868;MoWe 1:00PM - 2:20PM;Eastport Hall 0104;Kay L Retzlaff;09/04/2012 - 12/22/2012
+WST;101W;"Introduction to Women's Studies";0300;LEC;12459;Tu 9:00AM - 11:45AM;TBA;Ellen Maureen Taylor;09/04/2012 - 12/22/2012
+WST;301W;"Intro to Feminist Theory";6000;LEC;11992;Tu 9:00AM - 11:45AM;Jewett Hall 124;Lisa M Botshon;09/04/2012 - 12/22/2012
+WST;301W;"Intro to Feminist Theory";6001;LEC;13965;Tu 9:00AM - 11:45AM;Bangor Hall 0139;Lisa M Botshon;09/04/2012 - 12/22/2012
+WST;301W;"Intro to Feminist Theory";6003;LEC;14588;Tu 9:00AM - 11:45AM;Rumford Video Conferencing;Lisa M Botshon;09/04/2012 - 12/22/2012
+WST;306;"American Fitness: Culture";0100;LEC;13736;We 4:00PM - 6:45PM;Jewett Hall 0291;Sarah Hentges;09/04/2012 - 12/22/2012
+WST;306;"American Fitness: Culture";0200;LEC;12828;We 4:00PM - 6:45PM;Eastport Hall 0138;Sarah Hentges;09/04/2012 - 12/22/2012
+WST;350W;"Major Women Writers";6000;LEC;10248;Th 1:00PM - 3:45PM;Lewiston Hall 0110;Kay L Retzlaff;09/04/2012 - 12/22/2012
+WST;350W;"Major Women Writers";6001;LEC;10428;Th 1:00PM - 3:45PM;Bennett D. Katz Library 0040;Kay L Retzlaff;09/04/2012 - 12/22/2012
+WST;350W;"Major Women Writers";6002;LEC;12468;Th 1:00PM - 3:45PM;Rockland Video Conferencing;Kay L Retzlaff;09/04/2012 - 12/22/2012
+WST;350W;"Major Women Writers";6004;LEC;12506;Th 1:00PM - 3:45PM;Western ME Comm Coll -VC;Kay L Retzlaff;09/04/2012 - 12/22/2012

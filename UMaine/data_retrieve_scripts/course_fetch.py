@@ -17,7 +17,23 @@ Soup = BeautifulSoup.BeautifulSoup
 
 url = 'https://mainestreet.maine.edu/'
 
-debug = 1
+# 1120: Spring 2011
+# 1210: Fall 2011
+# 1130: Summer 2011
+# 1220: Spring 2012
+# 1310: Fall 2012
+SEMESTER_STR="1320";
+
+# UMPI : UMS07
+# UMO : UMS05
+# UMF : UMS02
+# UMFK : UMS03
+# UMA : UMS01
+# UMM : UMS04
+# USM : UMS06
+CAMPUS= "UMS05";
+
+debug = 0
 
 filename = "departments_newall.txt"
 fread = open(filename, 'r')
@@ -81,14 +97,8 @@ html = r.read();
 
 # Select the Institution
 br.select_form(name="win0")
-# UMPI : UMS07
-# UMO : UMS05
-# UMF : UMS02
-# UMFK : UMS03
-# UMA : UMS01
-# UMM : UMS04
-# USM : UMS06
-br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$51$").value = ["UMS05"]
+
+br.find_control(id="CLASS_SRCH_WRK2_INSTITUTION$51$").value = [CAMPUS]
 br.submit()
 html = br.response().read()
 
@@ -96,12 +106,8 @@ if debug:
 	print("After filling in the institute\n")
 
 br.select_form(name="win0")
-# 1120: Spring 2011 
-# 1210: Fall 2011 
-# 1130: Summer 2011
-# 1220: Spring 2012
-# 1310: Fall 2012
-br.find_control(id="CLASS_SRCH_WRK2_STRM$54$").value = ["1310"]
+
+br.find_control(id="CLASS_SRCH_WRK2_STRM$54$").value = [SEMESTER_STR]
 br.submit()
 html = br.response().read()
 
