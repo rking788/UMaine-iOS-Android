@@ -14,5 +14,7 @@
 	<string>Orono</string>
     <key>UMPI</key>
     <string>Presque Isle</string>
+	<key>USM</key>
+	<string>Southern Maine</string>
 </dict>
 </plist>

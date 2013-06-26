@@ -1,17 +1,18 @@
 //
-//  BuildingSelectView.m
+//  BuildingSelectViewController.m
 //  iUMaine
 //
 //  Created by RKing on 4/26/11.
 //  Copyright 2011 UMaineIRL. All rights reserved.
 //
 
-#import "BuildingSelectView.h"
+#import "BuildingSelectViewController.h"
 #import "CampusSpecifics.h"
 #import "iUMaineAppDelegate.h"
 #import "Location.h"
 
-@implementation BuildingSelectView
+@implementation BuildingSelectViewController
+
 @synthesize searchBar;
 @synthesize tblView;
 @synthesize listContents;
