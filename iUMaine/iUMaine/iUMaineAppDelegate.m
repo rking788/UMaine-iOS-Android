@@ -498,6 +498,10 @@ static NSString* selCampus;
 {
     self.gettingSports = NO;
     
+    // Readjust the map view so the map isn't shrunk for the progress bar
+    [self.mvcInst growMapView];
+    
+    // Load the new sports into the sports view and display them
     [self.spvcInst displayEvents];
     [self.spvcInst hideLoadingView];
 }
