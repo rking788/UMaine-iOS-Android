@@ -17,10 +17,9 @@ Soup = BeautifulSoup.BeautifulSoup
 
 url = 'https://mainestreet.maine.edu/'
 
-debug = 0
+debug = 1
 
-
-filename = "departments.txt"
+filename = "departments_newall.txt"
 fread = open(filename, 'r')
 fcontents = fread.read()
 departments = fcontents.split('\n')
@@ -71,20 +70,21 @@ if debug:
 	print("Followed the Class Search link\n")
 
 soup = Soup(html)
-frame =  soup.find('frame', attrs={'name': "TargetContent"})
+frame =  soup.find('iframe', attrs={'name': "TargetContent"})
 
 #print frame['src']
+#print html
 r = br.open(frame['src'])
 html = r.read();
 
 #print br.links()
 
 # Select the Institution
-br.select_form(name="win1")
+br.select_form(name="win0")
 # UMPI : UMS07
 # UMO : UMS05
 # UMF : UMS02
-#UMFK : UMS03
+# UMFK : UMS03
 # UMA : UMS01
 # UMM : UMS04
 # USM : UMS06
@@ -95,12 +95,13 @@ html = br.response().read()
 if debug: 
 	print("After filling in the institute\n")
 
-br.select_form(name="win1")
+br.select_form(name="win0")
 # 1120: Spring 2011 
 # 1210: Fall 2011 
 # 1130: Summer 2011
 # 1220: Spring 2012
-br.find_control(id="CLASS_SRCH_WRK2_STRM$54$").value = ["1220"]
+# 1310: Fall 2012
+br.find_control(id="CLASS_SRCH_WRK2_STRM$54$").value = ["1310"]
 br.submit()
 html = br.response().read()
 
@@ -121,7 +122,7 @@ for dept in departments:
 		#print "Department: " + dept;
 		#print "Career: " + career;
 
-		br.select_form(name="win1")
+		br.select_form(name="win0")
 		#br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$60$").selected = False
 		#br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$59$").selected = True
 		#br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$59$").value = ["04"]
@@ -143,8 +144,8 @@ for dept in departments:
 		r = br.open(post_url, post_data)
 		html = r.read()
 		assert br.viewing_html()
-		br.select_form(name="win1")
-		br.find_control("CLASS_SRCH_WRK2_SUBJECT$72$").value = dept
+		br.select_form(name="win0")
+		br.find_control("CLASS_SRCH_WRK2_SUBJECT$73$").value = dept
 		controls = br.find_control("CLASS_SRCH_WRK2_ACAD_CAREER")
 		
 		#Started running into a lot of problems when campuses didn't have GRAD courses
@@ -157,7 +158,7 @@ for dept in departments:
 		#NOTE: MaineStreet requires at least two search constraints 
 
 		if debug: 
-			print("After fill in the depart and career \n")
+			print("After fill in the depart (" + dept + ") and career (" + career + ")\n")
 
         	#br.find_control("CLASS_SRCH_WRK2_SSR_OPEN_ONLY").value =["N"]
 		post_url, post_data, headers =  br.form.click_request_data()
@@ -185,7 +186,7 @@ for dept in departments:
 			if debug: 
 				print("Got a warning of over 50 classes\n")
 
-			br.select_form(name="win1")
+			br.select_form(name="win0")
 			post_url, post_data, headers =  br.form.click_request_data()
 			post_data = post_data.replace('ICAction=None', 'ICAction=%23ICSave')
                         #post_data = 'ICType=Panel&ICElementNum=1&ICStateNum=6&ICAction=%23ICSave&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
@@ -266,7 +267,7 @@ for dept in departments:
 
 		# Return and select a different department
 		#print html
-		br.select_form(name="win1")
+		br.select_form(name="win0")
 		post_url, post_data, headers = br.form.click_request_data()
 		post_data = post_data.replace('ICAction=None', 'ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2482%24')
 		#print post_data	
