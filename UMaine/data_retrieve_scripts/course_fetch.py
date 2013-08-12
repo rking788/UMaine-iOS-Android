@@ -1,10 +1,15 @@
 #!/usr/bin/python
 
 ##########################################
-# Author: Dr. Yifeng Zhu
+# Original Author: Dr. Yifeng Zhu
 # University of Maine
 # Contact: zhu@eece.maine.edu
 # Initial Release: Feb. 23, 2011
+#########################################
+
+##########################################
+# Maintainer: Rob King
+# Contact: rking@mainelyapps.com
 #########################################
 
 import re 
@@ -14,6 +19,24 @@ import cookielib
 import BeautifulSoup
 
 debug = 0
+
+# UMPI : UMS07
+# UMO : UMS05
+# UMF : UMS02
+# UMFK : UMS03
+# UMA : UMS01
+# UMM : UMS04
+# USM : UMS06
+INSTITUTION = "UMS05"
+
+# 1120: Spring 2011 
+# 1210: Fall 2011 
+# 1130: Summer 2011
+# 1220: Spring 2012
+# 1410: Fall 2013
+TERM = "1410"
+
+CAREERS = ['UGRD', 'GRAD']
 
 ## HTML Constant
 WIN_NAME = 'win0'
@@ -27,13 +50,12 @@ T1_CLASS = 'PABACKGROUNDINVISIBLEWBO'
 Soup = BeautifulSoup.BeautifulSoup
 
 url = 'https://mainestreet.maine.edu/'
-Careers = ["UGRD", "GRAD"]
 
+## Read all department names from the text file
 filename = "departments.txt"
 fread = open(filename, 'r')
 fcontents = fread.read()
 departments = fcontents.split('\n')
-
 
 print("department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate")
 #ANT,245,"Sex and Gender in Cross",0001,LEC,7261,TuTh 11:00AM - 12:15PM,Murray Hall 106,Lisa K Neuman,8/29/2011 - 12/9/2011
@@ -52,7 +74,6 @@ br.set_handle_referer(True)
 br.set_handle_robots(False)
 br.set_handle_refresh(True)
 
-
 # Follows refresh 0 but not hangs on refresh > 0
 br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 
@@ -65,7 +86,7 @@ br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 br.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
 
 for dept in departments:
-    for career in Careers:
+    for career in CAREERS:
         if (dept == ""):
             continue;
         if (career == ""):
@@ -84,7 +105,6 @@ for dept in departments:
 
         r = br.follow_link(text = 'Class Search', nr=0)
         html = r.read();
-        #print html
 
         if debug: 
             print("Followed the Class Search link\n")
@@ -92,64 +112,32 @@ for dept in departments:
         soup = Soup(html)
         frame =  soup.find('iframe', attrs={'name': "TargetContent"})
 
-        #print frame['src']
         r = br.open(frame['src'])
         html = r.read();
 
-        #print br.links()
-
         # Select the Institution
         br.select_form(name=WIN_NAME)
-        # UMPI : UMS07
-        # UMO : UMS05
-        # UMF : UMS02
-        #UMFK : UMS03
-        # UMA : UMS01
-        # UMM : UMS04
-        # USM : UMS06
-        br.find_control(id=SRCH_INST).value = ["UMS05"]
+        br.find_control(id=SRCH_INST).value = [INSTITUTION]
         br.submit()
         html = br.response().read()
 
         if debug: 
             print("After filling in the institute\n")
 
+        ## Select the term
         br.select_form(name=WIN_NAME)
-        # 1120: Spring 2011 
-        # 1210: Fall 2011 
-        # 1130: Summer 2011
-        # 1220: Spring 2012
-        # 1410: Fall 2013
-        br.find_control(id=SRCH_TERM).value = ["1410"]
+        br.find_control(id=SRCH_TERM).value = [TERM]
         br.submit()
         html = br.response().read()
 
         if debug: 
             print("After filling in the term\n")
 
-        #html = br.response().read()
-
-        #print "RESPONSE: %s" % (br.response().read())
-
         br.select_form(name=WIN_NAME)
-        #br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$60$").selected = False
-        #br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$59$").selected = True
-        #br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$59$").value = ["04"]
-        #br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$59$$rad").value = ["04"]
-        #br.find_control("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$60$").get("CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$59$").selected = True
-        #br.find_control(id="CLASS_SRCH_WRK2_SSR_CLS_SRCH_TYPE$59$").value = ["04"]
-        #br.submit()
-        #html = br.response().read()
-
 
         post_url, post_data, headers =  br.form.click_request_data()
 
-
-        #print post_url
-
         post_data = post_data.replace("ICAction=None", "ICAction=CLASS_SRCH_WRK2_SSR_PB_SRCH%2458%24")
-
-        #print post_data
 
         r = br.open(post_url, post_data)
         html = r.read()
@@ -175,22 +163,16 @@ for dept in departments:
         if debug: 
             print("After fill in the depart and career \n")
 
-            #br.find_control("CLASS_SRCH_WRK2_SSR_OPEN_ONLY").value =["N"]
         post_url, post_data, headers =  br.form.click_request_data()
-        #print post_url
-        #print post_data
 
         post_data = post_data.replace("ICYPos=0", "ICYPos=342")
         post_data = post_data.replace("ICAction=None", "ICAction=CLASS_SRCH_WRK2_SSR_PB_CLASS_SRCH")
         post_data = post_data.replace("CLASS_SRCH_WRK2_SSR_OPEN_ONLY%24chk=Y", "CLASS_SRCH_WRK2_SSR_OPEN_ONLY%24chk=N")
         post_data = post_data.replace("CLASS_SRCH_WRK2_SSR_OPEN_ONLY=Y", "CLASS_SRCH_WRK2_SSR_OPEN_ONLY=N")
 
-        #print post_data
-
         r = br.open(post_url, post_data, timeout=100000)
         html = r.read()
         assert br.viewing_html()
-        #print html
 
         if html.find('The search returns no results that match the criteria specified.') >= 0:
             if debug: 
@@ -204,8 +186,6 @@ for dept in departments:
             br.select_form(name=WIN_NAME)
             post_url, post_data, headers =  br.form.click_request_data()
             post_data = post_data.replace('ICAction=None', 'ICAction=%23ICSave')
-                        #post_data = 'ICType=Panel&ICElementNum=1&ICStateNum=6&ICAction=%23ICSave&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
-                        #print post_data
             r = br.open(post_url, post_data, timeout=100000)
             html = r.read()
             larger_50 = 1
@@ -215,8 +195,6 @@ for dept in departments:
             larger_50  = 0 
 
         html = html.replace('&#039;', '\'')
-
-        #print html
 
         soup = Soup(html)
         t1 = soup.find('table', attrs={'id' : T1_ID, 'class' : T1_CLASS})
@@ -252,9 +230,6 @@ for dept in departments:
                 titleShort = titleShort.replace("-", ",")       # ARH, 498 , Directed Study in Art History
                 titles = titleShort.split(',', 3)
                 courseTitle = titles[0].strip() + ";" + titles[1].strip() + ';"' + titles[2].strip() + '";';
-                #for s in titles:
-                #   courseTitle += '"' + s.strip() + '",'
-                #print courseTitle
 
             t3 = row.find('table', attrs = {'class':"PSLEVEL1SCROLLAREABODY"})
 
@@ -280,26 +255,11 @@ for dept in departments:
                         str = str + ";"
 
                 print(courseTitle + str)
-
-        # Return and select a different department
-        #print html
-        
+ 
         br.select_form(name=WIN_NAME)
         post_url, post_data, headers = br.form.click_request_data()
 
         post_data = post_data.replace('ICAction=None', 'ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2482%24')
 
-        #print post_data    
-        #if larger_50 == 0:
-        #   post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=4&ICAction=CLASS_SRCH_WRK2_SSR_PB_CLOSE&ICXPos=0&ICYPos=0&ICFocus=&ICChanged=-1&ICResubmit=0'
-            #post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=13&ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH&ICXPos=11&ICYPos=174&ICFocus=&ICChanged=-1&ICResubmit=0'
-            #post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=15&ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2455%24&ICXPos=0&ICYPos=6451&ICFocus=&ICChanged=-1&ICResubmit=0'
-        #else:
-        #   post_data = 'ICType=Panel&ICElementNum=2&ICStateNum=7&ICAction=CLASS_SRCH_WRK2_SSR_PB_NEW_SEARCH%2455%24&ICXPos=13&ICYPos=9145&ICFocus=&ICChanged=-1&ICResubmit=0'
-        #print post_data
         r = br.open(post_url, post_data, timeout=100000)
         html = r.read()
-        #print html
-
-
-
