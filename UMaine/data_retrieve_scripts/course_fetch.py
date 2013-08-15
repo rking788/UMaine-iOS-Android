@@ -27,7 +27,7 @@ debug = 0
 # UMA : UMS01
 # UMM : UMS04
 # USM : UMS06
-INSTITUTION = "UMS05"
+INSTITUTION = "UMS06"
 
 # 1120: Spring 2011 
 # 1210: Fall 2011 
@@ -60,30 +60,37 @@ departments = fcontents.split('\n')
 print("department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate")
 #ANT,245,"Sex and Gender in Cross",0001,LEC,7261,TuTh 11:00AM - 12:15PM,Murray Hall 106,Lisa K Neuman,8/29/2011 - 12/9/2011
 
-br = mechanize.Browser()
+def get_browser_obj():
+    brow = mechanize.Browser()
 
-# Cookie Jar
-cj = cookielib.LWPCookieJar()
-br.set_cookiejar(cj)
+    # Cookie Jar
+    cj = cookielib.LWPCookieJar()
+    brow.set_cookiejar(cj)
 
-# Browser options
-br.set_handle_equiv(True)
-br.set_handle_gzip(False)
-br.set_handle_redirect(True)
-br.set_handle_referer(True)
-br.set_handle_robots(False)
-br.set_handle_refresh(True)
+    # Browser options
+    brow.set_handle_equiv(True)
+    brow.set_handle_gzip(False)
+    brow.set_handle_redirect(True)
+    brow.set_handle_referer(True)
+    brow.set_handle_robots(False)
+    brow.set_handle_refresh(True)
 
-# Follows refresh 0 but not hangs on refresh > 0
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+    # Follows refresh 0 but not hangs on refresh > 0
+    brow.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
 
-# Want debugging messages?
-#br.set_debug_http(True)
-#br.set_debug_redirects(True)
-#br.set_debug_responses(True)
+    # Want debugging messages?
+    #br.set_debug_http(True)
+    #br.set_debug_redirects(True)
+    #br.set_debug_responses(True)
 
-# User-Agent (this is cheating, ok?)
-br.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
+    # User-Agent (this is cheating, ok?)
+    brow.addheaders = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
+
+    return brow
+
+br = get_browser_obj()
+
+recreate = False
 
 for dept in departments:
     for career in CAREERS:
@@ -95,6 +102,11 @@ for dept in departments:
         if debug:
             print "Department: " + dept;
             print "Career: " + career;
+
+        if recreate:
+
+            br = get_browser_obj()
+            recreate = False
 
         # Open the site
         r = br.open(url)
@@ -116,7 +128,16 @@ for dept in departments:
         html = r.read();
 
         # Select the Institution
-        br.select_form(name=WIN_NAME)
+        try:
+		    br.select_form(name=WIN_NAME)
+        except Exception as e:
+            r.close()
+            br.close()
+            del br
+            del r
+            recreate = True
+            continue
+            
         br.find_control(id=SRCH_INST).value = [INSTITUTION]
         br.submit()
         html = br.response().read()
