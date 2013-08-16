@@ -20,14 +20,14 @@ import BeautifulSoup
 
 debug = 0
 
-# UMPI : UMS07
 # UMO : UMS05
+# UMPI : UMS07
 # UMF : UMS02
 # UMFK : UMS03
 # UMA : UMS01
 # UMM : UMS04
 # USM : UMS06
-INSTITUTION = "UMS05"
+INSTITUTION = "UMS07"
 
 # 1120: Spring 2011 
 # 1210: Fall 2011 
@@ -238,7 +238,8 @@ for dept in departments:
                 str = '';
                 section = s.find('a', id=re.compile("^DERIVED_CLSRCH_SSR_CLASSNAME_LONG"))
                 if section:
-                    sec = section.string.strip()        # 0001-IND(1143)
+                    sec = section.string.strip()        # 0001-IND(1143)   ### New section string '0001-LEC(1222)-View Details'
+                    sec = sec.replace("-View Details", "")
                     sec = sec.replace("-", ";");
                     sec = sec.replace("(", ";")
                     sec = sec.replace(")", "")
@@ -246,6 +247,7 @@ for dept in departments:
 
                 t4 = s.find('table', id=re.compile("^SSR_CLSRCH_MTG1"))
                 items = t4.findAll('span', attrs = {'class':"PSLONGEDITBOX"})
+                
                 for it in items:
                     #print it
                     try:
@@ -253,8 +255,8 @@ for dept in departments:
                         str = str + ";" + it.string.strip()
                     except:
                         str = str + ";"
-
-                print(courseTitle + str)
+       
+            print(courseTitle + str)
  
         br.select_form(name=WIN_NAME)
         post_url, post_data, headers = br.form.click_request_data()
