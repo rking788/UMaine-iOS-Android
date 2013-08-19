@@ -13,6 +13,7 @@
 #import "TBXML.h"
 #import "CustomSectionHeader.h"
 #import "CampusSpecifics.h"
+#import <iAd/iAd.h>
 
 @implementation SportsViewController
 
@@ -671,15 +672,15 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     if (classAdBannerView != nil) {
         self.adBannerView = [[classAdBannerView alloc] 
                               initWithFrame:CGRectZero];
-        [_adBannerView setRequiredContentSizeIdentifiers:[NSSet setWithObjects: 
-                                                          ADBannerContentSizeIdentifier320x50, 
-                                                          ADBannerContentSizeIdentifier480x32, nil]];
+        [_adBannerView setRequiredContentSizeIdentifiers:[NSSet setWithObjects:
+                                                          ADBannerContentSizeIdentifierPortrait,
+                                                          ADBannerContentSizeIdentifierLandscape, nil]];
         if (UIInterfaceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
             [_adBannerView setCurrentContentSizeIdentifier:
-             ADBannerContentSizeIdentifier480x32];
+             ADBannerContentSizeIdentifierLandscape];
         } else {
             [_adBannerView setCurrentContentSizeIdentifier:
-             ADBannerContentSizeIdentifier320x50];            
+             ADBannerContentSizeIdentifierPortrait];
         }
         [_adBannerView setFrame:CGRectOffset([_adBannerView frame], 0, 
                                              -[self getBannerHeight])];
@@ -693,10 +694,10 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     if (_adBannerView != nil) {        
         if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
             [_adBannerView setCurrentContentSizeIdentifier:
-             ADBannerContentSizeIdentifier480x32];
+             ADBannerContentSizeIdentifierLandscape];
         } else {
             [_adBannerView setCurrentContentSizeIdentifier:
-             ADBannerContentSizeIdentifier320x50];
+             ADBannerContentSizeIdentifierPortrait];
         }          
         [UIView beginAnimations:@"fixupViews" context:nil];
         if (_adBannerViewIsVisible) {

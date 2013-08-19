@@ -1,0 +1,430 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+AED;221;"Practicum in Art Education";0001;RSG;24372;Tu 4:10PM - 6:40PM;Drawing Studio 1 - G;Kelly Hrenko;09/03/2013 - 12/23/2013
+AED;421;"Seminar in Art Education";0001;SEM;20011;Mo 4:10PM - 6:40PM;Drawing Studio 1 - G;Kelly Hrenko;09/03/2013 - 12/23/2013
+AED;428;"Independent Study in Art Education";0012;IND;20012;TBA;TBA;Kelly Hrenko;09/03/2013 - 12/23/2013
+ANT;101;"Anthropology: The Cultural View";0002;LEC;29879;Mo 4:00PM - 6:30PM;Lewiston-Auburn 104;Marcia-Anne Dobres;09/03/2013 - 12/23/2013
+ANT;241;"Tourism and Community Development";0001;LEC;22644;Tu 3:30PM - 6:00PM;Bailey 403 - G;Tracy S Michaud-Stutzman;09/03/2013 - 12/23/2013
+ANT;299;"Topics";0002;LEC;25200;MoWe 11:00AM - 12:15PM;Bailey 319 - G;Sarah Charlotte Lockridge;09/03/2013 - 12/23/2013
+ANT;399;"Topics";0001;LEC;24358;MoWe 9:30AM - 10:45AM;Bailey 315 - G;Marcia-Anne Dobres;09/03/2013 - 12/23/2013
+ARH;112;"Art History: Renaissance to the Present";0001;LEC;20039;TuTh 2:00PM - 3:15PM;Bailey 201 - G;William Klinghofer;09/03/2013 - 12/23/2013
+ARH;318;"History of Photography";0001;LEC;24369;TuTh 11:00AM - 12:15PM;Bailey 201 - G;Kim T Grant;09/03/2013 - 12/23/2013
+ARH;326;"Nineteenth";0001;SEM;24370;MoWe 11:00AM - 12:15PM;Bailey 201 - G;Donna M Cassidy;09/03/2013 - 12/23/2013
+ARH;329;"Asian Art";0001;LEC;24371;MoWe 4:10PM - 5:25PM;Bailey 201 - G;Virginia C Goodlett;09/03/2013 - 12/23/2013
+ARH;412;"Topics in Art History";0001;LEC;22156;Tu 4:10PM - 6:40PM;Luther Bonney 208 - P;Donna M Cassidy;09/03/2013 - 12/23/2013
+ARH;418;"Independent Study in Art History";0004;IND;20041;TBA;TBA;Staff;TBA
+ART;231;"Introduction to Ceramics";0001;STU;20049;TuTh 1:00PM - 3:30PM;Robie/Andrews 20 - G;David Schneider;09/03/2013 - 12/23/2013
+ART;251;"Drawing: Media and Strategies";0001;STU;20050;Fr 9:00AM - 11:00AM;Drawing Studio 2 - G;George Burk;09/03/2013 - 12/23/2013;Fr 1:00PM - 4:00PM;Drawing Studio 2 - G;George Burk;09/03/2013 - 12/23/2013
+ART;261;"Introduction to Painting";0001;STU;20051;MoWe 1:00PM - 3:30PM;Academy 102 - G;George Burk;09/03/2013 - 12/23/2013
+ART;291;"Sculpture: Additive and Subtractive Processes";0001;STU;21586;TuTh 8:00AM - 10:30AM;Robie/Andrews 3 - G;Michael J Shaughnessy;09/03/2013 - 12/23/2013
+ART;322;"Multi";0001;STU;30079;MoWe 4:00PM - 6:40PM;John Mitchell Center 265 - G;Raphael A Diluzio;09/03/2013 - 12/23/2013
+ART;331;"Intermediate Ceramics I";0001;STU;20053;TuTh 8:00AM - 10:30AM;Robie/Andrews 20 - G;David Schneider;09/03/2013 - 12/23/2013
+ART;332;"Intermediate Ceramics II";0001;STU;21665;TuTh 8:00AM - 10:30AM;Robie/Andrews 20 - G;David Schneider;09/03/2013 - 12/23/2013
+ART;351;"Intermediate Drawing I: The Figure";0001;STU;21587;TuTh 4:00PM - 6:40PM;Drawing Studio 2 - G;James P Flahaven;09/03/2013 - 12/23/2013
+ART;362;"Intermediate Painting: Mixed Media";0001;STU;21666;MoWe 8:00AM - 10:30AM;Academy 201 - G;George Burk;09/03/2013 - 12/23/2013
+ART;371;"Intermediate Photography";0001;STU;21054;TuTh 8:00AM - 10:30AM;Robie/Andrews 5 - G;Jennifer C McDermott;09/03/2013 - 12/23/2013
+ART;381;"Special Topics in Printmaking";0001;STU;24375;TuTh 1:00PM - 3:30PM;John Mitchell Center 265 - G;Damir Porobic;09/03/2013 - 12/23/2013
+ART;391;"Intermediate Sculpture";0001;STU;24376;MoWe 1:00PM - 3:30PM;Robie/Andrews 3 - G;Duncan A Hewitt;09/03/2013 - 12/23/2013
+ART;392;"Intermediate Sculpture";0001;STU;24377;MoWe 1:00PM - 3:30PM;Robie/Andrews 3 - G;Duncan A Hewitt;09/03/2013 - 12/23/2013
+ART;400;"Internship in the Visual Arts";0001;RSG;20054;TBA;TBA;Raphael A Diluzio;09/03/2013 - 12/23/2013
+ART;407;"Advanced Problems in Art";0001;STU;20055;TBA;TBA;James P Flahaven;09/03/2013 - 12/23/2013
+ART;408;"Independent Study in Art";0002;IND;30828;TBA;TBA;Michael J Shaughnessy;09/03/2013 - 12/23/2013
+ART;420;"Advanced Studio in Digital Art I";0001;STU;21668;MoWe 4:00PM - 6:40PM;John Mitchell Center 265 - G;Raphael A Diluzio;09/03/2013 - 12/23/2013
+ART;421;"Advanced Studio in Digital Art II";0001;STU;21669;MoWe 4:00PM - 6:40PM;John Mitchell Center 265 - G;Raphael A Diluzio;09/03/2013 - 12/23/2013
+ART;431;"Advanced Ceramics I";0001;STU;20057;TuTh 8:00AM - 10:30AM;Robie/Andrews 20 - G;David Schneider;09/03/2013 - 12/23/2013
+ART;432;"Advanced Ceramics II";0001;STU;20058;TuTh 8:00AM - 10:30AM;Robie/Andrews 20 - G;David Schneider;09/03/2013 - 12/23/2013
+ART;451;"Advanced Drawing I";0001;STU;20059;TuTh 4:00PM - 6:40PM;Drawing Studio 2 - G;James P Flahaven;09/03/2013 - 12/23/2013
+ART;452;"Advanced Drawing II";0001;STU;20060;TuTh 4:00PM - 6:40PM;Drawing Studio 2 - G;James P Flahaven;09/03/2013 - 12/23/2013
+ART;461;"Advanced Painting I";0001;STU;20061;MoWe 8:00AM - 10:30AM;Academy 201 - G;George Burk;09/03/2013 - 12/23/2013
+ART;462;"Advanced Painting II";0001;STU;20062;MoWe 8:00AM - 10:30AM;Academy 201 - G;George Burk;09/03/2013 - 12/23/2013
+ART;471;"Advanced Photography I";0001;STU;20063;TuTh 8:00AM - 10:30AM;Robie/Andrews 5 - G;Jennifer C McDermott;09/03/2013 - 12/23/2013
+ART;472;"Advanced Photography II";0001;STU;20064;TuTh 8:00AM - 10:30AM;Robie/Andrews 5 - G;Jennifer C McDermott;09/03/2013 - 12/23/2013
+ART;481;"Advanced Printmaking I";0001;STU;20065;TuTh 1:00PM - 3:30PM;John Mitchell Center 265 - G;Damir Porobic;09/03/2013 - 12/23/2013
+ART;482;"Advanced Printmaking II";0001;STU;20066;TuTh 1:00PM - 3:30PM;John Mitchell Center 265 - G;Damir Porobic;09/03/2013 - 12/23/2013
+ART;491;"Advanced Sculpture";0001;STU;20067;MoWe 1:00PM - 3:30PM;Robie/Andrews 3 - G;Duncan A Hewitt;09/03/2013 - 12/23/2013
+ART;492;"Advanced Sculpture";0001;STU;20068;MoWe 1:00PM - 3:30PM;Robie/Andrews 3 - G;Duncan A Hewitt;09/03/2013 - 12/23/2013
+AST;103;"Activities and Experiments";0014;LAB;20077;Mo 6:00PM - 8:00PM;Bailey 308 - G;Bernard B Reim;09/03/2013 - 12/23/2013
+BIO;103;"Introduction to Marine Biology";0001;LEC;24892;TuTh 10:15AM - 11:30AM;Masterton 113 - P;Louis F Gainey;09/03/2013 - 12/23/2013
+BIO;104;"Marine Biology Laboratory";0004;LAB;24903;Tu 2:30PM - 4:20PM;Science Building 403 - P;Michael P Callahan;09/03/2013 - 12/23/2013
+BIO;105;"Biological Principles I: Cellular Biology";0002;LEC;24902;MoWe 4:10PM - 5:25PM;Luther Bonney 326 - P;Kenneth E Weber;09/03/2013 - 12/23/2013
+BIO;106;"Laboratory Biology";0016;LAB;22323;Th 8:30AM - 11:20AM;Science Building 166 - P;Staff;09/03/2013 - 12/23/2013
+BIO;107;"Biological Principles II: Evolution";0003;LEC;22324;MoWe 4:10PM - 5:25PM;Masterton 113 - P;Christine R Maher;09/03/2013 - 12/23/2013;Fr 11:15AM - 2:05PM;Science Building 403 - P;Christine R Maher;09/03/2013 - 12/23/2013
+BIO;109;"Biological Principles III: Functional Biology";0001;LEC;20085;TuTh 10:15AM - 11:30AM;Luther Bonney 524 - P;Douglas A Currie;09/03/2013 - 12/23/2013
+BIO;111;"Human Anatomy and Physiology I";0004;LEC;22568;We 5:35PM - 8:05PM;Payson Smith 303 - P;Jonathan Rud;09/03/2013 - 12/23/2013
+BIO;201;"Genetics";0001;LEC;22328;TuTh 4:10PM - 5:25PM;Science Building 165 - P;Kenneth E Weber;09/03/2013 - 12/23/2013
+BIO;281;"Microbiology and Human Disease";0001;LEC;20099;MoWe 1:15PM - 2:30PM;Payson Smith 303 - P;Rachel Larsen;09/03/2013 - 12/23/2013
+BIO;282;"Microbiology and Human Disease Laboratory";0013;LAB;20102;TuTh 2:45PM - 4:35PM;Science Building 405 - P;Rachel Larsen;09/03/2013 - 12/23/2013
+BIO;291;"Ornithology";0001;LEC;25708;We 9:00AM - 11:30AM;Science Building 362 - P;James Paruk;09/03/2013 - 12/23/2013;Fr 9:00AM - 12:00PM;Science Building 152 - P;James Paruk;09/03/2013 - 12/23/2013
+BIO;331;"Ecological Principles";0001;LEC;22326;TuTh 10:15AM - 11:30AM;Payson Smith 303 - P;Michael Mazurkiewicz;09/03/2013 - 12/23/2013
+BIO;345;"Pathophysiology";0002;LEC;24901;TuTh 8:45AM - 10:00AM;Payson Smith 208 - P;David E Harris;09/03/2013 - 12/23/2013
+BIO;408;"Experimental Genetics";0001;LAB;22331;Fr 2:00PM - 6:00PM;Science Building 203 - P;Kenneth E Weber;09/03/2013 - 12/23/2013
+BIO;410;"Cell and Molecular Biology Laboratory";0001;LAB;24923;Mo 1:15PM - 4:05PM;Science Building 303 - P;Stephen C Pelsue;09/03/2013 - 12/23/2013
+BIO;421;"Biology Seminar";0002;SEM;24906;Th 2:45PM - 5:15PM;Science Building 105A - P;Theresa Theodose;09/03/2013 - 12/23/2013
+BIO;431;"Principles of Immunology";0001;LEC;21670;MoWe 11:45AM - 1:00PM;Payson Smith #1 - P;Ah-Kau Ng;09/03/2013 - 12/23/2013
+BIO;441;"Problems in Biology";0013;IND;22189;TBA;TBA;Louis F Gainey;09/03/2013 - 12/23/2013
+BIO;508;"Experimental Genetics";0001;LAB;22332;Fr 2:00PM - 6:00PM;Science Building 203 - P;Kenneth E Weber;09/03/2013 - 12/23/2013
+BIO;601;"Research Methods in Biology";0001;LEC;20113;Mo 8:45AM - 11:15AM;Science Building 105A - P;Jeffrey A Walker;09/03/2013 - 12/23/2013
+BIO;621;"Graduate Seminar";0002;SEM;24919;Th 2:45PM - 5:15PM;Science Building 105A - P;Theresa Theodose;09/03/2013 - 12/23/2013
+BIO;698;"Thesis Research";0015;IND;21996;TBA;TBA;Karen A Wilson;09/03/2013 - 12/23/2013
+CHY;113;"Principles of Chemistry I";0002;LEC;20146;TuTh 5:35PM - 6:50PM;Science Building 165 - P;James R Ford;09/03/2013 - 12/23/2013;Th 6:50PM - 7:40PM;Science Building 165 - P;James R Ford;09/03/2013 - 12/23/2013
+CHY;114;"Laboratory Techniques I";0023;LAB;21927;Fr 1:00PM - 2:00PM;Payson Smith 306 - P;Joseph P Lynch;09/03/2013 - 12/23/2013;Fr 2:00PM - 4:00PM;Payson Smith 305 - P;Joseph P Lynch;09/03/2013 - 12/23/2013
+CHY;373;"Chemical Thermodynamics";0001;LEC;21856;MoWe 11:45AM - 1:00PM;Payson Smith 203;James R Ford;09/03/2013 - 12/23/2013
+CHY;374;"Chemical Thermodynamics Laboratory";0001;LAB;21857;We 1:15PM - 5:00PM;Science Building 352 - P;James R Ford;09/03/2013 - 12/23/2013
+CHY;411;"Special Topics";0001;LEC;20160;TBA;TBA;Lucille Benedict;09/03/2013 - 12/23/2013
+CHY;412;"Special Topics";0002;LEC;30216;TBA;TBA;Peter Woodruff;09/03/2013 - 12/23/2013
+CHY;417;"Special Topics";0001;LEC;20162;TBA;TBA;Caryn K Prudente;09/03/2013 - 12/23/2013
+CHY;418;"Special Topics";0001;LEC;20163;TBA;TBA;Henry J Tracy;09/03/2013 - 12/23/2013
+CHY;421;"Inorganic Chemistry";0001;LEC;21060;TuTh 10:15AM - 11:30AM;Science Building 362 - P;Henry J Tracy;09/03/2013 - 12/23/2013
+CHY;462;"Biochemistry Laboratory";0012;LAB;22789;Tu 1:15PM - 2:05PM;Science Building 366 - P;Peter Woodruff;09/03/2013 - 12/23/2013;Tu 2:05PM - 5:00PM;Science Building 366 - P;Peter Woodruff;09/03/2013 - 12/23/2013
+CHY;490;"Senior Research Project";0001;LEC;20166;TBA;TBA;Staff;TBA
+CHY;561;"Biochemistry";0001;LEC;20167;MoWe 10:15AM - 11:30AM;Luther Bonney 510 - P;Peter Woodruff;09/03/2013 - 12/23/2013
+CHY;562;"Biochemistry Lab";0011;LAB;20168;We 1:15PM - 2:05PM;Science Building 262 - P;Peter Woodruff;09/03/2013 - 12/23/2013;We 2:05PM - 5:00PM;Science Building 366 - P;Peter Woodruff;09/03/2013 - 12/23/2013
+CLA;285;"Classical Mythology";0002;LEC;30645;TBA;Online Class;Jeannine D Uzzi;09/03/2013 - 12/23/2013
+CLA;291;"The Golden Age of Greece";0001;LEC;24614;MoWe 2:45PM - 4:00PM;Payson Smith 201 - P;Peter Aicher;09/03/2013 - 12/23/2013
+COS;160;"Structured Problem Solving: Java";0005;LEC;24436;TuTh 2:45PM - 4:00PM;Payson Smith 44 - P;Charles Welty;09/03/2013 - 12/23/2013
+COS;161;"Algorithms in Programming";0002;LEC;20189;TuTh 4:10PM - 5:25PM;Payson Smith 201 - P;David A Briggs;09/03/2013 - 12/23/2013;Th 5:35PM - 6:35PM;Luther Bonney 203 - P;David A Briggs;09/03/2013 - 12/23/2013
+COS;170;"Structured Programming Laboratory";0005;LAB;24437;Th 4:10PM - 5:10PM;Luther Bonney 202 - P;Charles Welty;09/03/2013 - 12/23/2013
+COS;246;"Programming Topics";0001;LEC;24432;TuTh 10:15AM - 11:30AM;Payson Smith 208 - P;Stephen A Houser;09/03/2013 - 12/23/2013
+COS;285;"Data Structures";0001;LEC;20193;MoWe 4:10PM - 5:25PM;Payson Smith 201 - P;Robert F Boothe;09/03/2013 - 12/23/2013
+COS;452;"Computer Graphics";0001;LEC;24433;MoWe 2:45PM - 4:00PM;Payson Smith 44 - P;Bruce B Macleod;09/03/2013 - 12/23/2013;Mo 1:15PM - 2:30PM;Luther Bonney 203 - P;Bruce B Macleod;09/03/2013 - 12/23/2013
+COS;470;"Topics in Computer Science";0002;LEC;22396;We 4:10PM - 6:40PM;Payson Smith 205 - P;Charles Lucien Largay;09/03/2013 - 12/23/2013
+COS;472;"Artificial Intelligence and Data Mining";0001;LEC;24440;Tu 2:45PM - 4:00PM;Luther Bonney 241 - P;Clare Bates Congdon;09/03/2013 - 12/23/2013;Th 2:45PM - 4:00PM;Luther Bonney 203 - P;Clare Bates Congdon;09/03/2013 - 12/23/2013
+COS;478;"Advanced Java Technology";0001;LEC;24438;TuTh 1:15PM - 2:30PM;Payson Smith 208 - P;Suad Alagic;09/03/2013 - 12/23/2013
+COS;495;"Advanced Web Architectures";0001;LEC;24443;Mo 4:10PM - 6:40PM;Payson Smith 205 - P;David F Bantz;09/03/2013 - 12/23/2013
+COS;497;"Independent Study in Computer Science";0008;IND;22045;TBA;TBA;Suad Alagic;09/03/2013 - 12/23/2013
+COS;570;"Seminar:Advanced Topics in Computer Science";0002;LEC;22397;We 4:10PM - 6:40PM;Payson Smith 205 - P;Charles Lucien Largay;09/03/2013 - 12/23/2013
+COS;572;"Artificial Intelligence and Data Mining";0001;LEC;24441;Tu 2:45PM - 4:00PM;Luther Bonney 241 - P;Clare Bates Congdon;09/03/2013 - 12/23/2013;Th 2:45PM - 4:00PM;Luther Bonney 203 - P;Clare Bates Congdon;09/03/2013 - 12/23/2013
+COS;578;"Advanced Java Technology";0001;LEC;24439;TuTh 1:15PM - 2:30PM;Payson Smith 208 - P;Suad Alagic;09/03/2013 - 12/23/2013
+COS;595;"Adv Web Architectures";0001;LEC;24445;Mo 4:10PM - 6:40PM;Payson Smith 205 - P;David F Bantz;09/03/2013 - 12/23/2013
+COS;697;"Independent Study";0007;IND;21663;TBA;TBA;David F Bantz;09/03/2013 - 12/23/2013
+COS;698;"Master's Thesis";0011;IND;21568;TBA;TBA;Charles Welty;09/03/2013 - 12/23/2013
+ECO;101;"Introduction to Macroeconomics";0007;LEC;22603;TBA;Online Class;Michael P Cote;09/03/2013 - 12/23/2013
+ECO;102;"Introduction to Microeconomics";0003;LEC;20277;Mo 4:10PM - 6:40PM;Talbot Lecture Hall - P;Vaishali Mamgain;09/03/2013 - 12/23/2013
+ECO;106;"Economics of Social Change";0001;LEC;22127;MoWe 1:15PM - 2:30PM;Payson Smith 207 - P;Joseph E Medley;09/03/2013 - 12/23/2013
+ECO;301;"Intermediate Macroeconomics";0001;LEC;20281;TuTh 1:15PM - 2:30PM;Luther Bonney 402 - P;Johann Jaeckel;09/03/2013 - 12/23/2013
+ECO;303;"Political Economy";0001;LEC;20282;Tu 4:10PM - 6:40PM;Payson Smith 42 - P;Johann Jaeckel;09/03/2013 - 12/23/2013
+ECO;312;"U.S. Economic Policy";0001;LEC;25176;Mo 4:10PM - 6:40PM;Luther Bonney 523 - P;Joseph E Medley;09/03/2013 - 12/23/2013
+ECO;327;"Natural Resource Economics";0001;LEC;25179;MoWe 1:15PM - 2:30PM;Luther Bonney 403 - P;Rachel Bouvier;09/03/2013 - 12/23/2013
+ECO;333;"Economics and Happiness";0001;LEC;25178;MoWe 11:45AM - 1:00PM;Luther Bonney 410 - P;Vaishali Mamgain;09/03/2013 - 12/23/2013
+ECO;490;"Independent Readings and Research in Economics";0001;IND;20284;TBA;TBA;Vaishali Mamgain;09/03/2013 - 12/23/2013
+EDU;300;"Educational Media and Technology";0051;LEC;21549;TBA;Online Class;Barbara D Stebbins;09/03/2013 - 12/23/2013
+EDU;305;"Foundations of Cultural and Linguistic Diversity";0001;LEC;22615;Tu 12:30PM - 3:00PM;Bailey 404 - G;Alexander Lapidus;09/03/2013 - 12/23/2013
+EDU;336;"Children's Literature";0015;LEC;30615;TBA;Online Class;Joyce Martin;09/24/2013 - 01/22/2014
+EDU;511;"Children's Literature";0001;LEC;29648;Mo 4:10PM - 6:40PM;Bailey 202 - G;;09/03/2013 - 12/23/2013
+EDU;513;"Adolescent Literature";0001;LEC;29649;Mo 4:10PM - 6:40PM;Bailey 202 - G;;09/03/2013 - 12/23/2013
+EDU;557;"Teaching Writing to Multilingual Learners";0001;LEC;29650;Mo 4:10PM - 6:40PM;Science Building 262 - P;Alexander Lapidus;09/03/2013 - 12/23/2013
+EDU;559;"Aspects of Reading for Multilingual Learners";0001;LEC;22152;TBA;Online Class;Alexander Lapidus;09/03/2013 - 12/23/2013
+EDU;561;"Aspects of the English Language";0001;LEC;22279;We 4:10PM - 6:40PM;Luther Bonney 509 - P;Bart Weyand;09/03/2013 - 12/23/2013
+EDU;603;"Analysis of Teaching";0001;LEC;20298;Th 4:10PM - 6:40PM;Luther Bonney 502 - P;Glenn A Cummings;09/03/2013 - 12/23/2013
+EDU;607;"Teacher Research in Literacy";0001;LEC;24179;Th 4:10PM - 6:40PM;Science Building 262 - P;Andrea Stairs;09/03/2013 - 12/23/2013
+EDU;620;"Reading Development and Instruction";0001;LEC;20299;Tu 4:10PM - 6:40PM;Bailey 202 - G;Andrea Stairs;09/03/2013 - 12/23/2013
+EDU;665;"CAS Directed Study";0001;RSG;22229;TBA;Blended Course (See Notes);Jeffrey S Beaudry;09/03/2013 - 12/23/2013;TBA;TBA;Jeffrey S Beaudry;09/03/2013 - 12/23/2013
+EDU;667;"Professional Educator Capstone";0001;SEM;22026;TBA;Blended Course (See Notes);Jeffrey S Beaudry;09/03/2013 - 12/23/2013;TBA;TBA;Jeffrey S Beaudry;09/03/2013 - 12/23/2013
+EDU;670;"Introduction to Educational Leadership";0001;LEC;20302;Mo 4:00PM - 6:30PM;Lewiston-Auburn 212;Glenn A Cummings;09/03/2013 - 12/23/2013
+EDU;678;"School Law";0001;LEC;22280;We 4:10PM - 6:40PM;Payson Smith 209 - P;Sarah Forster;09/03/2013 - 12/23/2013
+EDU;686;"Internship in Special Education Administration";0001;RSG;20308;We 7:00PM - 9:30PM;TBA;Joseph H Capelluti;09/03/2013 - 12/23/2013
+EDU;699;"Independent Study";0001;IND;22837;TBA;Blended Course (See Notes);Jeffrey S Beaudry;09/03/2013 - 12/23/2013;TBA;TBA;Jeffrey S Beaudry;09/03/2013 - 12/23/2013
+EDU;705;"Data Collection and Analysis in Education Research";0001;SEM;30325;Sa 8:00AM - 1:00PM;Luther Bonney 410 - P;;09/20/2013 - 12/14/2013;Fr 5:00PM - 7:30PM;TBA;;09/20/2013 - 10/04/2013
+ENG;100;"College Writing";0014;LEC;22801;Th 4:10PM - 6:40PM;Luther Bonney 509 - P;Dianne Benedict;09/03/2013 - 12/23/2013
+ENG;104;"Enriched College Writing";0037;LEC;21800;TuTh 1:15PM - 2:55PM;Payson Smith 41 - P;Edward M Williams;09/03/2013 - 12/23/2013
+ENG;120;"Introduction to Literature";0006;LEC;30230;Tu 4:10PM - 6:40PM;Luther Bonney 410 - P;Richard H Abrams;09/03/2013 - 12/23/2013
+ENG;145;"Literature and History";0003;LEC;24971;TuTh 1:15PM - 2:30PM;Luther Bonney 303 - P;Nancy K Gish;09/03/2013 - 12/23/2013
+ENG;201;"Creative Writing";0008;LEC;20332;Tu 7:00PM - 9:30PM;Payson Smith 300 - P;Dianne Benedict;09/03/2013 - 12/23/2013
+ENG;230;"Literacy Studies";0001;LEC;20333;MoWe 8:45AM - 10:00AM;Luther Bonney 327 - P;Lorrayne A Carroll;09/03/2013 - 12/23/2013
+ENG;244;"Introduction to Cultural Studies";0001;LEC;20334;MoWe 11:45AM - 1:00PM;Luther Bonney 524 - P;Deepika Marya;09/03/2013 - 12/23/2013
+ENG;245;"Introduction to Literary Studies";0003;LEC;25073;MoWe 2:45PM - 4:00PM;Payson Smith 43 - P;Lisa M Walker;09/03/2013 - 12/23/2013
+ENG;263;"Fiction";0001;LEC;21073;MoWe 10:15AM - 11:30AM;Luther Bonney 327 - P;Kathleen M Ashley;09/03/2013 - 12/23/2013
+ENG;299;"Topics";0003;LEC;22426;Th 7:00PM - 9:30PM;Luther Bonney 241 - P;Nancy K Gish;09/03/2013 - 12/23/2013
+ENG;301;"Poetry Writing";0001;LEC;21876;TuTh 2:45PM - 4:00PM;Luther Bonney 310 - P;F Shelton Waldrep;09/03/2013 - 12/23/2013
+ENG;309;"Newswriting";0001;LEC;22428;MoWe 11:45AM - 1:00PM;Luther Bonney 208 - P;Eve Raimon;09/03/2013 - 12/23/2013
+ENG;315;"Ancient Literature";0001;LEC;22112;TuTh 11:45AM - 1:00PM;Luther Bonney 303 - P;F Shelton Waldrep;09/03/2013 - 12/23/2013
+ENG;319;"Studies in Genre and Form";0001;LEC;22429;Tu 4:10PM - 6:40PM;Luther Bonney 327 - P;Richard Swartz;09/03/2013 - 12/23/2013
+ENG;325;"Epic and Romance";0001;LEC;24975;MoWe 1:15PM - 2:30PM;Luther Bonney 241 - P;Kathleen M Ashley;09/03/2013 - 12/23/2013
+ENG;326;"Studies in International Literature Since 1900";0001;LEC;25067;Mo 5:35PM - 8:05PM;Payson Smith 204 - P;Deepika Marya;09/03/2013 - 12/23/2013
+ENG;341;"Contemporary Critical Theories";0001;LEC;21877;TuTh 2:45PM - 4:00PM;Luther Bonney 523 - P;Francis C McGrath;09/03/2013 - 12/23/2013
+ENG;342;"Topics in Contemporary Theory";0002;LEC;22430;MoWe 2:45PM - 4:00PM;Luther Bonney 402 - P;Gerald N Peters;09/03/2013 - 12/23/2013
+ENG;346;"Language";0001;LEC;25068;Th 4:10PM - 6:40PM;Luther Bonney 503 - P;Francis C McGrath;09/03/2013 - 12/23/2013
+ENG;360;"Shakespeare";0001;LEC;20340;TuTh 1:15PM - 2:30PM;Luther Bonney 410 - P;Richard H Abrams;09/03/2013 - 12/23/2013
+ENG;366;"Studies in the Restoration and Eighteenth Century";0001;LEC;24990;Mo 4:10PM - 6:40PM;Luther Bonney 241 - P;Lucinda Cole;09/03/2013 - 12/23/2013
+ENG;399;"Topics";0001;LEC;25076;TBA;Online Class;Gerald N Peters;09/03/2013 - 12/23/2013
+ENG;401;"Writing Minor Thesis";0003;LEC;22435;TBA;TBA;F Shelton Waldrep;09/03/2013 - 12/23/2013
+ENG;409;"Internship in Professional Writing";0001;RSG;21879;TBA;TBA;Kathleen M Ashley;09/03/2013 - 12/23/2013
+ENG;419;"Seminar in Genre and Form";0001;SEM;25071;MoWe 1:15PM - 2:30PM;Luther Bonney 208 - P;Gerald N Peters;09/03/2013 - 12/23/2013
+ENG;432;"Internship in the Teaching of Writing";0001;RSG;22791;TBA;TBA;Ann C Dean;09/03/2013 - 12/23/2013
+ENG;491;"Seminar in Literature Since 1900";0001;SEM;25074;Tu 4:10PM - 6:40PM;Masterton G38 - P;Lisa M Walker;09/03/2013 - 12/23/2013
+FRE;101;"Beginning French I";0003;LEC;20364;MoWe 4:10PM - 5:55PM;Payson Smith 202 - P;Lindsay Kaplan;09/03/2013 - 12/23/2013
+FRE;201;"Intermediate French I";0001;LEC;20365;TuTh 4:10PM - 5:55PM;Payson Smith 209 - P;Nancy K Erickson;09/03/2013 - 12/23/2013
+FRE;301;"Practical French I";0001;LEC;21836;TuTh 2:45PM - 4:00PM;Payson Smith 201 - P;Nancy K Erickson;09/03/2013 - 12/23/2013
+FRE;303;"Theme et Version";0002;LEC;29988;TBA;Online Class;Nancy K Erickson;09/03/2013 - 12/23/2013
+GEO;305;"Remote Sensing";0001;LEC;22490;Tu 4:10PM - 6:40PM;Bailey 315 - G;Firooza Pavri;09/03/2013 - 12/23/2013
+GEO;408;"GIS Applications II";0001;LEC;21209;Mo 3:00PM - 5:30PM;Science Building 165 - P;Matthew Bampton;09/03/2013 - 12/23/2013;We 3:00PM - 5:30PM;Luther Bonney 202 - P;Matthew Bampton;09/03/2013 - 12/23/2013
+GEO;438;"Independent Study in GIS";0001;IND;22907;TBA;TBA;Firooza Pavri;09/03/2013 - 12/23/2013
+GEO;505;"Remote Sensing";0001;LEC;29698;Tu 4:10PM - 6:40PM;Bailey 315 - G;Firooza Pavri;09/03/2013 - 12/23/2013
+GEO;605;"Remote Sensing";0001;LEC;22491;Tu 4:10PM - 6:40PM;Bailey 315 - G;Firooza Pavri;09/03/2013 - 12/23/2013
+GEO;618;"GIS Applications II";0002;LEC;22634;TBA;Online Class;Matthew Bampton;09/03/2013 - 12/23/2013
+GER;101;"Beginning German I";0001;LEC;20371;MoWeFr 11:45AM - 1:00PM;Payson Smith 205 - P;Lenore W Bronson;09/03/2013 - 12/23/2013
+GER;201;"Intermediate German I";0001;LEC;20372;MoWe 1:15PM - 2:55PM;Payson Smith 204 - P;Lenore W Bronson;09/03/2013 - 12/23/2013
+HON;100;"Thinking and Writing in Honors";0002;SEM;22575;MoWe 9:30AM - 10:45AM;Hastings 280 - G;Deepika Marya;09/03/2013 - 12/23/2013
+HON;101;"Honors Entry";0002;SEM;20399;MoWe 2:45PM - 4:00PM;Luther Bonney 237 - P;Ronald J Schmidt;09/03/2013 - 12/23/2013
+HON;207;"Illuminated Autobiography";0001;LEC;22403;We 4:10PM - 6:40PM;Luther Bonney 424 - P;Rebecca Goodale;09/03/2013 - 12/23/2013
+HON;310;"Honors Global Ethical Inquiry";0001;LEC;29174;TuTh 2:45PM - 4:00PM;Luther Bonney 237 - P;Nancy C Artz;09/03/2013 - 12/23/2013
+HON;311;"Honors Thesis I: Workshop";0002;IND;20402;We 9:30AM - 11:30AM;Luther Bonney 237 - P;Kaitlin A Briggs;09/03/2013 - 12/23/2013
+HON;321;"Honors Directed Research";0001;IND;20404;TBA;TBA;Kaitlin A Briggs;09/03/2013 - 12/23/2013
+HON;359;"Honors Internship/Community Service";0001;IND;29178;TBA;TBA;Nancy C Artz;09/03/2013 - 12/23/2013
+HON;411;"Honors Thesis II";0001;IND;20403;TBA;TBA;Kaitlin A Briggs;09/03/2013 - 12/23/2013
+HON;412;"Honors Thesis III";0001;IND;30069;We 9:30AM - 11:30AM;Luther Bonney 237 - P;Kaitlin A Briggs;09/03/2013 - 12/23/2013
+HON;455;"Topics in New England Studies";0001;LEC;29177;TBA;TBA;Nancy C Artz;09/03/2013 - 12/23/2013
+HTY;101;"Western Civilization I";0005;LEC;20430;MoWe 9:30AM - 10:45AM;Bailey 321 - G;Gary J Johnson;09/03/2013 - 12/23/2013
+HTY;102;"Western Civilization II";0001;LEC;20431;TuTh 10:15AM - 11:30AM;Luther Bonney 302 - P;Seth Rogoff;09/03/2013 - 12/23/2013
+HTY;121;"United States History to 1800";0002;LEC;22605;TBA;Online Class;Christopher M Beam;09/03/2013 - 12/23/2013
+HTY;122;"United States History 1800 to 1900";0003;LEC;21063;MoWe 11:00AM - 12:15PM;Bailey 321 - G;Elizabeth M Bischof;09/03/2013 - 12/23/2013
+HTY;123;"United States History Since 1900";0006;LEC;21814;MoWe 10:15AM - 11:30AM;Luther Bonney 303 - P;Allan R Whitmore;09/03/2013 - 12/23/2013
+HTY;141;"African American History to 1865";0001;LEC;22448;TuTh 11:45AM - 1:00PM;Luther Bonney 302 - P;Leroy Rowe;09/03/2013 - 12/23/2013
+HTY;300;"History Internship";0001;RSG;20437;TBA;TBA;Elizabeth M Bischof;09/03/2013 - 12/23/2013
+HTY;305;"The Historical Jesus";0001;LEC;24468;Tu 4:10PM - 6:40PM;Bailey 321 - G;Gary J Johnson;09/03/2013 - 12/23/2013
+HTY;316;"French Revolution and Napoleon";0001;LEC;29516;Mo 4:10PM - 6:40PM;Luther Bonney 303 - P;Howard M Solomon;09/03/2013 - 12/23/2013
+HTY;351;"Colonial America";0001;LEC;24463;TuTh 8:45AM - 10:00AM;Luther Bonney 302 - P;Allan R Whitmore;09/03/2013 - 12/23/2013
+HTY;364;"History of Women in the United States";0001;LEC;24464;TuTh 1:15PM - 2:30PM;Luther Bonney 326 - P;Eileen M Eagan;09/03/2013 - 12/23/2013
+HTY;374;"Photographing American History";0001;LEC;24466;Th 7:00PM - 9:30PM;Bailey 313 - G;Elizabeth M Bischof;09/03/2013 - 12/23/2013
+HTY;390;"Traditional Japan: Court and Warriors";0001;LEC;24467;MoWe 2:45PM - 4:00PM;Luther Bonney 302 - P;Jie Zhao;09/03/2013 - 12/23/2013
+HTY;394;"Selected Topics in History";0003;LEC;22110;Tu 5:35PM - 8:05PM;Luther Bonney 402 - P;Leroy Rowe;09/03/2013 - 12/23/2013
+HTY;398;"Independent Study in History";0001;IND;30218;TBA;TBA;Elizabeth M Bischof;09/03/2013 - 12/23/2013
+HTY;400;"Senior Seminar";0002;SEM;21815;Th 4:10PM - 6:40PM;Bailey 321 - G;Leroy Rowe;09/03/2013 - 12/23/2013
+LAT;101;"Beginning Latin I";0001;LEC;20460;MoWeFr 10:15AM - 11:30AM;Payson Smith 207 - P;Jeannine D Uzzi;09/03/2013 - 12/23/2013
+LAT;251;"Introduction to Latin Literature I";0001;LEC;20461;MoWe 11:45AM - 1:00PM;Payson Smith 211 - P;Peter Aicher;09/03/2013 - 12/23/2013
+LAT;310;"Seminar in Latin Literature";0001;SEM;22545;MoWe 11:45AM - 1:00PM;Payson Smith 211 - P;Peter Aicher;09/03/2013 - 12/23/2013
+LAT;470;"Independent Study";0001;IND;21535;MoWe 11:45AM - 1:00PM;Science Building 262 - P;Jeannine D Uzzi;09/03/2013 - 12/23/2013
+MAT;;"";0015;LEC;30715;TuTh 8:00AM - 9:15AM;Bailey 205 - G;Staff;09/03/2013 - 12/23/2013
+MAT;101;"College Readiness Mathematics";0019;LEC;21206;MoWe 10:30AM - 12:10PM;Lewiston-Auburn 216;Mary Davis;09/03/2013 - 12/23/2013
+MAT;105;"Mathematics for Quantitative Decision Making";0008;LEC;22544;MoWe 4:10PM - 5:50PM;Bailey 215 - G;Shaukatullah S Qazi;09/03/2013 - 12/23/2013
+MAT;108;"College Algebra";0008;LEC;21642;MoWe 1:00PM - 2:45PM;Lewiston-Auburn 216;Mary Davis;09/03/2013 - 12/23/2013
+MAT;120;"Introduction to Statistics";0012;LEC;20555;TuTh 7:00PM - 8:40PM;Payson Smith 209 - P;George Bernier;09/03/2013 - 12/23/2013
+MAT;131;"Number Systems for Elementary Teachers";0001;LEC;20561;MoWe 9:30AM - 10:45AM;Bailey 402 - G;Kelly K McCormick;09/03/2013 - 12/23/2013
+MAT;140;"Pre";0005;LEC;20565;TuTh 2:00PM - 3:15PM;Payson Smith 200 - P;John A Moffitt;09/03/2013 - 12/23/2013
+MAT;145;"Discrete Mathematics I";0001;LEC;20566;MoWe 4:10PM - 5:25PM;Payson Smith 209 - P;Scott R Greenleaf;09/03/2013 - 12/23/2013
+MAT;148;"Applied Calculus";0001;LEC;22197;We 4:00PM - 6:45PM;John Mitchell Center 233 - G;John C Griffin;09/03/2013 - 12/23/2013
+MAT;152;"Calculus A";0006;LEC;24559;TuTh 4:10PM - 5:50PM;Payson Smith 211 - P;John Brunette;09/03/2013 - 12/23/2013
+MAT;153;"Calculus B";0031;LEC;20605;TBA;Online Class;Laurie S Woodman;09/03/2013 - 12/23/2013
+MAT;210;"Business Statistics";0004;LEC;20607;TBA;Online Class;Bhisham C Gupta;09/03/2013 - 12/23/2013
+MAT;252;"Calculus C";0002;LEC;24569;TuTh 5:00PM - 6:40PM;Payson Smith 200 - P;Cheng Peng;09/03/2013 - 12/23/2013
+MAT;281;"Introduction to Probability";0011;LEC;21951;Fr 9:00AM - 11:45AM;Greenville HS;Abou El-Makarim A Aboueissa;09/03/2013 - 12/23/2013
+MAT;295;"Linear Algebra";0001;LEC;20614;TBA;Online Class;Cheng Peng;09/03/2013 - 12/23/2013
+MAT;388;"Statistical Quality Control";0001;LEC;24563;TBA;Online Class;Bhisham C Gupta;09/03/2013 - 12/23/2013
+MAT;395;"Abstract Algebra";0001;LEC;24566;MoWe 2:00PM - 3:15PM;Payson Smith 300 - P;Silvia R Valdes-Leon;09/03/2013 - 12/23/2013
+MAT;460;"Mathematical Modeling";0001;LEC;24565;MoWe 11:45AM - 1:00PM;Payson Smith 300 - P;Silvia R Valdes-Leon;09/03/2013 - 12/23/2013
+MAT;490;"Topology";0001;LEC;24567;TuTh 11:45AM - 1:00PM;Payson Smith 201 - P;Laurie S Woodman;09/03/2013 - 12/23/2013
+MEE;150;"Applied Mechanics: Statics";0001;LEC;22316;TuTh 11:00AM - 12:15PM;John Mitchell Center 164 - G;James V Masi;09/03/2013 - 12/23/2013;Th 9:55AM - 10:45AM;John Mitchell Center 164 - G;James V Masi;09/03/2013 - 12/23/2013
+MEE;360;"Fluid Mechanics";0002;LEC;24382;TuTh 11:00AM - 12:15PM;John Mitchell Center 242 - G;Lin Lin;09/03/2013 - 12/23/2013;TuTh 9:55AM - 10:45AM;John Mitchell Center 242 - G;Lin Lin;09/03/2013 - 12/23/2013
+MUE;110;"Professional Seminar I";0001;SEM;21746;Fr 8:30AM - 10:20AM;Corthell 303 - G;Michele E Kaschub;09/03/2013 - 12/23/2013
+MUE;111;"Professional Foundations for Music Education";0001;LEC;21745;MoWe 8:00AM - 8:50AM;Corthell 112 - G;Staff;09/03/2013 - 12/23/2013
+MUE;210;"Professional Seminar III";0001;LEC;21818;Fr 8:30AM - 10:20AM;Corthell 304 - G;Michele E Kaschub;09/03/2013 - 12/23/2013
+MUE;211;"Teaching Creative &amp; Critical Listening PK";0001;LEC;21819;Mo 9:00AM - 10:40AM;Corthell 211;Staff;09/03/2013 - 12/23/2013
+MUE;310;"ProSeminar V Teaching Internship";0001;RSG;22117;Fr 8:30AM - 10:20AM;Corthell 320 - G;Michele E Kaschub;09/03/2013 - 12/23/2013
+MUE;311;"Research and Evaluation in Music Education";0001;LEC;22118;Mo 9:00AM - 10:40AM;Corthell 112 - G;Michele E Kaschub;09/03/2013 - 12/23/2013
+MUE;312;"Teaching Instrumental Music PK";0001;LEC;22119;We 9:00AM - 10:40AM;Corthell 211;Staff;09/03/2013 - 12/23/2013
+MUE;314;"Guitar Techniques";0001;LEC;22120;MoWe 5:00PM - 5:50PM;Corthell 303 - G;Keith R Crook;09/03/2013 - 12/23/2013
+MUE;353;"Woodwind Techniques";0001;LEC;24625;MoWe 8:00AM - 8:50AM;Corthell 303 - G;Thomas M Parchman;09/03/2013 - 12/23/2013
+MUE;410;"ProSeminar VII";0001;RSG;22556;Fr 8:30AM - 10:20AM;Corthell 320 - G;Michele E Kaschub;09/03/2013 - 12/23/2013
+MUE;411;"Teaching Music Composition PK";0001;LEC;22557;Th 9:00AM - 10:40AM;212 Corthell;Michele E Kaschub;09/03/2013 - 12/23/2013
+MUE;450;"Professional Internship";0001;FEX;29675;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUE;451;"Professional Portfolio";0001;LEC;29676;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUE;615;"The Professional Portfolio";0001;IND;20639;TBA;TBA;Michele E Kaschub;09/03/2013 - 12/23/2013
+MUH;222;"Music History Survey I";0001;LEC;21913;MoWe 11:00AM - 12:15PM;212 Corthell;Robert J Russell;09/03/2013 - 12/23/2013
+MUP;390;"Recital";0001;LEC;20784;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUP;490;"Recital";0001;LEC;20785;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUP;491;"Recital";0001;LEC;20786;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUP;603;"Applied Music Major Area";0001;MUS;20787;TBA;TBA;;09/03/2013 - 12/23/2013
+MUP;604;"Applied Music";0002;MUS;22863;TBA;TBA;;09/03/2013 - 12/23/2013
+MUP;690;"Recital";0001;LEC;20789;TBA;TBA;Michele E Kaschub;09/03/2013 - 12/23/2013
+MUS;100;"Music Appreciation and History";0003;LEC;20791;TuTh 8:45AM - 10:00AM;Talbot Lecture Hall - P;Paul V Christiansen;09/03/2013 - 12/23/2013
+MUS;103;"Introduction to Jazz";0003;LEC;30015;TBA;Online Class;Christopher W Oberholtzer;09/03/2013 - 12/23/2013
+MUS;150;"Piano Class 1";0002;LEC;20796;TuTh 8:00AM - 8:50AM;Corthell 304 - G;Philip E Burns;09/03/2013 - 12/23/2013
+MUS;202;"Music in America";0031;LEC;20798;TBA;Online Class;Thomas M Parchman;09/03/2013 - 12/23/2013
+MUS;250;"Piano Class 3";0002;LEC;22121;TuTh 10:00AM - 10:50AM;Corthell 304 - G;Philip E Burns;09/03/2013 - 12/23/2013
+MUS;321;"Literature of the Major Instrument";0002;LEC;30558;TBA;TBA;Thomas M Parchman;09/03/2013 - 12/23/2013
+MUS;332;"Counterpoint";0001;LEC;24632;TuTh 5:35PM - 6:50PM;Corthell 112 - G;Paul V Christiansen;09/03/2013 - 12/23/2013
+MUS;370;"Topics in Music Technology";0001;LEC;22423;Mo 7:00PM - 9:30PM;Corthell 211;Adam P Ayan;09/03/2013 - 12/23/2013
+MUS;372;"Pedagogy of the Major Instrument";0001;LEC;20802;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUS;380;"Jazz Improvisation 1";0001;LEC;24627;TuTh 3:30PM - 4:45PM;Corthell 320 - G;Christopher W Oberholtzer;09/03/2013 - 12/23/2013
+MUS;400;"Southern Maine Symphony Orchestra";0001;LEC;20807;We 7:15PM - 9:45PM;Corthell 205 - G;Robert Lehmann;09/03/2013 - 12/23/2013
+MUS;401;"University Chorale";0001;LEC;20808;TuTh 2:00PM - 3:15PM;Corthell 320 - G;Robert J Russell;09/03/2013 - 12/23/2013
+MUS;402;"University Concert Band";0001;LEC;20809;MoWe 3:45PM - 5:00PM;Corthell 320 - G;Peter J Martin;09/03/2013 - 12/23/2013
+MUS;404;"Opera Workshop";0002;LEC;21119;Fr 1:30PM - 4:00PM;Corthell 320 - G;Edward C Reichert;09/03/2013 - 12/23/2013
+MUS;405;"Chamber Singers";0001;LEC;20810;TuTh 3:30PM - 4:45PM;Corthell 205 - G;Robert J Russell;09/03/2013 - 12/23/2013
+MUS;406;"Chamber Music";0013;LEC;21132;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUS;407;"Jazz Ensemble";0003;LEC;22561;TBA;TBA;Charles B Lacasce;09/03/2013 - 12/23/2013
+MUS;408;"Wind Ensemble";0001;LEC;20812;MoWe 2:00PM - 3:15PM;Corthell 320 - G;Peter J Martin;09/03/2013 - 12/23/2013
+MUS;442;"Recital Class";0001;LEC;20813;Fr 11:00AM - 12:30PM;Corthell 205 - G;Robert Lehmann;09/03/2013 - 12/23/2013
+MUS;452;"Accompanying";0001;LEC;20814;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUS;480;"Bibliography and Research in Music";0001;LEC;22562;Tu 7:00PM - 9:30PM;Corthell 112 - G;Paul V Christiansen;09/03/2013 - 12/23/2013
+MUS;498;"Independent Study in Music";0001;IND;20815;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUS;500;"Orchestra";0001;LEC;20816;We 7:15PM - 9:45PM;Corthell 205 - G;Robert Lehmann;09/03/2013 - 12/23/2013
+MUS;501;"Chorale";0001;LEC;20817;TuTh 2:00PM - 3:15PM;Corthell 320 - G;Robert J Russell;09/03/2013 - 12/23/2013
+MUS;502;"Concert Band";0001;LEC;20818;MoWe 3:45PM - 5:00PM;Corthell 320 - G;Peter J Martin;09/03/2013 - 12/23/2013
+MUS;504;"Opera Workshop";0001;LEC;20819;Mo 6:30PM - 9:00PM;Corthell 320 - G;Ellen S Chickering;09/03/2013 - 12/23/2013
+MUS;505;"Chamber Singers";0001;LEC;20820;TuTh 3:30PM - 4:45PM;Corthell 205 - G;Robert J Russell;09/03/2013 - 12/23/2013
+MUS;506;"Chamber Music";0029;LEC;29819;TBA;TBA;;09/03/2013 - 12/23/2013
+MUS;507;"Jazz Ensemble";0001;LEC;20823;TuTh 5:35PM - 6:50PM;Corthell 320 - G;Christopher W Oberholtzer;09/03/2013 - 12/23/2013
+MUS;508;"Wind Ensemble";0001;LEC;20824;MoWe 2:00PM - 3:15PM;Corthell 320 - G;Peter J Martin;09/03/2013 - 12/23/2013
+MUS;510;"Bibliography and Research in Music";0001;LEC;22563;Tu 7:00PM - 9:30PM;Corthell 112 - G;Paul V Christiansen;09/03/2013 - 12/23/2013
+MUS;521;"Literature of the Major Instrument";0001;LEC;22254;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUS;532;"Counterpoint";0001;LEC;24634;TuTh 5:35PM - 6:50PM;Corthell 112 - G;Paul V Christiansen;09/03/2013 - 12/23/2013
+MUS;552;"Accompanying";0001;LEC;20825;TBA;TBA;Alan R Kaschub;09/03/2013 - 12/23/2013
+MUS;560;"Advanced Keyboard Skills I";0001;LEC;21748;TBA;TBA;Ray Cornils;09/03/2013 - 12/23/2013
+MUS;561;"Advanced Keyboard Skills II";0001;LEC;22251;TBA;TBA;Ray Cornils;09/03/2013 - 12/23/2013
+MUS;563;"Topics in Keyboard Studies";0001;LEC;22836;TBA;TBA;Anastasia Antonacos;09/03/2013 - 12/23/2013
+MUS;565;"Topics in Vocal Studies";0001;LEC;30570;TBA;TBA;Ellen S Chickering;09/03/2013 - 12/23/2013
+MUS;570;"Topics in Contemporary Music Technology";0001;MUS;22424;Mo 7:00PM - 9:30PM;Corthell 211;Adam P Ayan;09/03/2013 - 12/23/2013
+MUS;578;"Pedagogy of the Major Instrument: Piano I";0001;LEC;22835;We 9:30AM - 11:15AM;Bailey 320;Christine W Kissack;09/03/2013 - 12/23/2013
+MUS;598;"Independent Study";0011;IND;21994;TBA;TBA;Robert J Russell;09/03/2013 - 12/23/2013
+MUS;675;"Jazz Chamber Music Coaching";0001;LEC;22675;TBA;TBA;Christopher W Oberholtzer;09/03/2013 - 12/23/2013
+MUS;682;"Chamber Jazz Ensemble Evolution and Analysis";0001;LEC;22671;TBA;TBA;Christopher W Oberholtzer;09/03/2013 - 12/23/2013
+MUS;694;"Internship";0001;FEX;22661;TBA;TBA;Ellen S Chickering;09/03/2013 - 12/23/2013
+MUS;695;"Thesis";0001;THS;20827;TBA;TBA;Michele E Kaschub;09/03/2013 - 12/23/2013
+NUR;300;"Health Assessment";0001;LEC;20831;We 8:30AM - 11:30AM;Masterton 113 - P;Nancy Baugh;09/03/2013 - 12/23/2013
+NUR;301;"Health Assessment Lab";0008;LAB;22361;Fr 1:00PM - 3:00PM;Lewiston-Auburn 164;Patricia M Thompson-Leavitt;09/03/2013 - 12/23/2013
+NUR;306;"Nursing Arts and Science";0001;LEC;20837;Mo 8:30AM - 11:30AM;Payson Smith 44 - P;Cynthia S Randall;09/03/2013 - 12/23/2013
+NUR;307;"Fundamentals in Nursing Lab";0009;LAB;22364;Fr 8:00AM - 12:00PM;Lewiston-Auburn 226;Julie Omsberg;09/03/2013 - 12/23/2013
+NUR;323;"Adult/Older Adult Health Nursing";0002;LEC;21975;Mo 1:00PM - 4:00PM;Masterton 113 - P;Vera Komisarjevsky;09/03/2013 - 12/23/2013
+NUR;325;"Adult/Older Adult Health Nursing Lab";0002;LAB;20843;TBA;TBA;Staff;09/03/2013 - 12/13/2013
+NUR;328;"Dominican Republic Community Nursing Partnership III";0001;LEC;20845;Th 8:30AM - 11:30AM;Glickman 423 - P;Whitney G Lutz;09/03/2013 - 12/23/2013
+NUR;330;"Mental Health Nursing";0003;LEC;20847;Fr 1:00PM - 4:00PM;Payson Smith 301A - P;Jill A Colton-Spina;09/03/2013 - 12/23/2013
+NUR;331;"Mental Health Nursing Lab";0002;LAB;21636;TBA;TBA;Staff;09/03/2013 - 12/13/2013
+NUR;332;"Nursing Care of the Older Adult in the Community";0003;LEC;30146;Tu 4:00PM - 7:00PM;Lewiston-Auburn 216;Bonnie C Farmer;09/03/2013 - 12/23/2013
+NUR;339;"Community Nursing Partnerships I";0016;LAB;22175;Th 8:00AM - 12:00PM;Science Building 157 - P;Linda W Samia;09/03/2013 - 12/23/2013
+NUR;341;"Community Nursing Partnerships II";0005;LAB;22004;Th 8:00AM - 12:00PM;Luther Bonney 509 - P;Linda W Samia;09/03/2013 - 12/23/2013
+NUR;370;"Theory for Clinical Practice";0001;LEC;22065;TBA;Online Class;Carla E Randall;09/03/2013 - 12/23/2013
+NUR;395;"Directed Study";0001;IND;21741;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+NUR;413;"Advanced Nursing Skills Lab";0006;LAB;22582;TBA;TBA;Staff;09/03/2013 - 10/28/2013
+NUR;419;"Community Nursing Partnerships for RNs";0001;LEC;21935;TBA;TBA;Helen S Peake-Godin;09/03/2013 - 12/23/2013
+NUR;421;"Reproductive and Sexual Health Nursing";0002;LEC;22157;Mo 8:00AM - 11:00AM;Payson Smith 208 - P;Allison S Gray;09/03/2013 - 12/23/2013
+NUR;422;"Reproductive and Sexual Health Nursing Lab";0003;LAB;21750;TBA;TBA;Staff;TBA
+NUR;423;"Management of the Critically Ill Adult/Older Adult";0002;LEC;25126;Mo 8:30AM - 11:30AM;Luther Bonney 503 - P;Kimberly A Moody;09/06/2013 - 10/25/2013;Fr 8:30AM - 11:30AM;Masterton 113 - P;Kimberly A Moody;09/06/2013 - 10/25/2013
+NUR;425;"Management of the Critically Ill Adult/Older Adult Lab";0001;LAB;22072;TBA;TBA;Staff;TBA
+NUR;427;"Child Health Nursing";0001;LEC;25123;Fr 1:00PM - 4:00PM;Lewiston-Auburn 224;Marcia Goldenberg;09/03/2013 - 12/23/2013
+NUR;428;"Child Health Nursing Lab";0001;LAB;21635;TBA;TBA;Staff;TBA
+NUR;436;"Community Nursing Partnerships for Accelerated B.S. Students";0002;LAB;22202;Th 8:30AM - 11:30AM;Glickman 423 - P;Whitney G Lutz;09/03/2013 - 12/23/2013
+NUR;470;"Leadership";0001;LEC;21681;Mo 8:00AM - 2:00PM;Payson Smith 41 - P;Margaret A Fournier;10/28/2013 - 12/23/2013
+NUR;474;"Professional Issues: Leadership";0002;LEC;25682;Tu 1:00PM - 4:00PM;Lewiston-Auburn 216;Laurie Caton-Lemos;09/03/2013 - 12/23/2013
+NUR;476;"Theory Related to Clinical Specialty for RNs";0032;LEC;20854;TBA;Online Class;Susan Moore;09/03/2013 - 12/23/2013
+NUR;480;"Practicum/Care Management";0001;SEM;21802;TBA;TBA;Staff;TBA
+NUR;495;"Directed Study";0002;IND;21539;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+NUR;530;"Mental Health Nursing";0002;LEC;21172;Fr 1:00PM - 4:00PM;Payson Smith 301A - P;Jill A Colton-Spina;09/03/2013 - 12/23/2013
+NUR;531;"Mental Health Nursing Lab";0017;LAB;22223;TBA;TBA;Rita Crudden Pakulski;10/29/2013 - 12/10/2013
+NUR;532;"Nursing Care Older Adult Commu";0002;LEC;20857;Th 4:10PM - 7:00PM;Luther Bonney 524 - P;Bonnie C Farmer;09/03/2013 - 12/23/2013
+NUR;538;"Community Nursing Partnership for Option Students";0006;LEC;22208;Th 8:00AM - 12:00PM;TBA;Marcia Goldenberg;09/03/2013 - 12/23/2013
+NUR;541;"Adult/Older Adult Health Nursing";0002;LEC;21909;Mo 1:00PM - 4:00PM;Masterton 113 - P;Vera Komisarjevsky;09/03/2013 - 12/23/2013
+NUR;542;"Adult/Older Adult Health Nursing Lab";0017;LAB;22225;TBA;TBA;Michele Higgins;09/03/2013 - 12/13/2013
+NUR;601;"Advanced Pharmacotherapeutics";0001;LEC;20858;We 8:30AM - 11:30AM;Masterton G38 - P;Jeffrey Eaton;09/03/2013 - 12/23/2013
+NUR;603;"Nursing Theory and Knowledge Development";0002;LEC;20859;We 1:00PM - 4:00PM;Luther Bonney 503 - P;Carla E Randall;09/03/2013 - 12/23/2013
+NUR;604;"Nursing Research";0003;LEC;20860;We 1:00PM - 4:00PM;Luther Bonney 310 - P;Carol Fackler;09/03/2013 - 12/23/2013
+NUR;614;"Theoretical Foundations of Leadership &amp; Role";0001;LEC;25036;We 8:30AM - 11:30AM;Payson Smith 44 - P;Linda W Samia;09/03/2013 - 12/23/2013
+NUR;615;"Clinical Project I";0001;RSG;30761;TBA;TBA;Linda W Samia;09/03/2013 - 12/23/2013
+NUR;618;"Clinical Project III";0001;RSG;25033;We 4:00PM - 5:00PM;Luther Bonney 402 - P;Susan B Sepples;09/03/2013 - 12/23/2013
+NUR;621;"Clinical Seminar I";0001;SEM;30762;TBA;TBA;Linda W Samia;09/03/2013 - 12/23/2013
+NUR;623;"CNL Immersion:Clinical Seminar III";0001;SEM;25034;We 1:00PM - 4:00PM;Luther Bonney 327 - P;Susan B Sepples;09/03/2013 - 12/23/2013
+NUR;636;"Foundations of Nursing Education";0001;LEC;22377;TBA;Blended Course (See Notes);Carla E Randall;09/03/2013 - 12/23/2013;Sa 9:00AM - 3:00PM;Lewiston-Auburn 164;Carla E Randall;09/28/2013 - 11/23/2013
+NUR;665;"Primary Health Care of the Adult II";0001;LEC;21219;Tu 8:30AM - 11:30AM;Luther Bonney 503 - P;Nancy Baugh;09/03/2013 - 12/23/2013
+NUR;668;"Clinical Practicum and Seminar II";0001;LAB;21220;Tu 1:00PM - 3:00PM;Payson Smith 42 - P;Rosemary Johnson;09/03/2013 - 12/23/2013
+NUR;671;"Foundations of Advanced Practice Mental Health Nursing";0001;SEM;21222;We 2:30PM - 5:30PM;Masterton 311 - P;Leslie Susan Yetter;09/03/2013 - 12/23/2013
+NUR;695;"Directed Study";0001;IND;20862;TBA;TBA;Krista Meinersmann;09/03/2013 - 12/23/2013
+NUR;702;"Informatics Technology";0001;LEC;22078;TBA;Blended Course (See Notes);Carol Fackler;09/03/2013 - 12/23/2013;We 8:30AM - 11:30AM;Luther Bonney 503 - P;Carol Fackler;09/04/2013 - 12/18/2013
+PHI;106;"Introduction to Philosophy: Why Philosophize?";0001;LEC;20881;MoWe 12:30PM - 1:45PM;Bailey 405 - G;John N Hines;09/03/2013 - 12/23/2013
+PHI;107;"Introduction to Philosophy: World Philosophy";0002;LEC;30007;TBA;Online Class;Derek Anthony Michaud;10/28/2013 - 12/23/2013
+PHI;220;"Philosophy of Art";0003;LEC;22546;TBA;Online Class;Kathleen J Wininger;09/03/2013 - 10/25/2013
+PHI;350;"American Philosophy";0001;LEC;22459;TuTh 1:15PM - 2:30PM;Payson Smith 201 - P;William J Gavin;09/03/2013 - 12/23/2013
+PHI;398;"Independent Study";0001;IND;21812;TBA;TBA;Jason D Read;09/03/2013 - 12/23/2013
+PHI;400;"Seminar in Philosophy";0001;SEM;29646;Tu 4:10PM - 6:40PM;Luther Bonney 509 - P;Jason D Read;09/03/2013 - 12/23/2013
+PHI;409;"Research Seminar";0001;SEM;24705;TBA;Online Class;Julien S Murphy;10/28/2013 - 12/23/2013
+PHI;410;"Senior Thesis";0001;IND;30188;TBA;TBA;Julien S Murphy;09/03/2013 - 12/23/2013
+PHY;111;"Elements of Physics I";0001;LEC;20886;TuThFr 8:45AM - 10:00AM;Payson Smith 303 - P;Robert W Coakley;09/03/2013 - 12/23/2013
+PHY;114;"Introductory Physics Laboratory I";0018;LAB;22820;We 10:15AM - 12:15PM;Science Building 266 - P;Edward Jay Sarton;09/09/2013 - 12/23/2013
+PHY;121;"General Physics I";0001;LEC;20891;TuThFr 8:45AM - 10:00AM;Science Building 165 - P;Paul A Nakroshis;09/03/2013 - 12/23/2013
+PHY;211;"Nonclassical Physics I";0001;LEC;20892;TuTh 10:15AM - 11:30AM;Science Building 262 - P;Jerry J Lasala;09/03/2013 - 12/23/2013
+PHY;225;"Classical Physics III";0001;LEC;24313;TuTh 8:45AM - 10:00AM;Luther Bonney 502 - P;Julie Ziffer;09/03/2013 - 12/23/2013
+PHY;261;"Computational Physics";0001;LEC;24315;TuTh 1:15PM - 2:30PM;Science Building 260 - P;Paul A Nakroshis;09/03/2013 - 12/23/2013
+PHY;299;"Topics in Physics";0001;LEC;24317;We 9:30AM - 11:30AM;Science Building 260 - P;Paul A Nakroshis;09/03/2013 - 12/23/2013
+PHY;375;"Optics";0001;LEC;24324;TuTh 11:45AM - 1:00PM;Science Building 262 - P;Robert W Coakley;09/03/2013 - 12/23/2013
+POS;101;"Introduction to American Government";0003;LEC;22129;Tu 4:10PM - 6:40PM;Payson Smith 303 - P;Ronald J Schmidt;09/03/2013 - 12/23/2013
+POS;256;"Media and Politics";0001;LEC;24721;MoWe 10:15AM - 11:30AM;Luther Bonney 523 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;290;"Introduction to Political Theory";0001;LEC;20895;TuTh 2:45PM - 4:00PM;Masterton 113 - P;Ronald J Schmidt;09/03/2013 - 12/23/2013
+POS;380;"Topics in Political Science";0001;LEC;30291;Tu 5:35PM - 8:05PM;Luther Bonney 402 - P;Leroy Rowe;09/03/2013 - 12/23/2013
+POS;399;"Topics in Political Science";0001;LEC;24727;MoWe 11:45AM - 1:00PM;Luther Bonney 503 - P;Julia M Edwards;09/03/2013 - 12/23/2013
+POS;471;"Internship in Private and Semi";0001;RSG;20896;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;472;"Not";0001;RSG;20897;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;473;"Municipal Administration Internship";0001;RSG;20898;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;474;"Federal Executive Internship";0001;RSG;20899;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;475;"Congressional Internship";0001;RSG;20900;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;476;"Internship in Washington";0001;RSG;20901;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;477;"State Internship";0001;RSG;20902;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;478;"State Judiciary Internship";0001;RSG;20903;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;479;"State Legislative Internship";0001;RSG;20904;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+POS;480;"International Affairs Internship";0001;RSG;20905;Mo 4:10PM - 6:40PM;Science Building 157 - P;Robert J Klotz;09/03/2013 - 12/23/2013
+PSY;101;"General Psychology I";0011;LEC;20928;Tu 4:00PM - 6:30PM;Lewiston-Auburn 224;Carol Nemeroff;09/03/2013 - 12/23/2013
+PSY;102;"General Psychology II";0003;LEC;23924;Fr 11:45AM - 2:15PM;Luther Bonney 326 - P;William F Gayton;09/03/2013 - 12/23/2013
+PSY;105;"Statistics in Psychology";0001;LEC;23925;MoWe 8:45AM - 10:00AM;Science Building 533 - P;John P Broida;09/03/2013 - 12/23/2013
+PSY;205;"Experimental Methodology";0001;LEC;20933;MoWe 4:10PM - 5:25PM;Payson Smith 41 - P;Amy Eppolito;09/03/2013 - 12/23/2013
+PSY;206;"Methodology Lab";0011;LAB;20934;MoWe 1:15PM - 2:05PM;Glickman 518 - P;Amy Eppolito;09/03/2013 - 12/23/2013
+PSY;220;"Psychology of the Lifespan";0002;LEC;22299;TBA;Online Class;Robert B Thompson;09/03/2013 - 12/23/2013
+PSY;233;"Psychopathology";0002;LEC;20938;Th 4:10PM - 6:40PM;Luther Bonney 326 - P;William F Gayton;09/03/2013 - 12/23/2013
+PSY;323;"Psychology of Infancy and Childhood";0001;LEC;22085;TuTh 2:45PM - 4:00PM;Science Building 533 - P;Robert B Thompson;09/03/2013 - 12/23/2013
+PSY;350;"Psychology of Learning";0002;LEC;20940;Tu 7:00PM - 9:30PM;Science Building 533 - P;Donald Sytsma;09/03/2013 - 12/23/2013
+PSY;360;"Cognitive Processes";0001;LEC;20941;MoWe 4:10PM - 5:25PM;Science Building 533 - P;Scott W Brown;09/03/2013 - 12/23/2013
+PSY;365;"Physiological Psychology";0002;LEC;20944;Fr 11:45AM - 2:15PM;Luther Bonney 209 - P;Amy Eppolito;09/03/2013 - 12/23/2013
+PSY;366;"Drugs";0001;LEC;22301;TuTh 2:45PM - 4:00PM;Luther Bonney 303 - P;Amy Eppolito;09/03/2013 - 12/23/2013
+PSY;368;"Health Psychology";0001;LEC;23922;TuTh 4:10PM - 5:25PM;Luther Bonney 403 - P;Elizabeth Vella;09/03/2013 - 12/23/2013
+PSY;371;"History and Systems of Psychology";0001;LEC;20945;MoWe 4:10PM - 5:25PM;Payson Smith 200 - P;Deborah F Johnson;09/03/2013 - 12/23/2013
+PSY;400;"Independent Research";0003;IND;22258;TBA;TBA;Robert B Thompson;09/03/2013 - 12/23/2013
+PSY;401;"Research Apprenticeship";0004;IND;22922;TBA;TBA;William F Gayton;09/03/2013 - 12/23/2013
+PSY;405;"Teaching Apprenticeship";0005;IND;22771;TBA;TBA;John P Broida;09/03/2013 - 12/23/2013
+PSY;410;"Internship/Field Experience";0002;IND;22226;TBA;TBA;Elizabeth Vella;09/03/2013 - 12/23/2013
+SED;550;"Teaching Gifted in Reg Classrm";0001;LEC;22669;TBA;Online Class;Patti B Drapeau;09/24/2013 - 12/23/2013
+SED;615;"Positive Behavioral Intervention &amp; Support";0001;LEC;22281;Th 4:10PM - 6:40PM;Bailey 207 - G;Patricia D Red;09/03/2013 - 12/23/2013
+SED;682;"Special Education Law";0001;LEC;22063;TBA;Online Class;Walter H Kimball;09/03/2013 - 12/23/2013
+SED;693;"Transitions Among Agencies";0001;LEC;22577;TBA;Online Class;Julie Alexandrin;09/03/2013 - 12/23/2013
+SED;695;"Internship in Special Education for Students with Severe Disabilities";0001;LEC;29643;TBA;Online Class;Patricia D Red;09/03/2013 - 12/23/2013
+SOC;100;"Introduction to Sociology";0009;LEC;24749;TuTh 10:15AM - 11:30AM;Payson Smith 202 - P;Vincent E Collom;09/03/2013 - 12/23/2013
+SOC;210;"Critical Thinking about Social Issues";0005;LEC;29312;Tu 4:10PM - 6:40PM;Luther Bonney 502 - P;Wendy L Chapkis;09/03/2013 - 12/23/2013
+SOC;300;"Sociological Theory";0001;LEC;24754;TuTh 1:15PM - 2:30PM;Luther Bonney 503 - P;Cheryl Laz;09/03/2013 - 12/23/2013
+SOC;327;"Social Movements";0001;LEC;24750;Mo 1:15PM - 3:45PM;Luther Bonney 503 - P;Vincent E Collom;09/03/2013 - 12/23/2013
+SOC;358;"Sociology of";0001;LEC;29316;TuTh 2:45PM - 4:00PM;Luther Bonney 503 - P;Cheryl Laz;09/03/2013 - 12/23/2013
+SOC;380;"Topics in Sociology";0002;LEC;29315;We 4:10PM - 6:40PM;Luther Bonney 503 - P;John E Baugher;09/04/2013 - 11/06/2013
+SOC;390;"Individualized Instruction I";0002;IND;22650;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+SOC;393;"Women";0001;LEC;24752;Tu 4:10PM - 6:40PM;Payson Smith 206 - P;Luisa S Deprez;09/03/2013 - 12/23/2013
+SOC;450;"Undergraduate Teaching Assistantship";0002;LEC;22651;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+SPA;101;"Beginning Spanish I";0002;LEC;20993;MoWe 4:10PM - 5:55PM;Payson Smith 206 - P;Cristina M Trahan;09/03/2013 - 12/23/2013
+SPA;201;"Intermediate Spanish I";0002;LEC;20996;MoWe 4:10PM - 5:25PM;Payson Smith 204 - P;Charlene E Suscavage;09/03/2013 - 12/23/2013
+SPA;303;"Workshop in Spanish";0001;LEC;22682;MoWe 4:10PM - 5:25PM;Payson Smith #1 - P;Julia Carroll Venegas;09/03/2013 - 12/23/2013
+SPA;332;"Advanced Grammar and Stylistics";0002;LEC;24610;TBA;Online Class;Charlene E Suscavage;09/03/2013 - 12/23/2013
+THE;101;"Introduction to Theatre";0001;LEC;21039;TuTh 12:30PM - 1:45PM;Bailey 113 - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;102;"Acting for Non";0003;LEC;30665;TuTh 2:00PM - 3:15PM;Bailey 313 - G;Frederique Emmanuelle Chaulet;09/03/2013 - 12/23/2013
+THE;103;"Contemporary Dance I";0001;LEC;21040;Sa 1:00PM - 3:15PM;Portland Gymnasium M-P - P;Maria A Tzianabos;09/03/2013 - 12/23/2013
+THE;104;"Practicum in Costuming";0002;LAB;21846;We 2:00PM - 6:00PM;Russell C-S - G;Jonna D Whittemore;09/03/2013 - 12/23/2013
+THE;105;"Practicum in Stage Lighting";0001;LAB;21148;TuTh 2:00PM - 4:15PM;Russell AUD - G;Shannon Zura;09/03/2013 - 12/23/2013
+THE;106;"Practicum in Stagecraft";0002;LAB;21044;Th 2:00PM - 6:00PM;Russell AUD - G;Perry Fertig;09/03/2013 - 12/23/2013
+THE;131;"Musical Theatre Workshop II";0001;LEC;21151;Mo 2:00PM - 3:15PM;Russell AUD - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;132;"Musical Theatre Workshop III";0001;LEC;21152;Mo 2:00PM - 3:15PM;Russell AUD - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;133;"Musical Theatre Workshop IV";0001;LEC;21153;Mo 2:00PM - 3:15PM;Russell AUD - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;134;"Production Management";0001;LEC;21610;TuTh 11:00AM - 12:15PM;Bailey 403 - G;Shannon Zura;09/03/2013 - 12/23/2013
+THE;135;"Stagecraft";0001;LEC;21848;TuTh 9:30AM - 10:45AM;Russell C-R - G;Charles S Kading;09/03/2013 - 12/23/2013
+THE;141;"Theatre Workshop I";0001;LEC;21154;Mo 2:00PM - 3:15PM;Russell AUD - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;142;"Theatre Workshop II";0001;LEC;21155;Mo 2:00PM - 3:15PM;Russell AUD - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;143;"Theatre Workshop III";0001;LEC;21156;Mo 2:00PM - 3:15PM;Russell AUD - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;144;"Theatre Workshop IV";0001;LEC;21157;Mo 2:00PM - 3:15PM;Russell AUD - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;150;"Text Analysis";0001;LEC;21105;MoWe 12:30PM - 1:45PM;Bailey 113 - G;Assunta B Kent;09/03/2013 - 12/23/2013
+THE;170;"Public Speaking";0006;LEC;22565;Tu 5:35PM - 8:05PM;Bailey 404 - G;Harlan R Baker;09/03/2013 - 12/23/2013
+THE;230;"Designing for the Performer";0001;LEC;21048;TuTh 12:30PM - 1:45PM;Russell C-R - G;Charles S Kading;09/03/2013 - 12/23/2013
+THE;322;"Acting: Contemporary Methods";0001;LEC;24759;MoWe 11:00AM - 12:15PM;Russell LAB - G;William Kilroy;09/03/2013 - 12/23/2013
+THE;325;"Directing";0001;LEC;21049;TuTh 8:00AM - 9:15AM;Russell LAB - G;Thomas A Power;09/03/2013 - 12/23/2013
+THE;334;"Costuming";0001;LEC;24764;MoWe 9:30AM - 10:45AM;Russell C-R - G;Joan Mather;09/03/2013 - 12/23/2013
+THE;353;"Dramatic Literature and Theatre History III: 1800";0001;LEC;24763;TuTh 11:00AM - 12:15PM;Bailey 113 - G;Meghan Brodie;09/03/2013 - 12/23/2013
+THE;492;"Theatre Internship";0001;RSG;21052;TBA;TBA;Charles S Kading;09/03/2013 - 12/23/2013
+WST;101;"Introduction to Women and Gender Studies";0003;LEC;21255;MoWe 2:45PM - 4:00PM;Luther Bonney 241 - P;Sarah Charlotte Lockridge;09/03/2013 - 12/23/2013
+WST;201;"Women";0001;LEC;21053;Th 7:00PM - 9:30PM;Luther Bonney 241 - P;Nancy K Gish;09/03/2013 - 12/23/2013
+WST;245;"Topics in Culture and the Arts I";0004;LEC;29132;MoWe 11:00AM - 12:15PM;Bailey 319 - G;Sarah Charlotte Lockridge;09/03/2013 - 12/23/2013
+WST;320;"Advanced Topics in Women's Studies";0002;LEC;24080;Mo 4:10PM - 6:40PM;Luther Bonney 241 - P;Lucinda Cole;09/03/2013 - 12/23/2013
+WST;345;"Topics in Culture and the Arts II";0003;LEC;30187;TBA;Online Class;Ariel Rogers;09/03/2013 - 12/23/2013
+WST;355;"Topics in History and Resistance II";0001;LEC;22670;TuTh 1:15PM - 2:30PM;Luther Bonney 326 - P;Eileen M Eagan;09/03/2013 - 12/23/2013
+WST;365;"Topics in Gender and Institutions II";0005;LEC;22406;We 4:10PM - 6:40PM;Luther Bonney 302 - P;James Messerschmidt;09/03/2013 - 12/23/2013
+WST;380;"The Politics of Difference";0001;LEC;21593;Th 4:10PM - 6:40PM;Luther Bonney 302 - P;Wendy L Chapkis;09/03/2013 - 12/23/2013
+WST;445;"Topics in Culture and the Arts III";0001;LEC;24083;We 4:10PM - 6:40PM;Wishcamper 415 - P;Rebecca Bryant Lockridge;09/03/2013 - 12/23/2013
+WST;470;"Independent Study";0004;IND;22032;TBA;TBA;Lucinda Cole;09/03/2013 - 12/23/2013

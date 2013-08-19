@@ -1,0 +1,118 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+ANT;100;"Introduction to Anthropology";2001;LEC;25975;TBA;Online;Deborah Swartz;09/03/2013 - 12/20/2013
+ANT;307;"Cultures of North America";2001;LEC;25976;TBA;Online;Deborah Swartz;09/03/2013 - 12/20/2013
+ANT;354;"Anthropology and Folklore";2001;LEC;25977;TBA;Online;Mariella R Squire;09/03/2013 - 12/20/2013
+ART;100;"History of Art: Prehistoric to Renaissance";2001;LEC;25766;TBA;Online;Therese L Provenzano;10/28/2013 - 12/20/2013
+ART;110;"Humanities Through the Arts";2001;LEC;25759;TBA;Online;Joseph B Zubrick;09/03/2013 - 12/20/2013
+ART;351;"Drawing";0001;LEC;25745;We 5:30PM - 8:10PM;Cyr Hall 204, Art Room;Therese L Provenzano;09/03/2013 - 12/20/2013
+BIO;100;"General Biology";0001;LEC;26446;MoTh 9:30AM - 10:50AM;Cyr Hall 209, Biology lab;Kimberly M Borges-Therien;09/03/2013 - 12/20/2013
+BIO;100L;"General Biology Lab";0001;LAB;26447;We 9:00AM - 11:40AM;Cyr Hall 209, Biology lab;Kimberly M Borges-Therien;09/03/2013 - 12/20/2013
+BIO;130;"Introduction to Biotechnology";2001;LEC;26448;TBA;Online;Kimberly M Borges-Therien;09/03/2013 - 12/20/2013
+BIO;130L;"Intro to Biotechnology Lab";0001;LAB;26449;We 12:00PM - 1:50PM;Cyr Hall 209, Biology lab;Kimberly M Borges-Therien;09/03/2013 - 12/20/2013
+BIO;220L;"Anatomy";0005;LAB;30703;We 1:00PM - 2:50PM;Cyr Hall 206, Biology Lab;Stephen E Hansen;09/03/2013 - 12/20/2013
+BIO;309;"Dendrology";0001;LEC;26455;MoTh 2:00PM - 4:50PM;Cyr Hall 209, Biology lab;Staff;09/03/2013 - 12/20/2013
+BIO;310;"Taxonomy of Vascular Plants";0001;LEC;26456;TuFr 2:00PM - 4:50PM;Cyr Hall 209, Biology lab;Staff;09/03/2013 - 12/20/2013
+BIO;363;"Human Nutrition";0001;LEC;26457;TuFr 9:30AM - 10:50AM;Old Model School 101;Deborah J Pringnitz;09/03/2013 - 12/20/2013
+BIO;380;"Limnology";0001;LEC;26460;MoTh 12:30PM - 1:50PM;Cyr Hall 207;Kimberly M Borges-Therien;09/03/2013 - 12/20/2013
+BIO;380L;"Limnology Lab";0001;LAB;26461;Th 2:00PM - 4:50PM;Cyr Hall 206, Biology Lab;Kimberly M Borges-Therien;09/03/2013 - 12/20/2013
+BIO;401;"Pathophysiology";0002;LEC;26459;Mo 9:30AM - 10:50AM;Nadeau Hall 114A, Teleconferen;Deborah J Pringnitz;09/03/2013 - 12/20/2013;Fr 8:00AM - 9:20AM;Old Model School 101;Deborah J Pringnitz;09/03/2013 - 12/20/2013
+BIO;452;"Field Ecology";0001;LEC;26462;Fr 8:00AM - 11:50AM;Cyr Hall 206, Biology Lab;Stephen E Hansen;09/03/2013 - 12/20/2013
+BIO;498;"Senior Project";0001;RSG;26463;We 2:00PM - 4:50PM;Cyr Hall 203;Kimberly M Borges-Therien;09/03/2013 - 12/20/2013
+CHY;100L;"Chemistry I Lab";0003;LAB;26470;Fr 2:00PM - 4:50PM;Cyr Hall 213, Chemistry Lab;Rameen Aryana;09/03/2013 - 12/20/2013
+CHY;310;"Organic Chemistry I";2001;LEC;30239;TBA;Online;Rameen Aryana;09/03/2013 - 12/20/2013
+CHY;310L;"Organic Chemistry Lab";0001;LAB;26472;Mo 2:00PM - 4:50PM;Cyr Hall 213, Chemistry Lab;Rameen Aryana;09/03/2013 - 12/20/2013
+COS;103;"Introduction to Information Technology";2051;LEC;25949;TBA;Online;Dawn Danielle Susee;09/03/2013 - 12/20/2013
+COS;206;"Introduction to Information Security";2051;LEC;25951;TBA;Online;Raymond T Albert;09/03/2013 - 12/20/2013
+COS;221;"Advanced Excel";0001;LEC;30185;TuFr 12:25PM - 1:45PM;Nadeau Hall 105, Computer Lab;Raymond T Albert;10/28/2013 - 12/20/2013
+COS;260;"Introduction to Programming";0001;LEC;25925;MoTh 9:30AM - 11:50AM;Nadeau Hall 105, Computer Lab;Raymond T Albert;09/03/2013 - 12/20/2013
+COS;340;"Special Topics in Computer Science";2001;LEC;26588;TBA;Online;Mark H. Rosenbaum;09/03/2013 - 12/20/2013
+COS;354;"Network Security";2001;LEC;25952;TBA;Online;Raymond T Albert;09/03/2013 - 12/20/2013
+COS;374;"Operating Systems Security";2001;LEC;25953;TBA;Online;Mark H. Rosenbaum;09/03/2013 - 12/20/2013
+ECO;100;"Introduction to Macroeconomics";0001;LEC;25908;MoTh 12:30PM - 1:50PM;Old Model School 103;Bradley G Ritz;09/03/2013 - 12/20/2013
+ECO;101;"Introduction to Microeconomics";2001;LEC;25960;TBA;Online;Bradley G Ritz;09/03/2013 - 12/20/2013
+EDU;100;"Educational Foundations";0001;LEC;27274;TuFr 8:00AM - 9:20AM;Powell Hall 123;Doris Marie Metz;09/03/2013 - 12/20/2013
+EDU;253;"Literature of Childhood and Adolescence";0051;LEC;27275;MoTh 11:00AM - 12:20PM;Powell Hall 123;Doris Marie Metz;09/03/2013 - 12/20/2013
+EDU;303;"Education of Exceptional Children";0001;LEC;27269;TuFr 2:00PM - 3:20PM;Powell Hall 123;Roland K Caron;09/03/2013 - 12/20/2013
+EDU;303L;"Exceptional Child Lab";0001;LAB;27683;Tu 5:30PM - 8:20PM;Cyr Hall 200;William G Lothrop;09/03/2013 - 12/20/2013
+EDU;340;"Special Topics in Education";2001;LEC;29729;TBA;Online;Roland K Caron;09/03/2013 - 10/25/2013
+EDU;358;"Secondary Educational Methods I";0001;LEC;27276;TuFr 9:30AM - 10:50AM;Powell Hall 123;Bruno G Hicks;09/03/2013 - 12/20/2013
+EDU;358L;"Secondary Methods I Lab";0001;LAB;27897;We 3:30PM - 5:30PM;Powell Hall 123;Timothy L Doak;09/03/2013 - 12/20/2013
+EDU;401;"Educational Psychology";0001;LEC;27270;TuFr 12:30PM - 1:50PM;Powell Hall 123;Roland K Caron;09/03/2013 - 12/20/2013
+EDU;401L;"Classroom Management Lab";0001;LAB;27895;Th 7:00PM - 9:00PM;Powell Hall 123;Lisa Marie Bernier;09/03/2013 - 12/20/2013
+EDU;406;"Student Teaching";0001;FEX;27938;TBA;TBA;Roland K Caron;09/03/2013 - 12/20/2013
+EDU;415;"Teaching of Science";0001;LEC;27271;TuFr 8:00AM - 9:20AM;Cyr Hall 209, Biology lab;Bruno G Hicks;09/03/2013 - 12/20/2013
+EDU;415L;"Stem Education Lab";0001;LAB;27896;Tu 3:30PM - 5:30PM;Powell Hall 123;Kevin John Anderson;09/03/2013 - 12/20/2013
+EDU;451;"Reading for Elementary Teachers I";0001;LEC;27273;MoTh 8:00AM - 9:20AM;Cyr Hall 200;Terry L Murphy;09/03/2013 - 12/20/2013
+EDU;451L;"Reading Strategies Lab";0001;LAB;27687;We 6:30PM - 8:30PM;Powell Hall 123;Meranda Hafford Castonguay;09/03/2013 - 12/20/2013
+EDU;454;"Read and Writing Across the Secondary Curriculum";0001;LEC;27277;MoTh 9:30AM - 10:50AM;Powell Hall 123;Doris Marie Metz;09/03/2013 - 12/20/2013
+EDU;454L;"Content Literacy Lab";0001;LAB;27898;Th 5:00PM - 7:00PM;Powell Hall 123;Lisa Marie Bernier;09/03/2013 - 12/20/2013
+EDU;477;"Multicultural Curriculum Design";0001;LEC;27272;Mo 6:30PM - 9:20PM;Powell Hall 123;Paul Franklin Buck;09/03/2013 - 12/20/2013
+EDU;477L;"Diversity Lab";0001;LAB;27685;Mo 4:00PM - 6:00PM;Cyr Hall 200;Tracie A Boucher;09/03/2013 - 12/20/2013
+ENG;100;"English Composition I";2003;LEC;29851;TBA;Online;Staff;10/28/2013 - 12/20/2013
+ENG;101;"English Composition II";2002;LEC;29852;TBA;Online;Patrick C Stamp;10/28/2013 - 12/20/2013
+ENG;111L;"English Writing Lab";0001;LAB;27639;We 10:00AM - 11:00AM;Cyr Hall 207;Staff;09/03/2013 - 12/20/2013
+ENG;250;"American Literature I: Beginnings to 1865";0001;LEC;25720;MoTh 2:00PM - 3:20PM;Cyr Hall 203;Geraldine C Becker;09/03/2013 - 12/20/2013
+ENG;332;"Science Fiction";0001;LEC;25723;MoTh 3:30PM - 4:50PM;Cyr Hall 203;Joseph E Becker;09/03/2013 - 12/20/2013
+ENG;348;"Fiction Writing I";2001;LEC;25747;TBA;Online;Geraldine C Becker;09/03/2013 - 12/20/2013
+FRE;100;"Elementary French I";2001;LEC;25761;TBA;Online;Nicole Boudreau;09/03/2013 - 12/20/2013
+FRE;150;"Intermediate French I";2001;LEC;29923;TBA;Online;Nicole Boudreau;09/03/2013 - 12/20/2013
+FRE;306;"Litterature Francaise: Moyen Age Au 18eme Siecle";2001;LEC;30278;TBA;Online;Nicole Boudreau;09/03/2013 - 12/20/2013
+FRE;492;"Fieldwork in French";0001;FEX;30555;TBA;TBA;Lise M Pelletier;09/03/2013 - 12/20/2013
+GEO;201;"Cultural Geography";2001;LEC;25978;TBA;Online;Natalija Alexandria Brewer;10/28/2013 - 12/20/2013
+HON;300;"Honors Seminar I: On Being Human";0001;SEM;29713;We 2:00PM - 4:40PM;Cyr Hall 200;;09/03/2013 - 12/20/2013
+HTY;100;"World Civilizations I";2001;LEC;25753;TBA;Online;Erica Nadelhaft;09/03/2013 - 12/20/2013
+HTY;103;"US History II";2001;LEC;29828;TBA;Online;Paul Franklin Buck;10/28/2013 - 12/20/2013
+HTY;380;"History of the Middle East";2001;LEC;25888;TBA;Online;Erica Nadelhaft;09/03/2013 - 12/20/2013
+MAT;128;"College Algebra";2001;LEC;26474;TBA;Online;Thomas J Goetz;09/03/2013 - 12/20/2013
+MAT;165;"Pre";2001;LEC;26477;TBA;Online;Thomas J Goetz;09/03/2013 - 12/20/2013
+MAT;180;"Finite Math I: Logic";0001;LEC;26712;MoTh 8:00AM - 9:20AM;Gymnasium 118;Roger A Roy;09/03/2013 - 12/20/2013
+MAT;200;"Structure of Mathematics I";0001;LEC;27908;MoTh 12:30PM - 1:50PM;Cyr Hall 203;Roger A Roy;09/03/2013 - 12/20/2013
+MAT;255;"Calculus I";0001;LEC;26476;MoTuWeThFr 1:50PM - 2:50PM;Gymnasium 118;Krishna Kaphle;09/03/2013 - 12/20/2013
+MAT;351;"Statistics I";2001;LEC;26711;TBA;Online;Krishna Kaphle;09/03/2013 - 12/20/2013
+MUS;120;"History of Rock &amp; Roll";2001;LEC;25750;TBA;Online;Scott T Brickman;10/28/2013 - 12/20/2013
+MUS;156;"Class Piano";0001;MUS;25718;MoTh 12:30PM - 1:50PM;Old Model School 102 Music Lab;Scott T Brickman;09/03/2013 - 12/20/2013
+MUS;200;"Fundamentals of Music";2001;LEC;29226;TBA;Online;Scott T Brickman;09/03/2013 - 12/20/2013
+MUS;420;"Music Technology";0001;LEC;25739;TuFr 12:30PM - 1:50PM;Old Model School 102 Music Lab;Scott T Brickman;09/03/2013 - 12/20/2013
+NUR;200;"Introduction to Professional Nursing";0001;LEC;25582;Mo 1:00PM - 2:50PM;Cyr Hall 205;Cheryl Roberts;09/03/2013 - 12/20/2013
+NUR;200L;"Fundamentals of Nursing Lab I";0002;LAB;25678;We 11:30AM - 2:10PM;Nadeau Hall 104 Nursing Lab;Randi Jean Annie St Peter;09/03/2013 - 12/20/2013
+NUR;230;"Promoting Personal Health and Wellness";0002;LEC;25631;Th 1:00PM - 3:50PM;Cyr Hall 200;Jenny Radsma;09/03/2013 - 12/20/2013
+NUR;230L;"Fundamentals of Nursing Lab II";0001;LAB;25901;Tu 2:30PM - 5:20PM;Nadeau Hall 104 Nursing Lab;Randi Jean Annie St Peter;09/03/2013 - 12/20/2013
+NUR;301;"Promoting Health Communities";2001;LEC;25540;TBA;Online;Karen S Benjamin;09/03/2013 - 12/20/2013
+NUR;302;"Pharmacology";0001;LEC;25639;Fr 11:00AM - 1:50PM;Cyr Hall 205;Tanya Lynn Sleeper;09/03/2013 - 12/20/2013
+NUR;309;"Holistic Health Assessment";0001;LEC;25564;Mo 12:00PM - 2:50PM;Cyr Hall 202;Diane M Griffin;09/03/2013 - 12/20/2013
+NUR;309L;"Holistic Health Assessment Lab";0004;LAB;25758;Fr 11:30AM - 2:20PM;Nadeau Hall 104 Nursing Lab;Rebecca Overton;09/03/2013 - 12/20/2013
+NUR;312;"Conceptual Issues of Professional Nursing";2001;LEC;25541;TBA;Online;Cheryl Roberts;09/03/2013 - 12/20/2013
+NUR;330;"Adult Health I: Caring for Individuals/Families with Acute Alterations in Health";0002;LEC;25636;Th 2:00PM - 3:50PM;Cyr Hall 205;Tanya Lynn Sleeper;09/03/2013 - 12/20/2013
+NUR;330C;"Adult Health I: Caring for Individuals/ Families with Acute Alterations in Health Clinical";0008;LAB;30301;TBA;TBA;Marsha Louise Labbe;09/03/2013 - 12/20/2013
+NUR;330L;"Adult Health I Lab";0004;LAB;25653;We 4:00PM - 6:50PM;Nadeau Hall 126, Nursing lab;Larry Andrew Nadeau;09/03/2013 - 12/20/2013
+NUR;335;"Family Health I";0001;LEC;25560;Th 11:00AM - 12:50PM;Cyr Hall 202;Sandy Lee Pelletier;09/03/2013 - 12/20/2013
+NUR;335C;"Family Health I Clinical";0004;LAB;25871;TuWe 7:00AM - 3:00PM;TBA;Lauren Elaine Currier;09/03/2013 - 12/20/2013
+NUR;335L;"Family Health I";0005;LAB;26148;Sa 12:00PM - 2:50PM;Nadeau Hall 104 Nursing Lab;Staff;09/03/2013 - 12/20/2013
+NUR;365;"Family Health II: Pediatrics";0001;LEC;25563;Th 2:00PM - 3:50PM;Cyr Hall 202;Sandy Lee Pelletier;09/03/2013 - 12/20/2013
+NUR;365C;"Family Health II";0002;LAB;25877;TuWe 7:00AM - 3:00PM;TBA;Jacqueline Devoe;09/03/2013 - 12/20/2013
+NUR;380;"Transcultural Care In Nursing";2001;LEC;25762;TBA;Online;Cheryl Roberts;09/03/2013 - 12/20/2013
+NUR;401;"Health Related Research and Evidence";2001;LEC;25546;TBA;Online;Sandy Lee Pelletier;09/03/2013 - 12/20/2013
+NUR;413;"Healthcare Ethics and the Law";2001;LEC;25547;TBA;Online;Erin C Soucy;09/03/2013 - 12/20/2013
+NUR;425;"Adult Health III: Caring For Individuals/Families With Complex Alterations In Health";0001;LEC;25590;Mo 9:00AM - 11:50AM;Cyr Hall 202;Cheryl Roberts;09/03/2013 - 12/20/2013
+NUR;425C;"Adult Health III Clinical: Caring For Individuals/Families With Complex Alterations In Health";0001;LAB;25885;TuWe 7:00AM - 3:00PM;TBA;Larry Andrew Nadeau;09/03/2013 - 12/20/2013
+NUR;425L;"Adult Health III Lab";0003;LAB;25668;Fr 2:30PM - 5:20PM;Nadeau Hall 126, Nursing lab;Mary Ann Desjardins;09/03/2013 - 12/20/2013
+NUR;452;"Mental Health Nursing";0001;LEC;25565;Mo 3:00PM - 5:50PM;Cyr Hall 202;Diane M Griffin;09/03/2013 - 12/20/2013
+NUR;497;"Senior Capstone";2001;LEC;25548;TBA;Online;Diane M Griffin;09/03/2013 - 12/20/2013
+NUR;497C;"Senior Preceptorship Practicum";0001;LAB;25760;TuWe 7:00AM - 3:00PM;TBA;Cheryl Roberts;09/03/2013 - 12/20/2013
+POS;100;"Intro to Political Science";0001;LEC;26756;TuFr 3:30PM - 4:50PM;Cyr Hall 201;John L Martin;09/03/2013 - 12/20/2013
+POS;111;"Parliamentary Procedure and Government";2001;LEC;26757;TBA;Online;John L Martin;09/03/2013 - 12/20/2013
+PSY;100;"General Psychology";2001;LEC;25979;TBA;Online;Sara Kay Michaud;09/03/2013 - 12/20/2013
+PSY;233;"Substance Abuse Counseling";0001;LEC;26754;We 6:30PM - 9:20PM;Cyr Hall 201;Shawn Edward Graham;09/03/2013 - 12/20/2013
+PSY;330;"Interviewing and Counseling";0001;LEC;26753;MoTh 3:30PM - 4:50PM;Cyr Hall 201;Georgette Fehrenbach;09/03/2013 - 12/20/2013
+PSY;340;"Research Methods";0001;LEC;29705;TuFr 2:00PM - 3:20PM;Old Model School 103;Joseph Bjerklie;09/03/2013 - 12/20/2013
+PSY;397;"Community Behavioral Health Internship";0001;FEX;25981;TBA;TBA;Mariella R Squire;09/03/2013 - 12/20/2013
+PSY;412;"Adulthood and Aging";2001;LEC;25980;TBA;Online;Robert Hansen;09/03/2013 - 12/20/2013
+SED;335;"Program Planning and Curriculum Adaptation";2001;LEC;27278;TBA;Online;Barbara Lee Robinson;09/03/2013 - 12/20/2013
+SED;345;"Behavior Strategies and Social Skills Development";2001;LEC;27279;TBA;Online;Roland K Caron;09/03/2013 - 12/20/2013
+SED;365;"Instructional Methods";2001;LEC;27280;TBA;Online;Roland K Caron;09/03/2013 - 12/20/2013
+SED;370;"Teaching Reading and Writing to Exceptional Students";2001;LEC;27281;TBA;Online;Dale A Bailey;09/03/2013 - 12/20/2013
+SED;405;"Response to Intervention and Learning Disabilities";2001;LEC;27283;TBA;Online;Diane M Castonguay;09/03/2013 - 12/20/2013
+SOC;100;"Introduction to Sociology";2001;LEC;25982;TBA;Online;Joseph Bjerklie;09/03/2013 - 12/20/2013
+SOC;110;"Intro to Human Services and Mental Health";0001;LEC;26445;Tu 6:30PM - 9:20PM;Cyr Hall 203;Linda Marie Hicks;09/03/2013 - 12/20/2013
+SOC;348;"Food";2001;LEC;25983;TBA;Online;Mariella R Squire;09/03/2013 - 12/20/2013
+SPA;101;"Elementary Spanish II";2001;LEC;25752;TBA;Online;Paul Franklin Buck;09/03/2013 - 12/20/2013

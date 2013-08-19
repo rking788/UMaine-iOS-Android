@@ -1,0 +1,121 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+ANT;101;"Cultural Anthropology";0002;LEC;25224;TBA;Web;Staff;09/03/2013 - 12/14/2013
+ART;101;"2";0002;STU;24943;Tu 5:30PM - 8:20PM;Powers&nbsp; 208;Judith R Valentine;09/03/2013 - 12/14/2013
+ART;102;"Art Fundamentals:";0001;STU;24944;MoFr 12:30PM - 1:50PM;Torrey&nbsp; B1;William C Schaefer;09/03/2013 - 12/14/2013
+ART;201;"Art History I";0001;LEC;24945;MoFr 11:00AM - 12:20PM;Science&nbsp; 102;Gerard P NeCastro;09/03/2013 - 12/14/2013
+ART;210;"Drawing I";0001;STU;25549;TuTh 11:00AM - 12:22PM;Powers&nbsp; 209;Bernie Vinzani;09/03/2013 - 12/14/2013
+ART;216;"Book Arts I";0001;STU;25551;Th 5:30PM - 8:20PM;Dorward 3;Bernie Vinzani;09/03/2013 - 12/14/2013
+ART;219;"Photography";0001;STU;25553;MoWe 2:00PM - 3:20PM;Powers&nbsp; 208;Christian G Sunde;09/03/2013 - 12/14/2013
+ART;310;"Drawing II";0001;STU;25550;TuTh 11:00AM - 12:22PM;Powers&nbsp; 209;Bernie Vinzani;09/03/2013 - 12/14/2013
+ART;313;"Photography II";0001;STU;25554;MoWe 2:00PM - 3:20PM;Powers&nbsp; 208;Christian G Sunde;09/03/2013 - 12/14/2013
+ART;326;"Book Arts II";0001;STU;25552;Th 5:30PM - 8:20PM;Dorward 3;Bernie Vinzani;09/03/2013 - 12/14/2013
+BIO;100;"Explorations in Biology";0001;LEC;24756;MoWe 3:00PM - 4:50PM;Science&nbsp; 120;Gerard P Zegers;09/03/2013 - 12/14/2013
+BIO;110;"Human Anatomy &amp; Physiology I";0011;LAB;24723;Th 3:00PM - 4:50PM;Science&nbsp; 114;Sherrie A Sprangers;09/03/2013 - 12/14/2013
+BIO;111;"General Zoology";0022;LAB;24741;Tu 8:00AM - 9:50AM;Science&nbsp; 114;Ellen E Hostert;09/03/2013 - 12/14/2013
+BIO;112;"General Botany";0011;LAB;24744;Th 10:00AM - 11:50AM;Science&nbsp; 120;Eric Jones;09/03/2013 - 12/14/2013
+BIO;114;"Careers in Fisheries &amp; Wildlife Biology";0001;LEC;24947;Mo 11:00AM - 12:50PM;Science&nbsp; 113;Gerard P Zegers;09/03/2013 - 12/14/2013
+BIO;206;"Intro to Marine Biology";0011;LAB;24747;Tu 1:00PM - 4:50PM;Science&nbsp; 13;Gayle Kraus;09/03/2013 - 12/14/2013
+BIO;211;"Field and Laboratory Techniques in Biology";0002;RSG;24753;TBA;TBA;Staff;TBA
+BIO;229;"Plant Taxonomy";0011;LAB;24762;Tu 1:00PM - 4:50PM;Science&nbsp; 120;Eric Jones;09/03/2013 - 12/14/2013
+BIO;235;"Introduction to Fisheries &amp; Wildlife Management";0001;LEC;30145;MoWeFr 1:00PM - 1:50PM;Science&nbsp; 109;Gerard P Zegers;09/03/2013 - 12/14/2013
+BIO;245;"General Ecology";0011;LAB;24826;Th 1:00PM - 4:50PM;Science&nbsp; 120;Eric Jones;09/03/2013 - 12/14/2013
+BIO;265;"Genetics";0011;LAB;24829;Th 9:00AM - 11:50AM;Science&nbsp; 114;Ellen E Hostert;09/03/2013 - 12/14/2013
+BIO;310;"Special Topics in Mariculture";0001;LEC;24833;TBA;TBA;Staff;TBA
+BIO;323;"Comparative Vertebrate Anatomy and Physiology";0011;LAB;24836;Tu 8:00AM - 11:50AM;Science&nbsp; 120;Sherrie A Sprangers;09/03/2013 - 12/14/2013
+BIO;360;"Marine Ecology";0011;LAB;24843;Tu 7:30AM - 10:20AM;Torrey 106;Brian F Beal;09/03/2013 - 12/14/2013
+BIO;401;"Senior Thesis in Biology";0001;THS;24852;TBA;TBA;Sherrie A Sprangers;09/03/2013 - 12/14/2013
+BIO;402;"Senior Thesis in Biology";0001;THS;24853;TBA;TBA;Staff;TBA
+BIO;403;"Senior Thesis in Biology";0001;THS;24854;TBA;TBA;Staff;TBA
+BIO;404;"Senior Thesis in Biological Research";0001;THS;24855;TBA;TBA;Staff;TBA
+BIO;405;"Senior Thesis in Biological Research";0001;THS;24856;TBA;TBA;Staff;TBA
+BIO;406;"Senior Thesis in Biological Research";0001;THS;24857;TBA;TBA;Staff;TBA
+CHY;101;"General Chemistry I";0022;LAB;24861;Th 1:00PM - 3:50PM;Science&nbsp; 208;William H Otto;09/03/2013 - 12/14/2013
+CHY;221;"Organic Chemistry I";0011;LAB;24863;Tu 1:00PM - 4:50PM;Science&nbsp; 216;Shallee T Page;09/03/2013 - 12/14/2013
+CHY;226;"Undergraduate Research in Chemistry";0001;RSG;24864;TBA;TBA;Staff;TBA
+CHY;322;"Biochemistry";0011;LAB;24867;Tu 8:00AM - 11:50AM;Science&nbsp; 216;Shallee T Page;09/03/2013 - 12/14/2013
+CHY;326;"Undergraduate Research in Chemistry";0001;RSG;24865;TBA;TBA;Shallee T Page;09/03/2013 - 12/14/2013
+DAN;106;"Beginning Belly Dance";0001;STU;24952;We 6:00PM - 7:50PM;FRC Lower Gym;Kessie Smith-Marengo;09/03/2013 - 12/14/2013
+ECO;201;"Macroeconomics";0010;LEC;29398;TuTh 7:30AM - 8:45AM;East Sullivan;Jon Reisman;09/03/2013 - 12/14/2013
+ECO;223;"Environmental Economics";0001;LEC;24431;MoWe 2:00PM - 3:20PM;Science&nbsp; 109;Kevin R Athearn;09/03/2013 - 12/14/2013
+EDU;112;"School and Community";0001;LEC;24434;TuTh 12:30PM - 1:50PM;Torrey 226;Garret M Lee;09/03/2013 - 12/14/2013
+EDU;210;"Educational Psychology";0001;LEC;24435;TuTh 11:00AM - 12:20PM;Torrey 226;Daniel Qualls;09/03/2013 - 12/14/2013
+EDU;321;"Secondary Methods of Teaching I";0010;LEC;29433;Fr 4:00PM - 6:45PM;Kingfield;Daniel Qualls;09/03/2013 - 12/14/2013
+EDU;332;"Elementary Science Education Methods";0001;LEC;24444;Th 4:00PM - 6:50PM;Torrey 234;Donald R Sprangers;09/03/2013 - 12/14/2013
+EDU;334;"Integrated Reading &amp; Language Arts Methods I";0001;LEC;24446;Tu 4:00PM - 6:50PM;Torrey 226;Judith E Hanscom;09/03/2013 - 12/14/2013
+EDU;337;"Classroom Management";0001;FEX;24447;We 2:00PM - 3:50PM;Torrey 226;Garret M Lee;09/03/2013 - 12/14/2013
+EDU;352;"Curriculum Design";0001;LEC;24448;We 5:00PM - 7:50PM;Torrey 232;Michael P Matis;09/03/2013 - 12/14/2013
+EDU;490;"Student Teaching";0001;FEX;24449;Fr 2:30PM - 3:50PM;Torrey 102;;09/03/2013 - 12/14/2013
+ENG;;"";0001;LEC;30090;TuTh 3:30PM - 4:20PM;Torrey 230;Susan J Willey;09/03/2013 - 12/14/2013
+ENG;;"12";0002;LEC;24960;MoFr 11:00AM - 12:20PM;Torrey 221;Carol Jean Wolf;09/03/2013 - 12/14/2013
+ENG;101;"Composition";0005;LEC;25298;TBA;Web;Heather Lynne Hepler;09/03/2013 - 12/14/2013
+ENG;113;"Introduction to Humanities";0001;LEC;25568;MoWeFr 10:00AM - 10:50AM;Science&nbsp; 102;Gerard P NeCastro;09/03/2013 - 12/14/2013
+ENG;114;"Topics in World Literature";0002;LEC;24991;TuTh 12:30PM - 1:50PM;Torrey 234;Marcus Anthony LiBrizzi;09/03/2013 - 12/14/2013
+ENG;117;"Intro to Literary &amp; Cultural Studies";0001;LEC;25340;TBA;Web;Marcus Anthony LiBrizzi;12/30/2013 - 01/17/2014
+ENG;210;"Beginning Creative Writing";0001;LEC;25005;MoWeFr 9:00AM - 9:50AM;Science&nbsp; 109;Gerard P NeCastro;09/03/2013 - 12/14/2013
+ENG;227;"Young Adult Literature";0001;WEB;29180;TBA;Web;Heather Lynne Hepler;09/03/2013 - 12/14/2013
+ENG;231;"Techniques of Poetry";0001;LEC;25008;TuTh 11:00AM - 12:20PM;Torrey 234;Gerard P NeCastro;09/03/2013 - 12/14/2013
+ENG;242;"Electronic &amp; Periodical Publishing";0001;LEC;25012;TuTh 9:30AM - 10:50AM;Torrey 234;Gerard P NeCastro;09/03/2013 - 12/14/2013
+ENG;327;"Masterpieces of American Literature";0001;LEC;25180;MoWe 2:00PM - 3:20PM;Torrey 234;Marcus Anthony LiBrizzi;09/03/2013 - 12/14/2013
+ENG;371;"Intermediate Creative Writing Workshop";0004;LEC;25575;Tu 2:00PM - 4:50PM;Science&nbsp; 115;Marcus Anthony LiBrizzi;09/03/2013 - 12/14/2013
+ENG;471;"Advanced Creative Writing Workshop";0004;LEC;25580;Tu 2:00PM - 4:50PM;Science&nbsp; 115;Marcus Anthony LiBrizzi;09/03/2013 - 12/14/2013
+FYS;101;"First";0010;LEC;29522;Tu 2:30PM - 3:45PM;Spruce Mountain Adult Ed;Jon Reisman;09/03/2013 - 10/01/2013
+GEO;101;"Intro to Geography";0001;LEC;24419;TuTh 2:00PM - 3:20PM;Torrey 226;Daniel Qualls;09/03/2013 - 12/14/2013
+HON;220;"Soliya:";0001;LEC;25561;MoWe 2:00PM - 3:20PM;Torrey 221;James H Moreira;09/03/2013 - 12/14/2013
+HON;312;"Soliya Advanced Projects";0001;LEC;25562;MoWe 2:00PM - 3:20PM;Torrey 221;James H Moreira;09/03/2013 - 12/14/2013
+HTY;115;"World History to 1500";0003;LEC;25343;TBA;Web;Lori E Cole;09/03/2013 - 12/14/2013
+HTY;116;"World History since 1500";0001;LEC;25184;TuTh 12:30PM - 1:50PM;Torrey 230;Lori E Cole;09/03/2013 - 12/14/2013
+HTY;250;"History of China";0001;LEC;25186;MoFr 2:00PM - 3:20PM;Torrey 230;Randall Kindleberger;09/03/2013 - 12/14/2013
+HTY;332;"History of American Women";0001;LEC;25543;TuTh 11:00AM - 12:20PM;Torrey 228;Kay S Kimball;09/03/2013 - 12/14/2013
+INV;180;"Create:";0001;LEC;30072;Tu 5:30PM - 8:20PM;Torrey 230;James Lenke;09/03/2013 - 12/14/2013
+MAT;;"";0002;LEC;24910;MoWeFr 9:00AM - 9:50AM;Torrey 230;Melanie Laurel Tardiff;09/03/2013 - 12/14/2013
+MAT;;"12";0002;LEC;30627;MoWeFr 1:00PM - 1:50PM;Torrey 230;Melanie Laurel Tardiff;09/03/2013 - 12/14/2013
+MAT;102;"Intermediate Algebra";0002;LEC;24915;TuTh 9:30AM - 10:50AM;Science&nbsp; 109;Philip Drew Loud;09/03/2013 - 12/14/2013
+MAT;113;"Introduction to Statistics";0003;LEC;24918;TBA;Web;Uriah Anderson;09/03/2013 - 12/14/2013
+MAT;126;"Calculus I";0001;LEC;24920;MoWe 4:00PM - 5:20PM;Science&nbsp; 115;Stuart G Swain;09/03/2013 - 12/14/2013;Th 6:00PM - 7:20PM;Science&nbsp; 115;Stuart G Swain;09/03/2013 - 12/14/2013
+MAT;215;"Applied Statistics";0011;LAB;24922;Tu 11:00AM - 12:50PM;Torrey 106;Brian F Beal;09/03/2013 - 12/14/2013
+MUS;101;"UMM Chorale";0001;MUS;25586;Tu 6:00PM - 8:00PM;Powers&nbsp; 201;Gene C Nichols;09/03/2013 - 12/14/2013
+MUS;103;"Applied Music: Private Lessons";0010;MUS;25198;TBA;TBA;Duane M Ingalls;09/03/2013 - 12/14/2013
+MUS;107;"Applied Music: Performing Groups";0004;MUS;25598;We 6:00PM - 8:00PM;POW 3 - Johnny Johnson Suite;Gene C Nichols;09/03/2013 - 12/14/2013
+MUS;119;"Fundamentals of Music: Literacy";0001;LEC;25199;TuTh 11:00AM - 12:20PM;Powers&nbsp; 201;Gene C Nichols;09/03/2013 - 12/14/2013
+MUS;207;"Applied Music: Performing Groups";0004;MUS;25605;We 6:00PM - 8:00PM;POW 3 - Johnny Johnson Suite;Gene C Nichols;09/03/2013 - 12/14/2013
+MUS;211;"Topics in Music";0001;LEC;25201;MoWe 2:00PM - 3:20PM;Powers&nbsp; 201;Gene C Nichols;09/03/2013 - 12/14/2013
+MUS;301;"UMM Chorale";0001;MUS;25587;Tu 6:00PM - 8:00PM;Powers&nbsp; 201;Gene C Nichols;09/03/2013 - 12/14/2013
+MUS;307;"Applied Music: Performing Group";0004;MUS;25613;We 6:00PM - 8:00PM;POW 3 - Johnny Johnson Suite;Gene C Nichols;09/03/2013 - 12/14/2013
+MUS;407;"Applied Music: Performing Groups";0004;MUS;25618;We 6:00PM - 8:00PM;POW 3 - Johnny Johnson Suite;Gene C Nichols;09/03/2013 - 12/14/2013
+PHI;101;"Introduction to Philosophy";0011;LEC;29328;We 7:00PM - 9:45PM;East Millinocket Center;Thomas R Halkett;09/03/2013 - 12/14/2013
+POS;203;"Freedom:";0010;LEC;29563;Tu 2:30PM - 3:45PM;Greenville;Jon Reisman;10/08/2013 - 12/10/2013
+POS;305;"Environmental Policy";0010;LEC;29486;We 1:00PM - 2:15PM;Spruce Mountain Adult Ed;Jon Reisman;09/03/2013 - 12/14/2013
+PSY;100;"Animal Behavior and Selection of Service Dogs";0001;LEC;25470;Mo 1:00PM - 3:45PM;Torrey 102;Katherine C Hecht;09/03/2013 - 12/14/2013
+PSY;101;"Animal Behavior &amp; Selection of Service Dogs Lab";0001;LAB;25624;Mo 5:00PM - 6:50PM;Science&nbsp; 109;Katherine C Hecht;09/03/2013 - 12/14/2013
+PSY;102;"Personal Growth";0003;LEC;25355;TBA;Web;Matthew David Day;09/03/2013 - 12/14/2013
+PSY;110;"Intro to Psychology";0002;LEC;25358;TBA;Web;Heather Leigh Ball;09/03/2013 - 12/14/2013
+PSY;200;"Behavioral Health Professional";0001;LEC;30784;We 4:00PM - 6:50PM;Torrey 226;Barbara K Koch;09/03/2013 - 12/14/2013
+PSY;201;"Developmental Psychology";0001;WEB;29182;TBA;Web;Jordan A Litman;09/03/2013 - 12/14/2013
+PSY;211;"Introduction to Behavioral &amp; Community Health Systems";0001;LEC;25207;Tu 5:30PM - 8:20PM;Torrey 232;Meghan W Duff;09/03/2013 - 12/14/2013
+PSY;212;"Lifespan I";0002;LEC;25366;TBA;Web;Helena L Schnieders;09/03/2013 - 12/14/2013
+PSY;213;"Psychosocial Rehabilitation Practices";0002;LEC;25383;TBA;Web;Frank J Lane;09/03/2013 - 12/14/2013
+PSY;215;"Psychology of Gender";0001;LEC;25393;TBA;Web;Jordan A Litman;12/30/2013 - 01/17/2014
+PSY;221;"Health Psychology";0001;WEB;25401;TBA;Web;Jordan A Litman;09/03/2013 - 12/14/2013
+PSY;222;"Psychology Professions &amp; Ethics";0001;LEC;25211;Mo 5:30PM - 8:20PM;Torrey 104;Charles C Crittenden;09/03/2013 - 12/14/2013
+PSY;311;"Social Psychology";0002;LEC;29228;TBA;Web;Uriah Anderson;09/03/2013 - 12/14/2013
+PSY;317;"Environmental Psychology";0001;LEC;25420;TBA;Web;Uriah Anderson;09/03/2013 - 12/14/2013
+PSY;332;"Crisis Identification &amp; Resolution";0001;LEC;25213;We 5:30PM - 8:20PM;Torrey 221;Corey K Schwinn;09/03/2013 - 12/14/2013
+PSY;351;"Chemical Dependency &amp; Dual Diagnosis Counseling";0001;LEC;25444;MoTuWeThFr 9:00AM - 4:50PM;Torrey 221;Meghan W Duff;08/23/2013 - 08/30/2013
+SED;100;"Animal Behavior &amp; Selection of Service Dogs";0010;LEC;30155;Mo 1:00PM - 3:50PM;East Millinocket Center;Katherine C Hecht;09/03/2013 - 12/14/2013
+SED;101;"Animal Behavior &amp; Selection of Service Dogs Lab";0003;LAB;25748;Mo 5:00PM - 6:45PM;Bangor Hall - UCB;Katherine C Hecht;09/03/2013 - 12/14/2013
+SED;310;"Dimensions of Exceptionality in the Classroom";0010;LEC;29368;Mo 9:00AM - 11:45AM;Lewiston-Auburn College;Heather Leigh Ball;09/03/2013 - 12/14/2013
+SED;316;"Working with Students with Emotional Disabilities";0001;LEC;25425;TBA;Web;Helena L Schnieders;09/03/2013 - 12/14/2013
+SED;320;"Special Education Law";0001;WEB;24472;TBA;Web;Joseph L Cassidy;09/03/2013 - 12/14/2013
+SED;321;"Data &amp; Standards";0001;LEC;27401;TBA;Web;Christi McCurry;09/03/2013 - 12/14/2013
+SED;325;"Assessment in Special Education";0012;LEC;29385;Th 1:00PM - 3:45PM;Presque Isle Campus;Heather Leigh Ball;09/03/2013 - 12/14/2013
+SED;329;"Internship in Special Education";0001;FEX;24988;TBA;TBA;Heather Leigh Ball;09/03/2013 - 12/14/2013
+SED;330;"Math in Special Education";0001;WEB;24488;TBA;Web;Christi McCurry;09/03/2013 - 12/14/2013
+SED;362;"Typical &amp; Atypical Expressive &amp; Receptive Language";0001;WEB;24499;TBA;Web;Kenny P Bourgoin;09/03/2013 - 12/14/2013
+SED;490;"Student Teaching in Special Education";0001;FEX;24500;Fr 2:30PM - 3:45PM;Torrey 102;Heather Leigh Ball;09/03/2013 - 12/14/2013
+SOC;114;"Intro to Sociology";0002;LEC;25431;TBA;Web;Pamela Feeney;09/03/2013 - 12/14/2013
+SOC;313;"Sociology of Globalization";0001;LEC;25734;TBA;Web;Pamela Feeney;09/03/2013 - 12/14/2013
+SPA;101;"Elementary Spanish I";0001;LEC;29184;TuTh 3:30PM - 4:50PM;Torrey 232;Amanda Cornett;09/03/2013 - 12/14/2013
+THE;101;"Intro to Theatre";0001;LEC;25223;TuTh 3:30PM - 4:50PM;Science&nbsp; 109;Arthur E Hill;09/03/2013 - 12/14/2013
+WST;110;"Intro to Women's Studies";0001;LEC;25451;TBA;Web;Charles C Crittenden;09/03/2013 - 12/14/2013
+WST;212;"Special Topics in Women's Studies";0001;LEC;25738;TBA;Web;Jordan A Litman;12/30/2013 - 01/17/2014
+WST;312;"Special Topics in Women's Studies";0001;LEC;25544;TuTh 11:00AM - 12:20PM;Torrey 228;Kay S Kimball;09/03/2013 - 12/14/2013

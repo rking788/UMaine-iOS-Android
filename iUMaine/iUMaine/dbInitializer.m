@@ -9,6 +9,8 @@
 #import "dbInitializer.h"
 #import "Course.h"
 
+#define USM_CAMPUS  1
+
 @implementation DBInitializer
 
 @synthesize managedObjectContext;
@@ -22,7 +24,7 @@
     
     NSString* bundlePath = [[NSBundle mainBundle] resourcePath];
 
-    // Init Commuter Lots
+    // Init All Lots
     NSString* tempStr = [NSString stringWithFormat: @"lots_%@.csv", _campus];
     [self initLotsWithFile: [bundlePath stringByAppendingPathComponent: tempStr]];
     
@@ -76,6 +78,10 @@
             [lotObj setValue: permitType forKey: @"permittype"];
             [lotObj setValue: [NSNumber numberWithInt:[[lineFields objectAtIndex: 1] integerValue]] forKey: @"latitude"];
             [lotObj setValue: [NSNumber numberWithInt:[[lineFields objectAtIndex: 2] integerValue]] forKey: @"longitude"];
+#if USM_CAMPUS
+            NSInteger campusNum = (NSInteger) [[[lineFields objectAtIndex: 4] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue];
+            [lotObj setValue: [NSNumber numberWithInt: campusNum] forKey: @"campusNum"];
+#endif
         }
         
         cur = (NSString*)[enumer nextObject];
@@ -109,6 +115,10 @@
             [lotObj setValue: [NSNumber numberWithInt: [[[lineFields objectAtIndex: 1] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue]] forKey: @"latitude"];
             [lotObj setValue: [NSNumber numberWithInt:[[[lineFields objectAtIndex: 2] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue]] forKey: @"longitude"];
             [lotObj setValue: [[lineFields objectAtIndex: 3] stringByReplacingOccurrencesOfString: @"\"" withString: @""]  forKey: @"permittype"];
+#if USM_CAMPUS
+            NSInteger campusNum = (NSInteger) [[[lineFields objectAtIndex: 4] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue];
+            [lotObj setValue: [NSNumber numberWithInt: campusNum] forKey: @"campusNum"];
+#endif
         }
         
         cur = (NSString*)[enumer nextObject];
@@ -145,6 +155,10 @@
             //NSInteger longInt = (NSInteger) ([[[lineFields objectAtIndex: 2] stringByReplacingOccurrencesOfString: @"\"" withString: @""] floatValue] * 1000000.0);
             NSInteger latInt = (NSInteger) [[[lineFields objectAtIndex: 1] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue];
             NSInteger longInt = (NSInteger)[[[lineFields objectAtIndex: 2] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue];
+#if USM_CAMPUS
+            NSInteger campusNum = (NSInteger) [[[lineFields objectAtIndex: 4] stringByReplacingOccurrencesOfString: @"\"" withString: @""] integerValue];
+            [buildingObj setValue: [NSNumber numberWithInt: campusNum] forKey: @"campusNum"];
+#endif
             [buildingObj setValue: [NSNumber numberWithInt: latInt] forKey: @"latitude"];
             [buildingObj setValue: [NSNumber numberWithInt: longInt] forKey: @"longitude"];
         }
@@ -161,7 +175,7 @@
 
 - (void) initEmployeesWithFile: (NSString*) filePath
 {
-    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    NSString* fileContents = [NSString stringWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
     
     NSError* err = nil;
     NSArray* lines = [fileContents componentsSeparatedByString:@"\n"];
@@ -230,7 +244,7 @@
     NSString* semester = [NSString stringWithFormat: @"%@%@", year, season];
     NSString* bundlePath = [[NSBundle mainBundle] resourcePath];
     NSString* fileName = [NSString stringWithFormat: @"%@.csv", semester];
-    NSString* filePath = [NSString stringWithFormat: [bundlePath stringByAppendingPathComponent: fileName]];
+    NSString* filePath = [bundlePath stringByAppendingPathComponent: fileName];
 //    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
     NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
     

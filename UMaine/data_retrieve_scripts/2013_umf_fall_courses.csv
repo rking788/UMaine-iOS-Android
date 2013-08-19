@@ -1,0 +1,210 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+ANT;101S;"Introduction to Cultural Anthropology";0002;LEC;24258;TuTh 9:50AM - 11:30AM;Roberts 201;Gaelyn Aguilar;09/04/2013 - 12/19/2013
+ANT;102S;"Introduction to Archaeology";0001;LEC;24263;TuTh 3:50PM - 5:30PM;Ricker Addition 207;Lucas Kellett;09/04/2013 - 12/19/2013
+ANT;300;"Food and Culture";0001;LEC;24264;MoWe 3:40PM - 5:20PM;Roberts 203;Gaelyn Aguilar;09/04/2013 - 12/19/2013
+ANT;365;"Medical Anthropology";0001;LEC;24268;MoWeFr 2:25PM - 3:30PM;Roberts 001;Nicole Kellett;09/04/2013 - 12/19/2013
+ARH;274A;"Modern Art";0001;LEC;23286;We 6:15PM - 9:45PM;Merrill Hall 220;Sarah R Maline;09/04/2013 - 12/19/2013
+ARH;378A;"Contemporary Japanese Film";0001;LEC;24415;Th 6:30PM - 9:45PM;Roberts 131 - Lincoln Auditori;Sarah R Maline;09/04/2013 - 12/19/2013
+ART;111A;"Poster Child";0001;LEC;23527;TuTh 3:30PM - 6:30PM;Merrill Hall 222;Dawn M Nye;09/04/2013 - 12/19/2013
+ART;112A;"Digital Imaging";0002;STU;23288;TuTh 8:30AM - 11:30AM;Merrill Hall 222;Krisanne B Baker;09/04/2013 - 12/19/2013
+ART;115A;"Drawing I";0004;STU;24426;TuTh 12:00PM - 3:00PM;Merrill Hall&nbsp; 221;Barbara Sullivan;09/04/2013 - 12/19/2013
+ART;119A;"Sculpture I";0002;STU;24429;MoWe 1:15PM - 4:15PM;Merrill Hall 001 - Wood Shop;Jesse Potts;09/04/2013 - 12/19/2013
+ART;120A;"Art on the Edge";0001;LEC;23427;TuTh 12:00PM - 3:00PM;Merrill Hall 001 - Wood Shop;Katrazyna A Randall;09/04/2013 - 12/19/2013
+ART;160A;"Introduction to Live/Performance Art";0001;LEC;24455;Tu 1:50PM - 5:10PM;Merrill Hall 225 - Nordica;Gustavo Aguilar;09/04/2013 - 12/19/2013;Tu 1:50AM - 5:10AM;Merrill Hall 226 - Green Rm;Gustavo Aguilar;09/04/2013 - 12/19/2013
+ART;163A;"Experimental Arts Ensemble";0001;LEC;24457;Tu 6:30PM - 9:30PM;Merrill Hall 225 - Nordica;Gustavo Aguilar;09/04/2013 - 12/19/2013;Tu 6:30PM - 9:30PM;Merrill Hall 226 - Green Rm;Gustavo Aguilar;09/04/2013 - 12/19/2013
+ART;221A;"Painting I";0001;STU;23293;MoWe 8:30AM - 11:30AM;Mallett Hall;Elizabeth Olbert;09/04/2013 - 12/19/2013
+ART;241A;"Video I";0001;STU;23289;TuTh 12:00PM - 3:00PM;Merrill Hall 222;Dawn M Nye;09/04/2013 - 12/19/2013
+ART;244A;"Creative Imaging";0001;STU;24459;MoWe 1:15PM - 4:15PM;Merrill Hall 222;Dawn M Nye;09/04/2013 - 12/19/2013
+ART;420;"Senior Seminar and Studio Practice";0001;SEM;23294;Fr 1:15PM - 6:15PM;144 Quebec Street;Katrazyna A Randall;09/04/2013 - 12/19/2013
+BIO;110N;"Introductory Biology";0032;LAB;29845;We 3:10PM - 5:00PM;Preble Hall 111 - Bio Lab I;Nancy Kotchian Prentiss;09/04/2013 - 12/19/2013
+BIO;150N;"Human Anatomy and Physiology";0015;LAB;24176;We 9:45AM - 11:35AM;Preble Hall 113 - A &amp; P Lab;Richard W Robinson;09/04/2013 - 12/19/2013
+BIO;160;"Plant Biology: Organisms to Ecosystems";0013;LAB;23331;Th 12:30PM - 3:20PM;Preble Hall 112 - Bio Lab II;Andrew M Barton;09/04/2013 - 12/19/2013
+BIO;251;"Cell Biology";0012;LAB;29846;Th 9:00AM - 11:50AM;Ricker Hall 220 - Genetics Lab;Jean A Doty;09/04/2013 - 12/19/2013
+BIO;361;"Ecology";0011;LAB;23327;We 1:10PM - 4:00PM;Ricker Hall 222 - Biology Lab;Ronald G Butler;09/04/2013 - 12/19/2013
+BIO;391;"Entomology";0011;LAB;23966;Th 12:00PM - 2:50PM;Ricker Hall 222 - Biology Lab;Ronald G Butler;09/04/2013 - 12/19/2013
+CHY;110N;"Elementary Chemistry";0021;LAB;27893;TBA;Arranged;Martin T Morocco;09/04/2013 - 12/19/2013
+CHY;141;"General Chemistry I";0022;LAB;23958;Tu 6:00PM - 8:50PM;Chemistry Lab I;Michael Sherrod;09/04/2013 - 12/19/2013
+CHY;241;"Organic Chemistry I";0011;LAB;23336;Tu 8:00AM - 11:50AM;Preble Hall 223 - Chem Lab II;A Mariella Passarelli;09/04/2013 - 12/19/2013
+CHY;291;"Analytical Chemistry";011;LAB;29853;Th 2:00PM - 5:30PM;Preble Hall 227 - Analyt Chem;Martin T Morocco;09/04/2013 - 12/19/2013
+COS;120;"Internet Computing";0001;LEC;23409;MoWeFr 10:30AM - 11:35AM;RICKR 114 - Computer Science L;Christopher L Bennett;09/04/2013 - 12/19/2013
+COS;140;"Introduction to Computer Science";0001;LEC;23282;MoWeFr 9:15AM - 10:20AM;RICKR 114 - Computer Science L;Christopher L Bennett;09/04/2013 - 12/19/2013
+COS;360;"Programming Language Concepts";0001;LEC;23956;TuTh 9:50AM - 11:30AM;RICKR 114 - Computer Science L;Christopher L Bennett;09/04/2013 - 12/19/2013
+COS;372;"Computer Operating Systems";0001;LEC;23957;MoWeFr 1:10PM - 2:15PM;RICKR 114 - Computer Science L;Gail L Lange;09/04/2013 - 12/19/2013
+ECO;110S;"Principles of Economics";0003;LEC;24282;TuTh 9:50AM - 11:30AM;Roberts 205;John D Messier;09/04/2013 - 12/19/2013
+ECO;228;"Environmental and Natural Resource Economics";0001;LEC;24293;MoWeFr 2:25PM - 3:30PM;Roberts 107;Wendy L Harper;09/04/2013 - 12/19/2013
+ECO;230;"Behavioral Economics";0001;LEC;24283;TuTh 8:00AM - 9:40AM;Roberts 205;John D Messier;09/04/2013 - 12/19/2013
+ECO;309;"Intermediate Macroeconomic Theory";0001;LEC;24292;TuTh 9:50AM - 11:30AM;Roberts 301 - Business Lab;Sheena S Bunnell;09/04/2013 - 12/19/2013
+EDU;101;"Introduction to Middle/Secondary Education and Technology for the Learner";0002;LEC;23793;MoWe 8:40AM - 10:20AM;Ed Center 106;Johanna Prince;09/04/2013 - 10/23/2013;We 8:40AM - 10:20AM;Ed Center 103 - Literacy Class;Johanna Prince;09/04/2013 - 10/23/2013
+EDU;125;"Introduction to Theory and Practice in K";0004;LEC;23808;TuTh 9:50AM - 11:30AM;Ed Center 112 - Distance Ed Rm;Joseph M Tutlis;10/24/2013 - 12/19/2013
+EDU;202;"Practicum and Seminar in K";0002;FEX;23651;Mo 9:50AM - 11:30AM;Ed Center 112 - Distance Ed Rm;Barbara J Eretzian;09/04/2013 - 12/19/2013;TuTh 8:00AM - 12:00PM;In Field;Barbara J Eretzian;09/04/2013 - 12/19/2013
+EDU;221;"Secondary/Middle Block: Curriculum";0004;FEX;23669;TuWeTh 7:30AM - 2:30PM;In Field;Elizabeth A Yeaton-Evans;10/07/2013 - 10/25/2013;TuWeTh 7:30AM - 2:30PM;In Field;Elizabeth A Yeaton-Evans;11/19/2013 - 12/13/2013
+EDU;280;"Diversity and Social Justice Education";0002;LEC;30616;TBA;Arranged;Yoonjung Choi;09/04/2013 - 12/19/2013
+EDU;301;"Content Literacy in the Middle/Secondary School";0001;LEC;23652;TuTh 9:50AM - 11:30AM;Ed Center 110 - IndependentLvg;Clarissa S Thompson;09/04/2013 - 12/19/2013
+EDU;302;"Computers in K";0001;LEC;23653;TuTh 1:00PM - 2:40PM;Computer Center 104 - MAC Lab;Joella Ashley Montgomery;09/04/2013 - 12/19/2013
+EDU;304;"Science Education K";0002;SEM;23998;TuTh 1:50PM - 3:30PM;Ed Center 111 - Math/Science;Carole Lee;09/04/2013 - 12/19/2013
+EDU;330;"Young Adult Literature";0001;LEC;23655;TuTh 12:00PM - 1:40PM;Ricker Addition 207;Clarissa S Thompson;09/04/2013 - 12/19/2013
+EDU;331;"Mathematics Education K";0001;LEC;23656;TuTh 12:00PM - 1:40PM;Ed Center 111 - Math/Science;Shannon Larsen;09/04/2013 - 12/19/2013
+EDU;332;"Social Science and Global Perspectives K";0001;LEC;23760;TuTh 8:00AM - 9:40AM;Ed Center 112 - Distance Ed Rm;Yoonjung Choi;09/04/2013 - 12/19/2013
+EDU;361;"Methods for Teaching Secondary/Middle Mathematics";0001;LEC;23657;TuTh 12:00PM - 1:40PM;Ed Center 112 - Distance Ed Rm;Grace J Ward;09/04/2013 - 12/19/2013
+EDU;362;"Middle/Secondary Social Studies and Multicultural Education";0001;LEC;23658;MoFr 1:20PM - 3:00PM;Ed Center 103 - Literacy Class;Elizabeth A Yeaton-Evans;09/04/2013 - 12/19/2013
+EDU;364;"Teaching Laboratory Sciences";0001;LEC;23697;TuTh 9:50AM - 11:30AM;Preble Hall 333;Grace T Eason;09/04/2013 - 12/19/2013
+EDU;370;"Art in the Classroom K";0002;LEC;23762;Th 5:45PM - 7:25PM;Ed Center 012;Dona Seegers;09/04/2013 - 12/19/2013
+EDU;388;"Reading";0001;LEC;23660;TuTh 8:20AM - 10:50AM;Ed Center 114;Marcia F Nash;09/04/2013 - 12/19/2013
+EDU;402;"Philosophy and History of Education";0002;LEC;23666;TuTh 1:50PM - 3:30PM;Ed Center 113;Grace J Ward;09/04/2013 - 12/19/2013
+EDU;433;"Reading";0002;LEC;23664;TuTh 11:00AM - 1:30PM;Ed Center 114;Phyllis A Blackstone;09/04/2013 - 12/19/2013
+EDU;450;"Student Teaching and Seminar in Elementary Education K";0008;FEX;27715;TBA;In Field;Kathleen A Miles;10/21/2013 - 12/19/2013
+EDU;460;"Student Teaching and Seminar in Middle/Secondary Education";0008;FEX;27721;TBA;In Field;Kathleen A Miles;10/21/2013 - 12/19/2013
+EDU;490;"Student Teaching and Seminar in Community Health Education K";0004;FEX;27734;TBA;TBA;Elizabeth Luckraft;10/21/2013 - 12/19/2013
+EDU;580;"Technology Integration";0002;LEC;30780;TBA;Web;Theresa L Overall;09/03/2013 - 12/15/2013;Tu 7:00PM - 7:30PM;Ed Center 012;Theresa L Overall;09/03/2013 - 09/03/2013;Tu 7:00PM - 7:30PM;Ed Center 012;Theresa L Overall;10/01/2013 - 10/01/2013;Tu 7:00PM - 7:30PM;Ed Center 012;Theresa L Overall;10/22/2013 - 10/22/2013;Tu 7:00PM - 7:30PM;Ed Center 012;Theresa L Overall;11/19/2013 - 11/19/2013
+EDU;583;"Development and Planning of Curriculum Assessment I";0001;LEC;30622;TBA;Web;Yoonjung Choi;09/03/2013 - 12/15/2013;Tu 4:00PM - 7:00PM;Ed Center 012;Yoonjung Choi;09/03/2013 - 09/03/2013;Tu 4:00PM - 7:00PM;Ed Center 012;Yoonjung Choi;10/01/2013 - 10/01/2013;Tu 4:00PM - 7:00PM;Ed Center 012;Yoonjung Choi;10/22/2013 - 10/22/2013;Tu 4:00PM - 7:00PM;Ed Center 012;Yoonjung Choi;11/19/2013 - 11/19/2013
+EDU;586;"Field";0001;LEC;30667;TBA;Web;Johanna Prince;09/10/2013 - 12/17/2013;Tu 4:00PM - 7:30PM;Ed Center 329 - Tchng &amp; Lrng C;Johanna Prince;09/10/2013 - 09/10/2013;Tu 4:00PM - 7:30PM;Ed Center 329 - Tchng &amp; Lrng C;Johanna Prince;11/12/2013 - 11/12/2013;Tu 4:00PM - 7:30PM;Ed Center 329 - Tchng &amp; Lrng C;Johanna Prince;12/10/2013 - 12/10/2013;Tu 4:00PM - 7:30PM;Ed Center 329 - Tchng &amp; Lrng C;Johanna Prince;12/17/2013 - 12/17/2013
+ENG;100;"Writing Seminar";0015;SEM;23378;TuTh 9:50AM - 11:30AM;Ricker Hall Rm 116;Margaret Farmer;09/04/2013 - 12/19/2013
+ENG;121H;"Introduction to Linguistics";0002;LEC;23439;TuTh 1:50PM - 3:30PM;Roberts 107;Ming-Ming Pu;09/04/2013 - 12/19/2013
+ENG;150;"Creative Writing";0001;LEC;23831;MoWe 1:20PM - 3:00PM;Ricker Hall Rm 116;Nathaniel Minton;09/04/2013 - 12/19/2013
+ENG;181;"Literary Analysis and Interpretation";0004;LEC;30251;TuTh 1:50PM - 3:30PM;Ricker Addition 202;Erin Kappeler;09/04/2013 - 12/19/2013
+ENG;210;"Fiction Writing";0001;SEM;23380;Tu 1:50PM - 5:10PM;Roberts 209B;Jesse Evan Miller;09/04/2013 - 12/19/2013
+ENG;211;"Poetry Writing";0001;SEM;23381;WeFr 8:40AM - 10:20AM;115 South Street;Jeffrey J Thomson;09/04/2013 - 12/19/2013
+ENG;212;"Creative Nonfiction";0001;SEM;23382;MoWe 1:20PM - 3:00PM;115 South Street;Gretchen T Legler;09/04/2013 - 12/19/2013
+ENG;213H;"Journalism";0001;SEM;23383;TuTh 3:50PM - 5:30PM;Roberts 201;Luann I Yetter;09/04/2013 - 12/19/2013
+ENG;214;"Screenwriting";0001;SEM;23440;Tu 1:50PM - 5:10PM;Ed Center 103 - Literacy Class;Nathaniel Minton;09/04/2013 - 12/19/2013
+ENG;217;"Feature Writing";0001;SEM;23832;TuTh 12:00PM - 1:40PM;Roberts 207;Michael D Burke;09/04/2013 - 12/19/2013
+ENG;230;"Writing/Teaching of Writing";0001;LEC;23364;Th 6:15PM - 9:35PM;Ed Center 111 - Math/Science;Deborah W Overstreet;09/04/2013 - 12/19/2013
+ENG;250H;"Shakespeare";0002;LEC;23856;MoWe 3:40PM - 5:20PM;Ricker Addition 207;Misty Krueger;09/04/2013 - 12/19/2013
+ENG;252H;"British Texts and Contexts II";0001;LEC;23366;TuTh 12:00PM - 1:40PM;Roberts 105;Christine M Darrohn;09/04/2013 - 12/19/2013
+ENG;263H;"Studies in Twentieth";0001;LEC;23834;MoWeFr 2:25PM - 3:30PM;Roberts 103;Kristen Case;09/04/2013 - 12/19/2013
+ENG;267H;"Twentieth";0001;LEC;23869;MoWeFr 2:25PM - 3:30PM;Roberts 105;Jeffrey J Thomson;09/04/2013 - 12/19/2013
+ENG;272H;"American Texts and Contexts";0001;LEC;23367;MoWeFr 1:10PM - 2:15PM;Roberts 103;Kristen Case;09/04/2013 - 12/19/2013
+ENG;277H;"Topics in English";0001;LEC;24356;MoFr 1:20PM - 3:00PM;Roberts 201;George H Miller;09/04/2013 - 12/19/2013
+ENG;312;"Advanced Nonfiction Writing";0001;SEM;23412;TuTh 12:00PM - 1:40PM;115 South Street;Gretchen T Legler;09/04/2013 - 12/19/2013
+ENG;314;"Advanced Screenwriting";0001;LEC;23445;MoWe 3:40PM - 5:20PM;115 South Street;Nathaniel Minton;09/04/2013 - 12/19/2013
+ENG;344;"Eighteenth";0001;LEC;23835;TuTh 3:50PM - 5:30PM;Roberts 103;Misty Krueger;09/04/2013 - 12/19/2013
+ENG;377;"Advanced Topics in English";0002;LEC;23837;Tu 1:50PM - 5:10PM;Roberts 105;Sabine Klein;09/04/2013 - 12/19/2013
+ENG;396;"Writing Apprenticeship";0005;FEX;23389;TBA;Arranged;Tanya Ann Kennedy;09/04/2013 - 12/19/2013
+ENG;397;"Independent Study in English";0005;IND;30650;TBA;Arranged;Meghan Willing;09/04/2013 - 12/19/2013
+ENG;401;"Seminar in Writing";0001;SEM;23384;TuTh 3:50PM - 5:30PM;115 South Street;Gretchen T Legler;09/04/2013 - 12/19/2013
+ENG;449;"Twentieth";0001;LEC;23839;MoWe 3:40PM - 5:20PM;Roberts 105;Christine M Darrohn;09/04/2013 - 12/19/2013
+ENG;481;"Early European Literature";0002;LEC;29820;TuTh 1:50PM - 3:30PM;115 South Street;Eric C Brown;09/04/2013 - 12/19/2013
+FRE;101H;"Elementary French I";0002;LEC;23400;MoWeFr 10:30AM - 11:35AM;Roberts 201;Michael Bruce;09/04/2013 - 12/19/2013
+FRE;102H;"Elementary French II";0001;LEC;23397;MoWeFr 9:15AM - 10:20AM;Roberts 203;Sylvie Charron;09/04/2013 - 12/19/2013
+FRE;191;"Conversation at French Table";0001;LEC;23399;MoTh 12:00PM - 1:00PM;SnackBar;Sylvie Charron;09/04/2013 - 12/19/2013
+FRE;201H;"Intermediate French";0001;LEC;23398;MoWeFr 10:30AM - 11:35AM;Roberts 203;Sylvie Charron;09/04/2013 - 12/19/2013
+FRE;377;"Topics in French Literature";0001;LEC;23841;MoWeFr 2:25PM - 3:30PM;Roberts LRC - Language Lab;Michael Bruce;09/04/2013 - 12/19/2013
+FYS;100;"First";0011;SEM;23961;MoWeFr 2:25PM - 3:30PM;Preble Hall 333;Paul N Stancioff;09/04/2013 - 12/19/2013
+GEO;103S;"Peoples and Environments";0002;LEC;24272;WeFr 1:20PM - 3:00PM;Roberts&nbsp; 305;Brad T Dearden;09/04/2013 - 12/19/2013
+GEO;104S;"Global Transformations";0001;LEC;24273;TuTh 9:50AM - 11:30AM;Roberts&nbsp; 305;Cathleen M McAnneny;09/04/2013 - 12/19/2013
+GEO;219S;"Geography of Maine";0001;LEC;24275;TuTh 1:50PM - 3:30PM;Roberts&nbsp; 305;Cathleen M McAnneny;09/04/2013 - 12/19/2013
+GEO;310;"International Development";0001;LEC;24276;WeFr 8:40AM - 10:20AM;Roberts 307 - Geography Lab;Brad T Dearden;09/04/2013 - 12/19/2013
+GEO;331;"Nature and Society";0001;LEC;24277;MoWe 1:20PM - 3:00PM;Roberts 307 - Geography Lab;Cathleen M McAnneny;09/04/2013 - 12/19/2013
+GEO;337;"Environmental Regulations";0001;LEC;24342;Th 6:15PM - 9:35PM;Roberts 101;Thomas B Saviello;09/04/2013 - 12/19/2013
+GEO;340;"Land Use";0001;LEC;24278;Tu 6:15PM - 9:35PM;Roberts 307 - Geography Lab;Brian Hight Cushing;09/04/2013 - 12/19/2013
+HON;101;"First Year Seminar in Honors";0002;LEC;23467;MoWeFr 10:30AM - 11:35AM;Honors House 001;Scott D Erb;09/04/2013 - 12/19/2013
+HON;180N;"Interdisciplinary Science";0011;LAB;27937;Mo 1:10PM - 3:30PM;Ricker Hall 222 - Biology Lab;Daniel E Buckley;09/04/2013 - 12/19/2013
+HON;277;"Special Topics";0001;LEC;23948;Th 6:15PM - 9:35PM;Honors House 001;Mellisa A Clawson;09/04/2013 - 10/23/2013
+HON;277H;"Special Topics";0003;LEC;23951;MoWe 8:40AM - 10:20AM;Roberts 205;Jonathan Cohen;09/04/2013 - 12/19/2013
+HON;277S;"Special Topics";0004;LEC;27726;Tu 1:50PM - 5:10PM;Roberts 203;Linda J Beck;09/04/2013 - 12/19/2013
+HON;377;"Advanced Topics in Honors";0004;LEC;23952;Tu 6:15PM - 9:35PM;Ricker Addition 202;Arthur R Dingley;09/04/2013 - 12/19/2013
+HON;377A;"Advanced Topics in Honors";0002;LEC;27894;Tu 6:15PM - 9:35PM;Honors House 001;Katrazyna A Randall;09/04/2013 - 12/19/2013
+HTY;103S;"United States History I";0002;LEC;24590;TuTh 8:00AM - 9:40AM;Roberts 023 - Auditorium;Allison L Hepler;09/04/2013 - 12/19/2013
+HTY;110S;"Global History I";0001;LEC;24644;MoWeFr 10:30AM - 11:35AM;Roberts 103;Anne Marie Wolf;09/04/2013 - 12/19/2013
+HTY;214S;"Spain from 1000 to 1700";0001;LEC;24933;MoWe 3:40PM - 5:20PM;Roberts 205;Anne Marie Wolf;09/04/2013 - 12/19/2013
+HTY;240S;"Maine History";0001;LEC;24653;We 3:10PM - 6:30PM;Roberts 207;Allison L Hepler;09/04/2013 - 12/19/2013
+HTY;253S;"Muslim World to 1600";0001;LEC;24726;TuTh 12:00PM - 1:40PM;Roberts 101;Anne Marie Wolf;09/04/2013 - 12/19/2013
+HTY;277S;"Topics in History";0003;LEC;27640;Th 1:50PM - 5:10PM;Roberts 105;Louis Davies Sell;09/04/2013 - 12/19/2013
+HTY;390;"Research Methods";0001;LEC;24656;Th 1:50PM - 5:10PM;Roberts 209B;Allison L Hepler;09/04/2013 - 12/19/2013
+INV;177;"Topics in Innovation";0001;LEC;25227;MoWeFr 10:30AM - 11:35AM;Roberts 301 - Business Lab;Frank M Engert;09/04/2013 - 12/19/2013
+MAT;;"10";0003;LEC;30464;MoWeFr 9:15AM - 10:20AM;Franklin Hall 202;Lawrence Stanle Ronco;09/04/2013 - 12/19/2013
+MAT;;"11";0002;LEC;30473;MoWeFr 1:10PM - 2:15PM;TBA;Lawrence Stanle Ronco;09/04/2013 - 12/19/2013
+MAT;100M;"Introduction to Mathematics";0002;LEC;23410;MoWeFr 2:25PM - 3:30PM;Ricker Addition 205;Daniel Jackson;09/04/2013 - 12/19/2013;Fr 2:25PM - 3:30PM;Computer Center 102 - PC Lab;Daniel Jackson;09/04/2013 - 12/19/2013
+MAT;103M;"Mathematical Content for Elementary School Teachers I";0005;LEC;23259;TuTh 3:50PM - 5:30PM;Ricker Addition 202;Michael Molinsky;09/04/2013 - 12/19/2013
+MAT;104M;"Mathematical Conent for Elementary School Teachers II";0001;LEC;23281;TuTh 9:50AM - 11:30AM;Roberts 001B;Paul J Gies;09/04/2013 - 12/19/2013
+MAT;120M;"Introductory Statistics";0006;LEC;29841;TuTh 8:00AM - 9:40AM;Roberts 001B;Russell H Rainville;09/04/2013 - 12/19/2013
+MAT;132M;"Precalculus";0002;LEC;23279;MoWeFr 1:10PM - 2:15PM;Roberts 001;Stephen P Bies;09/04/2013 - 12/19/2013
+MAT;141M;"Calculus I";0003;LEC;23271;MoWe 3:40PM - 5:20PM;Ricker Addition 205;Peter G Hardy;09/04/2013 - 12/19/2013
+MAT;151M;"Foundations of Abstract Mathematics";0001;LEC;23272;MoWeFr 9:15AM - 10:20AM;Ricker Addition 207;Nicholas A Koban;09/04/2013 - 12/19/2013
+MAT;220M;"Data Analysis";0001;LEC;23278;MoWeFr 8:00AM - 9:05AM;Ricker Addition 202;Russell H Rainville;09/04/2013 - 12/19/2013
+MAT;241;"Calculus III";0001;LEC;23273;TuTh 3:50PM - 5:30PM;Ricker Addition 205;Daniel Jackson;09/04/2013 - 12/19/2013
+MAT;313;"Introduction to Abstraction";0001;LEC;23274;TuTh 1:50PM - 3:30PM;Ricker Addition 205;Paul J Gies;09/04/2013 - 12/19/2013
+MAT;320;"History of Mathematics";0001;LEC;23275;MoWeFr 2:25PM - 3:30PM;Ricker Addition 202;Michael Molinsky;09/04/2013 - 12/19/2013
+MAT;363;"Mathematical Problem Solving";0001;LEC;23276;MoWeFr 1:10PM - 2:15PM;Ricker Addition 202;Russell H Rainville;09/04/2013 - 12/19/2013
+MAT;371;"Mathematical Probability";0001;LEC;23277;MoWeFr 9:15AM - 10:20AM;Ricker Addition 205;Peter G Hardy;09/04/2013 - 12/19/2013
+MAT;477;"Advanced Topics in Mathematics";0001;LEC;23280;TuTh 8:00AM - 9:40AM;Ricker Addition 202;Nicholas A Koban;09/04/2013 - 12/19/2013
+MUH;150A;"Contemporary Music: Connections to the Past";0001;LEC;23295;MoFr 8:40AM - 10:20AM;Merrill Hall 225 - Nordica;Steven Pane;09/04/2013 - 12/19/2013;MoFr 8:40AM - 10:20AM;Merrill Hall 226 - Green Rm;Steven Pane;09/04/2013 - 12/19/2013
+MUH;352A;"Music 900";0001;LEC;23425;Th 1:50PM - 5:10PM;Merrill Hall 225 - Nordica;Steven Pane;09/04/2013 - 12/19/2013;TBA;Merrill Hall 226 - Green Rm;Steven Pane;09/04/2013 - 12/19/2013
+MUS;110A;"Chorus";0001;MUS;23309;Mo 6:30PM - 9:00PM;Merrill Hall 225 - Nordica;Bruce G McInnes;09/04/2013 - 12/19/2013;Mo 6:30PM - 9:00PM;Merrill Hall 226 - Green Rm;Bruce G McInnes;09/04/2013 - 12/19/2013
+MUS;111A;"Concert Band I";0001;LEC;23310;Th 7:00PM - 9:00PM;Merrill Hall 225 - Nordica;Anita-Ann Jerosch;09/04/2013 - 12/19/2013;Th 7:00PM - 9:00PM;Merrill Hall 226 - Green Rm;Anita-Ann Jerosch;09/04/2013 - 12/19/2013
+MUS;120A;"Beginning Applied Music";0002;MUS;23303;TBA;Arranged;Philip C Carlsen;09/04/2013 - 12/19/2013
+MUS;121A;"Piano Class I";0004;LEC;23299;TuTh 12:50PM - 1:40PM;Merrill Hall 302 - Piano Lab;Amy Ellen Maier;09/04/2013 - 12/19/2013
+MUS;122A;"Piano Class II";0001;LEC;23300;MoWe 10:40AM - 11:30AM;Merrill Hall 302 - Piano Lab;Bridget Convey;09/04/2013 - 12/19/2013
+MUS;123A;"Group Instrumental Lessons";0001;LEC;23306;TBA;Arranged;Philip C Carlsen;09/04/2013 - 12/19/2013
+MUS;124A;"Group Voice Lessons";0001;LEC;23307;TBA;Arranged;Philip C Carlsen;09/04/2013 - 12/19/2013
+MUS;160A;"Introduction to Live/Performance Art";0001;LEC;24487;Tu 1:50PM - 5:10PM;Merrill Hall 225 - Nordica;Gustavo Aguilar;09/04/2013 - 12/19/2013;Tu 1:50AM - 5:10AM;Merrill Hall 226 - Green Rm;Gustavo Aguilar;09/04/2013 - 12/19/2013
+MUS;163A;"Experimental Arts Ensemble";0001;LEC;24489;Tu 6:30PM - 9:30PM;Merrill Hall 225 - Nordica;Gustavo Aguilar;09/04/2013 - 12/19/2013;Tu 6:30PM - 9:30PM;Merrill Hall 226 - Green Rm;Gustavo Aguilar;09/04/2013 - 12/19/2013
+MUS;201A;"Theory and Aural Skills I";0001;LEC;23301;MoWeFr 1:10PM - 2:15PM;Merrill Hall 225 - Nordica;Philip C Carlsen;09/04/2013 - 12/19/2013;MoWeFr 1:10PM - 2:15PM;Merrill Hall 226 - Green Rm;Philip C Carlsen;09/04/2013 - 12/19/2013
+MUS;211;"Concert Band II";0001;LEC;23311;Th 7:00PM - 9:00PM;Merrill Hall 225 - Nordica;Anita-Ann Jerosch;09/04/2013 - 12/19/2013;Th 7:00PM - 9:00PM;Merrill Hall 226 - Green Rm;Anita-Ann Jerosch;09/04/2013 - 12/19/2013
+MUS;212A;"COMMUNITY ORCHESTRA";0001;MUS;23312;We 7:00PM - 9:30PM;Merrill Hall 225 - Nordica;Trond Saeverud;09/04/2013 - 12/19/2013;We 7:00PM - 9:30PM;Merrill Hall 226 - Green Rm;Trond Saeverud;09/04/2013 - 12/19/2013
+MUS;220;"Intermediate Applied Music";0002;MUS;23305;TBA;Arranged;Philip C Carlsen;09/04/2013 - 12/19/2013
+MUS;305;"Advanced Composition";0001;LEC;30092;TBA;Arranged;Philip C Carlsen;09/04/2013 - 12/19/2013
+MUS;320;"ADVANCED APPLIED MUSIC";0001;LEC;23308;TBA;Arranged;Philip C Carlsen;09/04/2013 - 12/19/2013
+PHI;101H;"Contemporary Moral Problems";0002;LEC;23417;TuTh 9:50AM - 11:30AM;Roberts 207;Robert Kelsey;09/04/2013 - 12/19/2013
+PHI;102H;"The Age of Science";0001;LEC;23391;Th 6:15PM - 9:35PM;Roberts 103;Frank M Underkuffler;09/04/2013 - 12/19/2013
+PHI;110H;"Philosophy of Education";0001;LEC;23842;MoWeFr 10:30AM - 11:35AM;Roberts 101;Matthew G Freytag;09/04/2013 - 12/19/2013
+PHI;210H;"Philosophy of Language";0001;LEC;23843;MoFr 1:20PM - 3:00PM;Roberts 201;George H Miller;09/04/2013 - 12/19/2013
+PHI;220H;"Constructing Our World";0001;LEC;23844;MoWe 8:40AM - 10:20AM;Roberts 205;Jonathan Cohen;09/04/2013 - 12/19/2013
+PHI;377;"Selected Topics in Philosophy";0001;SEM;24450;WeFr 8:40AM - 10:20AM;Roberts 105;Kristen Case;09/04/2013 - 12/19/2013
+PHY;110N;"Elementary Physics";0012;LAB;23356;We 3:40PM - 5:30PM;Preble Hall 330 - Physics Lab;Christopher Magri;09/04/2013 - 12/19/2013
+PHY;112N;"Introductory Meteorology";0011;LAB;23359;Fr 1:10PM - 3:00PM;Preble Hall 330 - Physics Lab;Pamela A Mitchel;09/04/2013 - 12/19/2013
+PHY;141;"General Physics I";0001;LEC;23357;MoWeFr 8:00AM - 9:50AM;Preble Hall 332 - Physics Lab;Paul N Stancioff;09/04/2013 - 12/19/2013
+POS;101S;"Introduction to American Government";0003;LEC;29737;TuTh 1:50PM - 3:30PM;Roberts 207;James P Melcher;09/04/2013 - 12/19/2013
+POS;136S;"World Politics";0001;LEC;24296;TuTh 12:00PM - 1:40PM;Roberts 203;Scott D Erb;09/04/2013 - 12/19/2013
+POS;200S;"Public Policy";0001;LEC;24297;TuTh 9:50AM - 11:30AM;Roberts 203;James P Melcher;09/04/2013 - 12/19/2013
+POS;214S;"Law and the Legal System";0001;LEC;24298;Tu 6:15PM - 9:35PM;Roberts 103;Walter Hanstein;09/04/2013 - 12/19/2013
+POS;226S;"Islam and Politics";0001;LEC;24300;Tu 1:50PM - 5:10PM;Roberts 203;Linda J Beck;09/04/2013 - 12/19/2013
+POS;252S;"Modern Political Theory";0001;LEC;24299;MoFr 1:20PM - 3:00PM;Roberts 205;Linda J Beck;09/04/2013 - 12/19/2013
+POS;277;"Topics in Political Science";0001;LEC;24736;Th 6:15PM - 9:35PM;Roberts 101;Thomas B Saviello;09/04/2013 - 12/19/2013
+POS;440;"Political Science Capstone Experience";0003;RSG;30297;TBA;Arranged;James P Melcher;09/04/2013 - 12/19/2013
+PSY;101S;"General Psychology";0003;LEC;23418;MoWeFr 9:15AM - 10:20AM;Roberts 101;Natasha Lekes;09/04/2013 - 12/19/2013
+PSY;104S;"Parenting the Young Child";001;LEC;23899;MoWeFr 10:30AM - 11:35AM;Roberts 131 - Lincoln Auditori;Joel King;09/04/2013 - 12/19/2013
+PSY;202S;"Psychology in Cinema";0001;LEC;23459;Th 6:15PM - 9:35PM;Roberts 023 - Auditorium;Brian J Kaufman;09/04/2013 - 12/19/2013
+PSY;209;"Abnormal Psychology";002;LEC;23873;MoWeFr 2:25PM - 3:30PM;Roberts 101;Natasha Lekes;09/04/2013 - 12/19/2013
+PSY;225S;"Child and Adolescent Development";0005;LEC;29714;MoWeFr 2:25PM - 3:30PM;Roberts 131 - Lincoln Auditori;Joel King;09/04/2013 - 12/19/2013
+PSY;235;"Introduction to Counseling";0001;LEC;23243;TuTh 8:00AM - 9:40AM;Ricker Hall Rm 116;Dan R Seabold;09/04/2013 - 12/19/2013
+PSY;247;"The Psychology of Leadership";0001;LEC;23455;MoWe 3:40PM - 5:20PM;Ricker Addition 217;April Guagenti;09/04/2013 - 12/19/2013
+PSY;252;"Positive Psychology";0001;LEC;23253;WeFr 8:40AM - 10:20AM;Ricker Hall Rm 116;Karol Maybury;09/04/2013 - 12/19/2013
+PSY;300;"Transpersonal and Eastern Psychology";001;LEC;23900;TuTh 12:00PM - 1:40PM;Ricker Hall Rm 116;Dan R Seabold;09/04/2013 - 12/19/2013
+PSY;315;"Physiological Psychology";001;LEC;23902;TuTh 12:00PM - 1:40PM;Psychology Building 119B;Marilyn Ann Shea;09/04/2013 - 12/19/2013
+PSY;317;"I/O Personnel Psychology";0001;LEC;23244;TuTh 3:50PM - 5:30PM;Roberts 023 - Auditorium;Brian J Kaufman;09/04/2013 - 12/19/2013
+PSY;329;"Child and Family Counseling and Psychopathology";0001;LEC;23458;MoWeFr 9:15AM - 10:20AM;Ricker Addition 217;Susan A Anzivino;09/04/2013 - 12/19/2013
+PSY;360;"Group Psychotherapy";0001;LEC;23245;Tu 6:15PM - 9:35PM;Psychology Building 119B;Dan R Seabold;09/04/2013 - 12/19/2013
+PSY;377;"Advanced Topics in Psychology";002;LEC;23911;Tu 6:15PM - 9:35PM;Ricker Addition 202;Arthur R Dingley;09/04/2013 - 12/19/2013
+PSY;400;"Research Methods";0002;LEC;23247;Tu 9:50AM - 11:30AM;Psychology Building 119B;Marilyn Ann Shea;09/04/2013 - 12/19/2013;Th 9:50AM - 11:30AM;Computer Center 102 - PC Lab;Marilyn Ann Shea;09/04/2013 - 12/19/2013
+PSY;455;"Crisis Intervention and Stabilization";0001;LEC;23248;MoWeFr 10:30AM - 11:35AM;Psychology Building 119B;Susan A Anzivino;09/04/2013 - 12/19/2013
+PSY;484;"Senior Seminar";0002;SEM;23250;Th 1:50PM - 5:10PM;Psychology Building 119B;Steven W Quackenbush;09/04/2013 - 12/19/2013
+PSY;496;"Internship in Psychology";0001;FEX;30093;TBA;Arranged;Susan A Anzivino;09/04/2013 - 12/19/2013
+SED;101;"Introduction to Educating Students with Diverse Learning Needs at the Middle/Secondary Levels";0002;LEC;23804;MoWe 8:40AM - 10:20AM;Ed Center 006;Lance Neeper;10/24/2013 - 12/19/2013
+SED;106;"Sign Language";0001;LEC;23626;Tu 6:15PM - 9:35PM;Ed Center 106;Diane M St Lawrence;09/04/2013 - 12/19/2013
+SED;125;"Introduction to Educating Students with Diverse Learning Needs at the Elementary Level";0004;LEC;23790;TuTh 9:50AM - 11:30AM;Ed Center 103 - Literacy Class;Brian Joseph Cavanaugh;09/04/2013 - 10/23/2013
+SED;200;"Foundations in K";0001;LEC;23627;TuTh 9:50AM - 11:30AM;Ed Center 006;Richard E Dale;09/04/2013 - 12/19/2013
+SED;209;"Practicum in Special Education";0001;FEX;23704;MoWeFr 8:00AM - 11:35AM;In Field;Brian Joseph Cavanaugh;09/04/2013 - 12/19/2013
+SED;301;"Language and Literacy Methods in Special Education";0001;LEC;23632;TuTh 12:00PM - 2:30PM;Ed Center 001 - Snowsports;Karen Greenwood Smith;09/04/2013 - 12/19/2013
+SED;324;"Applied Instructional Methods in Special Education";0001;LEC;24359;MoWeFr 8:00AM - 11:35AM;In Field;Karen Greenwood Smith;09/04/2013 - 12/19/2013
+SED;360;"Teaching Children with Learning and Behavior Problems in the Regular Classroom";0002;LEC;23629;We 1:20PM - 3:00PM;Ed Center 001 - Snowsports;Richard E Dale;09/04/2013 - 12/19/2013;Fr 1:20PM - 3:00PM;Ed Center 006;Richard E Dale;09/04/2013 - 12/19/2013
+SED;361;"Teaching Students with Disabilities and At";0001;LEC;23630;TuTh 1:50PM - 3:30PM;Ed Center 006;Sue A Thorson;09/04/2013 - 12/19/2013
+SED;404;"Collaboration Among Diverse Families";0002;LEC;29835;TuTh 8:00AM - 9:40AM;Ed Center 006;Lance Neeper;09/04/2013 - 12/19/2013
+SED;460;"Student Teaching and Seminar in Special Education";0008;FEX;29131;TBA;In Field;Kathleen A Miles;10/21/2013 - 12/19/2013
+SOC;101S;"Introduction to Sociology";0002;LEC;24261;MoWeFr 1:10PM - 2:15PM;Roberts 107;Jon T Oplinger;09/04/2013 - 12/19/2013
+SOC;215S;"Social Problems &amp; Social Change";0001;LEC;24269;MoWe 8:40AM - 10:20AM;Roberts 103;Nicole Kellett;09/04/2013 - 12/19/2013
+SOC;225S;"Popular Culture &amp; Mass Media";0001;LEC;24456;TuTh 1:50PM - 3:30PM;Roberts 205;Gaelyn Aguilar;09/04/2013 - 12/19/2013
+SOC;301;"Sociology of Deviance";0001;LEC;24270;MoWeFr 10:30AM - 11:35AM;Roberts&nbsp; 305;Jon T Oplinger;09/04/2013 - 12/19/2013
+SPA;101H;"Elementary Spanish I";0002;LEC;23402;MoWeFr 10:30AM - 11:35AM;Roberts LRC - Language Lab;Linda L Britt;09/04/2013 - 12/19/2013
+SPA;102H;"Elementary Spanish II";0001;LEC;23403;MoWeFr 10:30AM - 11:35AM;Roberts 001B;Marisela Funes;09/04/2013 - 12/19/2013
+SPA;201H;"Intermediate Spanish";0001;LEC;23462;MoWeFr 1:10PM - 2:15PM;Roberts LRC - Language Lab;Marisela Funes;09/04/2013 - 12/19/2013
+SPA;303;"People and Cultures of Spain";0001;LEC;23845;WeFr 1:20PM - 3:00PM;Roberts 203;Linda L Britt;09/04/2013 - 12/19/2013
+THE;115A;"Improvisation as Acting Technique";0001;LEC;23537;MoWe 1:20PM - 3:00PM;Alumni Theater;Peter A Simmel;09/04/2013 - 12/19/2013
+THE;117A;"Contemporary American Theatre";0001;LEC;23558;MoWeFr 10:30AM - 11:35AM;Merrill Hall 225 - Nordica;Jayne Decker;09/04/2013 - 12/19/2013;MoWeFr 10:30AM - 11:35AM;Merrill Hall 226 - Green Rm;Jayne Decker;09/04/2013 - 12/19/2013
+THE;160A;"Introduction to Live/Performance Art";0001;LEC;24496;Tu 1:50PM - 5:10PM;Merrill Hall 225 - Nordica;Gustavo Aguilar;09/04/2013 - 12/19/2013;Tu 1:50AM - 5:10AM;Merrill Hall 226 - Green Rm;Gustavo Aguilar;09/04/2013 - 12/19/2013
+THE;163A;"Experimental Arts Ensemble";0001;LEC;24497;Tu 6:30PM - 9:30PM;Merrill Hall 225 - Nordica;Gustavo Aguilar;09/04/2013 - 12/19/2013;Tu 6:30PM - 9:30PM;Merrill Hall 226 - Green Rm;Gustavo Aguilar;09/04/2013 - 12/19/2013
+THE;202A;"Space Lab and Performance";0001;LAB;23424;Mo 5:00PM - 6:00PM;Alumni Theater;Peter A Simmel;09/04/2013 - 12/19/2013
+THE;252A;"Directing Contemporary Theatre I";0001;LEC;23423;TuTh 1:50PM - 3:30PM;Alumni Theater;Peter A Simmel;09/04/2013 - 12/19/2013
+THE;278A;"Commedia dell'arte";0001;LEC;24498;TuTh 9:50AM - 11:30AM;Merrill Hall 225 - Nordica;Jayne Decker;09/04/2013 - 12/19/2013;TuTh 9:50AM - 11:30AM;Merrill Hall 226 - Green Rm;Jayne Decker;09/04/2013 - 12/19/2013
+THE;497;"Independent Study in Theatre";0001;IND;30237;TBA;Arranged;Jayne Decker;09/04/2013 - 12/19/2013
+WST;101S;"Introduction to Women's and Gender Studies";0001;LEC;23420;MoWe 3:40PM - 5:20PM;Roberts 201;Tanya Ann Kennedy;09/04/2013 - 12/19/2013

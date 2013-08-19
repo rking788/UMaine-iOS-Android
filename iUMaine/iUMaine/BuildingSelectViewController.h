@@ -1,5 +1,5 @@
 //
-//  BuildingSelectView.h
+//  BuildingSelectViewController.h
 //  iUMaine
 //
 //  Created by RKing on 4/26/11.
@@ -17,7 +17,7 @@
 @end
 
 
-@interface BuildingSelectView : UITableViewController {
+@interface BuildingSelectViewController : UITableViewController {
     
     UISearchBar *searchBar;
     UITableView *tblView;

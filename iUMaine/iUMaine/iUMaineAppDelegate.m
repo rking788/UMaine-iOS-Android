@@ -16,6 +16,7 @@
 #import "TBXML.h"
 #import "constants.h"
 #import "CampusSpecifics.h"
+#import <Crashlytics/Crashlytics.h>
 
 #define INIT_DB 0
 
@@ -52,6 +53,15 @@ static NSString* selCampus;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Crashlytics startWithAPIKey:@"24cfbdb25b3fc903efc0e555e1983a86ce707993"];
+    
+    /**
+     * This needs to be done absolutely first, before the ScheduleViewController is loaded.
+     * Otherwise, the campus select VC will always be shown
+     */
+    self.defaultPrefs = [NSUserDefaults standardUserDefaults];
+    selCampus = [self.defaultPrefs objectForKey: DEFS_SELCAMPUSKEY];
+    
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
@@ -60,13 +70,9 @@ static NSString* selCampus;
     
     [self addProgressBarView];
     
-    self.defaultPrefs = [NSUserDefaults standardUserDefaults];
-    
-    selCampus = [self.defaultPrefs objectForKey: DEFS_SELCAMPUSKEY];
-    
     // Initialize the database file (should be removed after .sqlite file is setup
 #if INIT_DB
-    selCampus = @"UMFK";
+    selCampus = @"USM";
     DBInitializer* dbIniter = [[DBInitializer alloc] init];
     dbIniter.managedObjectContext = self.managedObjectContext;
     [dbIniter initDatabaseWithCampus: selCampus];
@@ -198,7 +204,7 @@ static NSString* selCampus;
     NSLog(@"Using DB with filename: %@ first time (loaddefaultDB)", [NSString stringWithFormat: @"%@.sqlite",  [iUMaineAppDelegate getSelCampus]]);
     NSString* dbPath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent: dbFileName];
     
-    success = [fm fileExistsAtPath:dbPath];
+    success = [fm fileExistsAtPath: dbPath];
     
     // If the database exists then just return
     if(success){
@@ -297,11 +303,10 @@ static NSString* selCampus;
     
     // Set the selected campus in the user defaults
     [self.defaultPrefs setObject:  [iUMaineAppDelegate getSelCampus] forKey: DEFS_SELCAMPUSKEY];
+    [self.defaultPrefs synchronize];
     
     // Now that we know which DB file to use we can check for sports and course updates
     [self checkServer];
-    
-    
 }
 
 - (void) checkServer
@@ -493,6 +498,10 @@ static NSString* selCampus;
 {
     self.gettingSports = NO;
     
+    // Readjust the map view so the map isn't shrunk for the progress bar
+    [self.mvcInst growMapView];
+    
+    // Load the new sports into the sports view and display them
     [self.spvcInst displayEvents];
     [self.spvcInst hideLoadingView];
 }
@@ -507,7 +516,6 @@ static NSString* selCampus;
         [backgroundMOC2 setPersistentStoreCoordinator: appDel.persistentStoreCoordinator];
         
         NSArray* localSemesters = [self getLocalSemestersWithMOC: backgroundMOC2];
-        NSMutableArray* newSemesters = [[NSMutableArray alloc] init];
         
         NSURLResponse* resp = nil;
         NSError* err = nil;

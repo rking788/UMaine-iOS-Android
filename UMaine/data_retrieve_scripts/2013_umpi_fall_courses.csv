@@ -1,0 +1,125 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+ANT;100;"Introduction to Anthropology";0002;LEC;24513;TuTh 9:30AM - 10:45AM;Folsom Hall 105;David E Putnam;09/03/2013 - 12/19/2013
+ANT;110;"World Religions";0001;LEC;24132;TBA;ONLINE;Patricia Lynn Eldershaw;09/03/2013 - 12/19/2013
+ANT;200;"Archaeology";0001;LEC;24130;We 1:00PM - 3:45PM;Houlton Center;David E Putnam;09/03/2013 - 12/19/2013
+ART;101;"Basic Design";0002;STU;30701;TuTh 3:30PM - 5:30PM;Pullen Hall 311;Hyrum Benson;09/03/2013 - 12/19/2013
+ART;107;"Experience of the Arts";0004;LEC;24023;TBA;ONLINE;Heather Sincavage;09/03/2013 - 12/19/2013
+ART;108;"Introduction to Graphic Design";0001;STU;28962;TuTh 9:30AM - 11:20AM;Folsom Hall 101B;Hyrum Benson;09/03/2013 - 12/19/2013
+ART;116;"Introduction to Film";0002;LEC;27566;We 6:30PM - 9:15PM;Pullen Hall 210;Richard Lee Zuras;09/03/2013 - 12/19/2013
+ART;211;"Art History I";0001;LEC;24028;TBA;ONLINE;Elizabeth Flaherty;09/03/2013 - 12/19/2013
+ART;242;"Ceramics I";0001;STU;24030;MoWe 2:00PM - 3:50PM;Wieden Hall STUDI;Hyrum Benson;09/03/2013 - 12/19/2013
+ART;261;"Painting I";0002;STU;28963;Tu 1:00PM - 5:00PM;Houlton Center;Cheryl Ann Kittredge;09/03/2013 - 12/19/2013
+ART;281;"Foundation for Art Education";0001;LEC;24033;TBA;UMPI Arranged Space;Heather L Nunez;09/03/2013 - 12/19/2013
+ART;342;"Ceramics II";0001;STU;24039;We 6:00PM - 9:30PM;Wieden Hall STUDI;Hyrum Benson;09/03/2013 - 12/19/2013
+ART;351;"Photography II";0001;STU;24032;Mo 6:00PM - 9:40PM;Pullen Hall 311;Hume Anderson Giles;09/03/2013 - 12/19/2013
+ART;361;"Painting II";0001;STU;24040;MoWe 9:00AM - 10:50AM;Pullen Hall 311;Hume Anderson Giles;09/03/2013 - 12/19/2013
+ART;386;"Special Topics in Art";7W01;LEC;28964;Fr 8:00AM - 11:50AM;Pullen Hall 311;Heather Sincavage;10/25/2013 - 12/06/2013
+ART;397;"Independent Study";0002;IND;30749;TBA;UMPI Arranged Space;Hume Anderson Giles;09/03/2013 - 12/19/2013
+ART;403;"Film Seminar";0001;LEC;24094;Mo 6:30PM - 9:15PM;Pullen Hall 210;Richard Lee Zuras;09/03/2013 - 12/19/2013
+ART;413;"Renaissance Art History";0001;LEC;29641;TBA;ONLINE;Elizabeth Flaherty;09/03/2013 - 12/19/2013
+ART;499;"Senior Art Project";0001;STU;24096;Fr 12:00PM - 3:00PM;Pullen Hall 311;Hume Anderson Giles;09/03/2013 - 12/19/2013
+BIO;105;"Biology for Everyday Life";0001;LEC;29825;TBA;ONLINE;Krista M Delahunty;09/03/2013 - 12/19/2013
+BIO;112;"General Biology I";LCLB;LAB;24526;Mo 2:00PM - 4:45PM;Folsom Hall 304;Jason Clarence Johnston;09/03/2013 - 12/19/2013
+BIO;260;"Principles of Human Anatomy &amp; Physiology";0002;LAB;24575;Mo 2:00PM - 4:45PM;Folsom Hall 301;Scott Dobrin;09/03/2013 - 12/19/2013
+BIO;261;"Human Anatomy and Physiology I";0005;LAB;24584;Tu 2:00PM - 4:00PM;Folsom Hall 301;Rachael Hannah;09/03/2013 - 12/19/2013
+BIO;350;"Genetics";0001;LEC;24606;TuTh 9:30AM - 12:15PM;Folsom Hall 203;Judith Ladd Roe;09/03/2013 - 12/19/2013
+CHY;111;"General Chemistry I";0005;LAB;24619;Tu 9:30AM - 12:15PM;Folsom Hall 202;Staff;09/03/2013 - 12/19/2013
+CHY;221;"Organic Chemistry I";003;LAB;30785;Th 2:00PM - 4:45PM;Folsom Hall 202;Michael A Knopp;09/03/2013 - 12/19/2013
+ECO;100;"Contemporary Economics";0002;LEC;27851;MoWe 2:00PM - 3:15PM;Houlton Center;Robert L Murray;09/03/2013 - 12/19/2013
+ECO;207;"Macro &amp; Micro Economics";0001;LEC;27888;TuTh 3:30PM - 4:45PM;Folsom Hall 206;Robert L Murray;09/03/2013 - 12/19/2013
+EDU;150;"Exploring Edu in Contemp Amer";0002;LEC;30628;TuTh 11:00AM - 12:15PM;Pullen Hall 113;Tomasz Z Herzog;09/03/2013 - 12/19/2013
+EDU;200;"Learner &amp; Learning Process";0002;LEC;30630;TBA;ONLINE;Zhijun Wu;09/03/2013 - 12/19/2013
+EDU;232;"Language Development in Exceptional Learners";0001;LEC;27742;Th 6:00PM - 8:45PM;Normal 104A;Polly J Earl;09/03/2013 - 12/19/2013
+EDU;261;"Educational Technology in the Classroom";0001;LEC;27245;TuTh 2:00PM - 3:15PM;Folsom Hall 101A;Terry J Chalou;09/03/2013 - 12/19/2013
+EDU;311;"Assessments of the Young Child";7W01;LEC;30659;TBA;ONLINE;Wendy L Ross;10/21/2013 - 12/06/2013
+EDU;322;"Instructional Strategies in Special Education";0001;LEC;27322;MoWe 2:00PM - 3:15PM;Normal 104A;William A Breton;09/03/2013 - 12/19/2013
+EDU;341;"Infant Toddler Development";6W01;LEC;30658;TBA;ONLINE;Wendy L Ross;09/03/2013 - 10/11/2013
+EDU;351;"Teaching Elementary Reading";0003;LEC;30636;MoWe 8:00AM - 9:15AM;Normal 104A;Barbara Smith Chalou;09/03/2013 - 12/19/2013
+EDU;352;"Collaboration &amp; Consultation in General and Special Education";0001;LEC;27251;MoWe 11:00AM - 12:15PM;Normal 104A;William A Breton;09/03/2013 - 12/19/2013
+EDU;354;"Early Childhood Literacy";0001;LEC;30660;MoWe 2:00PM - 3:15PM;Normal 106;Wendy L Ross;09/03/2013 - 12/19/2013
+EDU;357;"Children's Literature";0001;LEC;26795;TuTh 9:30AM - 10:45AM;Normal 106;Barbara Smith Chalou;09/03/2013 - 12/19/2013
+EDU;359;"Teaching of French (K";001;LEC;24117;TBA;ONLINE;Claire Davidshofer;09/03/2013 - 12/19/2013
+EDU;366;"Teach Math in Elem School";0001;LEC;27248;TBA;ONLINE;Zhijun Wu;09/03/2013 - 12/19/2013
+EDU;371;"Teach Social Studies in Elemen";0001;LEC;27246;TuTh 3:30PM - 4:45PM;Folsom Hall 303;Tomasz Z Herzog;09/03/2013 - 12/19/2013
+EDU;387;"Teaching Students with Special Needs in Inclusive Classrooms";0002;LEC;30629;MoWe 3:30PM - 4:45PM;Normal 104A;William A Breton;09/03/2013 - 12/19/2013
+EDU;393;"Writing Theory and Practice";0001;LEC;29108;TuTh 9:30AM - 10:45AM;Pullen Hall 214;Deborah L Hodgkins;09/03/2013 - 12/19/2013
+EDU;395;"Internship in Teacher Educatio";0002;LEC;29739;TBA;UMPI Arranged Space;Barbara Smith Chalou;09/03/2013 - 12/19/2013
+EDU;495;"Student Teaching";0001;FEX;27282;TBA;UMPI Arranged Space;V John Stewart;09/03/2013 - 12/19/2013
+ENG;100;"Introduction to College Reading and Writing";LC03;LEC;28954;TuTh 8:00AM - 9:15AM;Normal 104B;Jacquelyn Lowman;09/03/2013 - 12/19/2013;Th 9:30AM - 10:20AM;Normal 104B;Jacquelyn Lowman;09/03/2013 - 12/19/2013
+ENG;101;"College Composition";LC04;LEC;28959;TuTh 11:00AM - 12:15PM;Pullen Hall 214;Deborah L Hodgkins;09/03/2013 - 12/19/2013
+ENG;116;"Introduction to Film";0002;LEC;27568;We 6:30PM - 9:15PM;Pullen Hall 210;Richard Lee Zuras;09/03/2013 - 12/19/2013
+ENG;121;"College Composition II";0006;LEC;24067;TuTh 9:30AM - 10:45AM;Folsom Hall 303;Anthony D Scott;09/03/2013 - 12/19/2013
+ENG;151;"Introduction to Literature";0003;LEC;24072;TuTh 2:00PM - 3:15PM;Pullen Hall 216;Richard Lee Zuras;09/03/2013 - 12/19/2013
+ENG;211;"Introduction to Creative Writing";LC05;LEC;29747;TuTh 2:00PM - 3:15PM;Pullen Hall 210;Anthony D Scott;09/03/2013 - 12/19/2013
+ENG;240;"Med &amp; Early Mod Literature";0010;LEC;28973;Mo 1:00PM - 3:45PM;Houlton HS;Lea Knudsen Allen;09/03/2013 - 12/19/2013
+ENG;300;"Major Authors";0001;LEC;28937;TBA;ONLINE;Raymond J Rice;09/03/2013 - 12/19/2013
+ENG;309;"Studies in the Novel";0001;LEC;24079;TBA;ONLINE;Melissa M Crowe;09/03/2013 - 12/19/2013
+ENG;311;"Poetry Workshop";0001;LEC;24081;MoWe 3:30PM - 4:45PM;Pullen Hall 216;Richard Lee Zuras;09/03/2013 - 12/19/2013
+ENG;367;"Studies in Shakespeare";0001;LEC;24082;TBA;ONLINE;Lea Knudsen Allen;09/03/2013 - 12/19/2013
+ENG;393;"Writing Theory and Practice";0001;LEC;24084;TuTh 9:30AM - 10:45AM;Pullen Hall 214;Deborah L Hodgkins;09/03/2013 - 12/19/2013
+ENG;403;"Film Seminar";0001;LEC;28965;Mo 6:30PM - 9:15PM;Pullen Hall 210;Richard Lee Zuras;09/03/2013 - 12/19/2013
+FRE;101;"Elementary French I";0003;LEC;24121;TuTh 11:00AM - 12:15PM;Pullen Hall 212;Jean-Paul Laforge;09/03/2013 - 12/19/2013
+FRE;201;"Intermediate French I";0001;LEC;24122;TBA;ONLINE;Claire Davidshofer;09/03/2013 - 12/19/2013
+FRE;412;"Topics in French &amp; Francophone Civilization &amp; Culture";0001;LEC;24124;TBA;ONLINE;Claire Davidshofer;09/03/2013 - 12/19/2013
+FYS;100;"First Year Seminar";LC03;SEM;28953;Tu 9:30AM - 10:20AM;Normal 104B;Jacquelyn Lowman;09/03/2013 - 12/19/2013
+GEO;100;"World Geography";0001;LEC;24133;TBA;ONLINE;Kimberly R Sebold;09/03/2013 - 12/19/2013
+HTY;115;"World Civilization I";LC04;LEC;28961;MoWeFr 10:00AM - 10:50AM;Normal 104B;John Defelice;09/03/2013 - 12/19/2013
+HTY;161;"United States History I";0005;LEC;29742;TBA;ONLINE;Kimberly R Sebold;09/03/2013 - 12/19/2013
+HTY;162;"United States History II";0001;LEC;29743;TBA;ONLINE;Kimberly R Sebold;09/03/2013 - 12/19/2013
+HTY;315;"Greece";0002;LEC;29067;TBA;Houlton Center;John Defelice;09/03/2013 - 12/19/2013
+HTY;318;"Modern European History";0001;LEC;24201;TBA;ONLINE;Kimberly R Sebold;09/03/2013 - 12/19/2013
+HTY;347;"Russia:Kiev to Peter the Great";0001;LEC;27637;TBA;ONLINE;John Defelice;09/03/2013 - 12/19/2013
+HTY;368;"Acadian and French Canadian Folklore";0001;LEC;24203;TBA;ONLINE;J Donald Cyr;09/03/2013 - 12/19/2013
+HTY;375;"History of Maine";0011;LEC;29888;Tu 7:00PM - 9:45PM;Penquis Higher Ed Ctr;J Donald Cyr;09/03/2013 - 12/19/2013
+MAT;;"17";LC02;LEC;28952;MoWeFr 9:00AM - 9:50AM;Pullen Hall 216;Terry J Chalou;09/03/2013 - 12/19/2013
+MAT;101;"Basic Statistics";0004;LEC;24665;MoWe 2:00PM - 3:15PM;Folsom Hall 206;Malcolm A Coulter;09/03/2013 - 12/19/2013
+MAT;111;"Principles of Math I";0001;LEC;24677;MoWe 2:00PM - 3:15PM;Pullen Hall 210;Terry J Chalou;09/03/2013 - 12/19/2013
+MAT;112;"Principles of Math II";0001;LEC;24655;TBA;ONLINE;Natalija Alexandria Brewer;09/03/2013 - 12/19/2013
+MAT;117;"College Algebra";LC05;LEC;29746;TuTh 11:00AM - 12:15PM;Pullen Hall 210;Terry J Chalou;09/03/2013 - 12/19/2013
+MAT;121;"Pre";0001;LEC;24678;MoWeFr 10:00AM - 10:50AM;Folsom Hall 204;Zhu-Qi Lu;09/03/2013 - 12/19/2013
+MAT;132;"Calculus II";0001;LEC;24679;TuTh 11:00AM - 12:15PM;Folsom Hall 204;Zhu-Qi Lu;09/03/2013 - 12/19/2013
+MAT;140;"Mathematics for Business";0001;LEC;24671;TuTh 9:30AM - 10:45AM;Folsom Hall 204;Malcolm A Coulter;09/03/2013 - 12/19/2013
+MAT;201;"Probability &amp; Statistics I";0001;LEC;24681;MoWeFr 11:00AM - 11:50AM;Folsom Hall 204;Zhu-Qi Lu;09/03/2013 - 12/19/2013
+MAT;251;"Foundations of Mathematics";0001;LEC;24682;TuTh 9:30AM - 10:45AM;Folsom Hall 206;Zhu-Qi Lu;09/03/2013 - 12/19/2013
+MAT;335;"Topics in Analysis";0001;LEC;24676;MoWe 6:30PM - 7:45PM;Folsom Hall 206;Peng Peng Yu;09/03/2013 - 12/19/2013
+PHI;151;"Introduction to Philosophy";0002;LEC;24092;TuTh 9:30AM - 10:45AM;Pullen Hall 216;Guy R Gallagher;09/03/2013 - 12/19/2013
+PHI;152;"Introduction to Ethics";0001;LEC;24093;TBA;ONLINE;Melissa M Crowe;09/03/2013 - 12/19/2013
+PHY;153;"General Physics I";0002;LAB;24688;Tu 2:00PM - 4:45PM;Folsom Hall 201;Peng Peng Yu;09/03/2013 - 12/19/2013
+POS;101;"American Government";0002;LEC;24208;TBA;ONLINE;Brent S Anderson;09/03/2013 - 12/19/2013
+POS;231;"Constitutional Law";0001;LEC;24211;TBA;ONLINE;Brent S Anderson;09/03/2013 - 12/19/2013
+POS;347;"Russia:Kiev to Peter the Great";0001;LEC;27638;TBA;ONLINE;John Defelice;09/03/2013 - 12/19/2013
+PSY;100;"General Psychology";LC05;LEC;29745;TuTh 9:30AM - 10:45AM;Pullen Hall 210;Paul E Johnson;09/03/2013 - 12/19/2013
+PSY;200;"Social Psychology";0002;LEC;27904;Tu 6:00PM - 8:45PM;Pullen Hall 216;Richard Ayre;09/03/2013 - 12/19/2013
+PSY;205;"Lifespan Development";0001;LEC;24224;TBA;ONLINE;Melissa J Ivey;09/03/2013 - 12/19/2013
+PSY;235;"Abnormal Psychology";001;LEC;24225;TuTh 9:30AM - 10:45AM;Pullen Hall 213;Franklin V Thompson;09/03/2013 - 12/19/2013
+PSY;304;"Psychology of Learning";0002;LEC;29068;MoWe 3:30PM - 4:45PM;Houlton Center;Paul E Johnson;09/03/2013 - 12/19/2013
+PSY;311;"Research Methods I";0001;LEC;27910;TBA;ONLINE;Paul E Johnson;09/03/2013 - 12/19/2013
+PSY;312;"Research Methods II";0002;LEC;29070;MoWe 12:30PM - 1:45PM;Houlton Center;Allen L Salo;09/03/2013 - 12/19/2013
+PSY;355;"Group Process";0001;LEC;24226;TuTh 2:00PM - 3:15PM;Pullen Hall 213;Franklin V Thompson;09/03/2013 - 12/19/2013
+PSY;370;"Personality";0001;LEC;24227;TuTh 11:00AM - 12:15PM;Pullen Hall 213;Franklin V Thompson;09/03/2013 - 12/19/2013
+PSY;374;"Vocational Aspects of Disability";0011;LEC;29083;Th 1:00PM - 3:45PM;Rumford-Mexico Center;Melissa J Ivey;09/03/2013 - 12/19/2013
+PSY;446;"Psychobiology";0001;LEC;30748;TBA;UMPI Arranged Space;Allen L Salo;09/03/2013 - 12/19/2013
+PSY;448;"Cognitive Psychology";0001;LEC;24228;TBA;ONLINE;Allen L Salo;09/03/2013 - 12/19/2013
+PSY;480;"Advanced Research";0002;LEC;24230;TBA;UMPI Arranged Space;Paul E Johnson;09/03/2013 - 12/19/2013
+PSY;496;"Field Experience";0001;FEX;24231;TBA;UMPI Arranged Space;Allen L Salo;09/03/2013 - 12/19/2013
+SED;212;"Special Education Law";0001;LEC;27323;Tu 2:00PM - 4:45PM;UMPI Arranged Space;William A Breton;09/03/2013 - 12/19/2013
+SED;232;"Language Development in Exceptional Learners";0001;LEC;27743;Th 6:00PM - 8:45PM;Normal 104A;Polly J Earl;09/03/2013 - 12/19/2013
+SED;322;"Instructional Strategies in Special Education";0001;LEC;27324;MoWe 2:00PM - 3:15PM;Normal 104A;William A Breton;09/03/2013 - 12/19/2013
+SED;352;"Collaboration &amp; Consultation in General and Special Education";0001;LEC;27252;MoWe 11:00AM - 12:15PM;Normal 104A;William A Breton;09/03/2013 - 12/19/2013
+SOC;100;"Introduction to Sociology";0004;LEC;29667;Mo 10:00AM - 12:45PM;Houlton Center;Frank R Hayes;09/03/2013 - 12/19/2013
+SOC;200;"Social Psychology";0002;LEC;27905;Tu 6:00PM - 8:45PM;Pullen Hall 216;Richard Ayre;09/03/2013 - 12/19/2013
+SOC;230;"Criminology";0001;LEC;27926;TuTh 9:30AM - 10:45AM;Pullen Hall 215;Lisa R Leduc;09/03/2013 - 12/19/2013
+SOC;311;"Research Methods I";0001;LEC;27911;TBA;ONLINE;Paul E Johnson;09/03/2013 - 12/19/2013
+SOC;372;"Police &amp; Policing";0001;LEC;27931;We 6:00PM - 8:45PM;Folsom Hall 105;Reed E Nonken;09/03/2013 - 12/19/2013
+SOC;430;"Theoretical Criminology";0001;LEC;27927;TuTh 8:00AM - 9:15AM;Pullen Hall 212;Lisa R Leduc;09/03/2013 - 12/19/2013
+SOC;496;"Field Experience";0001;FEX;30193;TBA;UMPI Arranged Space;Lisa R Leduc;09/03/2013 - 12/19/2013
+SPA;101;"Elementary Spanish I";0005;LEC;29094;TBA;ONLINE;Carmen Doheny;09/03/2013 - 12/19/2013
+SPA;102;"Elementary Spanish II";0002;LEC;24127;TBA;ONLINE;Carmen Doheny;09/03/2013 - 12/19/2013
+SWK;200;"Intro to Social Work and Welfare";0001;LEC;27919;TuTh 3:30PM - 4:45PM;Normal 104A;Kim-Anne Perkins;09/03/2013 - 12/19/2013
+SWK;207;"Community Mental Health Care";0001;LEC;30423;Fr 8:00AM - 10:45AM;Normal 106;Michelle Reinecke;09/03/2013 - 12/19/2013
+SWK;285;"Human Behavior in the Social Environment I";0001;LEC;27916;MoWe 11:00AM - 12:15PM;Folsom Hall 205;Kim-Anne Perkins;09/03/2013 - 12/19/2013
+SWK;300;"Social Welfare Policy &amp; Issues";0001;LEC;27918;TuTh 2:00PM - 3:15PM;Pullen Hall 111;Kim-Anne Perkins;09/03/2013 - 12/19/2013
+SWK;309;"Case Management Practice";0001;LEC;27917;MoWe 2:00PM - 3:15PM;Folsom Hall 303;Kim-Anne Perkins;09/03/2013 - 12/19/2013
+SWK;396A;"Junior Field I";0001;FEX;27939;MoWe 9:00AM - 9:50AM;Pullen Hall 113;Jean H Cashman;09/03/2013 - 12/19/2013
+SWK;400;"Social Work Practice II";0001;LEC;27915;TuTh 8:00AM - 9:15AM;Normal 106;Jean H Cashman;09/03/2013 - 12/19/2013
+SWK;496A;"Senior Field I";0002;FEX;27941;Th 9:30AM - 12:15PM;UMPI Arranged Space;Jean H Cashman;09/03/2013 - 12/19/2013

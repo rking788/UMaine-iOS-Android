@@ -19,7 +19,10 @@
 		0F0C251414E379F8009F6388 /* UMA.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251314E379F8009F6388 /* UMA.sqlite */; };
 		0F0C251614E37C1F009F6388 /* UMPI.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251514E37C1F009F6388 /* UMPI.sqlite */; };
 		0F0C251814E381DF009F6388 /* UMFK.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251714E381DF009F6388 /* UMFK.sqlite */; };
+		0F19422714E576B600DC57EE /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B955147D6A96008F6AA4 /* UMaine_57.png */; };
+		0F19422814E576BB00DC57EE /* UMaine_114.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2113660EBC00D2F3B4 /* UMaine_114.png */; };
 		0F2CF80814BBD65500879C9F /* UMOSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2CF80714BBD65500879C9F /* UMOSpecifics.plist */; };
+		0F576DA01605428C002FF17A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F576D9F1605428C002FF17A /* Default-568h@2x.png */; };
 		0F6A734A14C34E9C00F94C82 /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A734914C34E9C00F94C82 /* UMO.sqlite */; };
 		0F6A735014C3C03B00F94C82 /* general_marker_UMA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A734F14C3C03B00F94C82 /* general_marker_UMA.png */; };
 		0F6A735214C3C26200F94C82 /* firstyear_marker_UMF.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A735114C3C26200F94C82 /* firstyear_marker_UMF.png */; };
@@ -227,6 +230,14 @@
 		0FD6288214E4C7CB00316840 /* Yale.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD627C914E4C7CB00316840 /* Yale.png */; };
 		0FD73DED14C9CCBD00508F26 /* UMF.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */; };
 		0FD73DEE14C9CCBD00508F26 /* UMM.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */; };
+		0FDE935C154CAFC900385998 /* bear-paw-r.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9359154CAFC800385998 /* bear-paw-r.png */; };
+		0FDE935D154CAFC900385998 /* bear-paw.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE935A154CAFC800385998 /* bear-paw.png */; };
+		0FDE935E154CAFC900385998 /* bear-paw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE935B154CAFC900385998 /* bear-paw@2x.png */; };
+		0FDE9361154CC75800385998 /* USM.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9360154CC75800385998 /* USM.sqlite */; };
+		0FDE9364154CE29C00385998 /* resident_marker_USM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9362154CE29C00385998 /* resident_marker_USM.png */; };
+		0FDE9365154CE29C00385998 /* visitor_marker_USM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9363154CE29C00385998 /* visitor_marker_USM.png */; };
+		0FDE9368154CE3EF00385998 /* employee_marker_USM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9366154CE3EF00385998 /* employee_marker_USM.png */; };
+		0FDE9369154CE3EF00385998 /* meters_marker_USM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9367154CE3EF00385998 /* meters_marker_USM.png */; };
 		0FDFEAF814BD3A0500E24A52 /* UMMSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FDFEAF714BD3A0500E24A52 /* UMMSpecifics.plist */; };
 		0FDFEAFD14BD423A00E24A52 /* USMSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FDFEAFC14BD423A00E24A52 /* USMSpecifics.plist */; };
 		960B929C146F2FCF0057C22E /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B929A146F2FCF0057C22E /* CourseDetailViewController.m */; };
@@ -265,9 +276,8 @@
 		964AFFEC147CA25800061CDE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 964AFFEB147CA25800061CDE /* Default.png */; };
 		964AFFEE147CA26400061CDE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 964AFFED147CA26300061CDE /* Default@2x.png */; };
 		965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */; };
-		96625C601491CDD800A461E3 /* availableCampuses_TENTATIVE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */; };
-		9662B956147D6A96008F6AA4 /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B955147D6A96008F6AA4 /* UMaine_57.png */; };
 		9662B958147D6A9E008F6AA4 /* UMaine_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B957147D6A9E008F6AA4 /* UMaine_114.png */; };
+		9670A7411779E6B8008BD080 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670A7401779E6B8008BD080 /* Crashlytics.framework */; };
 		967E8CB51467109000D9EA24 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB41467109000D9EA24 /* Schedule.m */; };
 		967E8CB81467109F00D9EA24 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB71467109F00D9EA24 /* Course.m */; };
 		967EE34514704B0100F0A9BB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 967EE34414704B0100F0A9BB /* Location.m */; };
@@ -342,13 +352,12 @@
 		AECF0B3813660EBC00D2F3B4 /* man_48.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B1E13660EBC00D2F3B4 /* man_48.png */; };
 		AECF0B3913660EBC00D2F3B4 /* man_64.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B1F13660EBC00D2F3B4 /* man_64.png */; };
 		AECF0B3A13660EBC00D2F3B4 /* notes_32.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2013660EBC00D2F3B4 /* notes_32.png */; };
-		AECF0B3B13660EBC00D2F3B4 /* UMaine_114.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2113660EBC00D2F3B4 /* UMaine_114.png */; };
 		AECF0B3C13660EBC00D2F3B4 /* UMaine_512.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2213660EBC00D2F3B4 /* UMaine_512.png */; };
 		AECF0B3D13660EBC00D2F3B4 /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2313660EBC00D2F3B4 /* UMaine_57.png */; };
 		AECF0B3E13660EBC00D2F3B4 /* UMaine_701_701.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2413660EBC00D2F3B4 /* UMaine_701_701.png */; };
 		AECF0B3F13660EBC00D2F3B4 /* UMaine_701_701.tif in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2513660EBC00D2F3B4 /* UMaine_701_701.tif */; };
 		AECF0B4013660EBC00D2F3B4 /* UMaine_750_750_centered.tif in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2613660EBC00D2F3B4 /* UMaine_750_750_centered.tif */; };
-		AEEA62A613679F2D00E3A470 /* BuildingSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA62A413679F2D00E3A470 /* BuildingSelectView.m */; };
+		AEEA62A613679F2D00E3A470 /* BuildingSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEA62A413679F2D00E3A470 /* BuildingSelectViewController.m */; };
 		AEEA62A713679F2D00E3A470 /* BuildingSelectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */; };
 /* End PBXBuildFile section */
 
@@ -366,6 +375,7 @@
 		0F0C251514E37C1F009F6388 /* UMPI.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMPI.sqlite; sourceTree = "<group>"; };
 		0F0C251714E381DF009F6388 /* UMFK.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMFK.sqlite; sourceTree = "<group>"; };
 		0F2CF80714BBD65500879C9F /* UMOSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMOSpecifics.plist; sourceTree = "<group>"; };
+		0F576D9F1605428C002FF17A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0F6A734914C34E9C00F94C82 /* UMO.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMO.sqlite; sourceTree = "<group>"; };
 		0F6A734F14C3C03B00F94C82 /* general_marker_UMA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general_marker_UMA.png; sourceTree = "<group>"; };
 		0F6A735114C3C26200F94C82 /* firstyear_marker_UMF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstyear_marker_UMF.png; sourceTree = "<group>"; };
@@ -575,6 +585,14 @@
 		0FD627C914E4C7CB00316840 /* Yale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yale.png; sourceTree = "<group>"; };
 		0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMF.sqlite; sourceTree = "<group>"; };
 		0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMM.sqlite; sourceTree = "<group>"; };
+		0FDE9359154CAFC800385998 /* bear-paw-r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bear-paw-r.png"; sourceTree = "<group>"; };
+		0FDE935A154CAFC800385998 /* bear-paw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bear-paw.png"; sourceTree = "<group>"; };
+		0FDE935B154CAFC900385998 /* bear-paw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bear-paw@2x.png"; sourceTree = "<group>"; };
+		0FDE9360154CC75800385998 /* USM.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = USM.sqlite; sourceTree = "<group>"; };
+		0FDE9362154CE29C00385998 /* resident_marker_USM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resident_marker_USM.png; sourceTree = "<group>"; };
+		0FDE9363154CE29C00385998 /* visitor_marker_USM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visitor_marker_USM.png; sourceTree = "<group>"; };
+		0FDE9366154CE3EF00385998 /* employee_marker_USM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = employee_marker_USM.png; sourceTree = "<group>"; };
+		0FDE9367154CE3EF00385998 /* meters_marker_USM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meters_marker_USM.png; sourceTree = "<group>"; };
 		0FDFEAF714BD3A0500E24A52 /* UMMSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMMSpecifics.plist; sourceTree = "<group>"; };
 		0FDFEAFC14BD423A00E24A52 /* USMSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USMSpecifics.plist; sourceTree = "<group>"; };
 		960B9299146F2FCF0057C22E /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailViewController.h; sourceTree = "<group>"; };
@@ -614,12 +632,12 @@
 		964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSectionHeader.h; sourceTree = "<group>"; };
 		964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSectionHeader.m; sourceTree = "<group>"; };
 		964A2B401433E4CB00F53F8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		964AFFEB147CA25800061CDE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		964AFFED147CA26300061CDE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		964AFFEB147CA25800061CDE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		964AFFED147CA26300061CDE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseDetailSelectionView.xib; sourceTree = "<group>"; };
-		96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = availableCampuses_TENTATIVE.txt; sourceTree = "<group>"; };
-		9662B955147D6A96008F6AA4 /* UMaine_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UMaine_57.png; path = ../UMaine_57.png; sourceTree = "<group>"; };
-		9662B957147D6A9E008F6AA4 /* UMaine_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UMaine_114.png; path = ../UMaine_114.png; sourceTree = "<group>"; };
+		9662B955147D6A96008F6AA4 /* UMaine_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UMaine_57.png; sourceTree = "<group>"; };
+		9662B957147D6A9E008F6AA4 /* UMaine_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UMaine_114.png; sourceTree = "<group>"; };
+		9670A7401779E6B8008BD080 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		967E8CB31467109000D9EA24 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
 		967E8CB41467109000D9EA24 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		967E8CB61467109F00D9EA24 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
@@ -723,8 +741,8 @@
 		AECF0B2413660EBC00D2F3B4 /* UMaine_701_701.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UMaine_701_701.png; sourceTree = "<group>"; };
 		AECF0B2513660EBC00D2F3B4 /* UMaine_701_701.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = UMaine_701_701.tif; sourceTree = "<group>"; };
 		AECF0B2613660EBC00D2F3B4 /* UMaine_750_750_centered.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = UMaine_750_750_centered.tif; sourceTree = "<group>"; };
-		AEEA62A313679F2D00E3A470 /* BuildingSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingSelectView.h; sourceTree = "<group>"; };
-		AEEA62A413679F2D00E3A470 /* BuildingSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingSelectView.m; sourceTree = "<group>"; };
+		AEEA62A313679F2D00E3A470 /* BuildingSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingSelectViewController.h; sourceTree = "<group>"; };
+		AEEA62A413679F2D00E3A470 /* BuildingSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingSelectViewController.m; sourceTree = "<group>"; };
 		AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuildingSelectView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -742,6 +760,7 @@
 				AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */,
 				96D901D3149A8D81002D3058 /* iAd.framework in Frameworks */,
 				96FB509E13F788F70069836C /* libz.dylib in Frameworks */,
+				9670A7411779E6B8008BD080 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,8 +783,13 @@
 				0F0C250714E1E57A009F6388 /* faculty_marker_UMPI.png */,
 				0F0C250D14E1E644009F6388 /* student_marker_UMPI.png */,
 				0F0C250914E1E57A009F6388 /* visitor_marker_UMPI.png */,
+				0FDE9366154CE3EF00385998 /* employee_marker_USM.png */,
+				0FDE9367154CE3EF00385998 /* meters_marker_USM.png */,
+				0FDE9362154CE29C00385998 /* resident_marker_USM.png */,
+				0FDE9363154CE29C00385998 /* visitor_marker_USM.png */,
 			);
 			name = "Permit Images";
+			path = iUMaine;
 			sourceTree = "<group>";
 		};
 		0F2CF80914BBD66400879C9F /* Campus Specifics */ = {
@@ -971,7 +995,8 @@
 				0FD627C814E4C7CB00316840 /* Worcester St..png */,
 				0FD627C914E4C7CB00316840 /* Yale.png */,
 			);
-			path = TeamLogoImages;
+			name = TeamLogoImages;
+			path = iUMaine/TeamLogoImages;
 			sourceTree = "<group>";
 		};
 		9614911C14380A590010FFE1 /* Schedule Tab Images */ = {
@@ -1005,9 +1030,10 @@
 				9614910D1437FF7D0010FFE1 /* weekTabAct.png */,
 			);
 			name = "Schedule Tab Images";
+			path = iUMaine;
 			sourceTree = "<group>";
 		};
-		961EE1D41438FE5C00644449 /* Managed Object Classes */ = {
+		961EE1D41438FE5C00644449 /* Managed Objects */ = {
 			isa = PBXGroup;
 			children = (
 				96F2B46D146388820035832B /* AvailableCourses.h */,
@@ -1023,7 +1049,94 @@
 				967EE34314704B0100F0A9BB /* Location.h */,
 				967EE34414704B0100F0A9BB /* Location.m */,
 			);
-			name = "Managed Object Classes";
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		9670A742177A8CDE008BD080 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				964AFFEB147CA25800061CDE /* Default.png */,
+				964AFFED147CA26300061CDE /* Default@2x.png */,
+				0F576D9F1605428C002FF17A /* Default-568h@2x.png */,
+				9662B957147D6A9E008F6AA4 /* UMaine_114.png */,
+				9662B955147D6A96008F6AA4 /* UMaine_57.png */,
+				0FD6271014E4C7CB00316840 /* TeamLogoImages */,
+				0F07D9FA14C11D2F00A91282 /* Permit Images */,
+				9614911C14380A590010FFE1 /* Schedule Tab Images */,
+				AECF0B0C13660EBC00D2F3B4 /* icons */,
+			);
+			name = res;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9670A743177A8D41008BD080 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				961491021437E7EC0010FFE1 /* ScheduleTabView.h */,
+				961491031437E7EC0010FFE1 /* ScheduleTabView.m */,
+				AEB1718B135BF09700DF742A /* POIAnnotation.h */,
+				AEB17181135BEED200DF742A /* POIAnnotation.m */,
+				964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */,
+				964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */,
+				AE81583E135BD930008E9B84 /* MainWindow.xib */,
+				AE815847135BD930008E9B84 /* ScheduleView.xib */,
+				968D4F7C1491C62A007D248D /* CampusSelectionView.xib */,
+				960B929B146F2FCF0057C22E /* CourseDetailView.xib */,
+				9697EF3F143912F000EC190A /* AddCourseView.xib */,
+				965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */,
+				AE81584A135BD930008E9B84 /* SportsView.xib */,
+				96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */,
+				963DFC7B146B8293007E41D4 /* CustomScheduleCell.xib */,
+				AE815867135BE0D2008E9B84 /* MapView.xib */,
+				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
+				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
+				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
+				96950E42141D9D0E0059CFED /* EventRecapView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9670A744177A8D62008BD080 /* Default DBs */ = {
+			isa = PBXGroup;
+			children = (
+				0F0C251314E379F8009F6388 /* UMA.sqlite */,
+				0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */,
+				0F0C251714E381DF009F6388 /* UMFK.sqlite */,
+				0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */,
+				0F6A734914C34E9C00F94C82 /* UMO.sqlite */,
+				0F0C251514E37C1F009F6388 /* UMPI.sqlite */,
+				0FDE9360154CC75800385998 /* USM.sqlite */,
+			);
+			name = "Default DBs";
+			sourceTree = "<group>";
+		};
+		9670A745177A8DE1008BD080 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA62A313679F2D00E3A470 /* BuildingSelectViewController.h */,
+				AEEA62A413679F2D00E3A470 /* BuildingSelectViewController.m */,
+				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
+				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
+				968D4F7A1491C62A007D248D /* CampusSelectionViewController.h */,
+				968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */,
+				960B9299146F2FCF0057C22E /* CourseDetailViewController.h */,
+				960B929A146F2FCF0057C22E /* CourseDetailViewController.m */,
+				9697EF3D143912F000EC190A /* AddCourseViewController.h */,
+				9697EF3E143912F000EC190A /* AddCourseViewController.m */,
+				963DFC76146B8253007E41D4 /* CourseDetailSelectionViewController.h */,
+				963DFC77146B8253007E41D4 /* CourseDetailSelectionViewController.m */,
+				AE815877135BE491008E9B84 /* MapViewController.h */,
+				AE815878135BE497008E9B84 /* MapViewController.m */,
+				AE815844135BD930008E9B84 /* SportsViewController.h */,
+				AE815845135BD930008E9B84 /* SportsViewController.m */,
+				AE815873135BE484008E9B84 /* DirectoryViewController.h */,
+				AE815875135BE48C008E9B84 /* DirectoryViewController.m */,
+				96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */,
+				96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */,
+				96950E40141D9D0E0059CFED /* EventRecapViewController.h */,
+				96950E41141D9D0E0059CFED /* EventRecapViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		968D4F691491BCC1007D248D /* UMaine Directory Files */ = {
@@ -1075,7 +1188,6 @@
 		AE81581D135BD930008E9B84 = {
 			isa = PBXGroup;
 			children = (
-				AECF0B0C13660EBC00D2F3B4 /* icons */,
 				AE815832135BD930008E9B84 /* iUMaine */,
 				96FB509613F788500069836C /* TBXML */,
 				AE81582B135BD930008E9B84 /* Frameworks */,
@@ -1094,6 +1206,7 @@
 		AE81582B135BD930008E9B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9670A7401779E6B8008BD080 /* Crashlytics.framework */,
 				96D901D1149A8D5C002D3058 /* iAd.framework */,
 				964A2B401433E4CB00F53F8A /* QuartzCore.framework */,
 				96FB509D13F788F70069836C /* libz.dylib */,
@@ -1112,67 +1225,16 @@
 			children = (
 				AE74D6EB135FBBB4007D1E74 /* dbInitializer.h */,
 				AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */,
-				AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */,
-				AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */,
-				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
-				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
-				968D4F7A1491C62A007D248D /* CampusSelectionViewController.h */,
-				968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */,
-				961491021437E7EC0010FFE1 /* ScheduleTabView.h */,
-				961491031437E7EC0010FFE1 /* ScheduleTabView.m */,
-				960B9299146F2FCF0057C22E /* CourseDetailViewController.h */,
-				960B929A146F2FCF0057C22E /* CourseDetailViewController.m */,
-				9697EF3D143912F000EC190A /* AddCourseViewController.h */,
-				9697EF3E143912F000EC190A /* AddCourseViewController.m */,
-				963DFC76146B8253007E41D4 /* CourseDetailSelectionViewController.h */,
-				963DFC77146B8253007E41D4 /* CourseDetailSelectionViewController.m */,
-				AE815877135BE491008E9B84 /* MapViewController.h */,
-				AE815878135BE497008E9B84 /* MapViewController.m */,
-				AE815844135BD930008E9B84 /* SportsViewController.h */,
-				AE815845135BD930008E9B84 /* SportsViewController.m */,
-				AE815873135BE484008E9B84 /* DirectoryViewController.h */,
-				AE815875135BE48C008E9B84 /* DirectoryViewController.m */,
-				96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */,
-				96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */,
-				AEEA62A313679F2D00E3A470 /* BuildingSelectView.h */,
-				AEEA62A413679F2D00E3A470 /* BuildingSelectView.m */,
-				AEB1718B135BF09700DF742A /* POIAnnotation.h */,
-				AEB17181135BEED200DF742A /* POIAnnotation.m */,
-				96950E40141D9D0E0059CFED /* EventRecapViewController.h */,
-				96950E41141D9D0E0059CFED /* EventRecapViewController.m */,
-				964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */,
-				964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */,
-				AE81583E135BD930008E9B84 /* MainWindow.xib */,
-				AE815847135BD930008E9B84 /* ScheduleView.xib */,
-				968D4F7C1491C62A007D248D /* CampusSelectionView.xib */,
-				960B929B146F2FCF0057C22E /* CourseDetailView.xib */,
-				9697EF3F143912F000EC190A /* AddCourseView.xib */,
-				965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */,
-				AE81584A135BD930008E9B84 /* SportsView.xib */,
-				96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */,
-				963DFC7B146B8293007E41D4 /* CustomScheduleCell.xib */,
-				AE815867135BE0D2008E9B84 /* MapView.xib */,
-				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
-				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
-				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
-				96950E42141D9D0E0059CFED /* EventRecapView.xib */,
-				964AFFEB147CA25800061CDE /* Default.png */,
-				964AFFED147CA26300061CDE /* Default@2x.png */,
-				9662B957147D6A9E008F6AA4 /* UMaine_114.png */,
-				9662B955147D6A96008F6AA4 /* UMaine_57.png */,
-				0F0C251314E379F8009F6388 /* UMA.sqlite */,
-				0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */,
-				0F0C251714E381DF009F6388 /* UMFK.sqlite */,
-				0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */,
-				0F6A734914C34E9C00F94C82 /* UMO.sqlite */,
-				0F0C251514E37C1F009F6388 /* UMPI.sqlite */,
-				0FD6271014E4C7CB00316840 /* TeamLogoImages */,
-				0F07D9FA14C11D2F00A91282 /* Permit Images */,
-				961EE1D41438FE5C00644449 /* Managed Object Classes */,
-				9614911C14380A590010FFE1 /* Schedule Tab Images */,
-				AE815833135BD930008E9B84 /* Supporting Files */,
 				0F8670E014BBDF8600A583A7 /* CampusSpecifics.h */,
 				0F8670E114BBDF8600A583A7 /* CampusSpecifics.m */,
+				AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */,
+				AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */,
+				9670A745177A8DE1008BD080 /* Controllers */,
+				9670A743177A8D41008BD080 /* Views */,
+				961EE1D41438FE5C00644449 /* Managed Objects */,
+				9670A742177A8CDE008BD080 /* res */,
+				9670A744177A8D62008BD080 /* Default DBs */,
+				AE815833135BD930008E9B84 /* Supporting Files */,
 			);
 			path = iUMaine;
 			sourceTree = "<group>";
@@ -1185,7 +1247,6 @@
 				968D4F691491BCC1007D248D /* UMaine Directory Files */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				96C7092F14932900005479FB /* availableCampuses.txt */,
-				96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
 				AE815835135BD930008E9B84 /* InfoPlist.strings */,
@@ -1199,6 +1260,9 @@
 		AECF0B0C13660EBC00D2F3B4 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				0FDE9359154CAFC800385998 /* bear-paw-r.png */,
+				0FDE935A154CAFC800385998 /* bear-paw.png */,
+				0FDE935B154CAFC900385998 /* bear-paw@2x.png */,
 				AE8CC6C3136E3731000079E0 /* poiflag.png */,
 				AECF0B0D13660EBC00D2F3B4 /* bear-paw-r.gif */,
 				AECF0B0E13660EBC00D2F3B4 /* bear-paw-r_24.png */,
@@ -1241,6 +1305,7 @@
 				AE815824135BD930008E9B84 /* Sources */,
 				AE815825135BD930008E9B84 /* Frameworks */,
 				AE815826135BD930008E9B84 /* Resources */,
+				9670A73F1779E647008BD080 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1257,7 +1322,7 @@
 		AE81581F135BD930008E9B84 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = AE815822135BD930008E9B84 /* Build configuration list for PBXProject "iUMaine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1308,7 +1373,6 @@
 				AECF0B3813660EBC00D2F3B4 /* man_48.png in Resources */,
 				AECF0B3913660EBC00D2F3B4 /* man_64.png in Resources */,
 				AECF0B3A13660EBC00D2F3B4 /* notes_32.png in Resources */,
-				AECF0B3B13660EBC00D2F3B4 /* UMaine_114.png in Resources */,
 				AECF0B3C13660EBC00D2F3B4 /* UMaine_512.png in Resources */,
 				AECF0B3D13660EBC00D2F3B4 /* UMaine_57.png in Resources */,
 				AECF0B3E13660EBC00D2F3B4 /* UMaine_701_701.png in Resources */,
@@ -1355,10 +1419,8 @@
 				96B308521470D3B3008C95DD /* commuter_marker_UMO.png in Resources */,
 				964AFFEC147CA25800061CDE /* Default.png in Resources */,
 				964AFFEE147CA26400061CDE /* Default@2x.png in Resources */,
-				9662B956147D6A96008F6AA4 /* UMaine_57.png in Resources */,
 				9662B958147D6A9E008F6AA4 /* UMaine_114.png in Resources */,
 				968D4F7E1491C62A007D248D /* CampusSelectionView.xib in Resources */,
-				96625C601491CDD800A461E3 /* availableCampuses_TENTATIVE.txt in Resources */,
 				96C7092E1493274E005479FB /* buildings_UMO.csv in Resources */,
 				96C7093014932900005479FB /* availableCampuses.txt in Resources */,
 				96D901BF149A760A002D3058 /* directory_UMA.csv in Resources */,
@@ -1589,10 +1651,37 @@
 				0FD6288014E4C7CB00316840 /* Winthrop.png in Resources */,
 				0FD6288114E4C7CB00316840 /* Worcester St..png in Resources */,
 				0FD6288214E4C7CB00316840 /* Yale.png in Resources */,
+				0F19422714E576B600DC57EE /* UMaine_57.png in Resources */,
+				0F19422814E576BB00DC57EE /* UMaine_114.png in Resources */,
+				0FDE935C154CAFC900385998 /* bear-paw-r.png in Resources */,
+				0FDE935D154CAFC900385998 /* bear-paw.png in Resources */,
+				0FDE935E154CAFC900385998 /* bear-paw@2x.png in Resources */,
+				0FDE9361154CC75800385998 /* USM.sqlite in Resources */,
+				0FDE9364154CE29C00385998 /* resident_marker_USM.png in Resources */,
+				0FDE9365154CE29C00385998 /* visitor_marker_USM.png in Resources */,
+				0FDE9368154CE3EF00385998 /* employee_marker_USM.png in Resources */,
+				0FDE9369154CE3EF00385998 /* meters_marker_USM.png in Resources */,
+				0F576DA01605428C002FF17A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9670A73F1779E647008BD080 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 24cfbdb25b3fc903efc0e555e1983a86ce707993";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE815824135BD930008E9B84 /* Sources */ = {
@@ -1608,7 +1697,7 @@
 				AE815879135BE497008E9B84 /* MapViewController.m in Sources */,
 				AEB17182135BEED200DF742A /* POIAnnotation.m in Sources */,
 				AE81C792135D0ED300E2F80F /* iumaine.xcdatamodeld in Sources */,
-				AEEA62A613679F2D00E3A470 /* BuildingSelectView.m in Sources */,
+				AEEA62A613679F2D00E3A470 /* BuildingSelectViewController.m in Sources */,
 				96C8AB9F13E1E98400656998 /* Employee.m in Sources */,
 				96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */,
 				96FB509B13F788860069836C /* NSDataAdditions.m in Sources */,
@@ -1723,12 +1812,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Robert KIng (PLJWL35TX2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert KIng (PLJWL35TX2)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "47A28AA6-E676-49C0-9AA4-508A7C26C34D";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "47A28AA6-E676-49C0-9AA4-508A7C26C34D";
@@ -1745,17 +1839,22 @@
 					armv6,
 				);
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert KIng";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Robert KIng";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert King";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Robert King";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "75FC3A98-541C-4BDD-BEDA-77E48EB1D04F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75FC3A98-541C-4BDD-BEDA-77E48EB1D04F";
+				PROVISIONING_PROFILE = "75B7BA60-04CF-4D03-AE1C-43FF6965B65B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75B7BA60-04CF-4D03-AE1C-43FF6965B65B";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

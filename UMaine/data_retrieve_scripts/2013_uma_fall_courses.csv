@@ -1,0 +1,199 @@
+department;courseNum;courseTitle;sectionNum;courseType;callNum;meetingTime;meetingLocation;instructor;startEndDate
+ANT;101;"Introduction to Anthropology";1010;LEC;25309;Th 1:00PM - 3:45PM;Old Model School;Jon Arlin Schlenker;09/03/2013 - 12/23/2013
+ARH;105;"History of Art and Architecture I";1009;LEC;25498;Th 1:00PM - 3:45PM;East Sullivan;Brooks W Stoddard;09/03/2013 - 12/23/2013
+ARH;106;"History of Art and Architecture II";0300;LEC;24707;Th 4:00PM - 6:45PM;Bath Brunswick;Susan B Stoddard;09/03/2013 - 12/23/2013
+ARH;205;"History of Photography I (1830 to 1930)";0100;LEC;24510;We 1:00PM - 3:45PM;Randall Student Center 248;Susan B Stoddard;09/03/2013 - 12/23/2013
+ARH;274;"Modern Art I";0300;LEC;24819;Tu 9:00AM - 11:45AM;Rockland;John D Farmer;09/03/2013 - 12/23/2013
+ARH;345;"American Art and Architecture (17th to 20th Century)";0100;LEC;24511;We 1:00PM - 3:45PM;Jewett Hall 0185;Staff;09/03/2013 - 12/23/2013
+ART;100;"Introduction to Studio Art";8000;STU;30757;TBA;Web/On-line;Ted Adrien Closson;10/08/2013 - 11/22/2013
+ART;109;"Photographic Vision and Digital Discovery";0200;STU;24582;MoWe 1:00PM - 3:30PM;Eastport Hall 0102;Dee Peppe;09/03/2013 - 12/23/2013
+ART;112;"2";0101;STU;24515;Tu 12:00PM - 2:30PM;Gannett Building;Susan C Bickford;09/03/2013 - 12/23/2013;Th 1:00PM - 3:30PM;Randall Student Center 137;Susan C Bickford;09/03/2013 - 12/23/2013
+ART;113;"3";0100;STU;24516;TuTh 9:00AM - 11:30AM;Fine Arts Building 0121;Robert I Katz;09/03/2013 - 12/23/2013
+ART;115;"Drawing I";0300;STU;24728;Th 8:30AM - 12:00PM;Ellsworth;Cynthia June Kellogg;09/03/2013 - 12/23/2013;Th 1:00PM - 2:30PM;Ellsworth;Cynthia June Kellogg;09/03/2013 - 12/23/2013
+ART;202;"Electronic Arts I";0100;LEC;24522;TuTh 4:00PM - 6:30PM;Randall Student Center 137;Robert Rainey;09/03/2013 - 12/23/2013
+ART;215;"Drawing II";0300;STU;24731;Th 8:30AM - 12:00PM;Ellsworth;Cynthia June Kellogg;09/03/2013 - 12/23/2013;Th 1:00PM - 2:30PM;Ellsworth;Cynthia June Kellogg;09/03/2013 - 12/23/2013
+ART;219;"Sculpture I";0100;STU;24525;MoWe 9:00AM - 11:30AM;Fine Arts Building 0121;Robert I Katz;09/03/2013 - 12/23/2013
+ART;227;"Watercolor Painting I";0300;STU;24821;MoWe 4:00PM - 6:30PM;Rockland;Seth Lester;09/03/2013 - 12/23/2013
+ART;235;"Photography I";0100;STU;24527;TuTh 9:00AM - 11:30AM;Campus Center - Photo Studio;Jere C Dewaters;09/03/2013 - 12/23/2013
+ART;261;"Creative Bookmaking";0100;STU;24529;MoWe 1:00PM - 3:30PM;Gannett Building;Karen Adrienne;09/03/2013 - 12/23/2013
+ART;315;"Drawing III";0100;STU;24531;TuTh 9:00AM - 11:30AM;Art &amp; Arch Building 0106;Karen Adrienne;09/03/2013 - 12/23/2013
+ART;320;"Contemporary Studio Practice and Theory";0100;LEC;24534;Fr 9:00AM - 11:30AM;Randall Student Center 137;Susan C Bickford;09/03/2013 - 12/23/2013;Fr 12:30PM - 3:00PM;Randall Student Center 137;Susan C Bickford;09/03/2013 - 12/23/2013
+ART;321;"Painting II";0300;STU;24941;Th 9:00AM - 12:00PM;Rumford-Mexico Center;Patricia E Chandler;09/03/2013 - 12/23/2013;Th 1:00PM - 3:00PM;Rumford-Mexico Center;Patricia E Chandler;09/03/2013 - 12/23/2013
+ART;327;"Watercolor Painting II";0300;STU;30751;MoWe 4:00PM - 6:45PM;Rockland;Seth Lester;09/03/2013 - 12/23/2013
+ART;335;"Photography II";0100;STU;24571;MoWe 1:00PM - 3:30PM;Campus Center - Photo Studio;Robert Rainey;09/03/2013 - 12/23/2013
+ART;420;"Senior Seminar";0100;LEC;24572;Tu 4:00PM - 6:45PM;Campus Center - Photo Studio;Jere C Dewaters;09/03/2013 - 12/23/2013
+ART;421;"Painting III";0100;STU;24574;MoWe 9:00AM - 11:30AM;Gannett Building;Andrea Marie Sulzer;09/03/2013 - 12/23/2013
+ART;435;"Photography III";0100;STU;24576;MoWe 1:00PM - 3:30PM;Campus Center - Photo Studio;Robert Rainey;09/03/2013 - 12/23/2013
+BIO;100;"Human Biology";0203;LAB;24965;Fr 9:30AM - 11:30AM;Camden Hall 0101;E Donald Naber;09/03/2013 - 12/23/2013
+BIO;110;"General Biology I";0307;LEC;24957;Mo 4:00PM - 6:45PM;Rumford-Mexico Center;Anne M Morin;09/03/2013 - 12/23/2013
+BIO;115;"Mammalian Anatomy &amp; Physiology I";0202;LAB;24985;We 1:00PM - 3:00PM;Camden Hall 0101;Anne F Hayes-Grillo;09/03/2013 - 12/23/2013
+BIO;210;"Anatomy and Physiology";0301;LAB;24711;Tu 7:00PM - 9:00PM;Bath Brunswick;Wayne A Robbins;09/03/2013 - 12/23/2013
+BIO;215;"Introduction to Human Genetics";9000;LEC;25061;TBA;Web/On-line;Natalia Abramova;09/03/2013 - 12/23/2013
+BIO;220;"Marine Biology";0200;LEC;24992;TuTh 9:00AM - 10:20AM;Eastport Hall 0103;Robert T Klose;09/03/2013 - 12/23/2013
+BIO;265;"Veterinary Microbiology";0202;LAB;24995;TuTh 9:00AM - 10:30AM;Camden Hall 0105;E Donald Naber;09/03/2013 - 12/23/2013
+BIO;321;"Microbiology";0301;LAB;24775;We 6:00PM - 8:00PM;Ellsworth;Jason Allen Bubier;09/03/2013 - 12/23/2013
+BIO;324;"Cell Biology";0100;LEC;26924;Tu 1:00PM - 3:45PM;Jewett Hall 0190;Sheila K Bennett;09/03/2013 - 12/23/2013
+BIO;345;"Pathophysiology";0100;LEC;26925;Fr 9:00AM - 11:45AM;Jewett Hall 0295;Margaret M Shore;09/03/2013 - 12/23/2013
+BUA;100;"Introduction to Business";1009;LEC;25780;Th 7:30AM - 8:45AM;Ellsworth;J Powers McGuire;09/03/2013 - 12/23/2013
+BUA;101;"Financial Accounting for Management Decision Making";1010;LEC;25835;We 7:30AM - 8:45AM;Mt Blue High School;Barbara Rowell;09/03/2013 - 12/23/2013
+BUA;201;"Intermediate Financial Reporting I";1009;LEC;26191;Fr 1:00PM - 3:45PM;East Sullivan;Barbara Rowell;09/03/2013 - 12/23/2013
+BUA;210;"Fundamentals of Life and Health Insurance";1009;LEC;26226;Th 7:30AM - 8:45AM;Ellsworth;John V Finnegan;09/03/2013 - 12/23/2013
+BUA;211;"Accounting for Management Decisions";1009;LEC;26291;Tu 7:30AM - 8:45AM;Ellsworth;Frank Bean;09/03/2013 - 12/23/2013
+BUA;216;"Consumer Lending";1010;LEC;26325;Mo 7:00PM - 9:45PM;East Sullivan;David M Leach;09/03/2013 - 12/23/2013
+BUA;223;"Principles of Management";1010;LEC;26364;Th 9:00AM - 11:45AM;Ellsworth;Frank Bean;09/03/2013 - 12/23/2013
+BUA;230;"Business Law";1011;LEC;26523;Fr 4:00PM - 6:45PM;Ellsworth;J Powers McGuire;09/03/2013 - 12/23/2013
+BUA;243;"Forming the Small Business";6005;LEC;25816;Tu 1:00PM - 3:45PM;Saco Video Conferencing;Frank Bean;09/03/2013 - 12/23/2013
+BUA;259W;"Strategic Management for the Small Business";6005;LEC;25822;Mo 4:00PM - 6:45PM;Rumford Video Conferencing;Robert Keyes Roper;09/03/2013 - 12/23/2013
+BUA;276;"Taxation";1009;LEC;26557;Tu 9:00AM - 11:45AM;East Sullivan;Thomas J Giordano;09/03/2013 - 12/23/2013
+BUA;301;"Governmental and Not";9000;LEC;25085;TBA;Web/On-line;Barbara Rowell;09/03/2013 - 12/23/2013
+BUA;303;"Management Information System";1010;LEC;27332;We 7:00PM - 9:45PM;East Sullivan;Jody L Breton;09/03/2013 - 12/23/2013
+BUA;343;"Advanced Accounting I";1009;LEC;26595;Fr 9:00AM - 11:45AM;East Sullivan;Thomas J Giordano;09/03/2013 - 12/23/2013
+BUA;351;"Investment Management";6004;LEC;29823;We 1:00PM - 2:15PM;BBC Video Conferencing;Diane L Boone;09/03/2013 - 12/23/2013
+BUA;357;"Business Finance";1010;LEC;26638;Th 4:00PM - 6:45PM;East Sullivan;Frank Bean;09/03/2013 - 12/23/2013
+BUA;360;"Operations Management";1010;LEC;26677;We 4:00PM - 6:45PM;East Millinocket;Daylin J Butler;09/03/2013 - 12/23/2013
+BUA;361;"Human Resource Management";1010;LEC;26765;Fr 4:00PM - 6:45PM;East Sullivan;Daylin J Butler;09/03/2013 - 12/23/2013
+BUA;362;"Labor";1010;LEC;26840;We 4:00PM - 6:45PM;East Millinocket;J Powers McGuire;09/03/2013 - 12/23/2013
+BUA;365;"Organizational Behavior";1011;LEC;26881;Th 7:00PM - 9:45PM;Ellsworth;Brenda O McAleer;09/03/2013 - 12/23/2013
+BUA;369;"Marketing";1009;LEC;27173;Mo 1:00PM - 3:45PM;East Sullivan;Thomas J Giordano;09/03/2013 - 12/23/2013
+BUA;458;"Accounting Seminar";1010;LEC;27210;Th 4:00PM - 5:15PM;East Sullivan;Thomas J Giordano;09/03/2013 - 12/23/2013
+BUA;487;"Advanced Fraud Examination";9000;LEC;29099;TBA;Web/On-line;Diane L Boone;09/03/2013 - 12/23/2013
+CHY;105;"Fundamentals of Chemistry";0300;LEC;24959;We 4:00PM - 6:45PM;Rumford-Mexico Center;Thomas R Wylie;09/03/2013 - 12/23/2013
+CHY;106;"Fundamentals of Chemistry Laboratory";0300;LAB;24961;We 7:00PM - 9:00PM;Rumford-Mexico Center;Thomas R Wylie;09/03/2013 - 12/23/2013
+CHY;108;"Allied Health Chemistry";0204;LAB;25011;Fr 10:30AM - 1:30PM;Camden Hall 0105;Roberta Trefts;09/03/2013 - 12/23/2013
+CHY;115;"General Chemistry I";0102;LAB;26930;Th 9:00AM - 12:00PM;Jewett Hall 0294;Susan O Baker;09/03/2013 - 12/23/2013
+CHY;117;"Introduction to Organic and Biochemistry";0101;LAB;26932;Mo 4:15PM - 6:15PM;Jewett Hall 0294;Donna L Gronros;09/03/2013 - 12/23/2013
+ECO;100;"Introduction to Economics";9000;LEC;25151;TBA;Web/On-line;Ronald N Norton;09/03/2013 - 12/23/2013
+ECO;201;"Macroeconomics";1009;LEC;27472;Mo 1:00PM - 3:45PM;East Sullivan;Ronald N Norton;09/03/2013 - 12/23/2013
+ECO;202;"Microeconomics";9000;LEC;25153;TBA;Web/On-line;Ronald N Norton;09/03/2013 - 12/23/2013
+EDU;160;"Perspectives on Infants";9000;LEC;30105;TBA;Web/On-line;Patricia Morris Clark;09/03/2013 - 12/23/2013
+EDU;329;"Science and the Project Approach for the Young Child";9000;LEC;30106;TBA;Web/On-line;Erin P C Zaremba;09/03/2013 - 12/23/2013
+EDU;352;"Interventions for Families with Children";1009;LEC;29934;We 4:00PM - 6:45PM;Penquis Higher Ed Ctr;Patricia Morris Clark;09/03/2013 - 12/23/2013
+EDU;366;"Children &amp; Young Adult Literature";9000;LEC;25155;TBA;Web/On-line;Cynthia Diane Dean;09/03/2013 - 12/23/2013
+EDU;387;"Teaching the Execeptional Child in the Regular Classroom";9000;LEC;25156;TBA;Web/On-line;Cynthia Diane Dean;09/03/2013 - 12/23/2013
+EDU;490;"Internship in Student Teaching";0100;FEX;24673;TBA;TBA;Cynthia Diane Dean;09/03/2013 - 12/23/2013
+ENG;;"";1006;LEC;27505;Mo 9:00AM - 11:45AM;Deer Isle;Eleanor S Leo;09/03/2013 - 12/23/2013
+ENG;;"10";0200;LEC;24622;TuTh 9:00AM - 10:20AM;Belfast Hall 003D;Edward P Rice;09/03/2013 - 12/23/2013
+ENG;101;"College Writing";0204;LEC;24633;TuTh 9:00AM - 10:20AM;Lewiston Hall 0110;Staff;09/03/2013 - 12/23/2013
+ENG;102W;"Introduction to Literature";1000;LEC;25591;Tu 9:00AM - 11:45AM;Bennett D. Katz Library 0014;Eleanor S Leo;09/03/2013 - 12/23/2013
+ENG;103W;"Writing for Allied Health";0100;LEC;28934;Tu 9:00AM - 11:45AM;Randall Student Center 246;Nancy Schneider;09/03/2013 - 12/23/2013
+ENG;111W;"Journalism";9000;LEC;25163;TBA;Web/On-line;Elizabeth A Adams;09/03/2013 - 12/23/2013
+ENG;250W;"American Literature to 1900";6005;LEC;29735;Th 1:00PM - 3:45PM;Houlton Higher Ed Center;Kay L Retzlaff;09/03/2013 - 12/23/2013
+ENG;317W;"Professional Writing";1005;LEC;27644;Tu 1:00PM - 3:45PM;Bucksport HS;Nancy Schneider;09/03/2013 - 12/23/2013
+ENG;325W;"The American Story";0300;LEC;24848;Tu 9:00AM - 11:45AM;Rockland;Ellen Maureen Taylor;09/03/2013 - 12/23/2013
+ENG;337;"Masculinities in Late 20th Century American Literature";6004;LEC;29703;We 1:00PM - 3:45PM;Houlton CTR Video Conferencing;Jeffrey Sychterz;09/03/2013 - 12/23/2013
+ENG;360W;"Selected Work of Shakespeare";0100;LEC;25106;We 9:00AM - 11:45AM;Randall Student Center 250;Jill Rubinson;09/03/2013 - 12/23/2013
+ENG;366;"Children &amp; Young Adult Literature";9000;LEC;25730;TBA;Web/On-line;Cynthia Diane Dean;09/03/2013 - 12/23/2013
+FRE;101;"Elementary French I";0100;LEC;25111;TuTh 1:00PM - 3:00PM;Jewett Hall 0289;Chelsea Ray;09/03/2013 - 12/23/2013
+FRE;103;"Conversational French for Everyone";0100;LEC;25107;Tu 3:00PM - 4:00PM;Jewett Hall 0289;Chelsea Ray;09/03/2013 - 12/23/2013
+FRE;203;"Intermediate French I";0100;LEC;25109;TuTh 4:00PM - 6:00PM;Jewett Hall 0289;Chelsea Ray;09/03/2013 - 12/23/2013
+FRE;305;"Language and Culture of the Francophone World I";0100;LEC;25110;TuTh 4:30PM - 6:30PM;Jewett Hall 0291;Chelsea Ray;09/03/2013 - 12/23/2013
+HON;401;"Leadership Seminar";6006;LEC;26281;Th 7:00PM - 9:45PM;Bennett D. Katz Library 0007;Nora Bowne;09/03/2013 - 12/23/2013
+HTY;103;"United States History I";1008;LEC;27826;Tu 7:00PM - 9:45PM;Penquis Higher Ed Ctr;Peter Michael Lodge;09/03/2013 - 12/23/2013
+HTY;104;"United States History II";0301;LEC;24851;We 4:00PM - 6:45PM;Rockland;William M Galloway;09/03/2013 - 12/23/2013
+HTY;105;"World Civilizations I";1008;LEC;27759;We 9:00AM - 11:45AM;East Millinocket;Robert B Bernheim;09/03/2013 - 12/23/2013
+HTY;106;"World Civilizations II";9000;LEC;25273;TBA;Web/On-line;Marilyn Ann Hudzina;09/03/2013 - 12/23/2013
+HTY;350;"Twentieth Century World History";6002;LEC;26626;Fr 9:00AM - 11:45AM;Saco Video Conferencing;Robert B Bernheim;09/03/2013 - 12/23/2013
+HTY;457;"Civil War and Reconstruction";9000;LEC;30119;TBA;Web/On-line;Seth M Wigderson;09/03/2013 - 12/23/2013
+IND;494;"Independent Study";5001;IND;30109;TBA;TBA;Mary Louis Davitt;09/03/2013 - 12/23/2013
+MAT;;"";1001;LEC;26040;Mo 4:00PM - 6:45PM;Bangor Hall ITV1;Norma Bisulca;09/03/2013 - 12/23/2013
+MAT;;"20";0201;LEC;26115;TuTh 9:00AM - 10:20AM;Belfast Hall 0323;Freda E Sanborn;09/03/2013 - 12/23/2013
+MAT;;"21";0200;LEC;26116;MoWe 10:30AM - 11:50AM;Belfast Hall 0323;Freda E Sanborn;09/03/2013 - 12/23/2013
+MAT;;"30";1000;LEC;26042;Mo 9:00AM - 11:45AM;Bennett D. Katz Library 0014;Margaret R Patterson;09/03/2013 - 12/23/2013
+MAT;100;"Mathematics and Its Applications";1004;LEC;28523;Th 9:00AM - 11:45AM;Telstar HS;Margaret R Patterson;09/03/2013 - 12/23/2013
+MAT;111;"Algebra II";1007;LEC;28575;Th 4:00PM - 6:45PM;Deer Isle;Rita M Lachance;09/03/2013 - 12/23/2013
+MAT;112;"College Algebra";0200;LEC;26125;MoWe 1:00PM - 2:20PM;Belfast Hall 0323;Freda E Sanborn;09/03/2013 - 12/23/2013
+MAT;113;"Mathematics for Business And Economics I";1008;LEC;28615;Mo 7:30AM - 8:45AM;East Sullivan;Margaret R Patterson;09/03/2013 - 12/23/2013
+MAT;114;"Mathematics for Business and Economics II";0100;LEC;27697;Th 4:00PM - 6:45PM;Randall Student Center 248;Rochid J Elias;09/03/2013 - 12/23/2013
+MAT;115;"Elementary Statistics I";1005;LEC;28647;Tu 4:00PM - 6:45PM;Bucksport HS;Norma Bisulca;09/03/2013 - 12/23/2013
+MAT;261;"Applied Linear Algebra";9000;LEC;30313;TBA;Web/On-line;Lester A French;09/03/2013 - 12/23/2013
+MAT;280;"Discrete Mathematical Structures";1009;LEC;30365;Tu 7:30AM - 8:45AM;Ellsworth;Norma Bisulca;09/03/2013 - 12/23/2013
+MAT;360;"Operations Management";1011;LEC;26721;We 4:00PM - 6:45PM;East Sullivan;Daylin J Butler;09/03/2013 - 12/23/2013
+MUS;100;"Recital Lab";0100;MUS;24777;Tu 12:00PM - 1:00PM;Jewett Hall 0156;Anita-Ann Jerosch;09/03/2013 - 12/23/2013
+MUS;101;"&quot;Music Theory and Practice I";0100;LEC;24778;MoWe 10:00AM - 11:50AM;Fine Arts Building 0115;Stephen Grover;09/03/2013 - 12/23/2013
+MUS;103;"Music of the United States";9000;LEC;29721;TBA;Web/On-line;Anita-Ann Jerosch;09/03/2013 - 12/23/2013
+MUS;110;"Popular Music";0200;LEC;24657;We 4:00PM - 6:45PM;Eastport Hall 0100;Richard Kenefic;09/03/2013 - 12/23/2013
+MUS;115A;"Basic Applied Music: Sec";0200;MUS;24658;TBA;TBA;Richard Kenefic;09/03/2013 - 12/23/2013
+MUS;115B;"Applied Music: Secondary";0200;MUS;24659;TBA;TBA;Richard Kenefic;09/03/2013 - 12/23/2013
+MUS;116A;"Applied Classical Music";0100;MUS;24782;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;116B;"Applied Classical Music";0100;MUS;24783;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;117;"The Dream Machine: A History of Rock and Roll";9000;LEC;30711;TBA;Web/On-line;Stephen Grover;10/08/2013 - 11/22/2013
+MUS;123;"Understanding Music";1008;LEC;28692;Fr 9:00AM - 11:45AM;East Millinocket;Anita-Ann Jerosch;09/03/2013 - 12/23/2013
+MUS;124;"Music of the Twentieth Century";9000;LEC;25421;TBA;Web/On-line;Henry Wyatt;09/03/2013 - 12/23/2013
+MUS;131;"Survey of Jazz and Contemporary Music";0100;LEC;24784;Th 11:00AM - 12:50PM;Fine Arts Building 0124;William O Moseley;09/03/2013 - 12/23/2013
+MUS;141;"Applied Music: Major Instrument";0100;MUS;24785;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;142;"Applied Music: Major Instrument";0100;MUS;24786;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;151;"First Year/Sophomore Ensemble Sequence";0100;MUS;24789;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;151N;"Freshman Ensemble I for Non";0100;MUS;24793;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;152;"First Year/Sophomore Ensemble Sequence";0100;MUS;24790;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;152N;"Freshman Ensemble II";0100;MUS;24794;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;160;"World Music";9000;LEC;25423;TBA;Web/On-line;Pamela L Jenkins;09/03/2013 - 12/23/2013
+MUS;181;"Piano Lab I";0101;LEC;24798;Tu 11:00AM - 11:50AM;Music Mod I;Marcia J Gallagher;09/03/2013 - 12/23/2013
+MUS;190;"Women In Western Music";9100;LEC;25427;TBA;Web/On-line;Pamela L Jenkins;10/08/2013 - 11/22/2013
+MUS;203;"Music Theory and Practice III";0100;LEC;24799;Tu 10:30AM - 11:50AM;Music Mod II;Richard Nelson;09/03/2013 - 12/23/2013;Th 10:30AM - 12:50PM;Music Mod II;Richard Nelson;09/03/2013 - 12/23/2013
+MUS;221;"Arranging I";0100;LEC;24801;TuTh 9:00AM - 10:20AM;Music Mod II;Stephen Grover;09/03/2013 - 12/23/2013
+MUS;243;"Applied Music: Major Instrument";0100;MUS;24787;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;244;"Applied Music: Major Instrument";0100;MUS;24788;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;253;"First Year/Sophomore Ensemble Sequence";0100;MUS;24791;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;253N;"Sophomore Ensemble Sequence for Non";0100;MUS;24795;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;254;"Sophomore Ensemble Sequence";0100;MUS;24792;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;254N;"Sophomore Ensemble Sequence for Non";0100;MUS;24796;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;262;"Woodwind Techniques";0100;MUS;24802;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;263;"Brass Techniques";0100;MUS;24803;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;264;"String Techniques";0100;MUS;24804;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;265;"Percussion Techniques";0100;MUS;24805;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;266;"Vocal Techniques";0100;MUS;24806;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;271;"Sonic Arts I: Digital Music Systems";0100;LEC;24807;Mo 4:00PM - 6:45PM;Randall Student Center 249;Frank Xavier Mauceri;09/03/2013 - 12/23/2013
+MUS;303;"Hip Hop: Art";9001;LEC;25043;TBA;Web/On-line;Sarah Hentges;09/03/2013 - 12/23/2013
+MUS;323;"Composition I";0100;LEC;24808;Tu 4:00PM - 6:45PM;Music Mod II;Richard Nelson;09/03/2013 - 12/23/2013
+MUS;333;"History and Literature of Music I";0100;LEC;24809;MoWe 11:30AM - 12:50PM;Fine Arts Building 0122;William O Moseley;09/03/2013 - 12/23/2013
+MUS;337;"Tradition &amp; Innovation:";9000;LEC;25436;TBA;Web/On-line;Pamela L Jenkins;09/03/2013 - 12/23/2013
+MUS;345;"Applied Music: Major Instrument";0100;MUS;24810;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;346;"Applied Music: Major Instrument";0100;MUS;24811;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;355;"Junior";0100;MUS;24815;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;356;"Junior Ensemble Sequence II";0100;MUS;24816;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;435W;"Senior Seminar";0100;LEC;29741;Th 5:00PM - 7:45PM;Fine Arts Building 0115;William O Moseley;09/03/2013 - 12/23/2013
+MUS;447;"Applied Music: Major Instrument";0100;MUS;24813;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;448;"Senior Concert";0100;MUS;24814;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;457;"Senior Ensemble Sequence I";0100;MUS;24817;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+MUS;458;"Junior Ensemble Sequence II";0100;MUS;24818;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+NUR;101;"Fundamentals of Nursing";6006;LEC;26625;MoTh 9:00AM - 11:30AM;Bennett D. Katz Library 0040;Jacqueline Ballback;09/03/2013 - 12/23/2013
+NUR;201W;"Nursing Care of the Family";0100;LEC;29093;MoTh 9:00AM - 11:30AM;Augusta Civic Center 0252;Victoria S Evans;09/03/2013 - 12/23/2013
+NUR;225;"Introduction to Health Informatics";9000;LEC;25135;TBA;Web/On-line;Megan Landry;10/08/2013 - 11/22/2013
+NUR;301;"Health Assessment Throughout the Lifespan";0100;LEC;25705;Mo 2:00PM - 6:00PM;Augusta Civic Center 0252;Kristen C Lombard;09/03/2013 - 12/23/2013
+NUR;302;"Pharmacology for Nurses";9000;LEC;25438;TBA;Web/On-line;Carey Clark;09/03/2013 - 12/23/2013
+NUR;304;"Concepts of Professional Nursing Practice";0100;LEC;25707;Mo 3:00PM - 5:45PM;Augusta Civic Center 0253;Kristen C Lombard;09/03/2013 - 12/23/2013
+NUR;352;"Nursing Research";0100;LEC;25712;Tu 1:00PM - 3:45PM;Jewett Hall 0189;Lynne F King;09/03/2013 - 12/23/2013
+NUR;355;"Community and Global Health
+Didactic";0100;LEC;25714;We 1:00PM - 3:45PM;Augusta Civic Center 0252;Carey Clark;09/03/2013 - 12/23/2013
+NUR;410;"Leadership and Management in Nursing";0100;LEC;25721;We 1:00PM - 3:45PM;Augusta Civic Center 0252;Kristen C Lombard;09/03/2013 - 12/23/2013
+NUR;420;"The American Health Care System";9500;LEC;30413;TBA;Web/On-line;Carey Clark;10/08/2013 - 11/22/2013
+NUR;425;"Hands on Healing: Reiki &amp; Importance of Caring for Self &amp; Others";0100;LEC;25722;Fr 10:00AM - 4:00PM;Augusta Civic Center 0253;Carey Clark;10/08/2013 - 11/22/2013
+PHI;250;"Ethics";0302;LEC;24940;We 4:00PM - 6:45PM;Rumford-Mexico Center;Lawrence E Merckens;09/03/2013 - 12/23/2013
+PHY;115;"General Physics I";0102;LAB;28946;Th 6:00PM - 9:00PM;Jewett Hall 0284;James F Guillemette;09/03/2013 - 12/23/2013
+POS;101;"American Government";1009;LEC;28728;Tu 1:00PM - 3:45PM;East Sullivan;Daylin J Butler;09/03/2013 - 12/23/2013
+POS;223;"Principles of Management";1010;LEC;26485;Th 9:00AM - 11:45AM;Ellsworth;Frank Bean;09/03/2013 - 12/23/2013
+POS;354;"Public Budgeting and Financial Administration";6666;LEC;30285;TBA;Web/On-line;Richard Michaud;09/03/2013 - 12/23/2013
+POS;361;"Human Resource Management";1010;LEC;26803;Fr 4:00PM - 6:45PM;East Sullivan;Daylin J Butler;09/03/2013 - 12/23/2013
+POS;362;"Labor";1010;LEC;29193;We 4:00PM - 6:45PM;East Millinocket;J Powers McGuire;09/03/2013 - 12/23/2013
+POS;365;"Organizational Behavior";1010;LEC;27136;Th 7:00PM - 9:45PM;East Sullivan;Brenda O McAleer;09/03/2013 - 12/23/2013
+POS;370;"Municipal Administration";9999;LEC;29732;TBA;Web/On-line;William R Bridgeo;09/03/2013 - 12/23/2013
+POS;405;"Administrative Law";9999;LEC;29730;TBA;Web/On-line;Dawn Dosedlo Gallagher;09/03/2013 - 12/23/2013
+POS;420;"The American Health Care System";9500;LEC;30414;TBA;Web/On-line;Carey Clark;10/08/2013 - 11/22/2013
+POS;487;"Research Methods";9999;LEC;29733;TBA;Web/On-line;Daylin J Butler;09/03/2013 - 12/23/2013
+PSY;100;"Introduction to Psychology";1001;LEC;26082;Mo 9:00AM - 11:45AM;Bangor Hall ITV3;Elaine K Dunton;09/03/2013 - 12/23/2013
+PSY;229;"Models of Addiction";1009;LEC;28087;Fr 1:00PM - 3:45PM;Ellsworth;John M O'Brien;09/03/2013 - 12/23/2013
+PSY;308;"Human Development";1006;LEC;28827;Mo 4:00PM - 6:45PM;Calais Center;Frank Ellis;09/03/2013 - 12/23/2013
+PSY;310;"Psychology of Personality";9100;LEC;30208;TBA;Web/On-line;Kenneth Elliott;10/08/2013 - 11/22/2013
+PSY;312;"Psychology of Human Adjustment";9000;LEC;25448;TBA;Web/On-line;Kenneth Elliott;09/03/2013 - 12/23/2013
+PSY;362;"Language and Literacy in Early Childhood";9000;LEC;29693;TBA;Web/On-line;Charles Michael Sandberg;09/03/2013 - 12/23/2013
+PSY;394;"Independent Study in Psychology";5000;IND;30633;TBA;TBA;Staff;09/03/2013 - 12/23/2013
+PSY;400;"Abnormal Psychology";9000;LEC;25449;TBA;Web/On-line;Charles S Grunder;09/03/2013 - 12/23/2013
+PSY;415;"Cross";9000;LEC;28190;TBA;Web/On-line;Kenneth Elliott;09/03/2013 - 12/23/2013
+PSY;489;"Topics in Psychology";6007;LEC;26629;Mo 4:00PM - 6:45PM;Saco Video Conferencing;Teresa M Mayo;09/03/2013 - 12/23/2013
+SOC;101;"Introduction to Sociology";1005;LEC;28866;We 1:00PM - 3:45PM;Bucksport HS;Jon Arlin Schlenker;09/03/2013 - 12/23/2013
+SOC;201;"Social Problems";0300;LEC;24719;Mo 9:00AM - 11:45AM;Bath Brunswick;Lorien Lake-Corral;09/03/2013 - 12/23/2013
+SOC;315;"Sociology of Deviance";0100;LEC;25024;We 9:00AM - 11:45AM;Jewett Hall 0190;Lorien Lake-Corral;09/03/2013 - 12/23/2013
+SOC;316;"Criminology";9000;LEC;25453;TBA;Web/On-line;James Cook;09/03/2013 - 12/23/2013
+SOC;360;"Sociology of the Family";9100;LEC;25456;TBA;Web/On-line;Jon Arlin Schlenker;10/08/2013 - 11/22/2013
+SOC;475;"Analyzing Social Media";9000;LEC;25458;TBA;Web/On-line;James Cook;09/03/2013 - 12/23/2013
+SPA;101;"Elementary Spanish I";0300;LEC;24873;We 9:00AM - 11:45AM;Rockland;Yarissa Ortiz-Vidal;09/03/2013 - 12/23/2013
