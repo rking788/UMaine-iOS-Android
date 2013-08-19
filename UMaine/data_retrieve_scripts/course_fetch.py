@@ -27,7 +27,7 @@ debug = 0
 # UMA : UMS01
 # UMM : UMS04
 # USM : UMS06
-INSTITUTION = "UMS06"
+INSTITUTION = "UMS07"
 
 # 1120: Spring 2011 
 # 1210: Fall 2011 
