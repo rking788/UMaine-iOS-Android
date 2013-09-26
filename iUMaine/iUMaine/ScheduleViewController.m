@@ -49,13 +49,6 @@
     // Load the user defaults used to find the selected semester
     self.userDefs = [NSUserDefaults standardUserDefaults];
     
-    if(![iUMaineAppDelegate getSelCampus]){
-        [self showCampusSelectVC];
-    }
-    else{
-        [self initializeSchedule];
-    }
-    
     // Set the left button to display a pickerview to allow selection of the semesters
     UIBarButtonItem* semesterSelectBtn = [[UIBarButtonItem alloc] initWithTitle: @"Semesters" style: UIBarButtonItemStyleBordered target:self action: @selector(showPickerview)];
     self.navigationItem.leftBarButtonItem = semesterSelectBtn;
@@ -64,6 +57,16 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] 
                                               initWithBarButtonSystemItem: UIBarButtonSystemItemAction
                                               target: self action: @selector(displayActionSheet)];
+}
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    if(![iUMaineAppDelegate getSelCampus]){
+        [self showCampusSelectVC];
+    }
+    else{
+        [self initializeSchedule];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

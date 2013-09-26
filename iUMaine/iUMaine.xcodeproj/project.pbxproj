@@ -301,6 +301,7 @@
 		96D901C4149A760A002D3058 /* directory_UMPI.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BD149A760A002D3058 /* directory_UMPI.csv */; };
 		96D901C5149A760A002D3058 /* directory_USM.csv in Resources */ = {isa = PBXBuildFile; fileRef = 96D901BE149A760A002D3058 /* directory_USM.csv */; };
 		96D901D3149A8D81002D3058 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D901D1149A8D5C002D3058 /* iAd.framework */; };
+		96DAA0D717F3F7000043EE73 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DAA0D617F3F7000043EE73 /* Crashlytics.framework */; };
 		96E9243E13F6195B00A48C68 /* CurrentEventCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */; };
 		96EE27CB13ECF48600170A52 /* DirectoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */; };
 		96EE27CC13ECF48600170A52 /* DirectoryDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */; };
@@ -669,6 +670,7 @@
 		96D901BD149A760A002D3058 /* directory_UMPI.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_UMPI.csv; sourceTree = "<group>"; };
 		96D901BE149A760A002D3058 /* directory_USM.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = directory_USM.csv; sourceTree = "<group>"; };
 		96D901D1149A8D5C002D3058 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		96DAA0D617F3F7000043EE73 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrentEventCellView.xib; sourceTree = "<group>"; };
 		96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryDetailViewController.h; sourceTree = "<group>"; };
 		96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryDetailViewController.m; sourceTree = "<group>"; };
@@ -755,6 +757,7 @@
 				AE81585B135BDC4E008E9B84 /* MapKit.framework in Frameworks */,
 				AE81582D135BD930008E9B84 /* UIKit.framework in Frameworks */,
 				AE81582F135BD930008E9B84 /* Foundation.framework in Frameworks */,
+				96DAA0D717F3F7000043EE73 /* Crashlytics.framework in Frameworks */,
 				AE815831135BD930008E9B84 /* CoreGraphics.framework in Frameworks */,
 				96D901D3149A8D81002D3058 /* iAd.framework in Frameworks */,
 				96FB509E13F788F70069836C /* libz.dylib in Frameworks */,
@@ -1115,6 +1118,7 @@
 		AE81582B135BD930008E9B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96DAA0D617F3F7000043EE73 /* Crashlytics.framework */,
 				96D901D1149A8D5C002D3058 /* iAd.framework */,
 				964A2B401433E4CB00F53F8A /* QuartzCore.framework */,
 				96FB509D13F788F70069836C /* libz.dylib */,
@@ -1265,6 +1269,7 @@
 				AE815824135BD930008E9B84 /* Sources */,
 				AE815825135BD930008E9B84 /* Frameworks */,
 				AE815826135BD930008E9B84 /* Resources */,
+				96DAA0D517F3F6C40043EE73 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1626,6 +1631,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		96DAA0D517F3F6C40043EE73 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 24cfbdb25b3fc903efc0e555e1983a86ce707993";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE815824135BD930008E9B84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1754,6 +1775,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Robert KIng (PLJWL35TX2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert KIng (PLJWL35TX2)";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/rking/dev/.repos/ece571/iUMaine,
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
@@ -1776,6 +1801,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert King";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Robert King";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/rking/dev/.repos/ece571/iUMaine,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;

@@ -16,6 +16,7 @@
 #import "TBXML.h"
 #import "constants.h"
 #import "CampusSpecifics.h"
+#import <Crashlytics/Crashlytics.h>
 
 #define INIT_DB 0
 
@@ -55,6 +56,8 @@ static NSString* selCampus;
     // Override point for customization after application launch.
     // Add the tab bar controller's current view as a subview of the window
     self.window.rootViewController = self.tabBarController;
+    
+    [Crashlytics startWithAPIKey:@"24cfbdb25b3fc903efc0e555e1983a86ce707993"];
     
     self.gettingSports = NO;
     
