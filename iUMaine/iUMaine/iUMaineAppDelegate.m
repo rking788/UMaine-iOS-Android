@@ -507,7 +507,6 @@ static NSString* selCampus;
         [backgroundMOC2 setPersistentStoreCoordinator: appDel.persistentStoreCoordinator];
         
         NSArray* localSemesters = [self getLocalSemestersWithMOC: backgroundMOC2];
-        NSMutableArray* newSemesters = [[NSMutableArray alloc] init];
         
         NSURLResponse* resp = nil;
         NSError* err = nil;

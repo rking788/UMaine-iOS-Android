@@ -175,7 +175,7 @@
 
 - (void) initEmployeesWithFile: (NSString*) filePath
 {
-    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
+    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath encoding:NSUTF8StringEncoding error: nil];
     
     NSError* err = nil;
     NSArray* lines = [fileContents componentsSeparatedByString:@"\n"];
@@ -244,7 +244,7 @@
     NSString* semester = [NSString stringWithFormat: @"%@%@", year, season];
     NSString* bundlePath = [[NSBundle mainBundle] resourcePath];
     NSString* fileName = [NSString stringWithFormat: @"%@.csv", semester];
-    NSString* filePath = [NSString stringWithFormat: [bundlePath stringByAppendingPathComponent: fileName]];
+    NSString* filePath = [bundlePath stringByAppendingPathComponent: fileName];
 //    NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath];
     NSString* fileContents = [[NSString alloc] initWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
     

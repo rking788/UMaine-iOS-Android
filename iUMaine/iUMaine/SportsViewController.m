@@ -672,7 +672,7 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     if (classAdBannerView != nil) {
         self.adBannerView = [[classAdBannerView alloc] 
                               initWithFrame:CGRectZero];
-        [_adBannerView setRequiredContentSizeIdentifiers:[NSSet setWithObjects: 
+        [_adBannerView setRequiredContentSizeIdentifiers:[NSSet setWithObjects:
                                                           ADBannerContentSizeIdentifier320x50, 
                                                           ADBannerContentSizeIdentifier480x32, nil]];
         if (UIInterfaceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
