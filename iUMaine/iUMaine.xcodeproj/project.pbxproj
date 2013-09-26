@@ -1084,6 +1084,92 @@
 			name = "Coordinate Files";
 			sourceTree = "<group>";
 		};
+		96DAA0D817F3F9500043EE73 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FD6271014E4C7CB00316840 /* TeamLogoImages */,
+				0F07D9FA14C11D2F00A91282 /* Permit Images */,
+				9614911C14380A590010FFE1 /* Schedule Tab Images */,
+				AE81583E135BD930008E9B84 /* MainWindow.xib */,
+				AE815847135BD930008E9B84 /* ScheduleView.xib */,
+				968D4F7C1491C62A007D248D /* CampusSelectionView.xib */,
+				960B929B146F2FCF0057C22E /* CourseDetailView.xib */,
+				9697EF3F143912F000EC190A /* AddCourseView.xib */,
+				965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */,
+				AE81584A135BD930008E9B84 /* SportsView.xib */,
+				96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */,
+				963DFC7B146B8293007E41D4 /* CustomScheduleCell.xib */,
+				AE815867135BE0D2008E9B84 /* MapView.xib */,
+				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
+				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
+				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
+				96950E42141D9D0E0059CFED /* EventRecapView.xib */,
+				964AFFEB147CA25800061CDE /* Default.png */,
+				964AFFED147CA26300061CDE /* Default@2x.png */,
+				9662B957147D6A9E008F6AA4 /* UMaine_114.png */,
+				9662B955147D6A96008F6AA4 /* UMaine_57.png */,
+				0F0C251314E379F8009F6388 /* UMA.sqlite */,
+				0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */,
+				0F0C251714E381DF009F6388 /* UMFK.sqlite */,
+				0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */,
+				0F6A734914C34E9C00F94C82 /* UMO.sqlite */,
+				0F0C251514E37C1F009F6388 /* UMPI.sqlite */,
+				0FDE9360154CC75800385998 /* USM.sqlite */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		96DAA0D917F3F9740043EE73 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				960B9299146F2FCF0057C22E /* CourseDetailViewController.h */,
+				960B929A146F2FCF0057C22E /* CourseDetailViewController.m */,
+				9697EF3D143912F000EC190A /* AddCourseViewController.h */,
+				9697EF3E143912F000EC190A /* AddCourseViewController.m */,
+				963DFC76146B8253007E41D4 /* CourseDetailSelectionViewController.h */,
+				963DFC77146B8253007E41D4 /* CourseDetailSelectionViewController.m */,
+				AE815877135BE491008E9B84 /* MapViewController.h */,
+				AE815878135BE497008E9B84 /* MapViewController.m */,
+				AE815844135BD930008E9B84 /* SportsViewController.h */,
+				AE815845135BD930008E9B84 /* SportsViewController.m */,
+				AE815873135BE484008E9B84 /* DirectoryViewController.h */,
+				AE815875135BE48C008E9B84 /* DirectoryViewController.m */,
+				96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */,
+				96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */,
+				96950E40141D9D0E0059CFED /* EventRecapViewController.h */,
+				96950E41141D9D0E0059CFED /* EventRecapViewController.m */,
+				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
+				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
+				968D4F7A1491C62A007D248D /* CampusSelectionViewController.h */,
+				968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		96DAA0DA17F3F97B0043EE73 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */,
+				964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */,
+				961491021437E7EC0010FFE1 /* ScheduleTabView.h */,
+				961491031437E7EC0010FFE1 /* ScheduleTabView.m */,
+				AEEA62A313679F2D00E3A470 /* BuildingSelectView.h */,
+				AEEA62A413679F2D00E3A470 /* BuildingSelectView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		96DAA0DB17F3F9820043EE73 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0F8670E014BBDF8600A583A7 /* CampusSpecifics.h */,
+				0F8670E114BBDF8600A583A7 /* CampusSpecifics.m */,
+				AEB1718B135BF09700DF742A /* POIAnnotation.h */,
+				AEB17181135BEED200DF742A /* POIAnnotation.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		96FB509613F788500069836C /* TBXML */ = {
 			isa = PBXGroup;
 			children = (
@@ -1139,66 +1225,12 @@
 				AE74D6EC135FBBB4007D1E74 /* dbInitializer.m */,
 				AE81583B135BD930008E9B84 /* iUMaineAppDelegate.h */,
 				AE81583C135BD930008E9B84 /* iUMaineAppDelegate.m */,
-				AE815841135BD930008E9B84 /* ScheduleViewController.h */,
-				AE815842135BD930008E9B84 /* ScheduleViewController.m */,
-				968D4F7A1491C62A007D248D /* CampusSelectionViewController.h */,
-				968D4F7B1491C62A007D248D /* CampusSelectionViewController.m */,
-				961491021437E7EC0010FFE1 /* ScheduleTabView.h */,
-				961491031437E7EC0010FFE1 /* ScheduleTabView.m */,
-				960B9299146F2FCF0057C22E /* CourseDetailViewController.h */,
-				960B929A146F2FCF0057C22E /* CourseDetailViewController.m */,
-				9697EF3D143912F000EC190A /* AddCourseViewController.h */,
-				9697EF3E143912F000EC190A /* AddCourseViewController.m */,
-				963DFC76146B8253007E41D4 /* CourseDetailSelectionViewController.h */,
-				963DFC77146B8253007E41D4 /* CourseDetailSelectionViewController.m */,
-				AE815877135BE491008E9B84 /* MapViewController.h */,
-				AE815878135BE497008E9B84 /* MapViewController.m */,
-				AE815844135BD930008E9B84 /* SportsViewController.h */,
-				AE815845135BD930008E9B84 /* SportsViewController.m */,
-				AE815873135BE484008E9B84 /* DirectoryViewController.h */,
-				AE815875135BE48C008E9B84 /* DirectoryViewController.m */,
-				96EE27C813ECF48600170A52 /* DirectoryDetailViewController.h */,
-				96EE27C913ECF48600170A52 /* DirectoryDetailViewController.m */,
-				AEEA62A313679F2D00E3A470 /* BuildingSelectView.h */,
-				AEEA62A413679F2D00E3A470 /* BuildingSelectView.m */,
-				AEB1718B135BF09700DF742A /* POIAnnotation.h */,
-				AEB17181135BEED200DF742A /* POIAnnotation.m */,
-				96950E40141D9D0E0059CFED /* EventRecapViewController.h */,
-				96950E41141D9D0E0059CFED /* EventRecapViewController.m */,
-				964A2B3C1433E39800F53F8A /* CustomSectionHeader.h */,
-				964A2B3D1433E39800F53F8A /* CustomSectionHeader.m */,
-				AE81583E135BD930008E9B84 /* MainWindow.xib */,
-				AE815847135BD930008E9B84 /* ScheduleView.xib */,
-				968D4F7C1491C62A007D248D /* CampusSelectionView.xib */,
-				960B929B146F2FCF0057C22E /* CourseDetailView.xib */,
-				9697EF3F143912F000EC190A /* AddCourseView.xib */,
-				965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */,
-				AE81584A135BD930008E9B84 /* SportsView.xib */,
-				96E9243D13F6195B00A48C68 /* CurrentEventCellView.xib */,
-				963DFC7B146B8293007E41D4 /* CustomScheduleCell.xib */,
-				AE815867135BE0D2008E9B84 /* MapView.xib */,
-				AECF0B0913660E4700D2F3B4 /* DirectoryView.xib */,
-				96EE27CA13ECF48600170A52 /* DirectoryDetailView.xib */,
-				AEEA62A513679F2D00E3A470 /* BuildingSelectView.xib */,
-				96950E42141D9D0E0059CFED /* EventRecapView.xib */,
-				964AFFEB147CA25800061CDE /* Default.png */,
-				964AFFED147CA26300061CDE /* Default@2x.png */,
-				9662B957147D6A9E008F6AA4 /* UMaine_114.png */,
-				9662B955147D6A96008F6AA4 /* UMaine_57.png */,
-				0F0C251314E379F8009F6388 /* UMA.sqlite */,
-				0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */,
-				0F0C251714E381DF009F6388 /* UMFK.sqlite */,
-				0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */,
-				0F6A734914C34E9C00F94C82 /* UMO.sqlite */,
-				0F0C251514E37C1F009F6388 /* UMPI.sqlite */,
-				0FDE9360154CC75800385998 /* USM.sqlite */,
-				0FD6271014E4C7CB00316840 /* TeamLogoImages */,
-				0F07D9FA14C11D2F00A91282 /* Permit Images */,
+				96DAA0DB17F3F9820043EE73 /* models */,
+				96DAA0DA17F3F97B0043EE73 /* views */,
+				96DAA0D917F3F9740043EE73 /* controllers */,
 				961EE1D41438FE5C00644449 /* Managed Object Classes */,
-				9614911C14380A590010FFE1 /* Schedule Tab Images */,
+				96DAA0D817F3F9500043EE73 /* resources */,
 				AE815833135BD930008E9B84 /* Supporting Files */,
-				0F8670E014BBDF8600A583A7 /* CampusSpecifics.h */,
-				0F8670E114BBDF8600A583A7 /* CampusSpecifics.m */,
 			);
 			path = iUMaine;
 			sourceTree = "<group>";
