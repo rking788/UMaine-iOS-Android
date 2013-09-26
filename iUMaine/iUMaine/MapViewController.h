@@ -52,6 +52,7 @@
 @property (nonatomic, strong) NSUserDefaults* uDefaults;
 @property (nonatomic, strong) NSString* curPermit;
 @property (nonatomic, strong) NSString* prevPermit;
+@property (nonatomic, assign) NSUInteger activeUSMCampus;
 
 @property (nonatomic, strong) POIAnnotation* mapSelBuildingAnnotation;
 @property (nonatomic, strong) NSMutableArray* mapPOIAnnotations;

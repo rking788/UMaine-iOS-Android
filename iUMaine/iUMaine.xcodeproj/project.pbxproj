@@ -19,7 +19,10 @@
 		0F0C251414E379F8009F6388 /* UMA.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251314E379F8009F6388 /* UMA.sqlite */; };
 		0F0C251614E37C1F009F6388 /* UMPI.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251514E37C1F009F6388 /* UMPI.sqlite */; };
 		0F0C251814E381DF009F6388 /* UMFK.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251714E381DF009F6388 /* UMFK.sqlite */; };
+		0F19422714E576B600DC57EE /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B955147D6A96008F6AA4 /* UMaine_57.png */; };
+		0F19422814E576BB00DC57EE /* UMaine_114.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2113660EBC00D2F3B4 /* UMaine_114.png */; };
 		0F2CF80814BBD65500879C9F /* UMOSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2CF80714BBD65500879C9F /* UMOSpecifics.plist */; };
+		0F576DA01605428C002FF17A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F576D9F1605428C002FF17A /* Default-568h@2x.png */; };
 		0F6A734A14C34E9C00F94C82 /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A734914C34E9C00F94C82 /* UMO.sqlite */; };
 		0F6A735014C3C03B00F94C82 /* general_marker_UMA.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A734F14C3C03B00F94C82 /* general_marker_UMA.png */; };
 		0F6A735214C3C26200F94C82 /* firstyear_marker_UMF.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A735114C3C26200F94C82 /* firstyear_marker_UMF.png */; };
@@ -227,6 +230,14 @@
 		0FD6288214E4C7CB00316840 /* Yale.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FD627C914E4C7CB00316840 /* Yale.png */; };
 		0FD73DED14C9CCBD00508F26 /* UMF.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */; };
 		0FD73DEE14C9CCBD00508F26 /* UMM.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */; };
+		0FDE935C154CAFC900385998 /* bear-paw-r.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9359154CAFC800385998 /* bear-paw-r.png */; };
+		0FDE935D154CAFC900385998 /* bear-paw.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE935A154CAFC800385998 /* bear-paw.png */; };
+		0FDE935E154CAFC900385998 /* bear-paw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE935B154CAFC900385998 /* bear-paw@2x.png */; };
+		0FDE9361154CC75800385998 /* USM.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9360154CC75800385998 /* USM.sqlite */; };
+		0FDE9364154CE29C00385998 /* resident_marker_USM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9362154CE29C00385998 /* resident_marker_USM.png */; };
+		0FDE9365154CE29C00385998 /* visitor_marker_USM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9363154CE29C00385998 /* visitor_marker_USM.png */; };
+		0FDE9368154CE3EF00385998 /* employee_marker_USM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9366154CE3EF00385998 /* employee_marker_USM.png */; };
+		0FDE9369154CE3EF00385998 /* meters_marker_USM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE9367154CE3EF00385998 /* meters_marker_USM.png */; };
 		0FDFEAF814BD3A0500E24A52 /* UMMSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FDFEAF714BD3A0500E24A52 /* UMMSpecifics.plist */; };
 		0FDFEAFD14BD423A00E24A52 /* USMSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FDFEAFC14BD423A00E24A52 /* USMSpecifics.plist */; };
 		960B929C146F2FCF0057C22E /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B929A146F2FCF0057C22E /* CourseDetailViewController.m */; };
@@ -265,8 +276,6 @@
 		964AFFEC147CA25800061CDE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 964AFFEB147CA25800061CDE /* Default.png */; };
 		964AFFEE147CA26400061CDE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 964AFFED147CA26300061CDE /* Default@2x.png */; };
 		965F845C146B842800C809B3 /* CourseDetailSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */; };
-		96625C601491CDD800A461E3 /* availableCampuses_TENTATIVE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */; };
-		9662B956147D6A96008F6AA4 /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B955147D6A96008F6AA4 /* UMaine_57.png */; };
 		9662B958147D6A9E008F6AA4 /* UMaine_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B957147D6A9E008F6AA4 /* UMaine_114.png */; };
 		967E8CB51467109000D9EA24 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB41467109000D9EA24 /* Schedule.m */; };
 		967E8CB81467109F00D9EA24 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 967E8CB71467109F00D9EA24 /* Course.m */; };
@@ -342,7 +351,6 @@
 		AECF0B3813660EBC00D2F3B4 /* man_48.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B1E13660EBC00D2F3B4 /* man_48.png */; };
 		AECF0B3913660EBC00D2F3B4 /* man_64.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B1F13660EBC00D2F3B4 /* man_64.png */; };
 		AECF0B3A13660EBC00D2F3B4 /* notes_32.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2013660EBC00D2F3B4 /* notes_32.png */; };
-		AECF0B3B13660EBC00D2F3B4 /* UMaine_114.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2113660EBC00D2F3B4 /* UMaine_114.png */; };
 		AECF0B3C13660EBC00D2F3B4 /* UMaine_512.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2213660EBC00D2F3B4 /* UMaine_512.png */; };
 		AECF0B3D13660EBC00D2F3B4 /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2313660EBC00D2F3B4 /* UMaine_57.png */; };
 		AECF0B3E13660EBC00D2F3B4 /* UMaine_701_701.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2413660EBC00D2F3B4 /* UMaine_701_701.png */; };
@@ -366,6 +374,7 @@
 		0F0C251514E37C1F009F6388 /* UMPI.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMPI.sqlite; sourceTree = "<group>"; };
 		0F0C251714E381DF009F6388 /* UMFK.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMFK.sqlite; sourceTree = "<group>"; };
 		0F2CF80714BBD65500879C9F /* UMOSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMOSpecifics.plist; sourceTree = "<group>"; };
+		0F576D9F1605428C002FF17A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0F6A734914C34E9C00F94C82 /* UMO.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMO.sqlite; sourceTree = "<group>"; };
 		0F6A734F14C3C03B00F94C82 /* general_marker_UMA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = general_marker_UMA.png; sourceTree = "<group>"; };
 		0F6A735114C3C26200F94C82 /* firstyear_marker_UMF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstyear_marker_UMF.png; sourceTree = "<group>"; };
@@ -575,6 +584,14 @@
 		0FD627C914E4C7CB00316840 /* Yale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Yale.png; sourceTree = "<group>"; };
 		0FD73DEA14C9CCBD00508F26 /* UMF.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMF.sqlite; sourceTree = "<group>"; };
 		0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = UMM.sqlite; sourceTree = "<group>"; };
+		0FDE9359154CAFC800385998 /* bear-paw-r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bear-paw-r.png"; sourceTree = "<group>"; };
+		0FDE935A154CAFC800385998 /* bear-paw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bear-paw.png"; sourceTree = "<group>"; };
+		0FDE935B154CAFC900385998 /* bear-paw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bear-paw@2x.png"; sourceTree = "<group>"; };
+		0FDE9360154CC75800385998 /* USM.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = USM.sqlite; sourceTree = "<group>"; };
+		0FDE9362154CE29C00385998 /* resident_marker_USM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resident_marker_USM.png; sourceTree = "<group>"; };
+		0FDE9363154CE29C00385998 /* visitor_marker_USM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visitor_marker_USM.png; sourceTree = "<group>"; };
+		0FDE9366154CE3EF00385998 /* employee_marker_USM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = employee_marker_USM.png; sourceTree = "<group>"; };
+		0FDE9367154CE3EF00385998 /* meters_marker_USM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meters_marker_USM.png; sourceTree = "<group>"; };
 		0FDFEAF714BD3A0500E24A52 /* UMMSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UMMSpecifics.plist; sourceTree = "<group>"; };
 		0FDFEAFC14BD423A00E24A52 /* USMSpecifics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USMSpecifics.plist; sourceTree = "<group>"; };
 		960B9299146F2FCF0057C22E /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailViewController.h; sourceTree = "<group>"; };
@@ -617,7 +634,6 @@
 		964AFFEB147CA25800061CDE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		964AFFED147CA26300061CDE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		965F845B146B842800C809B3 /* CourseDetailSelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseDetailSelectionView.xib; sourceTree = "<group>"; };
-		96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = availableCampuses_TENTATIVE.txt; sourceTree = "<group>"; };
 		9662B955147D6A96008F6AA4 /* UMaine_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UMaine_57.png; path = ../UMaine_57.png; sourceTree = "<group>"; };
 		9662B957147D6A9E008F6AA4 /* UMaine_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UMaine_114.png; path = ../UMaine_114.png; sourceTree = "<group>"; };
 		967E8CB31467109000D9EA24 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
@@ -764,6 +780,10 @@
 				0F0C250714E1E57A009F6388 /* faculty_marker_UMPI.png */,
 				0F0C250D14E1E644009F6388 /* student_marker_UMPI.png */,
 				0F0C250914E1E57A009F6388 /* visitor_marker_UMPI.png */,
+				0FDE9366154CE3EF00385998 /* employee_marker_USM.png */,
+				0FDE9367154CE3EF00385998 /* meters_marker_USM.png */,
+				0FDE9362154CE29C00385998 /* resident_marker_USM.png */,
+				0FDE9363154CE29C00385998 /* visitor_marker_USM.png */,
 			);
 			name = "Permit Images";
 			sourceTree = "<group>";
@@ -1075,6 +1095,7 @@
 		AE81581D135BD930008E9B84 = {
 			isa = PBXGroup;
 			children = (
+				0F576D9F1605428C002FF17A /* Default-568h@2x.png */,
 				AECF0B0C13660EBC00D2F3B4 /* icons */,
 				AE815832135BD930008E9B84 /* iUMaine */,
 				96FB509613F788500069836C /* TBXML */,
@@ -1166,6 +1187,7 @@
 				0FD73DEB14C9CCBD00508F26 /* UMM.sqlite */,
 				0F6A734914C34E9C00F94C82 /* UMO.sqlite */,
 				0F0C251514E37C1F009F6388 /* UMPI.sqlite */,
+				0FDE9360154CC75800385998 /* USM.sqlite */,
 				0FD6271014E4C7CB00316840 /* TeamLogoImages */,
 				0F07D9FA14C11D2F00A91282 /* Permit Images */,
 				961EE1D41438FE5C00644449 /* Managed Object Classes */,
@@ -1185,7 +1207,6 @@
 				968D4F691491BCC1007D248D /* UMaine Directory Files */,
 				96FB508D13F786020069836C /* sportsAbbrsDict.txt */,
 				96C7092F14932900005479FB /* availableCampuses.txt */,
-				96625C5F1491CDD800A461E3 /* availableCampuses_TENTATIVE.txt */,
 				AE81C790135D0ED300E2F80F /* iumaine.xcdatamodeld */,
 				AE815834135BD930008E9B84 /* iUMaine-Info.plist */,
 				AE815835135BD930008E9B84 /* InfoPlist.strings */,
@@ -1199,6 +1220,9 @@
 		AECF0B0C13660EBC00D2F3B4 /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				0FDE9359154CAFC800385998 /* bear-paw-r.png */,
+				0FDE935A154CAFC800385998 /* bear-paw.png */,
+				0FDE935B154CAFC900385998 /* bear-paw@2x.png */,
 				AE8CC6C3136E3731000079E0 /* poiflag.png */,
 				AECF0B0D13660EBC00D2F3B4 /* bear-paw-r.gif */,
 				AECF0B0E13660EBC00D2F3B4 /* bear-paw-r_24.png */,
@@ -1257,7 +1281,7 @@
 		AE81581F135BD930008E9B84 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = AE815822135BD930008E9B84 /* Build configuration list for PBXProject "iUMaine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1308,7 +1332,6 @@
 				AECF0B3813660EBC00D2F3B4 /* man_48.png in Resources */,
 				AECF0B3913660EBC00D2F3B4 /* man_64.png in Resources */,
 				AECF0B3A13660EBC00D2F3B4 /* notes_32.png in Resources */,
-				AECF0B3B13660EBC00D2F3B4 /* UMaine_114.png in Resources */,
 				AECF0B3C13660EBC00D2F3B4 /* UMaine_512.png in Resources */,
 				AECF0B3D13660EBC00D2F3B4 /* UMaine_57.png in Resources */,
 				AECF0B3E13660EBC00D2F3B4 /* UMaine_701_701.png in Resources */,
@@ -1355,10 +1378,8 @@
 				96B308521470D3B3008C95DD /* commuter_marker_UMO.png in Resources */,
 				964AFFEC147CA25800061CDE /* Default.png in Resources */,
 				964AFFEE147CA26400061CDE /* Default@2x.png in Resources */,
-				9662B956147D6A96008F6AA4 /* UMaine_57.png in Resources */,
 				9662B958147D6A9E008F6AA4 /* UMaine_114.png in Resources */,
 				968D4F7E1491C62A007D248D /* CampusSelectionView.xib in Resources */,
-				96625C601491CDD800A461E3 /* availableCampuses_TENTATIVE.txt in Resources */,
 				96C7092E1493274E005479FB /* buildings_UMO.csv in Resources */,
 				96C7093014932900005479FB /* availableCampuses.txt in Resources */,
 				96D901BF149A760A002D3058 /* directory_UMA.csv in Resources */,
@@ -1589,6 +1610,17 @@
 				0FD6288014E4C7CB00316840 /* Winthrop.png in Resources */,
 				0FD6288114E4C7CB00316840 /* Worcester St..png in Resources */,
 				0FD6288214E4C7CB00316840 /* Yale.png in Resources */,
+				0F19422714E576B600DC57EE /* UMaine_57.png in Resources */,
+				0F19422814E576BB00DC57EE /* UMaine_114.png in Resources */,
+				0FDE935C154CAFC900385998 /* bear-paw-r.png in Resources */,
+				0FDE935D154CAFC900385998 /* bear-paw.png in Resources */,
+				0FDE935E154CAFC900385998 /* bear-paw@2x.png in Resources */,
+				0FDE9361154CC75800385998 /* USM.sqlite in Resources */,
+				0FDE9364154CE29C00385998 /* resident_marker_USM.png in Resources */,
+				0FDE9365154CE29C00385998 /* visitor_marker_USM.png in Resources */,
+				0FDE9368154CE3EF00385998 /* employee_marker_USM.png in Resources */,
+				0FDE9369154CE3EF00385998 /* meters_marker_USM.png in Resources */,
+				0F576DA01605428C002FF17A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1726,9 +1758,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "47A28AA6-E676-49C0-9AA4-508A7C26C34D";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "47A28AA6-E676-49C0-9AA4-508A7C26C34D";
@@ -1745,17 +1778,18 @@
 					armv6,
 				);
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert KIng";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Robert KIng";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert King";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Robert King";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iUMaine/iUMaine-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "75FC3A98-541C-4BDD-BEDA-77E48EB1D04F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75FC3A98-541C-4BDD-BEDA-77E48EB1D04F";
+				PROVISIONING_PROFILE = "75B7BA60-04CF-4D03-AE1C-43FF6965B65B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75B7BA60-04CF-4D03-AE1C-43FF6965B65B";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

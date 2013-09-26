@@ -12,6 +12,8 @@
 #import "CampusSpecifics.h"
 #import "constants.h"
 
+#pragma mark - TODO: WHY DOESN'T THE MAP SHOW THE USER'S CURRENT LOCATOIN???!!
+
 @implementation MapViewController
 
 @synthesize appDel;
@@ -23,6 +25,7 @@
 @synthesize mapView, mapPOIAnnotations, mapSelBuildingAnnotation, permitTitles;
 @synthesize sortedPermitTitles;
 @synthesize smaller;
+@synthesize activeUSMCampus;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -35,6 +38,9 @@
     if(self.appDel.gettingSports){
         [self shrinkMapView];
     }
+    
+    // The default USM campus is portland
+    self.activeUSMCampus = USM_PORT_CAMPUS;
     
     // Set up the array of annotations
     self.mapPOIAnnotations = [[NSMutableArray alloc] initWithCapacity: 1];
@@ -59,6 +65,12 @@
     }
     else if(self.isSmaller){
         [self growMapView];
+    }
+    
+    // If the active campus is USM, a new segment needs to be added
+    if([[iUMaineAppDelegate getSelCampus] isEqualToString: @"USM"]
+        && ([self.segmentControl numberOfSegments] == 3)){
+        [self.segmentControl insertSegmentWithTitle: @"Gorham" atIndex: 3 animated: NO];
     }
     
     [self.navBar setTintColor: [CampusSpecifics getNavBarColor]];
@@ -120,6 +132,27 @@
                                                         initWithRootViewController:bsView];
         [navigationController.navigationBar setBarStyle: UIBarStyleBlack];
         [self presentModalViewController:navigationController animated:YES];
+    }
+    else if(nSel == 3){
+        if(self.activeUSMCampus == USM_PORT_CAMPUS){
+            [segControl setTitle: @"Portland" forSegmentAtIndex: 3];
+            self.activeUSMCampus = USM_GOR_CAMPUS;
+        }
+        else {
+            [segControl setTitle: @"Gorham" forSegmentAtIndex: 3];
+            self.activeUSMCampus = USM_PORT_CAMPUS;
+        }
+        
+        // Set the center of campus
+        MKCoordinateRegion region;
+        
+        NSArray* centerCoords = [self findCenterOfCampus];
+        region.center.latitude = [[centerCoords objectAtIndex: 0] doubleValue];
+        region.center.longitude = [[centerCoords objectAtIndex: 1] doubleValue];
+        
+        region.span.latitudeDelta = 0.008;
+        region.span.longitudeDelta = 0.008;
+        [self.mapView setRegion:region animated: YES];
     }
 
 }
@@ -206,6 +239,16 @@
     else if([selCampus isEqualToString: @"UMFK"]){
         latitude = UMFK_CENTER_LAT;
         longitude = UMFK_CENTER_LONG;
+    }
+    else if([selCampus isEqualToString: @"USM"]){
+        if(self.activeUSMCampus == USM_GOR_CAMPUS){
+            latitude = USM_GOR_CENTER_LAT;
+            longitude = USM_GOR_CENTER_LONG;
+        }
+        else{
+            latitude = USM_PORT_CENTER_LAT;
+            longitude = USM_PORT_CENTER_LONG;
+        }
     }
     
     NSNumber* latNum = [NSNumber numberWithDouble: latitude];
@@ -296,6 +339,9 @@
         [aV setFrame:endFrame];
         [UIView commitAnimations];
     }
+    
+    if(self.mapSelBuildingAnnotation)
+        [self.mapView selectAnnotation: self.mapSelBuildingAnnotation animated: YES];
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation
@@ -394,16 +440,18 @@
         return;
     }
     
-    if (mapSelBuildingAnnotation) {
-        [self.mapView removeAnnotation: mapSelBuildingAnnotation];
+    if (self.mapSelBuildingAnnotation) {
+        [self.mapView removeAnnotation: self.mapSelBuildingAnnotation];
         [self setMapSelBuildingAnnotation: nil];
     }
     
     self.mapSelBuildingAnnotation = [[POIAnnotation alloc] initWithLat:dLatitude withLong:dLongitude];
-    [mapSelBuildingAnnotation setTitle: buildingName];
+    [self.mapSelBuildingAnnotation setTitle: buildingName];
     
-    [self.mapView addAnnotation: mapSelBuildingAnnotation];
+    [self.mapView addAnnotation: self.mapSelBuildingAnnotation];
     [self dismissModalViewControllerAnimated:YES];
+    [self.mapView setCenterCoordinate: CLLocationCoordinate2DMake( dLatitude,  dLongitude) animated: YES];
+    [self.mapView selectAnnotation: self.mapSelBuildingAnnotation animated: YES];
 }
 
 - (void)didReceiveMemoryWarning

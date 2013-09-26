@@ -19,9 +19,15 @@
 #define UMA_CENTER_LONG         -69.795104f
 #define UMM_CENTER_LAT          44.709168f
 #define UMM_CENTER_LONG         -67.456448f
-#define USM_CENTER_LAT          43.662183f
-#define USM_CENTER_LONG         -70.275296f
-#define UMPI_CENTER_LAT          46.670258f
-#define UMPI_CENTER_LONG         -68.013961f
-#define UMFK_CENTER_LAT          47.250118f
-#define UMFK_CENTER_LONG         -68.589457f
+#define USM_PORT_CENTER_LAT     43.662183f
+#define USM_PORT_CENTER_LONG    -70.275296f
+#define USM_GOR_CENTER_LAT      43.682210f
+#define USM_GOR_CENTER_LONG     -70.449068f
+#define UMPI_CENTER_LAT         46.670258f
+#define UMPI_CENTER_LONG        -68.013961f
+#define UMFK_CENTER_LAT         47.250118f
+#define UMFK_CENTER_LONG        -68.589457f
+
+/*** Constants for the different USM campuses ***/
+#define USM_PORT_CAMPUS         1
+#define USM_GOR_CAMPUS          2

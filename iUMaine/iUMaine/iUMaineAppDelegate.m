@@ -66,7 +66,7 @@ static NSString* selCampus;
     
     // Initialize the database file (should be removed after .sqlite file is setup
 #if INIT_DB
-    selCampus = @"UMFK";
+    selCampus = @"USM";
     DBInitializer* dbIniter = [[DBInitializer alloc] init];
     dbIniter.managedObjectContext = self.managedObjectContext;
     [dbIniter initDatabaseWithCampus: selCampus];
