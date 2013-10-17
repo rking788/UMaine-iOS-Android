@@ -184,7 +184,7 @@
 
 - (void) cancel
 {
-    [self dismissModalViewControllerAnimated: YES];
+    [self dismissViewControllerAnimated: YES completion: nil];
 }
 
 - (void) save
@@ -195,7 +195,7 @@
  
     // Check if the new campus is the same as the current campus if it is then don't do anything
     if((self.currentCampus != nil) && ([self.currentCampus isEqualToString: campShortName])){
-        [self dismissModalViewControllerAnimated: YES];
+        [self dismissViewControllerAnimated: YES completion: nil];
         return ;
     }
     

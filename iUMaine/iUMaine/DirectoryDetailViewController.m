@@ -54,6 +54,8 @@
     // Fill employee information dictionary (should do it this way instead of just accessing
     // the Employee object directly in case there is missing information just makes it easier i think)
     [self fillEmployeeDict: self.employee];
+    
+    [self.navigationController.navigationBar setTranslucent: NO];
 }
 
 - (void)viewDidUnload

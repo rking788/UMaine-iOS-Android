@@ -50,6 +50,7 @@
     // Add save and cancel buttons to the navigation bar
     [self.navBar.topItem setLeftBarButtonItem: [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target: self action: @selector(cancel)]];
     [self.navBar.topItem setRightBarButtonItem: [[UIBarButtonItem alloc] initWithTitle: @"Add" style: UIBarButtonItemStyleDone target:self action: @selector(addCourse)]];
+    self.navBar.delegate = self;
     
     // Set the labels to be displayed in the rows of the table view
     self.lblStrs = [NSArray arrayWithObjects: @"Department", @"Course Number", @"Section", nil];
@@ -89,7 +90,7 @@
 
 - (void) cancel
 {
-    [self dismissModalViewControllerAnimated: YES];
+    [self dismissViewControllerAnimated: YES completion: nil];
 }
 
 - (void) addCourse
@@ -339,7 +340,7 @@
                                                     initWithRootViewController: cdsvc];
     
     [navigationController.navigationBar.topItem setTitle: @"Selection"];
-    [self presentModalViewController:navigationController animated:YES];
+    [self presentViewController: navigationController animated: YES completion: nil];
     
 }
 
@@ -375,11 +376,17 @@
     return cell;
 }
 
+#pragma mark - UIBarPositioningDelegate Method
+- (UIBarPosition)positionForBar:(id<UIBarPositioning>)bar
+{
+    return UIBarPositionTopAttached;
+}
+
 #pragma mark - CourseDetailSelectionDelegate Methods
 - (void) detailSelection:(NSString*) selectionStr ForSection: (NSUInteger) rowSelected
 {
      if(!selectionStr){
-        [self dismissModalViewControllerAnimated: YES];
+         [self dismissViewControllerAnimated: YES completion: nil];
          return;
     }
     
@@ -395,7 +402,7 @@
     
     [self.tableV reloadData];
     
-    [self dismissModalViewControllerAnimated: YES];
+    [self dismissViewControllerAnimated: YES completion: nil];
 }
 
 @end

@@ -318,7 +318,7 @@
     [acvc setDelegate: self];
     
     [acvc setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
-    [self presentModalViewController: acvc animated: YES];
+    [self presentViewController: acvc animated: YES completion: nil];
 }
 
 - (void)hideEmptySeparators
@@ -350,7 +350,6 @@
     UISegmentedControl* closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Done", nil]];
     closeButton.momentary = YES;
     closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
-    closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
     closeButton.tintColor = [UIColor blackColor];
     [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
     [self.actSheet addSubview:closeButton];
@@ -523,7 +522,7 @@
     
     [navigationController.navigationBar.topItem setTitle: @"Campuses"];
     
-    [self presentModalViewController: navigationController animated: YES];   
+    [self presentViewController: navigationController animated: YES completion: nil];
 }
 
 # pragma mark - Actionsheet delegate methods
@@ -565,7 +564,7 @@
     [ScheduleViewController insertCourse: _c IntoArray: self.activeCourses];
     [self.contentTable reloadData];
     
-    [self dismissModalViewControllerAnimated: YES];
+    [self dismissViewControllerAnimated: YES completion: nil];
 }
 
 #pragma mark - ScheduleDisplayDelegate Methods
@@ -577,7 +576,7 @@
 #pragma mark - SelectCampusDelegate Methods
 - (void) campusSelected:(NSString *)campusStr
 {
-    [self dismissModalViewControllerAnimated: YES];
+    [self dismissViewControllerAnimated: YES completion: nil];
     
     [self.appDel resetContext];
     

@@ -32,6 +32,7 @@
 {
     [super viewDidLoad];
     
+    
     self.appDel = (iUMaineAppDelegate*)[[UIApplication sharedApplication] delegate];
     [self.appDel setMvcInst: self];
     
@@ -131,7 +132,7 @@
         UINavigationController *navigationController = [[UINavigationController alloc]
                                                         initWithRootViewController:bsView];
         [navigationController.navigationBar setBarStyle: UIBarStyleBlack];
-        [self presentModalViewController:navigationController animated:YES];
+        [self presentViewController: navigationController animated: YES completion: nil];
     }
     else if(nSel == 3){
         if(self.activeUSMCampus == USM_PORT_CAMPUS){
@@ -180,7 +181,6 @@
     UISegmentedControl* closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Done", nil]];
     closeButton.momentary = YES;
     closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
-    closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
     closeButton.tintColor = [UIColor blackColor];
     [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
     [self.actSheet addSubview:closeButton];
@@ -436,7 +436,7 @@
 - (void) selectBuildingLocation: (NSString*) buildingName withLatitude:(double)dLatitude withLongitude:(double)dLongitude
 {    
     if(!buildingName){
-        [self dismissModalViewControllerAnimated: YES];
+        [self dismissViewControllerAnimated: YES completion: nil];
         return;
     }
     
@@ -449,7 +449,7 @@
     [self.mapSelBuildingAnnotation setTitle: buildingName];
     
     [self.mapView addAnnotation: self.mapSelBuildingAnnotation];
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated: YES completion: nil];
     [self.mapView setCenterCoordinate: CLLocationCoordinate2DMake( dLatitude,  dLongitude) animated: YES];
     [self.mapView selectAnnotation: self.mapSelBuildingAnnotation animated: YES];
 }
@@ -499,6 +499,12 @@
         newFrame.size.height = newFrame.size.height + self.appDel.progressView.frame.size.height;
         [self.mapView setFrame: newFrame];
     }
+}
+
+#pragma mark - UIBarPositioningDelegate Methods
+- (UIBarPosition)positionForBar:(id<UIBarPositioning>)bar
+{
+    return UIBarPositionTopAttached;
 }
 
 @end

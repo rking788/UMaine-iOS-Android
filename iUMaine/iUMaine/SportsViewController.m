@@ -241,7 +241,6 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     UISegmentedControl* closeButton = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Done", nil]];
     closeButton.momentary = YES;
     closeButton.frame = CGRectMake(260, 7.0f, 50.0f, 30.0f);
-    closeButton.segmentedControlStyle = UISegmentedControlStyleBar;
     closeButton.tintColor = [UIColor blackColor];
     [closeButton addTarget:self action:@selector(dismissActionSheet) forControlEvents:UIControlEventValueChanged];
     [self.actSheet addSubview: closeButton];
@@ -672,16 +671,16 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
     if (classAdBannerView != nil) {
         self.adBannerView = [[classAdBannerView alloc] 
                               initWithFrame:CGRectZero];
-        [_adBannerView setRequiredContentSizeIdentifiers:[NSSet setWithObjects:
-                                                          ADBannerContentSizeIdentifier320x50, 
-                                                          ADBannerContentSizeIdentifier480x32, nil]];
-        if (UIInterfaceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
-            [_adBannerView setCurrentContentSizeIdentifier:
-             ADBannerContentSizeIdentifier480x32];
-        } else {
-            [_adBannerView setCurrentContentSizeIdentifier:
-             ADBannerContentSizeIdentifier320x50];            
-        }
+        //[_adBannerView setRequiredContentSizeIdentifiers:[NSSet setWithObjects:
+        //                                                  ADBannerContentSizeIdentifierPortrait,
+        //                                                  ADBannerContentSizeIdentifier480x32, nil]];
+        //if (UIInterfaceOrientationIsLandscape([UIDevice currentDevice].orientation)) {
+        //    [_adBannerView setCurrentContentSizeIdentifier:
+        //     ADBannerContentSizeIdentifier480x32];
+        //} else {
+        //    [_adBannerView setCurrentContentSizeIdentifier:
+        //     ADBannerContentSizeIdentifier320x50];
+        //}
         [_adBannerView setFrame:CGRectOffset([_adBannerView frame], 0, 
                                              -[self getBannerHeight])];
         [_adBannerView setDelegate:self];
@@ -692,13 +691,13 @@ NSString* const ABBRSDICTNAME2 = @"sportsAbbrsDict.txt";
 
 - (void)fixupAdView:(UIInterfaceOrientation)toInterfaceOrientation {
     if (_adBannerView != nil) {        
-        if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+        /*if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
             [_adBannerView setCurrentContentSizeIdentifier:
              ADBannerContentSizeIdentifier480x32];
         } else {
             [_adBannerView setCurrentContentSizeIdentifier:
              ADBannerContentSizeIdentifier320x50];
-        }          
+        } */         
         [UIView beginAnimations:@"fixupViews" context:nil];
         if (_adBannerViewIsVisible) {
             CGRect adBannerViewFrame = [_adBannerView frame];

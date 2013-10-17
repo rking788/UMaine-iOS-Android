@@ -15,7 +15,7 @@
 @class iUMaineAppDelegate;
 
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, BuildingSelectDelegate>{
+@interface MapViewController : UIViewController <MKMapViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UIBarPositioningDelegate,BuildingSelectDelegate>{
 
     iUMaineAppDelegate* appDel;
     

@@ -17,7 +17,7 @@
 
 @end
 
-@interface AddCourseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, CourseDetailSelectionDelegate> {
+@interface AddCourseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIBarPositioningDelegate,CourseDetailSelectionDelegate> {
     UINavigationBar *navBar;
     UITableView *tableV;
     

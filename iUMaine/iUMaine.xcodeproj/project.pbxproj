@@ -19,8 +19,6 @@
 		0F0C251414E379F8009F6388 /* UMA.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251314E379F8009F6388 /* UMA.sqlite */; };
 		0F0C251614E37C1F009F6388 /* UMPI.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251514E37C1F009F6388 /* UMPI.sqlite */; };
 		0F0C251814E381DF009F6388 /* UMFK.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C251714E381DF009F6388 /* UMFK.sqlite */; };
-		0F19422714E576B600DC57EE /* UMaine_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 9662B955147D6A96008F6AA4 /* UMaine_57.png */; };
-		0F19422814E576BB00DC57EE /* UMaine_114.png in Resources */ = {isa = PBXBuildFile; fileRef = AECF0B2113660EBC00D2F3B4 /* UMaine_114.png */; };
 		0F2CF80814BBD65500879C9F /* UMOSpecifics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2CF80714BBD65500879C9F /* UMOSpecifics.plist */; };
 		0F576DA01605428C002FF17A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F576D9F1605428C002FF17A /* Default-568h@2x.png */; };
 		0F6A734A14C34E9C00F94C82 /* UMO.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A734914C34E9C00F94C82 /* UMO.sqlite */; };
@@ -1319,6 +1317,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					AE815827135BD930008E9B84 = {
+						DevelopmentTeam = 79B25J3SK7;
+					};
+				};
 			};
 			buildConfigurationList = AE815822135BD930008E9B84 /* Build configuration list for PBXProject "iUMaine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1647,8 +1650,6 @@
 				0FD6288014E4C7CB00316840 /* Winthrop.png in Resources */,
 				0FD6288114E4C7CB00316840 /* Worcester St..png in Resources */,
 				0FD6288214E4C7CB00316840 /* Yale.png in Resources */,
-				0F19422714E576B600DC57EE /* UMaine_57.png in Resources */,
-				0F19422814E576BB00DC57EE /* UMaine_114.png in Resources */,
 				0FDE935C154CAFC900385998 /* bear-paw-r.png in Resources */,
 				0FDE935D154CAFC900385998 /* bear-paw.png in Resources */,
 				0FDE935E154CAFC900385998 /* bear-paw@2x.png in Resources */,
@@ -1804,8 +1805,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Robert KIng (PLJWL35TX2)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Robert KIng (PLJWL35TX2)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1817,9 +1818,9 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "47A28AA6-E676-49C0-9AA4-508A7C26C34D";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "47A28AA6-E676-49C0-9AA4-508A7C26C34D";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1830,8 +1831,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Robert King";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Robert King";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1842,9 +1843,9 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "iUMaine/iUMaine-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "75B7BA60-04CF-4D03-AE1C-43FF6965B65B";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "75B7BA60-04CF-4D03-AE1C-43FF6965B65B";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
